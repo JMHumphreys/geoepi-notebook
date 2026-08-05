@@ -17,7 +17,7 @@ Geographical epidemiology joins data, place, time, biology, and models. Small un
 
 ## What this site is for
 
-The Lab Book will collect concise, reviewable guidance for planning, acquiring, organizing, analyzing, validating, collaborating, communicating, and preserving research. It will point to templates and external resources without replacing primary methods papers, data-use agreements, or formal institutional policies.
+The Lab Book collects concise, reviewable guidance for planning, acquiring, organizing, analyzing, validating, collaborating, communicating, and preserving research. It points to templates and external resources without replacing primary methods papers, data-use agreements, or formal institutional policies. The Lab Book remains distinct from the [GeoEpi organization website](https://geoepi.github.io/) and [GitHub organization](https://github.com/geoepi).
 
 ## What this site is not
 

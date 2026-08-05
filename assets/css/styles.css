@@ -1,7 +1,9 @@
 /*-- scss:rules --*/
-:root { --geoepi-navy: #17324d; --geoepi-teal: #2d6f73; }
+:root { --geoepi-navy: #17324d; --geoepi-teal: #2d6f73; --geoepi-sand: #f4f1ea; }
 .navbar, .navbar-brand { font-weight: 600; }
 .navbar { background-color: var(--geoepi-navy) !important; }
+.navbar-brand img { max-height: 2rem; width: auto; }
+h1, h2, h3 { color: var(--geoepi-navy); }
 .callout { border-left-width: .35rem; }
 .callout-warning { border-left-color: #b26a00; }
 .callout-tip { border-left-color: var(--geoepi-teal); }
