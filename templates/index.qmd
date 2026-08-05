@@ -16,9 +16,20 @@ listing:
   fields: [title, description, status]
 ---
 
-The template library reduces blank-page friction without forcing every project into one shape.
+The template library reduces blank-page friction without forcing every project into one shape. Copy the plain-text files into another repository and adapt them to the project.
 
-- [Guidance page authoring template](authoring-template.qmd)
-- Future additions may include project briefs, data inventories, decision logs, validation plans, and handoff notes.
+| Template | Format | Use |
+|---|---|---|
+| [Project README](project-readme-template.md) | Markdown | Root orientation, setup, outputs, restrictions, and handoff |
+| [Project charter](project-charter-template.md) | Markdown | Initiation, scope, risks, and intended outputs |
+| [Data-source inventory](data-source-inventory-template.csv) | CSV | Source, access, version, restriction, and provenance seed |
+| [Data dictionary](data-dictionary-template.csv) | CSV | Variables, units, codes, missingness, and derivations |
+| [Exception record](project-exception-record.md) | Markdown | Formal deviations and compensating controls |
+| [Readiness checklist](project-readiness-checklist.md) | Markdown | Lifecycle gate review |
+| [Handoff record](project-handoff-template.md) | Markdown | Transfer of access, context, and unfinished work |
+| [Closeout record](project-closeout-template.md) | Markdown | Final version, archive, retention, and maintenance |
+| [Result traceability](result-traceability-template.csv) | CSV | Inputs, code, parameters, runs, outputs, and review |
+| [HPC run record](hpc-run-record-template.yml) | YAML | Batch resources, logs, status, and retry state |
+| [Guidance page authoring template](authoring-template.qmd) | Quarto | New Lab Book pages |
 
 Templates are examples until explicitly adopted; adapt them to the project and document meaningful deviations.
