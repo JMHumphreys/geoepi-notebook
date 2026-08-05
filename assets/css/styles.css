@@ -1,0 +1,8 @@
+/*-- scss:rules --*/
+:root { --geoepi-navy: #17324d; --geoepi-teal: #2d6f73; }
+.navbar, .navbar-brand { font-weight: 600; }
+.navbar { background-color: var(--geoepi-navy) !important; }
+.callout { border-left-width: .35rem; }
+.callout-warning { border-left-color: #b26a00; }
+.callout-tip { border-left-color: var(--geoepi-teal); }
+main.content { max-width: 900px; }

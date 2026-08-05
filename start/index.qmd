@@ -1,0 +1,22 @@
+---
+title: "Start Here"
+description: "The shortest path to a defensible GeoEpi project."
+status: draft
+practice-level: orientation
+audience: all lab members
+domains: [all]
+topics: [project-start, minimum-standard]
+owner: GeoEpi Lab
+last-reviewed: 2026-08-05
+review-cycle: annual
+sidebar: start
+---
+
+Use this section when starting a project, inheriting one, or trying to make an existing project recoverable.
+
+- [Minimum GeoEpi Standard](minimum-standard.qmd)
+- [Starting a New Project](new-project.qmd)
+- [Rescuing an Existing Project](rescue-project.qmd)
+- [Project Handoff](handoff.qmd)
+
+These are provisional foundations for discussion, not approved lab policy.

@@ -1,0 +1,31 @@
+---
+title: "GeoEpi Lab Book"
+description: "A draft foundation for defensible, reproducible, and transferable geographical epidemiology."
+status: draft
+practice-level: orientation
+audience: all lab members
+domains: [all]
+topics: [reproducibility, documentation, data stewardship]
+owner: GeoEpi Lab
+last-reviewed: 2026-08-05
+review-cycle: annual
+---
+
+::: {.callout-warning}
+## Draft guidance
+
+This is an initial information-architecture pass. It describes intended practices and future content; it does not establish approved laboratory policy.
+:::
+
+Welcome to the **GeoEpi Lab Book**, a shared place for practices that help geographical epidemiology remain understandable, defensible, reproducible, and transferable across people, projects, and time.
+
+## Find your next step
+
+- [Start Here](start/index.qmd) for a minimum standard, new-project setup, rescue work, and handoff.
+- [Research Practices](practices/index.qmd) for the lifecycle from planning through preservation.
+- [Domain Guidance](domains/index.qmd) for spatial, epidemiological, ecological, genomic, and modeling topics.
+- [Lab Standards](standards/index.qmd) for future lab-level decisions.
+- [Templates](templates/index.qmd) for reusable project and documentation structures.
+- [Resources](resources/index.qmd) for an annotated external catalog.
+
+The intended outcome is that a lab member can join a project, understand what was done and why, reproduce an important result where access permits, identify uncertainty, and continue the work without relying on undocumented memory.

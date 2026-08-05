@@ -1,0 +1,24 @@
+---
+title: "Resources"
+description: "An annotated catalog of external resources for future GeoEpi guidance."
+status: draft
+practice-level: orientation
+audience: all lab members
+domains: [all]
+topics: [resources, citation, reproducibility]
+owner: GeoEpi Lab
+last-reviewed: 2026-08-05
+review-cycle: annual
+listing:
+  contents: catalog.yml
+  type: table
+  fields: [title, description, author, categories]
+---
+
+The [resource catalog](catalog.yml) records external starting points without turning them into lab policy. Annotations are intentionally short and original. Check the source landing page, license, version, and access conditions before relying on a resource.
+
+Each entry has a stable ID, title, URL, author or organization, resource and authority types, topic tags, license, access date, relevant sections, a local research-note path, review status, and a short annotation. Unknown or unverified values are marked explicitly.
+
+::: {.callout-warning}
+Catalog inclusion is not endorsement. Resources may be useful, outdated, inaccessible, or governed by licenses that limit reuse.
+:::

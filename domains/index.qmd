@@ -1,0 +1,16 @@
+---
+title: "Domain Guidance"
+description: "A home for domain-aware GeoEpi methods and data considerations."
+status: draft
+practice-level: orientation
+audience: all lab members
+domains: [spatial, epidemiology, ecology, genomics, modeling]
+topics: [domain-guidance, methods]
+owner: GeoEpi Lab
+last-reviewed: 2026-08-05
+review-cycle: annual
+---
+
+Future guidance will connect general research practices to the risks and conventions of spatial, epidemiological, ecological, genomic, and modeling work. Potential topics include coordinate reference systems, geocoding, case definitions, sampling and detection, genomic provenance, model checking, uncertainty, and responsible communication.
+
+Domain pages should be developed with subject-matter review and should not be inferred from the resource catalog alone.

@@ -1,0 +1,390 @@
+- id: primer-ecology-r
+  title: "A Primer of Ecology with R"
+  url: "https://link.springer.com/book/10.1007/978-0-387-89882-7"
+  author_or_organization: "M. Henry H. Stevens"
+  resource_type: book
+  authority_type: academic-publisher
+  topics: [ecology, R]
+  license: "Copyrighted; reuse terms not verified"
+  access_date: 2026-08-05
+  relevant_sections: [ecological-models]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Quantitative ecology concepts and R-based models."
+- id: landscape-genetic-data-r
+  title: "Landscape Genetic Data Analysis with R"
+  url: "https://www.springer.com/search?query=Landscape+Genetic+Data+Analysis+with+R"
+  author_or_organization: "Springer Nature"
+  resource_type: book
+  authority_type: academic-publisher
+  topics: [landscape-genetics, spatial, R]
+  license: "Copyrighted; exact edition uncertain"
+  access_date: 2026-08-05
+  relevant_sections: [landscape-genetics]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Seed entry for landscape-genetics workflows."
+- id: quantitative-biology
+  title: "Quantitative Biology"
+  url: "https://www.cambridge.org/core/search?q=Quantitative%20Biology"
+  author_or_organization: "Cambridge University Press"
+  resource_type: book
+  authority_type: academic-publisher
+  topics: [quantitative-biology, modeling]
+  license: "Copyrighted; exact work uncertain"
+  access_date: 2026-08-05
+  relevant_sections: [quantitative-methods]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Broad seed entry requiring exact title and edition verification."
+- id: comparative-methods
+  title: "Comparative Methods"
+  url: "https://global.oup.com/academic/"
+  author_or_organization: "Oxford University Press"
+  resource_type: book
+  authority_type: academic-publisher
+  topics: [comparative-methods, ecology]
+  license: "Copyrighted; exact work uncertain"
+  access_date: 2026-08-05
+  relevant_sections: [comparative-analysis]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Seed entry for comparative analysis."
+- id: spatial-data-science
+  title: "Spatial Data Science"
+  url: "https://spatialanalysis.github.io/"
+  author_or_organization: "Center for Spatial Data Science"
+  resource_type: course-or-notes
+  authority_type: university
+  topics: [spatial, GIS, data-science]
+  license: "Not verified"
+  access_date: 2026-08-05
+  relevant_sections: [spatial-analysis]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Starting point for spatial analysis concepts and tools."
+- id: statistical-rethinking
+  title: "Statistical Rethinking"
+  url: "https://xcelab.net/rm/statistical-rethinking/"
+  author_or_organization: "Richard McElreath"
+  resource_type: book-and-course
+  authority_type: academic-author
+  topics: [Bayesian-modeling, statistics]
+  license: "Not verified"
+  access_date: 2026-08-05
+  relevant_sections: [modeling, uncertainty]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Model-centered introduction to Bayesian reasoning."
+- id: applied-population-genetics
+  title: "Applied Population Genetics"
+  url: "https://www.cambridge.org/core/search?q=Applied%20Population%20Genetics"
+  author_or_organization: "Cambridge University Press"
+  resource_type: book
+  authority_type: academic-publisher
+  topics: [population-genetics]
+  license: "Copyrighted; exact work uncertain"
+  access_date: 2026-08-05
+  relevant_sections: [population-genetics]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Seed entry requiring title and edition confirmation."
+- id: epidemiologist-r-handbook
+  title: "The Epidemiologist R Handbook"
+  url: "https://www.epirhandbook.com/en/index.html"
+  author_or_organization: "Applied Epi"
+  resource_type: handbook
+  authority_type: professional-organization
+  topics: [epidemiology, R, reproducibility]
+  license: "CC BY-NC-SA 4.0"
+  access_date: 2026-08-05
+  relevant_sections: [R-projects, data-management]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Task-oriented R reference for applied epidemiology."
+- id: network-analysis-r
+  title: "Network Analysis in R"
+  url: "https://www.routledge.com/"
+  author_or_organization: "Routledge"
+  resource_type: book
+  authority_type: academic-publisher
+  topics: [networks, R]
+  license: "Copyrighted; exact work uncertain"
+  access_date: 2026-08-05
+  relevant_sections: [network-analysis]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Seed entry for network analysis workflows in R."
+- id: molecular-epi-r
+  title: "Molecular Epi in R"
+  url: "https://www.google.com/search?q=%22Molecular+Epi+in+R%22"
+  author_or_organization: "Landing page not verified"
+  resource_type: course-or-notes
+  authority_type: uncertain
+  topics: [molecular-epidemiology, R]
+  license: "Not verified"
+  access_date: 2026-08-05
+  relevant_sections: [molecular-epidemiology]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Seed entry retained for later identification."
+- id: intro-gis-spatial
+  title: "Intro to GIS and Spatial Analysis"
+  url: "https://mgimond.github.io/Spatial/index.html"
+  author_or_organization: "Michael G. Immond"
+  resource_type: course-notes
+  authority_type: academic-instructor
+  topics: [GIS, spatial, R]
+  license: "Not verified"
+  access_date: 2026-08-05
+  relevant_sections: [GIS, spatial-data-manipulation]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Course notes introducing GIS and spatial analysis."
+- id: ecosystem-forecasting
+  title: "A Practical Guide to Ecosystem Forecasting"
+  url: "https://ecoforecast.org/"
+  author_or_organization: "Ecological Forecasting Initiative"
+  resource_type: guide
+  authority_type: research-community
+  topics: [forecasting, ecology]
+  license: "Not verified"
+  access_date: 2026-08-05
+  relevant_sections: [forecasting, workflow]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Community entry point for ecological forecasting practice."
+- id: computational-genomics-manual
+  title: "Computational Genomics Manual"
+  url: "https://www.ncbi.nlm.nih.gov/books/"
+  author_or_organization: "NCBI Bookshelf"
+  resource_type: manual
+  authority_type: government-library
+  topics: [genomics, workflows]
+  license: "Varies by work; not verified"
+  access_date: 2026-08-05
+  relevant_sections: [genomic-workflows]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Seed entry requiring identification of the intended manual."
+- id: spatial-data-processing-r
+  title: "Spatial Data Processing with R"
+  url: "https://cran.r-project.org/web/views/Spatial.html"
+  author_or_organization: "CRAN Spatial Task View"
+  resource_type: task-view
+  authority_type: community-maintained
+  topics: [spatial, R, data-processing]
+  license: "Varies by linked resource"
+  access_date: 2026-08-05
+  relevant_sections: [spatial-data-processing]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Index of R packages and resources for spatial data work."
+- id: geocomputation-with-r
+  title: "Geocomputation with R"
+  url: "https://r.geocompx.org/"
+  author_or_organization: "Robin Lovelace, Jakub Nowosad, Jannes Muenchow"
+  resource_type: open-textbook
+  authority_type: academic-community
+  topics: [spatial, R, reproducibility]
+  license: "Open-source terms; verify current edition"
+  access_date: 2026-08-05
+  relevant_sections: [geographic-data, visualization, modeling]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Open book for geographic data analysis, visualization, and modeling."
+- id: network-analysis-integrating
+  title: "Network Analysis: Integrating Social Network Theory, Method, and Application with R"
+  url: "https://www.routledge.com/"
+  author_or_organization: "Routledge"
+  resource_type: book
+  authority_type: academic-publisher
+  topics: [networks, R]
+  license: "Copyrighted; exact landing page not verified"
+  access_date: 2026-08-05
+  relevant_sections: [network-theory, network-methods]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Seed for theory-to-application network analysis in R."
+- id: turing-way
+  title: "The Turing Way"
+  url: "https://book.the-turing-way.org/"
+  author_or_organization: "The Turing Way Community"
+  resource_type: open-handbook
+  authority_type: research-community
+  topics: [reproducibility, collaboration, open-research]
+  license: "CC BY 4.0; verify chapter-specific terms"
+  access_date: 2026-08-05
+  relevant_sections: [project-design, sharing, collaboration]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Community handbook on reproducible, ethical, collaborative data science."
+- id: good-enough-practices
+  title: "Good Enough Practices in Scientific Computing"
+  url: "https://arxiv.org/abs/1609.00037"
+  author_or_organization: "Wilson et al."
+  resource_type: paper
+  authority_type: peer-reviewed-or-preprint
+  topics: [scientific-computing, reproducibility]
+  license: "Not verified"
+  access_date: 2026-08-05
+  relevant_sections: [project-organization, version-control]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Compact recommendations for dependable scientific computing."
+- id: tier-protocol
+  title: "TIER Protocol"
+  url: "https://www.projecttier.org/tier-protocol/"
+  author_or_organization: "Project TIER"
+  resource_type: protocol
+  authority_type: research-organization
+  topics: [replication, data, code]
+  license: "Not verified"
+  access_date: 2026-08-05
+  relevant_sections: [replication-package, documentation]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Protocol for transparent empirical research workflows."
+- id: rdmkit
+  title: "RDMkit"
+  url: "https://rdmkit.elixir-europe.org/"
+  author_or_organization: "ELIXIR Europe"
+  resource_type: guide
+  authority_type: infrastructure-community
+  topics: [research-data-management, FAIR]
+  license: "CC BY 4.0; verify"
+  access_date: 2026-08-05
+  relevant_sections: [data-management, FAIR]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Role- and task-oriented research data-management guidance."
+- id: dataone-best-practices
+  title: "DataONE Best Practices"
+  url: "https://dataone.org/best-practices/"
+  author_or_organization: "DataONE"
+  resource_type: guide
+  authority_type: data-infrastructure
+  topics: [data-management, metadata, preservation]
+  license: "Not verified"
+  access_date: 2026-08-05
+  relevant_sections: [data-life-cycle, metadata]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Practical guidance for managing and preserving research data."
+- id: fair-principles
+  title: "FAIR Principles"
+  url: "https://www.go-fair.org/fair-principles/"
+  author_or_organization: "GO FAIR"
+  resource_type: principles
+  authority_type: research-community
+  topics: [FAIR, data-stewardship]
+  license: "Not verified"
+  access_date: 2026-08-05
+  relevant_sections: [findability, accessibility, interoperability, reuse]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Vocabulary for making digital research assets more reusable."
+- id: fair-research-software
+  title: "FAIR Principles for Research Software"
+  url: "https://fair-software.eu/"
+  author_or_organization: "FAIR-Software.eu"
+  resource_type: principles
+  authority_type: research-community
+  topics: [FAIR, research-software]
+  license: "Not verified"
+  access_date: 2026-08-05
+  relevant_sections: [software-quality, citation, reuse]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Software-focused FAIR-oriented quality and reuse practices."
+- id: care-principles
+  title: "CARE Principles for Indigenous Data Governance"
+  url: "https://www.gida-global.org/care"
+  author_or_organization: "Global Indigenous Data Alliance"
+  resource_type: principles
+  authority_type: Indigenous-governance-organization
+  topics: [CARE, ethics, Indigenous-data]
+  license: "Not verified"
+  access_date: 2026-08-05
+  relevant_sections: [collective-benefit, authority, responsibility, ethics]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Governance lens for collective benefit, authority, responsibility, and ethics."
+- id: usda-nal-data-management
+  title: "USDA National Agricultural Library data-management guidance"
+  url: "https://www.nal.usda.gov/research-tools/data-management"
+  author_or_organization: "USDA National Agricultural Library"
+  resource_type: guidance
+  authority_type: government
+  topics: [data-management, agriculture]
+  license: "Government guidance; verify page terms"
+  access_date: 2026-08-05
+  relevant_sections: [data-management-plans, stewardship]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Government starting point for agricultural data-management planning."
+- id: cdc-field-epi-manual
+  title: "CDC Field Epidemiology Manual data-management guidance"
+  url: "https://www.cdc.gov/field-epi-manual/php/chapters/data-management.html"
+  author_or_organization: "Centers for Disease Control and Prevention"
+  resource_type: manual
+  authority_type: government
+  topics: [epidemiology, data-management, field-epi]
+  license: "U.S. government work; verify page terms"
+  access_date: 2026-08-05
+  relevant_sections: [data-management]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Field-epidemiology guidance for organizing and protecting operational data."
+- id: fgdc-metadata
+  title: "FGDC geospatial metadata guidance"
+  url: "https://www.fgdc.gov/metadata"
+  author_or_organization: "Federal Geographic Data Committee"
+  resource_type: standard
+  authority_type: government-standard
+  topics: [geospatial, metadata]
+  license: "Government guidance; verify current status"
+  access_date: 2026-08-05
+  relevant_sections: [geospatial-metadata]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Standards-oriented entry point for describing geospatial data."
+- id: gbif-georeferencing
+  title: "GBIF georeferencing guidance"
+  url: "https://docs.gbif.org/georeferencing-best-practices/"
+  author_or_organization: "GBIF"
+  resource_type: best-practices
+  authority_type: biodiversity-infrastructure
+  topics: [georeferencing, biodiversity, spatial]
+  license: "Not verified"
+  access_date: 2026-08-05
+  relevant_sections: [georeferencing, uncertainty]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Guidance for documented coordinates and georeferencing uncertainty."
+- id: eml
+  title: "Ecological Metadata Language"
+  url: "https://knb.ecoinformatics.org/external/"
+  author_or_organization: "Ecological Metadata Language community"
+  resource_type: metadata-standard
+  authority_type: community-standard
+  topics: [ecology, metadata, interoperability]
+  license: "Not verified"
+  access_date: 2026-08-05
+  relevant_sections: [dataset-description, ecological-context]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Structured metadata language for ecological datasets and observations."
+- id: ecological-forecasting-initiative
+  title: "Ecological Forecasting Initiative standards"
+  url: "https://ecoforecast.org/"
+  author_or_organization: "Ecological Forecasting Initiative"
+  resource_type: community-standards
+  authority_type: research-community
+  topics: [ecological-forecasting, standards, reproducibility]
+  license: "Not verified"
+  access_date: 2026-08-05
+  relevant_sections: [forecasting-workflows, standards]
+  local_research_note: null
+  review_status: metadata-needs-verification
+  description: "Community standards and practices for repeatable ecological forecasting."

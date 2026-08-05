@@ -1,0 +1,38 @@
+---
+title: "Minimum GeoEpi Standard"
+description: "A provisional baseline for making a project understandable and recoverable."
+status: draft
+practice-level: minimum
+audience: all lab members
+domains: [all]
+topics: [documentation, provenance, handoff]
+owner: GeoEpi Lab
+last-reviewed: 2026-08-05
+review-cycle: annual
+sidebar: start
+---
+
+::: {.callout-warning}
+The items below are a proposed baseline for review, not an approved requirement.
+:::
+
+## Why this matters
+
+A small, consistent record of purpose, inputs, decisions, and outputs is often more valuable than a large but unexplained project folder.
+
+## Proposed baseline
+
+1. A README states the question, scope, owner, status, and how to orient a newcomer.
+2. Raw or received data are preserved separately from derived data, respecting access restrictions.
+3. Important inputs have a source, acquisition date, and processing note.
+4. Analysis steps and assumptions are recorded in version-controlled text where feasible.
+5. Key outputs identify the code, data, software environment, and review status used to create them.
+6. Limitations, unresolved questions, and next actions are visible.
+
+## Checklist
+
+- [ ] Question, scope, and decision context are stated.
+- [ ] Data provenance and permissions are recorded.
+- [ ] Project structure is documented.
+- [ ] Important transformations are traceable.
+- [ ] A second person can find the current result and its caveats.

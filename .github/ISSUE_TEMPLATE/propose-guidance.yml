@@ -1,0 +1,18 @@
+name: Propose new guidance
+description: Suggest a new draft guidance page or topic
+title: "Propose guidance: "
+labels: [guidance]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: Practice need
+      description: What recurring decision, risk, or gap should this address?
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Evidence or source basis
+    validations:
+      required: true

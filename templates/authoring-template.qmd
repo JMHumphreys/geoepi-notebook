@@ -1,0 +1,58 @@
+---
+title: "Guidance Page Authoring Template"
+description: "A reusable, non-substantive template for future Lab Book pages."
+status: template
+practice-level: example
+audience: contributors
+domains: [all]
+topics: [authoring, metadata]
+owner: GeoEpi Lab
+last-reviewed: 2026-08-05
+review-cycle: annual
+---
+
+::: {.callout-note}
+## Template only
+
+Replace bracketed prompts. This page is not lab guidance and should not be cited as a requirement.
+:::
+
+## Why this matters
+
+[Describe the decision, risk, or recurring problem in original language.]
+
+## Minimum lab practice
+
+[Describe the smallest proportionate practice. Label it draft until approved.]
+
+## Recommended practice
+
+[Describe a stronger default and when it is useful.]
+
+## Stronger practice
+
+[Describe additional assurance, automation, or review for higher-risk work.]
+
+## Common failure modes
+
+- [Failure mode and consequence]
+- [Failure mode and consequence]
+
+## Checklist
+
+- [ ] [Actionable check]
+- [ ] [Actionable check]
+
+## Templates and examples
+
+[Link to related internal templates or clearly labeled examples.]
+
+## Sources
+
+[Add citations and access dates. Do not copy source text.]
+
+## Metadata convention
+
+Required front matter: `title`, `description`, `status`, `practice-level`, `audience`, `domains`, `topics`, `owner`, `last-reviewed`, and `review-cycle`.
+
+Recommended values are `draft | proposed | approved | retired | template` for status; `orientation | minimum | recommended | stronger | example` for practice level; and `annual | semiannual | event-driven` for review cycle. Dates use ISO 8601 (`YYYY-MM-DD`); tags are lowercase and concise. `approved` requires an explicit lab review decision.

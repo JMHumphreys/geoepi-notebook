@@ -1,0 +1,16 @@
+---
+title: "Lab Standards"
+description: "The future home of explicitly reviewed GeoEpi Lab requirements."
+status: draft
+practice-level: orientation
+audience: all lab members
+domains: [all]
+topics: [standards, governance]
+owner: GeoEpi Lab
+last-reviewed: 2026-08-05
+review-cycle: annual
+---
+
+This section is reserved for decisions that the lab has reviewed and adopted. Draft guidance elsewhere should not be treated as a standard by implication.
+
+A future standard should state its scope, rationale, owner, effective date, review cycle, exceptions process, and relationship to institutional or funder requirements.
