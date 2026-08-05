@@ -1,0 +1,17 @@
+name: Report a site problem
+description: Report a broken link, rendering issue, or accessibility problem
+title: "Site problem: "
+labels: [site]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Page URL or path
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What happened?
+    validations:
+      required: true

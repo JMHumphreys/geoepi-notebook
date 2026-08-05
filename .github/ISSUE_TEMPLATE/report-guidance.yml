@@ -1,0 +1,17 @@
+name: Report incorrect or outdated guidance
+description: Report a factual, methodological, or currency problem
+title: "Review guidance: "
+labels: [review]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page URL or path
+    validations:
+      required: true
+  - type: textarea
+    id: concern
+    attributes:
+      label: Concern and suggested correction
+    validations:
+      required: true

@@ -1,0 +1,12 @@
+name: Request a template
+description: Suggest a reusable project or documentation template
+title: "Request template: "
+labels: [template]
+body:
+  - type: textarea
+    id: use
+    attributes:
+      label: Intended use
+      description: Who would use it and what work would it support?
+    validations:
+      required: true
