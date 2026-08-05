@@ -1,0 +1,100 @@
+---
+title: "GeoEpi Practice Audit"
+description: "Informational audit of organization materials and representative GeoEpi repositories used to inform the proposed minimum standard."
+status: internal-draft
+practice-level: informational
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - project-management
+  - reproducibility
+  - documentation
+owner: unassigned
+last-reviewed: 2026-08-05
+review-cycle: annual
+---
+
+::: {.callout-warning}
+## Internal draft
+
+This is an informational practice audit, not a quality score, ranking, or assessment of scientific correctness. It records observable repository and website practices and requires human review.
+:::
+
+## Review boundary
+
+The audit reviewed the GeoEpi organization profile, the public organization website repository, the organization `.github` repository, the public `Notebook` repository, and eight purposively selected research repositories. The review date was 2026-08-05. The machine-readable observations are in [`standards/data/geoepi-repository-audit.csv`](data/geoepi-repository-audit.csv).
+
+The review examined documentation and repository artifacts only. A `yes` means that an artifact was visible and usable enough for this limited review; `partial`, `unclear`, and `no` do not imply that a practice is absent from private archives, external services, or project knowledge.
+
+## Organization references
+
+The [GeoEpi organization profile](https://github.com/geoepi) describes work on animal disease transmission and outbreak dynamics and links the group website and research notebook. The profile describes the Notebook as a living resource for reproducible science in scientific computing, coding, data management, and modeling, and explicitly says it is not a compendium of rigid requirements. The [organization `.github` profile](https://github.com/geoepi/.github) repeats this scope and points to OSF for project management, storage, version control, and archival support.
+
+The organization website was reviewed for navigation, typography, neutral colors, logo/favicon assets, and the distinction between a research-group homepage and an operational notebook. Its research scope spans statistical and mathematical modeling, bioinformatics, artificial intelligence, and molecular-to-landscape scales. These observations inform limited visual continuity; they do not authorize copying the website structure or branding wholesale.
+
+## Repositories reviewed
+
+| Repository | Workflow represented | Observable practices used as evidence |
+|---|---|---|
+| [EpiPlume](https://github.com/geoepi/EpiPlume) | Plume, spatial, targets, and HPC | README, configuration, rendered documentation, Slurm scripts, run manifests, provenance-like ledgers, and tests |
+| [hominivorax-geostat](https://github.com/geoepi/hominivorax-geostat) | Spatial geostatistical model | README structure map, Quarto pages, R scripts, rendered site, and OSF archive link |
+| [vs-epizootics](https://github.com/geoepi/vs-epizootics) | Spatiotemporal and phylogenetic analysis | README, Quarto site, data assets, OSF archive link, publication link, and MIT license |
+| [WNV-genomics](https://github.com/geoepi/WNV-genomics) | Genomics analysis | Minimal README, scripts, sequence alignments, summary data, and source files |
+| [seir-vector](https://github.com/geoepi/seir-vector) | Epidemiological and mathematical model | README, R model code, Stan code, rendered diagnostics, Shiny app, OSF archive link, and GPL-3.0 license |
+| [FMD-preclinical-spread](https://github.com/geoepi/FMD-preclinical-spread) | Epidemiological model and report | README, R scripts, Quarto sources, rendered sites, and OSF archive link |
+| [vsv-2023](https://github.com/geoepi/vsv-2023) | Outbreak model and report | README, R scripts, model report, and rendered figures |
+| [phylo-tutorial](https://github.com/geoepi/phylo-tutorial) | Genomics/phylogenetics tutorial and HPC | README, exercises, FASTA data, BEAST configuration, Slurm scripts, cluster logs, and rendered overview |
+
+## Workflow types represented
+
+The sample covers spatial and spatiotemporal analysis, outbreak and surveillance analysis, ecological or field-adjacent data, genomics and phylogenetics, mathematical and simulation models, rendered supporting-information sites, interactive applications, and high-performance computing. That diversity supports a project standard based on traceability and handoff rather than a single folder tree or software stack.
+
+## Recurring strengths
+
+Across the sample, the most reusable strengths were:
+
+- a project-level README that states a research purpose or links to a paper;
+- R scripts grouped in a recognizable location;
+- rendered Quarto or HTML documentation for project outputs;
+- links to OSF or another external archive for large or supporting material;
+- explicit configuration files, manifests, workflow orchestration, or batch scripts in the more computationally intensive projects;
+- project-specific assets such as spatial layers, sequences, model objects, or rendered figures kept near the workflow that uses them;
+- demonstrable links between public code, supporting information, and publications in several projects.
+
+These are observed practices, not proof that the underlying analyses are correct. The proposed standard treats purpose, provenance, traceability, and handoff as the common layer and leaves tools proportional to project needs.
+
+## Recurring documentation gaps
+
+The sample showed inconsistent or hard-to-find records for software environments, data classification and restrictions, source-to-derived transformations, checksums or acquisition dates, output/run inventories, decision history, tests and CI, citation metadata, licenses, and closeout/handoff status. Several repositories contain useful rendered products but do not make the authoritative source, current execution path, or reproducibility boundary obvious from the top-level README.
+
+These are aggregate observations from a limited public snapshot. A gap means that the item was not readily discoverable during this review; it does not mean that project members have not documented it elsewhere.
+
+## Practices mature enough to standardize
+
+The following are sufficiently cross-cutting to propose as minimum requirements: project identity and ownership; a current README; documented separation of source, staged, derived, code, configuration, documentation, outputs, logs, and temporary material; source-data protection; data provenance; data classification; data dictionaries; retained scripted transformations; version control with explicit exclusions; proportional environment records; explicit consequential parameters; quality checks appropriate to the workflow; result traceability; durable decision records; release readiness; and handoff/closeout records.
+
+## Recommended rather than universal
+
+The following should remain recommended or conditional: one universal directory tree; `renv` for every R project; containers; continuous integration; unit-test coverage; workflow orchestration; formal metadata standards such as EML; checksums for every file; public release of data; notebooks as the primary execution format; OSF or any one storage provider; and a specific HPC scheduler. They become conditionally required when project sensitivity, scale, operational consequence, computational cost, publication commitments, or handoff risk makes them necessary.
+
+## Repository-specific patterns not generalized
+
+Targets and Slurm manifest ledgers in EpiPlume, BEAST XML and cluster scripts in phylo-tutorial, Shiny delivery in seir-vector, and publication-oriented rendered sites in several repositories are valuable patterns but are not universal minimums. A repository may use Quarto, R Markdown, a workflow engine, a scheduler, a database, a notebook, or a scripted command-line entry point when the chosen path is documented and traceable.
+
+## Discrepancies and unresolved interpretation
+
+Repositories differ in default branch name, whether rendered output is committed, where data are stored, whether a project is a tutorial or publication package, and whether an external archive is part of the authoritative workflow. Public repositories also expose only a subset of access-controlled data and institutional records. Human review is needed to decide institutional terminology for data classification, approved storage and retention, release review, licensing, authorship, and exception authority. These decisions are collected in [Open policy decisions](open-policy-decisions.qmd).
+
+## External guidance used for comparison
+
+The external comparison used the existing [resource catalog](../resources/index.qmd), with access dates recorded there and here. The [Turing Way](https://book.the-turing-way.org/) emphasizes reproducible research, version control, data management, documentation, testing, review, and collaboration as connected practices. [Good Enough Practices in Scientific Computing](https://arxiv.org/abs/1609.00037) provides a deliberately pragmatic baseline for research computing. [TIER Protocol 4.0](https://www.projecttier.org/tier-protocol/) provides a replication-documentation model, while [RDMkit](https://rdmkit.elixir-europe.org/) organizes FAIR-oriented data management by lifecycle, role, domain, task, and tools.
+
+The [FAIR Principles](https://www.go-fair.org/fair-principles/) and [FAIR Principles for Research Software](https://fair-software.eu/) support findability, accessibility, interoperability, reuse, software quality, and citation. The [CARE Principles](https://www.gida-global.org/care) add collective benefit, authority to control, responsibility, and ethics for Indigenous data. Government and domain-specific comparison points include [USDA NAL data-management guidance](https://www.nal.usda.gov/research-tools/data-management), the [CDC Field Epidemiology Manual](https://www.cdc.gov/field-epi-manual/php/chapters/data-management.html), [FGDC metadata guidance](https://www.fgdc.gov/metadata), [GBIF georeferencing best practices](https://docs.gbif.org/georeferencing-best-practices/), [Ecological Metadata Language](https://knb.ecoinformatics.org/external/), and [Ecological Forecasting Initiative standards](https://ecoforecast.org/).
+
+These sources are guidance, standards, or community practices—not institutional policy. Where they conflict with USDA, laboratory, information-security, records-management, contractual, privacy, or data-governance requirements, the authoritative requirement controls and the project records the constraint.
+
+## Limitations
+
+This is a point-in-time review of public repository material, not an audit of access-controlled archives, computational execution, scientific validity, or compliance. The CSV is intentionally descriptive and must not be used to score or rank repositories.
