@@ -11,6 +11,10 @@ last-reviewed: 2026-08-05
 review-cycle: annual
 ---
 
-This section is reserved for decisions that the lab has reviewed and adopted. Draft guidance elsewhere should not be treated as a standard by implication.
+This section contains proposed and reviewed decisions. Draft guidance should not be treated as approved policy by implication.
+
+- [Minimum GeoEpi Project Standard](../start/minimum-standard.qmd) — proposed draft policy requiring review.
+- [GeoEpi Practice Audit](geoepi-practice-audit.qmd) — internal-draft, informational repository audit.
+- [Open Policy Decisions](open-policy-decisions.qmd) — unresolved questions requiring human approval.
 
 A future standard should state its scope, rationale, owner, effective date, review cycle, exceptions process, and relationship to institutional or funder requirements.

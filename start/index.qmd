@@ -19,4 +19,4 @@ Use this section when starting a project, inheriting one, or trying to make an e
 - [Rescuing an Existing Project](rescue-project.qmd)
 - [Project Handoff](handoff.qmd)
 
-These are provisional foundations for discussion, not approved lab policy.
+The [Minimum GeoEpi Project Standard](minimum-standard.qmd) is a proposed draft policy requiring human review. The supporting pages are practical guidance, not approved lab policy.
