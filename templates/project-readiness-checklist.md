@@ -29,6 +29,6 @@
 - [ ] Final/authoritative version and archive or retention decision are named.
 - [ ] Handoff or closeout owner and date are recorded.
 
-**Reviewer:**  
-**Date:**  
+**Reviewer:**
+**Date:**
 **Exceptions:**
