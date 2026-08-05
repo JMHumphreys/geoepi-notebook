@@ -1,0 +1,240 @@
+[
+  {
+    "objectID": "about/contributing.html",
+    "href": "about/contributing.html",
+    "title": "Contributing",
+    "section": "",
+    "text": "See CONTRIBUTING.md for the repository workflow. Propose changes on a branch, preserve metadata, write in your own words, cite the evidence or source basis, and request review when a change could affect a lab requirement.\n\n\n\n\n\n\nWarning\n\n\n\nUntil governance is finalized, a pull request can improve draft text but cannot by itself turn it into an approved lab requirement."
+  },
+  {
+    "objectID": "about/how-to-use.html",
+    "href": "about/how-to-use.html",
+    "title": "How to Use This Site",
+    "section": "",
+    "text": "Start with Start Here, then use the lifecycle pages in Research Practices and the domain index when a project has specialized needs.\n\n\n\n\n\n\nRead the labels\n\n\n\nRequired, Recommended, and Optional describe the intended strength of a practice. Draft guidance signals material that has not been approved as lab policy. Example demonstrates a pattern without imposing it.\n\n\nPages include review metadata near the top. Use the repository actions to view or edit source, or report a problem. A page’s owner coordinates review; it is not automatically the sole author."
+  },
+  {
+    "objectID": "about/purpose.html",
+    "href": "about/purpose.html",
+    "title": "Purpose of the Lab Book",
+    "section": "",
+    "text": "Geographical epidemiology joins data, place, time, biology, and models. Small undocumented choices can change an analysis, while staff changes and long timelines can make a sound result difficult to recover."
+  },
+  {
+    "objectID": "about/purpose.html#what-this-site-is-for",
+    "href": "about/purpose.html#what-this-site-is-for",
+    "title": "Purpose of the Lab Book",
+    "section": "What this site is for",
+    "text": "What this site is for\nThe Lab Book will collect concise, reviewable guidance for planning, acquiring, organizing, analyzing, validating, collaborating, communicating, and preserving research. It will point to templates and external resources without replacing primary methods papers, data-use agreements, or formal institutional policies."
+  },
+  {
+    "objectID": "about/purpose.html#what-this-site-is-not",
+    "href": "about/purpose.html#what-this-site-is-not",
+    "title": "Purpose of the Lab Book",
+    "section": "What this site is not",
+    "text": "What this site is not\nThis is not a complete textbook, a substitute for scientific judgment, or an approved policy register. Requirements will be labeled and approved explicitly; until then, content is draft guidance."
+  },
+  {
+    "objectID": "domains/index.html",
+    "href": "domains/index.html",
+    "title": "Domain Guidance",
+    "section": "",
+    "text": "Future guidance will connect general research practices to the risks and conventions of spatial, epidemiological, ecological, genomic, and modeling work. Potential topics include coordinate reference systems, geocoding, case definitions, sampling and detection, genomic provenance, model checking, uncertainty, and responsible communication.\nDomain pages should be developed with subject-matter review and should not be inferred from the resource catalog alone."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "GeoEpi Lab Book",
+    "section": "",
+    "text": "Draft guidance\n\n\n\nThis is an initial information-architecture pass. It describes intended practices and future content; it does not establish approved laboratory policy.\nWelcome to the GeoEpi Lab Book, a shared place for practices that help geographical epidemiology remain understandable, defensible, reproducible, and transferable across people, projects, and time."
+  },
+  {
+    "objectID": "index.html#find-your-next-step",
+    "href": "index.html#find-your-next-step",
+    "title": "GeoEpi Lab Book",
+    "section": "Find your next step",
+    "text": "Find your next step\n\nStart Here for a minimum standard, new-project setup, rescue work, and handoff.\nResearch Practices for the lifecycle from planning through preservation.\nDomain Guidance for spatial, epidemiological, ecological, genomic, and modeling topics.\nLab Standards for future lab-level decisions.\nTemplates for reusable project and documentation structures.\nResources for an annotated external catalog.\n\nThe intended outcome is that a lab member can join a project, understand what was done and why, reproduce an important result where access permits, identify uncertainty, and continue the work without relying on undocumented memory."
+  },
+  {
+    "objectID": "practices/index.html",
+    "href": "practices/index.html",
+    "title": "Research Practices",
+    "section": "",
+    "text": "This section will grow around the research lifecycle:\nplan → acquire → organize → analyze → validate → collaborate → communicate → preserve\nEach topic will distinguish minimum, recommended, and stronger practices, with examples and templates. Initial topic pages are deferred until they can be written from reviewed lab decisions rather than generic filler."
+  },
+  {
+    "objectID": "resources/index.html",
+    "href": "resources/index.html",
+    "title": "Resources",
+    "section": "",
+    "text": "The resource catalog records external starting points without turning them into lab policy. Annotations are intentionally short and original. Check the source landing page, license, version, and access conditions before relying on a resource.\nEach entry has a stable ID, title, URL, author or organization, resource and authority types, topic tags, license, access date, relevant sections, a local research-note path, review status, and a short annotation. Unknown or unverified values are marked explicitly.\n\n\n\n\n\n\nWarning\n\n\n\nCatalog inclusion is not endorsement. Resources may be useful, outdated, inaccessible, or governed by licenses that limit reuse.\n\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Description\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\nDescription\n\n\nAuthor\n\n\nCategories\n\n\n\n\n\n\nA Primer of Ecology with R\n\n\nQuantitative ecology concepts and R-based models.\n\n\n\n\n\n\n\n\nLandscape Genetic Data Analysis with R\n\n\nSeed entry for landscape-genetics workflows.\n\n\n\n\n\n\n\n\nQuantitative Biology\n\n\nBroad seed entry requiring exact title and edition verification.\n\n\n\n\n\n\n\n\nComparative Methods\n\n\nSeed entry for comparative analysis.\n\n\n\n\n\n\n\n\nSpatial Data Science\n\n\nStarting point for spatial analysis concepts and tools.\n\n\n\n\n\n\n\n\nStatistical Rethinking\n\n\nModel-centered introduction to Bayesian reasoning.\n\n\n\n\n\n\n\n\nApplied Population Genetics\n\n\nSeed entry requiring title and edition confirmation.\n\n\n\n\n\n\n\n\nThe Epidemiologist R Handbook\n\n\nTask-oriented R reference for applied epidemiology.\n\n\n\n\n\n\n\n\nNetwork Analysis in R\n\n\nSeed entry for network analysis workflows in R.\n\n\n\n\n\n\n\n\nMolecular Epi in R\n\n\nSeed entry retained for later identification.\n\n\n\n\n\n\n\n\nIntro to GIS and Spatial Analysis\n\n\nCourse notes introducing GIS and spatial analysis.\n\n\n\n\n\n\n\n\nA Practical Guide to Ecosystem Forecasting\n\n\nCommunity entry point for ecological forecasting practice.\n\n\n\n\n\n\n\n\nComputational Genomics Manual\n\n\nSeed entry requiring identification of the intended manual.\n\n\n\n\n\n\n\n\nSpatial Data Processing with R\n\n\nIndex of R packages and resources for spatial data work.\n\n\n\n\n\n\n\n\nGeocomputation with R\n\n\nOpen book for geographic data analysis, visualization, and modeling.\n\n\n\n\n\n\n\n\nNetwork Analysis: Integrating Social Network Theory, Method, and Application with R\n\n\nSeed for theory-to-application network analysis in R.\n\n\n\n\n\n\n\n\nThe Turing Way\n\n\nCommunity handbook on reproducible, ethical, collaborative data science.\n\n\n\n\n\n\n\n\nGood Enough Practices in Scientific Computing\n\n\nCompact recommendations for dependable scientific computing.\n\n\n\n\n\n\n\n\nTIER Protocol\n\n\nProtocol for transparent empirical research workflows.\n\n\n\n\n\n\n\n\nRDMkit\n\n\nRole- and task-oriented research data-management guidance.\n\n\n\n\n\n\n\n\nDataONE Best Practices\n\n\nPractical guidance for managing and preserving research data.\n\n\n\n\n\n\n\n\nFAIR Principles\n\n\nVocabulary for making digital research assets more reusable.\n\n\n\n\n\n\n\n\nFAIR Principles for Research Software\n\n\nSoftware-focused FAIR-oriented quality and reuse practices.\n\n\n\n\n\n\n\n\nCARE Principles for Indigenous Data Governance\n\n\nGovernance lens for collective benefit, authority, responsibility, and ethics.\n\n\n\n\n\n\n\n\nUSDA National Agricultural Library data-management guidance\n\n\nGovernment starting point for agricultural data-management planning.\n\n\n\n\n\n\n\n\nCDC Field Epidemiology Manual data-management guidance\n\n\nField-epidemiology guidance for organizing and protecting operational data.\n\n\n\n\n\n\n\n\nFGDC geospatial metadata guidance\n\n\nStandards-oriented entry point for describing geospatial data.\n\n\n\n\n\n\n\n\nGBIF georeferencing guidance\n\n\nGuidance for documented coordinates and georeferencing uncertainty.\n\n\n\n\n\n\n\n\nEcological Metadata Language\n\n\nStructured metadata language for ecological datasets and observations.\n\n\n\n\n\n\n\n\nEcological Forecasting Initiative standards\n\n\nCommunity standards and practices for repeatable ecological forecasting.\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "standards/index.html",
+    "href": "standards/index.html",
+    "title": "Lab Standards",
+    "section": "",
+    "text": "This section is reserved for decisions that the lab has reviewed and adopted. Draft guidance elsewhere should not be treated as a standard by implication.\nA future standard should state its scope, rationale, owner, effective date, review cycle, exceptions process, and relationship to institutional or funder requirements."
+  },
+  {
+    "objectID": "start/handoff.html",
+    "href": "start/handoff.html",
+    "title": "Project Handoff",
+    "section": "",
+    "text": "A handoff is complete when the next person can orient themselves, reproduce the current key result where access permits, and see what remains uncertain."
+  },
+  {
+    "objectID": "start/handoff.html#handoff-packet",
+    "href": "start/handoff.html#handoff-packet",
+    "title": "Project Handoff",
+    "section": "Handoff packet",
+    "text": "Handoff packet\n\npurpose, scope, stakeholders, and current status;\nREADME and directory map;\ndata inventory, provenance, permissions, and retention notes;\ncurrent analysis path and software/environment notes;\nkey outputs with dates, versions, and interpretation limits;\ndecision log, open issues, and recommended next actions;\nnamed owner for the next review.\n\n\n\n\n\n\n\nTip\n\n\n\nAsk the recipient to perform an orientation walkthrough and one small reproduction check. Update the handoff note with what they could and could not recover."
+  },
+  {
+    "objectID": "start/index.html",
+    "href": "start/index.html",
+    "title": "Start Here",
+    "section": "",
+    "text": "Use this section when starting a project, inheriting one, or trying to make an existing project recoverable.\n\nMinimum GeoEpi Standard\nStarting a New Project\nRescuing an Existing Project\nProject Handoff\n\nThese are provisional foundations for discussion, not approved lab policy."
+  },
+  {
+    "objectID": "start/minimum-standard.html",
+    "href": "start/minimum-standard.html",
+    "title": "Minimum GeoEpi Standard",
+    "section": "",
+    "text": "Warning\n\n\n\nThe items below are a proposed baseline for review, not an approved requirement."
+  },
+  {
+    "objectID": "start/minimum-standard.html#why-this-matters",
+    "href": "start/minimum-standard.html#why-this-matters",
+    "title": "Minimum GeoEpi Standard",
+    "section": "Why this matters",
+    "text": "Why this matters\nA small, consistent record of purpose, inputs, decisions, and outputs is often more valuable than a large but unexplained project folder."
+  },
+  {
+    "objectID": "start/minimum-standard.html#proposed-baseline",
+    "href": "start/minimum-standard.html#proposed-baseline",
+    "title": "Minimum GeoEpi Standard",
+    "section": "Proposed baseline",
+    "text": "Proposed baseline\n\nA README states the question, scope, owner, status, and how to orient a newcomer.\nRaw or received data are preserved separately from derived data, respecting access restrictions.\nImportant inputs have a source, acquisition date, and processing note.\nAnalysis steps and assumptions are recorded in version-controlled text where feasible.\nKey outputs identify the code, data, software environment, and review status used to create them.\nLimitations, unresolved questions, and next actions are visible."
+  },
+  {
+    "objectID": "start/minimum-standard.html#checklist",
+    "href": "start/minimum-standard.html#checklist",
+    "title": "Minimum GeoEpi Standard",
+    "section": "Checklist",
+    "text": "Checklist\n\nQuestion, scope, and decision context are stated.\nData provenance and permissions are recorded.\nProject structure is documented.\nImportant transformations are traceable.\nA second person can find the current result and its caveats."
+  },
+  {
+    "objectID": "start/new-project.html",
+    "href": "start/new-project.html",
+    "title": "Starting a New Project",
+    "section": "",
+    "text": "Early decisions about scope, ownership, data access, and outputs prevent avoidable rework."
+  },
+  {
+    "objectID": "start/new-project.html#suggested-sequence",
+    "href": "start/new-project.html#suggested-sequence",
+    "title": "Starting a New Project",
+    "section": "Suggested sequence",
+    "text": "Suggested sequence\n\nWrite a project brief: question, population, geography, time period, outcomes, stakeholders, and intended outputs.\nIdentify data stewards, permissions, privacy constraints, and retention expectations before acquisition.\nCreate a version-controlled project skeleton with a README, metadata, and decision log.\nRecord the analysis plan and distinguish exploratory from confirmatory work.\nDefine validation checks and a handoff point before analysis begins.\nReview the setup with a collaborator not involved in the initial design."
+  },
+  {
+    "objectID": "start/new-project.html#checklist",
+    "href": "start/new-project.html#checklist",
+    "title": "Starting a New Project",
+    "section": "Checklist",
+    "text": "Checklist\n\nProject brief and scope are reviewable.\nRoles and decision rights are named.\nData access and ethical constraints are documented.\nPlanned outputs and validation are explicit."
+  },
+  {
+    "objectID": "start/rescue-project.html",
+    "href": "start/rescue-project.html",
+    "title": "Rescuing an Existing Project",
+    "section": "",
+    "text": "Trying to perfect an inherited project before understanding it can destroy useful context. Rescue begins with a safe inventory and a clear uncertainty record."
+  },
+  {
+    "objectID": "start/rescue-project.html#triage-sequence",
+    "href": "start/rescue-project.html#triage-sequence",
+    "title": "Rescuing an Existing Project",
+    "section": "Triage sequence",
+    "text": "Triage sequence\n\nFreeze and preserve the current state; do not silently overwrite inputs or outputs.\nInventory files, scripts, data locations, access constraints, environments, and recent results.\nAsk the previous owner or stakeholders what is trusted, provisional, or broken.\nReconstruct the smallest defensible path from an input to a named result.\nRecord gaps as risks and choose a stopping point for rescue work.\nCreate a handoff note before making major changes.\n\n\n\n\n\n\n\nImportant\n\n\n\nUnlabeled cleanup can erase provenance. Keep a dated rescue log and preserve the original state when permissions and storage allow."
+  },
+  {
+    "objectID": "templates/authoring-template.html",
+    "href": "templates/authoring-template.html",
+    "title": "Guidance Page Authoring Template",
+    "section": "",
+    "text": "Template only\n\n\n\nReplace bracketed prompts. This page is not lab guidance and should not be cited as a requirement."
+  },
+  {
+    "objectID": "templates/authoring-template.html#why-this-matters",
+    "href": "templates/authoring-template.html#why-this-matters",
+    "title": "Guidance Page Authoring Template",
+    "section": "Why this matters",
+    "text": "Why this matters\n[Describe the decision, risk, or recurring problem in original language.]"
+  },
+  {
+    "objectID": "templates/authoring-template.html#minimum-lab-practice",
+    "href": "templates/authoring-template.html#minimum-lab-practice",
+    "title": "Guidance Page Authoring Template",
+    "section": "Minimum lab practice",
+    "text": "Minimum lab practice\n[Describe the smallest proportionate practice. Label it draft until approved.]"
+  },
+  {
+    "objectID": "templates/authoring-template.html#recommended-practice",
+    "href": "templates/authoring-template.html#recommended-practice",
+    "title": "Guidance Page Authoring Template",
+    "section": "Recommended practice",
+    "text": "Recommended practice\n[Describe a stronger default and when it is useful.]"
+  },
+  {
+    "objectID": "templates/authoring-template.html#stronger-practice",
+    "href": "templates/authoring-template.html#stronger-practice",
+    "title": "Guidance Page Authoring Template",
+    "section": "Stronger practice",
+    "text": "Stronger practice\n[Describe additional assurance, automation, or review for higher-risk work.]"
+  },
+  {
+    "objectID": "templates/authoring-template.html#common-failure-modes",
+    "href": "templates/authoring-template.html#common-failure-modes",
+    "title": "Guidance Page Authoring Template",
+    "section": "Common failure modes",
+    "text": "Common failure modes\n\n[Failure mode and consequence]\n[Failure mode and consequence]"
+  },
+  {
+    "objectID": "templates/authoring-template.html#checklist",
+    "href": "templates/authoring-template.html#checklist",
+    "title": "Guidance Page Authoring Template",
+    "section": "Checklist",
+    "text": "Checklist\n\n[Actionable check]\n[Actionable check]"
+  },
+  {
+    "objectID": "templates/authoring-template.html#templates-and-examples",
+    "href": "templates/authoring-template.html#templates-and-examples",
+    "title": "Guidance Page Authoring Template",
+    "section": "Templates and examples",
+    "text": "Templates and examples\n[Link to related internal templates or clearly labeled examples.]"
+  },
+  {
+    "objectID": "templates/authoring-template.html#sources",
+    "href": "templates/authoring-template.html#sources",
+    "title": "Guidance Page Authoring Template",
+    "section": "Sources",
+    "text": "Sources\n[Add citations and access dates. Do not copy source text.]"
+  },
+  {
+    "objectID": "templates/authoring-template.html#metadata-convention",
+    "href": "templates/authoring-template.html#metadata-convention",
+    "title": "Guidance Page Authoring Template",
+    "section": "Metadata convention",
+    "text": "Metadata convention\nRequired front matter: title, description, status, practice-level, audience, domains, topics, owner, last-reviewed, and review-cycle.\nRecommended values are draft | proposed | approved | retired | template for status; orientation | minimum | recommended | stronger | example for practice level; and annual | semiannual | event-driven for review cycle. Dates use ISO 8601 (YYYY-MM-DD); tags are lowercase and concise. approved requires an explicit lab review decision."
+  },
+  {
+    "objectID": "templates/index.html",
+    "href": "templates/index.html",
+    "title": "Templates",
+    "section": "",
+    "text": "The template library reduces blank-page friction without forcing every project into one shape.\n\nGuidance page authoring template\nFuture additions may include project briefs, data inventories, decision logs, validation plans, and handoff notes.\n\nTemplates are examples until explicitly adopted; adapt them to the project and document meaningful deviations.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\nDescription\n\n\nstatus\n\n\n\n\n\n\nGuidance Page Authoring Template\n\n\nA reusable, non-substantive template for future Lab Book pages.\n\n\ntemplate\n\n\n\n\n\n\nNo matching items"
+  }
+]

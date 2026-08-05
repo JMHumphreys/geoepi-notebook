@@ -1,0 +1,12 @@
+[
+  {
+    "listing": "/resources/index.html",
+    "items": []
+  },
+  {
+    "listing": "/templates/index.html",
+    "items": [
+      "/templates/authoring-template.html"
+    ]
+  }
+]
