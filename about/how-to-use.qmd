@@ -1,0 +1,22 @@
+---
+title: "How to Use This Site"
+description: "An orientation to GeoEpi Lab Book navigation and labels."
+status: draft
+practice-level: orientation
+audience: all lab members
+domains: [all]
+topics: [navigation, authoring]
+owner: GeoEpi Lab
+last-reviewed: 2026-08-05
+review-cycle: annual
+---
+
+Start with [Start Here](../start/index.qmd), then use the lifecycle pages in [Research Practices](../practices/index.qmd) and the domain index when a project has specialized needs.
+
+::: {.callout-tip}
+## Read the labels
+
+**Required**, **Recommended**, and **Optional** describe the intended strength of a practice. **Draft guidance** signals material that has not been approved as lab policy. **Example** demonstrates a pattern without imposing it.
+:::
+
+Pages include review metadata near the top. Use the repository actions to view or edit source, or report a problem. A page's owner coordinates review; it is not automatically the sole author.

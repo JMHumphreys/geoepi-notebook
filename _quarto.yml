@@ -1,0 +1,68 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "about/"
+    - "start/"
+    - "practices/"
+    - "domains/"
+    - "standards/"
+    - "templates/"
+    - "resources/"
+website:
+  title: "GeoEpi Lab Book"
+  description: "Research practices for defensible, reproducible, and transferable geographical epidemiology."
+  site-url: "https://jmhumphreys.github.io/geoepi-notebook/"
+  repo-url: "https://github.com/JMHumphreys/geoepi-notebook"
+  repo-actions: [edit, issue, source]
+  reader-mode: true
+  # Breadcrumbs are enabled by default for nested sidebar pages in Quarto.
+  page-navigation: true
+  search: true
+  navbar:
+    background: "#17324d"
+    foreground: white
+    left:
+      - text: "Start Here"
+        href: start/index.qmd
+      - text: "Research Practices"
+        href: practices/index.qmd
+      - text: "Domain Guidance"
+        href: domains/index.qmd
+      - text: "Lab Standards"
+        href: standards/index.qmd
+      - text: "Templates"
+        href: templates/index.qmd
+      - text: "Resources"
+        href: resources/index.qmd
+    right:
+      - text: "About"
+        menu:
+          - text: "Purpose"
+            href: about/purpose.qmd
+          - text: "How to use this site"
+            href: about/how-to-use.qmd
+          - text: "Contributing"
+            href: about/contributing.qmd
+      - icon: github
+        href: https://github.com/JMHumphreys/geoepi-notebook
+        aria-label: GitHub repository
+  sidebar:
+    - id: start
+      title: "Start Here"
+      contents: [start/index.qmd, start/minimum-standard.qmd, start/new-project.qmd, start/rescue-project.qmd, start/handoff.qmd]
+    - id: templates
+      title: "Templates"
+      contents: [templates/index.qmd, templates/authoring-template.qmd]
+format:
+  html:
+    theme:
+      - cosmo
+      - assets/css/styles.css
+    toc: true
+    toc-depth: 3
+    anchor-sections: true
+    code-copy: true
+    link-external-newwindow: true
+    date-format: iso

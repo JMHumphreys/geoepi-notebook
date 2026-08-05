@@ -1,0 +1,29 @@
+---
+title: "Project Handoff"
+description: "What a responsible transfer of GeoEpi work should make visible."
+status: draft
+practice-level: recommended
+audience: project leads
+domains: [all]
+topics: [handoff, continuity, review]
+owner: GeoEpi Lab
+last-reviewed: 2026-08-05
+review-cycle: annual
+sidebar: start
+---
+
+A handoff is complete when the next person can orient themselves, reproduce the current key result where access permits, and see what remains uncertain.
+
+## Handoff packet
+
+- purpose, scope, stakeholders, and current status;
+- README and directory map;
+- data inventory, provenance, permissions, and retention notes;
+- current analysis path and software/environment notes;
+- key outputs with dates, versions, and interpretation limits;
+- decision log, open issues, and recommended next actions;
+- named owner for the next review.
+
+::: {.callout-tip}
+Ask the recipient to perform an orientation walkthrough and one small reproduction check. Update the handoff note with what they could and could not recover.
+:::

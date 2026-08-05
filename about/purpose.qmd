@@ -1,0 +1,24 @@
+---
+title: "Purpose of the Lab Book"
+description: "Why the GeoEpi Lab Book exists and what it will contain."
+status: draft
+practice-level: orientation
+audience: all lab members
+domains: [all]
+topics: [purpose, continuity, reproducibility]
+owner: GeoEpi Lab
+last-reviewed: 2026-08-05
+review-cycle: annual
+---
+
+## Why this matters
+
+Geographical epidemiology joins data, place, time, biology, and models. Small undocumented choices can change an analysis, while staff changes and long timelines can make a sound result difficult to recover.
+
+## What this site is for
+
+The Lab Book will collect concise, reviewable guidance for planning, acquiring, organizing, analyzing, validating, collaborating, communicating, and preserving research. It will point to templates and external resources without replacing primary methods papers, data-use agreements, or formal institutional policies.
+
+## What this site is not
+
+This is not a complete textbook, a substitute for scientific judgment, or an approved policy register. Requirements will be labeled and approved explicitly; until then, content is draft guidance.

@@ -1,0 +1,18 @@
+---
+title: "Contributing"
+description: "How to propose, review, and improve GeoEpi Lab Book content."
+status: draft
+practice-level: orientation
+audience: contributors
+domains: [all]
+topics: [contribution, review]
+owner: GeoEpi Lab
+last-reviewed: 2026-08-05
+review-cycle: annual
+---
+
+See [CONTRIBUTING.md](../CONTRIBUTING.md) for the repository workflow. Propose changes on a branch, preserve metadata, write in your own words, cite the evidence or source basis, and request review when a change could affect a lab requirement.
+
+::: {.callout-warning}
+Until governance is finalized, a pull request can improve draft text but cannot by itself turn it into an approved lab requirement.
+:::

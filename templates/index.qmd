@@ -1,0 +1,24 @@
+---
+title: "Templates"
+description: "Reusable starting points for project documentation and research continuity."
+status: draft
+practice-level: orientation
+audience: all lab members
+domains: [all]
+topics: [templates, documentation]
+owner: GeoEpi Lab
+last-reviewed: 2026-08-05
+review-cycle: annual
+sidebar: templates
+listing:
+  contents: .
+  type: table
+  fields: [title, description, status]
+---
+
+The template library reduces blank-page friction without forcing every project into one shape.
+
+- [Guidance page authoring template](authoring-template.qmd)
+- Future additions may include project briefs, data inventories, decision logs, validation plans, and handoff notes.
+
+Templates are examples until explicitly adopted; adapt them to the project and document meaningful deviations.

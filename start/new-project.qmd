@@ -1,0 +1,33 @@
+---
+title: "Starting a New Project"
+description: "A provisional sequence for setting up a new GeoEpi project."
+status: draft
+practice-level: recommended
+audience: project leads
+domains: [all]
+topics: [planning, project-organization]
+owner: GeoEpi Lab
+last-reviewed: 2026-08-05
+review-cycle: annual
+sidebar: start
+---
+
+## Why this matters
+
+Early decisions about scope, ownership, data access, and outputs prevent avoidable rework.
+
+## Suggested sequence
+
+1. Write a project brief: question, population, geography, time period, outcomes, stakeholders, and intended outputs.
+2. Identify data stewards, permissions, privacy constraints, and retention expectations before acquisition.
+3. Create a version-controlled project skeleton with a README, metadata, and decision log.
+4. Record the analysis plan and distinguish exploratory from confirmatory work.
+5. Define validation checks and a handoff point before analysis begins.
+6. Review the setup with a collaborator not involved in the initial design.
+
+## Checklist
+
+- [ ] Project brief and scope are reviewable.
+- [ ] Roles and decision rights are named.
+- [ ] Data access and ethical constraints are documented.
+- [ ] Planned outputs and validation are explicit.

@@ -1,0 +1,30 @@
+---
+title: "Rescuing an Existing Project"
+description: "A proportionate triage path for an inherited or poorly documented project."
+status: draft
+practice-level: recommended
+audience: project leads
+domains: [all]
+topics: [rescue, provenance, risk]
+owner: GeoEpi Lab
+last-reviewed: 2026-08-05
+review-cycle: annual
+sidebar: start
+---
+
+## Why this matters
+
+Trying to perfect an inherited project before understanding it can destroy useful context. Rescue begins with a safe inventory and a clear uncertainty record.
+
+## Triage sequence
+
+- Freeze and preserve the current state; do not silently overwrite inputs or outputs.
+- Inventory files, scripts, data locations, access constraints, environments, and recent results.
+- Ask the previous owner or stakeholders what is trusted, provisional, or broken.
+- Reconstruct the smallest defensible path from an input to a named result.
+- Record gaps as risks and choose a stopping point for rescue work.
+- Create a handoff note before making major changes.
+
+::: {.callout-important}
+Unlabeled cleanup can erase provenance. Keep a dated rescue log and preserve the original state when permissions and storage allow.
+:::

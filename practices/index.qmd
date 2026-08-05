@@ -1,0 +1,19 @@
+---
+title: "Research Practices"
+description: "Lifecycle guidance for planning, acquiring, analyzing, and preserving GeoEpi research."
+status: draft
+practice-level: orientation
+audience: all lab members
+domains: [all]
+topics: [research-lifecycle, reproducibility]
+owner: GeoEpi Lab
+last-reviewed: 2026-08-05
+review-cycle: annual
+sidebar: practices
+---
+
+This section will grow around the research lifecycle:
+
+`plan → acquire → organize → analyze → validate → collaborate → communicate → preserve`
+
+Each topic will distinguish minimum, recommended, and stronger practices, with examples and templates. Initial topic pages are deferred until they can be written from reviewed lab decisions rather than generic filler.
