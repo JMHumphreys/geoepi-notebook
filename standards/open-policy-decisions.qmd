@@ -1,0 +1,45 @@
+---
+title: "Open Policy Decisions"
+description: "Questions requiring human and institutional interpretation before the minimum standard can become approved policy."
+status: draft-policy
+practice-level: informational
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - governance
+  - data-management
+  - project-management
+owner: unassigned
+last-reviewed: 2026-08-05
+review-cycle: annual
+---
+
+::: {.callout-warning}
+## Human approval required
+
+This page records open decisions. It does not establish institutional policy or authorize a storage system, classification scheme, retention period, release process, or use of generative AI.
+:::
+
+| Decision | Question requiring approval | Evidence or owner needed | Interim treatment |
+|---|---|---|---|
+| Data classification | What institutional terms and handling rules apply to public, internal, restricted, confidential, PII, proprietary, governed, and sensitive ecological/geographical data? | USDA, laboratory, information-security, privacy, and data-governance authorities | Record applicable restrictions without inventing official labels. |
+| Approved storage | Which local, institutional, cloud, OSF, or repository systems are approved for each class of data? | Information security and data stewards | Use the approved system named by the data owner or agreement. |
+| Backups | What backup frequency, locations, restore testing, and responsibility are required? | IT and records-management guidance | Record where the authoritative copy and backup decision live. |
+| Cloud services | Which cloud services and regions are acceptable for research data, credentials, and outputs? | Security, contracts, and funder terms | Do not upload restricted data without authorization. |
+| Retention | What minimum retention periods and destruction/archival rules apply by project and record type? | Records-management, funder, publication, and legal requirements | Record a project-specific archive or retention decision. |
+| Public repositories | Which public repositories are approved for code, data, metadata, and releases? | Lab and institutional repository owners | Document access restrictions and a persistent identifier where available. |
+| Sensitive spatial data | How should locations be generalized, masked, access-controlled, or withheld? | Data owners, ethics, Indigenous governance, and security authorities | Do not publish sensitive coordinates by default. |
+| Personally identifiable information | What collection, storage, linkage, de-identification, access, and destruction controls apply? | Privacy/IRB and institutional policy | Do not place PII or credentials in Git. |
+| Dependency locking | What minimum environment record is required for exploratory, publication, operational, and HPC projects? | Lab technical review | Use a proportional record; `renv` is not universal until decided. |
+| External-release review | Who must review code, data, figures, licenses, security, and limitations before release? | Project lead plus designated review authority | Apply risk-proportionate review and record completion. |
+| Exceptions | Who can approve an exception and how long can it remain open? | Lab leadership and institutional authorities | Use the exception template; legal, privacy, security, and contractual rules cannot be waived. |
+| Licensing | What default licenses and attribution/citation requirements apply to code, data, documentation, and assets? | Institution, funder, and data providers | Preserve upstream terms and record uncertainty. |
+| Contributors and authorship | How are contributions, acknowledgements, authorship, and maintenance responsibilities determined? | Lab authorship and contributor guidance | Record roles and decisions in a durable project location. |
+| Records management | Which project artifacts are official records, and how are they archived or disposed of? | Records-management authority | Keep a closeout record and authoritative-version statement. |
+| Generative AI | What uses of generative AI are permitted in research documentation and code development, and what disclosure, review, privacy, and provenance are required? | Institution, funder, publisher, security, and lab policy | Do not submit protected data, unpublished confidential material, or credentials to an AI service without authorization; review generated content. |
+
+## Decision record
+
+Until approved, each item should be assigned an owner, evidence source, decision date, and review date. The proposed standard should be revised after these decisions rather than silently converting assumptions into requirements.
