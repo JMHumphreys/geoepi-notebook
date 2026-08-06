@@ -1,0 +1,94 @@
+---
+title: "Analyze"
+description: "Specify, execute, and trace exploratory or planned analyses before future validation."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - analysis
+  - reproducibility
+  - traceability
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+Analyze is more than obtaining a numerical answer or successfully running code. It connects a scientific or operational question to an analysis-ready dataset, a stated method, recorded settings, a particular execution, generated outputs, and candidate results that can be checked in the future **Validate** stage.
+
+## Analyze boundary
+
+Analyze begins when a staged or derived dataset is recorded as **ready for analysis** or **ready for analysis with documented limitation**. The limitation must travel with the analysis record and outputs. Analyze may clarify the objective, define the target, record methods and settings, run scripts or models, preserve warnings and incomplete work, and trace important results.
+
+Analyze does not complete model checking, convergence assessment, residual diagnosis, calibration, predictive-performance assessment, external validation, robustness or sensitivity conclusions, simulation verification, uncertainty adequacy, scientific interpretation, publication approval, or operational approval. Those decisions belong to future Validate, Communicate, or later stages.
+
+## Analyze workflow
+
+1. Confirm the dataset is ready for analysis.
+2. State the analysis question or practical objective.
+3. Define the quantity, contrast, prediction, pattern, or simulation outcome of interest.
+4. Label the work as exploratory, planned, sensitivity, or post hoc.
+5. Record the method, variables, settings, and intended outputs.
+6. Run the analysis from a documented starting point.
+7. Record the execution, including warnings and failures.
+8. Link important results to their data, code, settings, run, and output.
+9. Record changes made after earlier results were viewed.
+10. Decide whether the analysis is ready to enter future Validate.
+
+```{mermaid}
+flowchart TD
+  data[Analysis-ready dataset] --> question[Question and target]
+  question --> method[Method and settings]
+  method --> run[Documented execution]
+  run --> outputs[Outputs and candidate results]
+  outputs --> gate[Ready for validation]
+```
+
+A **candidate result** is an output that has been produced and recorded but has not passed the future Validate stage. A successful analysis run shows that the recorded procedure produced an output. It does not establish that the method was appropriate, the model fit adequately, the predictions are accurate, or the scientific conclusion is justified.
+
+## Starting points
+
+| Need | Guidance |
+|---|---|
+| Define the question, target, data version, and method | [Analysis design](analysis-design.qmd) |
+| Distinguish exploration from planned work | [Exploratory and planned analysis](exploratory-and-planned-analysis.qmd) |
+| Record a local, notebook, scheduled, or cluster execution | [Computational execution](computational-execution.qmd) |
+| Manage seeds, scenarios, partitions, or repeated simulations | [Randomness, scenarios, and replicates](randomness-scenarios-and-replicates.qmd) |
+| Trace a figure, map, estimate, forecast, table, or simulation summary | [Results and traceability](results-and-traceability.qmd) |
+| Decide whether work can enter validation | [Ready-for-validation gate](#ready-for-validation-gate) |
+
+## Evidence and interpretation
+
+The draft workflow is informed by the existing [resource catalog](../../resources/index.qmd), including [The Turing Way](https://book.the-turing-way.org/), [Good Enough Practices in Scientific Computing](https://arxiv.org/abs/1609.00037), the [TIER Protocol](https://www.projecttier.org/tier-protocol/), [FAIR Principles for Research Software](https://www.go-fair.org/fair-principles/), [RDMkit](https://rdmkit.elixir-europe.org/), [DataONE](https://dataone.org/best-practices/), and [Ecological Forecasting Initiative](https://ecoforecast.org/) guidance. These sources support clear objectives, recorded code and settings, reproducible execution, and traceable results. They inform this draft workflow but do not establish GeoEpi or institutional policy. Access date: 2026-08-06.
+
+## Ready-for-validation gate
+
+The safe starting status is **not ready for validation**. Use only these statuses:
+
+- **not ready for validation**
+- **ready for validation**
+- **ready for validation with documented limitation**
+
+An analysis may enter future Validate only when:
+
+- [ ] The question or practical objective is recorded.
+- [ ] The quantity, comparison, prediction, pattern, or simulation outcome is clear.
+- [ ] The dataset ID, version, readiness status, and limitation are recorded.
+- [ ] Exploratory, planned, sensitivity, and post hoc work are labeled appropriately.
+- [ ] Methods, variables, transformations, exclusions, settings, and intended outputs are recorded.
+- [ ] Consequential changes made after viewing results are documented.
+- [ ] Code, settings, software, and computing information can be identified.
+- [ ] Consequential executions have run IDs or a clearly repeatable execution path.
+- [ ] Seeds, scenarios, parameter sets, partitions, and replicates are recorded where applicable.
+- [ ] Expected and produced outputs are compared.
+- [ ] Warnings, failures, retries, cancellations, and incomplete runs are visible.
+- [ ] Important candidate results have traceability records where warranted, and their result IDs are named in the analysis-level readiness decision.
+- [ ] Limitations and unresolved execution problems are visible.
+- [ ] The analysis specification or equivalent analysis-level record is authoritative for readiness.
+- [ ] A responsible analyst or reviewer records the readiness decision and ISO 8601 decision time in that analysis-level record.
+- [ ] Status is explicitly recorded as one of the three statuses above.
+
+Run completion belongs to the run record. Candidate selection belongs to result records and the analysis-level readiness decision. Passing this gate means that the analysis has been specified, executed, and recorded well enough to undergo validation. It does not mean that the analysis has passed validation.

@@ -1,0 +1,53 @@
+---
+title: "Results and Traceability"
+description: "Connect important results to the data, code, settings, execution, and output that produced them."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - analysis
+  - reproducibility
+  - traceability
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+## Define a result record
+
+A result record connects an important reported value, figure, table, map, forecast, simulation summary, or operational product to the data, code, settings, execution, and output that produced it.
+
+```text
+analysis-ready dataset
+  -> analysis specification
+  -> code and settings
+  -> analysis run
+  -> output
+  -> candidate result
+```
+
+## When to create one
+
+A result record is useful when an output is included in a manuscript, shared outside the immediate team, used in an operational decision, used in a presentation or report, compared across scenarios, expensive to regenerate, likely to be revised, or consequential to the project’s conclusion. Not every temporary plot requires a separate record. Closely related outputs may share one record when their inputs, run, status, and interpretation are the same.
+
+## Result identity
+
+Record as appropriate: result ID and name, analysis ID and version, direct input dataset IDs and versions, code version, settings or parameter record, computing environment, run ID, output location, intended use, status, limitations, and a later result that supersedes it. Source lineage remains available through the staged- or derived-dataset record and does not need to be repeated in every result row. A filename alone is not a sufficient result identity. The [result traceability template](../../templates/result-traceability-template.csv) is a compact starting point.
+
+## Result statuses
+
+Use **planned**, **produced**, **incomplete**, **candidate for validation**, **failed**, or **superseded**. The safe default is **planned**. **Produced** means the output exists. **Candidate for validation** means the analysis-level readiness decision selected the result for checking in Validate. Validation itself has not yet occurred.
+
+Keep the levels distinct: a run status describes what happened during one execution; a result status describes what happened to one output; analysis readiness describes whether the documented analysis and its named candidate results may enter Validate. The analysis specification or equivalent analysis-level record is the authoritative readiness decision.
+
+## Manuscripts and reports
+
+Copying a figure into a manuscript does not preserve its origin. Point the result record to the actual output file, keep captions and table notes consistent with the analysis version, document manually altered figures or tables, and link reported numbers to the same run and result version as the displayed output.
+
+## Superseded results
+
+Do not delete the only record of an earlier result when it influenced a decision, appeared in a draft, was shared externally, was replaced after a correction, or differs because data, code, settings, or scenarios changed. Mark it superseded and identify the replacement.

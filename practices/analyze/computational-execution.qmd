@@ -1,0 +1,60 @@
+---
+title: "Computational Execution"
+description: "Record analysis runs, inputs, settings, outputs, warnings, and failures proportionately."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - analysis
+  - reproducibility
+  - computing
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+## Define an analysis run
+
+An analysis run is one recorded execution of a script, notebook, model, simulation, or analytical workflow using identified data and settings. It may occur interactively, from a script, through Quarto or a notebook, on a workstation, through a scheduled task, on a high-performance computing (HPC) cluster, or as one task within a **job array**, a group of similar cluster tasks submitted together.
+
+Record as appropriate:
+
+- project ID, analysis ID and version, run ID, and purpose;
+- input dataset IDs and versions;
+- code version, main script or notebook, command used, and settings record;
+- software, computing environment, and execution location;
+- start and completion time;
+- responsible analyst or operator;
+- outputs, logs, warnings, status, and any run replaced or retried.
+
+Here, **code version** means the Git commit, tag, or other recorded version of the analysis code. A **settings record** is the file or documented values controlling the analysis. The **computing environment** is the relevant software, package, system, or cluster information needed to understand or repeat the work. A **run ID** is a stable label for one execution.
+
+## Proportional run records
+
+For a simple local analysis, a rendered Quarto document or notebook may be enough when it records the input dataset version, code version, settings, execution date, output, warnings, and limitations. A separate run-record file is not universal.
+
+Use a separate run record when several executions must be compared, settings differ, the work is expensive or consequential, HPC is used, failures and retries matter, responsibility may transfer, or reproducibility depends on external software. The [analysis run record template](../../templates/analysis-run-record-template.yml) is a reusable starting point.
+
+## Execution status
+
+Use **planned**, **running**, **completed**, **completed with documented limitation**, **failed**, **cancelled**, or **superseded**. **Completed** means the recorded execution finished and produced its recorded outputs. It does not mean the analysis is valid or ready for validation.
+
+## Warnings and partial completion
+
+Compare expected outputs with outputs actually produced. Record warnings, errors, incomplete subsets, failed array tasks, missing scenarios or replicates, cancellations, manual recovery, and retry relationships. A zero exit code or successfully rendered document does not by itself show that every expected result was produced.
+
+## Overwrite safety
+
+Do not silently replace an earlier important result. Give revised runs new run IDs, record which run is current, retain failed or superseded records when they affected later decisions, save important outputs under identifiable locations, and do not rely on an unsaved interactive workspace.
+
+## Local and HPC execution
+
+The same scientific information should be recoverable whether work ran locally or on a cluster. For HPC, use the existing [HPC run record](../../templates/hpc-run-record-template.yml) for submission script, job and array IDs, resources, loaded software, inputs, outputs, logs, exit status, retries, and the relationship to local development. This is record-keeping guidance, not an HPC tutorial.
+
+## Stop and resolve
+
+Pause readiness when the input version is unknown, code or settings cannot be identified, important output was manually edited, expected outputs are missing without explanation, failed tasks were silently excluded, warnings were discarded, local and cluster software differ materially without documentation, or a result cannot be tied to a specific execution.

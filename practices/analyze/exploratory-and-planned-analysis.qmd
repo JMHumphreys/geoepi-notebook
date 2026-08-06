@@ -1,0 +1,57 @@
+---
+title: "Exploratory and Planned Analysis"
+description: "Label analysis work and record changes without treating exploration as a problem."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - analysis
+  - reproducibility
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+Exploratory analysis is valuable. The problem is not exploration; the problem is presenting a decision made after viewing results as though it had been specified beforehand.
+
+## Use clear labels
+
+- **Exploratory:** used to understand the data, generate ideas, or develop an approach.
+- **Planned primary:** the main analysis defined before examining its result.
+- **Planned secondary:** a supporting analysis defined in advance.
+- **Sensitivity:** examines how results change under alternative reasonable choices.
+- **Post hoc:** added after viewing earlier results.
+- **Final reporting analysis:** the version selected for reporting after the decision and review process is documented.
+
+One project may legitimately contain all these types. The label describes when and why the work was done; it does not rank the value of the work.
+
+## Record consequential changes
+
+Record what changed, why it changed, who made or approved the change, when it changed, what earlier information influenced it, which analysis version it produced, and whether the classification changed. Examples include adding a nonlinear term after a plot, changing an exclusion rule, redefining a forecast target, changing the spatial unit, replacing a covariate, adding an interaction, increasing simulation duration, changing a scenario, or switching the primary result.
+
+Do not require a formal change record for trivial wording, plotting, or formatting changes.
+
+## Separate development from reporting
+
+Use separate script sections, named analysis versions, separate exploratory outputs, a named final reporting run, and retained earlier candidate results when they influenced decisions. Do not overwrite the only copy of an earlier result, and do not prescribe one folder structure.
+
+## Common failure modes
+
+- An exploratory analysis is later described as preplanned.
+- Multiple approaches were tried but only the preferred one is recorded.
+- A subgroup was selected because it produced a stronger result.
+- Changed exclusions are not reflected in the analysis plan.
+- Sensitivity work silently replaces the primary analysis.
+- A final figure cannot be linked to the analysis version that produced it.
+
+## Checklist
+
+- [ ] Each important analysis has an exploratory, planned, sensitivity, post hoc, or final-reporting label.
+- [ ] Consequential changes after viewing results are recorded.
+- [ ] Planned primary work is distinguishable from supporting and exploratory work.
+- [ ] Earlier outputs that influenced decisions remain identifiable.
+- [ ] The label does not imply that validation has occurred.

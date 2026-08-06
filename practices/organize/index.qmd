@@ -88,3 +88,5 @@ This draft workflow is informed by the existing [resource catalog](../../resourc
 - [ ] Dataset status is explicitly recorded as **ready for analysis**, **ready for analysis with documented limitation**, or **not ready for analysis**.
 
 Passing this gate establishes structural and documentary readiness only. Analytical validity, model suitability, inferential validity, predictive performance, and scientific interpretation belong to later stages. A ready status is therefore a workflow decision, not an endorsement of a scientific result.
+
+**Ready for analysis** permits entry to [Analyze](../analyze/index.qmd). **Ready for analysis with documented limitation** permits entry with that limitation carried forward. **Not ready for analysis** does not permit entry. The Analyze stage ends at a future Validate stage; it does not establish that a method, model, prediction, or scientific conclusion is valid.

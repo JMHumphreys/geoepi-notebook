@@ -91,6 +91,14 @@ website:
             - practices/organize/source-to-staged-data.qmd
             - practices/organize/identifiers-and-schema.qmd
             - practices/organize/spatial-temporal-conventions.qmd
+        - section: "Analyze"
+          contents:
+            - practices/analyze/index.qmd
+            - practices/analyze/analysis-design.qmd
+            - practices/analyze/exploratory-and-planned-analysis.qmd
+            - practices/analyze/computational-execution.qmd
+            - practices/analyze/randomness-scenarios-and-replicates.qmd
+            - practices/analyze/results-and-traceability.qmd
 format:
   html:
     theme:
