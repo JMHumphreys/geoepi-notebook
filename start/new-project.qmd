@@ -1,33 +1,43 @@
 ---
 title: "Starting a New Project"
-description: "A provisional sequence for setting up a new GeoEpi project."
+description: "A concise gateway into GeoEpi project planning and data intake."
 status: draft
 practice-level: recommended
-audience: project leads
-domains: [all]
-topics: [planning, project-organization]
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - planning
+  - project-organization
 owner: GeoEpi Lab
 last-reviewed: 2026-08-05
 review-cycle: annual
 sidebar: start
 ---
 
-## Why this matters
+## 30-minute project start
 
-Early decisions about scope, ownership, data access, and outputs prevent avoidable rework.
+Write a README with the objective, intended output, owner, authoritative location, current status, likely data sources, and immediate restrictions. Record the next decision, the person who can make it, and whether a separate charter is warranted. Do not start analysis while ownership, source identity, restrictions, or intended outputs remain materially unclear.
 
-## Suggested sequence
+## Choose the pathway
 
-1. Write a project brief: question, population, geography, time period, outcomes, stakeholders, and intended outputs.
-2. Identify data stewards, permissions, privacy constraints, and retention expectations before acquisition.
-3. Create a version-controlled project skeleton with a README, metadata, and decision log.
-4. Record the analysis plan and distinguish exploratory from confirmatory work.
-5. Define validation checks and a handoff point before analysis begins.
-6. Review the setup with a collaborator not involved in the initial design.
+### Standard project start
 
-## Checklist
+Use [Plan](../practices/plan/index.qmd) and [Project scope](../practices/plan/project-scope.qmd) to define purpose, boundaries, outputs, roles, and completion criteria. Then use [Data-management planning](../practices/plan/data-management-planning.qmd) before receiving data.
 
-- [ ] Project brief and scope are reviewable.
-- [ ] Roles and decision rights are named.
-- [ ] Data access and ethical constraints are documented.
-- [ ] Planned outputs and validation are explicit.
+### Higher-consequence project
+
+Use the same sequence with a standalone [project charter](../templates/project-charter-template.md), explicit review authority, data-management decisions, environment planning, and a documented handoff expectation. Triggers include publication intent, operational use, sensitive or governed data, substantial computation, formal deliverables, or consequential policy use.
+
+### When data arrive
+
+Use [Data intake](../practices/acquire/data-intake.qmd) before correcting, renaming, normalizing, or accepting the delivery. Use [Recurring and programmatic data](../practices/acquire/recurring-programmatic-data.qmd) for APIs, databases, and scheduled retrievals.
+
+## Compact initiation checklist
+
+- [ ] Objective, intended output, owner, location, and status are in the README.
+- [ ] Scope boundaries, dependencies, and completion criteria are stated.
+- [ ] Roles, decision authority, data contacts, and restrictions are identified.
+- [ ] Storage, computing, acquisition, and handoff conditions are plausible.
+- [ ] The project uses the [readiness checklist](../templates/project-readiness-checklist.md) at initiation.

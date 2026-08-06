@@ -1,19 +1,49 @@
 ---
 title: "Research Practices"
-description: "Lifecycle guidance for planning, acquiring, analyzing, and preserving GeoEpi research."
+description: "Task-oriented lifecycle guidance for planning and acquiring GeoEpi data and projects."
 status: draft
-practice-level: orientation
-audience: all lab members
-domains: [all]
-topics: [research-lifecycle, reproducibility]
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - research-lifecycle
+  - reproducibility
 owner: GeoEpi Lab
 last-reviewed: 2026-08-05
 review-cycle: annual
 sidebar: practices
 ---
 
-This section will grow around the research lifecycle:
+The Lab Book organizes work around a lifecycle:
 
-`plan → acquire → organize → analyze → validate → collaborate → communicate → preserve`
+`plan -> acquire -> organize -> analyze -> validate -> collaborate -> communicate -> preserve`
 
-Each topic will distinguish minimum, recommended, and stronger practices, with examples and templates. Initial topic pages are deferred until they can be written from reviewed lab decisions rather than generic filler.
+Stages overlap and may repeat. A revised project plan can trigger new acquisition work; an intake discrepancy can require a scope decision. Each page distinguishes the **Draft minimum**, **Conditionally required**, **Recommended**, **Stronger practice**, **Example**, and **Stop and resolve** levels.
+
+This first implementation covers **Plan** and **Acquire**. The later stages are not presented as complete guidance.
+
+```{mermaid}
+flowchart LR
+  plan[Plan] --> acquire[Acquire]
+  acquire --> organize[Organize]
+  organize --> analyze[Analyze]
+  analyze --> validate[Validate]
+  validate --> collaborate[Collaborate]
+  collaborate --> communicate[Communicate]
+  communicate --> preserve[Preserve]
+  acquire -. revise .-> plan
+  validate -. revise .-> plan
+```
+
+## Choose a starting point
+
+- [Starting a new project](../start/new-project.qmd) for a short gateway and initiation checklist.
+- [Plan a project](plan/index.qmd) when purpose, scope, roles, outputs, or completion criteria are unsettled.
+- [Plan data management](plan/data-management-planning.qmd) when access, storage, restrictions, identifiers, time, space, or computing need decisions.
+- [Receive a one-time dataset](acquire/data-intake.qmd) when a file, archive, extract, sequence batch, raster, or field export arrives.
+- [Design recurring or programmatic acquisition](acquire/recurring-programmatic-data.qmd) for APIs, databases, feeds, portals, and scheduled extracts.
+- [Assess intake acceptance](acquire/data-intake.qmd#intake-completion-gate) when deciding whether incoming data can enter the Organize stage.
+
+The Lab Book separates draft policy, task guidance, templates, and examples. The [Minimum GeoEpi Project Standard](../start/minimum-standard.qmd) supplies the governing draft framework; these pages explain how to satisfy relevant information requirements without prescribing one folder tree, storage platform, workflow engine, or environment.

@@ -1,0 +1,92 @@
+---
+title: "Define Project Scope and Responsibilities"
+description: "A practical guide to defining what a GeoEpi project is for before choosing methods."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - planning
+  - project-management
+owner: GeoEpi Lab
+last-reviewed: 2026-08-05
+review-cycle: annual
+sidebar: practices
+---
+
+## Begin with purpose, not technique
+
+State whether the project addresses a scientific question, operational objective, decision-support need, software or infrastructure objective, or training/demonstration purpose. “Build a model” and “analyze the data” describe techniques, not what the work is meant to accomplish.
+
+## Define the analytical or operational unit
+
+Record the population or system, geography, time period, outcome or response, unit of observation, unit of inference, intended comparison, intended users, and decision or publication context.
+
+::: {.callout-note}
+## Example
+
+A county-week disease model may use individual case records as inputs but make inference about county-week incidence. The scope should name both units so that data receipt, denominators, and completion criteria are not confused.
+:::
+
+## Set explicit boundaries
+
+Document included work, excluded work, known dependencies, assumptions, unavailable data, activities deferred to later phases, and the scope-change process. Exclusions define the project as much as inclusions.
+
+## Define outputs
+
+Distinguish internal analytical outputs, manuscript figures and tables, reusable datasets, software releases, operational products, dashboards, forecasts, reports, and archival packages. Every consequential output needs an authoritative location and responsible owner.
+
+::: {.callout-note}
+## Example
+
+A weekly raster workflow may be complete only when the expected dates and spatial coverage are present. “The script ran” is not the same completion criterion as “the weekly product is available for every planned region and week.”
+:::
+
+## Define completion and acceptance
+
+Before methods are selected, record what counts as complete, which checks must pass, who reviews the result, what limitations are acceptable, and what would prevent release or operational use. Keep these as planned acceptance criteria; detailed analytical validation belongs to a later lifecycle stage.
+
+## Assign roles and authority
+
+Use roles rather than assuming a particular job title:
+
+- project lead;
+- data provider or steward;
+- analytical lead;
+- subject-matter reviewer;
+- technical reviewer;
+- operational owner;
+- release authority;
+- future maintainer.
+
+One person may hold multiple roles. The purpose is to identify responsibility and decision authority, not to create unnecessary bureaucracy.
+
+::: {.callout-note}
+## Example
+
+A simulation project should fix scenario definitions, parameter ownership, acceptance criteria, and review authority before committing to a large HPC run. Otherwise a completed run may not answer the intended question.
+:::
+
+## Determine the project profile
+
+| Profile | Planning depth | Review, environment, and handoff expectation |
+|---|---|---|
+| Small exploratory project | README scope, likely sources, outputs, and immediate risks | Lightweight environment note, proportionate review, and visible next action |
+| Publication-oriented collaborative project | Charter or equivalent scope, contributors, data restrictions, outputs, and acceptance criteria | Recorded review, reproducible environment, source/data controls, and planned archive/handoff |
+| Operational or high-consequence project | Formal ownership, dependencies, failure consequences, controlled outputs, and change authority | Explicit environment, review authority, operational owner, recovery path, and handoff preparation |
+
+## Record consequential decisions
+
+Use the lightest durable record that preserves the decision, rationale, responsible person, and date. A README history, GitHub issue, project note, decision log, or formal exception record may be sufficient. Do not require a formal decision record for routine coding choices.
+
+## GeoEpi examples
+
+::: {.callout-note}
+## Example
+
+A phylogenetic project may define its deliverable as a reviewed tree plus a sample-to-sequence metadata table. Without that linkage, a visually complete tree may not meet the project’s acceptance criteria.
+:::
+
+The [project charter template](../../templates/project-charter-template.md) is **Conditionally required** when project consequence or coordination warrants it. The [README template](../../templates/project-readme-template.md) supports small projects. The [readiness checklist](../../templates/project-readiness-checklist.md) supports the initiation review.

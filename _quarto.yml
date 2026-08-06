@@ -70,6 +70,20 @@ website:
     - id: templates
       title: "Templates"
       contents: [templates/index.qmd, templates/authoring-template.qmd]
+    - id: practices
+      title: "Research Practices"
+      contents:
+        - practices/index.qmd
+        - section: "Plan"
+          contents:
+            - practices/plan/index.qmd
+            - practices/plan/project-scope.qmd
+            - practices/plan/data-management-planning.qmd
+        - section: "Acquire"
+          contents:
+            - practices/acquire/index.qmd
+            - practices/acquire/data-intake.qmd
+            - practices/acquire/recurring-programmatic-data.qmd
 format:
   html:
     theme:

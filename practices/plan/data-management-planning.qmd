@@ -1,0 +1,74 @@
+---
+title: "Plan Data Management"
+description: "Record decisions about anticipated data, access, storage, identifiers, time, space, computing, and release."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - planning
+  - data-management
+owner: GeoEpi Lab
+last-reviewed: 2026-08-05
+review-cycle: annual
+sidebar: practices
+---
+
+Data-management planning is a set of decisions that must be recorded, not necessarily a separate formal document. Reconcile anticipated information with the actual [data-source inventory](../../templates/data-source-inventory-template.csv) during intake.
+
+## Anticipated data inventory
+
+Before acquisition, record the source or provider, expected format, approximate volume, delivery frequency, temporal and spatial support, identifiers, update behavior, access conditions, likely sensitivity, and expected authoritative location.
+
+## Access and governance
+
+Identify the data owner, access contact, authorized users, data-use agreement, redistribution and publication restrictions, expiration or destruction requirements, sensitive locations, PII or linked identifiers, and Indigenous or community governance considerations where applicable.
+
+::: {.callout-warning}
+## Stop and resolve
+
+Do not invent institutional classifications or assume that a storage platform is approved for every data class. Link unresolved questions about classification, storage, cloud services, backups, retention, PII, sensitive spatial data, and public repositories to [Open Policy Decisions](../../standards/open-policy-decisions.qmd).
+:::
+
+## Storage and authoritative copies
+
+Distinguish the delivery location, preserved source copy, active working storage, derived-data storage, repository code and documentation, temporary computation, output storage, and archive or release location. GitHub is not the default location for large, restricted, or non-redistributable source data.
+
+## Backup and recovery planning
+
+Record the authoritative copy, backup responsibility, expected recovery path, consequences of loss, whether restoration has been tested, and whether the data can be reacquired. Do not invent a backup frequency; use the applicable institutional or agreement-based requirement.
+
+## Identifiers and naming
+
+Plan stable identifiers for the project, source dataset, source snapshot or release, derived dataset, model scenario, run, and output. Prefer identifiers that remain stable when filenames change. Do not prescribe one universal naming convention.
+
+## Temporal conventions
+
+Plan for event date, report date, extraction date, acquisition date, processing date, time zone, daylight-saving behavior, epidemiological week convention, and revision or late-reporting behavior.
+
+## Spatial conventions
+
+Plan for CRS and datum, units, geographic extent, spatial support, resolution, raster alignment, boundary source/version, and sensitive-coordinate handling.
+
+## Computational planning
+
+Anticipate the software stack, packages, GIS software, databases, command-line tools, containers, HPC, storage volume, memory, runtime, parallel execution, external services, and credentials. Dependency locking and containers are proportional practices, not universal requirements. Never place credentials in Git, README files, templates, or logs.
+
+## Release and preservation planning
+
+At initiation, identify likely publication repository, code release, data release or access statement, persistent identifier, archive, retention owner, and closeout trigger. Not all data must be made public; access restrictions and agreements control.
+
+## Planning gate
+
+- [ ] Purpose and scope are recorded.
+- [ ] Responsible roles and decision authority are known.
+- [ ] Anticipated sources and restrictions are identified.
+- [ ] Authoritative locations and recovery responsibilities are planned.
+- [ ] Computing and external dependencies are plausible.
+- [ ] Expected outputs and acceptance criteria are stated.
+- [ ] Unresolved policy questions are visible.
+- [ ] A proportional README or charter exists.
+
+Passing this gate means that data-management conditions are planned well enough to begin authorized acquisition. It does not accept any received dataset.

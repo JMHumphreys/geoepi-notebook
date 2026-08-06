@@ -1,0 +1,2 @@
+source_id,snapshot_id,intake_id,relative_path,original_filename,file_size_bytes,checksum_algorithm,checksum,source_modified_time,format,validation_status,supersedes,notes
+EXAMPLE-SOURCE-001,EXAMPLE-SNAPSHOT-001,EXAMPLE-INTAKE-001,received/example.csv,example.csv,12345,SHA-256,,2026-08-05T00:00:00Z,csv,received,,Clearly marked example row; delete before use
