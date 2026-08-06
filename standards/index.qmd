@@ -3,9 +3,13 @@ title: "Lab Standards"
 description: "The future home of explicitly reviewed GeoEpi Lab requirements."
 status: draft
 practice-level: orientation
-audience: all lab members
-domains: [all]
-topics: [standards, governance]
+audience:
+  - all-lab-members
+domains:
+  - all
+topics:
+  - standards
+  - governance
 owner: GeoEpi Lab
 last-reviewed: 2026-08-05
 review-cycle: annual
@@ -13,8 +17,6 @@ review-cycle: annual
 
 This section contains proposed and reviewed decisions. Draft guidance should not be treated as approved policy by implication.
 
-- [Minimum GeoEpi Project Standard](../start/minimum-standard.qmd) — proposed draft policy requiring review.
-- [GeoEpi Practice Audit](geoepi-practice-audit.qmd) — internal-draft, informational repository audit.
-- [Open Policy Decisions](open-policy-decisions.qmd) — unresolved questions requiring human approval.
-
-A future standard should state its scope, rationale, owner, effective date, review cycle, exceptions process, and relationship to institutional or funder requirements.
+- [Minimum GeoEpi Project Standard](../start/minimum-standard.qmd) - proposed draft policy requiring review.
+- [GeoEpi Practice Audit](geoepi-practice-audit.qmd) - draft-analysis, provisional public-repository audit; not a compliance review or ranking.
+- [Open Policy Decisions](open-policy-decisions.qmd) - unresolved questions requiring human approval.

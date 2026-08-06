@@ -3,9 +3,14 @@ title: "GeoEpi Lab Book"
 description: "Operational guidance for defensible, reproducible, and transferable geographical epidemiology."
 status: draft
 practice-level: orientation
-audience: all lab members
-domains: [all]
-topics: [reproducibility, documentation, data stewardship]
+audience:
+  - all-lab-members
+domains:
+  - all
+topics:
+  - reproducibility
+  - documentation
+  - data-stewardship
 owner: GeoEpi Lab
 last-reviewed: 2026-08-05
 review-cycle: annual

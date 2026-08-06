@@ -3,9 +3,14 @@ title: "Purpose of the Lab Book"
 description: "Why the GeoEpi Lab Book exists and what it will contain."
 status: draft
 practice-level: orientation
-audience: all lab members
-domains: [all]
-topics: [purpose, continuity, reproducibility]
+audience:
+  - all-lab-members
+domains:
+  - all
+topics:
+  - purpose
+  - continuity
+  - reproducibility
 owner: GeoEpi Lab
 last-reviewed: 2026-08-05
 review-cycle: annual

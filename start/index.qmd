@@ -3,9 +3,13 @@ title: "Start Here"
 description: "The shortest path to a defensible GeoEpi project."
 status: draft
 practice-level: orientation
-audience: all lab members
-domains: [all]
-topics: [project-start, minimum-standard]
+audience:
+  - all-lab-members
+domains:
+  - all
+topics:
+  - project-start
+  - minimum-standard
 owner: GeoEpi Lab
 last-reviewed: 2026-08-05
 review-cycle: annual
