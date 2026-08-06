@@ -24,10 +24,10 @@ Acquisition is more than downloading or receiving files. It includes authorizati
 2. **Specify** expected files, tables, period, geography, format, and documentation.
 3. **Receive or extract** into an approved intake location.
 4. **Preserve** the delivered representation before correction or transformation.
-5. **Register** source, snapshot, and intake-event identifiers.
+5. **Register** project context, source, and snapshot identifiers; add a separate intake ID when the delivery pattern or consequence warrants it.
 6. **Validate** enough to assess completeness and plausibility.
 7. **Clarify** discrepancies with the provider or data owner.
-8. **Accept or reject for analysis** using an explicit status.
+8. **Accept or reject for staging and further organization** using an explicit status.
 
 ## Choose the acquisition type
 
@@ -41,7 +41,11 @@ Acquisition is more than downloading or receiving files. It includes authorizati
 Use the [data-source inventory](../../templates/data-source-inventory-template.csv), [data dictionary](../../templates/data-dictionary-template.csv), [data-intake record](../../templates/data-intake-record-template.md), and [file manifest](../../templates/data-file-manifest-template.csv) as needed. The [project readiness checklist](../../templates/project-readiness-checklist.md) records the gate without requiring a separate file for every item.
 
 ::: {.callout-warning}
-## Draft minimum
+## Proposed minimum requirement
 
-Receiving a file is not the same as accepting a dataset for analysis. Acceptance requires enough evidence to identify the source, preserve the received material, understand restrictions, and determine whether the delivery is complete and usable.
+The [Minimum GeoEpi Project Standard](../../start/minimum-standard.qmd) requires source protection, provenance, restrictions, metadata, and result traceability. Receiving a file is not the same as accepting a dataset for staging. **Intake acceptance does not establish analytical validity, model suitability, publication readiness, or authorization for every downstream use.** Acceptance only determines whether the delivery may enter staging and further organization.
 :::
+
+## Evidence and interpretation
+
+The workflow draws on the existing [resource catalog](../../resources/index.qmd), especially [RDMkit](https://rdmkit.elixir-europe.org/), [DataONE](https://dataone.org/best-practices/), the [FAIR Principles](https://www.go-fair.org/fair-principles/), [CARE Principles](https://www.gida-global.org/care), USDA NAL, CDC, FGDC, GBIF, EML, and EFI guidance. These sources support source preservation, provenance, metadata, access and governance, spatial documentation, epidemiological extraction context, ecological documentation, and versioned recurring data. Access date: 2026-08-05. External guidance informs this workflow but does not establish GeoEpi or institutional policy.

@@ -18,10 +18,20 @@ sidebar: practices
 ---
 
 ::: {.callout-warning}
-## Draft minimum
+## Proposed minimum requirement
 
-Receiving a file is not the same as accepting a dataset for analysis. Preserve the received source package and record enough evidence to identify, inspect, restrict, and accept or reject it.
+The [Minimum GeoEpi Project Standard](../../start/minimum-standard.qmd) requires source protection, provenance, restrictions, metadata, and traceability. Preserve the received source package and record enough evidence to identify, inspect, restrict, and accept or reject it for staging. **Intake acceptance does not establish analytical validity, model suitability, publication readiness, or authorization for every downstream use.**
 :::
+
+## Definitions for intake
+
+- **Source:** the provider's conceptual dataset or data system.
+- **Snapshot:** a specific received, downloaded, extracted, or released representation of the source.
+- **Intake event:** the documented act of receiving or extracting a snapshot.
+- **Preserved source package:** the retained original delivered representation before local correction or normalization.
+- **Staged data:** a controlled working representation prepared from the preserved source package.
+- **Derived data:** data created through documented transformation.
+- **Authoritative location:** the location designated as current for a specified artifact; it is not necessarily the provider's original system.
 
 ## Before receipt
 
@@ -35,7 +45,7 @@ Place incoming data first in an approved source or intake location. The location
 
 ## Assign identifiers
 
-Assign a project identifier, source identifier, snapshot/release/acquisition identifier, and intake-event identifier when multiple deliveries occur. A source dataset describes the provider’s data; a snapshot or delivery identifies one received representation.
+Every received dataset must have project identity or authoritative project context, a source ID, and a snapshot, release, extraction, or acquisition ID sufficient to distinguish the received version. A separate intake ID is **Conditionally required** when more than one delivery or extraction may occur, replacement or corrected deliveries are possible, multiple people or systems handle intake, a formal manifest or audit trail is needed, or the workflow is recurring, regulated, operational, or high consequence. For a simple one-time delivery, the snapshot or acquisition ID may also serve as the intake ID.
 
 ## Preserve the source package
 
@@ -50,6 +60,8 @@ At minimum, record source, provider or collector, acquisition method, acquisitio
 Use a file-level manifest for a multi-file delivery, archive, repeated snapshot, sequence batch, raster stack, model-input bundle, transfer across systems, or regulated/high-consequence workflow. A checksum is **Conditionally required** when integrity across transfers, storage systems, releases, or repeated processing materially matters. It is not required for every trivial temporary file.
 
 Use the [data-file manifest template](../../templates/data-file-manifest-template.csv).
+
+In that manifest, `relative_path` is relative to the documented intake or preserved-source root. `source_modified_time` is the provider's or source system's time, not local receipt time, and should include a time zone or an explicit source convention. Checksum fields may be blank when integrity checking is not proportionate. `supersedes` should reference a stable file, snapshot, or manifest ID. Use the documented intake statuses in `validation_status`: `received`, `pending validation`, `pending clarification`, `accepted for staging`, `accepted with documented limitation`, `rejected`, or `superseded`; the row marked as an example must be deleted before use.
 
 ## Initial technical inspection
 
@@ -71,9 +83,26 @@ Check only enough to decide whether the delivery is plausible and ready for furt
 
 Record the discrepancy, date identified, source contacted, clarification received, replacement delivery, affected files, and acceptance decision. Never silently substitute or overwrite a corrected delivery. Link related deliveries through snapshot or intake identifiers.
 
+## Status-transition model
+
+```{mermaid}
+flowchart TD
+  received[received] --> pending_validation[pending validation]
+  pending_validation --> pending_clarification[pending clarification, when needed]
+  pending_validation --> accepted_staging[accepted for staging]
+  pending_clarification --> accepted_staging
+  pending_validation --> rejected[rejected]
+  pending_clarification --> rejected
+  accepted_staging --> limited[accepted with documented limitation]
+  accepted_staging --> superseded[superseded later]
+  limited --> superseded
+```
+
+`superseded` does not delete or overwrite the earlier intake record. Rejection does not necessarily mean that the source is scientifically invalid; it means that this delivery must not enter staging. A pending delivery must not silently enter downstream analysis. An accepted-with-limitation decision must record the limitation, likely consequence, downstream restriction, responsible decision-maker, and required follow-up.
+
 ## Acceptance statuses
 
-Use explicit project statuses such as **received**, **pending validation**, **pending clarification**, **accepted for staging**, **accepted with documented limitation**, **rejected**, and **superseded**. These labels guide the workflow and do not establish institutional classification terminology.
+Use only these statuses for this intake workflow: **received** means material has arrived but has not been inspected; **pending validation** means technical or content inspection is incomplete; **pending clarification** means a material question has been sent to the provider or owner; **accepted for staging** means the delivery may enter the Organize stage; **accepted with documented limitation** means it may enter staging with a visible limitation and responsible decision-maker; **rejected** means it must not enter staging; and **superseded** means a later identified delivery replaces it while the original record remains preserved. These labels guide the workflow and do not establish institutional classification terminology.
 
 ::: {.callout-warning}
 ## Stop and resolve
@@ -108,13 +137,14 @@ Record parameter version, units, scenario, initial conditions, boundary conditio
 ## Intake completion gate
 
 - [ ] Authorization, owner, provider, restrictions, and access contact are recorded.
-- [ ] Project, source, snapshot, and intake-event identifiers are assigned.
+- [ ] Project context, source ID, and snapshot/release/extraction/acquisition ID are assigned.
+- [ ] A separate intake ID is assigned when the delivery pattern or consequence makes it conditionally required; a simple one-time delivery may reuse its snapshot ID.
 - [ ] The delivered source package is preserved at an authoritative location.
 - [ ] Expected and received contents are compared.
 - [ ] Technical and initial content inspections are recorded.
 - [ ] Required metadata, identifiers, units, dates, geography, and domain fields are interpretable.
 - [ ] Discrepancies and clarifications are linked to the affected delivery.
 - [ ] Acceptance status and responsible decision-maker are recorded.
-- [ ] The data are explicitly accepted for staging, accepted with limitation, rejected, or left pending clarification.
+- [ ] The data are explicitly received, pending validation, pending clarification, accepted for staging, accepted with documented limitation, rejected, or superseded.
 
-Passing this gate allows entry to the Organize stage. It does not certify final analytical validity.
+Passing this gate allows an accepted delivery to enter the Organize stage. It does not certify analytical validity, model suitability, publication readiness, or authorization for every downstream use.

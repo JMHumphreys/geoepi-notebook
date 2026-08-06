@@ -27,6 +27,8 @@ Retain the endpoint or database, dataset/table, query, request parameters, date 
 
 When a retrieval can change, produce a preserved snapshot or immutable release record appropriate to the project. Distinguish the live source, retrieved snapshot, normalized data, and current analytical dataset. A live URL is not a reproducibility identifier.
 
+Each accepted retrieval should produce or update a source inventory record, snapshot or retrieval ID, intake or acceptance status, schema/revision assessment, and a preserved snapshot when the source can change or the workflow consequence warrants it. A retrieval manifest is **Conditionally required** for multi-file, repeated, transferred, regulated, operational, or integrity-sensitive retrievals.
+
 ## Revisions and late-arriving data
 
 Document replacement behavior, backfills, corrected records, reporting delays, revised historical periods, schema changes, changed geographic boundaries, and changed case definitions. “Latest” is not an adequate identifier for a reproducible retrieval.
@@ -45,13 +47,15 @@ For a consequential recurring workflow, retain an immutable retrieval manifest a
 
 Before accepting a retrieval, retain evidence that all pages or partitions were retrieved, expected date or spatial coverage is present, rate limiting did not silently truncate results, retries did not duplicate records, and response counts are plausible.
 
+A successful HTTP response, database connection, or completed download command is not evidence of complete retrieval.
+
 ## Schema drift
 
 Check for added or removed variables, type changes, category changes, renamed fields, changed missing-value conventions, altered units, and changed coordinate definitions. Record how a change was handled; do not silently coerce a new schema into an old one.
 
 ## Retrieval manifest
 
-**Recommended, conditionally required for consequential recurring workflows:** retain a manifest containing retrieval ID, source ID, requested period, request hash where useful, retrieved files, status, timestamps, software/configuration version, checksums where proportionate, log location, and error or retry information.
+**Recommended, conditionally required for consequential recurring workflows:** retain a manifest containing retrieval ID, source ID, snapshot ID, intake or acceptance status, requested period, request hash where useful, retrieved files, status, timestamps, software/configuration version, checksums where proportionate, log location, schema/revision assessment, and error or retry information.
 
 ::: {.callout-note}
 ## Example
@@ -69,3 +73,4 @@ A weekly environmental raster retrieval should record the requested weeks, geogr
 - [ ] Retry, failure, duplicate, incomplete, and superseded states are distinguishable.
 - [ ] Credentials are kept outside committed code, configuration, logs, and templates.
 - [ ] The resulting snapshot is registered through the [data-source inventory](../../templates/data-source-inventory-template.csv) and, when useful, the [file manifest](../../templates/data-file-manifest-template.csv).
+- [ ] The retrieval has an intake or acceptance status, schema/revision assessment, and preserved snapshot when required.

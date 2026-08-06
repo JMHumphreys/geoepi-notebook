@@ -58,3 +58,7 @@ The decision itself should be visible. Record “README scope is sufficient” o
 - [ ] Unresolved institutional questions are linked to [Open Policy Decisions](../../standards/open-policy-decisions.qmd).
 
 This gate authorizes planning to proceed to data-management planning and acquisition; it does not approve analysis or release.
+
+## Evidence and interpretation
+
+The planning workflow draws on the existing [resource catalog](../../resources/index.qmd), especially [The Turing Way](https://book.the-turing-way.org/), [Good Enough Practices in Scientific Computing](https://arxiv.org/abs/1609.00037), [RDMkit](https://rdmkit.elixir-europe.org/), [DataONE](https://dataone.org/best-practices/), and the [TIER Protocol](https://www.projecttier.org/tier-protocol/). These sources support explicit project purpose, durable documentation, version control, data-management planning, reproducibility, and handoff. Access date: 2026-08-05. External guidance informs this workflow but does not establish GeoEpi or institutional policy.

@@ -18,11 +18,13 @@
 
 ## Data-intake acceptance
 
-- [ ] Authorization, provider, source ID, snapshot/release ID, and intake-event ID are recorded when data are received.
+- [ ] Authorization, provider, source ID, and snapshot/release/extraction/acquisition ID are recorded when data are received.
+- [ ] A separate intake ID is recorded when repeated, corrected, multi-handler, recurring, regulated, operational, or high-consequence intake makes it conditionally required.
 - [ ] The delivered source package is preserved at an authoritative location.
 - [ ] Expected and received contents, restrictions, technical inspection, and content inspection are recorded.
 - [ ] Discrepancies and replacement deliveries are linked rather than silently overwritten.
-- [ ] The acceptance status and responsible decision-maker are recorded before staging.
+- [ ] The status is recorded as received, pending validation, pending clarification, accepted for staging, accepted with documented limitation, rejected, or superseded before staging.
+- [ ] If accepted with documented limitation, the limitation, consequence, downstream restriction, responsible decision-maker, and follow-up are recorded.
 
 ## Result and release review
 

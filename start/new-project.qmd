@@ -3,9 +3,13 @@ title: "Starting a New Project"
 description: "A concise gateway into GeoEpi project planning and data intake."
 status: draft
 practice-level: recommended
-audience: project leads
-domains: [all]
-topics: [planning, project-organization]
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - planning
+  - project-organization
 owner: GeoEpi Lab
 last-reviewed: 2026-08-05
 review-cycle: annual
