@@ -1,0 +1,66 @@
+---
+title: "Analysis Design"
+description: "Define the analysis question, target, data version, method, settings, and intended outputs."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - analysis
+  - reproducibility
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+## Begin with the question
+
+State what the analysis is intended to do. Useful categories include descriptive, comparative, explanatory, inferential, predictive, forecasting, decision-support, simulation, method development, and sensitivity analysis. Categories may overlap, but the intended use should be clear. “Fit a model” is a method description, not an analysis objective.
+
+## Define the target
+
+State exactly what quantity, comparison, prediction, pattern, or simulated outcome the analysis is intended to produce. The statistical term **estimand** may be used as a name for the quantity being estimated, but plain language is usually enough.
+
+Record as applicable:
+
+- target population or system;
+- unit of observation, unit of analysis, and unit of inference;
+- outcome or response;
+- comparison or contrast;
+- prediction target or forecast horizon;
+- spatial and temporal support;
+- intended audience or decision;
+- uncertainty quantity to report.
+
+## Identify the analysis data
+
+Record the staged or derived dataset ID, dataset version, readiness status, readiness limitation, authoritative location, period represented, important restrictions, and analysis-specific subset. Do not rely only on an informal filename such as `final_data.csv`.
+
+## Specify the method and settings
+
+Describe in ordinary scientific language the method or model family, response, predictors, confounders or adjustment variables, interactions, offsets or denominators, weights, grouping, spatial and temporal structure, transformations, planned exclusions, missing-data treatment, consequential software or packages, and intended tables, figures, maps, forecasts, or simulation summaries. Do not require mathematical notation or teach which method to choose.
+
+## Make decision timing visible
+
+Distinguish decisions made before inspecting the outcome, during initial exploration, after preliminary results, after a failed or incomplete run, during sensitivity work, and during final reporting. Record the timing when it could affect how a later reader understands the analysis.
+
+## Proportional documentation
+
+### Small exploratory analysis
+
+A clear notebook or script heading may be enough when it records the dataset version, short objective, settings, visible outputs, and a brief note on what changed. A rendered Quarto document or notebook may also serve as the run record when it contains the required execution details.
+
+### Publication-oriented or collaborative analysis
+
+Use an analysis specification or equivalent, identify primary and secondary work, record revisions, name important outputs, and use result traceability where warranted. A separate specification is not required when a well-structured Quarto document, notebook, protocol, or README already contains the information.
+
+### Operational or high-consequence analysis
+
+Use an explicit analysis version, responsible analyst and reviewer, controlled settings, identified runs, recorded failure and retry states, formal result tracing, and a readiness decision.
+
+## Stop and resolve
+
+Pause execution when the dataset is not ready, the version is unclear, the target or unit of inference is undefined, a planned comparison cannot be computed, restrictions prevent the intended use, important settings exist only in an interactive workspace, exclusions are undocumented, or intended outputs cannot be identified.
