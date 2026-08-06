@@ -1,0 +1,49 @@
+---
+title: "Assumptions, Diagnostics, and Fit"
+description: "Use method-appropriate evidence to examine behavior, assumptions, and important failure modes."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - validation
+  - diagnostics
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+Diagnostics are evidence about how a method behaves and where it may fail. They are not decorative figures and are not automatically pass/fail tests.
+
+## Match checks to the method
+
+Relevant checks may include residual patterns, distributional and variance assumptions, overdispersion, zero inflation, nonlinear relationships, influential observations, multicollinearity, independence or dependence, spatial or temporal autocorrelation, hierarchical structure, identifiability, unrealistic fitted values, instability under small changes, boundary estimates, and numerical warnings. Do not require every check for every analysis.
+
+## Residuals
+
+**Residuals** are differences between observed values and values represented or predicted by the model. Use graphical and numerical checks appropriate to the method. Look for systematic patterns, geographic clustering, temporal structure, changing variance, extreme observations, subgroup-specific failure, and unrepresented nonlinear behavior. Random-looking residuals do not prove that a scientific interpretation is correct.
+
+## Bayesian and sampling-based methods
+
+Record and evaluate as appropriate:
+
+- chain behavior and convergence measures;
+- effective sample size;
+- divergent transitions or numerical warnings;
+- posterior predictive checks;
+- prior-to-posterior behavior;
+- sensitivity to initial values;
+- parameter identifiability.
+
+A **posterior predictive check** compares observed data with data generated from the fitted model to see whether the model reproduces important features. Avoid universal convergence thresholds; use method-appropriate recommendations and record the thresholds actually applied.
+
+## Fit is not prediction
+
+A model may describe the data used to fit it well and still predict new data poorly. Separate in-sample fit, diagnostic adequacy, out-of-sample prediction, causal interpretation, and domain plausibility. A high R-squared value, low information criterion, small p-value, narrow credible interval, or visually appealing map is not sufficient validation.
+
+## Model comparison
+
+When several models were considered, record which were compared, why, what evidence was used, whether comparison occurred during Analyze or Validate, whether it changed the primary analysis, and which result version was retained. If validation evidence leads to a different model, return to Analyze and create a new analysis version.
