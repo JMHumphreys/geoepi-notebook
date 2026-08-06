@@ -39,6 +39,25 @@
 - [ ] Planned QA/QC checks and expected outputs are defined.
 - [ ] This preparation is understood not to validate a model or result.
 
+## Analysis design and execution
+
+- [ ] The analysis objective and quantity, comparison, prediction, pattern, or simulation outcome are recorded.
+- [ ] The dataset ID, version, readiness status, limitation, subset, and restrictions are recorded.
+- [ ] The analysis classification is recorded as exploratory, planned primary, planned secondary, sensitivity, post hoc, or final reporting analysis as applicable.
+- [ ] The method, variables, transformations, exclusions, settings, and intended outputs are recorded.
+- [ ] Code, settings, software, environment, and each consequential execution are identifiable.
+- [ ] Seeds, scenarios, parameter sets, partitions, and replicates are recorded where needed.
+- [ ] Expected outputs are compared with outputs actually produced.
+- [ ] Warnings, failures, retries, cancellations, incomplete runs, and manual recovery are visible.
+
+## Ready for validation
+
+- [ ] Important candidate results trace to the analysis data, analysis version, code, settings, run, and output.
+- [ ] The analysis readiness status is explicitly **not ready for validation**, **ready for validation**, or **ready for validation with documented limitation**.
+- [ ] A responsible analyst or reviewer and ISO 8601 decision timestamp are recorded for a ready status.
+- [ ] Any documented limitation includes its consequence, downstream restriction, responsible decision-maker, and follow-up.
+- [ ] The readiness decision records that validation has not yet occurred.
+
 ## Result and release review
 
 - [ ] Results trace to inputs, code, parameters, environment, and output/run IDs.
