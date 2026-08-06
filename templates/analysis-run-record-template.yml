@@ -1,0 +1,62 @@
+# Analysis run record. Replace clearly marked values; do not include credentials,
+# protected data, or absolute personal paths. Nulls and empty lists are safe defaults.
+project_id: null
+analysis_id: null
+analysis_version: null
+run_id: null
+purpose: null
+run_status: planned
+validation_readiness: not ready for validation
+
+input_datasets:
+  - dataset_id: null
+    dataset_version: null
+    readiness_status: null
+
+code:
+  version: null
+  main_script_or_notebook: null
+  command_used: null
+
+settings:
+  record: null
+  parameter_set_id: null
+
+computing:
+  location: null
+  environment_record: null
+  software_notes: null
+  hpc_run_record: null
+
+randomness:
+  deterministic_or_stochastic: null
+  seed: null
+  scenario_id: null
+  replicate_id: null
+  partition_or_fold_id: null
+
+# Use ISO 8601 timestamps when these fields are populated.
+timing:
+  started_at: null
+  completed_at: null
+
+outputs:
+  expected: []
+  produced: []
+  result_record: null
+
+logs:
+  standard_output: null
+  errors: null
+  warnings: null
+
+status_details:
+  limitation: null
+  failure_reason: null
+  retry_of_run_id: null
+  supersedes_run_id: null
+
+responsibility:
+  analyst_or_operator: null
+  readiness_decision_by: null
+  readiness_decision_at: null
