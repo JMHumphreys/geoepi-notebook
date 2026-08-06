@@ -1,0 +1,64 @@
+---
+title: "Identifiers and Schema"
+description: "Define dataset, record, relationship, schema, unit, category, and missingness conventions before analysis."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - data-management
+  - reproducibility
+owner: GeoEpi Lab
+last-reviewed: 2026-08-05
+review-cycle: annual
+sidebar: practices
+---
+
+## Dataset identifiers
+
+Distinguish source ID, snapshot ID, staged-dataset ID, dataset version, derived-dataset ID, transformation ID, run ID, and output ID. A filename alone is usually not a sufficient stable identifier.
+
+## Record identifiers
+
+Document natural, surrogate, composite, repeated-observation, hierarchical, spatial-unit, temporal, sample, sequence, facility, herd, animal, case, and observation identifiers as applicable. Do not construct identifiers from sensitive fields unless authorized.
+
+For each important key, state whether it is unique, unique within a group, repeatable across time, nonmissing, stable across snapshots, supplied by the source or generated locally, and safe to disclose.
+
+## Duplicates and relationships
+
+Distinguish byte-for-byte duplicate files, duplicate rows, legitimate repeated observations, duplicate identifiers, conflicting records, revised records, and multiple reports of one event. Identical values are not automatically duplicate observations.
+
+Document primary keys, foreign keys, relationship cardinality, expected match rate, unmatched records, many-to-many joins, deduplication before joining, aggregation order, and snapshot/temporal compatibility.
+
+::: {.callout-warning}
+## Stop and resolve
+
+An accidental many-to-many join can multiply records while producing plausible-looking outputs. Stop when join losses, unexpected multiplication, or conflicting keys cannot be explained.
+:::
+
+## Schema definition
+
+Build on the existing [data dictionary template](../../templates/data-dictionary-template.csv). A usable schema documents field name, description, type, unit, allowed values/codes, missing-value convention, identifier role, date/time convention, spatial meaning, temporal support, derivation, quality notes, and schema version where warranted.
+
+## Types and parsing
+
+Review automatic type guessing for consequential datasets. Check strings with leading zeroes, categorical codes, locale-dependent numbers, dates, Boolean values, censored values, scientific notation, large integers, coordinate precision, and encoding.
+
+## Units and missingness
+
+Record unit definition, scale, denominator where relevant, original and standardized units, conversion rule, and mixed-unit handling. Distinguish not observed, not applicable, suppressed, below detection, not reported, withheld, structurally absent, parsing failure, and true zero. Do not collapse these states without recording the consequence.
+
+## Categorical codes and schema versions
+
+For each code, record code, label, definition, source/version, valid period when codes change, and handling of unknown or deprecated values. Create a new schema version when fields, types, units, code meanings, identifier meanings, temporal support, or spatial support affect interpretation or compatibility.
+
+## Domain examples
+
+- Surveillance records: case ID, case-definition version, facility/jurisdiction key, event/report dates, and revision status.
+- Field observations: observation ID, taxon ID, site key, effort, unit, and detection-limit convention.
+- Sequence metadata: sample ID, accession, host/location restriction, collection date, and reference version.
+- Spatial polygons: stable area ID, boundary version, CRS, geometry status, and spatial support.
+- Weekly rasters: tile/layer ID, week-year, CRS, origin/alignment, NoData, and mask.
+- Simulation inputs: scenario ID, parameter-set version, units, and initial/boundary conditions.
