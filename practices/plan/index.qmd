@@ -1,0 +1,60 @@
+---
+title: "Plan a Project"
+description: "Define purpose, scope, outputs, roles, consequence, and planning depth before methods or acquisition."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - planning
+  - project-management
+owner: GeoEpi Lab
+last-reviewed: 2026-08-05
+review-cycle: annual
+sidebar: practices
+---
+
+Planning records the conditions that make later work understandable and finishable. It does not require a separate planning document: a README, charter, project notes, or another durable artifact may hold the information.
+
+## Planning sequence
+
+1. Define the decision or scientific purpose.
+2. Bound the project.
+3. Identify outputs and completion criteria.
+4. Assign roles and decision authority.
+5. Classify project complexity and consequence.
+6. Anticipate data, storage, computing, and external dependencies.
+7. Choose proportional documentation.
+8. Review the initiation gate.
+
+| Step | Minimum information | Supporting template |
+|---|---|---|
+| Purpose and scope | Objective, owner, authoritative location, status, boundaries | [Project README](../../templates/project-readme-template.md) |
+| Charter decision | Whether project characteristics justify a standalone charter | [Project charter](../../templates/project-charter-template.md) |
+| Readiness | Roles, restrictions, dependencies, completion criteria, next actions | [Readiness checklist](../../templates/project-readiness-checklist.md) |
+| Exceptions | Requirement, reason, consequence, compensating control, approval, review | [Exception record](../../templates/project-exception-record.md) |
+
+## Is a separate charter warranted?
+
+::: {.callout-tip}
+## Conditionally required
+
+A standalone charter is warranted when the project has multiple contributors or organizations, publication intent, external funding or formal deliverables, operational use, sensitive or governed data, substantial computational expense, long duration, formal handoff expectations, or consequential policy, regulatory, or management use. A small exploratory project may keep purpose, owner, scope, outputs, and status in its README.
+:::
+
+The decision itself should be visible. Record “README scope is sufficient” or link the charter; do not create a formal file only to satisfy a checklist.
+
+## Initiation gate
+
+- [ ] Objective, intended output, owner, authoritative location, and status are recorded.
+- [ ] Included and excluded work, dependencies, and assumptions are visible.
+- [ ] Roles and decision authority are assigned.
+- [ ] Project consequence and complexity are classified proportionately.
+- [ ] Anticipated data, restrictions, storage, computing, and external dependencies are identified.
+- [ ] Completion criteria and review authority are stated.
+- [ ] A README or charter contains the required scope information.
+- [ ] Unresolved institutional questions are linked to [Open Policy Decisions](../../standards/open-policy-decisions.qmd).
+
+This gate authorizes planning to proceed to data-management planning and acquisition; it does not approve analysis or release.
