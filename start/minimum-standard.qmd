@@ -1,38 +1,290 @@
 ---
-title: "Minimum GeoEpi Standard"
-description: "A provisional baseline for making a project understandable and recoverable."
-status: draft
-practice-level: minimum
-audience: all lab members
-domains: [all]
-topics: [documentation, provenance, handoff]
-owner: GeoEpi Lab
+title: "Minimum GeoEpi Project Standard"
+description: "Proposed minimum requirements for understandable, reviewable, reproducible, and transferable GeoEpi projects."
+status: draft-policy
+practice-level: required
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - project-management
+  - reproducibility
+  - data-management
+  - documentation
+owner: unassigned
 last-reviewed: 2026-08-05
 review-cycle: annual
 sidebar: start
 ---
 
 ::: {.callout-warning}
-The items below are a proposed baseline for review, not an approved requirement.
+## Proposed draft policy — review required
+
+This page proposes a minimum standard. It is not approved policy. Institutional, legal, contractual, privacy, security, records-management, funder, and data-governance requirements take precedence.
 :::
 
-## Why this matters
+## 1. Purpose
 
-A small, consistent record of purpose, inputs, decisions, and outputs is often more valuable than a large but unexplained project folder.
+The minimum standard makes GeoEpi projects understandable, reviewable, reproducible where access permits, and transferable across people and time. A requirement belongs here only when failure materially threatens scientific defensibility, data security, result traceability, project continuity, collaboration, publication, operational use, handoff, or preservation.
 
-## Proposed baseline
+## 2. Scope
 
-1. A README states the question, scope, owner, status, and how to orient a newcomer.
-2. Raw or received data are preserved separately from derived data, respecting access restrictions.
-3. Important inputs have a source, acquisition date, and processing note.
-4. Analysis steps and assumptions are recorded in version-controlled text where feasible.
-5. Key outputs identify the code, data, software environment, and review status used to create them.
-6. Limitations, unresolved questions, and next actions are visible.
+Apply this standard to active GeoEpi research, surveillance, field-data, software, modeling, simulation, operational, and HPC projects. Apply it proportionally to exploratory work and legacy projects. It covers project records and workflows, not scientific conclusions or a single software stack.
 
-## Checklist
+## 3. Guiding principle
 
-- [ ] Question, scope, and decision context are stated.
-- [ ] Data provenance and permissions are recorded.
-- [ ] Project structure is documented.
-- [ ] Important transformations are traceable.
-- [ ] A second person can find the current result and its caveats.
+The GeoEpi Lab Book is a living resource. The minimum is a floor for defensibility and continuity, not a rigid template for every project. Use **Required** for universal controls, **Conditionally required** when project characteristics trigger a control, **Recommended** for practices that improve quality but are not universal, and **Optional** for useful local choices.
+
+The required artifacts describe information that must be retained and discoverable. They do not necessarily require separate files. A README, configuration file, rendered report, workflow manifest, validated dataset, or automated log may satisfy multiple requirements when the information is clear, durable, and traceable. Separate formal records become necessary when project complexity, risk, contributors, operational importance, or institutional requirements justify them.
+
+## 4. Definitions
+
+- **Source data:** received or collected data preserved without undocumented modification.
+- **Derived data:** data created by a documented transformation from source or staged data.
+- **Consequential:** capable of changing a reported result, operational action, data protection, or project handoff.
+- **Result traceability:** the ability to identify inputs, code, parameters, environment, execution, and output for a result.
+- **Authoritative location:** the project location designated as current for a specified artifact or workflow.
+- **Project artifact:** a durable record needed to understand, execute, review, release, hand off, or close a project.
+
+## 5. Universal minimum requirements
+
+### Project identity — Required
+
+Every active project must identify a stable title or identifier, project lead, primary analytical or data-management contact, research or operational objective, intended outputs, audience or decision context, current status, and authoritative repository or project location.
+
+Every project must contain a concise scope statement identifying its objective, intended output, owner, authoritative location, and current status. For a small project, the README may contain this scope statement; a separate charter is not universal.
+
+### Project README — Required
+
+Every active project must have a current project-level README covering purpose, responsible personnel, repository structure, data locations, setup requirements, principal workflows, expected outputs, access restrictions, current status, known limitations, and contact or handoff information. Use [`templates/project-readme-template.md`](../templates/project-readme-template.md).
+
+### Directory and object organization — Required
+
+Separate source data, interim/staged data, derived data, analysis code, configuration, documentation, outputs, logs, and temporary files. Repository-specific names are permitted when their meanings are documented. No universal folder tree is required.
+
+### Source-data protection — Required
+
+Preserve source data without undocumented modification. A correction must be reproducible, recorded, attributable, and linked to the corrected or derived version. Do not put protected source data in Git unless authorized.
+
+### Data provenance — Required
+
+For each external or internally collected dataset, record a stable local identifier, source, collector/provider, acquisition method and date, original filename or source identifier, version/release date, license or use restriction, a checksum when proportionate, and transformations connecting source to derived data.
+
+When the transformation chain is clear, versioned scripts and their retained outputs may constitute the source-to-derived provenance record; a separate provenance table is conditional.
+
+### Data classification and protection — Required
+
+Identify relevant restrictions, such as public, internal, restricted, confidential, personally identifiable, proprietary, governed by a data-use agreement, or sensitive ecological/geographical information. These labels are descriptive until institutional terminology is approved; do not invent USDA or laboratory classification policy.
+
+### Metadata and data dictionaries — Required
+
+Document variables, units, data types, identifiers, categories/codes, missing-value conventions, date/time conventions, coordinate reference systems, spatial units, temporal support, and important derivations. Use the data dictionary template where a table is appropriate.
+
+### Scripted transformations — Required
+
+Retain consequential transformations and analyses in scripts, workflows, notebooks, or rendered computational documents. A manual step is permitted only when scripting is not reasonable, the procedure and inputs/outputs are documented, the responsible person is recorded, and the effect can be reviewed.
+
+### Version control — Required
+
+Use Git-based version control for code and documentation unless a documented exception applies. Git is generally not the correct storage location for credentials, protected data, large raw datasets, sensitive spatial records, temporary files, generated caches, or non-redistributable proprietary material.
+
+### Software and computational environment — Required
+
+Record enough environment information to reconstruct the project at a level proportional to risk and complexity. This may include R and package versions, `renv.lock`, a Python environment, containers, system libraries, external command-line tools, GIS/database versions, HPC modules, and operating-system details. `renv` is not universal.
+
+### Configuration and parameters — Required
+
+Represent consequential paths and parameters explicitly through configuration files, command-line arguments, function arguments, workflow manifests, or documented constants. Major results must not depend solely on undocumented interactive state. A configuration file, workflow manifest, or documented function or command invocation may constitute the parameter record; a separate parameter document is not required when the information is already clear.
+
+### Quality assurance — Required
+
+Document checks appropriate to the workflow. Examples include schema, missingness, duplicates, ranges, units, identifiers, temporal consistency, spatial validity, geometry, raster alignment, masks/exclusions, output completeness, model convergence, and simulation completion. Do not impose irrelevant checks. An executable QA script and retained report or log may constitute the QA/QC record when the checks, results, exceptions, and reviewer are discoverable.
+
+### Result traceability — Required
+
+Every externally reported or operationally consequential result must be traceable to identified input data, versioned code, relevant configuration and parameters, computational environment, a specific output, and a run identifier or reproducible execution path where appropriate.
+
+### Decision documentation — Required
+
+Record consequential decisions in a durable location: exclusion rules, case-definition changes, parameter changes, source substitutions, boundary changes, modeling assumptions, workflow redesigns, and release decisions. Trivial coding choices do not need formal decision records. Git history, issues, pull requests, or a decision log may satisfy this requirement when the decision, rationale, responsible person, and date are recoverable.
+
+### Publication or release — Required at external release
+
+Before external release, complete a clean render or workflow execution; document source data; identify code version; synchronize manuscript, code, figures, and tables; provide data/code availability statements; record licenses or restrictions and known limitations; and complete review proportionate to risk and importance. A separate release package or checklist is required only when the release context warrants it.
+
+### Handoff and closeout — Required when responsibility changes, work pauses indefinitely, or the project closes
+
+All active projects must avoid undocumented personal dependencies and keep current README, repository, data-location, known-issue, and reproduction information. An actual handoff record is required when responsibility changes. A final closeout record is required when work pauses indefinitely or the project closes; it records access transfer, archive/retention, unfinished work, removal or transfer of personal dependencies, and the authoritative final version.
+
+## 6. Requirements by project type
+
+These are **conditionally required** when the project class applies.
+
+### Spatial and spatiotemporal projects
+
+Record CRS and datum, coordinate units, extent, resolution or spatial support, raster origin/alignment, spatial mask, boundary source/version, spatial transformations, coordinate uncertainty, and sensitive-location handling. For example, a map can be irreproducible when a boundary release or raster alignment is not recorded.
+
+### Epidemiological and surveillance projects
+
+Record case definition and version/effective dates, event/report date meanings, denominator, deduplication, linkage, reporting delays, jurisdictional changes, confidentiality restrictions, and snapshot/extraction date. A changed case definition or delayed report can otherwise make two valid-looking estimates incomparable.
+
+### Ecological and field-data projects
+
+Record sampling design and locations, taxonomic identifiers, units, detection limits, observer/instrument, effort, missing observations, and sensor calibration where relevant. Field effort and detection limits can change apparent abundance even when the analysis code is unchanged.
+
+### Genomics and phylogenetics projects
+
+Record sample identifiers, sample-to-sequence linkage, accessions, reference genome, database versions, read-processing workflow, filters, alignment, tree-building configuration, metadata joins, and sensitive host/location handling. A sequence alignment without its sample linkage and filtering record is not a transferable input.
+
+### Statistical, mathematical, and simulation models
+
+Record model purpose, conceptual structure, variables, parameters and units, initial/boundary conditions, calibration data, validation, stochastic seeds, replicate strategy, scenarios, acceptance criteria, and limitations. A simulation result without seed and scenario definitions cannot be checked or extended.
+
+### Operational workflows
+
+Record production schedule, input availability, failure behavior, logging, alerting, retry behavior, output validation, responsible operator, and change control. Operational outputs require an owner who can explain what happened when an input is late or invalid.
+
+### HPC workflows
+
+Record submission script, software environment, modules/container, resource request, job identifier, array definition, input manifest, output destination, stdout/stderr logs, failure and retry status, and the relationship between local and cluster environments. Use [`templates/hpc-run-record-template.yml`](../templates/hpc-run-record-template.yml).
+
+## 7. Project artifact matrix
+
+The matrix classifies information and records, not a mandatory file count. One artifact may satisfy several rows.
+
+| Artifact | Requirement class | When required | Minimum contents | Preferred format/location | Responsible role | Review point |
+|---|---|---|---|---|---|---|
+| Project README with identity and scope | Required for all active projects | All active projects | Identity, scope, people, structure, data, setup, workflow, outputs, restrictions, limitations | Markdown; repository root | Project lead | Initiation and every release |
+| Standalone project charter | Conditionally required | Triggered by contributors, persistence, funding, publication, operations, sensitivity, cost, handoff, policy, regulatory, or management use | Objective, audience, outputs, boundaries, risks, owner, responsibilities | Markdown; `docs/` or project system | Project lead | Initiation and material scope change |
+| Source-data record | Required when data are used | Any project using data | Source, identifier, dates, access, license, location, version, restrictions | README, CSV, or approved data system | Data contact | Data intake |
+| Separate data-source inventory | Conditionally required | Complex, sensitive, multi-source, or high-risk data | Full source inventory and access/provenance fields | CSV; `data/` or approved data system | Data contact | Data intake |
+| Data dictionary or equivalent metadata | Required when data are used; separate file conditional | Any project using structured, spatial, ecological, surveillance, or model data | Fields, types, units, codes, missingness, spatial/temporal meaning | Dataset metadata, CSV, or Markdown | Data contact | Analysis readiness |
+| Environment information | Required for consequential computation | Any consequential computation | Versions and reconstruction notes | README, YAML/Markdown, lockfile, or container record | Analytical contact | Analysis readiness and release |
+| Separate source-to-derived provenance table | Conditionally required | Complex or high-risk transformations | Inputs, transformations, outputs, actor/date, checksums as proportionate | CSV/Markdown; `data/` or `docs/` | Data/analytical contact | Result review |
+| Version-controlled code or documented exception | Required for scripted work | Any scripted work | Reproducible source and history | Git repository or exception record | Analytical contact | Every result review |
+| Consequential parameter record | Required when consequential parameters or paths exist | Any consequential parameters or paths | Explicit values, units, scenario, source, date | Configuration, arguments, manifest, or Markdown | Analytical contact | Analysis readiness |
+| QA/QC information | Required for consequential data/workflows | Any consequential data or workflow | Checks, results, exceptions, reviewer | Script, report, log, CSV, or Markdown | Project team | Result review |
+| Separate result inventory/run manifest | Conditionally required | Multiple outputs, runs, or high-risk work | Output IDs, inputs, code, config, run, status, location | CSV/YAML; `outputs/` or `runs/` | Analytical contact | Result review and release |
+| Separate formal decision record | Conditionally required | Consequential or contested decisions | Decision, rationale, alternatives, owner, date, review | Git history, issue, PR, log, or Markdown | Decision owner | At decision and release |
+| Handoff record | Required at handoff | Responsibility changes | Access, locations, status, issues, reproduction steps, owner | Markdown; `docs/` | Project lead | Handoff |
+| Closeout record | Required at indefinite pause or closeout | Work pauses indefinitely or ends | Final version, retention, archive, unresolved work, contacts | Markdown; `docs/` | Project lead | Closeout |
+| External-release package/checklist | Required at publication or operational release; separate artifact conditional | Publication or operational release | Clean execution, synchronized outputs, availability, license, limitations, review | Checklist, report, or release record | Project lead | Release |
+
+## 8. Research-lifecycle checkpoints
+
+Each gate is a concise, verifiable checkpoint. A failed gate is recorded and corrected or handled through an exception.
+
+### 1. Project initiation
+
+- [ ] Identity, objective, audience, outputs, status, owner, and authoritative location are recorded.
+- [ ] Scope, risks, data restrictions, and likely project type are stated.
+- [ ] README contains the concise scope statement; a standalone charter exists if the project triggers that condition.
+- [ ] Planned data locations and access owners are identified.
+- [ ] Initial environment and workflow approach are recorded.
+
+### 2. Data intake
+
+- [ ] Source identifier, provider/collector, acquisition date, original name, version, and restriction are recorded.
+- [ ] Source data are preserved or the reason is documented.
+- [ ] Required metadata and spatial/temporal conventions are available; a separate dictionary exists when warranted.
+- [ ] Source-to-derived plan and checks are identified.
+- [ ] Sensitive or governed data have an approved storage/access decision.
+
+### 3. Analysis readiness
+
+- [ ] Inputs, code, configuration, parameters, and environment record are discoverable.
+- [ ] Consequential manual steps and decisions are documented.
+- [ ] QA/QC checks are defined and applicable.
+- [ ] Entry point or execution path is identified.
+- [ ] Expected outputs and completion criteria are stated.
+
+### 4. Result review
+
+- [ ] Checks ran and exceptions are recorded.
+- [ ] Reported outputs map to input, code, parameters, environment, and run/output IDs.
+- [ ] Model, simulation, spatial, genomic, or operational diagnostics are reviewed where applicable.
+- [ ] Limitations and unresolved decisions are visible.
+- [ ] A reviewer appropriate to project risk is identified.
+
+### 5. Publication or operational release
+
+- [ ] Clean execution or render succeeds.
+- [ ] Code, manuscript, figures, tables, and outputs are synchronized.
+- [ ] Data/code availability, licenses, and access restrictions are stated.
+- [ ] Release review and approval are recorded.
+- [ ] Version, archive, and public/private locations are identified.
+
+### 6. Handoff when responsibility changes
+
+- [ ] README and inventory are current.
+- [ ] Access, credentials ownership, and data locations are transferred safely.
+- [ ] Principal-output reproduction steps succeed or limitations are recorded.
+- [ ] Known issues, unfinished work, and next actions are listed.
+- [ ] New responsible roles accept the handoff.
+
+### 7. Closeout when work pauses indefinitely or ends
+
+- [ ] Authoritative final version is named.
+- [ ] Archive, retention, and disposal decisions are recorded.
+- [ ] Reproducibility materials and restrictions are preserved.
+- [ ] Undocumented personal dependencies are removed or transferred.
+- [ ] Closeout record and contact for future questions are stored.
+
+## 9. Proportionality
+
+Documentation and controls scale with project longevity, contributors, data sensitivity, analytical complexity, computational cost, operational importance, publication and regulatory implications, likelihood of handoff, and cost of reconstruction.
+
+| Profile | Proportionate minimum |
+|---|---|
+| Small exploratory analysis | README containing the concise scope statement, source-data record, scripts, environment note, result traceability, and no separate charter unless another trigger applies |
+| Publication-oriented research | Full data inventory, dependency record, QA/QC documentation, review, release preparation, archive plan, and a standalone charter because publication intent triggers it |
+| Operational or high-consequence workflow | Formal configuration, logging, validation, failure recovery, review authority, controlled releases, and documented ownership |
+
+A standalone charter is conditionally required when a project has multiple contributors or organizations, persists beyond a short exploratory period, has external funding or formal deliverables, publication intent, operational use, sensitive or governed data, substantial computational cost, formal handoff expectations, or consequential policy, regulatory, or management use.
+
+## 10. Exceptions
+
+Use [`templates/project-exception-record.md`](../templates/project-exception-record.md). An exception must record the unmet requirement, reason, consequence, compensating control, responsible person, approval authority, review date, and closure status. An exception cannot override legal, contractual, security, privacy, or institutional requirements. Approval authority remains an open policy decision.
+
+## 11. Review checklist
+
+Use [`templates/project-readiness-checklist.md`](../templates/project-readiness-checklist.md) at the lifecycle gates. The reviewer should be able to locate the authoritative README, inputs, code, parameters, environment, QA record, output/run inventory, decisions, restrictions, and handoff/closeout state.
+
+## 12. Related templates
+
+The [Templates listing](../templates/index.qmd) provides copyable Markdown, CSV, and YAML starting points for the artifacts above. Templates are not approved policy by themselves; adapt them and record meaningful deviations.
+
+## 13. Evidence base
+
+This proposal combines observed GeoEpi practice in the [practice audit](../standards/geoepi-practice-audit.qmd) with external guidance: [The Turing Way](https://book.the-turing-way.org/), [Good Enough Practices in Scientific Computing](https://arxiv.org/abs/1609.00037), [TIER Protocol](https://www.projecttier.org/tier-protocol/), [RDMkit](https://rdmkit.elixir-europe.org/), [DataONE](https://dataone.org/best-practices/), [FAIR Principles](https://www.go-fair.org/fair-principles/), [FAIR Principles for Research Software](https://fair-software.eu/), [CARE Principles](https://www.gida-global.org/care), [USDA NAL guidance](https://www.nal.usda.gov/research-tools/data-management), [CDC Field Epidemiology Manual](https://www.cdc.gov/field-epi-manual/php/chapters/data-management.html), [FGDC metadata](https://www.fgdc.gov/metadata), [GBIF georeferencing](https://docs.gbif.org/georeferencing-best-practices/), [Ecological Metadata Language](https://knb.ecoinformatics.org/external/), and [Ecological Forecasting Initiative](https://ecoforecast.org/). Access/review date: 2026-08-05.
+
+| Standard area | Principal external guidance | GeoEpi evidence | Policy interpretation |
+|---|---|---|---|
+| Project organization and README | [Good Enough Practices](https://arxiv.org/abs/1609.00037); [The Turing Way](https://book.the-turing-way.org/) | READMEs and recognizable project entry points recur across the sample. | Require discoverable identity and scope, not a fixed folder tree. |
+| Source-data protection and provenance | [RDMkit](https://rdmkit.elixir-europe.org/); [DataONE](https://dataone.org/best-practices/) | OSF/archive links and project-specific data assets recur; acquisition and transformation records are inconsistent. | Require source protection and provenance information; separate tables are conditional. |
+| Metadata and data dictionaries | [DataONE](https://dataone.org/best-practices/); [Ecological Metadata Language](https://knb.ecoinformatics.org/external/) | Data dictionaries and workflow notes appear in some mature projects. | Require understandable variables, units, codes, and spatial/temporal meaning. |
+| Version control and scripted analysis | [The Turing Way](https://book.the-turing-way.org/); [Good Enough Practices](https://arxiv.org/abs/1609.00037) | Versioned R scripts are present throughout the sample. | Require version control or a documented exception; retain consequential transformations. |
+| Computational environments | [The Turing Way](https://book.the-turing-way.org/); [RDMkit](https://rdmkit.elixir-europe.org/) | Environment records and lockfiles are uneven; EpiPlume exposes detailed computational configuration. | Require proportional environment information, not one package manager. |
+| QA/QC | [The Turing Way](https://book.the-turing-way.org/); [Good Enough Practices](https://arxiv.org/abs/1609.00037) | EpiPlume exposes tests and validation scripts; other projects expose fewer formal checks. | Require workflow-appropriate checks; scripts and retained reports may satisfy the record. |
+| Result traceability and reproduction packages | [TIER Protocol](https://www.projecttier.org/tier-protocol/) | Rendered supporting-information sites and OSF archives recur, but run/output inventories vary. | Require traceability for reported or operational results; formal packages are event- or risk-dependent. |
+| Collaboration and decision records | [The Turing Way](https://book.the-turing-way.org/) | Project ownership, decisions, and handoff information are not consistently visible. | Require durable consequential decisions; Git history/issues may suffice. |
+| FAIR data | [FAIR Principles](https://www.go-fair.org/fair-principles/) | External archives and publication links support reuse in several projects. | Use FAIR as an orientation, subject to access and governance constraints. |
+| FAIR research software | [FAIR Principles for Research Software](https://fair-software.eu/) | Licenses and citation metadata are inconsistent across repositories. | Recommend reusable licensing and citation; institutional policy remains open. |
+| CARE and responsible governance | [CARE Principles](https://www.gida-global.org/care) | Public repository review cannot establish governance for sensitive or Indigenous data. | Require authority, responsibility, and restrictions to be identified without inventing policy. |
+| Spatial metadata and georeferencing | [FGDC](https://www.fgdc.gov/metadata); [GBIF](https://docs.gbif.org/georeferencing-best-practices/) | Spatial rasters, boundaries, and model domains recur; CRS and uncertainty records vary. | Conditionally require CRS, datum, extent, alignment, provenance, and uncertainty. |
+| Epidemiological data management | [CDC Field Epidemiology Manual](https://www.cdc.gov/field-epi-manual/php/chapters/data-management.html) | Surveillance and outbreak repositories expose model/report workflows but not consistently case-data metadata. | Conditionally require case definitions, dates, denominators, linkage, and snapshots. |
+| Ecological metadata and forecasting | [EML](https://knb.ecoinformatics.org/external/); [EFI](https://ecoforecast.org/) | Ecological and simulation workflows are represented, but forecast records are not uniform. | Conditionally require sampling, measurement, effort, calibration, scenario, and forecast metadata. |
+| Publication and preservation | [TIER Protocol](https://www.projecttier.org/tier-protocol/); [DataONE](https://dataone.org/best-practices/) | Publications, rendered reports, and OSF links recur in several repositories. | Require release readiness and preservation decisions at the relevant event. |
+
+Evidence informs this proposal but does not itself establish GeoEpi policy. The proposal uses original prose and flags areas requiring institutional interpretation in [Open policy decisions](../standards/open-policy-decisions.qmd).
+
+## 14. Open policy decisions
+
+Approval is still needed for data-classification terminology, approved storage and cloud services, backups, retention, public repositories, sensitive spatial data, PII, dependency locking, release review, exception authority, licensing, contributor/authorship expectations, records management, and generative-AI use. See [Open policy decisions](../standards/open-policy-decisions.qmd).
+
+## 15. Revision history
+
+| Date | Change | Status |
+|---|---|---|
+| 2026-08-05 | First substantive proposed minimum standard drafted from the GeoEpi practice audit and external guidance. | Draft policy; human review required |

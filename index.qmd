@@ -1,11 +1,16 @@
 ---
 title: "GeoEpi Lab Book"
-description: "A draft foundation for defensible, reproducible, and transferable geographical epidemiology."
+description: "Operational guidance for defensible, reproducible, and transferable geographical epidemiology."
 status: draft
 practice-level: orientation
-audience: all lab members
-domains: [all]
-topics: [reproducibility, documentation, data stewardship]
+audience:
+  - all-lab-members
+domains:
+  - all
+topics:
+  - reproducibility
+  - documentation
+  - data-stewardship
 owner: GeoEpi Lab
 last-reviewed: 2026-08-05
 review-cycle: annual
@@ -14,14 +19,19 @@ review-cycle: annual
 ::: {.callout-warning}
 ## Draft guidance
 
-This is an initial information-architecture pass. It describes intended practices and future content; it does not establish approved laboratory policy.
+The Lab Book is a living resource. Draft pages and proposed policy require review; they do not establish approved laboratory policy.
 :::
 
 Welcome to the **GeoEpi Lab Book**, a shared place for practices that help geographical epidemiology remain understandable, defensible, reproducible, and transferable across people, projects, and time.
 
 ## Find your next step
 
-- [Start Here](start/index.qmd) for a minimum standard, new-project setup, rescue work, and handoff.
+- [Start a project](start/new-project.qmd) for a minimum setup and scope.
+- [Assess project readiness](templates/project-readiness-checklist.md) at lifecycle checkpoints.
+- [Document incoming data](templates/data-source-inventory-template.csv) with a source inventory.
+- [Find a template](templates/index.qmd) for reusable project records.
+- [Prepare a handoff](templates/project-handoff-template.md) before responsibility changes.
+- [Review the minimum standard](start/minimum-standard.qmd) for the proposed baseline.
 - [Research Practices](practices/index.qmd) for the lifecycle from planning through preservation.
 - [Domain Guidance](domains/index.qmd) for spatial, epidemiological, ecological, genomic, and modeling topics.
 - [Lab Standards](standards/index.qmd) for future lab-level decisions.

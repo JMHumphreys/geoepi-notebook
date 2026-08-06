@@ -8,11 +8,17 @@ project:
     - "practices/"
     - "domains/"
     - "standards/"
-    - "templates/"
     - "resources/"
+    - "templates/index.qmd"
+    - "templates/authoring-template.qmd"
+  resources:
+    - "templates/*.md"
+    - "templates/*.csv"
+    - "templates/*.yml"
 website:
   title: "GeoEpi Lab Book"
   description: "Research practices for defensible, reproducible, and transferable geographical epidemiology."
+  favicon: assets/images/favicon.ico
   site-url: "https://jmhumphreys.github.io/geoepi-notebook/"
   repo-url: "https://github.com/JMHumphreys/geoepi-notebook"
   repo-actions: [edit, issue, source]
@@ -23,6 +29,9 @@ website:
   navbar:
     background: "#17324d"
     foreground: white
+    logo: assets/images/geoepi_logo_xsm.png
+    logo-alt: "GeoEpi"
+    logo-href: https://geoepi.github.io/
     left:
       - text: "Start Here"
         href: start/index.qmd
@@ -48,6 +57,12 @@ website:
       - icon: github
         href: https://github.com/JMHumphreys/geoepi-notebook
         aria-label: GitHub repository
+      - text: "GeoEpi"
+        menu:
+          - text: "Group website"
+            href: https://geoepi.github.io/
+          - text: "GitHub organization"
+            href: https://github.com/geoepi
   sidebar:
     - id: start
       title: "Start Here"

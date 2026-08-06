@@ -1,0 +1,39 @@
+# Copy this file into a project and replace example values. Do not store secrets here.
+project_id: "replace-me"
+run_id: "replace-me"
+submitted_at: "2026-08-05T00:00:00Z"
+cluster: "replace-me"
+scheduler: "slurm"
+job_id: "replace-me"
+array:
+  enabled: false
+  definition: ""
+  task_id: ""
+submission_script: "hpc/submit.sh"
+software_environment:
+  modules: []
+  container: ""
+  environment_record: "path/to/environment-record"
+resources:
+  partition: ""
+  cpus: 1
+  memory: ""
+  walltime: ""
+inputs:
+  manifest: "path/to/input-manifest.csv"
+  source_ids: []
+outputs:
+  destination: "path/to/outputs"
+  result_inventory: "path/to/result-traceability.csv"
+logs:
+  stdout: "path/to/stdout.log"
+  stderr: "path/to/stderr.log"
+status:
+  submitted: true
+  completed: false
+  exit_code: null
+  failure_reason: ""
+  retry_status: "not_applicable"
+  retry_of_run_id: ""
+local_cluster_relationship: "Describe how local and cluster environments correspond."
+responsible_operator: "replace-me"
