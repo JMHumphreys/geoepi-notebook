@@ -1,0 +1,42 @@
+# Staged-dataset record. Replace placeholders; do not include credentials or protected contents.
+# Required fields are marked REQUIRED. Other fields are optional when not applicable.
+dataset_id: "REQUIRED-replace-me"
+dataset_version: "REQUIRED-1.0"
+dataset_role: "staged"
+purpose: "REQUIRED-describe the controlled staged representation"
+status: "ready for analysis"
+authoritative_location: "REQUIRED-approved location or project reference"
+source_ids: ["REQUIRED-source-id"]
+snapshot_ids: ["REQUIRED-snapshot-id"]
+intake_ids: []
+transformation_ids: ["REQUIRED-transformation-id-or-script-log-reference"]
+format: "csv"
+schema_version: "1.0"
+data_dictionary: "path-or-reference-to-data-dictionary"
+primary_key: "record-id"
+foreign_keys: []
+record_count: 0
+spatial:
+  crs: "not_applicable"
+  datum: "not_applicable"
+  units: "not_applicable"
+  extent: "not_applicable"
+  resolution_or_support: "not_applicable"
+  alignment_or_origin: "not_applicable"
+  boundary_version: "not_applicable"
+  sensitivity: "describe restriction; do not invent institutional classification"
+temporal:
+  start: "not_applicable"
+  end: "not_applicable"
+  support: "not_applicable"
+  timezone: "not_applicable"
+  week_convention: "not_applicable"
+restrictions: "REQUIRED-public, restricted, or applicable agreement reference"
+code_version: "REQUIRED-Git commit or documented exception"
+configuration_version: "configuration version or not_applicable"
+qa_record: "REQUIRED-path-or-reference-to-structural-QA"
+limitations: []
+supersedes: ""
+responsible_role: "REQUIRED-role or account"
+created_at: "REQUIRED-2026-08-05T00:00:00Z"
+reviewed_at: ""

@@ -1,2 +1,2 @@
-dataset_id,field_name,description,data_type,unit,allowed_values_or_codes,missing_value_convention,identifier_role,date_time_convention,crs_or_spatial_unit,temporal_support,derivation,quality_notes
-EXAMPLE-001,field_name,Describe the field,string,unit,code list,NA or reason,primary/foreign/none,ISO-8601 or not applicable,EPSG code or not applicable,observation interval,source or transformation,Delete this example row
+dataset_id,schema_version,field_name,description,data_type,unit,allowed_values_or_codes,missing_value_convention,identifier_role,date_time_convention,crs_or_spatial_unit,temporal_support,derivation,quality_notes
+EXAMPLE-001,1.0,field_name,Describe the field,string,unit,code list,NA or reason,primary/foreign/none,ISO-8601 or not applicable,EPSG code or not applicable,observation interval,source or transformation,Delete this example row
