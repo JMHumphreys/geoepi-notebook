@@ -26,6 +26,16 @@
 - [ ] The status is recorded as received, pending validation, pending clarification, accepted for staging, accepted with documented limitation, rejected, or superseded before staging.
 - [ ] If accepted with documented limitation, the limitation, consequence, downstream restriction, responsible decision-maker, and follow-up are recorded.
 
+## Data organization and analysis readiness
+
+- [ ] The accepted snapshot and preserved source package are distinguishable from staged and derived objects.
+- [ ] Dataset IDs, versions, key relationships, schema, units, codes, missingness, and derivations are documented.
+- [ ] Consequential transformations, corrections, exclusions, code, configuration, and provenance are recoverable.
+- [ ] Spatial and temporal conventions are documented where applicable.
+- [ ] Structural checks, limitations, restrictions, and unresolved discrepancies are recorded.
+- [ ] An authoritative analysis-ready object and responsible decision-maker are identified.
+- [ ] The dataset status is recorded as ready for analysis, ready with documented limitation, or not ready for analysis.
+
 ## Result and release review
 
 - [ ] Results trace to inputs, code, parameters, environment, and output/run IDs.

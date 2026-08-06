@@ -147,4 +147,4 @@ Record parameter version, units, scenario, initial conditions, boundary conditio
 - [ ] Acceptance status and responsible decision-maker are recorded.
 - [ ] The data are explicitly received, pending validation, pending clarification, accepted for staging, accepted with documented limitation, rejected, or superseded.
 
-Passing this gate allows an accepted delivery to enter the Organize stage. It does not certify analytical validity, model suitability, publication readiness, or authorization for every downstream use.
+Passing this gate allows an accepted delivery to enter the [Organize stage](../organize/index.qmd). An accepted-for-staging delivery may proceed; an accepted-with-documented-limitation delivery may proceed only with that limitation carried forward; rejected or pending data must not proceed. Intake does not certify analytical validity, model suitability, publication readiness, or authorization for every downstream use.

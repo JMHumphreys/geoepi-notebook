@@ -84,6 +84,13 @@ website:
             - practices/acquire/index.qmd
             - practices/acquire/data-intake.qmd
             - practices/acquire/recurring-programmatic-data.qmd
+        - section: "Organize"
+          contents:
+            - practices/organize/index.qmd
+            - practices/organize/project-and-data-structure.qmd
+            - practices/organize/source-to-staged-data.qmd
+            - practices/organize/identifiers-and-schema.qmd
+            - practices/organize/spatial-temporal-conventions.qmd
 format:
   html:
     theme:
