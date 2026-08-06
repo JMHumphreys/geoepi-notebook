@@ -1,0 +1,59 @@
+---
+title: "Randomness, Scenarios, and Replicates"
+description: "Record seeds, scenarios, parameter sets, partitions, and repeated executions."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - analysis
+  - reproducibility
+  - simulation
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+## Explain the terms
+
+- A **random seed** is a recorded starting value used by software to reproduce a sequence of pseudo-random numbers.
+- A **replicate** is one repeated execution under the same general scenario, usually with a different random sequence.
+- A **scenario** is a defined set of assumptions, conditions, parameters, or interventions.
+- A **parameter set** is the recorded values used for one model or simulation.
+- A **deterministic analysis** is expected to return the same result from the same inputs and settings.
+- A **stochastic analysis** includes random variation and may produce different results across repetitions.
+
+## Seeds are necessary but not always sufficient
+
+Repeating a stochastic result may also depend on code version, dataset version, software version, random-number method, input ordering, number of parallel workers, task distribution, scenario ordering, and replicate ordering. Record what matters for the scientific work; a seed alone may not reconstruct a parallel analysis.
+
+## Record scenarios and replicates
+
+For each scenario, record its ID, purpose, baseline or comparison status, parameter-set ID, initial and boundary conditions, intervention, start and end time, stopping rule, spatial extent, output summaries, and superseded scenario where applicable.
+
+For repeated stochastic work, record replicate ID, scenario ID, run ID, seed or seed reference, status, completion, failure reason, output location, and whether the replicate was included in summaries. Do not silently remove failed replicates.
+
+## Bayesian and sampling-based analyses
+
+Record chains and chain IDs, seeds, warm-up or burn-in length, retained iterations, thinning when used, initial-value method, software and version, and output location where applicable. Do not assess convergence or sampling adequacy here; those judgments belong to future Validate.
+
+## Resampling and partitions
+
+Record training and evaluation partitions, fold or resample IDs, random seed, grouping restrictions, spatial or temporal blocking, repeated partitions, and protections against data leakage where applicable. Do not interpret predictive performance here.
+
+## Simulations
+
+Record scenario, parameter set, initial conditions, run duration, time step, intervention timing, replicate count, expected outputs, stopping conditions, failed or incomplete replicates, and the summary rule across replicates.
+
+## Common failure modes
+
+- One global seed is recorded but parallel replicates cannot be reconstructed.
+- Scenario labels change after results are produced.
+- Failed replicates are dropped without explanation.
+- Baseline and intervention scenarios use different input versions without documentation.
+- Replicate outputs are overwritten.
+- A deterministic analysis changes across identical reruns without explanation.
+- Calibration and evaluation simulations are mixed without clear labels.
