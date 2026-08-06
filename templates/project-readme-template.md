@@ -1,6 +1,6 @@
 # [Project title]
 
-> Copy this file to the project root and replace bracketed instructions.
+> Copy this file to the project root and replace bracketed instructions. Small projects may keep the scope, data, environment, QA/QC, and traceability information in this README rather than creating separate records.
 
 ## Purpose and status
 
@@ -32,6 +32,6 @@ List principal output names, locations, run identifiers, and how to tell whether
 
 Link to checks, decision records, limitations, and known failures.
 
-## Handoff
+## Transfer readiness (complete when a handoff is needed)
 
-Record current owner, access transfer, reproduction steps, unfinished work, and contact information.
+Record current owner, intended access transfer, reproduction steps, unfinished work, and contact information. Do not imply that a handoff has occurred until the incoming owner accepts it.

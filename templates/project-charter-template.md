@@ -1,6 +1,6 @@
 # Project charter: [Project title]
 
-> Use at initiation and when scope changes materially.
+> Use as a separate charter when there are multiple contributors or organizations, expected persistence, external funding or formal deliverables, publication intent, operational use, sensitive or governed data, substantial computational cost, formal handoff expectations, or consequential policy, regulatory, or management use. Small exploratory projects may keep the concise scope statement in the README.
 
 - **Identifier:**
 - **Lead and contacts:**

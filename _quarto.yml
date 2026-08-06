@@ -8,9 +8,11 @@ project:
     - "practices/"
     - "domains/"
     - "standards/"
-    - "templates/"
     - "resources/"
+    - "templates/index.qmd"
+    - "templates/authoring-template.qmd"
   resources:
+    - "templates/*.md"
     - "templates/*.csv"
     - "templates/*.yml"
 website:
@@ -56,9 +58,11 @@ website:
         href: https://github.com/JMHumphreys/geoepi-notebook
         aria-label: GitHub repository
       - text: "GeoEpi"
-        href: https://geoepi.github.io/
-      - text: "Organization"
-        href: https://github.com/geoepi
+        menu:
+          - text: "Group website"
+            href: https://geoepi.github.io/
+          - text: "GitHub organization"
+            href: https://github.com/geoepi
   sidebar:
     - id: start
       title: "Start Here"
