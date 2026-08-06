@@ -39,7 +39,7 @@ Examples include:
 
 ## Define evidence before reviewing outcomes
 
-Where practical, record checks, data, grouping or spatial-temporal separation, comparison or benchmark methods, metrics, graphical checks, decision rules, and reviewer before examining validation results. This reduces after-the-fact selection of only favorable evidence. Formal preregistration is not required for every project.
+The validation plan describes what will be assessed. The validation record contains the authoritative conclusion about whether the candidate results support their stated use. Where practical, record checks, data, grouping or spatial-temporal separation, comparison or benchmark methods, metrics, graphical checks, decision rules, and reviewer before examining validation results. This reduces after-the-fact selection of only favorable evidence. Formal preregistration is not required for every project.
 
 Criteria should be linked to intended use, scientifically interpretable, justified, and stated before viewing the outcome when practical. They are one part of the evidence, not a substitute for judgment. Do not prescribe universal thresholds.
 

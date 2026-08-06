@@ -93,6 +93,11 @@ The safe default is **not yet evaluated**. Do not use generic statuses such as v
 - [ ] Important uncertainty sources and their effect on interpretation or decisions are described.
 - [ ] Failed, mixed, and inconclusive evidence remains visible.
 - [ ] Evidence locations are linked.
+- [ ] The authoritative validation record is identified.
+- [ ] The overall conclusion uses exactly one allowed conclusion status.
+- [ ] Every substantive conclusion states the use and scope to which it applies.
+- [ ] Decision-maker and decision date are recorded for every completed substantive conclusion.
+- [ ] A superseded record identifies its replacement validation record and, where applicable, replacement analysis.
 - [ ] A responsible analyst or reviewer records the conclusion and date.
 - [ ] The conclusion states the population, geography, time period, scale, horizon, or use to which it applies.
 - [ ] Any required return to Analyze is recorded.

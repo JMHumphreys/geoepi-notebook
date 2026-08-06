@@ -84,7 +84,11 @@
 ## Validation conclusion
 
 - [ ] The authoritative validation record is identified.
-- [ ] The exact conclusion status, scope, limitations, decision-maker, and decision date are recorded.
+- [ ] One exact conclusion status is used.
+- [ ] Substantive conclusions are scoped to their use, population, geography, time, and scale.
+- [ ] Decision-maker and ISO 8601 decision date are recorded when a conclusion is complete.
+- [ ] Superseded records identify their replacement validation record.
+- [ ] Replacement analysis is identified when applicable.
 - [ ] Return-to-Analyze requirements and reevaluation triggers are recorded where applicable.
 
 ## Result and release review

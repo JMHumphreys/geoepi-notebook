@@ -18,7 +18,7 @@ sidebar: practices
 
 ## Separate checks from the conclusion
 
-An individual check may be **completed**, **completed with limitation**, **failed**, **inconclusive**, **not applicable**, or **superseded**. The overall validation conclusion must synthesize evidence rather than count check marks. One major failed check may matter more than many minor successful checks.
+The validation plan records proposed questions, checks, evidence, and review. An individual check may be **planned**, **completed**, **completed with limitation**, **failed**, **inconclusive**, **not applicable**, or **superseded**. **Planned** means the check is identified but no finding is recorded. **Completed** means the check was performed and its finding is recorded. Check completion does not determine the overall conclusion by itself. The validation record, or an equivalent validation-level document, contains the authoritative overall conclusion. One major failed check may matter more than many minor successful checks.
 
 ## Evidence synthesis
 
@@ -38,7 +38,7 @@ Use only:
 
 ## Scope statement
 
-Every supported conclusion must state the analysis version, candidate result IDs, intended use, population or system, geographic scope, temporal scope, spatial or temporal resolution, forecast horizon where relevant, known limitations, and conditions requiring reevaluation.
+Every substantive conclusion—**supported for stated use**, **supported for stated use with documented limitation**, **evidence inconclusive**, or **not supported for stated use**—must state the analysis ID and version, candidate result IDs, intended use, population or system, geographic scope, temporal scope, spatial or temporal resolution, forecast horizon where relevant, known limitations, and conditions requiring reevaluation. An inconclusive or not-supported conclusion is meaningful only in relation to the use and scope that were actually evaluated. A record that is **not yet evaluated** or **validation in progress** does not need a completed scope statement, but the intended scope should still be identified where known.
 
 ## Returning to Analyze
 
@@ -46,4 +46,4 @@ When validation requires changes to data subsets, exclusions, model form, variab
 
 ## Supersession and later stages
 
-When a new analysis version replaces an earlier one, preserve the earlier validation record, mark it superseded, identify the replacement, do not transfer the earlier conclusion automatically, and repeat affected checks. A supported conclusion permits consideration in later Collaborate and Communicate stages; it does not provide publication, release, operational, policy, or data-sharing approval.
+Supersession does not always imply a new analysis. A newer validation record may incorporate new external data, a later forecast period, an additional reviewer, or corrected validation evidence. Preserve the earlier record, mark it superseded, identify the replacement validation ID, and do not transfer the earlier conclusion automatically. Record a replacement analysis ID when the analysis also changed. A supported conclusion permits consideration in later Collaborate and Communicate stages; it does not provide publication, release, operational, policy, or data-sharing approval.

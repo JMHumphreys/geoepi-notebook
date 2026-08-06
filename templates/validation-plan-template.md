@@ -12,7 +12,7 @@ Replace clearly marked values. Not every section applies to every analysis; use 
 - Responsible analyst: `REQUIRED-role-or-account`
 - Reviewer: `optional`
 - Date created: `REQUIRED-ISO-8601-date`
-- Status: `not yet evaluated`
+- Validation status: `not yet evaluated`
 
 ## Intended use
 
