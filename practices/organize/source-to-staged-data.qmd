@@ -1,0 +1,80 @@
+---
+title: "Source-to-Staged Data"
+description: "Transform accepted snapshots into staged representations without altering the preserved source package."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - data-management
+  - provenance
+  - reproducibility
+owner: GeoEpi Lab
+last-reviewed: 2026-08-05
+review-cycle: annual
+sidebar: practices
+---
+
+## Input contract
+
+Before transformation, confirm the source ID, snapshot ID, intake or acceptance record, authoritative source-package location, restrictions, expected files or objects, documented acceptance limitations, and provider schema or documentation.
+
+Do not transform a delivery marked **received**, **pending validation**, **pending clarification**, or **rejected**. A superseded delivery may be retained for provenance but must not silently become the current input.
+
+## Preserve source immutability
+
+Corrections, renaming, recoding, reprojection, reshaping, exclusions, and normalization belong in staged or derived objects. They must not silently alter the preserved source package. When physical immutability cannot be enforced, use procedural protection and a checksum or other integrity evidence when proportionate.
+
+## Transformation principles
+
+Consequential transformations should be scripted when reasonable, ordered, attributable, repeatable, parameterized where appropriate, logged, linked to explicit inputs and outputs, safe from accidental overwrite, and deterministic when expected to be deterministic. No particular language or workflow engine is required.
+
+## Typical transformation sequence
+
+1. Read the accepted source package.
+2. Confirm expected source objects.
+3. Normalize names and encodings.
+4. Parse identifiers and date/time fields.
+5. Standardize types, units, and codes.
+6. Handle documented missing-value representations.
+7. Apply explicit corrections or exclusions.
+8. Transform spatial reference or geometry where needed.
+9. Write a new staged object.
+10. Run structural QA.
+11. Record the transformation and status.
+
+## Corrections and exclusions
+
+Distinguish provider-issued correction, documented local correction, harmonization, imputation, exclusion, aggregation, and derivation. Imputation or model-based correction is not routine staging and must not be hidden inside organization code.
+
+For every local correction, record the affected object or record, original and corrected state where lawful and practical, reason, evidence, responsible person or process, date, and code or decision record.
+
+Consequential exclusions must identify the rule, rationale, affected records, stage, recoverability, effect on record counts, and decision record when warranted. Do not allow undocumented row deletion.
+
+## Manual steps
+
+A manual step is allowed only when scripting is not reasonable, the procedure and inputs/outputs are documented, the responsible person and date are recorded, the change can be reviewed, and the preserved source package is not silently modified. Link to the [project exception record](../../templates/project-exception-record.md) when a required traceable process cannot be followed.
+
+## Transformation record
+
+Record transformation ID, input dataset and snapshot/version, input object, code or workflow entry point, code version, configuration version, command, output dataset/version/location, execution time, status, record counts where meaningful, corrections or exclusions, QA record, responsible role, and superseded output.
+
+The [transformation ledger template](../../templates/data-transformation-ledger-template.csv) provides a compact format. Versioned scripts plus retained logs may satisfy the requirement in simple projects. A separate ledger is **Conditionally required** for multiple datasets, complex workflows, recurring transformations, handoffs, or consequential projects.
+
+## Version and overwrite safety
+
+**Recommended:** write new output versions rather than silently replacing files, validate before replacing a current pointer, record supersession explicitly, and retain enough prior evidence to reproduce or explain a result.
+
+Transformation statuses may be **planned**, **running**, **completed**, **completed with limitation**, **failed**, or **superseded**. These are workflow statuses, not institutional classifications.
+
+## Structural QA after transformation
+
+Check as appropriate that the output exists and is readable, expected schema is present, record counts are plausible, required identifiers are populated, unique keys are unique, joins have expected match rates, units and codes are known, missingness is characterized, expected temporal/spatial coverage is present, geometries or rasters are structurally valid, and the source package was not unexpectedly modified.
+
+::: {.callout-warning}
+## Stop and resolve
+
+Pause analysis readiness when a transformation cannot be tied to an accepted snapshot, source objects changed unexpectedly, corrections cannot be explained, exclusions are undocumented, output counts are implausible, identifiers are unstable, join losses are unexplained, spatial or temporal support changed unintentionally, code/configuration versions cannot be recovered, or a manual step cannot be reviewed.
+:::
