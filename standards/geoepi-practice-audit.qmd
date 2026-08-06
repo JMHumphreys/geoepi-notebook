@@ -1,7 +1,7 @@
 ---
 title: "GeoEpi Practice Audit"
 description: "Informational audit of organization materials and representative GeoEpi repositories used to inform the proposed minimum standard."
-status: internal-draft
+status: draft-analysis
 practice-level: informational
 audience:
   - all-lab-members
@@ -26,7 +26,7 @@ This is an informational practice audit, not a quality score, ranking, or assess
 
 The audit reviewed the GeoEpi organization profile, the public organization website repository, the organization `.github` repository, the public `Notebook` repository, and eight purposively selected research repositories. The review date was 2026-08-05. The machine-readable observations are in [`standards/data/geoepi-repository-audit.csv`](data/geoepi-repository-audit.csv).
 
-The review examined documentation and repository artifacts only. A `yes` means that an artifact was visible and usable enough for this limited review; `partial`, `unclear`, and `no` do not imply that a practice is absent from private archives, external services, or project knowledge.
+The review examined public repository trees, READMEs, key workflow and documentation files, GitHub workflow directories, repository license metadata and license files, citation files or references, test paths, and plausible entry points. No code was executed and no scientific validation or compliance review was performed. A `yes` means that an artifact was visible and usable enough for this limited review; `partial`, `unclear`, and `no` do not imply that a practice is absent from private archives, external services, or project knowledge.
 
 ## Organization references
 
@@ -69,7 +69,7 @@ These are observed practices, not proof that the underlying analyses are correct
 
 The sample showed inconsistent or hard-to-find records for software environments, data classification and restrictions, source-to-derived transformations, checksums or acquisition dates, output/run inventories, decision history, tests and CI, citation metadata, licenses, and closeout/handoff status. Several repositories contain useful rendered products but do not make the authoritative source, current execution path, or reproducibility boundary obvious from the top-level README.
 
-These are aggregate observations from a limited public snapshot. A gap means that the item was not readily discoverable during this review; it does not mean that project members have not documented it elsewhere.
+These are aggregate observations from a limited public snapshot. A gap means that the item was not readily discoverable during this review; it does not mean that project members have not documented it elsewhere. This page is provisional, is based only on public repository contents, is not a compliance review, and is not a ranking.
 
 ## Practices mature enough to standardize
 
