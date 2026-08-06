@@ -4,7 +4,7 @@
     "href": "templates/index.html",
     "title": "Templates",
     "section": "",
-    "text": "The template library reduces blank-page friction without forcing every project into one shape. Copy the plain-text files into another repository and adapt them to the project.\n\n\n\nTemplate\nFormat\nUse\n\n\n\n\nProject README\nMarkdown\nRoot orientation, setup, outputs, restrictions, and handoff\n\n\nProject charter\nMarkdown\nSeparate charter when contributors, persistence, funding, publication, operations, sensitivity, cost, handoff, or policy use justify it\n\n\nData-source inventory\nCSV\nSource, access, version, restriction, and provenance seed\n\n\nData dictionary\nCSV\nVariables, units, codes, missingness, and derivations\n\n\nException record\nMarkdown\nFormal deviations and compensating controls\n\n\nReadiness checklist\nMarkdown\nLifecycle gate review\n\n\nHandoff record\nMarkdown\nTransfer of access, context, and unfinished work\n\n\nCloseout record\nMarkdown\nFinal version, archive, retention, and maintenance\n\n\nResult traceability\nCSV\nInputs, code, parameters, environment, runs, outputs, review, and status\n\n\nHPC run record\nYAML\nScheduler, resources, environment, inputs, outputs, logs, exit status, and retry state\n\n\nData-intake record\nMarkdown\nDelivery identity, inspection, discrepancies, restrictions, and acceptance decision\n\n\nData-file manifest\nCSV\nFile/object identity, checksums, validation status, and superseded deliveries\n\n\nGuidance page authoring template\nQuarto\nNew Lab Book pages\n\n\n\nTemplates are examples until explicitly adopted; adapt them to the project and document meaningful deviations.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\nstatus\n\n\n\n\n\n\n\n\nGuidance Page Authoring Template\n\n\nA reusable, non-substantive template for future Lab Book pages.\n\n\ntemplate\n\n\n\n\n\n\nNo matching items",
+    "text": "The template library reduces blank-page friction without forcing every project into one shape. Copy the plain-text files into another repository and adapt them to the project.\n\n\n\nTemplate\nFormat\nUse\n\n\n\n\nProject README\nMarkdown\nRoot orientation, setup, outputs, restrictions, and handoff\n\n\nProject charter\nMarkdown\nSeparate charter when contributors, persistence, funding, publication, operations, sensitivity, cost, handoff, or policy use justify it\n\n\nData-source inventory\nCSV\nSource, access, version, restriction, and provenance seed\n\n\nData dictionary\nCSV\nVariables, units, codes, missingness, and derivations\n\n\nException record\nMarkdown\nFormal deviations and compensating controls\n\n\nReadiness checklist\nMarkdown\nLifecycle gate review\n\n\nHandoff record\nMarkdown\nTransfer of access, context, and unfinished work\n\n\nCloseout record\nMarkdown\nFinal version, archive, retention, and maintenance\n\n\nResult traceability\nCSV\nInputs, code, parameters, environment, runs, outputs, review, and status\n\n\nHPC run record\nYAML\nScheduler, resources, environment, inputs, outputs, logs, exit status, and retry state\n\n\nData-intake record\nMarkdown\nDelivery identity, inspection, discrepancies, restrictions, and acceptance decision\n\n\nData-file manifest\nCSV\nFile/object identity, checksums, validation status, and superseded deliveries\n\n\nData-transformation ledger\nCSV\nSource-to-staged inputs, code, configuration, outputs, status, and QA\n\n\nStaged-dataset record\nYAML\nDataset identity, provenance, schema, spatial-temporal meaning, restrictions, and readiness\n\n\nGuidance page authoring template\nQuarto\nNew Lab Book pages\n\n\n\nTemplates are examples until explicitly adopted; adapt them to the project and document meaningful deviations.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\nstatus\n\n\n\n\n\n\n\n\nGuidance Page Authoring Template\n\n\nA reusable, non-substantive template for future Lab Book pages.\n\n\ntemplate\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Start Here",
       "Templates"
@@ -316,137 +316,400 @@
     ]
   },
   {
-    "objectID": "practices/index.html",
-    "href": "practices/index.html",
-    "title": "Research Practices",
+    "objectID": "practices/organize/spatial-temporal-conventions.html",
+    "href": "practices/organize/spatial-temporal-conventions.html",
+    "title": "Spatial and Temporal Conventions",
     "section": "",
-    "text": "The Lab Book organizes work around a lifecycle:\nplan -&gt; acquire -&gt; organize -&gt; analyze -&gt; validate -&gt; collaborate -&gt; communicate -&gt; preserve\nStages overlap and may repeat. A revised project plan can trigger new acquisition work; an intake discrepancy can require a scope decision. Each page distinguishes the Draft minimum, Conditionally required, Recommended, Stronger practice, Example, and Stop and resolve levels.\nThis first implementation covers Plan and Acquire. The later stages are not presented as complete guidance.\nflowchart LR\n  plan[Plan] --&gt; acquire[Acquire]\n  acquire --&gt; organize[Organize]\n  organize --&gt; analyze[Analyze]\n  analyze --&gt; validate[Validate]\n  validate --&gt; collaborate[Collaborate]\n  collaborate --&gt; communicate[Communicate]\n  communicate --&gt; preserve[Preserve]\n  acquire -. revise .-&gt; plan\n  validate -. revise .-&gt; plan",
+    "text": "Document CRS, datum, coordinate units, geometry type and validity, boundary source/version, extent, spatial support, coordinate precision, and handling of empty or invalid geometries.\n\n\n\nDocument CRS, datum, units, resolution, dimensions, extent, origin, alignment, cell interpretation, NoData convention, mask, resampling method, aggregation method, and boundary or template source. Two rasters with the same CRS and resolution may still be misaligned because their origins or extents differ.\n\n\n\nRecord coordinate source, uncertainty, precision, geocoding method, datum, and whether locations represent events, centroids, facilities, or generalized positions.\n\n\n\nRecord input and output CRS, transformation method, resampling/interpolation method, reason, software/code, and effect on resolution, support, or uncertainty.",
     "crumbs": [
       "Start Here",
-      "Research Practices"
+      "Organize",
+      "Spatial and Temporal Conventions"
     ]
   },
   {
-    "objectID": "practices/index.html#choose-a-starting-point",
-    "href": "practices/index.html#choose-a-starting-point",
-    "title": "Research Practices",
-    "section": "Choose a starting point",
-    "text": "Choose a starting point\n\nStarting a new project for a short gateway and initiation checklist.\nPlan a project when purpose, scope, roles, outputs, or completion criteria are unsettled.\nPlan data management when access, storage, restrictions, identifiers, time, space, or computing need decisions.\nReceive a one-time dataset when a file, archive, extract, sequence batch, raster, or field export arrives.\nDesign recurring or programmatic acquisition for APIs, databases, feeds, portals, and scheduled extracts.\nAssess intake acceptance when deciding whether incoming data can enter the Organize stage.\n\nThe Lab Book separates draft policy, task guidance, templates, and examples. The Minimum GeoEpi Project Standard supplies the governing draft framework; these pages explain how to satisfy relevant information requirements without prescribing one folder tree, storage platform, workflow engine, or environment.",
+    "objectID": "practices/organize/spatial-temporal-conventions.html#spatial-meaning",
+    "href": "practices/organize/spatial-temporal-conventions.html#spatial-meaning",
+    "title": "Spatial and Temporal Conventions",
+    "section": "",
+    "text": "Document CRS, datum, coordinate units, geometry type and validity, boundary source/version, extent, spatial support, coordinate precision, and handling of empty or invalid geometries.\n\n\n\nDocument CRS, datum, units, resolution, dimensions, extent, origin, alignment, cell interpretation, NoData convention, mask, resampling method, aggregation method, and boundary or template source. Two rasters with the same CRS and resolution may still be misaligned because their origins or extents differ.\n\n\n\nRecord coordinate source, uncertainty, precision, geocoding method, datum, and whether locations represent events, centroids, facilities, or generalized positions.\n\n\n\nRecord input and output CRS, transformation method, resampling/interpolation method, reason, software/code, and effect on resolution, support, or uncertainty.",
     "crumbs": [
       "Start Here",
-      "Research Practices"
+      "Organize",
+      "Spatial and Temporal Conventions"
     ]
   },
   {
-    "objectID": "practices/acquire/index.html",
-    "href": "practices/acquire/index.html",
-    "title": "Acquire Data",
+    "objectID": "practices/organize/spatial-temporal-conventions.html#sensitive-spatial-information",
+    "href": "practices/organize/spatial-temporal-conventions.html#sensitive-spatial-information",
+    "title": "Spatial and Temporal Conventions",
+    "section": "Sensitive spatial information",
+    "text": "Sensitive spatial information\nDo not prescribe one masking method. Record sensitivity, access restriction, generalization or masking, difference between protected and released representations, and authorization for downstream use. Link unresolved questions to Open Policy Decisions.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Spatial and Temporal Conventions"
+    ]
+  },
+  {
+    "objectID": "practices/organize/spatial-temporal-conventions.html#temporal-meaning",
+    "href": "practices/organize/spatial-temporal-conventions.html#temporal-meaning",
+    "title": "Spatial and Temporal Conventions",
+    "section": "Temporal meaning",
+    "text": "Temporal meaning\nDistinguish event, onset, collection, report, extraction, acquisition, processing, model/simulation, publication, and release dates. Record time zone, UTC conversion, daylight-saving behavior, local versus universal timestamps, ambiguous/nonexistent local times, and precision.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Spatial and Temporal Conventions"
+    ]
+  },
+  {
+    "objectID": "practices/organize/spatial-temporal-conventions.html#periods-and-intervals",
+    "href": "practices/organize/spatial-temporal-conventions.html#periods-and-intervals",
+    "title": "Spatial and Temporal Conventions",
+    "section": "Periods and intervals",
+    "text": "Periods and intervals\nDocument start/end boundaries, inclusive/exclusive rules, observation interval, aggregation period, partial periods, incomplete weeks/months, rolling windows, and temporal support versus timestamp.\nFor epidemiological weeks, record week system, week-year convention, start day, week 53 treatment, conversion code, and relationship to source dates. Do not use “week 1” without naming the week-year convention.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Spatial and Temporal Conventions"
+    ]
+  },
+  {
+    "objectID": "practices/organize/spatial-temporal-conventions.html#recurring-snapshots-and-revisions",
+    "href": "practices/organize/spatial-temporal-conventions.html#recurring-snapshots-and-revisions",
+    "title": "Spatial and Temporal Conventions",
+    "section": "Recurring snapshots and revisions",
+    "text": "Recurring snapshots and revisions\nRecord extraction timestamp, reporting delay, late-arriving records, historical revisions, changed case definitions, changed boundaries, backfill behavior, and freeze/cutoff dates.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Spatial and Temporal Conventions"
+    ]
+  },
+  {
+    "objectID": "practices/organize/spatial-temporal-conventions.html#spatiotemporal-identifiers",
+    "href": "practices/organize/spatial-temporal-conventions.html#spatiotemporal-identifiers",
+    "title": "Spatial and Temporal Conventions",
+    "section": "Spatiotemporal identifiers",
+    "text": "Spatiotemporal identifiers\nWhen useful, a stable identifier may combine spatial unit, temporal unit, scenario, layer, and source snapshot. Do not rely on row order as a spatiotemporal identifier.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Spatial and Temporal Conventions"
+    ]
+  },
+  {
+    "objectID": "practices/organize/spatial-temporal-conventions.html#structural-checks",
+    "href": "practices/organize/spatial-temporal-conventions.html#structural-checks",
+    "title": "Spatial and Temporal Conventions",
+    "section": "Structural checks",
+    "text": "Structural checks\n\nExpected CRS, datum, extent, resolution, and alignment are recorded where applicable.\nGeometry validity, NoData, masks, and boundary versions are documented.\nExpected date range and complete or documented temporal sequence are recorded.\nWeek-year combinations and time zones are valid.\nNo unintended duplicate space-time keys exist.\nNo unexplained coordinate or date loss occurred.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Spatial and Temporal Conventions"
+    ]
+  },
+  {
+    "objectID": "practices/organize/project-and-data-structure.html",
+    "href": "practices/organize/project-and-data-structure.html",
+    "title": "Project and Data Structure",
     "section": "",
-    "text": "Acquisition is more than downloading or receiving files. It includes authorization, specification, preservation, registration, initial inspection, clarification, and an explicit acceptance decision.",
+    "text": "Structure should allow a reviewer or future collaborator to determine which objects were received, transformed, authoritative, temporary, regenerable, or used to support a reported result.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Project and Data Structure"
+    ]
+  },
+  {
+    "objectID": "practices/organize/project-and-data-structure.html#define-object-roles",
+    "href": "practices/organize/project-and-data-structure.html#define-object-roles",
+    "title": "Project and Data Structure",
+    "section": "Define object roles",
+    "text": "Define object roles\n\n\n\n\n\n\n\nRole\nMeaning and minimum control\n\n\n\n\nPreserved source\nOriginal received representation, retained without undocumented editing, linked to source and snapshot IDs, and subject to access restrictions.\n\n\nStaged\nControlled representation produced from the preserved source; suitable for normalization, linkage, and structural QA, but not necessarily analysis-ready.\n\n\nDerived\nDataset created through documented transformation, such as aggregates, features, standardized layers, or linked data.\n\n\nAnalysis-ready\nStaged or derived data that passed the Organize gate; this status is not scientific validation.\n\n\nConfiguration\nPaths, parameters, conventions, source IDs, and transformation settings.\n\n\nDocumentation\nREADME, data dictionary, dataset record, transformation ledger, decisions, limitations, and QA results.\n\n\nOutputs\nConsequential products produced by analysis or reporting; not interchangeable with staged or derived data.\n\n\nLogs\nExecution, warnings, failures, retries, checks, and manual interventions.\n\n\nCache or temporary\nRemovable or regenerable objects whose role is documented and which are not the only copy of a consequential object.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Project and Data Structure"
+    ]
+  },
+  {
+    "objectID": "practices/organize/project-and-data-structure.html#no-universal-folder-tree",
+    "href": "practices/organize/project-and-data-structure.html#no-universal-folder-tree",
+    "title": "Project and Data Structure",
+    "section": "No universal folder tree",
+    "text": "No universal folder tree\nThe Lab Book does not prescribe one universal directory tree. Every project must document the role of each major location, which location is authoritative, which objects are tracked in Git, which are stored externally, which are generated, which are temporary, and how protected data are separated.\n\nExample: small tabular analysis\nREADME.md\ndata-source-record/\nscripts/\ndata-staged/\ndocs/\noutputs/\n\n\nExample: spatial or raster project\nconfig/\nsource-manifests/\nstaged-vectors/\nstaged-rasters/\nderived/\nscripts/\nlogs/\nreports/\n\n\nExample: HPC or recurring workflow\nconfig/\nmanifests/\nworkflow/\nsource-snapshots/\nstaged/\nruns/\nlogs/\nderived/\nreports/\n\n\n\n\n\n\nExample\n\n\n\nThese structures are examples, not standards. A project may use different names when their roles and authoritative locations are documented.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Project and Data Structure"
+    ]
+  },
+  {
+    "objectID": "practices/organize/project-and-data-structure.html#repository-versus-data-storage",
+    "href": "practices/organize/project-and-data-structure.html#repository-versus-data-storage",
+    "title": "Project and Data Structure",
+    "section": "Repository versus data storage",
+    "text": "Repository versus data storage\nGit is appropriate for code, configuration, documentation, and small nonrestricted fixtures. It is generally inappropriate for credentials, protected data, large source datasets, sensitive coordinates, caches, and nonredistributable files. Repository paths may point to approved external authoritative locations. Absolute personal paths must not be the only method of locating data.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Project and Data Structure"
+    ]
+  },
+  {
+    "objectID": "practices/organize/project-and-data-structure.html#generated-versus-maintained-objects",
+    "href": "practices/organize/project-and-data-structure.html#generated-versus-maintained-objects",
+    "title": "Project and Data Structure",
+    "section": "Generated versus maintained objects",
+    "text": "Generated versus maintained objects\nIdentify whether each major object is manually maintained, received externally, generated deterministically, generated stochastically, cached, archived, or superseded. Generated artifacts should identify producing code and inputs.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Project and Data Structure"
+    ]
+  },
+  {
+    "objectID": "practices/organize/project-and-data-structure.html#common-failure-modes",
+    "href": "practices/organize/project-and-data-structure.html#common-failure-modes",
+    "title": "Project and Data Structure",
+    "section": "Common failure modes",
+    "text": "Common failure modes\n\nA “final” CSV is edited manually after the script ran.\nSource and cleaned data are mixed in one directory.\nMultiple unversioned files are named final.\nA report depends on an undocumented object in a user workspace.\nTemporary HPC output is treated as an authoritative result.\nStaged data cannot be tied to a source snapshot.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Project and Data Structure"
+    ]
+  },
+  {
+    "objectID": "practices/organize/project-and-data-structure.html#structure-checklist",
+    "href": "practices/organize/project-and-data-structure.html#structure-checklist",
+    "title": "Project and Data Structure",
+    "section": "Structure checklist",
+    "text": "Structure checklist\n\nMajor locations and object roles are documented.\nPreserved source, staged, derived, temporary, configuration, documentation, logs, and outputs are distinguishable.\nAuthoritative locations and external storage boundaries are recorded.\nProtected data and credentials are separated from Git-tracked material.\nGenerated objects identify their inputs and producing code.\nTemporary objects are not the only copy of consequential data.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Project and Data Structure"
+    ]
+  },
+  {
+    "objectID": "practices/organize/identifiers-and-schema.html",
+    "href": "practices/organize/identifiers-and-schema.html",
+    "title": "Identifiers and Schema",
+    "section": "",
+    "text": "Distinguish source ID, snapshot ID, staged-dataset ID, dataset version, derived-dataset ID, transformation ID, run ID, and output ID. A filename alone is usually not a sufficient stable identifier.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Identifiers and Schema"
+    ]
+  },
+  {
+    "objectID": "practices/organize/identifiers-and-schema.html#dataset-identifiers",
+    "href": "practices/organize/identifiers-and-schema.html#dataset-identifiers",
+    "title": "Identifiers and Schema",
+    "section": "",
+    "text": "Distinguish source ID, snapshot ID, staged-dataset ID, dataset version, derived-dataset ID, transformation ID, run ID, and output ID. A filename alone is usually not a sufficient stable identifier.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Identifiers and Schema"
+    ]
+  },
+  {
+    "objectID": "practices/organize/identifiers-and-schema.html#record-identifiers",
+    "href": "practices/organize/identifiers-and-schema.html#record-identifiers",
+    "title": "Identifiers and Schema",
+    "section": "Record identifiers",
+    "text": "Record identifiers\nDocument natural, surrogate, composite, repeated-observation, hierarchical, spatial-unit, temporal, sample, sequence, facility, herd, animal, case, and observation identifiers as applicable. Do not construct identifiers from sensitive fields unless authorized.\nFor each important key, state whether it is unique, unique within a group, repeatable across time, nonmissing, stable across snapshots, supplied by the source or generated locally, and safe to disclose.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Identifiers and Schema"
+    ]
+  },
+  {
+    "objectID": "practices/organize/identifiers-and-schema.html#duplicates-and-relationships",
+    "href": "practices/organize/identifiers-and-schema.html#duplicates-and-relationships",
+    "title": "Identifiers and Schema",
+    "section": "Duplicates and relationships",
+    "text": "Duplicates and relationships\nDistinguish byte-for-byte duplicate files, duplicate rows, legitimate repeated observations, duplicate identifiers, conflicting records, revised records, and multiple reports of one event. Identical values are not automatically duplicate observations.\nDocument primary keys, foreign keys, relationship cardinality, expected match rate, unmatched records, many-to-many joins, deduplication before joining, aggregation order, and snapshot/temporal compatibility.\n\n\n\n\n\n\nStop and resolve\n\n\n\nAn accidental many-to-many join can multiply records while producing plausible-looking outputs. Stop when join losses, unexpected multiplication, or conflicting keys cannot be explained.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Identifiers and Schema"
+    ]
+  },
+  {
+    "objectID": "practices/organize/identifiers-and-schema.html#schema-definition",
+    "href": "practices/organize/identifiers-and-schema.html#schema-definition",
+    "title": "Identifiers and Schema",
+    "section": "Schema definition",
+    "text": "Schema definition\nBuild on the existing data dictionary template. A usable schema documents field name, description, type, unit, allowed values/codes, missing-value convention, identifier role, date/time convention, spatial meaning, temporal support, derivation, quality notes, and schema version where warranted.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Identifiers and Schema"
+    ]
+  },
+  {
+    "objectID": "practices/organize/identifiers-and-schema.html#types-and-parsing",
+    "href": "practices/organize/identifiers-and-schema.html#types-and-parsing",
+    "title": "Identifiers and Schema",
+    "section": "Types and parsing",
+    "text": "Types and parsing\nReview automatic type guessing for consequential datasets. Check strings with leading zeroes, categorical codes, locale-dependent numbers, dates, Boolean values, censored values, scientific notation, large integers, coordinate precision, and encoding.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Identifiers and Schema"
+    ]
+  },
+  {
+    "objectID": "practices/organize/identifiers-and-schema.html#units-and-missingness",
+    "href": "practices/organize/identifiers-and-schema.html#units-and-missingness",
+    "title": "Identifiers and Schema",
+    "section": "Units and missingness",
+    "text": "Units and missingness\nRecord unit definition, scale, denominator where relevant, original and standardized units, conversion rule, and mixed-unit handling. Distinguish not observed, not applicable, suppressed, below detection, not reported, withheld, structurally absent, parsing failure, and true zero. Do not collapse these states without recording the consequence.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Identifiers and Schema"
+    ]
+  },
+  {
+    "objectID": "practices/organize/identifiers-and-schema.html#categorical-codes-and-schema-versions",
+    "href": "practices/organize/identifiers-and-schema.html#categorical-codes-and-schema-versions",
+    "title": "Identifiers and Schema",
+    "section": "Categorical codes and schema versions",
+    "text": "Categorical codes and schema versions\nFor each code, record code, label, definition, source/version, valid period when codes change, and handling of unknown or deprecated values. Create a new schema version when fields, types, units, code meanings, identifier meanings, temporal support, or spatial support affect interpretation or compatibility.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Identifiers and Schema"
+    ]
+  },
+  {
+    "objectID": "practices/organize/identifiers-and-schema.html#domain-examples",
+    "href": "practices/organize/identifiers-and-schema.html#domain-examples",
+    "title": "Identifiers and Schema",
+    "section": "Domain examples",
+    "text": "Domain examples\n\nSurveillance records: case ID, case-definition version, facility/jurisdiction key, event/report dates, and revision status.\nField observations: observation ID, taxon ID, site key, effort, unit, and detection-limit convention.\nSequence metadata: sample ID, accession, host/location restriction, collection date, and reference version.\nSpatial polygons: stable area ID, boundary version, CRS, geometry status, and spatial support.\nWeekly rasters: tile/layer ID, week-year, CRS, origin/alignment, NoData, and mask.\nSimulation inputs: scenario ID, parameter-set version, units, and initial/boundary conditions.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Identifiers and Schema"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/recurring-programmatic-data.html",
+    "href": "practices/acquire/recurring-programmatic-data.html",
+    "title": "Recurring and Programmatic Data",
+    "section": "",
+    "text": "Recurring acquisition includes APIs, databases, portals, scheduled extracts, surveillance feeds, sensor feeds, automated downloads, and revised historical datasets. Do not implement a client or download script here; record what a reproducible retrieval must preserve.",
     "crumbs": [
       "Start Here",
       "Acquire",
-      "Acquire Data"
+      "Recurring and Programmatic Data"
     ]
   },
   {
-    "objectID": "practices/acquire/index.html#acquisition-workflow",
-    "href": "practices/acquire/index.html#acquisition-workflow",
-    "title": "Acquire Data",
-    "section": "Acquisition workflow",
-    "text": "Acquisition workflow\n\nAuthorize the source, access, and intended use.\nSpecify expected files, tables, period, geography, format, and documentation.\nReceive or extract into an approved intake location.\nPreserve the delivered representation before correction or transformation.\nRegister project context, source, and snapshot identifiers; add a separate intake ID when the delivery pattern or consequence warrants it.\nValidate enough to assess completeness and plausibility.\nClarify discrepancies with the provider or data owner.\nAccept or reject for staging and further organization using an explicit status.",
+    "objectID": "practices/acquire/recurring-programmatic-data.html#record-the-request-specification",
+    "href": "practices/acquire/recurring-programmatic-data.html#record-the-request-specification",
+    "title": "Recurring and Programmatic Data",
+    "section": "Record the request specification",
+    "text": "Record the request specification\nRetain the endpoint or database, dataset/table, query, request parameters, date range, geography, variables, filters, pagination behavior, extraction timestamp, API/database version where available, code version, and configuration version. Do not store secrets in configuration committed to Git.",
     "crumbs": [
       "Start Here",
       "Acquire",
-      "Acquire Data"
+      "Recurring and Programmatic Data"
     ]
   },
   {
-    "objectID": "practices/acquire/index.html#choose-the-acquisition-type",
-    "href": "practices/acquire/index.html#choose-the-acquisition-type",
-    "title": "Acquire Data",
-    "section": "Choose the acquisition type",
-    "text": "Choose the acquisition type\n\n\n\nType\nStart here\n\n\n\n\nOne-time file, archive, sequence batch, raster, or field export\nData intake\n\n\nPublic download or collaborator delivery\nData intake\n\n\nAPI, database extraction, recurring feed, or scheduled download\nRecurring and programmatic data\n\n\nSensor or laboratory stream\nData intake, then adapt the recurring-data guidance\n\n\n\nUse the data-source inventory, data dictionary, data-intake record, and file manifest as needed. The project readiness checklist records the gate without requiring a separate file for every item.\n\n\n\n\n\n\nProposed minimum requirement\n\n\n\nThe Minimum GeoEpi Project Standard requires source protection, provenance, restrictions, metadata, and result traceability. Receiving a file is not the same as accepting a dataset for staging. Intake acceptance does not establish analytical validity, model suitability, publication readiness, or authorization for every downstream use. Acceptance only determines whether the delivery may enter staging and further organization.",
+    "objectID": "practices/acquire/recurring-programmatic-data.html#preserve-snapshots",
+    "href": "practices/acquire/recurring-programmatic-data.html#preserve-snapshots",
+    "title": "Recurring and Programmatic Data",
+    "section": "Preserve snapshots",
+    "text": "Preserve snapshots\nWhen a retrieval can change, produce a preserved snapshot or immutable release record appropriate to the project. Distinguish the live source, retrieved snapshot, normalized data, and current analytical dataset. A live URL is not a reproducibility identifier.\nEach accepted retrieval should produce or update a source inventory record, snapshot or retrieval ID, intake or acceptance status, schema/revision assessment, and a preserved snapshot when the source can change or the workflow consequence warrants it. A retrieval manifest is Conditionally required for multi-file, repeated, transferred, regulated, operational, or integrity-sensitive retrievals.",
     "crumbs": [
       "Start Here",
       "Acquire",
-      "Acquire Data"
+      "Recurring and Programmatic Data"
     ]
   },
   {
-    "objectID": "practices/acquire/index.html#evidence-and-interpretation",
-    "href": "practices/acquire/index.html#evidence-and-interpretation",
-    "title": "Acquire Data",
-    "section": "Evidence and interpretation",
-    "text": "Evidence and interpretation\nThe workflow draws on the existing resource catalog, especially RDMkit, DataONE, the FAIR Principles, CARE Principles, USDA NAL, CDC, FGDC, GBIF, EML, and EFI guidance. These sources support source preservation, provenance, metadata, access and governance, spatial documentation, epidemiological extraction context, ecological documentation, and versioned recurring data. Access date: 2026-08-05. External guidance informs this workflow but does not establish GeoEpi or institutional policy.",
+    "objectID": "practices/acquire/recurring-programmatic-data.html#revisions-and-late-arriving-data",
+    "href": "practices/acquire/recurring-programmatic-data.html#revisions-and-late-arriving-data",
+    "title": "Recurring and Programmatic Data",
+    "section": "Revisions and late-arriving data",
+    "text": "Revisions and late-arriving data\nDocument replacement behavior, backfills, corrected records, reporting delays, revised historical periods, schema changes, changed geographic boundaries, and changed case definitions. “Latest” is not an adequate identifier for a reproducible retrieval.",
     "crumbs": [
       "Start Here",
       "Acquire",
-      "Acquire Data"
+      "Recurring and Programmatic Data"
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "GeoEpi Lab Book",
-    "section": "",
-    "text": "Draft guidance\n\n\n\nThe Lab Book is a living resource. Draft pages and proposed policy require review; they do not establish approved laboratory policy.\nWelcome to the GeoEpi Lab Book, a shared place for practices that help geographical epidemiology remain understandable, defensible, reproducible, and transferable across people, projects, and time."
+    "objectID": "practices/acquire/recurring-programmatic-data.html#idempotence-and-overwrite-safety",
+    "href": "practices/acquire/recurring-programmatic-data.html#idempotence-and-overwrite-safety",
+    "title": "Recurring and Programmatic Data",
+    "section": "Idempotence and overwrite safety",
+    "text": "Idempotence and overwrite safety\nRecommended: design retrievals that do not silently overwrite prior snapshots, detect existing valid outputs, record partial failure, support safe retry, and distinguish completed, failed, incomplete, and superseded retrievals.\n\n\n\n\n\n\nStronger practice\n\n\n\nFor a consequential recurring workflow, retain an immutable retrieval manifest and an automated completeness check for every snapshot. This strengthens traceability without making a scheduler, workflow engine, or container universally required.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Recurring and Programmatic Data"
+    ]
   },
   {
-    "objectID": "index.html#find-your-next-step",
-    "href": "index.html#find-your-next-step",
-    "title": "GeoEpi Lab Book",
-    "section": "Find your next step",
-    "text": "Find your next step\n\nStart a project for a minimum setup and scope.\nAssess project readiness at lifecycle checkpoints.\nDocument incoming data with a source inventory.\nFind a template for reusable project records.\nPrepare a handoff before responsibility changes.\nReview the minimum standard for the proposed baseline.\nResearch Practices for the lifecycle from planning through preservation.\nDomain Guidance for spatial, epidemiological, ecological, genomic, and modeling topics.\nLab Standards for future lab-level decisions.\nTemplates for reusable project and documentation structures.\nResources for an annotated external catalog.\n\nThe intended outcome is that a lab member can join a project, understand what was done and why, reproduce an important result where access permits, identify uncertainty, and continue the work without relying on undocumented memory."
+    "objectID": "practices/acquire/recurring-programmatic-data.html#pagination-and-completeness",
+    "href": "practices/acquire/recurring-programmatic-data.html#pagination-and-completeness",
+    "title": "Recurring and Programmatic Data",
+    "section": "Pagination and completeness",
+    "text": "Pagination and completeness\nBefore accepting a retrieval, retain evidence that all pages or partitions were retrieved, expected date or spatial coverage is present, rate limiting did not silently truncate results, retries did not duplicate records, and response counts are plausible.\nA successful HTTP response, database connection, or completed download command is not evidence of complete retrieval.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Recurring and Programmatic Data"
+    ]
   },
   {
-    "objectID": "about/purpose.html",
-    "href": "about/purpose.html",
-    "title": "Purpose of the Lab Book",
-    "section": "",
-    "text": "Geographical epidemiology joins data, place, time, biology, and models. Small undocumented choices can change an analysis, while staff changes and long timelines can make a sound result difficult to recover."
+    "objectID": "practices/acquire/recurring-programmatic-data.html#schema-drift",
+    "href": "practices/acquire/recurring-programmatic-data.html#schema-drift",
+    "title": "Recurring and Programmatic Data",
+    "section": "Schema drift",
+    "text": "Schema drift\nCheck for added or removed variables, type changes, category changes, renamed fields, changed missing-value conventions, altered units, and changed coordinate definitions. Record how a change was handled; do not silently coerce a new schema into an old one.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Recurring and Programmatic Data"
+    ]
   },
   {
-    "objectID": "about/purpose.html#why-this-matters",
-    "href": "about/purpose.html#why-this-matters",
-    "title": "Purpose of the Lab Book",
-    "section": "",
-    "text": "Geographical epidemiology joins data, place, time, biology, and models. Small undocumented choices can change an analysis, while staff changes and long timelines can make a sound result difficult to recover."
+    "objectID": "practices/acquire/recurring-programmatic-data.html#retrieval-manifest",
+    "href": "practices/acquire/recurring-programmatic-data.html#retrieval-manifest",
+    "title": "Recurring and Programmatic Data",
+    "section": "Retrieval manifest",
+    "text": "Retrieval manifest\nRecommended, conditionally required for consequential recurring workflows: retain a manifest containing retrieval ID, source ID, snapshot ID, intake or acceptance status, requested period, request hash where useful, retrieved files, status, timestamps, software/configuration version, checksums where proportionate, log location, schema/revision assessment, and error or retry information.\n\n\n\n\n\n\nExample\n\n\n\nA weekly environmental raster retrieval should record the requested weeks, geographic tiles, CRS, grid alignment, response status, and snapshot identifier. A recurring surveillance extract should also record the query, case-definition version, report-date window, late-report behavior, and database snapshot or extraction timestamp.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Recurring and Programmatic Data"
+    ]
   },
   {
-    "objectID": "about/purpose.html#what-this-site-is-for",
-    "href": "about/purpose.html#what-this-site-is-for",
-    "title": "Purpose of the Lab Book",
-    "section": "What this site is for",
-    "text": "What this site is for\nThe Lab Book collects concise, reviewable guidance for planning, acquiring, organizing, analyzing, validating, collaborating, communicating, and preserving research. It points to templates and external resources without replacing primary methods papers, data-use agreements, or formal institutional policies. The Lab Book remains distinct from the GeoEpi organization website and GitHub organization."
-  },
-  {
-    "objectID": "about/purpose.html#what-this-site-is-not",
-    "href": "about/purpose.html#what-this-site-is-not",
-    "title": "Purpose of the Lab Book",
-    "section": "What this site is not",
-    "text": "What this site is not\nThis is not a complete textbook, a substitute for scientific judgment, or an approved policy register. Requirements will be labeled and approved explicitly; until then, content is draft guidance."
-  },
-  {
-    "objectID": "about/contributing.html",
-    "href": "about/contributing.html",
-    "title": "Contributing",
-    "section": "",
-    "text": "See CONTRIBUTING.md for the repository workflow. Propose changes on a branch, preserve metadata, write in your own words, cite the evidence or source basis, and request review when a change could affect a lab requirement.\n\n\n\n\n\n\nWarning\n\n\n\nUntil governance is finalized, a pull request can improve draft text but cannot by itself turn it into an approved lab requirement."
-  },
-  {
-    "objectID": "about/how-to-use.html",
-    "href": "about/how-to-use.html",
-    "title": "How to Use This Site",
-    "section": "",
-    "text": "Start with Start Here, then use the lifecycle pages in Research Practices and the domain index when a project has specialized needs.\n\n\n\n\n\n\nRead the labels\n\n\n\nRequired, Recommended, and Optional describe the intended strength of a practice. Draft guidance signals material that has not been approved as lab policy. Example demonstrates a pattern without imposing it.\n\n\nPages include review metadata near the top. Use the repository actions to view or edit source, or report a problem. A page’s owner coordinates review; it is not automatically the sole author."
-  },
-  {
-    "objectID": "domains/index.html",
-    "href": "domains/index.html",
-    "title": "Domain Guidance",
-    "section": "",
-    "text": "Future guidance will connect general research practices to the risks and conventions of spatial, epidemiological, ecological, genomic, and modeling work. Potential topics include coordinate reference systems, geocoding, case definitions, sampling and detection, genomic provenance, model checking, uncertainty, and responsible communication.\nDomain pages should be developed with subject-matter review and should not be inferred from the resource catalog alone."
+    "objectID": "practices/acquire/recurring-programmatic-data.html#acceptance-gate-for-recurring-data",
+    "href": "practices/acquire/recurring-programmatic-data.html#acceptance-gate-for-recurring-data",
+    "title": "Recurring and Programmatic Data",
+    "section": "Acceptance gate for recurring data",
+    "text": "Acceptance gate for recurring data\n\nRequest specification and source identifier are versioned.\nRetrieval timestamp, requested period, geography, and configuration are recorded.\nA snapshot or immutable release record exists when the source can change.\nPagination, partition, coverage, and response-count checks are recorded.\nSchema drift and revision behavior are assessed.\nRetry, failure, duplicate, incomplete, and superseded states are distinguishable.\nCredentials are kept outside committed code, configuration, logs, and templates.\nThe resulting snapshot is registered through the data-source inventory and, when useful, the file manifest.\nThe retrieval has an intake or acceptance status, schema/revision assessment, and preserved snapshot when required.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Recurring and Programmatic Data"
+    ]
   },
   {
     "objectID": "practices/acquire/data-intake.html",
@@ -621,7 +884,7 @@
     "href": "practices/acquire/data-intake.html#intake-completion-gate",
     "title": "Data Intake and Acceptance",
     "section": "Intake completion gate",
-    "text": "Intake completion gate\n\nAuthorization, owner, provider, restrictions, and access contact are recorded.\nProject context, source ID, and snapshot/release/extraction/acquisition ID are assigned.\nA separate intake ID is assigned when the delivery pattern or consequence makes it conditionally required; a simple one-time delivery may reuse its snapshot ID.\nThe delivered source package is preserved at an authoritative location.\nExpected and received contents are compared.\nTechnical and initial content inspections are recorded.\nRequired metadata, identifiers, units, dates, geography, and domain fields are interpretable.\nDiscrepancies and clarifications are linked to the affected delivery.\nAcceptance status and responsible decision-maker are recorded.\nThe data are explicitly received, pending validation, pending clarification, accepted for staging, accepted with documented limitation, rejected, or superseded.\n\nPassing this gate allows an accepted delivery to enter the Organize stage. It does not certify analytical validity, model suitability, publication readiness, or authorization for every downstream use.",
+    "text": "Intake completion gate\n\nAuthorization, owner, provider, restrictions, and access contact are recorded.\nProject context, source ID, and snapshot/release/extraction/acquisition ID are assigned.\nA separate intake ID is assigned when the delivery pattern or consequence makes it conditionally required; a simple one-time delivery may reuse its snapshot ID.\nThe delivered source package is preserved at an authoritative location.\nExpected and received contents are compared.\nTechnical and initial content inspections are recorded.\nRequired metadata, identifiers, units, dates, geography, and domain fields are interpretable.\nDiscrepancies and clarifications are linked to the affected delivery.\nAcceptance status and responsible decision-maker are recorded.\nThe data are explicitly received, pending validation, pending clarification, accepted for staging, accepted with documented limitation, rejected, or superseded.\n\nPassing this gate allows an accepted delivery to enter the Organize stage. An accepted-for-staging delivery may proceed; an accepted-with-documented-limitation delivery may proceed only with that limitation carried forward; rejected or pending data must not proceed. Intake does not certify analytical validity, model suitability, publication readiness, or authorization for every downstream use.",
     "crumbs": [
       "Start Here",
       "Acquire",
@@ -629,111 +892,328 @@
     ]
   },
   {
-    "objectID": "practices/acquire/recurring-programmatic-data.html",
-    "href": "practices/acquire/recurring-programmatic-data.html",
-    "title": "Recurring and Programmatic Data",
+    "objectID": "domains/index.html",
+    "href": "domains/index.html",
+    "title": "Domain Guidance",
     "section": "",
-    "text": "Recurring acquisition includes APIs, databases, portals, scheduled extracts, surveillance feeds, sensor feeds, automated downloads, and revised historical datasets. Do not implement a client or download script here; record what a reproducible retrieval must preserve.",
+    "text": "Future guidance will connect general research practices to the risks and conventions of spatial, epidemiological, ecological, genomic, and modeling work. Potential topics include coordinate reference systems, geocoding, case definitions, sampling and detection, genomic provenance, model checking, uncertainty, and responsible communication.\nDomain pages should be developed with subject-matter review and should not be inferred from the resource catalog alone."
+  },
+  {
+    "objectID": "about/how-to-use.html",
+    "href": "about/how-to-use.html",
+    "title": "How to Use This Site",
+    "section": "",
+    "text": "Start with Start Here, then use the lifecycle pages in Research Practices and the domain index when a project has specialized needs.\n\n\n\n\n\n\nRead the labels\n\n\n\nRequired, Recommended, and Optional describe the intended strength of a practice. Draft guidance signals material that has not been approved as lab policy. Example demonstrates a pattern without imposing it.\n\n\nPages include review metadata near the top. Use the repository actions to view or edit source, or report a problem. A page’s owner coordinates review; it is not automatically the sole author."
+  },
+  {
+    "objectID": "about/contributing.html",
+    "href": "about/contributing.html",
+    "title": "Contributing",
+    "section": "",
+    "text": "See CONTRIBUTING.md for the repository workflow. Propose changes on a branch, preserve metadata, write in your own words, cite the evidence or source basis, and request review when a change could affect a lab requirement.\n\n\n\n\n\n\nWarning\n\n\n\nUntil governance is finalized, a pull request can improve draft text but cannot by itself turn it into an approved lab requirement."
+  },
+  {
+    "objectID": "about/purpose.html",
+    "href": "about/purpose.html",
+    "title": "Purpose of the Lab Book",
+    "section": "",
+    "text": "Geographical epidemiology joins data, place, time, biology, and models. Small undocumented choices can change an analysis, while staff changes and long timelines can make a sound result difficult to recover."
+  },
+  {
+    "objectID": "about/purpose.html#why-this-matters",
+    "href": "about/purpose.html#why-this-matters",
+    "title": "Purpose of the Lab Book",
+    "section": "",
+    "text": "Geographical epidemiology joins data, place, time, biology, and models. Small undocumented choices can change an analysis, while staff changes and long timelines can make a sound result difficult to recover."
+  },
+  {
+    "objectID": "about/purpose.html#what-this-site-is-for",
+    "href": "about/purpose.html#what-this-site-is-for",
+    "title": "Purpose of the Lab Book",
+    "section": "What this site is for",
+    "text": "What this site is for\nThe Lab Book collects concise, reviewable guidance for planning, acquiring, organizing, analyzing, validating, collaborating, communicating, and preserving research. It points to templates and external resources without replacing primary methods papers, data-use agreements, or formal institutional policies. The Lab Book remains distinct from the GeoEpi organization website and GitHub organization."
+  },
+  {
+    "objectID": "about/purpose.html#what-this-site-is-not",
+    "href": "about/purpose.html#what-this-site-is-not",
+    "title": "Purpose of the Lab Book",
+    "section": "What this site is not",
+    "text": "What this site is not\nThis is not a complete textbook, a substitute for scientific judgment, or an approved policy register. Requirements will be labeled and approved explicitly; until then, content is draft guidance."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "GeoEpi Lab Book",
+    "section": "",
+    "text": "Draft guidance\n\n\n\nThe Lab Book is a living resource. Draft pages and proposed policy require review; they do not establish approved laboratory policy.\nWelcome to the GeoEpi Lab Book, a shared place for practices that help geographical epidemiology remain understandable, defensible, reproducible, and transferable across people, projects, and time."
+  },
+  {
+    "objectID": "index.html#find-your-next-step",
+    "href": "index.html#find-your-next-step",
+    "title": "GeoEpi Lab Book",
+    "section": "Find your next step",
+    "text": "Find your next step\n\nStart a project for a minimum setup and scope.\nAssess project readiness at lifecycle checkpoints.\nDocument incoming data with a source inventory.\nFind a template for reusable project records.\nPrepare a handoff before responsibility changes.\nReview the minimum standard for the proposed baseline.\nResearch Practices for the lifecycle from planning through preservation.\nDomain Guidance for spatial, epidemiological, ecological, genomic, and modeling topics.\nLab Standards for future lab-level decisions.\nTemplates for reusable project and documentation structures.\nResources for an annotated external catalog.\n\nThe intended outcome is that a lab member can join a project, understand what was done and why, reproduce an important result where access permits, identify uncertainty, and continue the work without relying on undocumented memory."
+  },
+  {
+    "objectID": "practices/acquire/index.html",
+    "href": "practices/acquire/index.html",
+    "title": "Acquire Data",
+    "section": "",
+    "text": "Acquisition is more than downloading or receiving files. It includes authorization, specification, preservation, registration, initial inspection, clarification, and an explicit acceptance decision.",
     "crumbs": [
       "Start Here",
       "Acquire",
-      "Recurring and Programmatic Data"
+      "Acquire Data"
     ]
   },
   {
-    "objectID": "practices/acquire/recurring-programmatic-data.html#record-the-request-specification",
-    "href": "practices/acquire/recurring-programmatic-data.html#record-the-request-specification",
-    "title": "Recurring and Programmatic Data",
-    "section": "Record the request specification",
-    "text": "Record the request specification\nRetain the endpoint or database, dataset/table, query, request parameters, date range, geography, variables, filters, pagination behavior, extraction timestamp, API/database version where available, code version, and configuration version. Do not store secrets in configuration committed to Git.",
+    "objectID": "practices/acquire/index.html#acquisition-workflow",
+    "href": "practices/acquire/index.html#acquisition-workflow",
+    "title": "Acquire Data",
+    "section": "Acquisition workflow",
+    "text": "Acquisition workflow\n\nAuthorize the source, access, and intended use.\nSpecify expected files, tables, period, geography, format, and documentation.\nReceive or extract into an approved intake location.\nPreserve the delivered representation before correction or transformation.\nRegister project context, source, and snapshot identifiers; add a separate intake ID when the delivery pattern or consequence warrants it.\nValidate enough to assess completeness and plausibility.\nClarify discrepancies with the provider or data owner.\nAccept or reject for staging and further organization using an explicit status.",
     "crumbs": [
       "Start Here",
       "Acquire",
-      "Recurring and Programmatic Data"
+      "Acquire Data"
     ]
   },
   {
-    "objectID": "practices/acquire/recurring-programmatic-data.html#preserve-snapshots",
-    "href": "practices/acquire/recurring-programmatic-data.html#preserve-snapshots",
-    "title": "Recurring and Programmatic Data",
-    "section": "Preserve snapshots",
-    "text": "Preserve snapshots\nWhen a retrieval can change, produce a preserved snapshot or immutable release record appropriate to the project. Distinguish the live source, retrieved snapshot, normalized data, and current analytical dataset. A live URL is not a reproducibility identifier.\nEach accepted retrieval should produce or update a source inventory record, snapshot or retrieval ID, intake or acceptance status, schema/revision assessment, and a preserved snapshot when the source can change or the workflow consequence warrants it. A retrieval manifest is Conditionally required for multi-file, repeated, transferred, regulated, operational, or integrity-sensitive retrievals.",
+    "objectID": "practices/acquire/index.html#choose-the-acquisition-type",
+    "href": "practices/acquire/index.html#choose-the-acquisition-type",
+    "title": "Acquire Data",
+    "section": "Choose the acquisition type",
+    "text": "Choose the acquisition type\n\n\n\nType\nStart here\n\n\n\n\nOne-time file, archive, sequence batch, raster, or field export\nData intake\n\n\nPublic download or collaborator delivery\nData intake\n\n\nAPI, database extraction, recurring feed, or scheduled download\nRecurring and programmatic data\n\n\nSensor or laboratory stream\nData intake, then adapt the recurring-data guidance\n\n\n\nUse the data-source inventory, data dictionary, data-intake record, and file manifest as needed. The project readiness checklist records the gate without requiring a separate file for every item.\n\n\n\n\n\n\nProposed minimum requirement\n\n\n\nThe Minimum GeoEpi Project Standard requires source protection, provenance, restrictions, metadata, and result traceability. Receiving a file is not the same as accepting a dataset for staging. Intake acceptance does not establish analytical validity, model suitability, publication readiness, or authorization for every downstream use. Acceptance only determines whether the delivery may enter staging and further organization.",
     "crumbs": [
       "Start Here",
       "Acquire",
-      "Recurring and Programmatic Data"
+      "Acquire Data"
     ]
   },
   {
-    "objectID": "practices/acquire/recurring-programmatic-data.html#revisions-and-late-arriving-data",
-    "href": "practices/acquire/recurring-programmatic-data.html#revisions-and-late-arriving-data",
-    "title": "Recurring and Programmatic Data",
-    "section": "Revisions and late-arriving data",
-    "text": "Revisions and late-arriving data\nDocument replacement behavior, backfills, corrected records, reporting delays, revised historical periods, schema changes, changed geographic boundaries, and changed case definitions. “Latest” is not an adequate identifier for a reproducible retrieval.",
+    "objectID": "practices/acquire/index.html#evidence-and-interpretation",
+    "href": "practices/acquire/index.html#evidence-and-interpretation",
+    "title": "Acquire Data",
+    "section": "Evidence and interpretation",
+    "text": "Evidence and interpretation\nThe workflow draws on the existing resource catalog, especially RDMkit, DataONE, the FAIR Principles, CARE Principles, USDA NAL, CDC, FGDC, GBIF, EML, and EFI guidance. These sources support source preservation, provenance, metadata, access and governance, spatial documentation, epidemiological extraction context, ecological documentation, and versioned recurring data. Access date: 2026-08-05. External guidance informs this workflow but does not establish GeoEpi or institutional policy.",
     "crumbs": [
       "Start Here",
       "Acquire",
-      "Recurring and Programmatic Data"
+      "Acquire Data"
     ]
   },
   {
-    "objectID": "practices/acquire/recurring-programmatic-data.html#idempotence-and-overwrite-safety",
-    "href": "practices/acquire/recurring-programmatic-data.html#idempotence-and-overwrite-safety",
-    "title": "Recurring and Programmatic Data",
-    "section": "Idempotence and overwrite safety",
-    "text": "Idempotence and overwrite safety\nRecommended: design retrievals that do not silently overwrite prior snapshots, detect existing valid outputs, record partial failure, support safe retry, and distinguish completed, failed, incomplete, and superseded retrievals.\n\n\n\n\n\n\nStronger practice\n\n\n\nFor a consequential recurring workflow, retain an immutable retrieval manifest and an automated completeness check for every snapshot. This strengthens traceability without making a scheduler, workflow engine, or container universally required.",
+    "objectID": "practices/index.html",
+    "href": "practices/index.html",
+    "title": "Research Practices",
+    "section": "",
+    "text": "The Lab Book organizes work around a lifecycle:\nplan -&gt; acquire -&gt; organize -&gt; analyze -&gt; validate -&gt; collaborate -&gt; communicate -&gt; preserve\nStages overlap and may repeat. A revised project plan can trigger new acquisition work; an intake discrepancy can require a scope decision. Each page distinguishes the Draft minimum, Conditionally required, Recommended, Stronger practice, Example, and Stop and resolve levels.\nPlan, Acquire, and Organize now have implemented draft guidance. Analyze and later stages remain future lifecycle sections, not complete guidance.\nflowchart LR\n  plan[Plan] --&gt; acquire[Acquire]\n  acquire --&gt; organize[Organize]\n  organize --&gt; analyze[Analyze]\n  analyze --&gt; validate[Validate]\n  validate --&gt; collaborate[Collaborate]\n  collaborate --&gt; communicate[Communicate]\n  communicate --&gt; preserve[Preserve]\n  acquire -. revise .-&gt; plan\n  validate -. revise .-&gt; plan",
     "crumbs": [
       "Start Here",
-      "Acquire",
-      "Recurring and Programmatic Data"
+      "Research Practices"
     ]
   },
   {
-    "objectID": "practices/acquire/recurring-programmatic-data.html#pagination-and-completeness",
-    "href": "practices/acquire/recurring-programmatic-data.html#pagination-and-completeness",
-    "title": "Recurring and Programmatic Data",
-    "section": "Pagination and completeness",
-    "text": "Pagination and completeness\nBefore accepting a retrieval, retain evidence that all pages or partitions were retrieved, expected date or spatial coverage is present, rate limiting did not silently truncate results, retries did not duplicate records, and response counts are plausible.\nA successful HTTP response, database connection, or completed download command is not evidence of complete retrieval.",
+    "objectID": "practices/index.html#choose-a-starting-point",
+    "href": "practices/index.html#choose-a-starting-point",
+    "title": "Research Practices",
+    "section": "Choose a starting point",
+    "text": "Choose a starting point\n\nStarting a new project for a short gateway and initiation checklist.\nPlan a project when purpose, scope, roles, outputs, or completion criteria are unsettled.\nPlan data management when access, storage, restrictions, identifiers, time, space, or computing need decisions.\nReceive a one-time dataset when a file, archive, extract, sequence batch, raster, or field export arrives.\nDesign recurring or programmatic acquisition for APIs, databases, feeds, portals, and scheduled extracts.\nAssess intake acceptance when deciding whether incoming data can enter the Organize stage.\nOrganize accepted data when a snapshot has passed intake and needs controlled structure, provenance, schema, identifier, spatial, temporal, and readiness checks.\nReview analysis readiness before allowing a structurally documented dataset to enter Analyze.\n\nThe Lab Book separates draft policy, task guidance, templates, and examples. The Minimum GeoEpi Project Standard supplies the governing draft framework; these pages explain how to satisfy relevant information requirements without prescribing one folder tree, storage platform, workflow engine, or environment.",
     "crumbs": [
       "Start Here",
-      "Acquire",
-      "Recurring and Programmatic Data"
+      "Research Practices"
     ]
   },
   {
-    "objectID": "practices/acquire/recurring-programmatic-data.html#schema-drift",
-    "href": "practices/acquire/recurring-programmatic-data.html#schema-drift",
-    "title": "Recurring and Programmatic Data",
-    "section": "Schema drift",
-    "text": "Schema drift\nCheck for added or removed variables, type changes, category changes, renamed fields, changed missing-value conventions, altered units, and changed coordinate definitions. Record how a change was handled; do not silently coerce a new schema into an old one.",
+    "objectID": "practices/organize/index.html",
+    "href": "practices/organize/index.html",
+    "title": "Organize Data",
+    "section": "",
+    "text": "Organization is not cosmetic file arrangement. It creates a controlled relationship among accepted source snapshots, preserved source packages, staged representations, derived datasets, schemas, identifiers, transformation records, QA evidence, and analysis-ready objects.\nEach staged-dataset record begins as not ready for analysis. Its status changes only after the Organize gate has been reviewed. A ready status records the responsible decision-maker and decision time. Every new staged version requires its own readiness decision; superseding a dataset does not silently transfer readiness to its replacement.",
     "crumbs": [
       "Start Here",
-      "Acquire",
-      "Recurring and Programmatic Data"
+      "Organize",
+      "Organize Data"
     ]
   },
   {
-    "objectID": "practices/acquire/recurring-programmatic-data.html#retrieval-manifest",
-    "href": "practices/acquire/recurring-programmatic-data.html#retrieval-manifest",
-    "title": "Recurring and Programmatic Data",
-    "section": "Retrieval manifest",
-    "text": "Retrieval manifest\nRecommended, conditionally required for consequential recurring workflows: retain a manifest containing retrieval ID, source ID, snapshot ID, intake or acceptance status, requested period, request hash where useful, retrieved files, status, timestamps, software/configuration version, checksums where proportionate, log location, schema/revision assessment, and error or retry information.\n\n\n\n\n\n\nExample\n\n\n\nA weekly environmental raster retrieval should record the requested weeks, geographic tiles, CRS, grid alignment, response status, and snapshot identifier. A recurring surveillance extract should also record the query, case-definition version, report-date window, late-report behavior, and database snapshot or extraction timestamp.",
+    "objectID": "practices/organize/index.html#organize-boundary",
+    "href": "practices/organize/index.html#organize-boundary",
+    "title": "Organize Data",
+    "section": "Organize boundary",
+    "text": "Organize boundary\nThe Organize stage begins after a snapshot is accepted for staging or accepted with documented limitation. It may include structural inspection, deterministic transformation, normalization, schema and identifier checks, unit and code harmonization, spatial and temporal standardization, documented exclusions and corrections, provenance records, and analysis-readiness checks.\nIt does not include statistical model selection, parameter estimation, hypothesis testing, interpretation, predictive-accuracy assessment, model-assumption validation, publication review, or operational release.",
     "crumbs": [
       "Start Here",
-      "Acquire",
-      "Recurring and Programmatic Data"
+      "Organize",
+      "Organize Data"
     ]
   },
   {
-    "objectID": "practices/acquire/recurring-programmatic-data.html#acceptance-gate-for-recurring-data",
-    "href": "practices/acquire/recurring-programmatic-data.html#acceptance-gate-for-recurring-data",
-    "title": "Recurring and Programmatic Data",
-    "section": "Acceptance gate for recurring data",
-    "text": "Acceptance gate for recurring data\n\nRequest specification and source identifier are versioned.\nRetrieval timestamp, requested period, geography, and configuration are recorded.\nA snapshot or immutable release record exists when the source can change.\nPagination, partition, coverage, and response-count checks are recorded.\nSchema drift and revision behavior are assessed.\nRetry, failure, duplicate, incomplete, and superseded states are distinguishable.\nCredentials are kept outside committed code, configuration, logs, and templates.\nThe resulting snapshot is registered through the data-source inventory and, when useful, the file manifest.\nThe retrieval has an intake or acceptance status, schema/revision assessment, and preserved snapshot when required.",
+    "objectID": "practices/organize/index.html#organize-workflow",
+    "href": "practices/organize/index.html#organize-workflow",
+    "title": "Organize Data",
+    "section": "Organize workflow",
+    "text": "Organize workflow\n\nConfirm the accepted snapshot and intake status.\nRegister the working dataset and authoritative locations.\nEstablish project and data-object roles.\nPreserve the source-to-staged boundary.\nTransform source data through documented code or procedures.\nDefine identifiers, relationships, schema, units, and codes.\nEstablish spatial and temporal conventions.\nRun structural and completeness checks.\nRecord limitations and unresolved discrepancies.\nApprove or withhold analysis readiness.\n\n\n\n\n\n\nflowchart TD\n  accepted[Accepted snapshot] --&gt; preserved[Preserved source package]\n  preserved --&gt; transformed[Scripted or documented transformation]\n  transformed --&gt; staged[Staged dataset]\n  staged --&gt; checks[Schema, identifier, spatial, temporal, and structural checks]\n  checks --&gt; ready[Analysis-ready dataset]\n  checks -. unresolved .-&gt; hold[Not ready; resolve or document limitation]\n\n\n\n\n\n\n“Analysis-ready” is a workflow status, not a scientific endorsement. Passing intake allows a snapshot to enter staging. Passing the Organize gate allows a structurally documented dataset to enter Analyze. Neither gate establishes that a statistical method, model, inference, forecast, or scientific conclusion is valid.",
     "crumbs": [
       "Start Here",
-      "Acquire",
-      "Recurring and Programmatic Data"
+      "Organize",
+      "Organize Data"
+    ]
+  },
+  {
+    "objectID": "practices/organize/index.html#starting-points",
+    "href": "practices/organize/index.html#starting-points",
+    "title": "Organize Data",
+    "section": "Starting points",
+    "text": "Starting points\n\n\n\nTask\nGuidance\n\n\n\n\nDecide project and data locations\nProject and data structure\n\n\nTransform an accepted snapshot\nSource-to-staged data\n\n\nFix identifier or join problems\nIdentifiers and schema\n\n\nDocument a schema\nIdentifiers and schema and the data dictionary\n\n\nHarmonize dates and times\nSpatial and temporal conventions\n\n\nPrepare spatial layers\nSpatial and temporal conventions\n\n\nReview analysis readiness\nAnalysis-readiness gate and the readiness checklist",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Organize Data"
+    ]
+  },
+  {
+    "objectID": "practices/organize/index.html#evidence-and-interpretation",
+    "href": "practices/organize/index.html#evidence-and-interpretation",
+    "title": "Organize Data",
+    "section": "Evidence and interpretation",
+    "text": "Evidence and interpretation\nThis draft workflow is informed by the existing resource catalog, including Good Enough Practices, The Turing Way, RDMkit, DataONE, TIER, FAIR Principles, FGDC, GBIF, CDC guidance, EML, and EFI. These sources inform practices for separation, scripting, provenance, identity, metadata, spatial and temporal meaning, and reproducibility. Access date: 2026-08-05. External guidance informs this draft workflow but does not establish GeoEpi or institutional policy.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Organize Data"
+    ]
+  },
+  {
+    "objectID": "practices/organize/index.html#analysis-readiness-gate",
+    "href": "practices/organize/index.html#analysis-readiness-gate",
+    "title": "Organize Data",
+    "section": "Analysis-readiness gate",
+    "text": "Analysis-readiness gate\n\nThe source and accepted snapshot are identifiable.\nThe preserved source package remains distinguishable from staged and derived objects.\nStaged or derived dataset IDs and versions are assigned.\nConsequential transformations are scripted or documented.\nCode, configuration, and transformation records identify how the dataset was produced.\nCorrections and exclusions are attributable.\nRecord counts and structural checks are plausible.\nPrimary, foreign, composite, spatial, and temporal identifiers are documented as applicable.\nDuplicate and join behavior has been assessed.\nFields, types, units, categories, missingness, and derivations are documented.\nSpatial reference, support, resolution, alignment, and boundary versions are documented where applicable.\nEvent, report, extraction, acquisition, processing, and aggregation times are distinguishable where applicable.\nRestrictions and sensitive fields remain correctly handled.\nUnresolved discrepancies and limitations are visible.\nAn authoritative analysis-ready object and responsible decision-maker are recorded.\nDataset status is explicitly recorded as ready for analysis, ready for analysis with documented limitation, or not ready for analysis.\n\nPassing this gate establishes structural and documentary readiness only. Analytical validity, model suitability, inferential validity, predictive performance, and scientific interpretation belong to later stages. A ready status is therefore a workflow decision, not an endorsement of a scientific result.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Organize Data"
+    ]
+  },
+  {
+    "objectID": "practices/organize/source-to-staged-data.html",
+    "href": "practices/organize/source-to-staged-data.html",
+    "title": "Source-to-Staged Data",
+    "section": "",
+    "text": "Before transformation, confirm the source ID, snapshot ID, intake or acceptance record, authoritative source-package location, restrictions, expected files or objects, documented acceptance limitations, and provider schema or documentation.\nDo not transform a delivery marked received, pending validation, pending clarification, or rejected. A superseded delivery may be retained for provenance but must not silently become the current input.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Source-to-Staged Data"
+    ]
+  },
+  {
+    "objectID": "practices/organize/source-to-staged-data.html#input-contract",
+    "href": "practices/organize/source-to-staged-data.html#input-contract",
+    "title": "Source-to-Staged Data",
+    "section": "",
+    "text": "Before transformation, confirm the source ID, snapshot ID, intake or acceptance record, authoritative source-package location, restrictions, expected files or objects, documented acceptance limitations, and provider schema or documentation.\nDo not transform a delivery marked received, pending validation, pending clarification, or rejected. A superseded delivery may be retained for provenance but must not silently become the current input.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Source-to-Staged Data"
+    ]
+  },
+  {
+    "objectID": "practices/organize/source-to-staged-data.html#preserve-source-immutability",
+    "href": "practices/organize/source-to-staged-data.html#preserve-source-immutability",
+    "title": "Source-to-Staged Data",
+    "section": "Preserve source immutability",
+    "text": "Preserve source immutability\nCorrections, renaming, recoding, reprojection, reshaping, exclusions, and normalization belong in staged or derived objects. They must not silently alter the preserved source package. When physical immutability cannot be enforced, use procedural protection and a checksum or other integrity evidence when proportionate.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Source-to-Staged Data"
+    ]
+  },
+  {
+    "objectID": "practices/organize/source-to-staged-data.html#transformation-principles",
+    "href": "practices/organize/source-to-staged-data.html#transformation-principles",
+    "title": "Source-to-Staged Data",
+    "section": "Transformation principles",
+    "text": "Transformation principles\nConsequential transformations should be scripted when reasonable, ordered, attributable, repeatable, parameterized where appropriate, logged, linked to explicit inputs and outputs, safe from accidental overwrite, and deterministic when expected to be deterministic. No particular language or workflow engine is required.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Source-to-Staged Data"
+    ]
+  },
+  {
+    "objectID": "practices/organize/source-to-staged-data.html#typical-transformation-sequence",
+    "href": "practices/organize/source-to-staged-data.html#typical-transformation-sequence",
+    "title": "Source-to-Staged Data",
+    "section": "Typical transformation sequence",
+    "text": "Typical transformation sequence\n\nRead the accepted source package.\nConfirm expected source objects.\nNormalize names and encodings.\nParse identifiers and date/time fields.\nStandardize types, units, and codes.\nHandle documented missing-value representations.\nApply explicit corrections or exclusions.\nTransform spatial reference or geometry where needed.\nWrite a new staged object.\nRun structural QA.\nRecord the transformation and status.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Source-to-Staged Data"
+    ]
+  },
+  {
+    "objectID": "practices/organize/source-to-staged-data.html#corrections-and-exclusions",
+    "href": "practices/organize/source-to-staged-data.html#corrections-and-exclusions",
+    "title": "Source-to-Staged Data",
+    "section": "Corrections and exclusions",
+    "text": "Corrections and exclusions\nDistinguish provider-issued correction, documented local correction, harmonization, imputation, exclusion, aggregation, and derivation. Imputation or model-based correction is not routine staging and must not be hidden inside organization code.\nFor every local correction, record the affected object or record, original and corrected state where lawful and practical, reason, evidence, responsible person or process, date, and code or decision record.\nConsequential exclusions must identify the rule, rationale, affected records, stage, recoverability, effect on record counts, and decision record when warranted. Do not allow undocumented row deletion.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Source-to-Staged Data"
+    ]
+  },
+  {
+    "objectID": "practices/organize/source-to-staged-data.html#manual-steps",
+    "href": "practices/organize/source-to-staged-data.html#manual-steps",
+    "title": "Source-to-Staged Data",
+    "section": "Manual steps",
+    "text": "Manual steps\nA manual step is allowed only when scripting is not reasonable, the procedure and inputs/outputs are documented, the responsible person and date are recorded, the change can be reviewed, and the preserved source package is not silently modified. Link to the project exception record when a required traceable process cannot be followed.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Source-to-Staged Data"
+    ]
+  },
+  {
+    "objectID": "practices/organize/source-to-staged-data.html#transformation-record",
+    "href": "practices/organize/source-to-staged-data.html#transformation-record",
+    "title": "Source-to-Staged Data",
+    "section": "Transformation record",
+    "text": "Transformation record\nRecord transformation ID, input dataset and snapshot/version, input object, code or workflow entry point, code version, configuration version, command, output dataset/version/location, execution time, status, record counts where meaningful, corrections or exclusions, QA record, responsible role, and superseded output.\nThe transformation ledger template provides a compact format. Versioned scripts plus retained logs may satisfy the requirement in simple projects. A separate ledger is Conditionally required for multiple datasets, complex workflows, recurring transformations, handoffs, or consequential projects.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Source-to-Staged Data"
+    ]
+  },
+  {
+    "objectID": "practices/organize/source-to-staged-data.html#version-and-overwrite-safety",
+    "href": "practices/organize/source-to-staged-data.html#version-and-overwrite-safety",
+    "title": "Source-to-Staged Data",
+    "section": "Version and overwrite safety",
+    "text": "Version and overwrite safety\nRecommended: write new output versions rather than silently replacing files, validate before replacing a current pointer, record supersession explicitly, and retain enough prior evidence to reproduce or explain a result.\nTransformation statuses may be planned, running, completed, completed with limitation, failed, or superseded. These are workflow statuses, not institutional classifications.\nCompleted means that the documented transformation ran and produced its recorded output. It does not automatically mean ready for analysis. Transformation completion and the separate Organize readiness decision must remain distinguishable.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Source-to-Staged Data"
+    ]
+  },
+  {
+    "objectID": "practices/organize/source-to-staged-data.html#structural-qa-after-transformation",
+    "href": "practices/organize/source-to-staged-data.html#structural-qa-after-transformation",
+    "title": "Source-to-Staged Data",
+    "section": "Structural QA after transformation",
+    "text": "Structural QA after transformation\nCheck as appropriate that the output exists and is readable, expected schema is present, record counts are plausible, required identifiers are populated, unique keys are unique, joins have expected match rates, units and codes are known, missingness is characterized, expected temporal/spatial coverage is present, geometries or rasters are structurally valid, and the source package was not unexpectedly modified.\n\n\n\n\n\n\nStop and resolve\n\n\n\nPause analysis readiness when a transformation cannot be tied to an accepted snapshot, source objects changed unexpectedly, corrections cannot be explained, exclusions are undocumented, output counts are implausible, identifiers are unstable, join losses are unexplained, spatial or temporal support changed unintentionally, code/configuration versions cannot be recovered, or a manual step cannot be reviewed.",
+    "crumbs": [
+      "Start Here",
+      "Organize",
+      "Source-to-Staged Data"
     ]
   },
   {

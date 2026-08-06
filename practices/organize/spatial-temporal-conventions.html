@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Task-oriented lifecycle guidance for planning and acquiring GeoEpi data and projects.">
+<meta name="description" content="Document coordinate reference, spatial support, dates, time zones, periods, and spatiotemporal identifiers.">
 
-<title>Research Practices – GeoEpi Lab Book</title>
+<title>Spatial and Temporal Conventions – GeoEpi Lab Book</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,25 +24,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../practices/plan/index.html" rel="next">
-<link href="../assets/images/favicon.ico" rel="icon">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f05d935efef094ed527f6e7cd457e90d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../practices/organize/identifiers-and-schema.html" rel="prev">
+<link href="../../assets/images/favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f05d935efef094ed527f6e7cd457e90d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,9 +70,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -85,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="https://geoepi.github.io/" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/images/geoepi_logo_xsm.png" alt="GeoEpi" class="navbar-logo">
+    <img src="../../assets/images/geoepi_logo_xsm.png" alt="GeoEpi" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="https://geoepi.github.io/">
     <span class="navbar-title">GeoEpi Lab Book</span>
@@ -98,27 +95,27 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../start/index.html"> 
+    <a class="nav-link" href="../../start/index.html"> 
 <span class="menu-text">Start Here</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../practices/index.html" aria-current="page"> 
+    <a class="nav-link active" href="../../practices/index.html" aria-current="page"> 
 <span class="menu-text">Research Practices</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../domains/index.html"> 
+    <a class="nav-link" href="../../domains/index.html"> 
 <span class="menu-text">Domain Guidance</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../standards/index.html"> 
+    <a class="nav-link" href="../../standards/index.html"> 
 <span class="menu-text">Lab Standards</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../templates/index.html"> 
+    <a class="nav-link" href="../../templates/index.html"> 
 <span class="menu-text">Templates</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resources/index.html"> 
+    <a class="nav-link" href="../../resources/index.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
 </ul>
@@ -129,15 +126,15 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
         <li>
-    <a class="dropdown-item" href="../about/purpose.html">
+    <a class="dropdown-item" href="../../about/purpose.html">
  <span class="dropdown-text">Purpose</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/how-to-use.html">
+    <a class="dropdown-item" href="../../about/how-to-use.html">
  <span class="dropdown-text">How to use this site</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/contributing.html">
+    <a class="dropdown-item" href="../../about/contributing.html">
  <span class="dropdown-text">Contributing</span></a>
   </li>  
     </ul>
@@ -178,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../practices/index.html">Research Practices</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/organize/index.html">Organize</a></li><li class="breadcrumb-item"><a href="../../practices/organize/spatial-temporal-conventions.html">Spatial and Temporal Conventions</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -192,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../practices/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Research Practices</span></a>
   </div>
 </li>
@@ -207,19 +204,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/plan/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/plan/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Plan a Project</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/plan/project-scope.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/plan/project-scope.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Define Project Scope and Responsibilities</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/plan/data-management-planning.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/plan/data-management-planning.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Plan Data Management</span></a>
   </div>
 </li>
@@ -236,19 +233,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/acquire/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/acquire/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Acquire Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/acquire/data-intake.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/acquire/data-intake.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Intake and Acceptance</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/acquire/recurring-programmatic-data.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/acquire/recurring-programmatic-data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Recurring and Programmatic Data</span></a>
   </div>
 </li>
@@ -265,31 +262,31 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/organize/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/organize/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Organize Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/organize/project-and-data-structure.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/organize/project-and-data-structure.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project and Data Structure</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/organize/source-to-staged-data.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/organize/source-to-staged-data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Source-to-Staged Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/organize/identifiers-and-schema.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/organize/identifiers-and-schema.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Identifiers and Schema</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/organize/spatial-temporal-conventions.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/organize/spatial-temporal-conventions.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Spatial and Temporal Conventions</span></a>
   </div>
 </li>
@@ -305,21 +302,33 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#choose-a-starting-point" id="toc-choose-a-starting-point" class="nav-link active" data-scroll-target="#choose-a-starting-point">Choose a starting point</a></li>
+  <li><a href="#spatial-meaning" id="toc-spatial-meaning" class="nav-link active" data-scroll-target="#spatial-meaning">Spatial meaning</a>
+  <ul class="collapse">
+  <li><a href="#vector-data" id="toc-vector-data" class="nav-link" data-scroll-target="#vector-data">Vector data</a></li>
+  <li><a href="#raster-data" id="toc-raster-data" class="nav-link" data-scroll-target="#raster-data">Raster data</a></li>
+  <li><a href="#point-data" id="toc-point-data" class="nav-link" data-scroll-target="#point-data">Point data</a></li>
+  <li><a href="#spatial-transformations" id="toc-spatial-transformations" class="nav-link" data-scroll-target="#spatial-transformations">Spatial transformations</a></li>
+  </ul></li>
+  <li><a href="#sensitive-spatial-information" id="toc-sensitive-spatial-information" class="nav-link" data-scroll-target="#sensitive-spatial-information">Sensitive spatial information</a></li>
+  <li><a href="#temporal-meaning" id="toc-temporal-meaning" class="nav-link" data-scroll-target="#temporal-meaning">Temporal meaning</a></li>
+  <li><a href="#periods-and-intervals" id="toc-periods-and-intervals" class="nav-link" data-scroll-target="#periods-and-intervals">Periods and intervals</a></li>
+  <li><a href="#recurring-snapshots-and-revisions" id="toc-recurring-snapshots-and-revisions" class="nav-link" data-scroll-target="#recurring-snapshots-and-revisions">Recurring snapshots and revisions</a></li>
+  <li><a href="#spatiotemporal-identifiers" id="toc-spatiotemporal-identifiers" class="nav-link" data-scroll-target="#spatiotemporal-identifiers">Spatiotemporal identifiers</a></li>
+  <li><a href="#structural-checks" id="toc-structural-checks" class="nav-link" data-scroll-target="#structural-checks">Structural checks</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/organize/spatial-temporal-conventions.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/organize/spatial-temporal-conventions.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/organize/index.html">Organize</a></li><li class="breadcrumb-item"><a href="../../practices/organize/spatial-temporal-conventions.html">Spatial and Temporal Conventions</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Research Practices</h1>
+<h1 class="title">Spatial and Temporal Conventions</h1>
 </div>
 
 <div>
   <div class="description">
-    Task-oriented lifecycle guidance for planning and acquiring GeoEpi data and projects.
+    Document coordinate reference, spatial support, dates, time zones, periods, and spatiotemporal identifiers.
   </div>
 </div>
 
@@ -336,44 +345,56 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The Lab Book organizes work around a lifecycle:</p>
-<p><code>plan -&gt; acquire -&gt; organize -&gt; analyze -&gt; validate -&gt; collaborate -&gt; communicate -&gt; preserve</code></p>
-<p>Stages overlap and may repeat. A revised project plan can trigger new acquisition work; an intake discrepancy can require a scope decision. Each page distinguishes the <strong>Draft minimum</strong>, <strong>Conditionally required</strong>, <strong>Recommended</strong>, <strong>Stronger practice</strong>, <strong>Example</strong>, and <strong>Stop and resolve</strong> levels.</p>
-<p><strong>Plan</strong>, <strong>Acquire</strong>, and <strong>Organize</strong> now have implemented draft guidance. Analyze and later stages remain future lifecycle sections, not complete guidance.</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-  plan[Plan] --&gt; acquire[Acquire]
-  acquire --&gt; organize[Organize]
-  organize --&gt; analyze[Analyze]
-  analyze --&gt; validate[Validate]
-  validate --&gt; collaborate[Collaborate]
-  collaborate --&gt; communicate[Communicate]
-  communicate --&gt; preserve[Preserve]
-  acquire -. revise .-&gt; plan
-  validate -. revise .-&gt; plan
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-<section id="choose-a-starting-point" class="level2">
-<h2 class="anchored" data-anchor-id="choose-a-starting-point">Choose a starting point</h2>
-<ul>
-<li><a href="../start/new-project.html">Starting a new project</a> for a short gateway and initiation checklist.</li>
-<li><a href="../practices/plan/index.html">Plan a project</a> when purpose, scope, roles, outputs, or completion criteria are unsettled.</li>
-<li><a href="../practices/plan/data-management-planning.html">Plan data management</a> when access, storage, restrictions, identifiers, time, space, or computing need decisions.</li>
-<li><a href="../practices/acquire/data-intake.html">Receive a one-time dataset</a> when a file, archive, extract, sequence batch, raster, or field export arrives.</li>
-<li><a href="../practices/acquire/recurring-programmatic-data.html">Design recurring or programmatic acquisition</a> for APIs, databases, feeds, portals, and scheduled extracts.</li>
-<li><a href="../practices/acquire/data-intake.html#intake-completion-gate">Assess intake acceptance</a> when deciding whether incoming data can enter the Organize stage.</li>
-<li><a href="../practices/organize/index.html">Organize accepted data</a> when a snapshot has passed intake and needs controlled structure, provenance, schema, identifier, spatial, temporal, and readiness checks.</li>
-<li><a href="../practices/organize/index.html#analysis-readiness-gate">Review analysis readiness</a> before allowing a structurally documented dataset to enter Analyze.</li>
+<section id="spatial-meaning" class="level2">
+<h2 class="anchored" data-anchor-id="spatial-meaning">Spatial meaning</h2>
+<section id="vector-data" class="level3">
+<h3 class="anchored" data-anchor-id="vector-data">Vector data</h3>
+<p>Document CRS, datum, coordinate units, geometry type and validity, boundary source/version, extent, spatial support, coordinate precision, and handling of empty or invalid geometries.</p>
+</section>
+<section id="raster-data" class="level3">
+<h3 class="anchored" data-anchor-id="raster-data">Raster data</h3>
+<p>Document CRS, datum, units, resolution, dimensions, extent, origin, alignment, cell interpretation, NoData convention, mask, resampling method, aggregation method, and boundary or template source. Two rasters with the same CRS and resolution may still be misaligned because their origins or extents differ.</p>
+</section>
+<section id="point-data" class="level3">
+<h3 class="anchored" data-anchor-id="point-data">Point data</h3>
+<p>Record coordinate source, uncertainty, precision, geocoding method, datum, and whether locations represent events, centroids, facilities, or generalized positions.</p>
+</section>
+<section id="spatial-transformations" class="level3">
+<h3 class="anchored" data-anchor-id="spatial-transformations">Spatial transformations</h3>
+<p>Record input and output CRS, transformation method, resampling/interpolation method, reason, software/code, and effect on resolution, support, or uncertainty.</p>
+</section>
+</section>
+<section id="sensitive-spatial-information" class="level2">
+<h2 class="anchored" data-anchor-id="sensitive-spatial-information">Sensitive spatial information</h2>
+<p>Do not prescribe one masking method. Record sensitivity, access restriction, generalization or masking, difference between protected and released representations, and authorization for downstream use. Link unresolved questions to <a href="../../standards/open-policy-decisions.html">Open Policy Decisions</a>.</p>
+</section>
+<section id="temporal-meaning" class="level2">
+<h2 class="anchored" data-anchor-id="temporal-meaning">Temporal meaning</h2>
+<p>Distinguish event, onset, collection, report, extraction, acquisition, processing, model/simulation, publication, and release dates. Record time zone, UTC conversion, daylight-saving behavior, local versus universal timestamps, ambiguous/nonexistent local times, and precision.</p>
+</section>
+<section id="periods-and-intervals" class="level2">
+<h2 class="anchored" data-anchor-id="periods-and-intervals">Periods and intervals</h2>
+<p>Document start/end boundaries, inclusive/exclusive rules, observation interval, aggregation period, partial periods, incomplete weeks/months, rolling windows, and temporal support versus timestamp.</p>
+<p>For epidemiological weeks, record week system, week-year convention, start day, week 53 treatment, conversion code, and relationship to source dates. Do not use “week 1” without naming the week-year convention.</p>
+</section>
+<section id="recurring-snapshots-and-revisions" class="level2">
+<h2 class="anchored" data-anchor-id="recurring-snapshots-and-revisions">Recurring snapshots and revisions</h2>
+<p>Record extraction timestamp, reporting delay, late-arriving records, historical revisions, changed case definitions, changed boundaries, backfill behavior, and freeze/cutoff dates.</p>
+</section>
+<section id="spatiotemporal-identifiers" class="level2">
+<h2 class="anchored" data-anchor-id="spatiotemporal-identifiers">Spatiotemporal identifiers</h2>
+<p>When useful, a stable identifier may combine spatial unit, temporal unit, scenario, layer, and source snapshot. Do not rely on row order as a spatiotemporal identifier.</p>
+</section>
+<section id="structural-checks" class="level2">
+<h2 class="anchored" data-anchor-id="structural-checks">Structural checks</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">Expected CRS, datum, extent, resolution, and alignment are recorded where applicable.</label></li>
+<li><label><input type="checkbox">Geometry validity, NoData, masks, and boundary versions are documented.</label></li>
+<li><label><input type="checkbox">Expected date range and complete or documented temporal sequence are recorded.</label></li>
+<li><label><input type="checkbox">Week-year combinations and time zones are valid.</label></li>
+<li><label><input type="checkbox">No unintended duplicate space-time keys exist.</label></li>
+<li><label><input type="checkbox">No unexplained coordinate or date loss occurred.</label></li>
 </ul>
-<p>The Lab Book separates draft policy, task guidance, templates, and examples. The <a href="../start/minimum-standard.html">Minimum GeoEpi Project Standard</a> supplies the governing draft framework; these pages explain how to satisfy relevant information requirements without prescribing one folder tree, storage platform, workflow engine, or environment.</p>
 
 
 </section>
@@ -785,11 +806,11 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../../practices/organize/identifiers-and-schema.html" class="pagination-link" aria-label="Identifiers and Schema">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Identifiers and Schema</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../practices/plan/index.html" class="pagination-link" aria-label="Plan a Project">
-        <span class="nav-page-text">Plan a Project</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -797,4 +818,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/organize/spatial-temporal-conventions.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/organize/spatial-temporal-conventions.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>

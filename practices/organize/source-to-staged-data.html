@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Task-oriented lifecycle guidance for planning and acquiring GeoEpi data and projects.">
+<meta name="description" content="Transform accepted snapshots into staged representations without altering the preserved source package.">
 
-<title>Research Practices – GeoEpi Lab Book</title>
+<title>Source-to-Staged Data – GeoEpi Lab Book</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,25 +24,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../practices/plan/index.html" rel="next">
-<link href="../assets/images/favicon.ico" rel="icon">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f05d935efef094ed527f6e7cd457e90d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../practices/organize/identifiers-and-schema.html" rel="next">
+<link href="../../practices/organize/project-and-data-structure.html" rel="prev">
+<link href="../../assets/images/favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f05d935efef094ed527f6e7cd457e90d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,9 +71,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -85,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="https://geoepi.github.io/" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/images/geoepi_logo_xsm.png" alt="GeoEpi" class="navbar-logo">
+    <img src="../../assets/images/geoepi_logo_xsm.png" alt="GeoEpi" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="https://geoepi.github.io/">
     <span class="navbar-title">GeoEpi Lab Book</span>
@@ -98,27 +96,27 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../start/index.html"> 
+    <a class="nav-link" href="../../start/index.html"> 
 <span class="menu-text">Start Here</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../practices/index.html" aria-current="page"> 
+    <a class="nav-link active" href="../../practices/index.html" aria-current="page"> 
 <span class="menu-text">Research Practices</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../domains/index.html"> 
+    <a class="nav-link" href="../../domains/index.html"> 
 <span class="menu-text">Domain Guidance</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../standards/index.html"> 
+    <a class="nav-link" href="../../standards/index.html"> 
 <span class="menu-text">Lab Standards</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../templates/index.html"> 
+    <a class="nav-link" href="../../templates/index.html"> 
 <span class="menu-text">Templates</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resources/index.html"> 
+    <a class="nav-link" href="../../resources/index.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
 </ul>
@@ -129,15 +127,15 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
         <li>
-    <a class="dropdown-item" href="../about/purpose.html">
+    <a class="dropdown-item" href="../../about/purpose.html">
  <span class="dropdown-text">Purpose</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/how-to-use.html">
+    <a class="dropdown-item" href="../../about/how-to-use.html">
  <span class="dropdown-text">How to use this site</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/contributing.html">
+    <a class="dropdown-item" href="../../about/contributing.html">
  <span class="dropdown-text">Contributing</span></a>
   </li>  
     </ul>
@@ -178,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../practices/index.html">Research Practices</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/organize/index.html">Organize</a></li><li class="breadcrumb-item"><a href="../../practices/organize/source-to-staged-data.html">Source-to-Staged Data</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -192,7 +190,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../practices/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Research Practices</span></a>
   </div>
 </li>
@@ -207,19 +205,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/plan/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/plan/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Plan a Project</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/plan/project-scope.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/plan/project-scope.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Define Project Scope and Responsibilities</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/plan/data-management-planning.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/plan/data-management-planning.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Plan Data Management</span></a>
   </div>
 </li>
@@ -236,19 +234,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/acquire/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/acquire/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Acquire Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/acquire/data-intake.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/acquire/data-intake.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Intake and Acceptance</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/acquire/recurring-programmatic-data.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/acquire/recurring-programmatic-data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Recurring and Programmatic Data</span></a>
   </div>
 </li>
@@ -265,31 +263,31 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/organize/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/organize/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Organize Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/organize/project-and-data-structure.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/organize/project-and-data-structure.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project and Data Structure</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/organize/source-to-staged-data.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/organize/source-to-staged-data.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Source-to-Staged Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/organize/identifiers-and-schema.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/organize/identifiers-and-schema.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Identifiers and Schema</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/organize/spatial-temporal-conventions.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/organize/spatial-temporal-conventions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Spatial and Temporal Conventions</span></a>
   </div>
 </li>
@@ -305,21 +303,29 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#choose-a-starting-point" id="toc-choose-a-starting-point" class="nav-link active" data-scroll-target="#choose-a-starting-point">Choose a starting point</a></li>
+  <li><a href="#input-contract" id="toc-input-contract" class="nav-link active" data-scroll-target="#input-contract">Input contract</a></li>
+  <li><a href="#preserve-source-immutability" id="toc-preserve-source-immutability" class="nav-link" data-scroll-target="#preserve-source-immutability">Preserve source immutability</a></li>
+  <li><a href="#transformation-principles" id="toc-transformation-principles" class="nav-link" data-scroll-target="#transformation-principles">Transformation principles</a></li>
+  <li><a href="#typical-transformation-sequence" id="toc-typical-transformation-sequence" class="nav-link" data-scroll-target="#typical-transformation-sequence">Typical transformation sequence</a></li>
+  <li><a href="#corrections-and-exclusions" id="toc-corrections-and-exclusions" class="nav-link" data-scroll-target="#corrections-and-exclusions">Corrections and exclusions</a></li>
+  <li><a href="#manual-steps" id="toc-manual-steps" class="nav-link" data-scroll-target="#manual-steps">Manual steps</a></li>
+  <li><a href="#transformation-record" id="toc-transformation-record" class="nav-link" data-scroll-target="#transformation-record">Transformation record</a></li>
+  <li><a href="#version-and-overwrite-safety" id="toc-version-and-overwrite-safety" class="nav-link" data-scroll-target="#version-and-overwrite-safety">Version and overwrite safety</a></li>
+  <li><a href="#structural-qa-after-transformation" id="toc-structural-qa-after-transformation" class="nav-link" data-scroll-target="#structural-qa-after-transformation">Structural QA after transformation</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/organize/source-to-staged-data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/organize/source-to-staged-data.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/organize/index.html">Organize</a></li><li class="breadcrumb-item"><a href="../../practices/organize/source-to-staged-data.html">Source-to-Staged Data</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Research Practices</h1>
+<h1 class="title">Source-to-Staged Data</h1>
 </div>
 
 <div>
   <div class="description">
-    Task-oriented lifecycle guidance for planning and acquiring GeoEpi data and projects.
+    Transform accepted snapshots into staged representations without altering the preserved source package.
   </div>
 </div>
 
@@ -336,44 +342,72 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The Lab Book organizes work around a lifecycle:</p>
-<p><code>plan -&gt; acquire -&gt; organize -&gt; analyze -&gt; validate -&gt; collaborate -&gt; communicate -&gt; preserve</code></p>
-<p>Stages overlap and may repeat. A revised project plan can trigger new acquisition work; an intake discrepancy can require a scope decision. Each page distinguishes the <strong>Draft minimum</strong>, <strong>Conditionally required</strong>, <strong>Recommended</strong>, <strong>Stronger practice</strong>, <strong>Example</strong>, and <strong>Stop and resolve</strong> levels.</p>
-<p><strong>Plan</strong>, <strong>Acquire</strong>, and <strong>Organize</strong> now have implemented draft guidance. Analyze and later stages remain future lifecycle sections, not complete guidance.</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-  plan[Plan] --&gt; acquire[Acquire]
-  acquire --&gt; organize[Organize]
-  organize --&gt; analyze[Analyze]
-  analyze --&gt; validate[Validate]
-  validate --&gt; collaborate[Collaborate]
-  collaborate --&gt; communicate[Communicate]
-  communicate --&gt; preserve[Preserve]
-  acquire -. revise .-&gt; plan
-  validate -. revise .-&gt; plan
-</pre>
+<section id="input-contract" class="level2">
+<h2 class="anchored" data-anchor-id="input-contract">Input contract</h2>
+<p>Before transformation, confirm the source ID, snapshot ID, intake or acceptance record, authoritative source-package location, restrictions, expected files or objects, documented acceptance limitations, and provider schema or documentation.</p>
+<p>Do not transform a delivery marked <strong>received</strong>, <strong>pending validation</strong>, <strong>pending clarification</strong>, or <strong>rejected</strong>. A superseded delivery may be retained for provenance but must not silently become the current input.</p>
+</section>
+<section id="preserve-source-immutability" class="level2">
+<h2 class="anchored" data-anchor-id="preserve-source-immutability">Preserve source immutability</h2>
+<p>Corrections, renaming, recoding, reprojection, reshaping, exclusions, and normalization belong in staged or derived objects. They must not silently alter the preserved source package. When physical immutability cannot be enforced, use procedural protection and a checksum or other integrity evidence when proportionate.</p>
+</section>
+<section id="transformation-principles" class="level2">
+<h2 class="anchored" data-anchor-id="transformation-principles">Transformation principles</h2>
+<p>Consequential transformations should be scripted when reasonable, ordered, attributable, repeatable, parameterized where appropriate, logged, linked to explicit inputs and outputs, safe from accidental overwrite, and deterministic when expected to be deterministic. No particular language or workflow engine is required.</p>
+</section>
+<section id="typical-transformation-sequence" class="level2">
+<h2 class="anchored" data-anchor-id="typical-transformation-sequence">Typical transformation sequence</h2>
+<ol type="1">
+<li>Read the accepted source package.</li>
+<li>Confirm expected source objects.</li>
+<li>Normalize names and encodings.</li>
+<li>Parse identifiers and date/time fields.</li>
+<li>Standardize types, units, and codes.</li>
+<li>Handle documented missing-value representations.</li>
+<li>Apply explicit corrections or exclusions.</li>
+<li>Transform spatial reference or geometry where needed.</li>
+<li>Write a new staged object.</li>
+<li>Run structural QA.</li>
+<li>Record the transformation and status.</li>
+</ol>
+</section>
+<section id="corrections-and-exclusions" class="level2">
+<h2 class="anchored" data-anchor-id="corrections-and-exclusions">Corrections and exclusions</h2>
+<p>Distinguish provider-issued correction, documented local correction, harmonization, imputation, exclusion, aggregation, and derivation. Imputation or model-based correction is not routine staging and must not be hidden inside organization code.</p>
+<p>For every local correction, record the affected object or record, original and corrected state where lawful and practical, reason, evidence, responsible person or process, date, and code or decision record.</p>
+<p>Consequential exclusions must identify the rule, rationale, affected records, stage, recoverability, effect on record counts, and decision record when warranted. Do not allow undocumented row deletion.</p>
+</section>
+<section id="manual-steps" class="level2">
+<h2 class="anchored" data-anchor-id="manual-steps">Manual steps</h2>
+<p>A manual step is allowed only when scripting is not reasonable, the procedure and inputs/outputs are documented, the responsible person and date are recorded, the change can be reviewed, and the preserved source package is not silently modified. Link to the <a href="../../templates/project-exception-record.md">project exception record</a> when a required traceable process cannot be followed.</p>
+</section>
+<section id="transformation-record" class="level2">
+<h2 class="anchored" data-anchor-id="transformation-record">Transformation record</h2>
+<p>Record transformation ID, input dataset and snapshot/version, input object, code or workflow entry point, code version, configuration version, command, output dataset/version/location, execution time, status, record counts where meaningful, corrections or exclusions, QA record, responsible role, and superseded output.</p>
+<p>The <a href="../../templates/data-transformation-ledger-template.csv">transformation ledger template</a> provides a compact format. Versioned scripts plus retained logs may satisfy the requirement in simple projects. A separate ledger is <strong>Conditionally required</strong> for multiple datasets, complex workflows, recurring transformations, handoffs, or consequential projects.</p>
+</section>
+<section id="version-and-overwrite-safety" class="level2">
+<h2 class="anchored" data-anchor-id="version-and-overwrite-safety">Version and overwrite safety</h2>
+<p><strong>Recommended:</strong> write new output versions rather than silently replacing files, validate before replacing a current pointer, record supersession explicitly, and retain enough prior evidence to reproduce or explain a result.</p>
+<p>Transformation statuses may be <strong>planned</strong>, <strong>running</strong>, <strong>completed</strong>, <strong>completed with limitation</strong>, <strong>failed</strong>, or <strong>superseded</strong>. These are workflow statuses, not institutional classifications.</p>
+<p><strong>Completed</strong> means that the documented transformation ran and produced its recorded output. It does not automatically mean <strong>ready for analysis</strong>. Transformation completion and the separate Organize readiness decision must remain distinguishable.</p>
+</section>
+<section id="structural-qa-after-transformation" class="level2">
+<h2 class="anchored" data-anchor-id="structural-qa-after-transformation">Structural QA after transformation</h2>
+<p>Check as appropriate that the output exists and is readable, expected schema is present, record counts are plausible, required identifiers are populated, unique keys are unique, joins have expected match rates, units and codes are known, missingness is characterized, expected temporal/spatial coverage is present, geometries or rasters are structurally valid, and the source package was not unexpectedly modified.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<p></p></figure><p></p>
+<div class="callout-title-container flex-fill">
+Stop and resolve
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<p>Pause analysis readiness when a transformation cannot be tied to an accepted snapshot, source objects changed unexpectedly, corrections cannot be explained, exclusions are undocumented, output counts are implausible, identifiers are unstable, join losses are unexplained, spatial or temporal support changed unintentionally, code/configuration versions cannot be recovered, or a manual step cannot be reviewed.</p>
 </div>
-<section id="choose-a-starting-point" class="level2">
-<h2 class="anchored" data-anchor-id="choose-a-starting-point">Choose a starting point</h2>
-<ul>
-<li><a href="../start/new-project.html">Starting a new project</a> for a short gateway and initiation checklist.</li>
-<li><a href="../practices/plan/index.html">Plan a project</a> when purpose, scope, roles, outputs, or completion criteria are unsettled.</li>
-<li><a href="../practices/plan/data-management-planning.html">Plan data management</a> when access, storage, restrictions, identifiers, time, space, or computing need decisions.</li>
-<li><a href="../practices/acquire/data-intake.html">Receive a one-time dataset</a> when a file, archive, extract, sequence batch, raster, or field export arrives.</li>
-<li><a href="../practices/acquire/recurring-programmatic-data.html">Design recurring or programmatic acquisition</a> for APIs, databases, feeds, portals, and scheduled extracts.</li>
-<li><a href="../practices/acquire/data-intake.html#intake-completion-gate">Assess intake acceptance</a> when deciding whether incoming data can enter the Organize stage.</li>
-<li><a href="../practices/organize/index.html">Organize accepted data</a> when a snapshot has passed intake and needs controlled structure, provenance, schema, identifier, spatial, temporal, and readiness checks.</li>
-<li><a href="../practices/organize/index.html#analysis-readiness-gate">Review analysis readiness</a> before allowing a structurally documented dataset to enter Analyze.</li>
-</ul>
-<p>The Lab Book separates draft policy, task guidance, templates, and examples. The <a href="../start/minimum-standard.html">Minimum GeoEpi Project Standard</a> supplies the governing draft framework; these pages explain how to satisfy relevant information requirements without prescribing one folder tree, storage platform, workflow engine, or environment.</p>
+</div>
 
 
 </section>
@@ -785,10 +819,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../../practices/organize/project-and-data-structure.html" class="pagination-link" aria-label="Project and Data Structure">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Project and Data Structure</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../practices/plan/index.html" class="pagination-link" aria-label="Plan a Project">
-        <span class="nav-page-text">Plan a Project</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../practices/organize/identifiers-and-schema.html" class="pagination-link" aria-label="Identifiers and Schema">
+        <span class="nav-page-text">Identifiers and Schema</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -797,4 +834,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/organize/source-to-staged-data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/organize/source-to-staged-data.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>

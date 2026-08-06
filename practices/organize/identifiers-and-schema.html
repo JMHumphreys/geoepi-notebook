@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Task-oriented lifecycle guidance for planning and acquiring GeoEpi data and projects.">
+<meta name="description" content="Define dataset, record, relationship, schema, unit, category, and missingness conventions before analysis.">
 
-<title>Research Practices – GeoEpi Lab Book</title>
+<title>Identifiers and Schema – GeoEpi Lab Book</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,25 +24,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../practices/plan/index.html" rel="next">
-<link href="../assets/images/favicon.ico" rel="icon">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f05d935efef094ed527f6e7cd457e90d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../practices/organize/spatial-temporal-conventions.html" rel="next">
+<link href="../../practices/organize/source-to-staged-data.html" rel="prev">
+<link href="../../assets/images/favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f05d935efef094ed527f6e7cd457e90d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,9 +71,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -85,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="https://geoepi.github.io/" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/images/geoepi_logo_xsm.png" alt="GeoEpi" class="navbar-logo">
+    <img src="../../assets/images/geoepi_logo_xsm.png" alt="GeoEpi" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="https://geoepi.github.io/">
     <span class="navbar-title">GeoEpi Lab Book</span>
@@ -98,27 +96,27 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../start/index.html"> 
+    <a class="nav-link" href="../../start/index.html"> 
 <span class="menu-text">Start Here</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../practices/index.html" aria-current="page"> 
+    <a class="nav-link active" href="../../practices/index.html" aria-current="page"> 
 <span class="menu-text">Research Practices</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../domains/index.html"> 
+    <a class="nav-link" href="../../domains/index.html"> 
 <span class="menu-text">Domain Guidance</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../standards/index.html"> 
+    <a class="nav-link" href="../../standards/index.html"> 
 <span class="menu-text">Lab Standards</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../templates/index.html"> 
+    <a class="nav-link" href="../../templates/index.html"> 
 <span class="menu-text">Templates</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resources/index.html"> 
+    <a class="nav-link" href="../../resources/index.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
 </ul>
@@ -129,15 +127,15 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
         <li>
-    <a class="dropdown-item" href="../about/purpose.html">
+    <a class="dropdown-item" href="../../about/purpose.html">
  <span class="dropdown-text">Purpose</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/how-to-use.html">
+    <a class="dropdown-item" href="../../about/how-to-use.html">
  <span class="dropdown-text">How to use this site</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/contributing.html">
+    <a class="dropdown-item" href="../../about/contributing.html">
  <span class="dropdown-text">Contributing</span></a>
   </li>  
     </ul>
@@ -178,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../practices/index.html">Research Practices</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/organize/index.html">Organize</a></li><li class="breadcrumb-item"><a href="../../practices/organize/identifiers-and-schema.html">Identifiers and Schema</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -192,7 +190,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../practices/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Research Practices</span></a>
   </div>
 </li>
@@ -207,19 +205,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/plan/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/plan/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Plan a Project</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/plan/project-scope.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/plan/project-scope.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Define Project Scope and Responsibilities</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/plan/data-management-planning.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/plan/data-management-planning.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Plan Data Management</span></a>
   </div>
 </li>
@@ -236,19 +234,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/acquire/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/acquire/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Acquire Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/acquire/data-intake.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/acquire/data-intake.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Intake and Acceptance</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/acquire/recurring-programmatic-data.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/acquire/recurring-programmatic-data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Recurring and Programmatic Data</span></a>
   </div>
 </li>
@@ -265,31 +263,31 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/organize/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/organize/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Organize Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/organize/project-and-data-structure.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/organize/project-and-data-structure.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project and Data Structure</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/organize/source-to-staged-data.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/organize/source-to-staged-data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Source-to-Staged Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/organize/identifiers-and-schema.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/organize/identifiers-and-schema.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Identifiers and Schema</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/organize/spatial-temporal-conventions.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/organize/spatial-temporal-conventions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Spatial and Temporal Conventions</span></a>
   </div>
 </li>
@@ -305,21 +303,28 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#choose-a-starting-point" id="toc-choose-a-starting-point" class="nav-link active" data-scroll-target="#choose-a-starting-point">Choose a starting point</a></li>
+  <li><a href="#dataset-identifiers" id="toc-dataset-identifiers" class="nav-link active" data-scroll-target="#dataset-identifiers">Dataset identifiers</a></li>
+  <li><a href="#record-identifiers" id="toc-record-identifiers" class="nav-link" data-scroll-target="#record-identifiers">Record identifiers</a></li>
+  <li><a href="#duplicates-and-relationships" id="toc-duplicates-and-relationships" class="nav-link" data-scroll-target="#duplicates-and-relationships">Duplicates and relationships</a></li>
+  <li><a href="#schema-definition" id="toc-schema-definition" class="nav-link" data-scroll-target="#schema-definition">Schema definition</a></li>
+  <li><a href="#types-and-parsing" id="toc-types-and-parsing" class="nav-link" data-scroll-target="#types-and-parsing">Types and parsing</a></li>
+  <li><a href="#units-and-missingness" id="toc-units-and-missingness" class="nav-link" data-scroll-target="#units-and-missingness">Units and missingness</a></li>
+  <li><a href="#categorical-codes-and-schema-versions" id="toc-categorical-codes-and-schema-versions" class="nav-link" data-scroll-target="#categorical-codes-and-schema-versions">Categorical codes and schema versions</a></li>
+  <li><a href="#domain-examples" id="toc-domain-examples" class="nav-link" data-scroll-target="#domain-examples">Domain examples</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/organize/identifiers-and-schema.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/organize/identifiers-and-schema.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/organize/index.html">Organize</a></li><li class="breadcrumb-item"><a href="../../practices/organize/identifiers-and-schema.html">Identifiers and Schema</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Research Practices</h1>
+<h1 class="title">Identifiers and Schema</h1>
 </div>
 
 <div>
   <div class="description">
-    Task-oriented lifecycle guidance for planning and acquiring GeoEpi data and projects.
+    Define dataset, record, relationship, schema, unit, category, and missingness conventions before analysis.
   </div>
 </div>
 
@@ -336,44 +341,59 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The Lab Book organizes work around a lifecycle:</p>
-<p><code>plan -&gt; acquire -&gt; organize -&gt; analyze -&gt; validate -&gt; collaborate -&gt; communicate -&gt; preserve</code></p>
-<p>Stages overlap and may repeat. A revised project plan can trigger new acquisition work; an intake discrepancy can require a scope decision. Each page distinguishes the <strong>Draft minimum</strong>, <strong>Conditionally required</strong>, <strong>Recommended</strong>, <strong>Stronger practice</strong>, <strong>Example</strong>, and <strong>Stop and resolve</strong> levels.</p>
-<p><strong>Plan</strong>, <strong>Acquire</strong>, and <strong>Organize</strong> now have implemented draft guidance. Analyze and later stages remain future lifecycle sections, not complete guidance.</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-  plan[Plan] --&gt; acquire[Acquire]
-  acquire --&gt; organize[Organize]
-  organize --&gt; analyze[Analyze]
-  analyze --&gt; validate[Validate]
-  validate --&gt; collaborate[Collaborate]
-  collaborate --&gt; communicate[Communicate]
-  communicate --&gt; preserve[Preserve]
-  acquire -. revise .-&gt; plan
-  validate -. revise .-&gt; plan
-</pre>
+<section id="dataset-identifiers" class="level2">
+<h2 class="anchored" data-anchor-id="dataset-identifiers">Dataset identifiers</h2>
+<p>Distinguish source ID, snapshot ID, staged-dataset ID, dataset version, derived-dataset ID, transformation ID, run ID, and output ID. A filename alone is usually not a sufficient stable identifier.</p>
+</section>
+<section id="record-identifiers" class="level2">
+<h2 class="anchored" data-anchor-id="record-identifiers">Record identifiers</h2>
+<p>Document natural, surrogate, composite, repeated-observation, hierarchical, spatial-unit, temporal, sample, sequence, facility, herd, animal, case, and observation identifiers as applicable. Do not construct identifiers from sensitive fields unless authorized.</p>
+<p>For each important key, state whether it is unique, unique within a group, repeatable across time, nonmissing, stable across snapshots, supplied by the source or generated locally, and safe to disclose.</p>
+</section>
+<section id="duplicates-and-relationships" class="level2">
+<h2 class="anchored" data-anchor-id="duplicates-and-relationships">Duplicates and relationships</h2>
+<p>Distinguish byte-for-byte duplicate files, duplicate rows, legitimate repeated observations, duplicate identifiers, conflicting records, revised records, and multiple reports of one event. Identical values are not automatically duplicate observations.</p>
+<p>Document primary keys, foreign keys, relationship cardinality, expected match rate, unmatched records, many-to-many joins, deduplication before joining, aggregation order, and snapshot/temporal compatibility.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<p></p></figure><p></p>
+<div class="callout-title-container flex-fill">
+Stop and resolve
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<p>An accidental many-to-many join can multiply records while producing plausible-looking outputs. Stop when join losses, unexpected multiplication, or conflicting keys cannot be explained.</p>
 </div>
-<section id="choose-a-starting-point" class="level2">
-<h2 class="anchored" data-anchor-id="choose-a-starting-point">Choose a starting point</h2>
+</div>
+</section>
+<section id="schema-definition" class="level2">
+<h2 class="anchored" data-anchor-id="schema-definition">Schema definition</h2>
+<p>Build on the existing <a href="../../templates/data-dictionary-template.csv">data dictionary template</a>. A usable schema documents field name, description, type, unit, allowed values/codes, missing-value convention, identifier role, date/time convention, spatial meaning, temporal support, derivation, quality notes, and schema version where warranted.</p>
+</section>
+<section id="types-and-parsing" class="level2">
+<h2 class="anchored" data-anchor-id="types-and-parsing">Types and parsing</h2>
+<p>Review automatic type guessing for consequential datasets. Check strings with leading zeroes, categorical codes, locale-dependent numbers, dates, Boolean values, censored values, scientific notation, large integers, coordinate precision, and encoding.</p>
+</section>
+<section id="units-and-missingness" class="level2">
+<h2 class="anchored" data-anchor-id="units-and-missingness">Units and missingness</h2>
+<p>Record unit definition, scale, denominator where relevant, original and standardized units, conversion rule, and mixed-unit handling. Distinguish not observed, not applicable, suppressed, below detection, not reported, withheld, structurally absent, parsing failure, and true zero. Do not collapse these states without recording the consequence.</p>
+</section>
+<section id="categorical-codes-and-schema-versions" class="level2">
+<h2 class="anchored" data-anchor-id="categorical-codes-and-schema-versions">Categorical codes and schema versions</h2>
+<p>For each code, record code, label, definition, source/version, valid period when codes change, and handling of unknown or deprecated values. Create a new schema version when fields, types, units, code meanings, identifier meanings, temporal support, or spatial support affect interpretation or compatibility.</p>
+</section>
+<section id="domain-examples" class="level2">
+<h2 class="anchored" data-anchor-id="domain-examples">Domain examples</h2>
 <ul>
-<li><a href="../start/new-project.html">Starting a new project</a> for a short gateway and initiation checklist.</li>
-<li><a href="../practices/plan/index.html">Plan a project</a> when purpose, scope, roles, outputs, or completion criteria are unsettled.</li>
-<li><a href="../practices/plan/data-management-planning.html">Plan data management</a> when access, storage, restrictions, identifiers, time, space, or computing need decisions.</li>
-<li><a href="../practices/acquire/data-intake.html">Receive a one-time dataset</a> when a file, archive, extract, sequence batch, raster, or field export arrives.</li>
-<li><a href="../practices/acquire/recurring-programmatic-data.html">Design recurring or programmatic acquisition</a> for APIs, databases, feeds, portals, and scheduled extracts.</li>
-<li><a href="../practices/acquire/data-intake.html#intake-completion-gate">Assess intake acceptance</a> when deciding whether incoming data can enter the Organize stage.</li>
-<li><a href="../practices/organize/index.html">Organize accepted data</a> when a snapshot has passed intake and needs controlled structure, provenance, schema, identifier, spatial, temporal, and readiness checks.</li>
-<li><a href="../practices/organize/index.html#analysis-readiness-gate">Review analysis readiness</a> before allowing a structurally documented dataset to enter Analyze.</li>
+<li>Surveillance records: case ID, case-definition version, facility/jurisdiction key, event/report dates, and revision status.</li>
+<li>Field observations: observation ID, taxon ID, site key, effort, unit, and detection-limit convention.</li>
+<li>Sequence metadata: sample ID, accession, host/location restriction, collection date, and reference version.</li>
+<li>Spatial polygons: stable area ID, boundary version, CRS, geometry status, and spatial support.</li>
+<li>Weekly rasters: tile/layer ID, week-year, CRS, origin/alignment, NoData, and mask.</li>
+<li>Simulation inputs: scenario ID, parameter-set version, units, and initial/boundary conditions.</li>
 </ul>
-<p>The Lab Book separates draft policy, task guidance, templates, and examples. The <a href="../start/minimum-standard.html">Minimum GeoEpi Project Standard</a> supplies the governing draft framework; these pages explain how to satisfy relevant information requirements without prescribing one folder tree, storage platform, workflow engine, or environment.</p>
 
 
 </section>
@@ -785,10 +805,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../../practices/organize/source-to-staged-data.html" class="pagination-link" aria-label="Source-to-Staged Data">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Source-to-Staged Data</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../practices/plan/index.html" class="pagination-link" aria-label="Plan a Project">
-        <span class="nav-page-text">Plan a Project</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../practices/organize/spatial-temporal-conventions.html" class="pagination-link" aria-label="Spatial and Temporal Conventions">
+        <span class="nav-page-text">Spatial and Temporal Conventions</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -797,4 +820,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/organize/identifiers-and-schema.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/organize/identifiers-and-schema.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>

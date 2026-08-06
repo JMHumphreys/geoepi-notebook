@@ -2,94 +2,114 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jmhumphreys.github.io/geoepi-notebook/templates/index.html</loc>
-    <lastmod>2026-08-06T01:34:53.021Z</lastmod>
+    <lastmod>2026-08-06T17:13:14.491Z</lastmod>
   </url>
   <url>
     <loc>https://jmhumphreys.github.io/geoepi-notebook/start/rescue-project.html</loc>
-    <lastmod>2026-08-06T01:34:53.021Z</lastmod>
+    <lastmod>2026-08-06T17:13:14.491Z</lastmod>
   </url>
   <url>
     <loc>https://jmhumphreys.github.io/geoepi-notebook/start/minimum-standard.html</loc>
-    <lastmod>2026-08-06T01:34:53.021Z</lastmod>
+    <lastmod>2026-08-06T17:13:14.491Z</lastmod>
   </url>
   <url>
     <loc>https://jmhumphreys.github.io/geoepi-notebook/start/handoff.html</loc>
-    <lastmod>2026-08-06T01:34:53.021Z</lastmod>
+    <lastmod>2026-08-06T17:13:14.491Z</lastmod>
   </url>
   <url>
     <loc>https://jmhumphreys.github.io/geoepi-notebook/standards/index.html</loc>
-    <lastmod>2026-08-06T01:34:53.021Z</lastmod>
+    <lastmod>2026-08-06T17:13:14.491Z</lastmod>
   </url>
   <url>
     <loc>https://jmhumphreys.github.io/geoepi-notebook/resources/index.html</loc>
-    <lastmod>2026-08-06T01:34:53.021Z</lastmod>
+    <lastmod>2026-08-06T17:13:14.490Z</lastmod>
   </url>
   <url>
     <loc>https://jmhumphreys.github.io/geoepi-notebook/practices/plan/index.html</loc>
-    <lastmod>2026-08-06T01:34:53.020Z</lastmod>
+    <lastmod>2026-08-06T17:13:14.490Z</lastmod>
   </url>
   <url>
-    <loc>https://jmhumphreys.github.io/geoepi-notebook/practices/index.html</loc>
-    <lastmod>2026-08-06T01:34:53.020Z</lastmod>
+    <loc>https://jmhumphreys.github.io/geoepi-notebook/practices/organize/spatial-temporal-conventions.html</loc>
+    <lastmod>2026-08-06T17:13:14.490Z</lastmod>
   </url>
   <url>
-    <loc>https://jmhumphreys.github.io/geoepi-notebook/practices/acquire/index.html</loc>
-    <lastmod>2026-08-06T01:34:53.020Z</lastmod>
+    <loc>https://jmhumphreys.github.io/geoepi-notebook/practices/organize/project-and-data-structure.html</loc>
+    <lastmod>2026-08-06T17:13:14.490Z</lastmod>
   </url>
   <url>
-    <loc>https://jmhumphreys.github.io/geoepi-notebook/index.html</loc>
-    <lastmod>2026-08-06T01:34:53.020Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jmhumphreys.github.io/geoepi-notebook/about/purpose.html</loc>
-    <lastmod>2026-08-06T01:34:53.019Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jmhumphreys.github.io/geoepi-notebook/about/contributing.html</loc>
-    <lastmod>2026-08-06T01:34:53.019Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jmhumphreys.github.io/geoepi-notebook/about/how-to-use.html</loc>
-    <lastmod>2026-08-06T01:34:53.019Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jmhumphreys.github.io/geoepi-notebook/domains/index.html</loc>
-    <lastmod>2026-08-06T01:34:53.020Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jmhumphreys.github.io/geoepi-notebook/practices/acquire/data-intake.html</loc>
-    <lastmod>2026-08-06T01:34:53.020Z</lastmod>
+    <loc>https://jmhumphreys.github.io/geoepi-notebook/practices/organize/identifiers-and-schema.html</loc>
+    <lastmod>2026-08-06T17:13:14.489Z</lastmod>
   </url>
   <url>
     <loc>https://jmhumphreys.github.io/geoepi-notebook/practices/acquire/recurring-programmatic-data.html</loc>
-    <lastmod>2026-08-06T01:34:53.020Z</lastmod>
+    <lastmod>2026-08-06T17:13:14.489Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhumphreys.github.io/geoepi-notebook/practices/acquire/data-intake.html</loc>
+    <lastmod>2026-08-06T17:13:14.489Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhumphreys.github.io/geoepi-notebook/domains/index.html</loc>
+    <lastmod>2026-08-06T17:13:14.489Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhumphreys.github.io/geoepi-notebook/about/how-to-use.html</loc>
+    <lastmod>2026-08-06T17:13:14.488Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhumphreys.github.io/geoepi-notebook/about/contributing.html</loc>
+    <lastmod>2026-08-06T17:13:14.488Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhumphreys.github.io/geoepi-notebook/about/purpose.html</loc>
+    <lastmod>2026-08-06T17:13:14.488Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhumphreys.github.io/geoepi-notebook/index.html</loc>
+    <lastmod>2026-08-06T17:13:14.489Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhumphreys.github.io/geoepi-notebook/practices/acquire/index.html</loc>
+    <lastmod>2026-08-06T17:13:14.489Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhumphreys.github.io/geoepi-notebook/practices/index.html</loc>
+    <lastmod>2026-08-06T17:13:14.489Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhumphreys.github.io/geoepi-notebook/practices/organize/index.html</loc>
+    <lastmod>2026-08-06T17:13:14.490Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmhumphreys.github.io/geoepi-notebook/practices/organize/source-to-staged-data.html</loc>
+    <lastmod>2026-08-06T17:13:14.490Z</lastmod>
   </url>
   <url>
     <loc>https://jmhumphreys.github.io/geoepi-notebook/practices/plan/data-management-planning.html</loc>
-    <lastmod>2026-08-06T01:34:53.020Z</lastmod>
+    <lastmod>2026-08-06T17:13:14.490Z</lastmod>
   </url>
   <url>
     <loc>https://jmhumphreys.github.io/geoepi-notebook/practices/plan/project-scope.html</loc>
-    <lastmod>2026-08-06T01:34:53.020Z</lastmod>
+    <lastmod>2026-08-06T17:13:14.490Z</lastmod>
   </url>
   <url>
     <loc>https://jmhumphreys.github.io/geoepi-notebook/standards/geoepi-practice-audit.html</loc>
-    <lastmod>2026-08-06T01:34:53.021Z</lastmod>
+    <lastmod>2026-08-06T17:13:14.491Z</lastmod>
   </url>
   <url>
     <loc>https://jmhumphreys.github.io/geoepi-notebook/standards/open-policy-decisions.html</loc>
-    <lastmod>2026-08-06T01:34:53.021Z</lastmod>
+    <lastmod>2026-08-06T17:13:14.491Z</lastmod>
   </url>
   <url>
     <loc>https://jmhumphreys.github.io/geoepi-notebook/start/index.html</loc>
-    <lastmod>2026-08-06T01:34:53.021Z</lastmod>
+    <lastmod>2026-08-06T17:13:14.491Z</lastmod>
   </url>
   <url>
     <loc>https://jmhumphreys.github.io/geoepi-notebook/start/new-project.html</loc>
-    <lastmod>2026-08-06T01:34:53.021Z</lastmod>
+    <lastmod>2026-08-06T17:13:14.491Z</lastmod>
   </url>
   <url>
     <loc>https://jmhumphreys.github.io/geoepi-notebook/templates/authoring-template.html</loc>
-    <lastmod>2026-08-06T01:34:53.021Z</lastmod>
+    <lastmod>2026-08-06T17:13:14.491Z</lastmod>
   </url>
 </urlset>
