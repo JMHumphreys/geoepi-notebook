@@ -1,5 +1,303 @@
 [
   {
+    "objectID": "templates/index.html",
+    "href": "templates/index.html",
+    "title": "Templates",
+    "section": "",
+    "text": "The template library reduces blank-page friction without forcing every project into one shape. Copy the plain-text files into another repository and adapt them to the project.\n\n\n\nTemplate\nFormat\nUse\n\n\n\n\nProject README\nMarkdown\nRoot orientation, setup, outputs, restrictions, and handoff\n\n\nProject charter\nMarkdown\nSeparate charter when contributors, persistence, funding, publication, operations, sensitivity, cost, handoff, or policy use justify it\n\n\nData-source inventory\nCSV\nSource, access, version, restriction, and provenance seed\n\n\nData dictionary\nCSV\nVariables, units, codes, missingness, and derivations\n\n\nException record\nMarkdown\nFormal deviations and compensating controls\n\n\nReadiness checklist\nMarkdown\nLifecycle gate review\n\n\nHandoff record\nMarkdown\nTransfer of access, context, and unfinished work\n\n\nCloseout record\nMarkdown\nFinal version, archive, retention, and maintenance\n\n\nResult traceability\nCSV\nInputs, code, parameters, environment, runs, outputs, review, and status\n\n\nHPC run record\nYAML\nScheduler, resources, environment, inputs, outputs, logs, exit status, and retry state\n\n\nGuidance page authoring template\nQuarto\nNew Lab Book pages\n\n\n\nTemplates are examples until explicitly adopted; adapt them to the project and document meaningful deviations.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\nstatus\n\n\n\n\n\n\n\n\nGuidance Page Authoring Template\n\n\nA reusable, non-substantive template for future Lab Book pages.\n\n\ntemplate\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Start Here",
+      "Templates"
+    ]
+  },
+  {
+    "objectID": "start/rescue-project.html",
+    "href": "start/rescue-project.html",
+    "title": "Rescuing an Existing Project",
+    "section": "",
+    "text": "Trying to perfect an inherited project before understanding it can destroy useful context. Rescue begins with a safe inventory and a clear uncertainty record.",
+    "crumbs": [
+      "Start Here",
+      "Rescuing an Existing Project"
+    ]
+  },
+  {
+    "objectID": "start/rescue-project.html#why-this-matters",
+    "href": "start/rescue-project.html#why-this-matters",
+    "title": "Rescuing an Existing Project",
+    "section": "",
+    "text": "Trying to perfect an inherited project before understanding it can destroy useful context. Rescue begins with a safe inventory and a clear uncertainty record.",
+    "crumbs": [
+      "Start Here",
+      "Rescuing an Existing Project"
+    ]
+  },
+  {
+    "objectID": "start/rescue-project.html#triage-sequence",
+    "href": "start/rescue-project.html#triage-sequence",
+    "title": "Rescuing an Existing Project",
+    "section": "Triage sequence",
+    "text": "Triage sequence\n\nFreeze and preserve the current state; do not silently overwrite inputs or outputs.\nInventory files, scripts, data locations, access constraints, environments, and recent results.\nAsk the previous owner or stakeholders what is trusted, provisional, or broken.\nReconstruct the smallest defensible path from an input to a named result.\nRecord gaps as risks and choose a stopping point for rescue work.\nCreate a handoff note before making major changes.\n\n\n\n\n\n\n\nImportant\n\n\n\nUnlabeled cleanup can erase provenance. Keep a dated rescue log and preserve the original state when permissions and storage allow.",
+    "crumbs": [
+      "Start Here",
+      "Rescuing an Existing Project"
+    ]
+  },
+  {
+    "objectID": "start/minimum-standard.html",
+    "href": "start/minimum-standard.html",
+    "title": "Minimum GeoEpi Project Standard",
+    "section": "",
+    "text": "Proposed draft policy — review required\n\n\n\nThis page proposes a minimum standard. It is not approved policy. Institutional, legal, contractual, privacy, security, records-management, funder, and data-governance requirements take precedence.",
+    "crumbs": [
+      "Start Here",
+      "Minimum GeoEpi Project Standard"
+    ]
+  },
+  {
+    "objectID": "start/minimum-standard.html#purpose",
+    "href": "start/minimum-standard.html#purpose",
+    "title": "Minimum GeoEpi Project Standard",
+    "section": "1. Purpose",
+    "text": "1. Purpose\nThe minimum standard makes GeoEpi projects understandable, reviewable, reproducible where access permits, and transferable across people and time. A requirement belongs here only when failure materially threatens scientific defensibility, data security, result traceability, project continuity, collaboration, publication, operational use, handoff, or preservation.",
+    "crumbs": [
+      "Start Here",
+      "Minimum GeoEpi Project Standard"
+    ]
+  },
+  {
+    "objectID": "start/minimum-standard.html#scope",
+    "href": "start/minimum-standard.html#scope",
+    "title": "Minimum GeoEpi Project Standard",
+    "section": "2. Scope",
+    "text": "2. Scope\nApply this standard to active GeoEpi research, surveillance, field-data, software, modeling, simulation, operational, and HPC projects. Apply it proportionally to exploratory work and legacy projects. It covers project records and workflows, not scientific conclusions or a single software stack.",
+    "crumbs": [
+      "Start Here",
+      "Minimum GeoEpi Project Standard"
+    ]
+  },
+  {
+    "objectID": "start/minimum-standard.html#guiding-principle",
+    "href": "start/minimum-standard.html#guiding-principle",
+    "title": "Minimum GeoEpi Project Standard",
+    "section": "3. Guiding principle",
+    "text": "3. Guiding principle\nThe GeoEpi Lab Book is a living resource. The minimum is a floor for defensibility and continuity, not a rigid template for every project. Use Required for universal controls, Conditionally required when project characteristics trigger a control, Recommended for practices that improve quality but are not universal, and Optional for useful local choices.\nThe required artifacts describe information that must be retained and discoverable. They do not necessarily require separate files. A README, configuration file, rendered report, workflow manifest, validated dataset, or automated log may satisfy multiple requirements when the information is clear, durable, and traceable. Separate formal records become necessary when project complexity, risk, contributors, operational importance, or institutional requirements justify them.",
+    "crumbs": [
+      "Start Here",
+      "Minimum GeoEpi Project Standard"
+    ]
+  },
+  {
+    "objectID": "start/minimum-standard.html#definitions",
+    "href": "start/minimum-standard.html#definitions",
+    "title": "Minimum GeoEpi Project Standard",
+    "section": "4. Definitions",
+    "text": "4. Definitions\n\nSource data: received or collected data preserved without undocumented modification.\nDerived data: data created by a documented transformation from source or staged data.\nConsequential: capable of changing a reported result, operational action, data protection, or project handoff.\nResult traceability: the ability to identify inputs, code, parameters, environment, execution, and output for a result.\nAuthoritative location: the project location designated as current for a specified artifact or workflow.\nProject artifact: a durable record needed to understand, execute, review, release, hand off, or close a project.",
+    "crumbs": [
+      "Start Here",
+      "Minimum GeoEpi Project Standard"
+    ]
+  },
+  {
+    "objectID": "start/minimum-standard.html#universal-minimum-requirements",
+    "href": "start/minimum-standard.html#universal-minimum-requirements",
+    "title": "Minimum GeoEpi Project Standard",
+    "section": "5. Universal minimum requirements",
+    "text": "5. Universal minimum requirements\n\nProject identity — Required\nEvery active project must identify a stable title or identifier, project lead, primary analytical or data-management contact, research or operational objective, intended outputs, audience or decision context, current status, and authoritative repository or project location.\nEvery project must contain a concise scope statement identifying its objective, intended output, owner, authoritative location, and current status. For a small project, the README may contain this scope statement; a separate charter is not universal.\n\n\nProject README — Required\nEvery active project must have a current project-level README covering purpose, responsible personnel, repository structure, data locations, setup requirements, principal workflows, expected outputs, access restrictions, current status, known limitations, and contact or handoff information. Use templates/project-readme-template.md.\n\n\nDirectory and object organization — Required\nSeparate source data, interim/staged data, derived data, analysis code, configuration, documentation, outputs, logs, and temporary files. Repository-specific names are permitted when their meanings are documented. No universal folder tree is required.\n\n\nSource-data protection — Required\nPreserve source data without undocumented modification. A correction must be reproducible, recorded, attributable, and linked to the corrected or derived version. Do not put protected source data in Git unless authorized.\n\n\nData provenance — Required\nFor each external or internally collected dataset, record a stable local identifier, source, collector/provider, acquisition method and date, original filename or source identifier, version/release date, license or use restriction, a checksum when proportionate, and transformations connecting source to derived data.\nWhen the transformation chain is clear, versioned scripts and their retained outputs may constitute the source-to-derived provenance record; a separate provenance table is conditional.\n\n\nData classification and protection — Required\nIdentify relevant restrictions, such as public, internal, restricted, confidential, personally identifiable, proprietary, governed by a data-use agreement, or sensitive ecological/geographical information. These labels are descriptive until institutional terminology is approved; do not invent USDA or laboratory classification policy.\n\n\nMetadata and data dictionaries — Required\nDocument variables, units, data types, identifiers, categories/codes, missing-value conventions, date/time conventions, coordinate reference systems, spatial units, temporal support, and important derivations. Use the data dictionary template where a table is appropriate.\n\n\nScripted transformations — Required\nRetain consequential transformations and analyses in scripts, workflows, notebooks, or rendered computational documents. A manual step is permitted only when scripting is not reasonable, the procedure and inputs/outputs are documented, the responsible person is recorded, and the effect can be reviewed.\n\n\nVersion control — Required\nUse Git-based version control for code and documentation unless a documented exception applies. Git is generally not the correct storage location for credentials, protected data, large raw datasets, sensitive spatial records, temporary files, generated caches, or non-redistributable proprietary material.\n\n\nSoftware and computational environment — Required\nRecord enough environment information to reconstruct the project at a level proportional to risk and complexity. This may include R and package versions, renv.lock, a Python environment, containers, system libraries, external command-line tools, GIS/database versions, HPC modules, and operating-system details. renv is not universal.\n\n\nConfiguration and parameters — Required\nRepresent consequential paths and parameters explicitly through configuration files, command-line arguments, function arguments, workflow manifests, or documented constants. Major results must not depend solely on undocumented interactive state. A configuration file, workflow manifest, or documented function or command invocation may constitute the parameter record; a separate parameter document is not required when the information is already clear.\n\n\nQuality assurance — Required\nDocument checks appropriate to the workflow. Examples include schema, missingness, duplicates, ranges, units, identifiers, temporal consistency, spatial validity, geometry, raster alignment, masks/exclusions, output completeness, model convergence, and simulation completion. Do not impose irrelevant checks. An executable QA script and retained report or log may constitute the QA/QC record when the checks, results, exceptions, and reviewer are discoverable.\n\n\nResult traceability — Required\nEvery externally reported or operationally consequential result must be traceable to identified input data, versioned code, relevant configuration and parameters, computational environment, a specific output, and a run identifier or reproducible execution path where appropriate.\n\n\nDecision documentation — Required\nRecord consequential decisions in a durable location: exclusion rules, case-definition changes, parameter changes, source substitutions, boundary changes, modeling assumptions, workflow redesigns, and release decisions. Trivial coding choices do not need formal decision records. Git history, issues, pull requests, or a decision log may satisfy this requirement when the decision, rationale, responsible person, and date are recoverable.\n\n\nPublication or release — Required at external release\nBefore external release, complete a clean render or workflow execution; document source data; identify code version; synchronize manuscript, code, figures, and tables; provide data/code availability statements; record licenses or restrictions and known limitations; and complete review proportionate to risk and importance. A separate release package or checklist is required only when the release context warrants it.\n\n\nHandoff and closeout — Required when responsibility changes, work pauses indefinitely, or the project closes\nAll active projects must avoid undocumented personal dependencies and keep current README, repository, data-location, known-issue, and reproduction information. An actual handoff record is required when responsibility changes. A final closeout record is required when work pauses indefinitely or the project closes; it records access transfer, archive/retention, unfinished work, removal or transfer of personal dependencies, and the authoritative final version.",
+    "crumbs": [
+      "Start Here",
+      "Minimum GeoEpi Project Standard"
+    ]
+  },
+  {
+    "objectID": "start/minimum-standard.html#requirements-by-project-type",
+    "href": "start/minimum-standard.html#requirements-by-project-type",
+    "title": "Minimum GeoEpi Project Standard",
+    "section": "6. Requirements by project type",
+    "text": "6. Requirements by project type\nThese are conditionally required when the project class applies.\n\nSpatial and spatiotemporal projects\nRecord CRS and datum, coordinate units, extent, resolution or spatial support, raster origin/alignment, spatial mask, boundary source/version, spatial transformations, coordinate uncertainty, and sensitive-location handling. For example, a map can be irreproducible when a boundary release or raster alignment is not recorded.\n\n\nEpidemiological and surveillance projects\nRecord case definition and version/effective dates, event/report date meanings, denominator, deduplication, linkage, reporting delays, jurisdictional changes, confidentiality restrictions, and snapshot/extraction date. A changed case definition or delayed report can otherwise make two valid-looking estimates incomparable.\n\n\nEcological and field-data projects\nRecord sampling design and locations, taxonomic identifiers, units, detection limits, observer/instrument, effort, missing observations, and sensor calibration where relevant. Field effort and detection limits can change apparent abundance even when the analysis code is unchanged.\n\n\nGenomics and phylogenetics projects\nRecord sample identifiers, sample-to-sequence linkage, accessions, reference genome, database versions, read-processing workflow, filters, alignment, tree-building configuration, metadata joins, and sensitive host/location handling. A sequence alignment without its sample linkage and filtering record is not a transferable input.\n\n\nStatistical, mathematical, and simulation models\nRecord model purpose, conceptual structure, variables, parameters and units, initial/boundary conditions, calibration data, validation, stochastic seeds, replicate strategy, scenarios, acceptance criteria, and limitations. A simulation result without seed and scenario definitions cannot be checked or extended.\n\n\nOperational workflows\nRecord production schedule, input availability, failure behavior, logging, alerting, retry behavior, output validation, responsible operator, and change control. Operational outputs require an owner who can explain what happened when an input is late or invalid.\n\n\nHPC workflows\nRecord submission script, software environment, modules/container, resource request, job identifier, array definition, input manifest, output destination, stdout/stderr logs, failure and retry status, and the relationship between local and cluster environments. Use templates/hpc-run-record-template.yml.",
+    "crumbs": [
+      "Start Here",
+      "Minimum GeoEpi Project Standard"
+    ]
+  },
+  {
+    "objectID": "start/minimum-standard.html#project-artifact-matrix",
+    "href": "start/minimum-standard.html#project-artifact-matrix",
+    "title": "Minimum GeoEpi Project Standard",
+    "section": "7. Project artifact matrix",
+    "text": "7. Project artifact matrix\nThe matrix classifies information and records, not a mandatory file count. One artifact may satisfy several rows.\n\n\n\n\n\n\n\n\n\n\n\n\nArtifact\nRequirement class\nWhen required\nMinimum contents\nPreferred format/location\nResponsible role\nReview point\n\n\n\n\nProject README with identity and scope\nRequired for all active projects\nAll active projects\nIdentity, scope, people, structure, data, setup, workflow, outputs, restrictions, limitations\nMarkdown; repository root\nProject lead\nInitiation and every release\n\n\nStandalone project charter\nConditionally required\nTriggered by contributors, persistence, funding, publication, operations, sensitivity, cost, handoff, policy, regulatory, or management use\nObjective, audience, outputs, boundaries, risks, owner, responsibilities\nMarkdown; docs/ or project system\nProject lead\nInitiation and material scope change\n\n\nSource-data record\nRequired when data are used\nAny project using data\nSource, identifier, dates, access, license, location, version, restrictions\nREADME, CSV, or approved data system\nData contact\nData intake\n\n\nSeparate data-source inventory\nConditionally required\nComplex, sensitive, multi-source, or high-risk data\nFull source inventory and access/provenance fields\nCSV; data/ or approved data system\nData contact\nData intake\n\n\nData dictionary or equivalent metadata\nRequired when data are used; separate file conditional\nAny project using structured, spatial, ecological, surveillance, or model data\nFields, types, units, codes, missingness, spatial/temporal meaning\nDataset metadata, CSV, or Markdown\nData contact\nAnalysis readiness\n\n\nEnvironment information\nRequired for consequential computation\nAny consequential computation\nVersions and reconstruction notes\nREADME, YAML/Markdown, lockfile, or container record\nAnalytical contact\nAnalysis readiness and release\n\n\nSeparate source-to-derived provenance table\nConditionally required\nComplex or high-risk transformations\nInputs, transformations, outputs, actor/date, checksums as proportionate\nCSV/Markdown; data/ or docs/\nData/analytical contact\nResult review\n\n\nVersion-controlled code or documented exception\nRequired for scripted work\nAny scripted work\nReproducible source and history\nGit repository or exception record\nAnalytical contact\nEvery result review\n\n\nConsequential parameter record\nRequired when consequential parameters or paths exist\nAny consequential parameters or paths\nExplicit values, units, scenario, source, date\nConfiguration, arguments, manifest, or Markdown\nAnalytical contact\nAnalysis readiness\n\n\nQA/QC information\nRequired for consequential data/workflows\nAny consequential data or workflow\nChecks, results, exceptions, reviewer\nScript, report, log, CSV, or Markdown\nProject team\nResult review\n\n\nSeparate result inventory/run manifest\nConditionally required\nMultiple outputs, runs, or high-risk work\nOutput IDs, inputs, code, config, run, status, location\nCSV/YAML; outputs/ or runs/\nAnalytical contact\nResult review and release\n\n\nSeparate formal decision record\nConditionally required\nConsequential or contested decisions\nDecision, rationale, alternatives, owner, date, review\nGit history, issue, PR, log, or Markdown\nDecision owner\nAt decision and release\n\n\nHandoff record\nRequired at handoff\nResponsibility changes\nAccess, locations, status, issues, reproduction steps, owner\nMarkdown; docs/\nProject lead\nHandoff\n\n\nCloseout record\nRequired at indefinite pause or closeout\nWork pauses indefinitely or ends\nFinal version, retention, archive, unresolved work, contacts\nMarkdown; docs/\nProject lead\nCloseout\n\n\nExternal-release package/checklist\nRequired at publication or operational release; separate artifact conditional\nPublication or operational release\nClean execution, synchronized outputs, availability, license, limitations, review\nChecklist, report, or release record\nProject lead\nRelease",
+    "crumbs": [
+      "Start Here",
+      "Minimum GeoEpi Project Standard"
+    ]
+  },
+  {
+    "objectID": "start/minimum-standard.html#research-lifecycle-checkpoints",
+    "href": "start/minimum-standard.html#research-lifecycle-checkpoints",
+    "title": "Minimum GeoEpi Project Standard",
+    "section": "8. Research-lifecycle checkpoints",
+    "text": "8. Research-lifecycle checkpoints\nEach gate is a concise, verifiable checkpoint. A failed gate is recorded and corrected or handled through an exception.\n\n1. Project initiation\n\nIdentity, objective, audience, outputs, status, owner, and authoritative location are recorded.\nScope, risks, data restrictions, and likely project type are stated.\nREADME contains the concise scope statement; a standalone charter exists if the project triggers that condition.\nPlanned data locations and access owners are identified.\nInitial environment and workflow approach are recorded.\n\n\n\n2. Data intake\n\nSource identifier, provider/collector, acquisition date, original name, version, and restriction are recorded.\nSource data are preserved or the reason is documented.\nRequired metadata and spatial/temporal conventions are available; a separate dictionary exists when warranted.\nSource-to-derived plan and checks are identified.\nSensitive or governed data have an approved storage/access decision.\n\n\n\n3. Analysis readiness\n\nInputs, code, configuration, parameters, and environment record are discoverable.\nConsequential manual steps and decisions are documented.\nQA/QC checks are defined and applicable.\nEntry point or execution path is identified.\nExpected outputs and completion criteria are stated.\n\n\n\n4. Result review\n\nChecks ran and exceptions are recorded.\nReported outputs map to input, code, parameters, environment, and run/output IDs.\nModel, simulation, spatial, genomic, or operational diagnostics are reviewed where applicable.\nLimitations and unresolved decisions are visible.\nA reviewer appropriate to project risk is identified.\n\n\n\n5. Publication or operational release\n\nClean execution or render succeeds.\nCode, manuscript, figures, tables, and outputs are synchronized.\nData/code availability, licenses, and access restrictions are stated.\nRelease review and approval are recorded.\nVersion, archive, and public/private locations are identified.\n\n\n\n6. Handoff when responsibility changes\n\nREADME and inventory are current.\nAccess, credentials ownership, and data locations are transferred safely.\nPrincipal-output reproduction steps succeed or limitations are recorded.\nKnown issues, unfinished work, and next actions are listed.\nNew responsible roles accept the handoff.\n\n\n\n7. Closeout when work pauses indefinitely or ends\n\nAuthoritative final version is named.\nArchive, retention, and disposal decisions are recorded.\nReproducibility materials and restrictions are preserved.\nUndocumented personal dependencies are removed or transferred.\nCloseout record and contact for future questions are stored.",
+    "crumbs": [
+      "Start Here",
+      "Minimum GeoEpi Project Standard"
+    ]
+  },
+  {
+    "objectID": "start/minimum-standard.html#proportionality",
+    "href": "start/minimum-standard.html#proportionality",
+    "title": "Minimum GeoEpi Project Standard",
+    "section": "9. Proportionality",
+    "text": "9. Proportionality\nDocumentation and controls scale with project longevity, contributors, data sensitivity, analytical complexity, computational cost, operational importance, publication and regulatory implications, likelihood of handoff, and cost of reconstruction.\n\n\n\n\n\n\n\nProfile\nProportionate minimum\n\n\n\n\nSmall exploratory analysis\nREADME containing the concise scope statement, source-data record, scripts, environment note, result traceability, and no separate charter unless another trigger applies\n\n\nPublication-oriented research\nFull data inventory, dependency record, QA/QC documentation, review, release preparation, archive plan, and a standalone charter because publication intent triggers it\n\n\nOperational or high-consequence workflow\nFormal configuration, logging, validation, failure recovery, review authority, controlled releases, and documented ownership\n\n\n\nA standalone charter is conditionally required when a project has multiple contributors or organizations, persists beyond a short exploratory period, has external funding or formal deliverables, publication intent, operational use, sensitive or governed data, substantial computational cost, formal handoff expectations, or consequential policy, regulatory, or management use.",
+    "crumbs": [
+      "Start Here",
+      "Minimum GeoEpi Project Standard"
+    ]
+  },
+  {
+    "objectID": "start/minimum-standard.html#exceptions",
+    "href": "start/minimum-standard.html#exceptions",
+    "title": "Minimum GeoEpi Project Standard",
+    "section": "10. Exceptions",
+    "text": "10. Exceptions\nUse templates/project-exception-record.md. An exception must record the unmet requirement, reason, consequence, compensating control, responsible person, approval authority, review date, and closure status. An exception cannot override legal, contractual, security, privacy, or institutional requirements. Approval authority remains an open policy decision.",
+    "crumbs": [
+      "Start Here",
+      "Minimum GeoEpi Project Standard"
+    ]
+  },
+  {
+    "objectID": "start/minimum-standard.html#review-checklist",
+    "href": "start/minimum-standard.html#review-checklist",
+    "title": "Minimum GeoEpi Project Standard",
+    "section": "11. Review checklist",
+    "text": "11. Review checklist\nUse templates/project-readiness-checklist.md at the lifecycle gates. The reviewer should be able to locate the authoritative README, inputs, code, parameters, environment, QA record, output/run inventory, decisions, restrictions, and handoff/closeout state.",
+    "crumbs": [
+      "Start Here",
+      "Minimum GeoEpi Project Standard"
+    ]
+  },
+  {
+    "objectID": "start/minimum-standard.html#related-templates",
+    "href": "start/minimum-standard.html#related-templates",
+    "title": "Minimum GeoEpi Project Standard",
+    "section": "12. Related templates",
+    "text": "12. Related templates\nThe Templates listing provides copyable Markdown, CSV, and YAML starting points for the artifacts above. Templates are not approved policy by themselves; adapt them and record meaningful deviations.",
+    "crumbs": [
+      "Start Here",
+      "Minimum GeoEpi Project Standard"
+    ]
+  },
+  {
+    "objectID": "start/minimum-standard.html#evidence-base",
+    "href": "start/minimum-standard.html#evidence-base",
+    "title": "Minimum GeoEpi Project Standard",
+    "section": "13. Evidence base",
+    "text": "13. Evidence base\nThis proposal combines observed GeoEpi practice in the practice audit with external guidance: The Turing Way, Good Enough Practices in Scientific Computing, TIER Protocol, RDMkit, DataONE, FAIR Principles, FAIR Principles for Research Software, CARE Principles, USDA NAL guidance, CDC Field Epidemiology Manual, FGDC metadata, GBIF georeferencing, Ecological Metadata Language, and Ecological Forecasting Initiative. Access/review date: 2026-08-05.\n\n\n\nStandard area\nPrincipal external guidance\nGeoEpi evidence\nPolicy interpretation\n\n\n\n\nProject organization and README\nGood Enough Practices; The Turing Way\nREADMEs and recognizable project entry points recur across the sample.\nRequire discoverable identity and scope, not a fixed folder tree.\n\n\nSource-data protection and provenance\nRDMkit; DataONE\nOSF/archive links and project-specific data assets recur; acquisition and transformation records are inconsistent.\nRequire source protection and provenance information; separate tables are conditional.\n\n\nMetadata and data dictionaries\nDataONE; Ecological Metadata Language\nData dictionaries and workflow notes appear in some mature projects.\nRequire understandable variables, units, codes, and spatial/temporal meaning.\n\n\nVersion control and scripted analysis\nThe Turing Way; Good Enough Practices\nVersioned R scripts are present throughout the sample.\nRequire version control or a documented exception; retain consequential transformations.\n\n\nComputational environments\nThe Turing Way; RDMkit\nEnvironment records and lockfiles are uneven; EpiPlume exposes detailed computational configuration.\nRequire proportional environment information, not one package manager.\n\n\nQA/QC\nThe Turing Way; Good Enough Practices\nEpiPlume exposes tests and validation scripts; other projects expose fewer formal checks.\nRequire workflow-appropriate checks; scripts and retained reports may satisfy the record.\n\n\nResult traceability and reproduction packages\nTIER Protocol\nRendered supporting-information sites and OSF archives recur, but run/output inventories vary.\nRequire traceability for reported or operational results; formal packages are event- or risk-dependent.\n\n\nCollaboration and decision records\nThe Turing Way\nProject ownership, decisions, and handoff information are not consistently visible.\nRequire durable consequential decisions; Git history/issues may suffice.\n\n\nFAIR data\nFAIR Principles\nExternal archives and publication links support reuse in several projects.\nUse FAIR as an orientation, subject to access and governance constraints.\n\n\nFAIR research software\nFAIR Principles for Research Software\nLicenses and citation metadata are inconsistent across repositories.\nRecommend reusable licensing and citation; institutional policy remains open.\n\n\nCARE and responsible governance\nCARE Principles\nPublic repository review cannot establish governance for sensitive or Indigenous data.\nRequire authority, responsibility, and restrictions to be identified without inventing policy.\n\n\nSpatial metadata and georeferencing\nFGDC; GBIF\nSpatial rasters, boundaries, and model domains recur; CRS and uncertainty records vary.\nConditionally require CRS, datum, extent, alignment, provenance, and uncertainty.\n\n\nEpidemiological data management\nCDC Field Epidemiology Manual\nSurveillance and outbreak repositories expose model/report workflows but not consistently case-data metadata.\nConditionally require case definitions, dates, denominators, linkage, and snapshots.\n\n\nEcological metadata and forecasting\nEML; EFI\nEcological and simulation workflows are represented, but forecast records are not uniform.\nConditionally require sampling, measurement, effort, calibration, scenario, and forecast metadata.\n\n\nPublication and preservation\nTIER Protocol; DataONE\nPublications, rendered reports, and OSF links recur in several repositories.\nRequire release readiness and preservation decisions at the relevant event.\n\n\n\nEvidence informs this proposal but does not itself establish GeoEpi policy. The proposal uses original prose and flags areas requiring institutional interpretation in Open policy decisions.",
+    "crumbs": [
+      "Start Here",
+      "Minimum GeoEpi Project Standard"
+    ]
+  },
+  {
+    "objectID": "start/minimum-standard.html#open-policy-decisions",
+    "href": "start/minimum-standard.html#open-policy-decisions",
+    "title": "Minimum GeoEpi Project Standard",
+    "section": "14. Open policy decisions",
+    "text": "14. Open policy decisions\nApproval is still needed for data-classification terminology, approved storage and cloud services, backups, retention, public repositories, sensitive spatial data, PII, dependency locking, release review, exception authority, licensing, contributor/authorship expectations, records management, and generative-AI use. See Open policy decisions.",
+    "crumbs": [
+      "Start Here",
+      "Minimum GeoEpi Project Standard"
+    ]
+  },
+  {
+    "objectID": "start/minimum-standard.html#revision-history",
+    "href": "start/minimum-standard.html#revision-history",
+    "title": "Minimum GeoEpi Project Standard",
+    "section": "15. Revision history",
+    "text": "15. Revision history\n\n\n\n\n\n\n\n\nDate\nChange\nStatus\n\n\n\n\n2026-08-05\nFirst substantive proposed minimum standard drafted from the GeoEpi practice audit and external guidance.\nDraft policy; human review required",
+    "crumbs": [
+      "Start Here",
+      "Minimum GeoEpi Project Standard"
+    ]
+  },
+  {
+    "objectID": "start/handoff.html",
+    "href": "start/handoff.html",
+    "title": "Project Handoff",
+    "section": "",
+    "text": "A handoff is complete when the next person can orient themselves, reproduce the current key result where access permits, and see what remains uncertain.",
+    "crumbs": [
+      "Start Here",
+      "Project Handoff"
+    ]
+  },
+  {
+    "objectID": "start/handoff.html#handoff-packet",
+    "href": "start/handoff.html#handoff-packet",
+    "title": "Project Handoff",
+    "section": "Handoff packet",
+    "text": "Handoff packet\n\npurpose, scope, stakeholders, and current status;\nREADME and directory map;\ndata inventory, provenance, permissions, and retention notes;\ncurrent analysis path and software/environment notes;\nkey outputs with dates, versions, and interpretation limits;\ndecision log, open issues, and recommended next actions;\nnamed owner for the next review.\n\n\n\n\n\n\n\nTip\n\n\n\nAsk the recipient to perform an orientation walkthrough and one small reproduction check. Update the handoff note with what they could and could not recover.",
+    "crumbs": [
+      "Start Here",
+      "Project Handoff"
+    ]
+  },
+  {
+    "objectID": "standards/index.html",
+    "href": "standards/index.html",
+    "title": "Lab Standards",
+    "section": "",
+    "text": "This section contains proposed and reviewed decisions. Draft guidance should not be treated as approved policy by implication.\n\nMinimum GeoEpi Project Standard - proposed draft policy requiring review.\nGeoEpi Practice Audit - draft-analysis, provisional public-repository audit; not a compliance review or ranking.\nOpen Policy Decisions - unresolved questions requiring human approval."
+  },
+  {
+    "objectID": "resources/index.html",
+    "href": "resources/index.html",
+    "title": "Resources",
+    "section": "",
+    "text": "The resource catalog records external starting points without turning them into lab policy. Annotations are intentionally short and original. Check the source landing page, license, version, and access conditions before relying on a resource.\nEach entry has a stable ID, title, URL, author or organization, resource and authority types, topic tags, license, access date, relevant sections, a local research-note path, review status, and a short annotation. Unknown or unverified values are marked explicitly.\n\n\n\n\n\n\nWarning\n\n\n\nCatalog inclusion is not endorsement. Resources may be useful, outdated, inaccessible, or governed by licenses that limit reuse.\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Description\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\nAuthor\n\n\n\nCategories\n\n\n\n\n\n\n\n\nA Primer of Ecology with R\n\n\nQuantitative ecology concepts and R-based models.\n\n\n \n\n\n \n\n\n\n\n\n\nLandscape Genetic Data Analysis with R\n\n\nSeed entry for landscape-genetics workflows.\n\n\n \n\n\n \n\n\n\n\n\n\nQuantitative Biology\n\n\nBroad seed entry requiring exact title and edition verification.\n\n\n \n\n\n \n\n\n\n\n\n\nComparative Methods\n\n\nSeed entry for comparative analysis.\n\n\n \n\n\n \n\n\n\n\n\n\nSpatial Data Science\n\n\nStarting point for spatial analysis concepts and tools.\n\n\n \n\n\n \n\n\n\n\n\n\nStatistical Rethinking\n\n\nModel-centered introduction to Bayesian reasoning.\n\n\n \n\n\n \n\n\n\n\n\n\nApplied Population Genetics\n\n\nSeed entry requiring title and edition confirmation.\n\n\n \n\n\n \n\n\n\n\n\n\nThe Epidemiologist R Handbook\n\n\nTask-oriented R reference for applied epidemiology.\n\n\n \n\n\n \n\n\n\n\n\n\nNetwork Analysis in R\n\n\nSeed entry for network analysis workflows in R.\n\n\n \n\n\n \n\n\n\n\n\n\nMolecular Epi in R\n\n\nSeed entry retained for later identification.\n\n\n \n\n\n \n\n\n\n\n\n\nIntro to GIS and Spatial Analysis\n\n\nCourse notes introducing GIS and spatial analysis.\n\n\n \n\n\n \n\n\n\n\n\n\nA Practical Guide to Ecosystem Forecasting\n\n\nCommunity entry point for ecological forecasting practice.\n\n\n \n\n\n \n\n\n\n\n\n\nComputational Genomics Manual\n\n\nSeed entry requiring identification of the intended manual.\n\n\n \n\n\n \n\n\n\n\n\n\nSpatial Data Processing with R\n\n\nIndex of R packages and resources for spatial data work.\n\n\n \n\n\n \n\n\n\n\n\n\nGeocomputation with R\n\n\nOpen book for geographic data analysis, visualization, and modeling.\n\n\n \n\n\n \n\n\n\n\n\n\nNetwork Analysis: Integrating Social Network Theory, Method, and Application with R\n\n\nSeed for theory-to-application network analysis in R.\n\n\n \n\n\n \n\n\n\n\n\n\nThe Turing Way\n\n\nCommunity handbook on reproducible, ethical, collaborative data science.\n\n\n \n\n\n \n\n\n\n\n\n\nGood Enough Practices in Scientific Computing\n\n\nCompact recommendations for dependable scientific computing.\n\n\n \n\n\n \n\n\n\n\n\n\nTIER Protocol\n\n\nProtocol for transparent empirical research workflows.\n\n\n \n\n\n \n\n\n\n\n\n\nRDMkit\n\n\nRole- and task-oriented research data-management guidance.\n\n\n \n\n\n \n\n\n\n\n\n\nDataONE Best Practices\n\n\nPractical guidance for managing and preserving research data.\n\n\n \n\n\n \n\n\n\n\n\n\nFAIR Principles\n\n\nVocabulary for making digital research assets more reusable.\n\n\n \n\n\n \n\n\n\n\n\n\nFAIR Principles for Research Software\n\n\nSoftware-focused FAIR-oriented quality and reuse practices.\n\n\n \n\n\n \n\n\n\n\n\n\nCARE Principles for Indigenous Data Governance\n\n\nGovernance lens for collective benefit, authority, responsibility, and ethics.\n\n\n \n\n\n \n\n\n\n\n\n\nUSDA National Agricultural Library data-management guidance\n\n\nGovernment starting point for agricultural data-management planning.\n\n\n \n\n\n \n\n\n\n\n\n\nCDC Field Epidemiology Manual data-management guidance\n\n\nField-epidemiology guidance for organizing and protecting operational data.\n\n\n \n\n\n \n\n\n\n\n\n\nFGDC geospatial metadata guidance\n\n\nStandards-oriented entry point for describing geospatial data.\n\n\n \n\n\n \n\n\n\n\n\n\nGBIF georeferencing guidance\n\n\nGuidance for documented coordinates and georeferencing uncertainty.\n\n\n \n\n\n \n\n\n\n\n\n\nEcological Metadata Language\n\n\nStructured metadata language for ecological datasets and observations.\n\n\n \n\n\n \n\n\n\n\n\n\nEcological Forecasting Initiative standards\n\n\nCommunity standards and practices for repeatable ecological forecasting.\n\n\n \n\n\n \n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "GeoEpi Lab Book",
+    "section": "",
+    "text": "Draft guidance\n\n\n\nThe Lab Book is a living resource. Draft pages and proposed policy require review; they do not establish approved laboratory policy.\nWelcome to the GeoEpi Lab Book, a shared place for practices that help geographical epidemiology remain understandable, defensible, reproducible, and transferable across people, projects, and time."
+  },
+  {
+    "objectID": "index.html#find-your-next-step",
+    "href": "index.html#find-your-next-step",
+    "title": "GeoEpi Lab Book",
+    "section": "Find your next step",
+    "text": "Find your next step\n\nStart a project for a minimum setup and scope.\nAssess project readiness at lifecycle checkpoints.\nDocument incoming data with a source inventory.\nFind a template for reusable project records.\nPrepare a handoff before responsibility changes.\nReview the minimum standard for the proposed baseline.\nResearch Practices for the lifecycle from planning through preservation.\nDomain Guidance for spatial, epidemiological, ecological, genomic, and modeling topics.\nLab Standards for future lab-level decisions.\nTemplates for reusable project and documentation structures.\nResources for an annotated external catalog.\n\nThe intended outcome is that a lab member can join a project, understand what was done and why, reproduce an important result where access permits, identify uncertainty, and continue the work without relying on undocumented memory."
+  },
+  {
+    "objectID": "about/purpose.html",
+    "href": "about/purpose.html",
+    "title": "Purpose of the Lab Book",
+    "section": "",
+    "text": "Geographical epidemiology joins data, place, time, biology, and models. Small undocumented choices can change an analysis, while staff changes and long timelines can make a sound result difficult to recover."
+  },
+  {
+    "objectID": "about/purpose.html#why-this-matters",
+    "href": "about/purpose.html#why-this-matters",
+    "title": "Purpose of the Lab Book",
+    "section": "",
+    "text": "Geographical epidemiology joins data, place, time, biology, and models. Small undocumented choices can change an analysis, while staff changes and long timelines can make a sound result difficult to recover."
+  },
+  {
+    "objectID": "about/purpose.html#what-this-site-is-for",
+    "href": "about/purpose.html#what-this-site-is-for",
+    "title": "Purpose of the Lab Book",
+    "section": "What this site is for",
+    "text": "What this site is for\nThe Lab Book collects concise, reviewable guidance for planning, acquiring, organizing, analyzing, validating, collaborating, communicating, and preserving research. It points to templates and external resources without replacing primary methods papers, data-use agreements, or formal institutional policies. The Lab Book remains distinct from the GeoEpi organization website and GitHub organization."
+  },
+  {
+    "objectID": "about/purpose.html#what-this-site-is-not",
+    "href": "about/purpose.html#what-this-site-is-not",
+    "title": "Purpose of the Lab Book",
+    "section": "What this site is not",
+    "text": "What this site is not\nThis is not a complete textbook, a substitute for scientific judgment, or an approved policy register. Requirements will be labeled and approved explicitly; until then, content is draft guidance."
+  },
+  {
     "objectID": "about/contributing.html",
     "href": "about/contributing.html",
     "title": "Contributing",
@@ -14,46 +312,11 @@
     "text": "Start with Start Here, then use the lifecycle pages in Research Practices and the domain index when a project has specialized needs.\n\n\n\n\n\n\nRead the labels\n\n\n\nRequired, Recommended, and Optional describe the intended strength of a practice. Draft guidance signals material that has not been approved as lab policy. Example demonstrates a pattern without imposing it.\n\n\nPages include review metadata near the top. Use the repository actions to view or edit source, or report a problem. A page’s owner coordinates review; it is not automatically the sole author."
   },
   {
-    "objectID": "about/purpose.html",
-    "href": "about/purpose.html",
-    "title": "Purpose of the Lab Book",
-    "section": "",
-    "text": "Geographical epidemiology joins data, place, time, biology, and models. Small undocumented choices can change an analysis, while staff changes and long timelines can make a sound result difficult to recover."
-  },
-  {
-    "objectID": "about/purpose.html#what-this-site-is-for",
-    "href": "about/purpose.html#what-this-site-is-for",
-    "title": "Purpose of the Lab Book",
-    "section": "What this site is for",
-    "text": "What this site is for\nThe Lab Book will collect concise, reviewable guidance for planning, acquiring, organizing, analyzing, validating, collaborating, communicating, and preserving research. It will point to templates and external resources without replacing primary methods papers, data-use agreements, or formal institutional policies."
-  },
-  {
-    "objectID": "about/purpose.html#what-this-site-is-not",
-    "href": "about/purpose.html#what-this-site-is-not",
-    "title": "Purpose of the Lab Book",
-    "section": "What this site is not",
-    "text": "What this site is not\nThis is not a complete textbook, a substitute for scientific judgment, or an approved policy register. Requirements will be labeled and approved explicitly; until then, content is draft guidance."
-  },
-  {
     "objectID": "domains/index.html",
     "href": "domains/index.html",
     "title": "Domain Guidance",
     "section": "",
     "text": "Future guidance will connect general research practices to the risks and conventions of spatial, epidemiological, ecological, genomic, and modeling work. Potential topics include coordinate reference systems, geocoding, case definitions, sampling and detection, genomic provenance, model checking, uncertainty, and responsible communication.\nDomain pages should be developed with subject-matter review and should not be inferred from the resource catalog alone."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "GeoEpi Lab Book",
-    "section": "",
-    "text": "Draft guidance\n\n\n\nThis is an initial information-architecture pass. It describes intended practices and future content; it does not establish approved laboratory policy.\nWelcome to the GeoEpi Lab Book, a shared place for practices that help geographical epidemiology remain understandable, defensible, reproducible, and transferable across people, projects, and time."
-  },
-  {
-    "objectID": "index.html#find-your-next-step",
-    "href": "index.html#find-your-next-step",
-    "title": "GeoEpi Lab Book",
-    "section": "Find your next step",
-    "text": "Find your next step\n\nStart Here for a minimum standard, new-project setup, rescue work, and handoff.\nResearch Practices for the lifecycle from planning through preservation.\nDomain Guidance for spatial, epidemiological, ecological, genomic, and modeling topics.\nLab Standards for future lab-level decisions.\nTemplates for reusable project and documentation structures.\nResources for an annotated external catalog.\n\nThe intended outcome is that a lab member can join a project, understand what was done and why, reproduce an important result where access permits, identify uncertainty, and continue the work without relying on undocumented memory."
   },
   {
     "objectID": "practices/index.html",
@@ -63,178 +326,272 @@
     "text": "This section will grow around the research lifecycle:\nplan → acquire → organize → analyze → validate → collaborate → communicate → preserve\nEach topic will distinguish minimum, recommended, and stronger practices, with examples and templates. Initial topic pages are deferred until they can be written from reviewed lab decisions rather than generic filler."
   },
   {
-    "objectID": "resources/index.html",
-    "href": "resources/index.html",
-    "title": "Resources",
+    "objectID": "standards/geoepi-practice-audit.html",
+    "href": "standards/geoepi-practice-audit.html",
+    "title": "GeoEpi Practice Audit",
     "section": "",
-    "text": "The resource catalog records external starting points without turning them into lab policy. Annotations are intentionally short and original. Check the source landing page, license, version, and access conditions before relying on a resource.\nEach entry has a stable ID, title, URL, author or organization, resource and authority types, topic tags, license, access date, relevant sections, a local research-note path, review status, and a short annotation. Unknown or unverified values are marked explicitly.\n\n\n\n\n\n\nWarning\n\n\n\nCatalog inclusion is not endorsement. Resources may be useful, outdated, inaccessible, or governed by licenses that limit reuse.\n\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Description\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\nDescription\n\n\nAuthor\n\n\nCategories\n\n\n\n\n\n\nA Primer of Ecology with R\n\n\nQuantitative ecology concepts and R-based models.\n\n\n\n\n\n\n\n\nLandscape Genetic Data Analysis with R\n\n\nSeed entry for landscape-genetics workflows.\n\n\n\n\n\n\n\n\nQuantitative Biology\n\n\nBroad seed entry requiring exact title and edition verification.\n\n\n\n\n\n\n\n\nComparative Methods\n\n\nSeed entry for comparative analysis.\n\n\n\n\n\n\n\n\nSpatial Data Science\n\n\nStarting point for spatial analysis concepts and tools.\n\n\n\n\n\n\n\n\nStatistical Rethinking\n\n\nModel-centered introduction to Bayesian reasoning.\n\n\n\n\n\n\n\n\nApplied Population Genetics\n\n\nSeed entry requiring title and edition confirmation.\n\n\n\n\n\n\n\n\nThe Epidemiologist R Handbook\n\n\nTask-oriented R reference for applied epidemiology.\n\n\n\n\n\n\n\n\nNetwork Analysis in R\n\n\nSeed entry for network analysis workflows in R.\n\n\n\n\n\n\n\n\nMolecular Epi in R\n\n\nSeed entry retained for later identification.\n\n\n\n\n\n\n\n\nIntro to GIS and Spatial Analysis\n\n\nCourse notes introducing GIS and spatial analysis.\n\n\n\n\n\n\n\n\nA Practical Guide to Ecosystem Forecasting\n\n\nCommunity entry point for ecological forecasting practice.\n\n\n\n\n\n\n\n\nComputational Genomics Manual\n\n\nSeed entry requiring identification of the intended manual.\n\n\n\n\n\n\n\n\nSpatial Data Processing with R\n\n\nIndex of R packages and resources for spatial data work.\n\n\n\n\n\n\n\n\nGeocomputation with R\n\n\nOpen book for geographic data analysis, visualization, and modeling.\n\n\n\n\n\n\n\n\nNetwork Analysis: Integrating Social Network Theory, Method, and Application with R\n\n\nSeed for theory-to-application network analysis in R.\n\n\n\n\n\n\n\n\nThe Turing Way\n\n\nCommunity handbook on reproducible, ethical, collaborative data science.\n\n\n\n\n\n\n\n\nGood Enough Practices in Scientific Computing\n\n\nCompact recommendations for dependable scientific computing.\n\n\n\n\n\n\n\n\nTIER Protocol\n\n\nProtocol for transparent empirical research workflows.\n\n\n\n\n\n\n\n\nRDMkit\n\n\nRole- and task-oriented research data-management guidance.\n\n\n\n\n\n\n\n\nDataONE Best Practices\n\n\nPractical guidance for managing and preserving research data.\n\n\n\n\n\n\n\n\nFAIR Principles\n\n\nVocabulary for making digital research assets more reusable.\n\n\n\n\n\n\n\n\nFAIR Principles for Research Software\n\n\nSoftware-focused FAIR-oriented quality and reuse practices.\n\n\n\n\n\n\n\n\nCARE Principles for Indigenous Data Governance\n\n\nGovernance lens for collective benefit, authority, responsibility, and ethics.\n\n\n\n\n\n\n\n\nUSDA National Agricultural Library data-management guidance\n\n\nGovernment starting point for agricultural data-management planning.\n\n\n\n\n\n\n\n\nCDC Field Epidemiology Manual data-management guidance\n\n\nField-epidemiology guidance for organizing and protecting operational data.\n\n\n\n\n\n\n\n\nFGDC geospatial metadata guidance\n\n\nStandards-oriented entry point for describing geospatial data.\n\n\n\n\n\n\n\n\nGBIF georeferencing guidance\n\n\nGuidance for documented coordinates and georeferencing uncertainty.\n\n\n\n\n\n\n\n\nEcological Metadata Language\n\n\nStructured metadata language for ecological datasets and observations.\n\n\n\n\n\n\n\n\nEcological Forecasting Initiative standards\n\n\nCommunity standards and practices for repeatable ecological forecasting.\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Internal draft\n\n\n\nThis is an informational practice audit, not a quality score, ranking, or assessment of scientific correctness. It records observable repository and website practices and requires human review."
   },
   {
-    "objectID": "standards/index.html",
-    "href": "standards/index.html",
-    "title": "Lab Standards",
-    "section": "",
-    "text": "This section is reserved for decisions that the lab has reviewed and adopted. Draft guidance elsewhere should not be treated as a standard by implication.\nA future standard should state its scope, rationale, owner, effective date, review cycle, exceptions process, and relationship to institutional or funder requirements."
+    "objectID": "standards/geoepi-practice-audit.html#review-boundary",
+    "href": "standards/geoepi-practice-audit.html#review-boundary",
+    "title": "GeoEpi Practice Audit",
+    "section": "Review boundary",
+    "text": "Review boundary\nThe audit reviewed the GeoEpi organization profile, the public organization website repository, the organization .github repository, the public Notebook repository, and eight purposively selected research repositories. The review date was 2026-08-05. The machine-readable observations are in standards/data/geoepi-repository-audit.csv.\nThe review examined public repository trees, READMEs, key workflow and documentation files, GitHub workflow directories, repository license metadata and license files, citation files or references, test paths, and plausible entry points. No code was executed and no scientific validation or compliance review was performed. A yes means that an artifact was visible and usable enough for this limited review; partial, unclear, and no do not imply that a practice is absent from private archives, external services, or project knowledge."
   },
   {
-    "objectID": "start/handoff.html",
-    "href": "start/handoff.html",
-    "title": "Project Handoff",
-    "section": "",
-    "text": "A handoff is complete when the next person can orient themselves, reproduce the current key result where access permits, and see what remains uncertain."
+    "objectID": "standards/geoepi-practice-audit.html#organization-references",
+    "href": "standards/geoepi-practice-audit.html#organization-references",
+    "title": "GeoEpi Practice Audit",
+    "section": "Organization references",
+    "text": "Organization references\nThe GeoEpi organization profile describes work on animal disease transmission and outbreak dynamics and links the group website and research notebook. The profile describes the Notebook as a living resource for reproducible science in scientific computing, coding, data management, and modeling, and explicitly says it is not a compendium of rigid requirements. The organization .github profile repeats this scope and points to OSF for project management, storage, version control, and archival support.\nThe organization website was reviewed for navigation, typography, neutral colors, logo/favicon assets, and the distinction between a research-group homepage and an operational notebook. Its research scope spans statistical and mathematical modeling, bioinformatics, artificial intelligence, and molecular-to-landscape scales. These observations inform limited visual continuity; they do not authorize copying the website structure or branding wholesale."
   },
   {
-    "objectID": "start/handoff.html#handoff-packet",
-    "href": "start/handoff.html#handoff-packet",
-    "title": "Project Handoff",
-    "section": "Handoff packet",
-    "text": "Handoff packet\n\npurpose, scope, stakeholders, and current status;\nREADME and directory map;\ndata inventory, provenance, permissions, and retention notes;\ncurrent analysis path and software/environment notes;\nkey outputs with dates, versions, and interpretation limits;\ndecision log, open issues, and recommended next actions;\nnamed owner for the next review.\n\n\n\n\n\n\n\nTip\n\n\n\nAsk the recipient to perform an orientation walkthrough and one small reproduction check. Update the handoff note with what they could and could not recover."
+    "objectID": "standards/geoepi-practice-audit.html#repositories-reviewed",
+    "href": "standards/geoepi-practice-audit.html#repositories-reviewed",
+    "title": "GeoEpi Practice Audit",
+    "section": "Repositories reviewed",
+    "text": "Repositories reviewed\n\n\n\nRepository\nWorkflow represented\nObservable practices used as evidence\n\n\n\n\nEpiPlume\nPlume, spatial, targets, and HPC\nREADME, configuration, rendered documentation, Slurm scripts, run manifests, provenance-like ledgers, and tests\n\n\nhominivorax-geostat\nSpatial geostatistical model\nREADME structure map, Quarto pages, R scripts, rendered site, and OSF archive link\n\n\nvs-epizootics\nSpatiotemporal and phylogenetic analysis\nREADME, Quarto site, data assets, OSF archive link, publication link, and MIT license\n\n\nWNV-genomics\nGenomics analysis\nMinimal README, scripts, sequence alignments, summary data, and source files\n\n\nseir-vector\nEpidemiological and mathematical model\nREADME, R model code, Stan code, rendered diagnostics, Shiny app, OSF archive link, and GPL-3.0 license\n\n\nFMD-preclinical-spread\nEpidemiological model and report\nREADME, R scripts, Quarto sources, rendered sites, and OSF archive link\n\n\nvsv-2023\nOutbreak model and report\nREADME, R scripts, model report, and rendered figures\n\n\nphylo-tutorial\nGenomics/phylogenetics tutorial and HPC\nREADME, exercises, FASTA data, BEAST configuration, Slurm scripts, cluster logs, and rendered overview"
+  },
+  {
+    "objectID": "standards/geoepi-practice-audit.html#workflow-types-represented",
+    "href": "standards/geoepi-practice-audit.html#workflow-types-represented",
+    "title": "GeoEpi Practice Audit",
+    "section": "Workflow types represented",
+    "text": "Workflow types represented\nThe sample covers spatial and spatiotemporal analysis, outbreak and surveillance analysis, ecological or field-adjacent data, genomics and phylogenetics, mathematical and simulation models, rendered supporting-information sites, interactive applications, and high-performance computing. That diversity supports a project standard based on traceability and handoff rather than a single folder tree or software stack."
+  },
+  {
+    "objectID": "standards/geoepi-practice-audit.html#recurring-strengths",
+    "href": "standards/geoepi-practice-audit.html#recurring-strengths",
+    "title": "GeoEpi Practice Audit",
+    "section": "Recurring strengths",
+    "text": "Recurring strengths\nAcross the sample, the most reusable strengths were:\n\na project-level README that states a research purpose or links to a paper;\nR scripts grouped in a recognizable location;\nrendered Quarto or HTML documentation for project outputs;\nlinks to OSF or another external archive for large or supporting material;\nexplicit configuration files, manifests, workflow orchestration, or batch scripts in the more computationally intensive projects;\nproject-specific assets such as spatial layers, sequences, model objects, or rendered figures kept near the workflow that uses them;\ndemonstrable links between public code, supporting information, and publications in several projects.\n\nThese are observed practices, not proof that the underlying analyses are correct. The proposed standard treats purpose, provenance, traceability, and handoff as the common layer and leaves tools proportional to project needs."
+  },
+  {
+    "objectID": "standards/geoepi-practice-audit.html#recurring-documentation-gaps",
+    "href": "standards/geoepi-practice-audit.html#recurring-documentation-gaps",
+    "title": "GeoEpi Practice Audit",
+    "section": "Recurring documentation gaps",
+    "text": "Recurring documentation gaps\nThe sample showed inconsistent or hard-to-find records for software environments, data classification and restrictions, source-to-derived transformations, checksums or acquisition dates, output/run inventories, decision history, tests and CI, citation metadata, licenses, and closeout/handoff status. Several repositories contain useful rendered products but do not make the authoritative source, current execution path, or reproducibility boundary obvious from the top-level README.\nThese are aggregate observations from a limited public snapshot. A gap means that the item was not readily discoverable during this review; it does not mean that project members have not documented it elsewhere. This page is provisional, is based only on public repository contents, is not a compliance review, and is not a ranking."
+  },
+  {
+    "objectID": "standards/geoepi-practice-audit.html#practices-mature-enough-to-standardize",
+    "href": "standards/geoepi-practice-audit.html#practices-mature-enough-to-standardize",
+    "title": "GeoEpi Practice Audit",
+    "section": "Practices mature enough to standardize",
+    "text": "Practices mature enough to standardize\nThe following are sufficiently cross-cutting to propose as minimum requirements: project identity and ownership; a current README; documented separation of source, staged, derived, code, configuration, documentation, outputs, logs, and temporary material; source-data protection; data provenance; data classification; data dictionaries; retained scripted transformations; version control with explicit exclusions; proportional environment records; explicit consequential parameters; quality checks appropriate to the workflow; result traceability; durable decision records; release readiness; and handoff/closeout records."
+  },
+  {
+    "objectID": "standards/geoepi-practice-audit.html#recommended-rather-than-universal",
+    "href": "standards/geoepi-practice-audit.html#recommended-rather-than-universal",
+    "title": "GeoEpi Practice Audit",
+    "section": "Recommended rather than universal",
+    "text": "Recommended rather than universal\nThe following should remain recommended or conditional: one universal directory tree; renv for every R project; containers; continuous integration; unit-test coverage; workflow orchestration; formal metadata standards such as EML; checksums for every file; public release of data; notebooks as the primary execution format; OSF or any one storage provider; and a specific HPC scheduler. They become conditionally required when project sensitivity, scale, operational consequence, computational cost, publication commitments, or handoff risk makes them necessary."
+  },
+  {
+    "objectID": "standards/geoepi-practice-audit.html#repository-specific-patterns-not-generalized",
+    "href": "standards/geoepi-practice-audit.html#repository-specific-patterns-not-generalized",
+    "title": "GeoEpi Practice Audit",
+    "section": "Repository-specific patterns not generalized",
+    "text": "Repository-specific patterns not generalized\nTargets and Slurm manifest ledgers in EpiPlume, BEAST XML and cluster scripts in phylo-tutorial, Shiny delivery in seir-vector, and publication-oriented rendered sites in several repositories are valuable patterns but are not universal minimums. A repository may use Quarto, R Markdown, a workflow engine, a scheduler, a database, a notebook, or a scripted command-line entry point when the chosen path is documented and traceable."
+  },
+  {
+    "objectID": "standards/geoepi-practice-audit.html#discrepancies-and-unresolved-interpretation",
+    "href": "standards/geoepi-practice-audit.html#discrepancies-and-unresolved-interpretation",
+    "title": "GeoEpi Practice Audit",
+    "section": "Discrepancies and unresolved interpretation",
+    "text": "Discrepancies and unresolved interpretation\nRepositories differ in default branch name, whether rendered output is committed, where data are stored, whether a project is a tutorial or publication package, and whether an external archive is part of the authoritative workflow. Public repositories also expose only a subset of access-controlled data and institutional records. Human review is needed to decide institutional terminology for data classification, approved storage and retention, release review, licensing, authorship, and exception authority. These decisions are collected in Open policy decisions."
+  },
+  {
+    "objectID": "standards/geoepi-practice-audit.html#external-guidance-used-for-comparison",
+    "href": "standards/geoepi-practice-audit.html#external-guidance-used-for-comparison",
+    "title": "GeoEpi Practice Audit",
+    "section": "External guidance used for comparison",
+    "text": "External guidance used for comparison\nThe external comparison used the existing resource catalog, with access dates recorded there and here. The Turing Way emphasizes reproducible research, version control, data management, documentation, testing, review, and collaboration as connected practices. Good Enough Practices in Scientific Computing provides a deliberately pragmatic baseline for research computing. TIER Protocol 4.0 provides a replication-documentation model, while RDMkit organizes FAIR-oriented data management by lifecycle, role, domain, task, and tools.\nThe FAIR Principles and FAIR Principles for Research Software support findability, accessibility, interoperability, reuse, software quality, and citation. The CARE Principles add collective benefit, authority to control, responsibility, and ethics for Indigenous data. Government and domain-specific comparison points include USDA NAL data-management guidance, the CDC Field Epidemiology Manual, FGDC metadata guidance, GBIF georeferencing best practices, Ecological Metadata Language, and Ecological Forecasting Initiative standards.\nThese sources are guidance, standards, or community practices—not institutional policy. Where they conflict with USDA, laboratory, information-security, records-management, contractual, privacy, or data-governance requirements, the authoritative requirement controls and the project records the constraint."
+  },
+  {
+    "objectID": "standards/geoepi-practice-audit.html#limitations",
+    "href": "standards/geoepi-practice-audit.html#limitations",
+    "title": "GeoEpi Practice Audit",
+    "section": "Limitations",
+    "text": "Limitations\nThis is a point-in-time review of public repository material, not an audit of access-controlled archives, computational execution, scientific validity, or compliance. The CSV is intentionally descriptive and must not be used to score or rank repositories."
+  },
+  {
+    "objectID": "standards/open-policy-decisions.html",
+    "href": "standards/open-policy-decisions.html",
+    "title": "Open Policy Decisions",
+    "section": "",
+    "text": "Human approval required\n\n\n\nThis page records open decisions. It does not establish institutional policy or authorize a storage system, classification scheme, retention period, release process, or use of generative AI.\nThe owner, evidence, status, and review point below are role-based placeholders. No named individuals are assigned."
+  },
+  {
+    "objectID": "standards/open-policy-decisions.html#interim-treatment",
+    "href": "standards/open-policy-decisions.html#interim-treatment",
+    "title": "Open Policy Decisions",
+    "section": "Interim treatment",
+    "text": "Interim treatment\nRecord applicable restrictions without inventing official labels. Use the approved system named by the data owner or agreement. Do not upload restricted data, PII, credentials, unpublished confidential material, or protected research content to an unapproved service. Preserve upstream license terms and record uncertainty. Legal, privacy, security, contractual, and institutional requirements cannot be waived by a project exception.\nUntil approved, each item should receive an evidence-backed decision, decision date, and review date. The proposed standard should then be revised rather than silently converting assumptions into policy."
   },
   {
     "objectID": "start/index.html",
     "href": "start/index.html",
     "title": "Start Here",
     "section": "",
-    "text": "Use this section when starting a project, inheriting one, or trying to make an existing project recoverable.\n\nMinimum GeoEpi Standard\nStarting a New Project\nRescuing an Existing Project\nProject Handoff\n\nThese are provisional foundations for discussion, not approved lab policy."
-  },
-  {
-    "objectID": "start/minimum-standard.html",
-    "href": "start/minimum-standard.html",
-    "title": "Minimum GeoEpi Standard",
-    "section": "",
-    "text": "Warning\n\n\n\nThe items below are a proposed baseline for review, not an approved requirement."
-  },
-  {
-    "objectID": "start/minimum-standard.html#why-this-matters",
-    "href": "start/minimum-standard.html#why-this-matters",
-    "title": "Minimum GeoEpi Standard",
-    "section": "Why this matters",
-    "text": "Why this matters\nA small, consistent record of purpose, inputs, decisions, and outputs is often more valuable than a large but unexplained project folder."
-  },
-  {
-    "objectID": "start/minimum-standard.html#proposed-baseline",
-    "href": "start/minimum-standard.html#proposed-baseline",
-    "title": "Minimum GeoEpi Standard",
-    "section": "Proposed baseline",
-    "text": "Proposed baseline\n\nA README states the question, scope, owner, status, and how to orient a newcomer.\nRaw or received data are preserved separately from derived data, respecting access restrictions.\nImportant inputs have a source, acquisition date, and processing note.\nAnalysis steps and assumptions are recorded in version-controlled text where feasible.\nKey outputs identify the code, data, software environment, and review status used to create them.\nLimitations, unresolved questions, and next actions are visible."
-  },
-  {
-    "objectID": "start/minimum-standard.html#checklist",
-    "href": "start/minimum-standard.html#checklist",
-    "title": "Minimum GeoEpi Standard",
-    "section": "Checklist",
-    "text": "Checklist\n\nQuestion, scope, and decision context are stated.\nData provenance and permissions are recorded.\nProject structure is documented.\nImportant transformations are traceable.\nA second person can find the current result and its caveats."
+    "text": "Use this section when starting a project, inheriting one, or trying to make an existing project recoverable.\n\nMinimum GeoEpi Standard\nStarting a New Project\nRescuing an Existing Project\nProject Handoff\n\nThe Minimum GeoEpi Project Standard is a proposed draft policy requiring human review. The supporting pages are practical guidance, not approved lab policy.",
+    "crumbs": [
+      "Start Here"
+    ]
   },
   {
     "objectID": "start/new-project.html",
     "href": "start/new-project.html",
     "title": "Starting a New Project",
     "section": "",
-    "text": "Early decisions about scope, ownership, data access, and outputs prevent avoidable rework."
+    "text": "Early decisions about scope, ownership, data access, and outputs prevent avoidable rework.",
+    "crumbs": [
+      "Start Here",
+      "Starting a New Project"
+    ]
+  },
+  {
+    "objectID": "start/new-project.html#why-this-matters",
+    "href": "start/new-project.html#why-this-matters",
+    "title": "Starting a New Project",
+    "section": "",
+    "text": "Early decisions about scope, ownership, data access, and outputs prevent avoidable rework.",
+    "crumbs": [
+      "Start Here",
+      "Starting a New Project"
+    ]
   },
   {
     "objectID": "start/new-project.html#suggested-sequence",
     "href": "start/new-project.html#suggested-sequence",
     "title": "Starting a New Project",
     "section": "Suggested sequence",
-    "text": "Suggested sequence\n\nWrite a project brief: question, population, geography, time period, outcomes, stakeholders, and intended outputs.\nIdentify data stewards, permissions, privacy constraints, and retention expectations before acquisition.\nCreate a version-controlled project skeleton with a README, metadata, and decision log.\nRecord the analysis plan and distinguish exploratory from confirmatory work.\nDefine validation checks and a handoff point before analysis begins.\nReview the setup with a collaborator not involved in the initial design."
+    "text": "Suggested sequence\n\nWrite a project brief: question, population, geography, time period, outcomes, stakeholders, and intended outputs.\nIdentify data stewards, permissions, privacy constraints, and retention expectations before acquisition.\nCreate a version-controlled project skeleton with a README, metadata, and decision log.\nRecord the analysis plan and distinguish exploratory from confirmatory work.\nDefine validation checks and a handoff point before analysis begins.\nReview the setup with a collaborator not involved in the initial design.",
+    "crumbs": [
+      "Start Here",
+      "Starting a New Project"
+    ]
   },
   {
     "objectID": "start/new-project.html#checklist",
     "href": "start/new-project.html#checklist",
     "title": "Starting a New Project",
     "section": "Checklist",
-    "text": "Checklist\n\nProject brief and scope are reviewable.\nRoles and decision rights are named.\nData access and ethical constraints are documented.\nPlanned outputs and validation are explicit."
-  },
-  {
-    "objectID": "start/rescue-project.html",
-    "href": "start/rescue-project.html",
-    "title": "Rescuing an Existing Project",
-    "section": "",
-    "text": "Trying to perfect an inherited project before understanding it can destroy useful context. Rescue begins with a safe inventory and a clear uncertainty record."
-  },
-  {
-    "objectID": "start/rescue-project.html#triage-sequence",
-    "href": "start/rescue-project.html#triage-sequence",
-    "title": "Rescuing an Existing Project",
-    "section": "Triage sequence",
-    "text": "Triage sequence\n\nFreeze and preserve the current state; do not silently overwrite inputs or outputs.\nInventory files, scripts, data locations, access constraints, environments, and recent results.\nAsk the previous owner or stakeholders what is trusted, provisional, or broken.\nReconstruct the smallest defensible path from an input to a named result.\nRecord gaps as risks and choose a stopping point for rescue work.\nCreate a handoff note before making major changes.\n\n\n\n\n\n\n\nImportant\n\n\n\nUnlabeled cleanup can erase provenance. Keep a dated rescue log and preserve the original state when permissions and storage allow."
+    "text": "Checklist\n\nProject brief and scope are reviewable.\nRoles and decision rights are named.\nData access and ethical constraints are documented.\nPlanned outputs and validation are explicit.",
+    "crumbs": [
+      "Start Here",
+      "Starting a New Project"
+    ]
   },
   {
     "objectID": "templates/authoring-template.html",
     "href": "templates/authoring-template.html",
     "title": "Guidance Page Authoring Template",
     "section": "",
-    "text": "Template only\n\n\n\nReplace bracketed prompts. This page is not lab guidance and should not be cited as a requirement."
+    "text": "Template only\n\n\n\nReplace bracketed prompts. This page is not lab guidance and should not be cited as a requirement.",
+    "crumbs": [
+      "Templates",
+      "Guidance Page Authoring Template"
+    ]
   },
   {
     "objectID": "templates/authoring-template.html#why-this-matters",
     "href": "templates/authoring-template.html#why-this-matters",
     "title": "Guidance Page Authoring Template",
     "section": "Why this matters",
-    "text": "Why this matters\n[Describe the decision, risk, or recurring problem in original language.]"
+    "text": "Why this matters\n[Describe the decision, risk, or recurring problem in original language.]",
+    "crumbs": [
+      "Templates",
+      "Guidance Page Authoring Template"
+    ]
   },
   {
     "objectID": "templates/authoring-template.html#minimum-lab-practice",
     "href": "templates/authoring-template.html#minimum-lab-practice",
     "title": "Guidance Page Authoring Template",
     "section": "Minimum lab practice",
-    "text": "Minimum lab practice\n[Describe the smallest proportionate practice. Label it draft until approved.]"
+    "text": "Minimum lab practice\n[Describe the smallest proportionate practice. Label it draft until approved.]",
+    "crumbs": [
+      "Templates",
+      "Guidance Page Authoring Template"
+    ]
   },
   {
     "objectID": "templates/authoring-template.html#recommended-practice",
     "href": "templates/authoring-template.html#recommended-practice",
     "title": "Guidance Page Authoring Template",
     "section": "Recommended practice",
-    "text": "Recommended practice\n[Describe a stronger default and when it is useful.]"
+    "text": "Recommended practice\n[Describe a stronger default and when it is useful.]",
+    "crumbs": [
+      "Templates",
+      "Guidance Page Authoring Template"
+    ]
   },
   {
     "objectID": "templates/authoring-template.html#stronger-practice",
     "href": "templates/authoring-template.html#stronger-practice",
     "title": "Guidance Page Authoring Template",
     "section": "Stronger practice",
-    "text": "Stronger practice\n[Describe additional assurance, automation, or review for higher-risk work.]"
+    "text": "Stronger practice\n[Describe additional assurance, automation, or review for higher-risk work.]",
+    "crumbs": [
+      "Templates",
+      "Guidance Page Authoring Template"
+    ]
   },
   {
     "objectID": "templates/authoring-template.html#common-failure-modes",
     "href": "templates/authoring-template.html#common-failure-modes",
     "title": "Guidance Page Authoring Template",
     "section": "Common failure modes",
-    "text": "Common failure modes\n\n[Failure mode and consequence]\n[Failure mode and consequence]"
+    "text": "Common failure modes\n\n[Failure mode and consequence]\n[Failure mode and consequence]",
+    "crumbs": [
+      "Templates",
+      "Guidance Page Authoring Template"
+    ]
   },
   {
     "objectID": "templates/authoring-template.html#checklist",
     "href": "templates/authoring-template.html#checklist",
     "title": "Guidance Page Authoring Template",
     "section": "Checklist",
-    "text": "Checklist\n\n[Actionable check]\n[Actionable check]"
+    "text": "Checklist\n\n[Actionable check]\n[Actionable check]",
+    "crumbs": [
+      "Templates",
+      "Guidance Page Authoring Template"
+    ]
   },
   {
     "objectID": "templates/authoring-template.html#templates-and-examples",
     "href": "templates/authoring-template.html#templates-and-examples",
     "title": "Guidance Page Authoring Template",
     "section": "Templates and examples",
-    "text": "Templates and examples\n[Link to related internal templates or clearly labeled examples.]"
+    "text": "Templates and examples\n[Link to related internal templates or clearly labeled examples.]",
+    "crumbs": [
+      "Templates",
+      "Guidance Page Authoring Template"
+    ]
   },
   {
     "objectID": "templates/authoring-template.html#sources",
     "href": "templates/authoring-template.html#sources",
     "title": "Guidance Page Authoring Template",
     "section": "Sources",
-    "text": "Sources\n[Add citations and access dates. Do not copy source text.]"
+    "text": "Sources\n[Add citations and access dates. Do not copy source text.]",
+    "crumbs": [
+      "Templates",
+      "Guidance Page Authoring Template"
+    ]
   },
   {
     "objectID": "templates/authoring-template.html#metadata-convention",
     "href": "templates/authoring-template.html#metadata-convention",
     "title": "Guidance Page Authoring Template",
     "section": "Metadata convention",
-    "text": "Metadata convention\nRequired front matter: title, description, status, practice-level, audience, domains, topics, owner, last-reviewed, and review-cycle.\nRecommended values are draft | proposed | approved | retired | template for status; orientation | minimum | recommended | stronger | example for practice level; and annual | semiannual | event-driven for review cycle. Dates use ISO 8601 (YYYY-MM-DD); tags are lowercase and concise. approved requires an explicit lab review decision."
-  },
-  {
-    "objectID": "templates/index.html",
-    "href": "templates/index.html",
-    "title": "Templates",
-    "section": "",
-    "text": "The template library reduces blank-page friction without forcing every project into one shape.\n\nGuidance page authoring template\nFuture additions may include project briefs, data inventories, decision logs, validation plans, and handoff notes.\n\nTemplates are examples until explicitly adopted; adapt them to the project and document meaningful deviations.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\nDescription\n\n\nstatus\n\n\n\n\n\n\nGuidance Page Authoring Template\n\n\nA reusable, non-substantive template for future Lab Book pages.\n\n\ntemplate\n\n\n\n\n\n\nNo matching items"
+    "text": "Metadata convention\nRequired front matter: title, description, status, practice-level, audience, domains, topics, owner, last-reviewed, and review-cycle.\nRecommended values are draft | proposed | approved | retired | template for status; orientation | minimum | recommended | stronger | example for practice level; and annual | semiannual | event-driven for review cycle. Dates use ISO 8601 (YYYY-MM-DD); tags are lowercase and concise. approved requires an explicit lab review decision.",
+    "crumbs": [
+      "Templates",
+      "Guidance Page Authoring Template"
+    ]
   }
 ]
