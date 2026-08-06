@@ -1,0 +1,55 @@
+---
+title: "Prediction and Forecast Validation"
+description: "Evaluate predictive claims using data separation and evidence that matches the intended use."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - validation
+  - forecasting
+  - spatial-analysis
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+## When this page applies
+
+Use this guidance for predictive models, forecasts, risk maps, classifiers, early-warning systems, species or disease distribution predictions, spatial interpolation intended for prediction, and operational decision tools. Do not force predictive validation onto analyses that make no predictive claim.
+
+## Define the prediction task
+
+Record prediction target, forecast horizon, geographic and temporal support, target population, prediction unit, update frequency, intended decision or user, and outcome prevalence or base rate where relevant.
+
+## Separate development and evaluation
+
+- **Training data** are used to estimate the model.
+- **Tuning data** are used to choose settings or model form.
+- **Evaluation data** are reserved for assessing performance.
+- **External validation data** come from a meaningfully different setting, population, location, or time.
+
+Do not call evaluation external unless it is genuinely separate in a scientifically meaningful way.
+
+## Cross-validation and data leakage
+
+**Cross-validation** repeatedly fits and evaluates a model using different data subsets. Random splitting may mislead when data are spatially clustered, temporally ordered, grouped by herd, facility, county, site, host, outbreak, or individual, repeatedly measured, or strongly autocorrelated. Use grouping, spatial blocking, temporal blocking, rolling-origin evaluation, or prospective evaluation when those better represent intended use.
+
+**Data leakage** occurs when information from the evaluation period or units influences model development. Examples include calculating transformations using all years before splitting, using future observations in a forecast predictor, allowing the same individual or outbreak in both sets, selecting variables after viewing evaluation results, or using revised data unavailable at the historical forecast date.
+
+## Performance evidence
+
+Choose measures that match the purpose. Evidence may include prediction error, absolute or squared error, calibration, discrimination, sensitivity and specificity, precision and recall, interval coverage, forecast sharpness, rank correlation, spatial accuracy, threshold utility, and decision consequences.
+
+**Calibration** is agreement between predicted values or probabilities and observations. **Discrimination** is the ability to distinguish higher-risk from lower-risk observations. **Interval coverage** is how often observed outcomes fall inside stated uncertainty intervals. Do not prescribe one universal metric.
+
+## Baselines and scope
+
+Compare with meaningful simple alternatives where possible: historical average, persistence, seasonal expectation, simple spatial or temporal model, current operational rule, or null model. A complex model should not be judged only against no model.
+
+Distinguish retrospective reconstruction, hindcasting, rolling historical evaluation, prospective forecasting, and external evaluation. A retrospectively strong model is not automatically supported for prospective use.
+
+Predictive support applies only to the evaluated population, geography, time period, forecast horizon, outcome definition, data availability conditions, and operational process.

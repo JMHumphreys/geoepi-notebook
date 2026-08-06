@@ -42,7 +42,7 @@ Record as appropriate: result ID and name, analysis ID and version, direct input
 
 Use **planned**, **produced**, **incomplete**, **candidate for validation**, **failed**, or **superseded**. The safe default is **planned**. **Produced** means the output exists. **Candidate for validation** means the analysis-level readiness decision selected the result for checking in Validate. Validation itself has not yet occurred.
 
-Keep the levels distinct: a run status describes what happened during one execution; a result status describes what happened to one output; analysis readiness describes whether the documented analysis and its named candidate results may enter Validate. The analysis specification or equivalent analysis-level record is the authoritative readiness decision.
+Keep the levels distinct: a run status describes what happened during one execution; a result status describes what happened to one output; analysis readiness describes whether the documented analysis and its named candidate results may enter Validate. The analysis specification or equivalent analysis-level record is the authoritative readiness decision. Candidate result IDs should be referenced by the [validation plan](../validate/validation-plan.qmd) and [validation decisions and records](../validate/validation-decisions-and-records.qmd).
 
 ## Manuscripts and reports
 

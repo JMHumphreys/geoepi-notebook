@@ -1,0 +1,105 @@
+---
+title: "Validate"
+description: "Assess whether candidate results are supported for a defined use, scope, and decision context."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - validation
+  - diagnostics
+  - uncertainty
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+Validation is not one test and not a final stamp of truth. It is a structured assessment of whether available evidence supports candidate results for a defined use, population, place, time, scale, and decision context.
+
+## Three questions
+
+1. Was the recorded analysis carried out correctly and completely?
+2. Does the method behave adequately for its intended scientific purpose?
+3. How strong and how limited is the evidence supporting the candidate result?
+
+## Verification versus validation
+
+**Verification** asks whether the recorded analysis was implemented and completed as intended. Confirming that all simulation replicates ran or that a forecast used the intended training period is verification.
+
+**Validation** asks whether evidence supports using the result for its stated purpose. Evaluating whether a simulation represents relevant biological behavior or whether a forecast performs on later observations is validation.
+
+Both matter, but they answer different questions. Validation does not prove that a model is universally correct or permanently valid.
+
+## Validate workflow
+
+1. Confirm the analysis version and candidate result IDs.
+2. State the intended use and claims being assessed.
+3. Define validation questions and planned evidence.
+4. Verify analysis inputs, execution, and outputs.
+5. Examine assumptions, diagnostics, and model behavior.
+6. Evaluate predictions or forecasts where applicable.
+7. Examine sensitivity, robustness, and uncertainty.
+8. Compare with independent evidence or expected domain behavior.
+9. Record failed, mixed, and inconclusive findings.
+10. Decide whether candidate results support their stated use.
+
+```{mermaid}
+flowchart TD
+  candidates[Candidate results from Analyze] --> plan[Validation questions and plan]
+  plan --> verify[Verification and completeness]
+  verify --> evidence[Diagnostics and performance evidence]
+  evidence --> uncertainty[Sensitivity, robustness, and uncertainty]
+  uncertainty --> conclusion[Scoped validation conclusion]
+```
+
+## Starting points
+
+| Need | Guidance |
+|---|---|
+| State intended use and plan evidence | [Validation plan](validation-plan.qmd) |
+| Confirm analyses and outputs are complete | [Verify analysis and outputs](verify-analysis-and-outputs.qmd) |
+| Review assumptions and diagnostics | [Assumptions, diagnostics, and fit](assumptions-diagnostics-and-fit.qmd) |
+| Evaluate a prediction or forecast | [Prediction and forecast validation](prediction-and-forecast-validation.qmd) |
+| Assess sensitivity and uncertainty | [Sensitivity, robustness, and uncertainty](sensitivity-robustness-and-uncertainty.qmd) |
+| Record a validation conclusion | [Validation decisions and records](validation-decisions-and-records.qmd) |
+
+## Conclusion statuses
+
+Use exactly:
+
+- **not yet evaluated**
+- **validation in progress**
+- **supported for stated use**
+- **supported for stated use with documented limitation**
+- **evidence inconclusive**
+- **not supported for stated use**
+- **superseded**
+
+The safe default is **not yet evaluated**. Do not use generic statuses such as valid, invalid, approved, certified, or scientifically correct.
+
+## Validation completion gate
+
+- [ ] Analysis ID and version are identified.
+- [ ] Candidate result IDs are identified.
+- [ ] Intended use and scope are stated.
+- [ ] Validation questions are recorded.
+- [ ] Verification checks are complete or limitations are visible.
+- [ ] Relevant assumptions and diagnostics are reviewed.
+- [ ] Predictive or forecast evaluation is completed where applicable.
+- [ ] Sensitivity and robustness are examined where consequential.
+- [ ] Important uncertainty sources and their effect on interpretation or decisions are described.
+- [ ] Failed, mixed, and inconclusive evidence remains visible.
+- [ ] Evidence locations are linked.
+- [ ] The authoritative validation record is identified.
+- [ ] The overall conclusion uses exactly one allowed conclusion status.
+- [ ] Every substantive conclusion states the use and scope to which it applies.
+- [ ] Decision-maker and decision date are recorded for every completed substantive conclusion.
+- [ ] A superseded record identifies its replacement validation record and, where applicable, replacement analysis.
+- [ ] A responsible analyst or reviewer records the conclusion and date.
+- [ ] The conclusion states the population, geography, time period, scale, horizon, or use to which it applies.
+- [ ] Any required return to Analyze is recorded.
+
+Passing this gate records a scoped conclusion about available evidence. It does not authorize publication, external communication, or operational release.

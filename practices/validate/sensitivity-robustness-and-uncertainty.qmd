@@ -1,0 +1,45 @@
+---
+title: "Sensitivity, Robustness, and Uncertainty"
+description: "Assess whether reasonable alternatives and important uncertainty sources change interpretation or action."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - validation
+  - uncertainty
+  - reproducibility
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+## Distinguish the ideas
+
+- **Sensitivity analysis** examines how results change when reasonable inputs, assumptions, parameters, or analytical choices change.
+- **Robustness** describes whether the main conclusion remains materially similar across those alternatives.
+- **Uncertainty quantification** describes how uncertain inputs, parameters, observations, or processes affect estimates and predictions.
+- **Uncertainty propagation** carries uncertainty from inputs or parameters into final outputs.
+
+These ideas are related but not interchangeable.
+
+## Important uncertainty sources
+
+Consider measurement error, sampling error, missing data, underreporting, detection probability, spatial-location uncertainty, temporal uncertainty, parameter uncertainty, model-form uncertainty, prior assumptions, scenario uncertainty, initial conditions, environmental inputs, host distributions, future covariates, stochastic variation, and data revisions.
+
+## Consequential analytical choices
+
+Sensitivity work may examine exclusion rules, missing-data approaches, prior distributions, covariate sets, spatial support, temporal aggregation, neighborhood definitions, classification thresholds, parameter ranges, initial conditions, forecast windows, model structures, and baseline assumptions. Focus on choices that could change the scientific or operational conclusion; exhaustive variation of every minor setting is not required.
+
+## Connect uncertainty to conclusions
+
+Record whether uncertainty changes direction of effect, ranking, classification, threshold crossing, estimated geographic extent, forecast warning, intervention recommendation, confidence in a conclusion, or operational decision. Quantified uncertainty is most useful when the record shows whether it changes interpretation, comparison, or action.
+
+## Mixed findings and intervals
+
+If a conclusion changes under reasonable alternatives, do not hide it or automatically declare the analysis useless. Identify the choices driving the change, narrow the claim where appropriate, record the result as limited or inconclusive, and return to Analyze if a revised analysis is warranted.
+
+Assess whether intervals are based on stated uncertainty sources, interpreted correctly, compatible with intended use, evaluated for coverage when prediction is involved, and not presented as including omitted sources. Narrow intervals are not automatically strong evidence.
