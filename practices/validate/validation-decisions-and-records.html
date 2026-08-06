@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Plan reproducible retrievals from APIs, databases, portals, feeds, sensors, and revised historical sources.">
+<meta name="description" content="Synthesize supporting, challenging, failed, and inconclusive evidence into a scoped conclusion.">
 
-<title>Recurring and Programmatic Data – GeoEpi Lab Book</title>
+<title>Validation Decisions and Records – GeoEpi Lab Book</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../practices/organize/index.html" rel="next">
-<link href="../../practices/acquire/data-intake.html" rel="prev">
+<link href="../../practices/validate/sensitivity-robustness-and-uncertainty.html" rel="prev">
 <link href="../../assets/images/favicon.ico" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -176,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/acquire/index.html">Acquire</a></li><li class="breadcrumb-item"><a href="../../practices/acquire/recurring-programmatic-data.html">Recurring and Programmatic Data</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/validate/index.html">Validate</a></li><li class="breadcrumb-item"><a href="../../practices/validate/validation-decisions-and-records.html">Validation Decisions and Records</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -246,7 +245,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../practices/acquire/recurring-programmatic-data.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../practices/acquire/recurring-programmatic-data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Recurring and Programmatic Data</span></a>
   </div>
 </li>
@@ -387,7 +386,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../practices/validate/validation-decisions-and-records.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/validate/validation-decisions-and-records.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Validation Decisions and Records</span></a>
   </div>
 </li>
@@ -403,28 +402,26 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#record-the-request-specification" id="toc-record-the-request-specification" class="nav-link active" data-scroll-target="#record-the-request-specification">Record the request specification</a></li>
-  <li><a href="#preserve-snapshots" id="toc-preserve-snapshots" class="nav-link" data-scroll-target="#preserve-snapshots">Preserve snapshots</a></li>
-  <li><a href="#revisions-and-late-arriving-data" id="toc-revisions-and-late-arriving-data" class="nav-link" data-scroll-target="#revisions-and-late-arriving-data">Revisions and late-arriving data</a></li>
-  <li><a href="#idempotence-and-overwrite-safety" id="toc-idempotence-and-overwrite-safety" class="nav-link" data-scroll-target="#idempotence-and-overwrite-safety">Idempotence and overwrite safety</a></li>
-  <li><a href="#pagination-and-completeness" id="toc-pagination-and-completeness" class="nav-link" data-scroll-target="#pagination-and-completeness">Pagination and completeness</a></li>
-  <li><a href="#schema-drift" id="toc-schema-drift" class="nav-link" data-scroll-target="#schema-drift">Schema drift</a></li>
-  <li><a href="#retrieval-manifest" id="toc-retrieval-manifest" class="nav-link" data-scroll-target="#retrieval-manifest">Retrieval manifest</a></li>
-  <li><a href="#acceptance-gate-for-recurring-data" id="toc-acceptance-gate-for-recurring-data" class="nav-link" data-scroll-target="#acceptance-gate-for-recurring-data">Acceptance gate for recurring data</a></li>
+  <li><a href="#separate-checks-from-the-conclusion" id="toc-separate-checks-from-the-conclusion" class="nav-link active" data-scroll-target="#separate-checks-from-the-conclusion">Separate checks from the conclusion</a></li>
+  <li><a href="#evidence-synthesis" id="toc-evidence-synthesis" class="nav-link" data-scroll-target="#evidence-synthesis">Evidence synthesis</a></li>
+  <li><a href="#overall-conclusion" id="toc-overall-conclusion" class="nav-link" data-scroll-target="#overall-conclusion">Overall conclusion</a></li>
+  <li><a href="#scope-statement" id="toc-scope-statement" class="nav-link" data-scroll-target="#scope-statement">Scope statement</a></li>
+  <li><a href="#returning-to-analyze" id="toc-returning-to-analyze" class="nav-link" data-scroll-target="#returning-to-analyze">Returning to Analyze</a></li>
+  <li><a href="#supersession-and-later-stages" id="toc-supersession-and-later-stages" class="nav-link" data-scroll-target="#supersession-and-later-stages">Supersession and later stages</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/acquire/recurring-programmatic-data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/acquire/recurring-programmatic-data.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/validate/validation-decisions-and-records.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/validate/validation-decisions-and-records.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/acquire/index.html">Acquire</a></li><li class="breadcrumb-item"><a href="../../practices/acquire/recurring-programmatic-data.html">Recurring and Programmatic Data</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/validate/index.html">Validate</a></li><li class="breadcrumb-item"><a href="../../practices/validate/validation-decisions-and-records.html">Validation Decisions and Records</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Recurring and Programmatic Data</h1>
+<h1 class="title">Validation Decisions and Records</h1>
 </div>
 
 <div>
   <div class="description">
-    Plan reproducible retrievals from APIs, databases, portals, feeds, sensors, and revised historical sources.
+    Synthesize supporting, challenging, failed, and inconclusive evidence into a scoped conclusion.
   </div>
 </div>
 
@@ -441,76 +438,38 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Recurring acquisition includes APIs, databases, portals, scheduled extracts, surveillance feeds, sensor feeds, automated downloads, and revised historical datasets. Do not implement a client or download script here; record what a reproducible retrieval must preserve.</p>
-<section id="record-the-request-specification" class="level2">
-<h2 class="anchored" data-anchor-id="record-the-request-specification">Record the request specification</h2>
-<p>Retain the endpoint or database, dataset/table, query, request parameters, date range, geography, variables, filters, pagination behavior, extraction timestamp, API/database version where available, code version, and configuration version. Do not store secrets in configuration committed to Git.</p>
+<section id="separate-checks-from-the-conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="separate-checks-from-the-conclusion">Separate checks from the conclusion</h2>
+<p>The validation plan records proposed questions, checks, evidence, and review. An individual check may be <strong>planned</strong>, <strong>completed</strong>, <strong>completed with limitation</strong>, <strong>failed</strong>, <strong>inconclusive</strong>, <strong>not applicable</strong>, or <strong>superseded</strong>. <strong>Planned</strong> means the check is identified but no finding is recorded. <strong>Completed</strong> means the check was performed and its finding is recorded. Check completion does not determine the overall conclusion by itself. The validation record, or an equivalent validation-level document, contains the authoritative overall conclusion. One major failed check may matter more than many minor successful checks.</p>
 </section>
-<section id="preserve-snapshots" class="level2">
-<h2 class="anchored" data-anchor-id="preserve-snapshots">Preserve snapshots</h2>
-<p>When a retrieval can change, produce a preserved snapshot or immutable release record appropriate to the project. Distinguish the live source, retrieved snapshot, normalized data, and current analytical dataset. A live URL is not a reproducibility identifier.</p>
-<p>Each accepted retrieval should produce or update a source inventory record, snapshot or retrieval ID, intake or acceptance status, schema/revision assessment, and a preserved snapshot when the source can change or the workflow consequence warrants it. A retrieval manifest is <strong>Conditionally required</strong> for multi-file, repeated, transferred, regulated, operational, or integrity-sensitive retrievals.</p>
+<section id="evidence-synthesis" class="level2">
+<h2 class="anchored" data-anchor-id="evidence-synthesis">Evidence synthesis</h2>
+<p>Summarize supporting evidence, conflicting evidence, failed checks, inconclusive checks, missing evidence, known limitations, reviewer concerns, relevance to intended use, and the consequence of remaining uncertainty.</p>
 </section>
-<section id="revisions-and-late-arriving-data" class="level2">
-<h2 class="anchored" data-anchor-id="revisions-and-late-arriving-data">Revisions and late-arriving data</h2>
-<p>Document replacement behavior, backfills, corrected records, reporting delays, revised historical periods, schema changes, changed geographic boundaries, and changed case definitions. “Latest” is not an adequate identifier for a reproducible retrieval.</p>
-</section>
-<section id="idempotence-and-overwrite-safety" class="level2">
-<h2 class="anchored" data-anchor-id="idempotence-and-overwrite-safety">Idempotence and overwrite safety</h2>
-<p><strong>Recommended:</strong> design retrievals that do not silently overwrite prior snapshots, detect existing valid outputs, record partial failure, support safe retry, and distinguish completed, failed, incomplete, and superseded retrievals.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Stronger practice
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>For a consequential recurring workflow, retain an immutable retrieval manifest and an automated completeness check for every snapshot. This strengthens traceability without making a scheduler, workflow engine, or container universally required.</p>
-</div>
-</div>
-</section>
-<section id="pagination-and-completeness" class="level2">
-<h2 class="anchored" data-anchor-id="pagination-and-completeness">Pagination and completeness</h2>
-<p>Before accepting a retrieval, retain evidence that all pages or partitions were retrieved, expected date or spatial coverage is present, rate limiting did not silently truncate results, retries did not duplicate records, and response counts are plausible.</p>
-<p>A successful HTTP response, database connection, or completed download command is not evidence of complete retrieval.</p>
-</section>
-<section id="schema-drift" class="level2">
-<h2 class="anchored" data-anchor-id="schema-drift">Schema drift</h2>
-<p>Check for added or removed variables, type changes, category changes, renamed fields, changed missing-value conventions, altered units, and changed coordinate definitions. Record how a change was handled; do not silently coerce a new schema into an old one.</p>
-</section>
-<section id="retrieval-manifest" class="level2">
-<h2 class="anchored" data-anchor-id="retrieval-manifest">Retrieval manifest</h2>
-<p><strong>Recommended, conditionally required for consequential recurring workflows:</strong> retain a manifest containing retrieval ID, source ID, snapshot ID, intake or acceptance status, requested period, request hash where useful, retrieved files, status, timestamps, software/configuration version, checksums where proportionate, log location, schema/revision assessment, and error or retry information.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Example
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>A weekly environmental raster retrieval should record the requested weeks, geographic tiles, CRS, grid alignment, response status, and snapshot identifier. A recurring surveillance extract should also record the query, case-definition version, report-date window, late-report behavior, and database snapshot or extraction timestamp.</p>
-</div>
-</div>
-</section>
-<section id="acceptance-gate-for-recurring-data" class="level2">
-<h2 class="anchored" data-anchor-id="acceptance-gate-for-recurring-data">Acceptance gate for recurring data</h2>
-<ul class="task-list">
-<li><label><input type="checkbox">Request specification and source identifier are versioned.</label></li>
-<li><label><input type="checkbox">Retrieval timestamp, requested period, geography, and configuration are recorded.</label></li>
-<li><label><input type="checkbox">A snapshot or immutable release record exists when the source can change.</label></li>
-<li><label><input type="checkbox">Pagination, partition, coverage, and response-count checks are recorded.</label></li>
-<li><label><input type="checkbox">Schema drift and revision behavior are assessed.</label></li>
-<li><label><input type="checkbox">Retry, failure, duplicate, incomplete, and superseded states are distinguishable.</label></li>
-<li><label><input type="checkbox">Credentials are kept outside committed code, configuration, logs, and templates.</label></li>
-<li><label><input type="checkbox">The resulting snapshot is registered through the <a href="../../templates/data-source-inventory-template.csv">data-source inventory</a> and, when useful, the <a href="../../templates/data-file-manifest-template.csv">file manifest</a>.</label></li>
-<li><label><input type="checkbox">The retrieval has an intake or acceptance status, schema/revision assessment, and preserved snapshot when required.</label></li>
+<section id="overall-conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="overall-conclusion">Overall conclusion</h2>
+<p>Use only:</p>
+<ul>
+<li><strong>not yet evaluated</strong> — no conclusion has been recorded.</li>
+<li><strong>validation in progress</strong> — checks are underway.</li>
+<li><strong>supported for stated use</strong> — available evidence is sufficient for the identified use and scope.</li>
+<li><strong>supported for stated use with documented limitation</strong> — evidence supports a narrower or conditional use, and the limitation is visible to later users.</li>
+<li><strong>evidence inconclusive</strong> — evidence does not support a confident positive or negative conclusion.</li>
+<li><strong>not supported for stated use</strong> — material evidence contradicts the intended use, or essential evidence is absent and cannot be resolved.</li>
+<li><strong>superseded</strong> — a new analysis or validation record replaces this one.</li>
 </ul>
+</section>
+<section id="scope-statement" class="level2">
+<h2 class="anchored" data-anchor-id="scope-statement">Scope statement</h2>
+<p>Every substantive conclusion—<strong>supported for stated use</strong>, <strong>supported for stated use with documented limitation</strong>, <strong>evidence inconclusive</strong>, or <strong>not supported for stated use</strong>—must state the analysis ID and version, candidate result IDs, intended use, population or system, geographic scope, temporal scope, spatial or temporal resolution, forecast horizon where relevant, known limitations, and conditions requiring reevaluation. An inconclusive or not-supported conclusion is meaningful only in relation to the use and scope that were actually evaluated. A record that is <strong>not yet evaluated</strong> or <strong>validation in progress</strong> does not need a completed scope statement, but the intended scope should still be identified where known.</p>
+</section>
+<section id="returning-to-analyze" class="level2">
+<h2 class="anchored" data-anchor-id="returning-to-analyze">Returning to Analyze</h2>
+<p>When validation requires changes to data subsets, exclusions, model form, variables, priors, parameters, forecast target, spatial or temporal support, scenario definition, or output calculation, return to Analyze and create a new analysis version. Do not edit the validated candidate result in place.</p>
+</section>
+<section id="supersession-and-later-stages" class="level2">
+<h2 class="anchored" data-anchor-id="supersession-and-later-stages">Supersession and later stages</h2>
+<p>Supersession does not always imply a new analysis. A newer validation record may incorporate new external data, a later forecast period, an additional reviewer, or corrected validation evidence. Preserve the earlier record, mark it superseded, identify the replacement validation ID, and do not transfer the earlier conclusion automatically. Record a replacement analysis ID when the analysis also changed. A supported conclusion permits consideration in later Collaborate and Communicate stages; it does not provide publication, release, operational, policy, or data-sharing approval.</p>
 
 
 </section>
@@ -922,14 +881,11 @@ Example
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../practices/acquire/data-intake.html" class="pagination-link" aria-label="Data Intake and Acceptance">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Data Intake and Acceptance</span>
+      <a href="../../practices/validate/sensitivity-robustness-and-uncertainty.html" class="pagination-link" aria-label="Sensitivity, Robustness, and Uncertainty">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Sensitivity, Robustness, and Uncertainty</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../practices/organize/index.html" class="pagination-link" aria-label="Organize Data">
-        <span class="nav-page-text">Organize Data</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -937,4 +893,4 @@ Example
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/acquire/recurring-programmatic-data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/acquire/recurring-programmatic-data.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/validate/validation-decisions-and-records.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/validate/validation-decisions-and-records.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>

@@ -39,6 +39,58 @@
 - [ ] Planned QA/QC checks and expected outputs are defined.
 - [ ] This preparation is understood not to validate a model or result.
 
+## Analysis design and execution
+
+- [ ] The analysis objective and quantity, comparison, prediction, pattern, or simulation outcome are recorded.
+- [ ] The dataset ID, version, readiness status, limitation, subset, and restrictions are recorded.
+- [ ] The analysis classification is recorded as exploratory, planned primary, planned secondary, sensitivity, post hoc, or final reporting analysis as applicable.
+- [ ] The method, variables, transformations, exclusions, settings, and intended outputs are recorded.
+- [ ] Code, settings, software, environment, and each consequential execution are identifiable.
+- [ ] Seeds, scenarios, parameter sets, partitions, and replicates are recorded where needed.
+- [ ] Expected outputs are compared with outputs actually produced.
+- [ ] Warnings, failures, retries, cancellations, incomplete runs, and manual recovery are visible.
+- [ ] Run completion is recorded in run records; it is not treated as analysis-level readiness.
+
+## Ready for validation
+
+- [ ] Important candidate results trace to the analysis data, analysis version, code, settings, run, and output.
+- [ ] Candidate result IDs are named in the authoritative analysis specification or equivalent analysis-level record.
+- [ ] The analysis readiness status is explicitly **not ready for validation**, **ready for validation**, or **ready for validation with documented limitation**.
+- [ ] The analysis specification or equivalent analysis-level record is authoritative for this decision.
+- [ ] A responsible analyst or reviewer and ISO 8601 decision timestamp are recorded for a ready status.
+- [ ] Any documented limitation includes its consequence, downstream restriction, responsible decision-maker, and follow-up.
+- [ ] The readiness decision records that validation has not yet occurred.
+
+## Validation planning
+
+- [ ] Intended use, population or system, geography, time period, scale, and decision context are stated.
+- [ ] Candidate result IDs, analysis version, input dataset versions, relevant runs, and locations are identified.
+- [ ] Validation questions and planned evidence are recorded.
+- [ ] Relevant data separation, sensitivity work, uncertainty work, and reviewer responsibility are planned.
+
+## Verification and completeness
+
+- [ ] Data, code, settings, runs, and expected outputs are checked against what was actually used and produced.
+- [ ] Missing or failed runs, scenarios, chains, replicates, time periods, spatial units, warnings, and cancellations are visible.
+- [ ] Reproduction, recalculation, spatial-temporal consistency, and simulation benchmark checks are used where proportionate.
+
+## Validation evidence
+
+- [ ] Relevant assumptions and diagnostics are reviewed.
+- [ ] Predictive or forecast evaluation and baseline comparison are completed where applicable.
+- [ ] Sensitivity, robustness, and uncertainty implications are recorded where consequential.
+- [ ] Failed, mixed, inconclusive, and challenging evidence remains visible.
+
+## Validation conclusion
+
+- [ ] The authoritative validation record is identified.
+- [ ] One exact conclusion status is used.
+- [ ] Substantive conclusions are scoped to their use, population, geography, time, and scale.
+- [ ] Decision-maker and ISO 8601 decision date are recorded when a conclusion is complete.
+- [ ] Superseded records identify their replacement validation record.
+- [ ] Replacement analysis is identified when applicable.
+- [ ] Return-to-Analyze requirements and reevaluation triggers are recorded where applicable.
+
 ## Result and release review
 
 - [ ] Results trace to inputs, code, parameters, environment, and output/run IDs.
