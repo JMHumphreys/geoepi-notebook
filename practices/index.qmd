@@ -22,7 +22,7 @@ The Lab Book organizes work around a lifecycle:
 
 Stages overlap and may repeat. A revised project plan can trigger new acquisition work; an intake discrepancy can require a scope decision. Each page distinguishes the **Draft minimum**, **Conditionally required**, **Recommended**, **Stronger practice**, **Example**, and **Stop and resolve** levels.
 
-This first implementation covers **Plan** and **Acquire**. The later stages are not presented as complete guidance.
+**Plan**, **Acquire**, and **Organize** now have implemented draft guidance. Analyze and later stages remain future lifecycle sections, not complete guidance.
 
 ```{mermaid}
 flowchart LR
@@ -45,5 +45,7 @@ flowchart LR
 - [Receive a one-time dataset](acquire/data-intake.qmd) when a file, archive, extract, sequence batch, raster, or field export arrives.
 - [Design recurring or programmatic acquisition](acquire/recurring-programmatic-data.qmd) for APIs, databases, feeds, portals, and scheduled extracts.
 - [Assess intake acceptance](acquire/data-intake.qmd#intake-completion-gate) when deciding whether incoming data can enter the Organize stage.
+- [Organize accepted data](organize/index.qmd) when a snapshot has passed intake and needs controlled structure, provenance, schema, identifier, spatial, temporal, and readiness checks.
+- [Review analysis readiness](organize/index.qmd#analysis-readiness-gate) before allowing a structurally documented dataset to enter Analyze.
 
 The Lab Book separates draft policy, task guidance, templates, and examples. The [Minimum GeoEpi Project Standard](../start/minimum-standard.qmd) supplies the governing draft framework; these pages explain how to satisfy relevant information requirements without prescribing one folder tree, storage platform, workflow engine, or environment.

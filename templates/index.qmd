@@ -36,6 +36,8 @@ The template library reduces blank-page friction without forcing every project i
 | <a href="hpc-run-record-template.yml" download>HPC run record</a> | YAML | Scheduler, resources, environment, inputs, outputs, logs, exit status, and retry state |
 | <a href="data-intake-record-template.md" download>Data-intake record</a> | Markdown | Delivery identity, inspection, discrepancies, restrictions, and acceptance decision |
 | <a href="data-file-manifest-template.csv" download>Data-file manifest</a> | CSV | File/object identity, checksums, validation status, and superseded deliveries |
+| <a href="data-transformation-ledger-template.csv" download>Data-transformation ledger</a> | CSV | Source-to-staged inputs, code, configuration, outputs, status, and QA |
+| <a href="staged-dataset-record-template.yml" download>Staged-dataset record</a> | YAML | Dataset identity, provenance, schema, spatial-temporal meaning, restrictions, and readiness |
 | [Guidance page authoring template](authoring-template.qmd) | Quarto | New Lab Book pages |
 
 Templates are examples until explicitly adopted; adapt them to the project and document meaningful deviations.

@@ -1,0 +1,69 @@
+---
+title: "Spatial and Temporal Conventions"
+description: "Document coordinate reference, spatial support, dates, time zones, periods, and spatiotemporal identifiers."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - spatial
+  - epidemiology
+  - ecology
+topics:
+  - data-management
+  - spatial
+  - temporal
+owner: GeoEpi Lab
+last-reviewed: 2026-08-05
+review-cycle: annual
+sidebar: practices
+---
+
+## Spatial meaning
+
+### Vector data
+
+Document CRS, datum, coordinate units, geometry type and validity, boundary source/version, extent, spatial support, coordinate precision, and handling of empty or invalid geometries.
+
+### Raster data
+
+Document CRS, datum, units, resolution, dimensions, extent, origin, alignment, cell interpretation, NoData convention, mask, resampling method, aggregation method, and boundary or template source. Two rasters with the same CRS and resolution may still be misaligned because their origins or extents differ.
+
+### Point data
+
+Record coordinate source, uncertainty, precision, geocoding method, datum, and whether locations represent events, centroids, facilities, or generalized positions.
+
+### Spatial transformations
+
+Record input and output CRS, transformation method, resampling/interpolation method, reason, software/code, and effect on resolution, support, or uncertainty.
+
+## Sensitive spatial information
+
+Do not prescribe one masking method. Record sensitivity, access restriction, generalization or masking, difference between protected and released representations, and authorization for downstream use. Link unresolved questions to [Open Policy Decisions](../../standards/open-policy-decisions.qmd).
+
+## Temporal meaning
+
+Distinguish event, onset, collection, report, extraction, acquisition, processing, model/simulation, publication, and release dates. Record time zone, UTC conversion, daylight-saving behavior, local versus universal timestamps, ambiguous/nonexistent local times, and precision.
+
+## Periods and intervals
+
+Document start/end boundaries, inclusive/exclusive rules, observation interval, aggregation period, partial periods, incomplete weeks/months, rolling windows, and temporal support versus timestamp.
+
+For epidemiological weeks, record week system, week-year convention, start day, week 53 treatment, conversion code, and relationship to source dates. Do not use “week 1” without naming the week-year convention.
+
+## Recurring snapshots and revisions
+
+Record extraction timestamp, reporting delay, late-arriving records, historical revisions, changed case definitions, changed boundaries, backfill behavior, and freeze/cutoff dates.
+
+## Spatiotemporal identifiers
+
+When useful, a stable identifier may combine spatial unit, temporal unit, scenario, layer, and source snapshot. Do not rely on row order as a spatiotemporal identifier.
+
+## Structural checks
+
+- [ ] Expected CRS, datum, extent, resolution, and alignment are recorded where applicable.
+- [ ] Geometry validity, NoData, masks, and boundary versions are documented.
+- [ ] Expected date range and complete or documented temporal sequence are recorded.
+- [ ] Week-year combinations and time zones are valid.
+- [ ] No unintended duplicate space-time keys exist.
+- [ ] No unexplained coordinate or date loss occurred.

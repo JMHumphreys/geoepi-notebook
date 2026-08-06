@@ -1,0 +1,107 @@
+---
+title: "Project and Data Structure"
+description: "Assign clear roles to source, staged, derived, configuration, documentation, logs, temporary objects, and outputs."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - data-management
+  - project-organization
+owner: GeoEpi Lab
+last-reviewed: 2026-08-05
+review-cycle: annual
+sidebar: practices
+---
+
+Structure should allow a reviewer or future collaborator to determine which objects were received, transformed, authoritative, temporary, regenerable, or used to support a reported result.
+
+## Define object roles
+
+| Role | Meaning and minimum control |
+|---|---|
+| Preserved source | Original received representation, retained without undocumented editing, linked to source and snapshot IDs, and subject to access restrictions. |
+| Staged | Controlled representation produced from the preserved source; suitable for normalization, linkage, and structural QA, but not necessarily analysis-ready. |
+| Derived | Dataset created through documented transformation, such as aggregates, features, standardized layers, or linked data. |
+| Analysis-ready | Staged or derived data that passed the Organize gate; this status is not scientific validation. |
+| Configuration | Paths, parameters, conventions, source IDs, and transformation settings. |
+| Documentation | README, data dictionary, dataset record, transformation ledger, decisions, limitations, and QA results. |
+| Outputs | Consequential products produced by analysis or reporting; not interchangeable with staged or derived data. |
+| Logs | Execution, warnings, failures, retries, checks, and manual interventions. |
+| Cache or temporary | Removable or regenerable objects whose role is documented and which are not the only copy of a consequential object. |
+
+## No universal folder tree
+
+The Lab Book does not prescribe one universal directory tree. Every project must document the role of each major location, which location is authoritative, which objects are tracked in Git, which are stored externally, which are generated, which are temporary, and how protected data are separated.
+
+### Example: small tabular analysis
+
+```text
+README.md
+data-source-record/
+scripts/
+data-staged/
+docs/
+outputs/
+```
+
+### Example: spatial or raster project
+
+```text
+config/
+source-manifests/
+staged-vectors/
+staged-rasters/
+derived/
+scripts/
+logs/
+reports/
+```
+
+### Example: HPC or recurring workflow
+
+```text
+config/
+manifests/
+workflow/
+source-snapshots/
+staged/
+runs/
+logs/
+derived/
+reports/
+```
+
+::: {.callout-note}
+## Example
+
+These structures are examples, not standards. A project may use different names when their roles and authoritative locations are documented.
+:::
+
+## Repository versus data storage
+
+Git is appropriate for code, configuration, documentation, and small nonrestricted fixtures. It is generally inappropriate for credentials, protected data, large source datasets, sensitive coordinates, caches, and nonredistributable files. Repository paths may point to approved external authoritative locations. Absolute personal paths must not be the only method of locating data.
+
+## Generated versus maintained objects
+
+Identify whether each major object is manually maintained, received externally, generated deterministically, generated stochastically, cached, archived, or superseded. Generated artifacts should identify producing code and inputs.
+
+## Common failure modes
+
+- A “final” CSV is edited manually after the script ran.
+- Source and cleaned data are mixed in one directory.
+- Multiple unversioned files are named `final`.
+- A report depends on an undocumented object in a user workspace.
+- Temporary HPC output is treated as an authoritative result.
+- Staged data cannot be tied to a source snapshot.
+
+## Structure checklist
+
+- [ ] Major locations and object roles are documented.
+- [ ] Preserved source, staged, derived, temporary, configuration, documentation, logs, and outputs are distinguishable.
+- [ ] Authoritative locations and external storage boundaries are recorded.
+- [ ] Protected data and credentials are separated from Git-tracked material.
+- [ ] Generated objects identify their inputs and producing code.
+- [ ] Temporary objects are not the only copy of consequential data.

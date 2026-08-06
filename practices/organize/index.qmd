@@ -1,0 +1,90 @@
+---
+title: "Organize Data"
+description: "Create controlled, documented, structurally validated datasets ready to enter Analyze."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - data-management
+  - provenance
+  - reproducibility
+owner: GeoEpi Lab
+last-reviewed: 2026-08-05
+review-cycle: annual
+sidebar: practices
+---
+
+Organization is not cosmetic file arrangement. It creates a controlled relationship among accepted source snapshots, preserved source packages, staged representations, derived datasets, schemas, identifiers, transformation records, QA evidence, and analysis-ready objects.
+
+Each staged-dataset record begins as **not ready for analysis**. Its status changes only after the Organize gate has been reviewed. A ready status records the responsible decision-maker and decision time. Every new staged version requires its own readiness decision; superseding a dataset does not silently transfer readiness to its replacement.
+
+## Organize boundary
+
+The Organize stage begins after a snapshot is **accepted for staging** or **accepted with documented limitation**. It may include structural inspection, deterministic transformation, normalization, schema and identifier checks, unit and code harmonization, spatial and temporal standardization, documented exclusions and corrections, provenance records, and analysis-readiness checks.
+
+It does not include statistical model selection, parameter estimation, hypothesis testing, interpretation, predictive-accuracy assessment, model-assumption validation, publication review, or operational release.
+
+## Organize workflow
+
+1. Confirm the accepted snapshot and intake status.
+2. Register the working dataset and authoritative locations.
+3. Establish project and data-object roles.
+4. Preserve the source-to-staged boundary.
+5. Transform source data through documented code or procedures.
+6. Define identifiers, relationships, schema, units, and codes.
+7. Establish spatial and temporal conventions.
+8. Run structural and completeness checks.
+9. Record limitations and unresolved discrepancies.
+10. Approve or withhold analysis readiness.
+
+```{mermaid}
+flowchart TD
+  accepted[Accepted snapshot] --> preserved[Preserved source package]
+  preserved --> transformed[Scripted or documented transformation]
+  transformed --> staged[Staged dataset]
+  staged --> checks[Schema, identifier, spatial, temporal, and structural checks]
+  checks --> ready[Analysis-ready dataset]
+  checks -. unresolved .-> hold[Not ready; resolve or document limitation]
+```
+
+“Analysis-ready” is a workflow status, not a scientific endorsement. Passing intake allows a snapshot to enter staging. Passing the Organize gate allows a structurally documented dataset to enter Analyze. Neither gate establishes that a statistical method, model, inference, forecast, or scientific conclusion is valid.
+
+## Starting points
+
+| Task | Guidance |
+|---|---|
+| Decide project and data locations | [Project and data structure](project-and-data-structure.qmd) |
+| Transform an accepted snapshot | [Source-to-staged data](source-to-staged-data.qmd) |
+| Fix identifier or join problems | [Identifiers and schema](identifiers-and-schema.qmd) |
+| Document a schema | [Identifiers and schema](identifiers-and-schema.qmd) and the [data dictionary](../../templates/data-dictionary-template.csv) |
+| Harmonize dates and times | [Spatial and temporal conventions](spatial-temporal-conventions.qmd) |
+| Prepare spatial layers | [Spatial and temporal conventions](spatial-temporal-conventions.qmd) |
+| Review analysis readiness | [Analysis-readiness gate](#analysis-readiness-gate) and the [readiness checklist](../../templates/project-readiness-checklist.md) |
+
+## Evidence and interpretation
+
+This draft workflow is informed by the existing [resource catalog](../../resources/index.qmd), including [Good Enough Practices](https://arxiv.org/abs/1609.00037), [The Turing Way](https://book.the-turing-way.org/), [RDMkit](https://rdmkit.elixir-europe.org/), [DataONE](https://dataone.org/best-practices/), [TIER](https://www.projecttier.org/tier-protocol/), [FAIR Principles](https://www.go-fair.org/fair-principles/), [FGDC](https://www.fgdc.gov/metadata), [GBIF](https://docs.gbif.org/georeferencing-best-practices/), [CDC guidance](https://www.cdc.gov/field-epi-manual/php/chapters/data-management.html), [EML](https://knb.ecoinformatics.org/external/), and [EFI](https://ecoforecast.org/). These sources inform practices for separation, scripting, provenance, identity, metadata, spatial and temporal meaning, and reproducibility. Access date: 2026-08-05. External guidance informs this draft workflow but does not establish GeoEpi or institutional policy.
+
+## Analysis-readiness gate
+
+- [ ] The source and accepted snapshot are identifiable.
+- [ ] The preserved source package remains distinguishable from staged and derived objects.
+- [ ] Staged or derived dataset IDs and versions are assigned.
+- [ ] Consequential transformations are scripted or documented.
+- [ ] Code, configuration, and transformation records identify how the dataset was produced.
+- [ ] Corrections and exclusions are attributable.
+- [ ] Record counts and structural checks are plausible.
+- [ ] Primary, foreign, composite, spatial, and temporal identifiers are documented as applicable.
+- [ ] Duplicate and join behavior has been assessed.
+- [ ] Fields, types, units, categories, missingness, and derivations are documented.
+- [ ] Spatial reference, support, resolution, alignment, and boundary versions are documented where applicable.
+- [ ] Event, report, extraction, acquisition, processing, and aggregation times are distinguishable where applicable.
+- [ ] Restrictions and sensitive fields remain correctly handled.
+- [ ] Unresolved discrepancies and limitations are visible.
+- [ ] An authoritative analysis-ready object and responsible decision-maker are recorded.
+- [ ] Dataset status is explicitly recorded as **ready for analysis**, **ready for analysis with documented limitation**, or **not ready for analysis**.
+
+Passing this gate establishes structural and documentary readiness only. Analytical validity, model suitability, inferential validity, predictive performance, and scientific interpretation belong to later stages. A ready status is therefore a workflow decision, not an endorsement of a scientific result.
