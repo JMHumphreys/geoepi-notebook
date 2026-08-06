@@ -16,6 +16,14 @@
 - [ ] Consequential manual steps and decisions are documented.
 - [ ] QA/QC checks and expected outputs are defined.
 
+## Data-intake acceptance
+
+- [ ] Authorization, provider, source ID, snapshot/release ID, and intake-event ID are recorded when data are received.
+- [ ] The delivered source package is preserved at an authoritative location.
+- [ ] Expected and received contents, restrictions, technical inspection, and content inspection are recorded.
+- [ ] Discrepancies and replacement deliveries are linked rather than silently overwritten.
+- [ ] The acceptance status and responsible decision-maker are recorded before staging.
+
 ## Result and release review
 
 - [ ] Results trace to inputs, code, parameters, environment, and output/run IDs.
