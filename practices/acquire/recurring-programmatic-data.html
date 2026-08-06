@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Task-oriented lifecycle guidance for planning and acquiring GeoEpi data and projects.">
+<meta name="description" content="Plan reproducible retrievals from APIs, databases, portals, feeds, sensors, and revised historical sources.">
 
-<title>Research Practices – GeoEpi Lab Book</title>
+<title>Recurring and Programmatic Data – GeoEpi Lab Book</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,25 +24,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../practices/plan/index.html" rel="next">
-<link href="../assets/images/favicon.ico" rel="icon">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f05d935efef094ed527f6e7cd457e90d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../practices/acquire/data-intake.html" rel="prev">
+<link href="../../assets/images/favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f05d935efef094ed527f6e7cd457e90d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,9 +70,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -85,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="https://geoepi.github.io/" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/images/geoepi_logo_xsm.png" alt="GeoEpi" class="navbar-logo">
+    <img src="../../assets/images/geoepi_logo_xsm.png" alt="GeoEpi" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="https://geoepi.github.io/">
     <span class="navbar-title">GeoEpi Lab Book</span>
@@ -98,27 +95,27 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../start/index.html"> 
+    <a class="nav-link" href="../../start/index.html"> 
 <span class="menu-text">Start Here</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../practices/index.html" aria-current="page"> 
+    <a class="nav-link active" href="../../practices/index.html" aria-current="page"> 
 <span class="menu-text">Research Practices</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../domains/index.html"> 
+    <a class="nav-link" href="../../domains/index.html"> 
 <span class="menu-text">Domain Guidance</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../standards/index.html"> 
+    <a class="nav-link" href="../../standards/index.html"> 
 <span class="menu-text">Lab Standards</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../templates/index.html"> 
+    <a class="nav-link" href="../../templates/index.html"> 
 <span class="menu-text">Templates</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resources/index.html"> 
+    <a class="nav-link" href="../../resources/index.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
 </ul>
@@ -129,15 +126,15 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
         <li>
-    <a class="dropdown-item" href="../about/purpose.html">
+    <a class="dropdown-item" href="../../about/purpose.html">
  <span class="dropdown-text">Purpose</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/how-to-use.html">
+    <a class="dropdown-item" href="../../about/how-to-use.html">
  <span class="dropdown-text">How to use this site</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/contributing.html">
+    <a class="dropdown-item" href="../../about/contributing.html">
  <span class="dropdown-text">Contributing</span></a>
   </li>  
     </ul>
@@ -178,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../practices/index.html">Research Practices</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/acquire/index.html">Acquire</a></li><li class="breadcrumb-item"><a href="../../practices/acquire/recurring-programmatic-data.html">Recurring and Programmatic Data</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -192,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../practices/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Research Practices</span></a>
   </div>
 </li>
@@ -207,19 +204,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/plan/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/plan/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Plan a Project</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/plan/project-scope.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/plan/project-scope.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Define Project Scope and Responsibilities</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/plan/data-management-planning.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/plan/data-management-planning.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Plan Data Management</span></a>
   </div>
 </li>
@@ -236,19 +233,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/acquire/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/acquire/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Acquire Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/acquire/data-intake.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/acquire/data-intake.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Intake and Acceptance</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practices/acquire/recurring-programmatic-data.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/acquire/recurring-programmatic-data.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Recurring and Programmatic Data</span></a>
   </div>
 </li>
@@ -264,21 +261,28 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#choose-a-starting-point" id="toc-choose-a-starting-point" class="nav-link active" data-scroll-target="#choose-a-starting-point">Choose a starting point</a></li>
+  <li><a href="#record-the-request-specification" id="toc-record-the-request-specification" class="nav-link active" data-scroll-target="#record-the-request-specification">Record the request specification</a></li>
+  <li><a href="#preserve-snapshots" id="toc-preserve-snapshots" class="nav-link" data-scroll-target="#preserve-snapshots">Preserve snapshots</a></li>
+  <li><a href="#revisions-and-late-arriving-data" id="toc-revisions-and-late-arriving-data" class="nav-link" data-scroll-target="#revisions-and-late-arriving-data">Revisions and late-arriving data</a></li>
+  <li><a href="#idempotence-and-overwrite-safety" id="toc-idempotence-and-overwrite-safety" class="nav-link" data-scroll-target="#idempotence-and-overwrite-safety">Idempotence and overwrite safety</a></li>
+  <li><a href="#pagination-and-completeness" id="toc-pagination-and-completeness" class="nav-link" data-scroll-target="#pagination-and-completeness">Pagination and completeness</a></li>
+  <li><a href="#schema-drift" id="toc-schema-drift" class="nav-link" data-scroll-target="#schema-drift">Schema drift</a></li>
+  <li><a href="#retrieval-manifest" id="toc-retrieval-manifest" class="nav-link" data-scroll-target="#retrieval-manifest">Retrieval manifest</a></li>
+  <li><a href="#acceptance-gate-for-recurring-data" id="toc-acceptance-gate-for-recurring-data" class="nav-link" data-scroll-target="#acceptance-gate-for-recurring-data">Acceptance gate for recurring data</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/acquire/recurring-programmatic-data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/acquire/recurring-programmatic-data.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/acquire/index.html">Acquire</a></li><li class="breadcrumb-item"><a href="../../practices/acquire/recurring-programmatic-data.html">Recurring and Programmatic Data</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Research Practices</h1>
+<h1 class="title">Recurring and Programmatic Data</h1>
 </div>
 
 <div>
   <div class="description">
-    Task-oriented lifecycle guidance for planning and acquiring GeoEpi data and projects.
+    Plan reproducible retrievals from APIs, databases, portals, feeds, sensors, and revised historical sources.
   </div>
 </div>
 
@@ -295,42 +299,76 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The Lab Book organizes work around a lifecycle:</p>
-<p><code>plan -&gt; acquire -&gt; organize -&gt; analyze -&gt; validate -&gt; collaborate -&gt; communicate -&gt; preserve</code></p>
-<p>Stages overlap and may repeat. A revised project plan can trigger new acquisition work; an intake discrepancy can require a scope decision. Each page distinguishes the <strong>Draft minimum</strong>, <strong>Conditionally required</strong>, <strong>Recommended</strong>, <strong>Stronger practice</strong>, <strong>Example</strong>, and <strong>Stop and resolve</strong> levels.</p>
-<p>This first implementation covers <strong>Plan</strong> and <strong>Acquire</strong>. The later stages are not presented as complete guidance.</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-  plan[Plan] --&gt; acquire[Acquire]
-  acquire --&gt; organize[Organize]
-  organize --&gt; analyze[Analyze]
-  analyze --&gt; validate[Validate]
-  validate --&gt; collaborate[Collaborate]
-  collaborate --&gt; communicate[Communicate]
-  communicate --&gt; preserve[Preserve]
-  acquire -. revise .-&gt; plan
-  validate -. revise .-&gt; plan
-</pre>
+<p>Recurring acquisition includes APIs, databases, portals, scheduled extracts, surveillance feeds, sensor feeds, automated downloads, and revised historical datasets. Do not implement a client or download script here; record what a reproducible retrieval must preserve.</p>
+<section id="record-the-request-specification" class="level2">
+<h2 class="anchored" data-anchor-id="record-the-request-specification">Record the request specification</h2>
+<p>Retain the endpoint or database, dataset/table, query, request parameters, date range, geography, variables, filters, pagination behavior, extraction timestamp, API/database version where available, code version, and configuration version. Do not store secrets in configuration committed to Git.</p>
+</section>
+<section id="preserve-snapshots" class="level2">
+<h2 class="anchored" data-anchor-id="preserve-snapshots">Preserve snapshots</h2>
+<p>When a retrieval can change, produce a preserved snapshot or immutable release record appropriate to the project. Distinguish the live source, retrieved snapshot, normalized data, and current analytical dataset. A live URL is not a reproducibility identifier.</p>
+<p>Each accepted retrieval should produce or update a source inventory record, snapshot or retrieval ID, intake or acceptance status, schema/revision assessment, and a preserved snapshot when the source can change or the workflow consequence warrants it. A retrieval manifest is <strong>Conditionally required</strong> for multi-file, repeated, transferred, regulated, operational, or integrity-sensitive retrievals.</p>
+</section>
+<section id="revisions-and-late-arriving-data" class="level2">
+<h2 class="anchored" data-anchor-id="revisions-and-late-arriving-data">Revisions and late-arriving data</h2>
+<p>Document replacement behavior, backfills, corrected records, reporting delays, revised historical periods, schema changes, changed geographic boundaries, and changed case definitions. “Latest” is not an adequate identifier for a reproducible retrieval.</p>
+</section>
+<section id="idempotence-and-overwrite-safety" class="level2">
+<h2 class="anchored" data-anchor-id="idempotence-and-overwrite-safety">Idempotence and overwrite safety</h2>
+<p><strong>Recommended:</strong> design retrievals that do not silently overwrite prior snapshots, detect existing valid outputs, record partial failure, support safe retry, and distinguish completed, failed, incomplete, and superseded retrievals.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<p></p></figure><p></p>
+<div class="callout-title-container flex-fill">
+Stronger practice
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<p>For a consequential recurring workflow, retain an immutable retrieval manifest and an automated completeness check for every snapshot. This strengthens traceability without making a scheduler, workflow engine, or container universally required.</p>
 </div>
-<section id="choose-a-starting-point" class="level2">
-<h2 class="anchored" data-anchor-id="choose-a-starting-point">Choose a starting point</h2>
-<ul>
-<li><a href="../start/new-project.html">Starting a new project</a> for a short gateway and initiation checklist.</li>
-<li><a href="../practices/plan/index.html">Plan a project</a> when purpose, scope, roles, outputs, or completion criteria are unsettled.</li>
-<li><a href="../practices/plan/data-management-planning.html">Plan data management</a> when access, storage, restrictions, identifiers, time, space, or computing need decisions.</li>
-<li><a href="../practices/acquire/data-intake.html">Receive a one-time dataset</a> when a file, archive, extract, sequence batch, raster, or field export arrives.</li>
-<li><a href="../practices/acquire/recurring-programmatic-data.html">Design recurring or programmatic acquisition</a> for APIs, databases, feeds, portals, and scheduled extracts.</li>
-<li><a href="../practices/acquire/data-intake.html#intake-completion-gate">Assess intake acceptance</a> when deciding whether incoming data can enter the Organize stage.</li>
+</div>
+</section>
+<section id="pagination-and-completeness" class="level2">
+<h2 class="anchored" data-anchor-id="pagination-and-completeness">Pagination and completeness</h2>
+<p>Before accepting a retrieval, retain evidence that all pages or partitions were retrieved, expected date or spatial coverage is present, rate limiting did not silently truncate results, retries did not duplicate records, and response counts are plausible.</p>
+<p>A successful HTTP response, database connection, or completed download command is not evidence of complete retrieval.</p>
+</section>
+<section id="schema-drift" class="level2">
+<h2 class="anchored" data-anchor-id="schema-drift">Schema drift</h2>
+<p>Check for added or removed variables, type changes, category changes, renamed fields, changed missing-value conventions, altered units, and changed coordinate definitions. Record how a change was handled; do not silently coerce a new schema into an old one.</p>
+</section>
+<section id="retrieval-manifest" class="level2">
+<h2 class="anchored" data-anchor-id="retrieval-manifest">Retrieval manifest</h2>
+<p><strong>Recommended, conditionally required for consequential recurring workflows:</strong> retain a manifest containing retrieval ID, source ID, snapshot ID, intake or acceptance status, requested period, request hash where useful, retrieved files, status, timestamps, software/configuration version, checksums where proportionate, log location, schema/revision assessment, and error or retry information.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A weekly environmental raster retrieval should record the requested weeks, geographic tiles, CRS, grid alignment, response status, and snapshot identifier. A recurring surveillance extract should also record the query, case-definition version, report-date window, late-report behavior, and database snapshot or extraction timestamp.</p>
+</div>
+</div>
+</section>
+<section id="acceptance-gate-for-recurring-data" class="level2">
+<h2 class="anchored" data-anchor-id="acceptance-gate-for-recurring-data">Acceptance gate for recurring data</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">Request specification and source identifier are versioned.</label></li>
+<li><label><input type="checkbox">Retrieval timestamp, requested period, geography, and configuration are recorded.</label></li>
+<li><label><input type="checkbox">A snapshot or immutable release record exists when the source can change.</label></li>
+<li><label><input type="checkbox">Pagination, partition, coverage, and response-count checks are recorded.</label></li>
+<li><label><input type="checkbox">Schema drift and revision behavior are assessed.</label></li>
+<li><label><input type="checkbox">Retry, failure, duplicate, incomplete, and superseded states are distinguishable.</label></li>
+<li><label><input type="checkbox">Credentials are kept outside committed code, configuration, logs, and templates.</label></li>
+<li><label><input type="checkbox">The resulting snapshot is registered through the <a href="../../templates/data-source-inventory-template.csv">data-source inventory</a> and, when useful, the <a href="../../templates/data-file-manifest-template.csv">file manifest</a>.</label></li>
+<li><label><input type="checkbox">The retrieval has an intake or acceptance status, schema/revision assessment, and preserved snapshot when required.</label></li>
 </ul>
-<p>The Lab Book separates draft policy, task guidance, templates, and examples. The <a href="../start/minimum-standard.html">Minimum GeoEpi Project Standard</a> supplies the governing draft framework; these pages explain how to satisfy relevant information requirements without prescribing one folder tree, storage platform, workflow engine, or environment.</p>
 
 
 </section>
@@ -742,11 +780,11 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../../practices/acquire/data-intake.html" class="pagination-link" aria-label="Data Intake and Acceptance">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Data Intake and Acceptance</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../practices/plan/index.html" class="pagination-link" aria-label="Plan a Project">
-        <span class="nav-page-text">Plan a Project</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -754,4 +792,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/acquire/recurring-programmatic-data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/acquire/recurring-programmatic-data.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>

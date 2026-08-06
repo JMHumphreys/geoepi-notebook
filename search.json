@@ -4,7 +4,7 @@
     "href": "templates/index.html",
     "title": "Templates",
     "section": "",
-    "text": "The template library reduces blank-page friction without forcing every project into one shape. Copy the plain-text files into another repository and adapt them to the project.\n\n\n\nTemplate\nFormat\nUse\n\n\n\n\nProject README\nMarkdown\nRoot orientation, setup, outputs, restrictions, and handoff\n\n\nProject charter\nMarkdown\nSeparate charter when contributors, persistence, funding, publication, operations, sensitivity, cost, handoff, or policy use justify it\n\n\nData-source inventory\nCSV\nSource, access, version, restriction, and provenance seed\n\n\nData dictionary\nCSV\nVariables, units, codes, missingness, and derivations\n\n\nException record\nMarkdown\nFormal deviations and compensating controls\n\n\nReadiness checklist\nMarkdown\nLifecycle gate review\n\n\nHandoff record\nMarkdown\nTransfer of access, context, and unfinished work\n\n\nCloseout record\nMarkdown\nFinal version, archive, retention, and maintenance\n\n\nResult traceability\nCSV\nInputs, code, parameters, environment, runs, outputs, review, and status\n\n\nHPC run record\nYAML\nScheduler, resources, environment, inputs, outputs, logs, exit status, and retry state\n\n\nGuidance page authoring template\nQuarto\nNew Lab Book pages\n\n\n\nTemplates are examples until explicitly adopted; adapt them to the project and document meaningful deviations.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\nstatus\n\n\n\n\n\n\n\n\nGuidance Page Authoring Template\n\n\nA reusable, non-substantive template for future Lab Book pages.\n\n\ntemplate\n\n\n\n\n\n\nNo matching items",
+    "text": "The template library reduces blank-page friction without forcing every project into one shape. Copy the plain-text files into another repository and adapt them to the project.\n\n\n\nTemplate\nFormat\nUse\n\n\n\n\nProject README\nMarkdown\nRoot orientation, setup, outputs, restrictions, and handoff\n\n\nProject charter\nMarkdown\nSeparate charter when contributors, persistence, funding, publication, operations, sensitivity, cost, handoff, or policy use justify it\n\n\nData-source inventory\nCSV\nSource, access, version, restriction, and provenance seed\n\n\nData dictionary\nCSV\nVariables, units, codes, missingness, and derivations\n\n\nException record\nMarkdown\nFormal deviations and compensating controls\n\n\nReadiness checklist\nMarkdown\nLifecycle gate review\n\n\nHandoff record\nMarkdown\nTransfer of access, context, and unfinished work\n\n\nCloseout record\nMarkdown\nFinal version, archive, retention, and maintenance\n\n\nResult traceability\nCSV\nInputs, code, parameters, environment, runs, outputs, review, and status\n\n\nHPC run record\nYAML\nScheduler, resources, environment, inputs, outputs, logs, exit status, and retry state\n\n\nData-intake record\nMarkdown\nDelivery identity, inspection, discrepancies, restrictions, and acceptance decision\n\n\nData-file manifest\nCSV\nFile/object identity, checksums, validation status, and superseded deliveries\n\n\nGuidance page authoring template\nQuarto\nNew Lab Book pages\n\n\n\nTemplates are examples until explicitly adopted; adapt them to the project and document meaningful deviations.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\nstatus\n\n\n\n\n\n\n\n\nGuidance Page Authoring Template\n\n\nA reusable, non-substantive template for future Lab Book pages.\n\n\ntemplate\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Start Here",
       "Templates"
@@ -256,6 +256,136 @@
     "text": "The resource catalog records external starting points without turning them into lab policy. Annotations are intentionally short and original. Check the source landing page, license, version, and access conditions before relying on a resource.\nEach entry has a stable ID, title, URL, author or organization, resource and authority types, topic tags, license, access date, relevant sections, a local research-note path, review status, and a short annotation. Unknown or unverified values are marked explicitly.\n\n\n\n\n\n\nWarning\n\n\n\nCatalog inclusion is not endorsement. Resources may be useful, outdated, inaccessible, or governed by licenses that limit reuse.\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Description\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDescription\n\n\n\nAuthor\n\n\n\nCategories\n\n\n\n\n\n\n\n\nA Primer of Ecology with R\n\n\nQuantitative ecology concepts and R-based models.\n\n\n \n\n\n \n\n\n\n\n\n\nLandscape Genetic Data Analysis with R\n\n\nSeed entry for landscape-genetics workflows.\n\n\n \n\n\n \n\n\n\n\n\n\nQuantitative Biology\n\n\nBroad seed entry requiring exact title and edition verification.\n\n\n \n\n\n \n\n\n\n\n\n\nComparative Methods\n\n\nSeed entry for comparative analysis.\n\n\n \n\n\n \n\n\n\n\n\n\nSpatial Data Science\n\n\nStarting point for spatial analysis concepts and tools.\n\n\n \n\n\n \n\n\n\n\n\n\nStatistical Rethinking\n\n\nModel-centered introduction to Bayesian reasoning.\n\n\n \n\n\n \n\n\n\n\n\n\nApplied Population Genetics\n\n\nSeed entry requiring title and edition confirmation.\n\n\n \n\n\n \n\n\n\n\n\n\nThe Epidemiologist R Handbook\n\n\nTask-oriented R reference for applied epidemiology.\n\n\n \n\n\n \n\n\n\n\n\n\nNetwork Analysis in R\n\n\nSeed entry for network analysis workflows in R.\n\n\n \n\n\n \n\n\n\n\n\n\nMolecular Epi in R\n\n\nSeed entry retained for later identification.\n\n\n \n\n\n \n\n\n\n\n\n\nIntro to GIS and Spatial Analysis\n\n\nCourse notes introducing GIS and spatial analysis.\n\n\n \n\n\n \n\n\n\n\n\n\nA Practical Guide to Ecosystem Forecasting\n\n\nCommunity entry point for ecological forecasting practice.\n\n\n \n\n\n \n\n\n\n\n\n\nComputational Genomics Manual\n\n\nSeed entry requiring identification of the intended manual.\n\n\n \n\n\n \n\n\n\n\n\n\nSpatial Data Processing with R\n\n\nIndex of R packages and resources for spatial data work.\n\n\n \n\n\n \n\n\n\n\n\n\nGeocomputation with R\n\n\nOpen book for geographic data analysis, visualization, and modeling.\n\n\n \n\n\n \n\n\n\n\n\n\nNetwork Analysis: Integrating Social Network Theory, Method, and Application with R\n\n\nSeed for theory-to-application network analysis in R.\n\n\n \n\n\n \n\n\n\n\n\n\nThe Turing Way\n\n\nCommunity handbook on reproducible, ethical, collaborative data science.\n\n\n \n\n\n \n\n\n\n\n\n\nGood Enough Practices in Scientific Computing\n\n\nCompact recommendations for dependable scientific computing.\n\n\n \n\n\n \n\n\n\n\n\n\nTIER Protocol\n\n\nProtocol for transparent empirical research workflows.\n\n\n \n\n\n \n\n\n\n\n\n\nRDMkit\n\n\nRole- and task-oriented research data-management guidance.\n\n\n \n\n\n \n\n\n\n\n\n\nDataONE Best Practices\n\n\nPractical guidance for managing and preserving research data.\n\n\n \n\n\n \n\n\n\n\n\n\nFAIR Principles\n\n\nVocabulary for making digital research assets more reusable.\n\n\n \n\n\n \n\n\n\n\n\n\nFAIR Principles for Research Software\n\n\nSoftware-focused FAIR-oriented quality and reuse practices.\n\n\n \n\n\n \n\n\n\n\n\n\nCARE Principles for Indigenous Data Governance\n\n\nGovernance lens for collective benefit, authority, responsibility, and ethics.\n\n\n \n\n\n \n\n\n\n\n\n\nUSDA National Agricultural Library data-management guidance\n\n\nGovernment starting point for agricultural data-management planning.\n\n\n \n\n\n \n\n\n\n\n\n\nCDC Field Epidemiology Manual data-management guidance\n\n\nField-epidemiology guidance for organizing and protecting operational data.\n\n\n \n\n\n \n\n\n\n\n\n\nFGDC geospatial metadata guidance\n\n\nStandards-oriented entry point for describing geospatial data.\n\n\n \n\n\n \n\n\n\n\n\n\nGBIF georeferencing guidance\n\n\nGuidance for documented coordinates and georeferencing uncertainty.\n\n\n \n\n\n \n\n\n\n\n\n\nEcological Metadata Language\n\n\nStructured metadata language for ecological datasets and observations.\n\n\n \n\n\n \n\n\n\n\n\n\nEcological Forecasting Initiative standards\n\n\nCommunity standards and practices for repeatable ecological forecasting.\n\n\n \n\n\n \n\n\n\n\n\n\nNo matching items"
   },
   {
+    "objectID": "practices/plan/index.html",
+    "href": "practices/plan/index.html",
+    "title": "Plan a Project",
+    "section": "",
+    "text": "Planning records the conditions that make later work understandable and finishable. It does not require a separate planning document: a README, charter, project notes, or another durable artifact may hold the information.",
+    "crumbs": [
+      "Start Here",
+      "Plan",
+      "Plan a Project"
+    ]
+  },
+  {
+    "objectID": "practices/plan/index.html#planning-sequence",
+    "href": "practices/plan/index.html#planning-sequence",
+    "title": "Plan a Project",
+    "section": "Planning sequence",
+    "text": "Planning sequence\n\nDefine the decision or scientific purpose.\nBound the project.\nIdentify outputs and completion criteria.\nAssign roles and decision authority.\nClassify project complexity and consequence.\nAnticipate data, storage, computing, and external dependencies.\nChoose proportional documentation.\nReview the initiation gate.\n\n\n\n\nStep\nMinimum information\nSupporting template\n\n\n\n\nPurpose and scope\nObjective, owner, authoritative location, status, boundaries\nProject README\n\n\nCharter decision\nWhether project characteristics justify a standalone charter\nProject charter\n\n\nReadiness\nRoles, restrictions, dependencies, completion criteria, next actions\nReadiness checklist\n\n\nExceptions\nRequirement, reason, consequence, compensating control, approval, review\nException record",
+    "crumbs": [
+      "Start Here",
+      "Plan",
+      "Plan a Project"
+    ]
+  },
+  {
+    "objectID": "practices/plan/index.html#is-a-separate-charter-warranted",
+    "href": "practices/plan/index.html#is-a-separate-charter-warranted",
+    "title": "Plan a Project",
+    "section": "Is a separate charter warranted?",
+    "text": "Is a separate charter warranted?\n\n\n\n\n\n\nConditionally required\n\n\n\nA standalone charter is warranted when the project has multiple contributors or organizations, publication intent, external funding or formal deliverables, operational use, sensitive or governed data, substantial computational expense, long duration, formal handoff expectations, or consequential policy, regulatory, or management use. A small exploratory project may keep purpose, owner, scope, outputs, and status in its README.\n\n\nThe decision itself should be visible. Record “README scope is sufficient” or link the charter; do not create a formal file only to satisfy a checklist.",
+    "crumbs": [
+      "Start Here",
+      "Plan",
+      "Plan a Project"
+    ]
+  },
+  {
+    "objectID": "practices/plan/index.html#initiation-gate",
+    "href": "practices/plan/index.html#initiation-gate",
+    "title": "Plan a Project",
+    "section": "Initiation gate",
+    "text": "Initiation gate\n\nObjective, intended output, owner, authoritative location, and status are recorded.\nIncluded and excluded work, dependencies, and assumptions are visible.\nRoles and decision authority are assigned.\nProject consequence and complexity are classified proportionately.\nAnticipated data, restrictions, storage, computing, and external dependencies are identified.\nCompletion criteria and review authority are stated.\nA README or charter contains the required scope information.\nUnresolved institutional questions are linked to Open Policy Decisions.\n\nThis gate authorizes planning to proceed to data-management planning and acquisition; it does not approve analysis or release.",
+    "crumbs": [
+      "Start Here",
+      "Plan",
+      "Plan a Project"
+    ]
+  },
+  {
+    "objectID": "practices/plan/index.html#evidence-and-interpretation",
+    "href": "practices/plan/index.html#evidence-and-interpretation",
+    "title": "Plan a Project",
+    "section": "Evidence and interpretation",
+    "text": "Evidence and interpretation\nThe planning workflow draws on the existing resource catalog, especially The Turing Way, Good Enough Practices in Scientific Computing, RDMkit, DataONE, and the TIER Protocol. These sources support explicit project purpose, durable documentation, version control, data-management planning, reproducibility, and handoff. Access date: 2026-08-05. External guidance informs this workflow but does not establish GeoEpi or institutional policy.",
+    "crumbs": [
+      "Start Here",
+      "Plan",
+      "Plan a Project"
+    ]
+  },
+  {
+    "objectID": "practices/index.html",
+    "href": "practices/index.html",
+    "title": "Research Practices",
+    "section": "",
+    "text": "The Lab Book organizes work around a lifecycle:\nplan -&gt; acquire -&gt; organize -&gt; analyze -&gt; validate -&gt; collaborate -&gt; communicate -&gt; preserve\nStages overlap and may repeat. A revised project plan can trigger new acquisition work; an intake discrepancy can require a scope decision. Each page distinguishes the Draft minimum, Conditionally required, Recommended, Stronger practice, Example, and Stop and resolve levels.\nThis first implementation covers Plan and Acquire. The later stages are not presented as complete guidance.\nflowchart LR\n  plan[Plan] --&gt; acquire[Acquire]\n  acquire --&gt; organize[Organize]\n  organize --&gt; analyze[Analyze]\n  analyze --&gt; validate[Validate]\n  validate --&gt; collaborate[Collaborate]\n  collaborate --&gt; communicate[Communicate]\n  communicate --&gt; preserve[Preserve]\n  acquire -. revise .-&gt; plan\n  validate -. revise .-&gt; plan",
+    "crumbs": [
+      "Start Here",
+      "Research Practices"
+    ]
+  },
+  {
+    "objectID": "practices/index.html#choose-a-starting-point",
+    "href": "practices/index.html#choose-a-starting-point",
+    "title": "Research Practices",
+    "section": "Choose a starting point",
+    "text": "Choose a starting point\n\nStarting a new project for a short gateway and initiation checklist.\nPlan a project when purpose, scope, roles, outputs, or completion criteria are unsettled.\nPlan data management when access, storage, restrictions, identifiers, time, space, or computing need decisions.\nReceive a one-time dataset when a file, archive, extract, sequence batch, raster, or field export arrives.\nDesign recurring or programmatic acquisition for APIs, databases, feeds, portals, and scheduled extracts.\nAssess intake acceptance when deciding whether incoming data can enter the Organize stage.\n\nThe Lab Book separates draft policy, task guidance, templates, and examples. The Minimum GeoEpi Project Standard supplies the governing draft framework; these pages explain how to satisfy relevant information requirements without prescribing one folder tree, storage platform, workflow engine, or environment.",
+    "crumbs": [
+      "Start Here",
+      "Research Practices"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/index.html",
+    "href": "practices/acquire/index.html",
+    "title": "Acquire Data",
+    "section": "",
+    "text": "Acquisition is more than downloading or receiving files. It includes authorization, specification, preservation, registration, initial inspection, clarification, and an explicit acceptance decision.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Acquire Data"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/index.html#acquisition-workflow",
+    "href": "practices/acquire/index.html#acquisition-workflow",
+    "title": "Acquire Data",
+    "section": "Acquisition workflow",
+    "text": "Acquisition workflow\n\nAuthorize the source, access, and intended use.\nSpecify expected files, tables, period, geography, format, and documentation.\nReceive or extract into an approved intake location.\nPreserve the delivered representation before correction or transformation.\nRegister project context, source, and snapshot identifiers; add a separate intake ID when the delivery pattern or consequence warrants it.\nValidate enough to assess completeness and plausibility.\nClarify discrepancies with the provider or data owner.\nAccept or reject for staging and further organization using an explicit status.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Acquire Data"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/index.html#choose-the-acquisition-type",
+    "href": "practices/acquire/index.html#choose-the-acquisition-type",
+    "title": "Acquire Data",
+    "section": "Choose the acquisition type",
+    "text": "Choose the acquisition type\n\n\n\nType\nStart here\n\n\n\n\nOne-time file, archive, sequence batch, raster, or field export\nData intake\n\n\nPublic download or collaborator delivery\nData intake\n\n\nAPI, database extraction, recurring feed, or scheduled download\nRecurring and programmatic data\n\n\nSensor or laboratory stream\nData intake, then adapt the recurring-data guidance\n\n\n\nUse the data-source inventory, data dictionary, data-intake record, and file manifest as needed. The project readiness checklist records the gate without requiring a separate file for every item.\n\n\n\n\n\n\nProposed minimum requirement\n\n\n\nThe Minimum GeoEpi Project Standard requires source protection, provenance, restrictions, metadata, and result traceability. Receiving a file is not the same as accepting a dataset for staging. Intake acceptance does not establish analytical validity, model suitability, publication readiness, or authorization for every downstream use. Acceptance only determines whether the delivery may enter staging and further organization.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Acquire Data"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/index.html#evidence-and-interpretation",
+    "href": "practices/acquire/index.html#evidence-and-interpretation",
+    "title": "Acquire Data",
+    "section": "Evidence and interpretation",
+    "text": "Evidence and interpretation\nThe workflow draws on the existing resource catalog, especially RDMkit, DataONE, the FAIR Principles, CARE Principles, USDA NAL, CDC, FGDC, GBIF, EML, and EFI guidance. These sources support source preservation, provenance, metadata, access and governance, spatial documentation, epidemiological extraction context, ecological documentation, and versioned recurring data. Access date: 2026-08-05. External guidance informs this workflow but does not establish GeoEpi or institutional policy.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Acquire Data"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "GeoEpi Lab Book",
@@ -319,11 +449,544 @@
     "text": "Future guidance will connect general research practices to the risks and conventions of spatial, epidemiological, ecological, genomic, and modeling work. Potential topics include coordinate reference systems, geocoding, case definitions, sampling and detection, genomic provenance, model checking, uncertainty, and responsible communication.\nDomain pages should be developed with subject-matter review and should not be inferred from the resource catalog alone."
   },
   {
-    "objectID": "practices/index.html",
-    "href": "practices/index.html",
-    "title": "Research Practices",
+    "objectID": "practices/acquire/data-intake.html",
+    "href": "practices/acquire/data-intake.html",
+    "title": "Data Intake and Acceptance",
     "section": "",
-    "text": "This section will grow around the research lifecycle:\nplan → acquire → organize → analyze → validate → collaborate → communicate → preserve\nEach topic will distinguish minimum, recommended, and stronger practices, with examples and templates. Initial topic pages are deferred until they can be written from reviewed lab decisions rather than generic filler."
+    "text": "Proposed minimum requirement\n\n\n\nThe Minimum GeoEpi Project Standard requires source protection, provenance, restrictions, metadata, and traceability. Preserve the received source package and record enough evidence to identify, inspect, restrict, and accept or reject it for staging. Intake acceptance does not establish analytical validity, model suitability, publication readiness, or authorization for every downstream use.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Data Intake and Acceptance"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/data-intake.html#definitions-for-intake",
+    "href": "practices/acquire/data-intake.html#definitions-for-intake",
+    "title": "Data Intake and Acceptance",
+    "section": "Definitions for intake",
+    "text": "Definitions for intake\n\nSource: the provider’s conceptual dataset or data system.\nSnapshot: a specific received, downloaded, extracted, or released representation of the source.\nIntake event: the documented act of receiving or extracting a snapshot.\nPreserved source package: the retained original delivered representation before local correction or normalization.\nStaged data: a controlled working representation prepared from the preserved source package.\nDerived data: data created through documented transformation.\nAuthoritative location: the location designated as current for a specified artifact; it is not necessarily the provider’s original system.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Data Intake and Acceptance"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/data-intake.html#before-receipt",
+    "href": "practices/acquire/data-intake.html#before-receipt",
+    "title": "Data Intake and Acceptance",
+    "section": "Before receipt",
+    "text": "Before receipt\nRecord or confirm the provider, data owner, access authorization, expected dataset, expected files or tables, format, delivery method, version or time period, geographic and temporal support, restrictions, identifiers, expected documentation, and contact for discrepancies.\nDo not accept credentials in README files, Git, templates, or logs.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Data Intake and Acceptance"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/data-intake.html#receive-into-an-approved-location",
+    "href": "practices/acquire/data-intake.html#receive-into-an-approved-location",
+    "title": "Data Intake and Acceptance",
+    "section": "Receive into an approved location",
+    "text": "Receive into an approved location\nPlace incoming data first in an approved source or intake location. The location should prevent accidental overwrite, preserve original names where useful, preserve the delivered package, limit access appropriately, and separate received material from transformed data. No universal folder name or storage platform is required.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Data Intake and Acceptance"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/data-intake.html#assign-identifiers",
+    "href": "practices/acquire/data-intake.html#assign-identifiers",
+    "title": "Data Intake and Acceptance",
+    "section": "Assign identifiers",
+    "text": "Assign identifiers\nEvery received dataset must have project identity or authoritative project context, a source ID, and a snapshot, release, extraction, or acquisition ID sufficient to distinguish the received version. A separate intake ID is Conditionally required when more than one delivery or extraction may occur, replacement or corrected deliveries are possible, multiple people or systems handle intake, a formal manifest or audit trail is needed, or the workflow is recurring, regulated, operational, or high consequence. For a simple one-time delivery, the snapshot or acquisition ID may also serve as the intake ID.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Data Intake and Acceptance"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/data-intake.html#preserve-the-source-package",
+    "href": "practices/acquire/data-intake.html#preserve-the-source-package",
+    "title": "Data Intake and Acceptance",
+    "section": "Preserve the source package",
+    "text": "Preserve the source package\nRetain the original delivered representation where lawful and practical: a downloaded archive, spreadsheet, database extract, API response, sequence files, field-data export, and associated documentation. Do not silently edit the preserved source copy. Corrections and normalization belong in staged or derived representations.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Data Intake and Acceptance"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/data-intake.html#record-provenance",
+    "href": "practices/acquire/data-intake.html#record-provenance",
+    "title": "Data Intake and Acceptance",
+    "section": "Record provenance",
+    "text": "Record provenance\nAt minimum, record source, provider or collector, acquisition method, acquisition date/time where relevant, source identifier, version or release, original filename or table, local authoritative location, restriction or license, access contact, related agreement or documentation, transformation-record location, and a checksum when proportionate. Use the existing data-source inventory rather than creating redundant records.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Data Intake and Acceptance"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/data-intake.html#file-or-object-manifest",
+    "href": "practices/acquire/data-intake.html#file-or-object-manifest",
+    "title": "Data Intake and Acceptance",
+    "section": "File or object manifest",
+    "text": "File or object manifest\nUse a file-level manifest for a multi-file delivery, archive, repeated snapshot, sequence batch, raster stack, model-input bundle, transfer across systems, or regulated/high-consequence workflow. A checksum is Conditionally required when integrity across transfers, storage systems, releases, or repeated processing materially matters. It is not required for every trivial temporary file.\nUse the data-file manifest template.\nIn that manifest, relative_path is relative to the documented intake or preserved-source root. source_modified_time is the provider’s or source system’s time, not local receipt time, and should include a time zone or an explicit source convention. Checksum fields may be blank when integrity checking is not proportionate. supersedes should reference a stable file, snapshot, or manifest ID. Use the documented intake statuses in validation_status: received, pending validation, pending clarification, accepted for staging, accepted with documented limitation, rejected, or superseded; the row marked as an example must be deleted before use.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Data Intake and Acceptance"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/data-intake.html#initial-technical-inspection",
+    "href": "practices/acquire/data-intake.html#initial-technical-inspection",
+    "title": "Data Intake and Acceptance",
+    "section": "Initial technical inspection",
+    "text": "Initial technical inspection\nCheck what is appropriate:\n\nfile count, size, readability, archive integrity, format, delimiter, and encoding;\ntable or layer names, row and column counts, schema, and duplicate files;\nexpected time range, spatial extent, CRS, raster dimensions, alignment, and geometry validity;\nsequence count and metadata linkage;\nmissing documentation and unexpected executable or unsupported content.\n\nDo not perform substantive cleaning in the preserved source location.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Data Intake and Acceptance"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/data-intake.html#initial-content-inspection",
+    "href": "practices/acquire/data-intake.html#initial-content-inspection",
+    "title": "Data Intake and Acceptance",
+    "section": "Initial content inspection",
+    "text": "Initial content inspection\nCheck only enough to decide whether the delivery is plausible and ready for further organization: identifiers, key variables, units, missing-value conventions, interpretable dates and geography, expected categories, consistent confidentiality markings, and absence of obvious truncation or corruption. Intake inspection is not final analytical QA/QC.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Data Intake and Acceptance"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/data-intake.html#resolve-discrepancies",
+    "href": "practices/acquire/data-intake.html#resolve-discrepancies",
+    "title": "Data Intake and Acceptance",
+    "section": "Resolve discrepancies",
+    "text": "Resolve discrepancies\nRecord the discrepancy, date identified, source contacted, clarification received, replacement delivery, affected files, and acceptance decision. Never silently substitute or overwrite a corrected delivery. Link related deliveries through snapshot or intake identifiers.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Data Intake and Acceptance"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/data-intake.html#status-transition-model",
+    "href": "practices/acquire/data-intake.html#status-transition-model",
+    "title": "Data Intake and Acceptance",
+    "section": "Status-transition model",
+    "text": "Status-transition model\n\n\n\n\n\nflowchart TD\n  received[received] --&gt; pending_validation[pending validation]\n  pending_validation --&gt; pending_clarification[pending clarification, when needed]\n  pending_validation --&gt; accepted_staging[accepted for staging]\n  pending_clarification --&gt; accepted_staging\n  pending_validation --&gt; rejected[rejected]\n  pending_clarification --&gt; rejected\n  accepted_staging --&gt; limited[accepted with documented limitation]\n  accepted_staging --&gt; superseded[superseded later]\n  limited --&gt; superseded\n\n\n\n\n\n\nsuperseded does not delete or overwrite the earlier intake record. Rejection does not necessarily mean that the source is scientifically invalid; it means that this delivery must not enter staging. A pending delivery must not silently enter downstream analysis. An accepted-with-limitation decision must record the limitation, likely consequence, downstream restriction, responsible decision-maker, and required follow-up.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Data Intake and Acceptance"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/data-intake.html#acceptance-statuses",
+    "href": "practices/acquire/data-intake.html#acceptance-statuses",
+    "title": "Data Intake and Acceptance",
+    "section": "Acceptance statuses",
+    "text": "Acceptance statuses\nUse only these statuses for this intake workflow: received means material has arrived but has not been inspected; pending validation means technical or content inspection is incomplete; pending clarification means a material question has been sent to the provider or owner; accepted for staging means the delivery may enter the Organize stage; accepted with documented limitation means it may enter staging with a visible limitation and responsible decision-maker; rejected means it must not enter staging; and superseded means a later identified delivery replaces it while the original record remains preserved. These labels guide the workflow and do not establish institutional classification terminology.\n\n\n\n\n\n\nStop and resolve\n\n\n\nPause intake or analysis when authorization is missing or unclear; unexpected PII or protected information is present; restrictions conflict with the planned workflow; the source or version cannot be identified; required files are absent; corruption is suspected; identifiers cannot be reconciled; temporal fields are ambiguous; CRS or spatial support cannot be determined; the delivery differs materially from its description; replacement files overwrite prior evidence; or the intended storage location is not approved.\nThese conditions require clarification, not improvised assumptions.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Data Intake and Acceptance"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/data-intake.html#domain-specific-intake-checks",
+    "href": "practices/acquire/data-intake.html#domain-specific-intake-checks",
+    "title": "Data Intake and Acceptance",
+    "section": "Domain-specific intake checks",
+    "text": "Domain-specific intake checks\n\nSpatial data\nRecord CRS, datum, units, extent, resolution, grid origin/alignment, masks, boundary version, and NoData convention.\n\n\nEpidemiological and surveillance data\nRecord case-definition version, event/report/extract dates, denominator, deduplication, jurisdiction, reporting delay, and confidentiality.\n\n\nEcological and field data\nRecord sampling effort, collector, instrument, calibration, taxonomic identifiers, detection limits, and field revisions.\n\n\nGenomics and phylogenetics\nRecord sample-to-sequence linkage, accession, reference genome, database release, read-processing status, and metadata restrictions.\n\n\nModel and simulation inputs\nRecord parameter version, units, scenario, initial conditions, boundary conditions, and calibration source.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Data Intake and Acceptance"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/data-intake.html#intake-completion-gate",
+    "href": "practices/acquire/data-intake.html#intake-completion-gate",
+    "title": "Data Intake and Acceptance",
+    "section": "Intake completion gate",
+    "text": "Intake completion gate\n\nAuthorization, owner, provider, restrictions, and access contact are recorded.\nProject context, source ID, and snapshot/release/extraction/acquisition ID are assigned.\nA separate intake ID is assigned when the delivery pattern or consequence makes it conditionally required; a simple one-time delivery may reuse its snapshot ID.\nThe delivered source package is preserved at an authoritative location.\nExpected and received contents are compared.\nTechnical and initial content inspections are recorded.\nRequired metadata, identifiers, units, dates, geography, and domain fields are interpretable.\nDiscrepancies and clarifications are linked to the affected delivery.\nAcceptance status and responsible decision-maker are recorded.\nThe data are explicitly received, pending validation, pending clarification, accepted for staging, accepted with documented limitation, rejected, or superseded.\n\nPassing this gate allows an accepted delivery to enter the Organize stage. It does not certify analytical validity, model suitability, publication readiness, or authorization for every downstream use.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Data Intake and Acceptance"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/recurring-programmatic-data.html",
+    "href": "practices/acquire/recurring-programmatic-data.html",
+    "title": "Recurring and Programmatic Data",
+    "section": "",
+    "text": "Recurring acquisition includes APIs, databases, portals, scheduled extracts, surveillance feeds, sensor feeds, automated downloads, and revised historical datasets. Do not implement a client or download script here; record what a reproducible retrieval must preserve.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Recurring and Programmatic Data"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/recurring-programmatic-data.html#record-the-request-specification",
+    "href": "practices/acquire/recurring-programmatic-data.html#record-the-request-specification",
+    "title": "Recurring and Programmatic Data",
+    "section": "Record the request specification",
+    "text": "Record the request specification\nRetain the endpoint or database, dataset/table, query, request parameters, date range, geography, variables, filters, pagination behavior, extraction timestamp, API/database version where available, code version, and configuration version. Do not store secrets in configuration committed to Git.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Recurring and Programmatic Data"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/recurring-programmatic-data.html#preserve-snapshots",
+    "href": "practices/acquire/recurring-programmatic-data.html#preserve-snapshots",
+    "title": "Recurring and Programmatic Data",
+    "section": "Preserve snapshots",
+    "text": "Preserve snapshots\nWhen a retrieval can change, produce a preserved snapshot or immutable release record appropriate to the project. Distinguish the live source, retrieved snapshot, normalized data, and current analytical dataset. A live URL is not a reproducibility identifier.\nEach accepted retrieval should produce or update a source inventory record, snapshot or retrieval ID, intake or acceptance status, schema/revision assessment, and a preserved snapshot when the source can change or the workflow consequence warrants it. A retrieval manifest is Conditionally required for multi-file, repeated, transferred, regulated, operational, or integrity-sensitive retrievals.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Recurring and Programmatic Data"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/recurring-programmatic-data.html#revisions-and-late-arriving-data",
+    "href": "practices/acquire/recurring-programmatic-data.html#revisions-and-late-arriving-data",
+    "title": "Recurring and Programmatic Data",
+    "section": "Revisions and late-arriving data",
+    "text": "Revisions and late-arriving data\nDocument replacement behavior, backfills, corrected records, reporting delays, revised historical periods, schema changes, changed geographic boundaries, and changed case definitions. “Latest” is not an adequate identifier for a reproducible retrieval.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Recurring and Programmatic Data"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/recurring-programmatic-data.html#idempotence-and-overwrite-safety",
+    "href": "practices/acquire/recurring-programmatic-data.html#idempotence-and-overwrite-safety",
+    "title": "Recurring and Programmatic Data",
+    "section": "Idempotence and overwrite safety",
+    "text": "Idempotence and overwrite safety\nRecommended: design retrievals that do not silently overwrite prior snapshots, detect existing valid outputs, record partial failure, support safe retry, and distinguish completed, failed, incomplete, and superseded retrievals.\n\n\n\n\n\n\nStronger practice\n\n\n\nFor a consequential recurring workflow, retain an immutable retrieval manifest and an automated completeness check for every snapshot. This strengthens traceability without making a scheduler, workflow engine, or container universally required.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Recurring and Programmatic Data"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/recurring-programmatic-data.html#pagination-and-completeness",
+    "href": "practices/acquire/recurring-programmatic-data.html#pagination-and-completeness",
+    "title": "Recurring and Programmatic Data",
+    "section": "Pagination and completeness",
+    "text": "Pagination and completeness\nBefore accepting a retrieval, retain evidence that all pages or partitions were retrieved, expected date or spatial coverage is present, rate limiting did not silently truncate results, retries did not duplicate records, and response counts are plausible.\nA successful HTTP response, database connection, or completed download command is not evidence of complete retrieval.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Recurring and Programmatic Data"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/recurring-programmatic-data.html#schema-drift",
+    "href": "practices/acquire/recurring-programmatic-data.html#schema-drift",
+    "title": "Recurring and Programmatic Data",
+    "section": "Schema drift",
+    "text": "Schema drift\nCheck for added or removed variables, type changes, category changes, renamed fields, changed missing-value conventions, altered units, and changed coordinate definitions. Record how a change was handled; do not silently coerce a new schema into an old one.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Recurring and Programmatic Data"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/recurring-programmatic-data.html#retrieval-manifest",
+    "href": "practices/acquire/recurring-programmatic-data.html#retrieval-manifest",
+    "title": "Recurring and Programmatic Data",
+    "section": "Retrieval manifest",
+    "text": "Retrieval manifest\nRecommended, conditionally required for consequential recurring workflows: retain a manifest containing retrieval ID, source ID, snapshot ID, intake or acceptance status, requested period, request hash where useful, retrieved files, status, timestamps, software/configuration version, checksums where proportionate, log location, schema/revision assessment, and error or retry information.\n\n\n\n\n\n\nExample\n\n\n\nA weekly environmental raster retrieval should record the requested weeks, geographic tiles, CRS, grid alignment, response status, and snapshot identifier. A recurring surveillance extract should also record the query, case-definition version, report-date window, late-report behavior, and database snapshot or extraction timestamp.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Recurring and Programmatic Data"
+    ]
+  },
+  {
+    "objectID": "practices/acquire/recurring-programmatic-data.html#acceptance-gate-for-recurring-data",
+    "href": "practices/acquire/recurring-programmatic-data.html#acceptance-gate-for-recurring-data",
+    "title": "Recurring and Programmatic Data",
+    "section": "Acceptance gate for recurring data",
+    "text": "Acceptance gate for recurring data\n\nRequest specification and source identifier are versioned.\nRetrieval timestamp, requested period, geography, and configuration are recorded.\nA snapshot or immutable release record exists when the source can change.\nPagination, partition, coverage, and response-count checks are recorded.\nSchema drift and revision behavior are assessed.\nRetry, failure, duplicate, incomplete, and superseded states are distinguishable.\nCredentials are kept outside committed code, configuration, logs, and templates.\nThe resulting snapshot is registered through the data-source inventory and, when useful, the file manifest.\nThe retrieval has an intake or acceptance status, schema/revision assessment, and preserved snapshot when required.",
+    "crumbs": [
+      "Start Here",
+      "Acquire",
+      "Recurring and Programmatic Data"
+    ]
+  },
+  {
+    "objectID": "practices/plan/data-management-planning.html",
+    "href": "practices/plan/data-management-planning.html",
+    "title": "Plan Data Management",
+    "section": "",
+    "text": "Data-management planning is a set of decisions that must be recorded, not necessarily a separate formal document. Reconcile anticipated information with the actual data-source inventory during intake.",
+    "crumbs": [
+      "Start Here",
+      "Plan",
+      "Plan Data Management"
+    ]
+  },
+  {
+    "objectID": "practices/plan/data-management-planning.html#anticipated-data-inventory",
+    "href": "practices/plan/data-management-planning.html#anticipated-data-inventory",
+    "title": "Plan Data Management",
+    "section": "Anticipated data inventory",
+    "text": "Anticipated data inventory\nBefore acquisition, record the source or provider, expected format, approximate volume, delivery frequency, temporal and spatial support, identifiers, update behavior, access conditions, likely sensitivity, and expected authoritative location.",
+    "crumbs": [
+      "Start Here",
+      "Plan",
+      "Plan Data Management"
+    ]
+  },
+  {
+    "objectID": "practices/plan/data-management-planning.html#access-and-governance",
+    "href": "practices/plan/data-management-planning.html#access-and-governance",
+    "title": "Plan Data Management",
+    "section": "Access and governance",
+    "text": "Access and governance\nIdentify the data owner, access contact, authorized users, data-use agreement, redistribution and publication restrictions, expiration or destruction requirements, sensitive locations, PII or linked identifiers, and Indigenous or community governance considerations where applicable.\n\n\n\n\n\n\nStop and resolve\n\n\n\nDo not invent institutional classifications or assume that a storage platform is approved for every data class. Link unresolved questions about classification, storage, cloud services, backups, retention, PII, sensitive spatial data, and public repositories to Open Policy Decisions.",
+    "crumbs": [
+      "Start Here",
+      "Plan",
+      "Plan Data Management"
+    ]
+  },
+  {
+    "objectID": "practices/plan/data-management-planning.html#storage-and-authoritative-copies",
+    "href": "practices/plan/data-management-planning.html#storage-and-authoritative-copies",
+    "title": "Plan Data Management",
+    "section": "Storage and authoritative copies",
+    "text": "Storage and authoritative copies\nDistinguish the delivery location, preserved source copy, active working storage, derived-data storage, repository code and documentation, temporary computation, output storage, and archive or release location. GitHub is not the default location for large, restricted, or non-redistributable source data.",
+    "crumbs": [
+      "Start Here",
+      "Plan",
+      "Plan Data Management"
+    ]
+  },
+  {
+    "objectID": "practices/plan/data-management-planning.html#backup-and-recovery-planning",
+    "href": "practices/plan/data-management-planning.html#backup-and-recovery-planning",
+    "title": "Plan Data Management",
+    "section": "Backup and recovery planning",
+    "text": "Backup and recovery planning\nRecord the authoritative copy, backup responsibility, expected recovery path, consequences of loss, whether restoration has been tested, and whether the data can be reacquired. Do not invent a backup frequency; use the applicable institutional or agreement-based requirement.",
+    "crumbs": [
+      "Start Here",
+      "Plan",
+      "Plan Data Management"
+    ]
+  },
+  {
+    "objectID": "practices/plan/data-management-planning.html#identifiers-and-naming",
+    "href": "practices/plan/data-management-planning.html#identifiers-and-naming",
+    "title": "Plan Data Management",
+    "section": "Identifiers and naming",
+    "text": "Identifiers and naming\nPlan stable identifiers for the project, source dataset, source snapshot or release, derived dataset, model scenario, run, and output. Prefer identifiers that remain stable when filenames change. Do not prescribe one universal naming convention.",
+    "crumbs": [
+      "Start Here",
+      "Plan",
+      "Plan Data Management"
+    ]
+  },
+  {
+    "objectID": "practices/plan/data-management-planning.html#temporal-conventions",
+    "href": "practices/plan/data-management-planning.html#temporal-conventions",
+    "title": "Plan Data Management",
+    "section": "Temporal conventions",
+    "text": "Temporal conventions\nPlan for event date, report date, extraction date, acquisition date, processing date, time zone, daylight-saving behavior, epidemiological week convention, and revision or late-reporting behavior.",
+    "crumbs": [
+      "Start Here",
+      "Plan",
+      "Plan Data Management"
+    ]
+  },
+  {
+    "objectID": "practices/plan/data-management-planning.html#spatial-conventions",
+    "href": "practices/plan/data-management-planning.html#spatial-conventions",
+    "title": "Plan Data Management",
+    "section": "Spatial conventions",
+    "text": "Spatial conventions\nPlan for CRS and datum, units, geographic extent, spatial support, resolution, raster alignment, boundary source/version, and sensitive-coordinate handling.",
+    "crumbs": [
+      "Start Here",
+      "Plan",
+      "Plan Data Management"
+    ]
+  },
+  {
+    "objectID": "practices/plan/data-management-planning.html#computational-planning",
+    "href": "practices/plan/data-management-planning.html#computational-planning",
+    "title": "Plan Data Management",
+    "section": "Computational planning",
+    "text": "Computational planning\nAnticipate the software stack, packages, GIS software, databases, command-line tools, containers, HPC, storage volume, memory, runtime, parallel execution, external services, and credentials. Dependency locking and containers are proportional practices, not universal requirements. Never place credentials in Git, README files, templates, or logs.",
+    "crumbs": [
+      "Start Here",
+      "Plan",
+      "Plan Data Management"
+    ]
+  },
+  {
+    "objectID": "practices/plan/data-management-planning.html#release-and-preservation-planning",
+    "href": "practices/plan/data-management-planning.html#release-and-preservation-planning",
+    "title": "Plan Data Management",
+    "section": "Release and preservation planning",
+    "text": "Release and preservation planning\nAt initiation, identify likely publication repository, code release, data release or access statement, persistent identifier, archive, retention owner, and closeout trigger. Not all data must be made public; access restrictions and agreements control.",
+    "crumbs": [
+      "Start Here",
+      "Plan",
+      "Plan Data Management"
+    ]
+  },
+  {
+    "objectID": "practices/plan/data-management-planning.html#planning-gate",
+    "href": "practices/plan/data-management-planning.html#planning-gate",
+    "title": "Plan Data Management",
+    "section": "Planning gate",
+    "text": "Planning gate\n\nPurpose and scope are recorded.\nResponsible roles and decision authority are known.\nAnticipated sources and restrictions are identified.\nAuthoritative locations and recovery responsibilities are planned.\nComputing and external dependencies are plausible.\nExpected outputs and acceptance criteria are stated.\nUnresolved policy questions are visible.\nA proportional README or charter exists.\n\nPassing this gate means that data-management conditions are planned well enough to begin authorized acquisition. It does not accept any received dataset.",
+    "crumbs": [
+      "Start Here",
+      "Plan",
+      "Plan Data Management"
+    ]
+  },
+  {
+    "objectID": "practices/plan/project-scope.html",
+    "href": "practices/plan/project-scope.html",
+    "title": "Define Project Scope and Responsibilities",
+    "section": "",
+    "text": "State whether the project addresses a scientific question, operational objective, decision-support need, software or infrastructure objective, or training/demonstration purpose. “Build a model” and “analyze the data” describe techniques, not what the work is meant to accomplish.",
+    "crumbs": [
+      "Start Here",
+      "Plan",
+      "Define Project Scope and Responsibilities"
+    ]
+  },
+  {
+    "objectID": "practices/plan/project-scope.html#begin-with-purpose-not-technique",
+    "href": "practices/plan/project-scope.html#begin-with-purpose-not-technique",
+    "title": "Define Project Scope and Responsibilities",
+    "section": "",
+    "text": "State whether the project addresses a scientific question, operational objective, decision-support need, software or infrastructure objective, or training/demonstration purpose. “Build a model” and “analyze the data” describe techniques, not what the work is meant to accomplish.",
+    "crumbs": [
+      "Start Here",
+      "Plan",
+      "Define Project Scope and Responsibilities"
+    ]
+  },
+  {
+    "objectID": "practices/plan/project-scope.html#define-the-analytical-or-operational-unit",
+    "href": "practices/plan/project-scope.html#define-the-analytical-or-operational-unit",
+    "title": "Define Project Scope and Responsibilities",
+    "section": "Define the analytical or operational unit",
+    "text": "Define the analytical or operational unit\nRecord the population or system, geography, time period, outcome or response, unit of observation, unit of inference, intended comparison, intended users, and decision or publication context.\n\n\n\n\n\n\nExample\n\n\n\nA county-week disease model may use individual case records as inputs but make inference about county-week incidence. The scope should name both units so that data receipt, denominators, and completion criteria are not confused.",
+    "crumbs": [
+      "Start Here",
+      "Plan",
+      "Define Project Scope and Responsibilities"
+    ]
+  },
+  {
+    "objectID": "practices/plan/project-scope.html#set-explicit-boundaries",
+    "href": "practices/plan/project-scope.html#set-explicit-boundaries",
+    "title": "Define Project Scope and Responsibilities",
+    "section": "Set explicit boundaries",
+    "text": "Set explicit boundaries\nDocument included work, excluded work, known dependencies, assumptions, unavailable data, activities deferred to later phases, and the scope-change process. Exclusions define the project as much as inclusions.",
+    "crumbs": [
+      "Start Here",
+      "Plan",
+      "Define Project Scope and Responsibilities"
+    ]
+  },
+  {
+    "objectID": "practices/plan/project-scope.html#define-outputs",
+    "href": "practices/plan/project-scope.html#define-outputs",
+    "title": "Define Project Scope and Responsibilities",
+    "section": "Define outputs",
+    "text": "Define outputs\nDistinguish internal analytical outputs, manuscript figures and tables, reusable datasets, software releases, operational products, dashboards, forecasts, reports, and archival packages. Every consequential output needs an authoritative location and responsible owner.\n\n\n\n\n\n\nExample\n\n\n\nA weekly raster workflow may be complete only when the expected dates and spatial coverage are present. “The script ran” is not the same completion criterion as “the weekly product is available for every planned region and week.”",
+    "crumbs": [
+      "Start Here",
+      "Plan",
+      "Define Project Scope and Responsibilities"
+    ]
+  },
+  {
+    "objectID": "practices/plan/project-scope.html#define-completion-and-acceptance",
+    "href": "practices/plan/project-scope.html#define-completion-and-acceptance",
+    "title": "Define Project Scope and Responsibilities",
+    "section": "Define completion and acceptance",
+    "text": "Define completion and acceptance\nBefore methods are selected, record what counts as complete, which checks must pass, who reviews the result, what limitations are acceptable, and what would prevent release or operational use. Keep these as planned acceptance criteria; detailed analytical validation belongs to a later lifecycle stage.",
+    "crumbs": [
+      "Start Here",
+      "Plan",
+      "Define Project Scope and Responsibilities"
+    ]
+  },
+  {
+    "objectID": "practices/plan/project-scope.html#assign-roles-and-authority",
+    "href": "practices/plan/project-scope.html#assign-roles-and-authority",
+    "title": "Define Project Scope and Responsibilities",
+    "section": "Assign roles and authority",
+    "text": "Assign roles and authority\nUse roles rather than assuming a particular job title:\n\nproject lead;\ndata provider or steward;\nanalytical lead;\nsubject-matter reviewer;\ntechnical reviewer;\noperational owner;\nrelease authority;\nfuture maintainer.\n\nOne person may hold multiple roles. The purpose is to identify responsibility and decision authority, not to create unnecessary bureaucracy.\n\n\n\n\n\n\nExample\n\n\n\nA simulation project should fix scenario definitions, parameter ownership, acceptance criteria, and review authority before committing to a large HPC run. Otherwise a completed run may not answer the intended question.",
+    "crumbs": [
+      "Start Here",
+      "Plan",
+      "Define Project Scope and Responsibilities"
+    ]
+  },
+  {
+    "objectID": "practices/plan/project-scope.html#determine-the-project-profile",
+    "href": "practices/plan/project-scope.html#determine-the-project-profile",
+    "title": "Define Project Scope and Responsibilities",
+    "section": "Determine the project profile",
+    "text": "Determine the project profile\n\n\n\n\n\n\n\n\nProfile\nPlanning depth\nReview, environment, and handoff expectation\n\n\n\n\nSmall exploratory project\nREADME scope, likely sources, outputs, and immediate risks\nLightweight environment note, proportionate review, and visible next action\n\n\nPublication-oriented collaborative project\nCharter or equivalent scope, contributors, data restrictions, outputs, and acceptance criteria\nRecorded review, reproducible environment, source/data controls, and planned archive/handoff\n\n\nOperational or high-consequence project\nFormal ownership, dependencies, failure consequences, controlled outputs, and change authority\nExplicit environment, review authority, operational owner, recovery path, and handoff preparation",
+    "crumbs": [
+      "Start Here",
+      "Plan",
+      "Define Project Scope and Responsibilities"
+    ]
+  },
+  {
+    "objectID": "practices/plan/project-scope.html#record-consequential-decisions",
+    "href": "practices/plan/project-scope.html#record-consequential-decisions",
+    "title": "Define Project Scope and Responsibilities",
+    "section": "Record consequential decisions",
+    "text": "Record consequential decisions\nUse the lightest durable record that preserves the decision, rationale, responsible person, and date. A README history, GitHub issue, project note, decision log, or formal exception record may be sufficient. Do not require a formal decision record for routine coding choices.",
+    "crumbs": [
+      "Start Here",
+      "Plan",
+      "Define Project Scope and Responsibilities"
+    ]
+  },
+  {
+    "objectID": "practices/plan/project-scope.html#geoepi-examples",
+    "href": "practices/plan/project-scope.html#geoepi-examples",
+    "title": "Define Project Scope and Responsibilities",
+    "section": "GeoEpi examples",
+    "text": "GeoEpi examples\n\n\n\n\n\n\nExample\n\n\n\nA phylogenetic project may define its deliverable as a reviewed tree plus a sample-to-sequence metadata table. Without that linkage, a visually complete tree may not meet the project’s acceptance criteria.\n\n\nThe project charter template is Conditionally required when project consequence or coordination warrants it. The README template supports small projects. The readiness checklist supports the initiation review.",
+    "crumbs": [
+      "Start Here",
+      "Plan",
+      "Define Project Scope and Responsibilities"
+    ]
   },
   {
     "objectID": "standards/geoepi-practice-audit.html",
@@ -435,7 +1098,7 @@
     "href": "start/index.html",
     "title": "Start Here",
     "section": "",
-    "text": "Use this section when starting a project, inheriting one, or trying to make an existing project recoverable.\n\nMinimum GeoEpi Standard\nStarting a New Project\nRescuing an Existing Project\nProject Handoff\n\nThe Minimum GeoEpi Project Standard is a proposed draft policy requiring human review. The supporting pages are practical guidance, not approved lab policy.",
+    "text": "Use this section when starting a project, inheriting one, or trying to make an existing project recoverable.\n\nMinimum GeoEpi Standard\nStarting a New Project\nRescuing an Existing Project\nProject Handoff\n\nFor the task workflow, continue from Plan a Project, Plan Data Management, or Data Intake and Acceptance. The Research Practices pages contain the detailed guidance; these Start Here links are gateways, not duplicate checklists.\nThe Minimum GeoEpi Project Standard is a proposed draft policy requiring human review. The supporting pages are practical guidance, not approved lab policy.",
     "crumbs": [
       "Start Here"
     ]
@@ -445,40 +1108,40 @@
     "href": "start/new-project.html",
     "title": "Starting a New Project",
     "section": "",
-    "text": "Early decisions about scope, ownership, data access, and outputs prevent avoidable rework.",
+    "text": "Write a README with the objective, intended output, owner, authoritative location, current status, likely data sources, and immediate restrictions. Record the next decision, the person who can make it, and whether a separate charter is warranted. Do not start analysis while ownership, source identity, restrictions, or intended outputs remain materially unclear.",
     "crumbs": [
       "Start Here",
       "Starting a New Project"
     ]
   },
   {
-    "objectID": "start/new-project.html#why-this-matters",
-    "href": "start/new-project.html#why-this-matters",
+    "objectID": "start/new-project.html#minute-project-start",
+    "href": "start/new-project.html#minute-project-start",
     "title": "Starting a New Project",
     "section": "",
-    "text": "Early decisions about scope, ownership, data access, and outputs prevent avoidable rework.",
+    "text": "Write a README with the objective, intended output, owner, authoritative location, current status, likely data sources, and immediate restrictions. Record the next decision, the person who can make it, and whether a separate charter is warranted. Do not start analysis while ownership, source identity, restrictions, or intended outputs remain materially unclear.",
     "crumbs": [
       "Start Here",
       "Starting a New Project"
     ]
   },
   {
-    "objectID": "start/new-project.html#suggested-sequence",
-    "href": "start/new-project.html#suggested-sequence",
+    "objectID": "start/new-project.html#choose-the-pathway",
+    "href": "start/new-project.html#choose-the-pathway",
     "title": "Starting a New Project",
-    "section": "Suggested sequence",
-    "text": "Suggested sequence\n\nWrite a project brief: question, population, geography, time period, outcomes, stakeholders, and intended outputs.\nIdentify data stewards, permissions, privacy constraints, and retention expectations before acquisition.\nCreate a version-controlled project skeleton with a README, metadata, and decision log.\nRecord the analysis plan and distinguish exploratory from confirmatory work.\nDefine validation checks and a handoff point before analysis begins.\nReview the setup with a collaborator not involved in the initial design.",
+    "section": "Choose the pathway",
+    "text": "Choose the pathway\n\nStandard project start\nUse Plan and Project scope to define purpose, boundaries, outputs, roles, and completion criteria. Then use Data-management planning before receiving data.\n\n\nHigher-consequence project\nUse the same sequence with a standalone project charter, explicit review authority, data-management decisions, environment planning, and a documented handoff expectation. Triggers include publication intent, operational use, sensitive or governed data, substantial computation, formal deliverables, or consequential policy use.\n\n\nWhen data arrive\nUse Data intake before correcting, renaming, normalizing, or accepting the delivery. Use Recurring and programmatic data for APIs, databases, and scheduled retrievals.",
     "crumbs": [
       "Start Here",
       "Starting a New Project"
     ]
   },
   {
-    "objectID": "start/new-project.html#checklist",
-    "href": "start/new-project.html#checklist",
+    "objectID": "start/new-project.html#compact-initiation-checklist",
+    "href": "start/new-project.html#compact-initiation-checklist",
     "title": "Starting a New Project",
-    "section": "Checklist",
-    "text": "Checklist\n\nProject brief and scope are reviewable.\nRoles and decision rights are named.\nData access and ethical constraints are documented.\nPlanned outputs and validation are explicit.",
+    "section": "Compact initiation checklist",
+    "text": "Compact initiation checklist\n\nObjective, intended output, owner, location, and status are in the README.\nScope boundaries, dependencies, and completion criteria are stated.\nRoles, decision authority, data contacts, and restrictions are identified.\nStorage, computing, acquisition, and handoff conditions are plausible.\nThe project uses the readiness checklist at initiation.",
     "crumbs": [
       "Start Here",
       "Starting a New Project"

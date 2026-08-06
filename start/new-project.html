@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="A provisional sequence for setting up a new GeoEpi project.">
+<meta name="description" content="A concise gateway into GeoEpi project planning and data intake.">
 
 <title>Starting a New Project – GeoEpi Lab Book</title>
 <style>
@@ -228,9 +228,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#why-this-matters" id="toc-why-this-matters" class="nav-link active" data-scroll-target="#why-this-matters">Why this matters</a></li>
-  <li><a href="#suggested-sequence" id="toc-suggested-sequence" class="nav-link" data-scroll-target="#suggested-sequence">Suggested sequence</a></li>
-  <li><a href="#checklist" id="toc-checklist" class="nav-link" data-scroll-target="#checklist">Checklist</a></li>
+  <li><a href="#minute-project-start" id="toc-minute-project-start" class="nav-link active" data-scroll-target="#minute-project-start">30-minute project start</a></li>
+  <li><a href="#choose-the-pathway" id="toc-choose-the-pathway" class="nav-link" data-scroll-target="#choose-the-pathway">Choose the pathway</a>
+  <ul class="collapse">
+  <li><a href="#standard-project-start" id="toc-standard-project-start" class="nav-link" data-scroll-target="#standard-project-start">Standard project start</a></li>
+  <li><a href="#higher-consequence-project" id="toc-higher-consequence-project" class="nav-link" data-scroll-target="#higher-consequence-project">Higher-consequence project</a></li>
+  <li><a href="#when-data-arrive" id="toc-when-data-arrive" class="nav-link" data-scroll-target="#when-data-arrive">When data arrive</a></li>
+  </ul></li>
+  <li><a href="#compact-initiation-checklist" id="toc-compact-initiation-checklist" class="nav-link" data-scroll-target="#compact-initiation-checklist">Compact initiation checklist</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/start/new-project.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/start/new-project.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -244,7 +249,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    A provisional sequence for setting up a new GeoEpi project.
+    A concise gateway into GeoEpi project planning and data intake.
   </div>
 </div>
 
@@ -261,28 +266,33 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="why-this-matters" class="level2">
-<h2 class="anchored" data-anchor-id="why-this-matters">Why this matters</h2>
-<p>Early decisions about scope, ownership, data access, and outputs prevent avoidable rework.</p>
+<section id="minute-project-start" class="level2">
+<h2 class="anchored" data-anchor-id="minute-project-start">30-minute project start</h2>
+<p>Write a README with the objective, intended output, owner, authoritative location, current status, likely data sources, and immediate restrictions. Record the next decision, the person who can make it, and whether a separate charter is warranted. Do not start analysis while ownership, source identity, restrictions, or intended outputs remain materially unclear.</p>
 </section>
-<section id="suggested-sequence" class="level2">
-<h2 class="anchored" data-anchor-id="suggested-sequence">Suggested sequence</h2>
-<ol type="1">
-<li>Write a project brief: question, population, geography, time period, outcomes, stakeholders, and intended outputs.</li>
-<li>Identify data stewards, permissions, privacy constraints, and retention expectations before acquisition.</li>
-<li>Create a version-controlled project skeleton with a README, metadata, and decision log.</li>
-<li>Record the analysis plan and distinguish exploratory from confirmatory work.</li>
-<li>Define validation checks and a handoff point before analysis begins.</li>
-<li>Review the setup with a collaborator not involved in the initial design.</li>
-</ol>
+<section id="choose-the-pathway" class="level2">
+<h2 class="anchored" data-anchor-id="choose-the-pathway">Choose the pathway</h2>
+<section id="standard-project-start" class="level3">
+<h3 class="anchored" data-anchor-id="standard-project-start">Standard project start</h3>
+<p>Use <a href="../practices/plan/index.html">Plan</a> and <a href="../practices/plan/project-scope.html">Project scope</a> to define purpose, boundaries, outputs, roles, and completion criteria. Then use <a href="../practices/plan/data-management-planning.html">Data-management planning</a> before receiving data.</p>
 </section>
-<section id="checklist" class="level2">
-<h2 class="anchored" data-anchor-id="checklist">Checklist</h2>
+<section id="higher-consequence-project" class="level3">
+<h3 class="anchored" data-anchor-id="higher-consequence-project">Higher-consequence project</h3>
+<p>Use the same sequence with a standalone <a href="../templates/project-charter-template.md">project charter</a>, explicit review authority, data-management decisions, environment planning, and a documented handoff expectation. Triggers include publication intent, operational use, sensitive or governed data, substantial computation, formal deliverables, or consequential policy use.</p>
+</section>
+<section id="when-data-arrive" class="level3">
+<h3 class="anchored" data-anchor-id="when-data-arrive">When data arrive</h3>
+<p>Use <a href="../practices/acquire/data-intake.html">Data intake</a> before correcting, renaming, normalizing, or accepting the delivery. Use <a href="../practices/acquire/recurring-programmatic-data.html">Recurring and programmatic data</a> for APIs, databases, and scheduled retrievals.</p>
+</section>
+</section>
+<section id="compact-initiation-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="compact-initiation-checklist">Compact initiation checklist</h2>
 <ul class="task-list">
-<li><label><input type="checkbox">Project brief and scope are reviewable.</label></li>
-<li><label><input type="checkbox">Roles and decision rights are named.</label></li>
-<li><label><input type="checkbox">Data access and ethical constraints are documented.</label></li>
-<li><label><input type="checkbox">Planned outputs and validation are explicit.</label></li>
+<li><label><input type="checkbox">Objective, intended output, owner, location, and status are in the README.</label></li>
+<li><label><input type="checkbox">Scope boundaries, dependencies, and completion criteria are stated.</label></li>
+<li><label><input type="checkbox">Roles, decision authority, data contacts, and restrictions are identified.</label></li>
+<li><label><input type="checkbox">Storage, computing, acquisition, and handoff conditions are plausible.</label></li>
+<li><label><input type="checkbox">The project uses the <a href="../templates/project-readiness-checklist.md">readiness checklist</a> at initiation.</label></li>
 </ul>
 
 
