@@ -1,0 +1,47 @@
+---
+title: "Acquire Data"
+description: "Receive, preserve, register, inspect, clarify, and accept data without losing source integrity or provenance."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - data-management
+  - data-intake
+owner: GeoEpi Lab
+last-reviewed: 2026-08-05
+review-cycle: annual
+sidebar: practices
+---
+
+Acquisition is more than downloading or receiving files. It includes authorization, specification, preservation, registration, initial inspection, clarification, and an explicit acceptance decision.
+
+## Acquisition workflow
+
+1. **Authorize** the source, access, and intended use.
+2. **Specify** expected files, tables, period, geography, format, and documentation.
+3. **Receive or extract** into an approved intake location.
+4. **Preserve** the delivered representation before correction or transformation.
+5. **Register** source, snapshot, and intake-event identifiers.
+6. **Validate** enough to assess completeness and plausibility.
+7. **Clarify** discrepancies with the provider or data owner.
+8. **Accept or reject for analysis** using an explicit status.
+
+## Choose the acquisition type
+
+| Type | Start here |
+|---|---|
+| One-time file, archive, sequence batch, raster, or field export | [Data intake](data-intake.qmd) |
+| Public download or collaborator delivery | [Data intake](data-intake.qmd) |
+| API, database extraction, recurring feed, or scheduled download | [Recurring and programmatic data](recurring-programmatic-data.qmd) |
+| Sensor or laboratory stream | [Data intake](data-intake.qmd), then adapt the recurring-data guidance |
+
+Use the [data-source inventory](../../templates/data-source-inventory-template.csv), [data dictionary](../../templates/data-dictionary-template.csv), [data-intake record](../../templates/data-intake-record-template.md), and [file manifest](../../templates/data-file-manifest-template.csv) as needed. The [project readiness checklist](../../templates/project-readiness-checklist.md) records the gate without requiring a separate file for every item.
+
+::: {.callout-warning}
+## Draft minimum
+
+Receiving a file is not the same as accepting a dataset for analysis. Acceptance requires enough evidence to identify the source, preserve the received material, understand restrictions, and determine whether the delivery is complete and usable.
+:::

@@ -1,0 +1,71 @@
+---
+title: "Recurring and Programmatic Data"
+description: "Plan reproducible retrievals from APIs, databases, portals, feeds, sensors, and revised historical sources."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - data-management
+  - data-intake
+  - automation
+owner: GeoEpi Lab
+last-reviewed: 2026-08-05
+review-cycle: annual
+sidebar: practices
+---
+
+Recurring acquisition includes APIs, databases, portals, scheduled extracts, surveillance feeds, sensor feeds, automated downloads, and revised historical datasets. Do not implement a client or download script here; record what a reproducible retrieval must preserve.
+
+## Record the request specification
+
+Retain the endpoint or database, dataset/table, query, request parameters, date range, geography, variables, filters, pagination behavior, extraction timestamp, API/database version where available, code version, and configuration version. Do not store secrets in configuration committed to Git.
+
+## Preserve snapshots
+
+When a retrieval can change, produce a preserved snapshot or immutable release record appropriate to the project. Distinguish the live source, retrieved snapshot, normalized data, and current analytical dataset. A live URL is not a reproducibility identifier.
+
+## Revisions and late-arriving data
+
+Document replacement behavior, backfills, corrected records, reporting delays, revised historical periods, schema changes, changed geographic boundaries, and changed case definitions. “Latest” is not an adequate identifier for a reproducible retrieval.
+
+## Idempotence and overwrite safety
+
+**Recommended:** design retrievals that do not silently overwrite prior snapshots, detect existing valid outputs, record partial failure, support safe retry, and distinguish completed, failed, incomplete, and superseded retrievals.
+
+::: {.callout-tip}
+## Stronger practice
+
+For a consequential recurring workflow, retain an immutable retrieval manifest and an automated completeness check for every snapshot. This strengthens traceability without making a scheduler, workflow engine, or container universally required.
+:::
+
+## Pagination and completeness
+
+Before accepting a retrieval, retain evidence that all pages or partitions were retrieved, expected date or spatial coverage is present, rate limiting did not silently truncate results, retries did not duplicate records, and response counts are plausible.
+
+## Schema drift
+
+Check for added or removed variables, type changes, category changes, renamed fields, changed missing-value conventions, altered units, and changed coordinate definitions. Record how a change was handled; do not silently coerce a new schema into an old one.
+
+## Retrieval manifest
+
+**Recommended, conditionally required for consequential recurring workflows:** retain a manifest containing retrieval ID, source ID, requested period, request hash where useful, retrieved files, status, timestamps, software/configuration version, checksums where proportionate, log location, and error or retry information.
+
+::: {.callout-note}
+## Example
+
+A weekly environmental raster retrieval should record the requested weeks, geographic tiles, CRS, grid alignment, response status, and snapshot identifier. A recurring surveillance extract should also record the query, case-definition version, report-date window, late-report behavior, and database snapshot or extraction timestamp.
+:::
+
+## Acceptance gate for recurring data
+
+- [ ] Request specification and source identifier are versioned.
+- [ ] Retrieval timestamp, requested period, geography, and configuration are recorded.
+- [ ] A snapshot or immutable release record exists when the source can change.
+- [ ] Pagination, partition, coverage, and response-count checks are recorded.
+- [ ] Schema drift and revision behavior are assessed.
+- [ ] Retry, failure, duplicate, incomplete, and superseded states are distinguishable.
+- [ ] Credentials are kept outside committed code, configuration, logs, and templates.
+- [ ] The resulting snapshot is registered through the [data-source inventory](../../templates/data-source-inventory-template.csv) and, when useful, the [file manifest](../../templates/data-file-manifest-template.csv).
