@@ -85,9 +85,10 @@ An analysis may enter future Validate only when:
 - [ ] Seeds, scenarios, parameter sets, partitions, and replicates are recorded where applicable.
 - [ ] Expected and produced outputs are compared.
 - [ ] Warnings, failures, retries, cancellations, and incomplete runs are visible.
-- [ ] Important candidate results have traceability records where warranted.
+- [ ] Important candidate results have traceability records where warranted, and their result IDs are named in the analysis-level readiness decision.
 - [ ] Limitations and unresolved execution problems are visible.
-- [ ] A responsible analyst or reviewer records the readiness decision and ISO 8601 decision time.
+- [ ] The analysis specification or equivalent analysis-level record is authoritative for readiness.
+- [ ] A responsible analyst or reviewer records the readiness decision and ISO 8601 decision time in that analysis-level record.
 - [ ] Status is explicitly recorded as one of the three statuses above.
 
-Passing this gate means that the analysis has been specified, executed, and recorded well enough to undergo validation. It does not mean that the analysis has passed validation.
+Run completion belongs to the run record. Candidate selection belongs to result records and the analysis-level readiness decision. Passing this gate means that the analysis has been specified, executed, and recorded well enough to undergo validation. It does not mean that the analysis has passed validation.

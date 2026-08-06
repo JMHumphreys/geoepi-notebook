@@ -36,11 +36,13 @@ A result record is useful when an output is included in a manuscript, shared out
 
 ## Result identity
 
-Record as appropriate: result ID and name, analysis ID and version, input dataset IDs, code version, settings or parameter record, computing environment, run ID, output location, intended use, status, limitations, and a later result that supersedes it. A filename alone is not a sufficient result identity. The [result traceability template](../../templates/result-traceability-template.csv) is a compact starting point.
+Record as appropriate: result ID and name, analysis ID and version, direct input dataset IDs and versions, code version, settings or parameter record, computing environment, run ID, output location, intended use, status, limitations, and a later result that supersedes it. Source lineage remains available through the staged- or derived-dataset record and does not need to be repeated in every result row. A filename alone is not a sufficient result identity. The [result traceability template](../../templates/result-traceability-template.csv) is a compact starting point.
 
 ## Result statuses
 
-Use **planned**, **produced**, **incomplete**, **candidate for validation**, **ready for validation**, **ready for validation with documented limitation**, **failed**, or **superseded**. The safe default is **planned**. **Produced** means the output exists; **candidate for validation** means it has been selected for further checking. A ready status requires the Analyze completion gate, and validation itself has not yet occurred.
+Use **planned**, **produced**, **incomplete**, **candidate for validation**, **failed**, or **superseded**. The safe default is **planned**. **Produced** means the output exists. **Candidate for validation** means the analysis-level readiness decision selected the result for checking in Validate. Validation itself has not yet occurred.
+
+Keep the levels distinct: a run status describes what happened during one execution; a result status describes what happened to one output; analysis readiness describes whether the documented analysis and its named candidate results may enter Validate. The analysis specification or equivalent analysis-level record is the authoritative readiness decision.
 
 ## Manuscripts and reports
 

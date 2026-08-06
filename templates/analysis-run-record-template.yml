@@ -6,7 +6,8 @@ analysis_version: null
 run_id: null
 purpose: null
 run_status: planned
-validation_readiness: not ready for validation
+# Run completion records whether this execution finished. The analysis-level
+# specification records whether the overall analysis is ready for validation.
 
 input_datasets:
   - dataset_id: null
@@ -58,5 +59,3 @@ status_details:
 
 responsibility:
   analyst_or_operator: null
-  readiness_decision_by: null
-  readiness_decision_at: null

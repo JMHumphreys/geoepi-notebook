@@ -38,11 +38,11 @@ For repeated stochastic work, record replicate ID, scenario ID, run ID, seed or 
 
 ## Bayesian and sampling-based analyses
 
-Record chains and chain IDs, seeds, warm-up or burn-in length, retained iterations, thinning when used, initial-value method, software and version, and output location where applicable. Do not assess convergence or sampling adequacy here; those judgments belong to future Validate.
+Record chains and chain IDs, seeds, warm-up or burn-in length, retained iterations, thinning when used, initial-value method, software and version, and output location where applicable. **Warm-up or burn-in** means early sampling iterations discarded before results are retained. Do not assess convergence or sampling adequacy here; those judgments belong to future Validate.
 
 ## Resampling and partitions
 
-Record training and evaluation partitions, fold or resample IDs, random seed, grouping restrictions, spatial or temporal blocking, repeated partitions, and protections against data leakage where applicable. Do not interpret predictive performance here.
+Record training and evaluation partitions, fold or resample IDs, random seed, grouping restrictions, spatial or temporal blocking, repeated partitions, and protections against **data leakage**, meaning information from evaluation data accidentally influencing model development or fitting. Do not interpret predictive performance here.
 
 ## Simulations
 

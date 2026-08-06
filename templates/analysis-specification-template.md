@@ -99,9 +99,15 @@ Mark all that apply and explain overlaps:
 
 ## Readiness for validation
 
+- This section is the authoritative readiness decision for this analysis version.
 - Current status: `not ready for validation`
-- Decision-maker: `blank until reviewed`
+- Candidate result IDs entering Validate: `blank until selected`
+- Decision-maker: `blank until reviewed; responsible analyst or reviewer`
 - Decision date: `blank until reviewed; ISO 8601 when recorded`
-- Limitations: `none or describe consequence, restriction, decision-maker, and follow-up`
+- Documented limitation: `none or describe`
+- Downstream restriction or caution: `none or describe`
+- Required follow-up: `none or describe`
+
+A new analysis version requires a new readiness decision. Readiness does not transfer automatically from an earlier version. The decision identifies the named candidate results, responsible analyst or reviewer, decision time, and any limitation carried into Validate.
 
 This specification records analysis design and execution readiness. It does not establish model validity, predictive accuracy, scientific correctness, or that validation has occurred.

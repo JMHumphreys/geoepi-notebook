@@ -49,11 +49,14 @@
 - [ ] Seeds, scenarios, parameter sets, partitions, and replicates are recorded where needed.
 - [ ] Expected outputs are compared with outputs actually produced.
 - [ ] Warnings, failures, retries, cancellations, incomplete runs, and manual recovery are visible.
+- [ ] Run completion is recorded in run records; it is not treated as analysis-level readiness.
 
 ## Ready for validation
 
 - [ ] Important candidate results trace to the analysis data, analysis version, code, settings, run, and output.
+- [ ] Candidate result IDs are named in the authoritative analysis specification or equivalent analysis-level record.
 - [ ] The analysis readiness status is explicitly **not ready for validation**, **ready for validation**, or **ready for validation with documented limitation**.
+- [ ] The analysis specification or equivalent analysis-level record is authoritative for this decision.
 - [ ] A responsible analyst or reviewer and ISO 8601 decision timestamp are recorded for a ready status.
 - [ ] Any documented limitation includes its consequence, downstream restriction, responsible decision-maker, and follow-up.
 - [ ] The readiness decision records that validation has not yet occurred.

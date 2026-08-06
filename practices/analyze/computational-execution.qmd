@@ -19,9 +19,17 @@ sidebar: practices
 
 ## Define an analysis run
 
-An analysis run is one recorded execution of a script, notebook, model, simulation, or analytical workflow using identified data and settings. It may occur interactively, from a script, through Quarto or a notebook, on a workstation, through a scheduled task, on a high-performance computing (HPC) cluster, or as one task within a job array.
+An analysis run is one recorded execution of a script, notebook, model, simulation, or analytical workflow using identified data and settings. It may occur interactively, from a script, through Quarto or a notebook, on a workstation, through a scheduled task, on a high-performance computing (HPC) cluster, or as one task within a **job array**, a group of similar cluster tasks submitted together.
 
-Record as appropriate: project ID, analysis ID and version, run ID, purpose, input dataset IDs and versions, code version, main script or notebook, command used, settings record, software and computing environment, location, start and completion time, responsible analyst or operator, outputs, logs, warnings, status, and any run replaced or retried.
+Record as appropriate:
+
+- project ID, analysis ID and version, run ID, and purpose;
+- input dataset IDs and versions;
+- code version, main script or notebook, command used, and settings record;
+- software, computing environment, and execution location;
+- start and completion time;
+- responsible analyst or operator;
+- outputs, logs, warnings, status, and any run replaced or retried.
 
 Here, **code version** means the Git commit, tag, or other recorded version of the analysis code. A **settings record** is the file or documented values controlling the analysis. The **computing environment** is the relevant software, package, system, or cluster information needed to understand or repeat the work. A **run ID** is a stable label for one execution.
 

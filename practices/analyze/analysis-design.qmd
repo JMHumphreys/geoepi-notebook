@@ -41,7 +41,18 @@ Record the staged or derived dataset ID, dataset version, readiness status, read
 
 ## Specify the method and settings
 
-Describe in ordinary scientific language the method or model family, response, predictors, confounders or adjustment variables, interactions, offsets or denominators, weights, grouping, spatial and temporal structure, transformations, planned exclusions, missing-data treatment, consequential software or packages, and intended tables, figures, maps, forecasts, or simulation summaries. Do not require mathematical notation or teach which method to choose.
+Describe the following in ordinary scientific language:
+
+- method or model family;
+- response, predictors, confounders, or adjustment variables;
+- interactions, offsets or denominators, and weights;
+- grouping, spatial structure, and temporal structure;
+- transformations and planned exclusions;
+- missing-data treatment;
+- consequential software or packages;
+- intended tables, figures, maps, forecasts, or simulation summaries.
+
+Do not require mathematical notation or teach which method to choose.
 
 ## Make decision timing visible
 
