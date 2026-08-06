@@ -1,0 +1,49 @@
+---
+title: "Validation Decisions and Records"
+description: "Synthesize supporting, challenging, failed, and inconclusive evidence into a scoped conclusion."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - validation
+  - reproducibility
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+## Separate checks from the conclusion
+
+An individual check may be **completed**, **completed with limitation**, **failed**, **inconclusive**, **not applicable**, or **superseded**. The overall validation conclusion must synthesize evidence rather than count check marks. One major failed check may matter more than many minor successful checks.
+
+## Evidence synthesis
+
+Summarize supporting evidence, conflicting evidence, failed checks, inconclusive checks, missing evidence, known limitations, reviewer concerns, relevance to intended use, and the consequence of remaining uncertainty.
+
+## Overall conclusion
+
+Use only:
+
+- **not yet evaluated** — no conclusion has been recorded.
+- **validation in progress** — checks are underway.
+- **supported for stated use** — available evidence is sufficient for the identified use and scope.
+- **supported for stated use with documented limitation** — evidence supports a narrower or conditional use, and the limitation is visible to later users.
+- **evidence inconclusive** — evidence does not support a confident positive or negative conclusion.
+- **not supported for stated use** — material evidence contradicts the intended use, or essential evidence is absent and cannot be resolved.
+- **superseded** — a new analysis or validation record replaces this one.
+
+## Scope statement
+
+Every supported conclusion must state the analysis version, candidate result IDs, intended use, population or system, geographic scope, temporal scope, spatial or temporal resolution, forecast horizon where relevant, known limitations, and conditions requiring reevaluation.
+
+## Returning to Analyze
+
+When validation requires changes to data subsets, exclusions, model form, variables, priors, parameters, forecast target, spatial or temporal support, scenario definition, or output calculation, return to Analyze and create a new analysis version. Do not edit the validated candidate result in place.
+
+## Supersession and later stages
+
+When a new analysis version replaces an earlier one, preserve the earlier validation record, mark it superseded, identify the replacement, do not transfer the earlier conclusion automatically, and repeat affected checks. A supported conclusion permits consideration in later Collaborate and Communicate stages; it does not provide publication, release, operational, policy, or data-sharing approval.
