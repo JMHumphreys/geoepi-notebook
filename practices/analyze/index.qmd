@@ -17,13 +17,13 @@ review-cycle: annual
 sidebar: practices
 ---
 
-Analyze is more than obtaining a numerical answer or successfully running code. It connects a scientific or operational question to an analysis-ready dataset, a stated method, recorded settings, a particular execution, generated outputs, and candidate results that can be checked in the future **Validate** stage.
+Analyze is more than obtaining a numerical answer or successfully running code. It connects a scientific or operational question to an analysis-ready dataset, a stated method, recorded settings, a particular execution, generated outputs, and candidate results that can be checked in the [Validate](../validate/index.qmd) stage.
 
 ## Analyze boundary
 
 Analyze begins when a staged or derived dataset is recorded as **ready for analysis** or **ready for analysis with documented limitation**. The limitation must travel with the analysis record and outputs. Analyze may clarify the objective, define the target, record methods and settings, run scripts or models, preserve warnings and incomplete work, and trace important results.
 
-Analyze does not complete model checking, convergence assessment, residual diagnosis, calibration, predictive-performance assessment, external validation, robustness or sensitivity conclusions, simulation verification, uncertainty adequacy, scientific interpretation, publication approval, or operational approval. Those decisions belong to future Validate, Communicate, or later stages.
+Analyze does not complete model checking, convergence assessment, residual diagnosis, calibration, predictive-performance assessment, external validation, robustness or sensitivity conclusions, simulation verification, uncertainty adequacy, scientific interpretation, publication approval, or operational approval. Those decisions belong to [Validate](../validate/index.qmd) or later stages.
 
 ## Analyze workflow
 
@@ -36,7 +36,7 @@ Analyze does not complete model checking, convergence assessment, residual diagn
 7. Record the execution, including warnings and failures.
 8. Link important results to their data, code, settings, run, and output.
 9. Record changes made after earlier results were viewed.
-10. Decide whether the analysis is ready to enter future Validate.
+10. Decide whether the analysis is ready to enter [Validate](../validate/index.qmd).
 
 ```{mermaid}
 flowchart TD

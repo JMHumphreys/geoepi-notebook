@@ -99,6 +99,15 @@ website:
             - practices/analyze/computational-execution.qmd
             - practices/analyze/randomness-scenarios-and-replicates.qmd
             - practices/analyze/results-and-traceability.qmd
+        - section: "Validate"
+          contents:
+            - practices/validate/index.qmd
+            - practices/validate/validation-plan.qmd
+            - practices/validate/verify-analysis-and-outputs.qmd
+            - practices/validate/assumptions-diagnostics-and-fit.qmd
+            - practices/validate/prediction-and-forecast-validation.qmd
+            - practices/validate/sensitivity-robustness-and-uncertainty.qmd
+            - practices/validate/validation-decisions-and-records.qmd
 format:
   html:
     theme:

@@ -1,6 +1,6 @@
 ---
 title: "Research Practices"
-description: "Task-oriented lifecycle guidance for planning, acquiring, organizing, and analyzing GeoEpi data and projects."
+description: "Task-oriented lifecycle guidance for planning, acquiring, organizing, analyzing, and validating GeoEpi data and projects."
 status: draft
 practice-level: recommended
 audience:
@@ -22,7 +22,7 @@ The Lab Book organizes work around a lifecycle:
 
 Stages overlap and may repeat. A revised project plan can trigger new acquisition work; an intake discrepancy can require a scope decision. Each page distinguishes the **Draft minimum**, **Conditionally required**, **Recommended**, **Stronger practice**, **Example**, and **Stop and resolve** levels.
 
-**Plan**, **Acquire**, **Organize**, and **Analyze** now have implemented draft guidance. Validate, Collaborate, Communicate, and Preserve remain future lifecycle stages, not complete guidance.
+**Plan**, **Acquire**, **Organize**, **Analyze**, and **Validate** now have implemented draft guidance. Collaborate, Communicate, and Preserve remain future lifecycle stages, not complete guidance.
 
 ```{mermaid}
 flowchart LR
@@ -51,5 +51,10 @@ flowchart LR
 - [Distinguish exploratory and planned work](analyze/exploratory-and-planned-analysis.qmd) when decisions may have changed after seeing results.
 - [Record an analysis execution](analyze/computational-execution.qmd) for local, notebook, scheduled, or HPC work.
 - [Trace a result](analyze/results-and-traceability.qmd) when an estimate, figure, map, forecast, table, or simulation summary matters beyond a temporary exploration.
+- [Plan validation](validate/validation-plan.qmd) when a candidate result needs a defined intended use, evidence, and reviewer.
+- [Check assumptions and diagnostics](validate/assumptions-diagnostics-and-fit.qmd) when assessing how a method behaves for its stated use.
+- [Validate a forecast](validate/prediction-and-forecast-validation.qmd) when predictions, risk maps, or forecasts are part of the claim.
+- [Assess sensitivity and uncertainty](validate/sensitivity-robustness-and-uncertainty.qmd) when reasonable choices or uncertainty could change interpretation or action.
+- [Record a validation conclusion](validate/validation-decisions-and-records.qmd) when evidence must be synthesized into a scoped decision.
 
 The Lab Book separates draft policy, task guidance, templates, and examples. The [Minimum GeoEpi Project Standard](../start/minimum-standard.qmd) supplies the governing draft framework; these pages explain how to satisfy relevant information requirements without prescribing one folder tree, storage platform, workflow engine, or environment.
