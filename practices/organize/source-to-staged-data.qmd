@@ -69,6 +69,8 @@ The [transformation ledger template](../../templates/data-transformation-ledger-
 
 Transformation statuses may be **planned**, **running**, **completed**, **completed with limitation**, **failed**, or **superseded**. These are workflow statuses, not institutional classifications.
 
+**Completed** means that the documented transformation ran and produced its recorded output. It does not automatically mean **ready for analysis**. Transformation completion and the separate Organize readiness decision must remain distinguishable.
+
 ## Structural QA after transformation
 
 Check as appropriate that the output exists and is readable, expected schema is present, record counts are plausible, required identifiers are populated, unique keys are unique, joins have expected match rates, units and codes are known, missingness is characterized, expected temporal/spatial coverage is present, geometries or rasters are structurally valid, and the source package was not unexpectedly modified.

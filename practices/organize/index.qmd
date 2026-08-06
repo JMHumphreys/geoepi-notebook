@@ -19,9 +19,11 @@ sidebar: practices
 
 Organization is not cosmetic file arrangement. It creates a controlled relationship among accepted source snapshots, preserved source packages, staged representations, derived datasets, schemas, identifiers, transformation records, QA evidence, and analysis-ready objects.
 
+Each staged-dataset record begins as **not ready for analysis**. Its status changes only after the Organize gate has been reviewed. A ready status records the responsible decision-maker and decision time. Every new staged version requires its own readiness decision; superseding a dataset does not silently transfer readiness to its replacement.
+
 ## Organize boundary
 
-The Organize stage begins after a snapshot is **accepted for staging** or **accepted for staging with a documented limitation**. It may include structural inspection, deterministic transformation, normalization, schema and identifier checks, unit and code harmonization, spatial and temporal standardization, documented exclusions and corrections, provenance records, and analysis-readiness checks.
+The Organize stage begins after a snapshot is **accepted for staging** or **accepted with documented limitation**. It may include structural inspection, deterministic transformation, normalization, schema and identifier checks, unit and code harmonization, spatial and temporal standardization, documented exclusions and corrections, provenance records, and analysis-readiness checks.
 
 It does not include statistical model selection, parameter estimation, hypothesis testing, interpretation, predictive-accuracy assessment, model-assumption validation, publication review, or operational release.
 
@@ -85,4 +87,4 @@ This draft workflow is informed by the existing [resource catalog](../../resourc
 - [ ] An authoritative analysis-ready object and responsible decision-maker are recorded.
 - [ ] Dataset status is explicitly recorded as **ready for analysis**, **ready for analysis with documented limitation**, or **not ready for analysis**.
 
-Passing this gate establishes structural and documentary readiness only. Analytical validity, model suitability, inferential validity, predictive performance, and scientific interpretation belong to later stages.
+Passing this gate establishes structural and documentary readiness only. Analytical validity, model suitability, inferential validity, predictive performance, and scientific interpretation belong to later stages. A ready status is therefore a workflow decision, not an endorsement of a scientific result.
