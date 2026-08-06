@@ -1,0 +1,67 @@
+---
+title: "Verify Analysis and Outputs"
+description: "Confirm that the intended analysis was carried out and that expected outputs are complete before judging adequacy."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - validation
+  - reproducibility
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+Before judging whether a result is scientifically adequate, confirm that the intended analysis was actually carried out and that expected outputs are complete.
+
+## Input and execution checks
+
+Confirm as appropriate:
+
+- analysis ID and version;
+- direct input dataset IDs and versions;
+- code version and settings or parameter record;
+- random seeds, scenarios, replicate IDs, and partitions;
+- software and computing information;
+- run IDs;
+- expected outputs and outputs actually produced.
+
+## Completeness
+
+Check for missing runs, scenarios, chains, or replicates; incomplete time periods; missing spatial units; silently dropped records; failed job-array tasks; warnings; cancelled jobs; and manually replaced outputs. A successful command or zero exit code is not proof of completeness.
+
+## Recalculation and reruns
+
+Use proportionately:
+
+- rerun a simple analysis from a clean starting point;
+- independently recalculate important values;
+- confirm table totals against source summaries;
+- compare maps with expected extents;
+- confirm deterministic work produces materially equivalent results;
+- confirm stochastic summaries are recoverable from recorded runs.
+
+Exact bit-for-bit reproduction is not always reasonable when software, hardware, parallel execution, or numerical methods differ. Require material scientific agreement and document expected differences.
+
+## Spatial and temporal checks
+
+As applicable, confirm coordinate reference system, spatial extent, raster dimensions and alignment, geometry validity, temporal ordering, time-zone handling, epidemiological-week convention, forecast origin and horizon, no accidental overlap between training and evaluation periods, and no future information entering earlier predictions.
+
+## Simulation verification
+
+For simulations and mechanistic models, use relevant checks such as benchmark cases, limiting cases, known equilibria, conservation or mass-balance checks, nonnegative constraints, expected response direction, parameter boundaries, simplified hand calculations, and deterministic behavior when randomness is disabled. These checks show whether the model was implemented as intended; they do not show that it adequately represents the real system.
+
+## Failed verification
+
+When verification fails:
+
+1. Record the failure.
+2. Do not repair the candidate result silently.
+3. Return to Analyze.
+4. Create a new analysis version.
+5. Rerun affected work and update candidate result records.
+6. Repeat relevant validation checks.

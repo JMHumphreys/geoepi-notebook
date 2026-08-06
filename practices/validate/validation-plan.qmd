@@ -1,0 +1,66 @@
+---
+title: "Validation Plan"
+description: "Define intended use, validation questions, evidence, and review before assessing candidate results."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - validation
+  - reproducibility
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+## Begin with intended use
+
+State what result is being evaluated, who may use it, what decision, claim, prediction, or interpretation it may support, the consequence of being wrong, and the conditions under which it is expected to apply. The same model may be supported for regional description but not for facility-level prediction, or supported for retrospective comparison but not for prospective operational forecasting.
+
+## Identify candidate results
+
+Record the analysis ID and version, candidate result IDs, input dataset versions, relevant runs, result locations, and readiness limitations carried from Analyze. Do not validate an informal description such as “the final model” without an identifiable analysis version and result.
+
+## Define validation questions
+
+Examples include:
+
+- Are important assumptions seriously violated?
+- Are predictions acceptably calibrated for the intended population?
+- Does the method distinguish higher-risk from lower-risk units where that matters?
+- Does performance remain acceptable across years or regions?
+- Are conclusions sensitive to reasonable alternative priors?
+- Do simulation outputs obey biological or physical constraints?
+- Are uncertainty intervals appropriate for the stated use?
+- Does uncertainty change the decision?
+
+## Define evidence before reviewing outcomes
+
+Where practical, record checks, data, grouping or spatial-temporal separation, comparison or benchmark methods, metrics, graphical checks, decision rules, and reviewer before examining validation results. This reduces after-the-fact selection of only favorable evidence. Formal preregistration is not required for every project.
+
+Criteria should be linked to intended use, scientifically interpretable, justified, and stated before viewing the outcome when practical. They are one part of the evidence, not a substitute for judgment. Do not prescribe universal thresholds.
+
+## Proportional planning
+
+### Small exploratory analysis
+
+A short validation section in the analysis document may contain the intended claim, a few relevant checks, findings, limitations, and conclusion.
+
+### Publication-oriented or collaborative analysis
+
+Identify candidate results, validation questions, diagnostics, sensitivity work, predictive evaluation where applicable, review responsibility, and the decision record.
+
+### Operational or high-consequence analysis
+
+Identify decision consequences, independent review where proportionate, explicit performance and limitation criteria, external or prospective evidence where feasible, failure and escalation conditions, and conditions requiring retraining, refitting, or reevaluation.
+
+## Reviewer independence
+
+Independent review can reduce confirmation bias but is not universally required. Greater independence is more important when the result is operationally consequential, the analyst made many discretionary choices, the model will be reused, it affects public, animal, environmental, or economic decisions, or findings are mixed.
+
+## Stop and resolve
+
+Pause validation when candidate results cannot be identified, intended use is unclear, the analysis version changed after readiness was recorded, required validation data were used during model development without disclosure, metrics were selected only after favorable results were seen, important failures are missing, or the claim is broader than the evidence.
