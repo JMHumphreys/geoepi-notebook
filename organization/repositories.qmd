@@ -7,6 +7,24 @@ GeoEpi subproject repositories will normally be located in the [GeoEpi GitHub or
 
 Every subproject should identify one canonical working repository. The future Hub points to that repository. It does not need to catalog every fork, mirror, or temporary branch.
 
+## Minimum subproject repository
+
+A GeoEpi subproject repository should normally contain:
+
+- `README.md`;
+- `.gitignore`;
+- `.geoepi.yml`;
+- scientific code or workflow appropriate to the workstream;
+- enough environment or dependency information to reproduce consequential work;
+- a clear workflow or execution entry point;
+- documented principal data inputs;
+- controlled-data IDs when controlled project data are used;
+- documented public or external analytical sources;
+- clear output locations;
+- known limitations or current issues where consequential.
+
+This is a minimum adoption standard, not a universal folder tree. Do not require directories such as `R/`, `scripts/`, `src/`, `tests/`, `docs/`, `config/`, `data/`, or `outputs/` for every workstream. Repository organization should serve the analytical workflow.
+
 ## A canonical repository should make clear
 
 - its parent project and subproject purpose;

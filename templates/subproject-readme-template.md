@@ -1,5 +1,14 @@
 # [Subproject title]
 
+## Minimum repository contents
+
+This repository should normally include this `README.md`, `.gitignore`, and
+`.geoepi.yml`, plus the scientific workflow, dependency information, entry
+point, principal data inputs, controlled-data IDs where relevant, external
+data sources, output locations, and consequential limitations or current
+issues. The folder layout should serve the workstream; no universal directory
+tree is required.
+
 ## Parent project and purpose
 
 - **Parent GeoEpi project:**
@@ -34,9 +43,10 @@ List expected outputs, their locations, and the project products they support.
 
 Record code and data versions, environment information, random seeds or replicate definitions where relevant, and the checks used to assess outputs. Link to the project’s DMP and controlled-data inventory when appropriate.
 
-## Repository structure
+## Repository organization
 
-Explain the meaning of the main directories and distinguish code, configuration, documentation, inputs, outputs, logs, and temporary files.
+Explain the organization only as far as it helps contributors distinguish code,
+configuration, documentation, inputs, outputs, logs, and temporary files.
 
 ## Limitations and current issues
 

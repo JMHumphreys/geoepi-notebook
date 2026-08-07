@@ -1,34 +1,36 @@
 ---
-title: "The GeoEpi Project Hub"
+title: "GeoEpi Hub"
 description: "What belongs in the future lab-level project portfolio."
 ---
 
-GeoEpi will ultimately maintain one lab-level Hub, normally within the [geoepi GitHub organization](https://github.com/geoepi). The Hub represents the lab’s complete project portfolio. It is not an analysis repository and not an HPC run registry.
+GeoEpi will ultimately maintain one lab-level **GeoEpi Hub**, normally within the [geoepi GitHub organization](https://github.com/geoepi). The GeoEpi Hub is a shared project-management and portfolio repository. It is not an analysis repository and not an HPC run registry.
+
+Information stored directly in the GeoEpi Hub must be appropriate for everyone who has access to that repository. GitHub repository permissions generally do not provide project-folder-specific access control.
 
 ## What a project entry contains
 
-A project entry should make the project understandable to collaborators who do not have SCINet or HPC access. It can link to or contain:
+An individual folder in the GeoEpi Hub is a **project entry**. It should make the project understandable to collaborators who do not have SCINet or HPC access. The project README or overview should normally carry:
 
-- project scope and objective;
-- people, responsibilities, and contact points;
-- milestones and major decisions;
-- deliverables and products;
-- a project-level [Data Management Plan](../data/data-management-plans.qmd);
-- a [controlled-data inventory](../data/controlled-data.qmd);
-- a registry of canonical subproject repositories;
-- links to reports, manuscripts, dashboards, and other products.
+- project identity and objective;
+- project leads and collaborators;
+- status and current milestone;
+- major deliverables;
+- links to the project Data Management Plan and controlled-data inventory;
+- canonical subproject repository links;
+- product links;
+- references to agreements or restricted resources where appropriate.
 
-A future Hub project might look conceptually like this:
+The Hub may contain project identity and objective, leads and collaborators, milestones, major non-sensitive decisions, deliverables, controlled-data metadata, Data Management Plans, canonical repository links, product links, and references to restricted resources.
+
+## Minimal project-entry structure
+
+Keep the project entry deliberately small:
 
 ```text
 projects/
   nws-risk/
     README.md
-    scope/
-    people-and-responsibilities.md
-    milestones.md
     decisions.md
-    deliverables.md
     data/
       data-management-plan.md
       controlled-data-inventory.csv
@@ -36,8 +38,26 @@ projects/
     products.yml
 ```
 
-This is an architecture and template target, not a repository to create in this phase. Use the [project overview template](../templates/project-overview-template.md) to shape a future project folder.
+Complex projects may add `scope.md`, `people.md`, `milestones.md`, or `deliverables.md`, but these are not required as separate files when the project README already communicates the information clearly. Use the [project overview template](../templates/project-overview-template.md) to shape a future project entry.
 
-## What does not belong in the Hub
+## Access boundary
 
-Run parameters, package versions, random seeds, SLURM job IDs, input manifests, logs, output manifests, and detailed analytical decisions stay in the subproject repository or computational storage. The Hub points to the canonical repository; it does not attempt to catalog every fork or duplicate every run.
+The GeoEpi Hub should not contain controlled data themselves, credentials or tokens, sensitive personnel information, confidential partner communications, restricted agreements when repository access is too broad, or sensitive operational information inappropriate for all Hub users.
+
+Where restricted material exists, record its existence and authoritative approved location when appropriate. **The Hub records where restricted resources belong; it does not need to contain the restricted resources themselves.** Do not invent institutional security classifications; follow the applicable agreement, security guidance, and institutional direction.
+
+## Human-maintained and generated content
+
+The intended future division is:
+
+```text
+projects/                         human-maintained project records
+project subprojects.yml files     human-maintained canonical pointers
+generated/                         automation-owned portfolio summaries
+```
+
+Future files beneath `generated/` should not normally be edited manually. Examples might include `generated/subproject-status.csv`, `generated/portfolio-summary.yml`, and `generated/stale-subprojects.csv`. These are examples only; they are not created in this phase.
+
+Future automation should follow the principle: **Synchronize project state, not project content.**
+
+Run parameters, package versions, random seeds, SLURM job IDs, input manifests, logs, output manifests, and detailed analytical decisions stay in the subproject repository or computational storage. The GeoEpi Hub points to canonical repositories and project context; it does not duplicate every run.

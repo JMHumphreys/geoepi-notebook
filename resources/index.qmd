@@ -21,3 +21,41 @@ These links are useful starting points, not a policy catalog. Check the source p
 - [OSF](https://osf.io/) — collaborator-accessible research objects and project resources where appropriate.
 
 The [GeoEpi tools page](../tools/index.qmd) explains the role of each system and the boundaries between them.
+
+## Online guides for analytical work
+
+These online books, manuals, and course materials are useful references for analytical work commonly encountered in GeoEpi. They are learning resources, not prescribed methods; use the approach appropriate to the scientific question and data.
+
+### Ecology, population biology, and forecasting
+
+- [Primer of Ecology](https://hankstevens.github.io/Primer-of-Ecology/index.html) - ecological modeling and quantitative population concepts.
+- [Quantitative Biology](https://www.quantitative-biology.ca/) - quantitative biology concepts and worked examples.
+- [A Practical Guide to Ecosystem Forecasting](https://frec-5174c.github.io/eco4cast-in-R-book/) - ecological forecasting workflows.
+
+### Spatial analysis and geocomputation
+
+- [Spatial Data Science](https://keen-swartz-3146c.netlify.app/) - spatial analysis workflows and concepts.
+- [R | Intro to GIS and Spatial Analysis](https://mgimond.github.io/Spatial/coordinate-systems-in-r.html) - introductory GIS and spatial analysis in R.
+- [Spatial Data Processing with R](https://jguelat.github.io/spatial-r/) - spatial data processing workflows in R.
+- [Geocomputation with R](https://r.geocompx.org/) - geocomputation and spatial data science in R.
+
+### Statistics and comparative methods
+
+- [Rethinking](https://xcelab.net/rm/statistical-rethinking/) - Bayesian statistical modeling and model reasoning.
+- [Comparative Methods](https://bookdown.org/bomeara/comparative-methods/) - comparative methods and phylogenetic analysis concepts.
+
+### Population, landscape, and computational genetics
+
+- [Landscape Genetic Data Analysis with R](https://bookdown.org/hhwagner1/LandGenCourse_book/) - population and landscape genetic analysis.
+- [Applied Population Genetics](https://dyerlab.github.io/applied_population_genetics/index.html) - applied population genetics workflows.
+- [Molecular Epi in R](https://gtpb.github.io/MEVR16/index.html) - molecular epidemiology analysis in R.
+- [ComputationalGenomicsManual](https://linsalrob.github.io/ComputationalGenomicsManual/) - computational genomics methods and implementation.
+
+### Epidemiology
+
+- [The Epidemiologist R Handbook](https://epirhandbook.com/en/index.html) - applied epidemiological analysis in R.
+
+### Network analysis
+
+- [Network Analysis in R](https://yunranchen.github.io/intro-net-r/index.html) - network methods and implementation in R.
+- [Network Analysis: Integrating Social Network Theory, Method, and Application with R](https://inarwhal.github.io/NetworkAnalysisR-book/) - network theory and applied analysis in R.

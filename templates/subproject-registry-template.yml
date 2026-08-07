@@ -1,3 +1,4 @@
+# The registry locates canonical repositories; it does not duplicate subproject state.
 project_id: nws-risk
 
 subprojects:
