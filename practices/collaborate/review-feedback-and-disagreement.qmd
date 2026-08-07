@@ -1,0 +1,42 @@
+---
+title: "Review, Feedback, and Disagreement"
+description: "Make review purpose, response, unresolved concerns, and decisions visible."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - collaboration
+  - review
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+## Make the review purpose clear
+
+Name whether review is scientific, methodological, technical, data, validation, operational, governance, partner consultation, or communication preparation. Identify the object and version under review. A reviewer may provide important feedback without having final decision or release authority.
+
+## Record feedback and response
+
+For consequential feedback, retain the concern, evidence or reason, responsible person, response, decision owner, date, and affected version. Link the response to the changed analysis, validation record, result, or communication draft when applicable. Not every formatting comment needs a formal record.
+
+## Review is not approval
+
+Review means that someone examined work for a defined purpose. Approval means that a person with relevant authority made a separate decision. Do not imply approval merely because comments were resolved or a reviewer participated.
+
+## Disagreement
+
+Disagreement can remain visible without stopping all work. Record the positions, evidence, affected claim or decision, decision authority, interim limitation, and follow-up. If the disagreement concerns data, exclusions, model structure, or validation evidence, return to Analyze or Validate rather than silently resolving it in a communication product.
+
+## Checklist
+
+- [ ] Review purpose and object/version are clear.
+- [ ] Required reviewer or reviewer role is identified.
+- [ ] Consequential concerns and responses are durable.
+- [ ] Review is distinguished from final decision and approval.
+- [ ] Unresolved disagreement is visible.
+- [ ] Required return to Analyze or Validate is recorded.

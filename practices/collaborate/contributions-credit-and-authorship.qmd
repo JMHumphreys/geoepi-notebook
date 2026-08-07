@@ -1,0 +1,35 @@
+---
+title: "Contributions, Credit, and Authorship"
+description: "Record actual contributions and discuss recognition without imposing universal authorship rules."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - collaboration
+  - authorship
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+Record actual contributions and revisit expected credit as work changes. This record does not itself determine authorship.
+
+## Contribution records
+
+Record contributor, organization or affiliation, project role, contribution description, related data/code/analysis/validation/result/output IDs, contribution period, expected recognition, discussion status, contributor confirmation, and review date. Keep unresolved credit questions visible.
+
+The [contribution and credit template](../../templates/contribution-and-credit-record-template.md) is a reusable starting point. A formal record is not required for every temporary collaborator or small exploratory project.
+
+## Credit and authorship
+
+Discuss authorship or ordered credit early and revisit it as contributions change. Requirements vary by discipline, journal, institution, funder, community, and product. Do not infer authorship or author order from a role title, a single contribution, or the use of the optional CRediT vocabulary.
+
+CRediT can describe contribution types, but it does not determine authorship. Applicable institutional, contractual, journal, funder, community, and legal requirements take precedence.
+
+## Changes and disputes
+
+Record the date, change or dispute, affected contributors, rationale or positions, decision authority, resolution or unresolved state, and effect on communication readiness. Do not make a copied record appear agreed, confirmed, or approved.
