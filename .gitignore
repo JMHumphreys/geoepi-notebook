@@ -53,6 +53,7 @@ _site/
 .quarto/
 *.quarto_ipynb
 .publish/
+/resources/resource-table.ejs.html
 
 # Local environments, editors, and operating systems
 .env

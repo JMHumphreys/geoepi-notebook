@@ -19,13 +19,22 @@ def normalize_url(value):
 class ResourceLinkParser(HTMLParser):
     def __init__(self):
         super().__init__()
-        self.hrefs = []
+        self.links = []
+        self.current = None
 
     def handle_starttag(self, tag, attrs):
         if tag == "a":
             href = dict(attrs).get("href")
-            if href:
-                self.hrefs.append(href)
+            self.current = {"href": href or "", "text": []}
+
+    def handle_data(self, data):
+        if self.current is not None:
+            self.current["text"].append(data)
+
+    def handle_endtag(self, tag):
+        if tag == "a" and self.current is not None:
+            self.links.append({"href": self.current["href"], "text": " ".join(self.current["text"]).strip()})
+            self.current = None
 
 
 def validate_resources():
@@ -84,6 +93,11 @@ def validate_resources():
         catalog_urls.append(normalize_url(url))
 
     page_text = page_path.read_text(encoding="utf-8")
+    template_match = re.search(r"template:\s*([^\s]+)", page_text)
+    if template_match:
+        template_path = page_path.parent / template_match.group(1)
+        if template_path.exists():
+            page_text += template_path.read_text(encoding="utf-8")
     for field in ("author_or_organization", "topics", "url"):
         if field not in page_text:
             errors.append(f"{page_path}: resource listing does not reference catalog field {field}")
@@ -93,20 +107,36 @@ def validate_resources():
         parser = ResourceLinkParser()
         rendered_text = rendered.read_text(encoding="utf-8")
         parser.feed(rendered_text)
-        rendered_urls = {normalize_url(href) for href in parser.hrefs if href.startswith(("http://", "https://"))}
-        rendered_cells = [
-            normalize_url(match.group(1))
-            for match in re.finditer(r'<td class="listing-url">\s*(https?://[^<\s]+)\s*</td>', rendered_text)
-        ]
-        rendered_cell_set = set(rendered_cells)
-        missing = sorted(set(catalog_urls) - (rendered_urls | rendered_cell_set))
-        if missing:
-            errors.append(f"{rendered}: missing rendered resource URLs: {', '.join(missing)}")
-        if len(rendered_urls) < len(catalog_urls) and 'id="resource-link-enhancement"' not in rendered_text:
-            errors.append(f"{rendered}: resource URL cells are not rendered as links and no enhancement is present")
-        rendered_count = len(rendered_cells) if rendered_cells else len(set(catalog_urls) & rendered_urls)
-        if rendered_count != len(catalog_urls):
-            errors.append(f"{rendered}: rendered external resource URL count does not match catalog")
+        anchors = [link for link in parser.links if link["href"].startswith(("http://", "https://"))]
+        expected_by_url = {}
+        for entry in catalog:
+            url = entry.get("url")
+            if isinstance(url, str) and url.startswith(("http://", "https://")):
+                expected_by_url[normalize_url(url)] = expected_by_url.get(normalize_url(url), 0) + 1
+        rendered_by_url = {}
+        for link in anchors:
+            normalized = normalize_url(link["href"])
+            if normalized in expected_by_url:
+                rendered_by_url[normalized] = rendered_by_url.get(normalized, 0) + 1
+        for url, expected_count in expected_by_url.items():
+            if rendered_by_url.get(url, 0) != expected_count:
+                errors.append(f"{rendered}: rendered anchor count for {url} is {rendered_by_url.get(url, 0)}; expected {expected_count}")
+        for entry in catalog:
+            url = entry.get("url")
+            if not url or not isinstance(url, str) or not url.startswith(("http://", "https://")):
+                continue
+            matches = [
+                link for link in anchors
+                if normalize_url(link["href"]) == normalize_url(url)
+                and re.sub(r"\s+", " ", link["text"]).strip() == re.sub(r"\s+", " ", entry.get("title", "")).strip()
+            ]
+            if not matches:
+                errors.append(f"{rendered}: missing static resource anchor for {entry['id']}: {url}")
+                continue
+            if not matches[0]["text"]:
+                errors.append(f"{rendered}: resource anchor has empty text for {entry['id']}")
+        if re.search(r'<td class="listing-title">\s*<a\s+href=""', rendered_text):
+            errors.append(f"{rendered}: empty resource-title anchor href")
 
 
 validate_resources()
