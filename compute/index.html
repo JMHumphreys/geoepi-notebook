@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="External guidance and tools that support GeoEpi work.">
+<meta name="description" content="Use GitHub for implementation and Atlas or Ceres for data and computation.">
 
-<title>Resources – GeoEpi Lab Book</title>
+<title>Computing &amp; Repositories – GeoEpi Lab Book</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,6 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../compute/atlas-ceres.html" rel="next">
 <link href="../assets/images/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -106,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Data Management</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../compute/index.html"> 
+    <a class="nav-link active" href="../compute/index.html" aria-current="page"> 
 <span class="menu-text">Computing &amp; Repositories</span></a>
   </li>  
   <li class="nav-item">
@@ -118,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Templates</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../resources/index.html" aria-current="page"> 
+    <a class="nav-link" href="../resources/index.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
 </ul>
@@ -178,7 +179,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resources/index.html">Resources</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../compute/index.html">Computing &amp; Repositories</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -192,8 +193,20 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Resources</span></a>
+  <a href="../compute/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Computing &amp; Repositories</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../compute/atlas-ceres.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Atlas and Ceres</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../compute/repository-vs-compute.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Repository versus Compute</span></a>
   </div>
 </li>
     </ul>
@@ -201,27 +214,20 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#data-management" id="toc-data-management" class="nav-link active" data-scroll-target="#data-management">Data management</a></li>
-  <li><a href="#geoepi-tools-and-working-systems" id="toc-geoepi-tools-and-working-systems" class="nav-link" data-scroll-target="#geoepi-tools-and-working-systems">GeoEpi tools and working systems</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/resources/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/resources/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Resources</h1>
+<h1 class="title">Computing &amp; Repositories</h1>
 </div>
 
 <div>
   <div class="description">
-    External guidance and tools that support GeoEpi work.
+    Use GitHub for implementation and Atlas or Ceres for data and computation.
   </div>
 </div>
 
@@ -238,29 +244,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>These links are useful starting points, not a policy catalog. Check the source page, current version, license, access conditions, and fit for your project before relying on a resource.</p>
-<section id="data-management" class="level2">
-<h2 class="anchored" data-anchor-id="data-management">Data management</h2>
+<p>GeoEpi commonly separates the durable scientific record from the computational workspace:</p>
 <ul>
-<li><a href="https://www.nal.usda.gov/services/data-management-planning">USDA National Agricultural Library: Data Management Planning</a> — primary conceptual source for the six-part project DMP structure used in this Lab Book.</li>
-<li><a href="https://www.icpsr.umich.edu/sites/icpsr/manage-data">ICPSR: Share &amp; Manage Data</a> — secondary practical guidance on managing, documenting, sharing, and preserving research data.</li>
-<li><a href="https://agdatacommons.nal.usda.gov/">Ag Data Commons</a> — a USDA data discovery and repository resource where appropriate.</li>
+<li><a href="../tools/github.html">GitHub</a> holds code, version control, documentation, collaboration, and subproject repositories.</li>
+<li><a href="../compute/atlas-ceres.html">Atlas and Ceres</a> hold approved large or controlled data, intermediate data, HPC execution, logs, temporary objects, and large outputs.</li>
+<li>The <a href="../compute/repository-vs-compute.html">repository versus compute boundary</a> explains what to record in each place.</li>
 </ul>
-</section>
-<section id="geoepi-tools-and-working-systems" class="level2">
-<h2 class="anchored" data-anchor-id="geoepi-tools-and-working-systems">GeoEpi tools and working systems</h2>
-<ul>
-<li><a href="https://scinet.usda.gov/">SCINet</a> — USDA scientific computing and storage context, including Atlas and Ceres.</li>
-<li><a href="https://github.com/geoepi">GitHub</a> — GeoEpi organization and subproject repositories.</li>
-<li><a href="https://quarto.org/">Quarto</a> — reproducible reports, websites, notebooks, and technical documentation.</li>
-<li><a href="https://www.overleaf.com/">Overleaf</a> — collaborative LaTeX documents and manuscripts.</li>
-<li><a href="https://www.zotero.org/">Zotero</a> — shared literature management.</li>
-<li><a href="https://osf.io/">OSF</a> — collaborator-accessible research objects and project resources where appropriate.</li>
-</ul>
-<p>The <a href="../tools/index.html">GeoEpi tools page</a> explains the role of each system and the boundaries between them.</p>
+<p>The exact storage and access arrangement depends on the project, data agreements, and institutional systems. Record the authoritative location clearly and keep project context accessible to collaborators who may not have SCINet or HPC access.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -667,9 +659,18 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../compute/atlas-ceres.html" class="pagination-link" aria-label="Atlas and Ceres">
+        <span class="nav-page-text">Atlas and Ceres</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/resources/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/resources/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/compute/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/compute/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>

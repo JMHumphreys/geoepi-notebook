@@ -1,0 +1,8 @@
+project_id: nws-risk
+
+subprojects:
+  - subproject_id: nws-bayes-risk
+    repository: geoepi/nws-bayes-risk
+
+  - subproject_id: nws-genomics
+    repository: username/nws-genomics

@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="The shortest path to a defensible GeoEpi project.">
+<meta name="description" content="The shortest path into a GeoEpi project.">
 
 <title>Start Here – GeoEpi Lab Book</title>
 <style>
@@ -31,7 +31,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../start/minimum-standard.html" rel="next">
 <link href="../assets/images/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -99,16 +98,20 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Start Here</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../practices/index.html"> 
-<span class="menu-text">Research Practices</span></a>
+    <a class="nav-link" href="../organization/index.html"> 
+<span class="menu-text">How GeoEpi Organizes Work</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../domains/index.html"> 
-<span class="menu-text">Domain Guidance</span></a>
+    <a class="nav-link" href="../data/index.html"> 
+<span class="menu-text">Data Management</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../standards/index.html"> 
-<span class="menu-text">Lab Standards</span></a>
+    <a class="nav-link" href="../compute/index.html"> 
+<span class="menu-text">Computing &amp; Repositories</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../tools/index.html"> 
+<span class="menu-text">Tools &amp; Collaboration</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../templates/index.html"> 
@@ -193,37 +196,19 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Start Here</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../start/minimum-standard.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Minimum GeoEpi Project Standard</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../start/new-project.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Starting a New Project</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../start/rescue-project.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Rescuing an Existing Project</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../start/handoff.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Project Handoff</span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-quick-distinction" id="toc-the-quick-distinction" class="nav-link active" data-scroll-target="#the-quick-distinction">The quick distinction</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/start/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/start/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -235,7 +220,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    The shortest path to a defensible GeoEpi project.
+    The shortest path into a GeoEpi project.
   </div>
 </div>
 
@@ -252,17 +237,51 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Use this section when starting a project, inheriting one, or trying to make an existing project recoverable.</p>
-<ul>
-<li><a href="../start/minimum-standard.html">Minimum GeoEpi Standard</a></li>
-<li><a href="../start/new-project.html">Starting a New Project</a></li>
-<li><a href="../start/rescue-project.html">Rescuing an Existing Project</a></li>
-<li><a href="../start/handoff.html">Project Handoff</a></li>
-</ul>
-<p>For the task workflow, continue from <a href="../practices/plan/index.html">Plan a Project</a>, <a href="../practices/plan/data-management-planning.html">Plan Data Management</a>, or <a href="../practices/acquire/data-intake.html">Data Intake and Acceptance</a>. The Research Practices pages contain the detailed guidance; these Start Here links are gateways, not duplicate checklists.</p>
-<p>The <a href="../start/minimum-standard.html">Minimum GeoEpi Project Standard</a> is a proposed draft policy requiring human review. The supporting pages are practical guidance, not approved lab policy.</p>
+<p>If you are new to a project, start with its parent project in the GeoEpi Hub. The Hub is the place to understand why the project exists, who is involved, what data stewardship matters, and what the project is expected to produce.</p>
+<ol type="1">
+<li>Find the parent project in the GeoEpi Hub.</li>
+<li>Read its objective, people, controlled-data information, deliverables, and current milestone.</li>
+<li>Find or create the analytical subproject repository that matches your workstream.</li>
+<li>Keep scientific implementation and reproducibility information in that repository.</li>
+<li>Use Atlas or Ceres for approved large-data storage and computation.</li>
+<li>Return accepted scientific outputs to project synthesis and products.</li>
+</ol>
+<section id="the-quick-distinction" class="level2">
+<h2 class="anchored" data-anchor-id="the-quick-distinction">The quick distinction</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Place</th>
+<th>Use it for</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>GeoEpi Hub</td>
+<td>Project context, coordination, decisions, people, milestones, products, and project-level data stewardship</td>
+</tr>
+<tr class="even">
+<td>Subproject repository</td>
+<td>Code, documentation, analytical inputs, workflow entry points, provenance, and reproducible implementation</td>
+</tr>
+<tr class="odd">
+<td>Atlas / Ceres</td>
+<td>Approved controlled or large data, intermediate data, HPC execution, logs, temporary objects, and large outputs</td>
+</tr>
+<tr class="even">
+<td>Product or dissemination system</td>
+<td>Manuscripts, reports, dashboards, released data, and related public or restricted outputs</td>
+</tr>
+</tbody>
+</table>
+<p>Continue to <a href="../organization/index.html">How GeoEpi organizes work</a> when you need to decide where a project or subproject belongs.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -669,18 +688,9 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../start/minimum-standard.html" class="pagination-link" aria-label="Minimum GeoEpi Project Standard">
-        <span class="nav-page-text">Minimum GeoEpi Project Standard</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/start/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/start/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/start/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/start/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>

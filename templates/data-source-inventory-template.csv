@@ -1,2 +1,0 @@
-source_id,source_name,provider_or_collector,source_identifier,acquisition_method,acquisition_date,original_filename_or_id,version_or_release_date,local_location,data_classification,license_or_use_restriction,checksum,transformation_record,access_contact,notes
-EXAMPLE-001,Replace with source name,Replace with provider,DOI/API/catalog ID,download/API/field collection,2026-08-05,original-name-or-id,version/date,approved location,public/restricted,license or agreement,optional checksum,provenance record path,contact,Delete this example row

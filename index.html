@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Operational guidance for defensible, reproducible, and transferable geographical epidemiology.">
+<meta name="description" content="Practical guidance for organizing collaborative geographical epidemiology.">
 
 <title>GeoEpi Lab Book</title>
 <style>
@@ -69,6 +69,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -98,16 +101,20 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Start Here</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./practices/index.html"> 
-<span class="menu-text">Research Practices</span></a>
+    <a class="nav-link" href="./organization/index.html"> 
+<span class="menu-text">How GeoEpi Organizes Work</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./domains/index.html"> 
-<span class="menu-text">Domain Guidance</span></a>
+    <a class="nav-link" href="./data/index.html"> 
+<span class="menu-text">Data Management</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./standards/index.html"> 
-<span class="menu-text">Lab Standards</span></a>
+    <a class="nav-link" href="./compute/index.html"> 
+<span class="menu-text">Computing &amp; Repositories</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./tools/index.html"> 
+<span class="menu-text">Tools &amp; Collaboration</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./templates/index.html"> 
@@ -179,7 +186,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#find-your-next-step" id="toc-find-your-next-step" class="nav-link active" data-scroll-target="#find-your-next-step">Find your next step</a></li>
+  <li><a href="#the-basic-model" id="toc-the-basic-model" class="nav-link active" data-scroll-target="#the-basic-model">The basic model</a></li>
+  <li><a href="#start-with-the-question-you-have" id="toc-start-with-the-question-you-have" class="nav-link" data-scroll-target="#start-with-the-question-you-have">Start with the question you have</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -193,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    Operational guidance for defensible, reproducible, and transferable geographical epidemiology.
+    Practical guidance for organizing collaborative geographical epidemiology.
   </div>
 </div>
 
@@ -210,36 +218,54 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<p>The GeoEpi Lab Book helps scientists and collaborators organize work that combines geography, epidemiology, ecology, biology, data, and computation. It is a practical living guide for improving scientific quality, reproducibility, continuity, and efficiency.</p>
+<section id="the-basic-model" class="level2">
+<h2 class="anchored" data-anchor-id="the-basic-model">The basic model</h2>
+<p>A GeoEpi project is a network of linked analytical subprojects, data assets, computational work, and scientific products—not a single repository or directory.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+    H[GeoEpi Hub] --&gt; P1[Project A]
+    H --&gt; P2[Project B]
+    P1 --&gt; R1[Subproject repository]
+    P1 --&gt; R2[Subproject repository]
+    P2 --&gt; R3[Subproject repository]
+    R1 --&gt; C[Atlas / Ceres]
+    R2 --&gt; C
+    R3 --&gt; C
+    R1 --&gt; S[Synthesis and products]
+    R2 --&gt; S
+    R3 --&gt; S
+    S --&gt; M[Manuscript]
+    S --&gt; D[Dashboard or report]
+    S --&gt; O[Released data or product]
+</pre>
 </div>
-<div class="callout-title-container flex-fill">
-Draft guidance
+<p></p></figure><p></p>
 </div>
 </div>
-<div class="callout-body-container callout-body">
-<p>The Lab Book is a living resource. Draft pages and proposed policy require review; they do not establish approved laboratory policy.</p>
 </div>
-</div>
-<p>Welcome to the <strong>GeoEpi Lab Book</strong>, a shared place for practices that help geographical epidemiology remain understandable, defensible, reproducible, and transferable across people, projects, and time.</p>
-<section id="find-your-next-step" class="level2">
-<h2 class="anchored" data-anchor-id="find-your-next-step">Find your next step</h2>
 <ul>
-<li><a href="./start/new-project.html">Start a project</a> for a minimum setup and scope.</li>
-<li><a href="templates/project-readiness-checklist.md">Assess project readiness</a> at lifecycle checkpoints.</li>
-<li><a href="templates/data-source-inventory-template.csv">Document incoming data</a> with a source inventory.</li>
-<li><a href="./templates/index.html">Find a template</a> for reusable project records.</li>
-<li><a href="templates/project-handoff-template.md">Prepare a handoff</a> before responsibility changes.</li>
-<li><a href="./start/minimum-standard.html">Review the minimum standard</a> for the proposed baseline.</li>
-<li><a href="./practices/index.html">Research Practices</a> for the lifecycle from planning through preservation.</li>
-<li><a href="./domains/index.html">Domain Guidance</a> for spatial, epidemiological, ecological, genomic, and modeling topics.</li>
-<li><a href="./standards/index.html">Lab Standards</a> for future lab-level decisions.</li>
-<li><a href="./templates/index.html">Templates</a> for reusable project and documentation structures.</li>
-<li><a href="./resources/index.html">Resources</a> for an annotated external catalog.</li>
+<li>The <strong>GeoEpi Hub</strong> holds project context and coordination.</li>
+<li>A <strong>subproject repository</strong> holds the scientific implementation and analytical provenance for one coherent workstream.</li>
+<li><strong>Atlas and Ceres</strong> hold approved large or controlled data and computational work.</li>
+<li><strong>Products</strong> include manuscripts, reports, dashboards, released data, and other accepted outputs.</li>
 </ul>
-<p>The intended outcome is that a lab member can join a project, understand what was done and why, reproduce an important result where access permits, identify uncertainty, and continue the work without relying on undocumented memory.</p>
+<p>Run-level details—parameters, environments, random seeds, job IDs, logs, manifests, and outputs—stay with the subproject and its computational storage. They do not belong in the Hub.</p>
+</section>
+<section id="start-with-the-question-you-have" class="level2">
+<h2 class="anchored" data-anchor-id="start-with-the-question-you-have">Start with the question you have</h2>
+<ul>
+<li><a href="./start/index.html">Start Here</a> gives the shortest path for a new or inherited project.</li>
+<li><a href="./organization/index.html">How GeoEpi organizes work</a> explains Hub, project, subproject, repository, and run.</li>
+<li><a href="./data/index.html">Data management</a> separates the project DMP, controlled-data inventory, and analytical provenance.</li>
+<li><a href="./compute/index.html">Computing and repositories</a> explains what belongs on GitHub versus Atlas or Ceres.</li>
+<li><a href="./tools/index.html">Tools and collaboration</a> describes the group’s common working tools.</li>
+<li><a href="./templates/index.html">Templates</a> provides a small set of reusable starting points.</li>
+</ul>
 
 
 </section>

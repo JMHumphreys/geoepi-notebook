@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="How to propose, review, and improve GeoEpi Lab Book content.">
+<meta name="description" content="How to propose changes to the GeoEpi Lab Book.">
 
 <title>Contributing – GeoEpi Lab Book</title>
 <style>
@@ -31,6 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../about/how-to-use.html" rel="prev">
 <link href="../assets/images/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -73,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -98,16 +99,20 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Start Here</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../practices/index.html"> 
-<span class="menu-text">Research Practices</span></a>
+    <a class="nav-link" href="../organization/index.html"> 
+<span class="menu-text">How GeoEpi Organizes Work</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../domains/index.html"> 
-<span class="menu-text">Domain Guidance</span></a>
+    <a class="nav-link" href="../data/index.html"> 
+<span class="menu-text">Data Management</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../standards/index.html"> 
-<span class="menu-text">Lab Standards</span></a>
+    <a class="nav-link" href="../compute/index.html"> 
+<span class="menu-text">Computing &amp; Repositories</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../tools/index.html"> 
+<span class="menu-text">Tools &amp; Collaboration</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../templates/index.html"> 
@@ -169,10 +174,45 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../about/contributing.html">Contributing</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about/purpose.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Purpose of the Lab Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about/how-to-use.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to use this site</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about/contributing.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Contributing</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
@@ -187,7 +227,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    How to propose, review, and improve GeoEpi Lab Book content.
+    How to propose changes to the GeoEpi Lab Book.
   </div>
 </div>
 
@@ -204,20 +244,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>See <a href="../CONTRIBUTING.md">CONTRIBUTING.md</a> for the repository workflow. Propose changes on a branch, preserve metadata, write in your own words, cite the evidence or source basis, and request review when a change could affect a lab requirement.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Until governance is finalized, a pull request can improve draft text but cannot by itself turn it into an approved lab requirement.</p>
-</div>
-</div>
+<p>Propose changes through a branch and pull request. Keep changes focused, explain the GeoEpi use case, and update linked templates or resources when a page changes their meaning.</p>
+<p>For substantive guidance, include the source or experience behind the recommendation and distinguish a useful group convention from an actual institutional, contractual, security, or scientific requirement. Reviewers should check clarity, accessibility, scientific accuracy, links, and whether the proposed guidance fits the practical GeoEpi operating model.</p>
+<p>Render the full site locally with <code>quarto render</code> before opening a pull request. The validation script checks active-page metadata, internal links, templates, and generated output. Do not commit <code>_site/</code>, credentials, tokens, or local IDE state.</p>
 
 
 
@@ -626,6 +655,15 @@ Warning
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../about/how-to-use.html" class="pagination-link" aria-label="How to use this site">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">How to use this site</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
 
 
