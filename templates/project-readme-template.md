@@ -32,6 +32,16 @@ List principal output names, locations, run identifiers, and how to tell whether
 
 Link to checks, decision records, limitations, and known failures.
 
+## Collaboration and current responsibility
+
+- **Project lead:**
+- **Current contributors or role record:**
+- **Owner of the next action:**
+- **Authoritative decision/review location:**
+- **Contribution-record location, where warranted:**
+- **External partner or restriction reference:**
+- **Backup or handoff contact, where applicable:**
+
 ## Transfer readiness (complete when a handoff is needed)
 
 Record current owner, intended access transfer, reproduction steps, unfinished work, and contact information. Do not imply that a handoff has occurred until the incoming owner accepts it.

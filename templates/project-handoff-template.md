@@ -14,4 +14,14 @@
 - **Known issues and limitations:**
 - **Unfinished work and next actions:**
 - **Open decisions/exceptions:**
+- **Current analysis and validation versions:**
+- **Current result IDs:**
+- **Collaboration-agreement location:**
+- **Contribution-and-credit record:**
+- **Active reviewers or reviews:**
+- **Unresolved scientific or credit disagreements:**
+- **External partner contacts and obligations:**
+- **Repositories, scheduled jobs, services, or shared accounts requiring ownership transfer:**
+- **Communication-readiness status:**
+- **Access removal or transfer responsibility:**
 - **Acceptance by incoming owner:**
