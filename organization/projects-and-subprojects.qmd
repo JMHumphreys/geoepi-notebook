@@ -19,4 +19,37 @@ This is not the same as “one scientist = one repository.” A scientist may co
 - **Subproject level:** scientific implementation, workflow entry points, public data acquisition, code, analytical provenance, and reproducibility notes.
 - **Run level:** exact configuration and execution records for a particular analysis or computational run.
 
-Use the [subproject README template](../templates/subproject-readme-template.md) and [draft `.geoepi.yml` template](../templates/geoepi-metadata-template.yml) when setting up a repository. The metadata file is a small future convention, not a replacement for the README or run records.
+Use the [subproject README template](../templates/subproject-readme-template.md) and [proposed Version 1 `.geoepi.yml` template](../templates/geoepi-metadata-template.yml) when setting up a repository. The metadata file is a small future convention, not a replacement for the README or run records.
+
+## Stable identifiers
+
+`project_id` and `subproject_id` are stable machine-readable identifiers. Use lowercase, short but understandable, hyphen-separated ASCII names with no spaces. Do not add dates unless a date is genuinely part of the scientific identity, and do not change an ID merely because a project title changes.
+
+For example:
+
+```yaml
+project_id: nws-risk
+subproject_id: nws-bayes-risk
+subproject_id: nws-climate-acquisition
+```
+
+Stable IDs may eventually connect Hub directory names, Hub registries, `.geoepi.yml`, GitHub Actions, analytical metadata, and computational paths where appropriate. GeoEpi is not prescribing a run ID convention yet.
+
+## Registry, metadata, and status
+
+The Hub registry should answer **where is this subproject?** The distinction is:
+
+- `subprojects.yml` = where the canonical subproject repository is located;
+- `.geoepi.yml` = current portfolio-level state reported by that subproject.
+
+The registry locates the subproject; the subproject describes its state. Keep the registry minimal and do not duplicate lead, status, current focus, milestone, or compute fields there.
+
+Version 1 of `.geoepi.yml` uses this small status vocabulary:
+
+- `planned` — work is defined but not underway;
+- `active` — work is underway;
+- `paused` — work is intentionally on hold;
+- `complete` — the current subproject objective is complete;
+- `archived` — the repository is retained for reference and is not active.
+
+The file contains portfolio-level metadata only. It does not contain run records, package or environment versions, SLURM jobs, model parameters, seeds, detailed data provenance, analytical results, or validation output. Those remain in the subproject repository and/or computational environment.

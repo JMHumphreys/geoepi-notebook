@@ -12,6 +12,6 @@ These templates are starting points, not a rigid project structure. Copy them in
 | [Controlled-data inventory](controlled-data-inventory-template.csv) | Minimal project-level inventory of important controlled data |
 | [Subproject registry](subproject-registry-template.yml) | Future Hub links to canonical subproject repositories |
 | [Subproject README](subproject-readme-template.md) | Orientation and reproducibility information in a subproject repository |
-| [GeoEpi metadata](geoepi-metadata-template.yml) | Draft portfolio metadata convention for a future `.geoepi.yml` file |
+| [GeoEpi metadata](geoepi-metadata-template.yml) | Proposed Version 1 portfolio metadata convention for a future `.geoepi.yml` file |
 
-The registry and metadata files intentionally contain portfolio-level information only. Run metadata belongs in the subproject repository and computational storage. Future Hub automation may read these files, but cross-repository automation is not implemented here.
+The registry and metadata files intentionally contain portfolio-level information only. `subprojects.yml` locates the canonical repository; `.geoepi.yml` reports the subproject's current portfolio state. Run metadata belongs in the subproject repository and computational storage. Future Hub automation may read these files, but cross-repository automation is not implemented here.

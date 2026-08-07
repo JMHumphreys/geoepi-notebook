@@ -1,7 +1,7 @@
 """Validate the active GeoEpi Lab Book structure and internal links."""
 
-from html.parser import HTMLParser
 import argparse
+from html.parser import HTMLParser
 from pathlib import Path
 import re
 import sys
@@ -18,6 +18,24 @@ REQUIRED_TEMPLATES = {
     "subproject-readme-template.md",
     "geoepi-metadata-template.yml",
 }
+ANALYTICAL_GUIDE_URLS = (
+    "https://hankstevens.github.io/Primer-of-Ecology/index.html",
+    "https://www.quantitative-biology.ca/",
+    "https://frec-5174c.github.io/eco4cast-in-R-book/",
+    "https://keen-swartz-3146c.netlify.app/",
+    "https://mgimond.github.io/Spatial/coordinate-systems-in-r.html",
+    "https://jguelat.github.io/spatial-r/",
+    "https://r.geocompx.org/",
+    "https://xcelab.net/rm/statistical-rethinking/",
+    "https://bookdown.org/bomeara/comparative-methods/",
+    "https://bookdown.org/hhwagner1/LandGenCourse_book/",
+    "https://dyerlab.github.io/applied_population_genetics/index.html",
+    "https://gtpb.github.io/MEVR16/index.html",
+    "https://linsalrob.github.io/ComputationalGenomicsManual/",
+    "https://epirhandbook.com/en/index.html",
+    "https://yunranchen.github.io/intro-net-r/index.html",
+    "https://inarwhal.github.io/NetworkAnalysisR-book/",
+)
 errors = []
 
 
@@ -66,6 +84,18 @@ def check_source_links(path, text):
             errors.append(f"{path}: broken internal link -> {raw_target}")
 
 
+def check_analytical_guide_links():
+    page = ROOT / "resources" / "index.qmd"
+    text = page.read_text(encoding="utf-8")
+    for url in ANALYTICAL_GUIDE_URLS:
+        parsed = urlparse(url)
+        if parsed.scheme not in {"http", "https"} or not parsed.netloc:
+            errors.append(f"{page}: invalid analytical-guide URL -> {url}")
+        count = text.count(url)
+        if count != 1:
+            errors.append(f"{page}: analytical-guide URL appears {count} times; expected once -> {url}")
+
+
 class AnchorParser(HTMLParser):
     def __init__(self):
         super().__init__()
@@ -88,6 +118,17 @@ def check_rendered_links():
         search_text = search_index.read_text(encoding="utf-8")
         if re.search(r'"href":"[^\"]*(archive|practices|domains|standards)/', search_text):
             errors.append(f"{search_index}: archived or superseded page appears in search index")
+    rendered_resources = site / "resources" / "index.html"
+    if rendered_resources.exists():
+        rendered_text = rendered_resources.read_text(encoding="utf-8")
+        for url in ANALYTICAL_GUIDE_URLS:
+            count = rendered_text.count(url)
+            if count != 1:
+                errors.append(
+                    f"{rendered_resources}: analytical-guide URL appears {count} times; expected once -> {url}"
+                )
+    else:
+        errors.append(f"{rendered_resources}: rendered Resources page is missing")
     for page in sorted(site.rglob("*.html")):
         parser = AnchorParser()
         parser.feed(page.read_text(encoding="utf-8"))
@@ -107,6 +148,8 @@ for page in pages:
     text = page.read_text(encoding="utf-8")
     front_matter(text, page)
     check_source_links(page, text)
+
+check_analytical_guide_links()
 
 template_dir = ROOT / "templates"
 actual_templates = {path.name for path in template_dir.iterdir() if path.is_file() and path.name != "index.qmd"}
