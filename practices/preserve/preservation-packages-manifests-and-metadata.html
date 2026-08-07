@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Record analysis runs, inputs, settings, outputs, warnings, and failures proportionately.">
+<meta name="description" content="Assemble an identifiable package with an inventory, relationships, restrictions, and usable metadata.">
 
-<title>Computational Execution – GeoEpi Lab Book</title>
+<title>Preservation Packages, Manifests, and Metadata – GeoEpi Lab Book</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../practices/analyze/randomness-scenarios-and-replicates.html" rel="next">
-<link href="../../practices/analyze/exploratory-and-planned-analysis.html" rel="prev">
+<link href="../../practices/preserve/repositories-identifiers-and-deposit.html" rel="next">
+<link href="../../practices/preserve/selection-retention-and-disposition.html" rel="prev">
 <link href="../../assets/images/favicon.ico" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -176,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/analyze/index.html">Analyze</a></li><li class="breadcrumb-item"><a href="../../practices/analyze/computational-execution.html">Computational Execution</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/preserve/index.html">Preserve</a></li><li class="breadcrumb-item"><a href="../../practices/preserve/preservation-packages-manifests-and-metadata.html">Preservation Packages, Manifests, and Metadata</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -322,7 +322,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../practices/analyze/computational-execution.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../practices/analyze/computational-execution.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Computational Execution</span></a>
   </div>
 </li>
@@ -522,7 +522,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../practices/preserve/preservation-packages-manifests-and-metadata.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/preserve/preservation-packages-manifests-and-metadata.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Preservation Packages, Manifests, and Metadata</span></a>
   </div>
 </li>
@@ -562,27 +562,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#define-an-analysis-run" id="toc-define-an-analysis-run" class="nav-link active" data-scroll-target="#define-an-analysis-run">Define an analysis run</a></li>
-  <li><a href="#proportional-run-records" id="toc-proportional-run-records" class="nav-link" data-scroll-target="#proportional-run-records">Proportional run records</a></li>
-  <li><a href="#execution-status" id="toc-execution-status" class="nav-link" data-scroll-target="#execution-status">Execution status</a></li>
-  <li><a href="#warnings-and-partial-completion" id="toc-warnings-and-partial-completion" class="nav-link" data-scroll-target="#warnings-and-partial-completion">Warnings and partial completion</a></li>
-  <li><a href="#overwrite-safety" id="toc-overwrite-safety" class="nav-link" data-scroll-target="#overwrite-safety">Overwrite safety</a></li>
-  <li><a href="#local-and-hpc-execution" id="toc-local-and-hpc-execution" class="nav-link" data-scroll-target="#local-and-hpc-execution">Local and HPC execution</a></li>
-  <li><a href="#stop-and-resolve" id="toc-stop-and-resolve" class="nav-link" data-scroll-target="#stop-and-resolve">Stop and resolve</a></li>
+  <li><a href="#package-identity-and-contents" id="toc-package-identity-and-contents" class="nav-link active" data-scroll-target="#package-identity-and-contents">Package identity and contents</a></li>
+  <li><a href="#packaging-approaches" id="toc-packaging-approaches" class="nav-link" data-scroll-target="#packaging-approaches">Packaging approaches</a></li>
+  <li><a href="#dynamic-sources-and-metadata" id="toc-dynamic-sources-and-metadata" class="nav-link" data-scroll-target="#dynamic-sources-and-metadata">Dynamic sources and metadata</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/analyze/computational-execution.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/analyze/computational-execution.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/preserve/preservation-packages-manifests-and-metadata.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/preserve/preservation-packages-manifests-and-metadata.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/analyze/index.html">Analyze</a></li><li class="breadcrumb-item"><a href="../../practices/analyze/computational-execution.html">Computational Execution</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/preserve/index.html">Preserve</a></li><li class="breadcrumb-item"><a href="../../practices/preserve/preservation-packages-manifests-and-metadata.html">Preservation Packages, Manifests, and Metadata</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Computational Execution</h1>
+<h1 class="title">Preservation Packages, Manifests, and Metadata</h1>
 </div>
 
 <div>
   <div class="description">
-    Record analysis runs, inputs, settings, outputs, warnings, and failures proportionately.
+    Assemble an identifiable package with an inventory, relationships, restrictions, and usable metadata.
   </div>
 </div>
 
@@ -599,45 +595,21 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="define-an-analysis-run" class="level2">
-<h2 class="anchored" data-anchor-id="define-an-analysis-run">Define an analysis run</h2>
-<p>An analysis run is one recorded execution of a script, notebook, model, simulation, or analytical workflow using identified data and settings. It may occur interactively, from a script, through Quarto or a notebook, on a workstation, through a scheduled task, on a high-performance computing (HPC) cluster, or as one task within a <strong>job array</strong>, a group of similar cluster tasks submitted together.</p>
-<p>Record as appropriate:</p>
-<ul>
-<li>project ID, analysis ID and version, run ID, and purpose;</li>
-<li>input dataset IDs and versions;</li>
-<li>code version, main script or notebook, command used, and settings record;</li>
-<li>software, computing environment, and execution location;</li>
-<li>start and completion time;</li>
-<li>responsible analyst or operator;</li>
-<li>outputs, logs, warnings, status, and any run replaced or retried.</li>
-</ul>
-<p>Here, <strong>code version</strong> means the Git commit, tag, or other recorded version of the analysis code. A <strong>settings record</strong> is the file or documented values controlling the analysis. The <strong>computing environment</strong> is the relevant software, package, system, or cluster information needed to understand or repeat the work. A <strong>run ID</strong> is a stable label for one execution.</p>
+<section id="package-identity-and-contents" class="level2">
+<h2 class="anchored" data-anchor-id="package-identity-and-contents">Package identity and contents</h2>
+<p>A package should have a package ID, project ID, title, version, creation date, responsible owner, authoritative location, selection record, manifest, relationships, restrictions, and access conditions. Include proportionately a README, manifest, checksums, data and metadata, code, configuration, environment records, analysis/validation, communication/release records, licenses, agreements, citations, limitations, exclusions, and deposit instructions. Never include credentials, tokens, passwords, private keys, or encryption keys.</p>
+<p>For each artifact, use exactly: <strong>planned for inclusion</strong>, <strong>included</strong>, <strong>externally referenced</strong>, <strong>excluded with rationale</strong>, <strong>unavailable</strong>, or <strong>superseded</strong>. The safe default is <strong>planned for inclusion</strong>. Included means contained; externally referenced means retained elsewhere under an identifiable durable reference; excluded means deliberately omitted with explanation; unavailable means expected but unobtainable with a limitation; superseded means replaced by an identified artifact/version. Do not rely on temporary personal locations as external preservation references.</p>
+<p>An included local file needs a relative package path. An external reference needs a durable identifier and location. An exclusion needs rationale. An unavailable item needs a limitation. A superseded item needs a replacement. A verified local file needs checksum evidence where proportionate. Restricted artifacts identify the restriction without exposing protected content.</p>
+<p>For the package manifest, use exactly these verification statuses: <strong>not verified</strong>, <strong>verified</strong>, <strong>verified with limitation</strong>, <strong>failed</strong>, and <strong>not applicable</strong>. The safe default is <strong>not verified</strong>. <strong>Not verified</strong> means no completed check is recorded. <strong>Verified</strong> means identity, expected package relationship, and integrity evidence were checked as applicable; an included local file needs relative path, size, format/media type, checksum algorithm, checksum, checksum date, and result where proportionate. Repository-generated integrity evidence is acceptable when the repository is authoritative and recorded. <strong>Verified with limitation</strong> records the limitation in <code>inclusion_or_exclusion_rationale</code> or <code>notes</code> and links it to the preservation record when consequential. <strong>Failed</strong> records failure, responsible person/process, next action, and whether a recovery source exists in <code>notes</code>. <strong>Not applicable</strong> is only for a genuine case with no independently verifiable file content, not merely because verification was not performed.</p>
 </section>
-<section id="proportional-run-records" class="level2">
-<h2 class="anchored" data-anchor-id="proportional-run-records">Proportional run records</h2>
-<p>For a simple local analysis, a rendered Quarto document or notebook may be enough when it records the input dataset version, code version, settings, execution date, output, warnings, and limitations. A separate run-record file is not universal.</p>
-<p>Use a separate run record when several executions must be compared, settings differ, the work is expensive or consequential, HPC is used, failures and retries matter, responsibility may transfer, or reproducibility depends on external software. The <a href="../../templates/analysis-run-record-template.yml">analysis run record template</a> is a reusable starting point.</p>
+<section id="packaging-approaches" class="level2">
+<h2 class="anchored" data-anchor-id="packaging-approaches">Packaging approaches</h2>
+<p>The project may use an ordinary documented directory, repository-specific deposit package, BagIt, RO-Crate, or another accepted institutional/domain format. No packaging standard is universal. <a href="https://www.rfc-editor.org/info/rfc8493/">BagIt RFC 8493</a> can support transfer and checksum manifests; <a href="https://www.researchobject.org/ro-crate/specification/1.2/">RO-Crate</a> can describe relationships among research artifacts; PREMIS concepts can help describe preservation objects, events, rights, and agents. None is required here.</p>
+<p>ZIP, TAR, or another archive may be used for transfer, but the record should also identify contents, format, compression, checksum, extraction test, size, and relevant software. Do not rely on an opaque archive with no external manifest or guide.</p>
 </section>
-<section id="execution-status" class="level2">
-<h2 class="anchored" data-anchor-id="execution-status">Execution status</h2>
-<p>Use <strong>planned</strong>, <strong>running</strong>, <strong>completed</strong>, <strong>completed with documented limitation</strong>, <strong>failed</strong>, <strong>cancelled</strong>, or <strong>superseded</strong>. <strong>Completed</strong> means the recorded execution finished and produced its recorded outputs. It does not mean the analysis is valid or ready for validation.</p>
-</section>
-<section id="warnings-and-partial-completion" class="level2">
-<h2 class="anchored" data-anchor-id="warnings-and-partial-completion">Warnings and partial completion</h2>
-<p>Compare expected outputs with outputs actually produced. Record warnings, errors, incomplete subsets, failed array tasks, missing scenarios or replicates, cancellations, manual recovery, and retry relationships. A zero exit code or successfully rendered document does not by itself show that every expected result was produced.</p>
-</section>
-<section id="overwrite-safety" class="level2">
-<h2 class="anchored" data-anchor-id="overwrite-safety">Overwrite safety</h2>
-<p>Do not silently replace an earlier important result. Give revised runs new run IDs, record which run is current, retain failed or superseded records when they affected later decisions, save important outputs under identifiable locations, and do not rely on an unsaved interactive workspace.</p>
-</section>
-<section id="local-and-hpc-execution" class="level2">
-<h2 class="anchored" data-anchor-id="local-and-hpc-execution">Local and HPC execution</h2>
-<p>The same scientific information should be recoverable whether work ran locally or on a cluster. For HPC, use the existing <a href="../../templates/hpc-run-record-template.yml">HPC run record</a> for submission script, job and array IDs, resources, loaded software, inputs, outputs, logs, exit status, retries, and the relationship to local development. This is record-keeping guidance, not an HPC tutorial.</p>
-</section>
-<section id="stop-and-resolve" class="level2">
-<h2 class="anchored" data-anchor-id="stop-and-resolve">Stop and resolve</h2>
-<p>Pause readiness when the input version is unknown, code or settings cannot be identified, important output was manually edited, expected outputs are missing without explanation, failed tasks were silently excluded, warnings were discarded, local and cluster software differ materially without documentation, or a result cannot be tied to a specific execution.</p>
+<section id="dynamic-sources-and-metadata" class="level2">
+<h2 class="anchored" data-anchor-id="dynamic-sources-and-metadata">Dynamic sources and metadata</h2>
+<p>For APIs, databases, dashboards, websites, or changing services, record snapshot date, query and parameters, source version, schema, response/export format, current-through date, workflow, service documentation, and whether the same response can be recreated. Metadata should identify object, version, responsible agent, dates, format, size, checksums, rights, relationships, preservation actions, repository, identifiers, access conditions, and dependencies. It may live in the manifest, README, repository record, release record, or linked durable record; avoid unnecessary duplication.</p>
 
 
 </section>
@@ -1049,13 +1021,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../practices/analyze/exploratory-and-planned-analysis.html" class="pagination-link" aria-label="Exploratory and Planned Analysis">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Exploratory and Planned Analysis</span>
+      <a href="../../practices/preserve/selection-retention-and-disposition.html" class="pagination-link" aria-label="Selection, Retention, and Disposition">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Selection, Retention, and Disposition</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../practices/analyze/randomness-scenarios-and-replicates.html" class="pagination-link" aria-label="Randomness, Scenarios, and Replicates">
-        <span class="nav-page-text">Randomness, Scenarios, and Replicates</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../practices/preserve/repositories-identifiers-and-deposit.html" class="pagination-link" aria-label="Repositories, Identifiers, and Deposit">
+        <span class="nav-page-text">Repositories, Identifiers, and Deposit</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1064,4 +1036,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/analyze/computational-execution.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/analyze/computational-execution.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/preserve/preservation-packages-manifests-and-metadata.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/preserve/preservation-packages-manifests-and-metadata.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>

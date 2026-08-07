@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Record analysis runs, inputs, settings, outputs, warnings, and failures proportionately.">
+<meta name="description" content="Choose a suitable preservation destination and distinguish transfer, receipt, and verification.">
 
-<title>Computational Execution – GeoEpi Lab Book</title>
+<title>Repositories, Identifiers, and Deposit – GeoEpi Lab Book</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../practices/analyze/randomness-scenarios-and-replicates.html" rel="next">
-<link href="../../practices/analyze/exploratory-and-planned-analysis.html" rel="prev">
+<link href="../../practices/preserve/fixity-storage-recovery-and-monitoring.html" rel="next">
+<link href="../../practices/preserve/preservation-packages-manifests-and-metadata.html" rel="prev">
 <link href="../../assets/images/favicon.ico" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -176,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/analyze/index.html">Analyze</a></li><li class="breadcrumb-item"><a href="../../practices/analyze/computational-execution.html">Computational Execution</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/preserve/index.html">Preserve</a></li><li class="breadcrumb-item"><a href="../../practices/preserve/repositories-identifiers-and-deposit.html">Repositories, Identifiers, and Deposit</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -322,7 +322,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../practices/analyze/computational-execution.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../practices/analyze/computational-execution.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Computational Execution</span></a>
   </div>
 </li>
@@ -528,7 +528,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../practices/preserve/repositories-identifiers-and-deposit.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/preserve/repositories-identifiers-and-deposit.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Repositories, Identifiers, and Deposit</span></a>
   </div>
 </li>
@@ -562,27 +562,24 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#define-an-analysis-run" id="toc-define-an-analysis-run" class="nav-link active" data-scroll-target="#define-an-analysis-run">Define an analysis run</a></li>
-  <li><a href="#proportional-run-records" id="toc-proportional-run-records" class="nav-link" data-scroll-target="#proportional-run-records">Proportional run records</a></li>
-  <li><a href="#execution-status" id="toc-execution-status" class="nav-link" data-scroll-target="#execution-status">Execution status</a></li>
-  <li><a href="#warnings-and-partial-completion" id="toc-warnings-and-partial-completion" class="nav-link" data-scroll-target="#warnings-and-partial-completion">Warnings and partial completion</a></li>
-  <li><a href="#overwrite-safety" id="toc-overwrite-safety" class="nav-link" data-scroll-target="#overwrite-safety">Overwrite safety</a></li>
-  <li><a href="#local-and-hpc-execution" id="toc-local-and-hpc-execution" class="nav-link" data-scroll-target="#local-and-hpc-execution">Local and HPC execution</a></li>
-  <li><a href="#stop-and-resolve" id="toc-stop-and-resolve" class="nav-link" data-scroll-target="#stop-and-resolve">Stop and resolve</a></li>
+  <li><a href="#repository-selection" id="toc-repository-selection" class="nav-link active" data-scroll-target="#repository-selection">Repository selection</a></li>
+  <li><a href="#identifiers-and-relationships" id="toc-identifiers-and-relationships" class="nav-link" data-scroll-target="#identifiers-and-relationships">Identifiers and relationships</a></li>
+  <li><a href="#deposit-is-not-verification" id="toc-deposit-is-not-verification" class="nav-link" data-scroll-target="#deposit-is-not-verification">Deposit is not verification</a></li>
+  <li><a href="#exit-planning" id="toc-exit-planning" class="nav-link" data-scroll-target="#exit-planning">Exit planning</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/analyze/computational-execution.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/analyze/computational-execution.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/preserve/repositories-identifiers-and-deposit.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/preserve/repositories-identifiers-and-deposit.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/analyze/index.html">Analyze</a></li><li class="breadcrumb-item"><a href="../../practices/analyze/computational-execution.html">Computational Execution</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/preserve/index.html">Preserve</a></li><li class="breadcrumb-item"><a href="../../practices/preserve/repositories-identifiers-and-deposit.html">Repositories, Identifiers, and Deposit</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Computational Execution</h1>
+<h1 class="title">Repositories, Identifiers, and Deposit</h1>
 </div>
 
 <div>
   <div class="description">
-    Record analysis runs, inputs, settings, outputs, warnings, and failures proportionately.
+    Choose a suitable preservation destination and distinguish transfer, receipt, and verification.
   </div>
 </div>
 
@@ -599,45 +596,22 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="define-an-analysis-run" class="level2">
-<h2 class="anchored" data-anchor-id="define-an-analysis-run">Define an analysis run</h2>
-<p>An analysis run is one recorded execution of a script, notebook, model, simulation, or analytical workflow using identified data and settings. It may occur interactively, from a script, through Quarto or a notebook, on a workstation, through a scheduled task, on a high-performance computing (HPC) cluster, or as one task within a <strong>job array</strong>, a group of similar cluster tasks submitted together.</p>
-<p>Record as appropriate:</p>
-<ul>
-<li>project ID, analysis ID and version, run ID, and purpose;</li>
-<li>input dataset IDs and versions;</li>
-<li>code version, main script or notebook, command used, and settings record;</li>
-<li>software, computing environment, and execution location;</li>
-<li>start and completion time;</li>
-<li>responsible analyst or operator;</li>
-<li>outputs, logs, warnings, status, and any run replaced or retried.</li>
-</ul>
-<p>Here, <strong>code version</strong> means the Git commit, tag, or other recorded version of the analysis code. A <strong>settings record</strong> is the file or documented values controlling the analysis. The <strong>computing environment</strong> is the relevant software, package, system, or cluster information needed to understand or repeat the work. A <strong>run ID</strong> is a stable label for one execution.</p>
+<section id="repository-selection" class="level2">
+<h2 class="anchored" data-anchor-id="repository-selection">Repository selection</h2>
+<p>Evaluate proportionately accepted content, preservation commitment, versioning, metadata, identifiers, access controls, embargoes, restricted-data support, size limits, costs, governance, longevity, export and migration options, correction/withdrawal support, community acceptance, contacts, and terms. Possible destinations include institutional, domain, general research, controlled-access, records, approved storage, and software-specific repositories. No universal repository is prescribed.</p>
+<p>Repository certification can be useful evidence. It is not universally required, does not guarantee indefinite access, does not replace fit assessment, and does not authorize restricted deposit. The <a href="https://www.coretrustseal.org/why-certification/requirements/">CoreTrustSeal Requirements 2026–2028</a> are a repository-assessment resource, not a project conformance requirement.</p>
 </section>
-<section id="proportional-run-records" class="level2">
-<h2 class="anchored" data-anchor-id="proportional-run-records">Proportional run records</h2>
-<p>For a simple local analysis, a rendered Quarto document or notebook may be enough when it records the input dataset version, code version, settings, execution date, output, warnings, and limitations. A separate run-record file is not universal.</p>
-<p>Use a separate run record when several executions must be compared, settings differ, the work is expensive or consequential, HPC is used, failures and retries matter, responsibility may transfer, or reproducibility depends on external software. The <a href="../../templates/analysis-run-record-template.yml">analysis run record template</a> is a reusable starting point.</p>
+<section id="identifiers-and-relationships" class="level2">
+<h2 class="anchored" data-anchor-id="identifiers-and-relationships">Identifiers and relationships</h2>
+<p>Record a DOI, accession number, repository record ID, SWHID, archival identifier, or institutional record number where one exists. Not every file needs a persistent identifier; the package or major research object should be identifiable at a useful level. Link project, data, software, results, communication, release, preservation package, and replacement package.</p>
 </section>
-<section id="execution-status" class="level2">
-<h2 class="anchored" data-anchor-id="execution-status">Execution status</h2>
-<p>Use <strong>planned</strong>, <strong>running</strong>, <strong>completed</strong>, <strong>completed with documented limitation</strong>, <strong>failed</strong>, <strong>cancelled</strong>, or <strong>superseded</strong>. <strong>Completed</strong> means the recorded execution finished and produced its recorded outputs. It does not mean the analysis is valid or ready for validation.</p>
+<section id="deposit-is-not-verification" class="level2">
+<h2 class="anchored" data-anchor-id="deposit-is-not-verification">Deposit is not verification</h2>
+<p>Record submission date, recipient, package ID/version, receipt, repository identifier, accepted/rejected files, transformations, access state, embargo, license, depositing person/process, repository response date, and deposit owner. A partial acceptance records accepted and rejected components separately. A rejected deposit records repository/recipient, package/version, submission and rejection dates, notice/receipt, reason, affected components, responsible person, temporary safe location, next action, alternative plan, and reconsideration trigger. Rejection does not mean package loss or change the selection decision; the outcome remains <strong>deposit rejected</strong> until a later outcome is recorded. Then verify completeness, inventory, checksums or other integrity evidence, metadata, restrictions, retrieval where permitted, identifier resolution, and landing-page accuracy. An upload is not a verified preservation outcome.</p>
 </section>
-<section id="warnings-and-partial-completion" class="level2">
-<h2 class="anchored" data-anchor-id="warnings-and-partial-completion">Warnings and partial completion</h2>
-<p>Compare expected outputs with outputs actually produced. Record warnings, errors, incomplete subsets, failed array tasks, missing scenarios or replicates, cancellations, manual recovery, and retry relationships. A zero exit code or successfully rendered document does not by itself show that every expected result was produced.</p>
-</section>
-<section id="overwrite-safety" class="level2">
-<h2 class="anchored" data-anchor-id="overwrite-safety">Overwrite safety</h2>
-<p>Do not silently replace an earlier important result. Give revised runs new run IDs, record which run is current, retain failed or superseded records when they affected later decisions, save important outputs under identifiable locations, and do not rely on an unsaved interactive workspace.</p>
-</section>
-<section id="local-and-hpc-execution" class="level2">
-<h2 class="anchored" data-anchor-id="local-and-hpc-execution">Local and HPC execution</h2>
-<p>The same scientific information should be recoverable whether work ran locally or on a cluster. For HPC, use the existing <a href="../../templates/hpc-run-record-template.yml">HPC run record</a> for submission script, job and array IDs, resources, loaded software, inputs, outputs, logs, exit status, retries, and the relationship to local development. This is record-keeping guidance, not an HPC tutorial.</p>
-</section>
-<section id="stop-and-resolve" class="level2">
-<h2 class="anchored" data-anchor-id="stop-and-resolve">Stop and resolve</h2>
-<p>Pause readiness when the input version is unknown, code or settings cannot be identified, important output was manually edited, expected outputs are missing without explanation, failed tasks were silently excluded, warnings were discarded, local and cluster software differ materially without documentation, or a result cannot be tied to a specific execution.</p>
+<section id="exit-planning" class="level2">
+<h2 class="anchored" data-anchor-id="exit-planning">Exit planning</h2>
+<p>For consequential deposits, record account and notice ownership, fees, export options, repository closure or terms-change response, location of a second package or manifest, and migration responsibility. The public release location is not automatically the preservation repository.</p>
 
 
 </section>
@@ -1049,13 +1023,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../practices/analyze/exploratory-and-planned-analysis.html" class="pagination-link" aria-label="Exploratory and Planned Analysis">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Exploratory and Planned Analysis</span>
+      <a href="../../practices/preserve/preservation-packages-manifests-and-metadata.html" class="pagination-link" aria-label="Preservation Packages, Manifests, and Metadata">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preservation Packages, Manifests, and Metadata</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../practices/analyze/randomness-scenarios-and-replicates.html" class="pagination-link" aria-label="Randomness, Scenarios, and Replicates">
-        <span class="nav-page-text">Randomness, Scenarios, and Replicates</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../practices/preserve/fixity-storage-recovery-and-monitoring.html" class="pagination-link" aria-label="Fixity, Storage, Recovery, and Monitoring">
+        <span class="nav-page-text">Fixity, Storage, Recovery, and Monitoring</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1064,4 +1038,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/analyze/computational-execution.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/analyze/computational-execution.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/preserve/repositories-identifiers-and-deposit.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/preserve/repositories-identifiers-and-deposit.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>

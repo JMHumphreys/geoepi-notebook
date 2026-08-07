@@ -123,3 +123,15 @@ Use exactly: `not released`, `released`, `withheld`, `withdrawn`, or `superseded
 - Return-to-lifecycle-stage decision: `blank until needed`
 
 Keep the original product and release record identifiable. Do not silently overwrite history.
+
+## Transfer to Preserve
+
+- Preservation assessment required: `yes / no / unresolved`
+- Preservation-record ID: `blank until created`
+- Preservation package ID/version: `blank until created`
+- Repository or preservation location: `blank until known`
+- Transfer owner: `blank until assigned`
+- Transfer date: `blank until completed`
+- Known preservation limitation: `blank until assessed`
+
+Release does not itself establish preservation. A public release location is not automatically the preservation repository. Preserve is authoritative for selection, deposit, verification, access, and maintenance.

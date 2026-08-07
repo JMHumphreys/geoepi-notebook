@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Record analysis runs, inputs, settings, outputs, warnings, and failures proportionately.">
+<meta name="description" content="Maintain authorized access and responsibility while recording migration, supersession, repository change, and deaccession.">
 
-<title>Computational Execution – GeoEpi Lab Book</title>
+<title>Access, Governance, Maintenance, and Deaccession – GeoEpi Lab Book</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../practices/analyze/randomness-scenarios-and-replicates.html" rel="next">
-<link href="../../practices/analyze/exploratory-and-planned-analysis.html" rel="prev">
+<link href="../../practices/preserve/formats-software-environments-and-reuse.html" rel="prev">
 <link href="../../assets/images/favicon.ico" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -176,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/analyze/index.html">Analyze</a></li><li class="breadcrumb-item"><a href="../../practices/analyze/computational-execution.html">Computational Execution</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/preserve/index.html">Preserve</a></li><li class="breadcrumb-item"><a href="../../practices/preserve/access-governance-maintenance-and-deaccession.html">Access, Governance, Maintenance, and Deaccession</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -322,7 +321,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../practices/analyze/computational-execution.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../practices/analyze/computational-execution.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Computational Execution</span></a>
   </div>
 </li>
@@ -546,7 +545,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../practices/preserve/access-governance-maintenance-and-deaccession.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/preserve/access-governance-maintenance-and-deaccession.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Access, Governance, Maintenance, and Deaccession</span></a>
   </div>
 </li>
@@ -562,27 +561,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#define-an-analysis-run" id="toc-define-an-analysis-run" class="nav-link active" data-scroll-target="#define-an-analysis-run">Define an analysis run</a></li>
-  <li><a href="#proportional-run-records" id="toc-proportional-run-records" class="nav-link" data-scroll-target="#proportional-run-records">Proportional run records</a></li>
-  <li><a href="#execution-status" id="toc-execution-status" class="nav-link" data-scroll-target="#execution-status">Execution status</a></li>
-  <li><a href="#warnings-and-partial-completion" id="toc-warnings-and-partial-completion" class="nav-link" data-scroll-target="#warnings-and-partial-completion">Warnings and partial completion</a></li>
-  <li><a href="#overwrite-safety" id="toc-overwrite-safety" class="nav-link" data-scroll-target="#overwrite-safety">Overwrite safety</a></li>
-  <li><a href="#local-and-hpc-execution" id="toc-local-and-hpc-execution" class="nav-link" data-scroll-target="#local-and-hpc-execution">Local and HPC execution</a></li>
-  <li><a href="#stop-and-resolve" id="toc-stop-and-resolve" class="nav-link" data-scroll-target="#stop-and-resolve">Stop and resolve</a></li>
+  <li><a href="#maintenance-ownership" id="toc-maintenance-ownership" class="nav-link active" data-scroll-target="#maintenance-ownership">Maintenance ownership</a></li>
+  <li><a href="#migration-and-repository-closure" id="toc-migration-and-repository-closure" class="nav-link" data-scroll-target="#migration-and-repository-closure">Migration and repository closure</a></li>
+  <li><a href="#deaccession-and-supersession" id="toc-deaccession-and-supersession" class="nav-link" data-scroll-target="#deaccession-and-supersession">Deaccession and supersession</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/analyze/computational-execution.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/analyze/computational-execution.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/preserve/access-governance-maintenance-and-deaccession.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/preserve/access-governance-maintenance-and-deaccession.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/analyze/index.html">Analyze</a></li><li class="breadcrumb-item"><a href="../../practices/analyze/computational-execution.html">Computational Execution</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/preserve/index.html">Preserve</a></li><li class="breadcrumb-item"><a href="../../practices/preserve/access-governance-maintenance-and-deaccession.html">Access, Governance, Maintenance, and Deaccession</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Computational Execution</h1>
+<h1 class="title">Access, Governance, Maintenance, and Deaccession</h1>
 </div>
 
 <div>
   <div class="description">
-    Record analysis runs, inputs, settings, outputs, warnings, and failures proportionately.
+    Maintain authorized access and responsibility while recording migration, supersession, repository change, and deaccession.
   </div>
 </div>
 
@@ -599,45 +594,19 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="define-an-analysis-run" class="level2">
-<h2 class="anchored" data-anchor-id="define-an-analysis-run">Define an analysis run</h2>
-<p>An analysis run is one recorded execution of a script, notebook, model, simulation, or analytical workflow using identified data and settings. It may occur interactively, from a script, through Quarto or a notebook, on a workstation, through a scheduled task, on a high-performance computing (HPC) cluster, or as one task within a <strong>job array</strong>, a group of similar cluster tasks submitted together.</p>
-<p>Record as appropriate:</p>
-<ul>
-<li>project ID, analysis ID and version, run ID, and purpose;</li>
-<li>input dataset IDs and versions;</li>
-<li>code version, main script or notebook, command used, and settings record;</li>
-<li>software, computing environment, and execution location;</li>
-<li>start and completion time;</li>
-<li>responsible analyst or operator;</li>
-<li>outputs, logs, warnings, status, and any run replaced or retried.</li>
-</ul>
-<p>Here, <strong>code version</strong> means the Git commit, tag, or other recorded version of the analysis code. A <strong>settings record</strong> is the file or documented values controlling the analysis. The <strong>computing environment</strong> is the relevant software, package, system, or cluster information needed to understand or repeat the work. A <strong>run ID</strong> is a stable label for one execution.</p>
+<p>Preservation does not mean openness. Preserved content may be public, internal, controlled, restricted, confidential, embargoed, or governed by an agreement or Indigenous, Tribal, or community authority. Record classification, authority, permitted users/uses, request route, restrictions, review or expiry, and responsible contact. Public availability does not grant unrestricted reuse.</p>
+<p>Do not silently broaden access as time passes. Review agreement expiration, partner or community direction, privacy/security classification, repository terms, embargo, license, authorization, and custodian changes. FAIR-oriented practice does not require unrestricted access.</p>
+<section id="maintenance-ownership" class="level2">
+<h2 class="anchored" data-anchor-id="maintenance-ownership">Maintenance ownership</h2>
+<p>Identify preservation owner, backup owner, repository account owner, access-review owner, technical contact, funding/fee owner, and next review date or trigger. Avoid a personal account as the only control point. Review repository availability, identifier resolution, access, retrieval, checksums, format risk, dependencies, fees, service ownership, legal/agreement changes, and pending migrations proportionately.</p>
 </section>
-<section id="proportional-run-records" class="level2">
-<h2 class="anchored" data-anchor-id="proportional-run-records">Proportional run records</h2>
-<p>For a simple local analysis, a rendered Quarto document or notebook may be enough when it records the input dataset version, code version, settings, execution date, output, warnings, and limitations. A separate run-record file is not universal.</p>
-<p>Use a separate run record when several executions must be compared, settings differ, the work is expensive or consequential, HPC is used, failures and retries matter, responsibility may transfer, or reproducibility depends on external software. The <a href="../../templates/analysis-run-record-template.yml">analysis run record template</a> is a reusable starting point.</p>
+<section id="migration-and-repository-closure" class="level2">
+<h2 class="anchored" data-anchor-id="migration-and-repository-closure">Migration and repository closure</h2>
+<p>Record original and new package/artifact, reason, tool/process and version, responsible person, date, checks, information lost/changed, replacement identifier, event type/status, and whether the earlier version remains available. Use the preservation-plan migration-event record for format migration, package migration, repository transfer, metadata correction, access-condition change, fixity failure and recovery, or other events. Migration does not automatically supersede the earlier record. When a repository, project, service, or organization ends, identify successor ownership, export and verify transfer where authorized, update identifiers/contacts, preserve old-to-new relationships, notify affected users/partners, and retain closeout records.</p>
 </section>
-<section id="execution-status" class="level2">
-<h2 class="anchored" data-anchor-id="execution-status">Execution status</h2>
-<p>Use <strong>planned</strong>, <strong>running</strong>, <strong>completed</strong>, <strong>completed with documented limitation</strong>, <strong>failed</strong>, <strong>cancelled</strong>, or <strong>superseded</strong>. <strong>Completed</strong> means the recorded execution finished and produced its recorded outputs. It does not mean the analysis is valid or ready for validation.</p>
-</section>
-<section id="warnings-and-partial-completion" class="level2">
-<h2 class="anchored" data-anchor-id="warnings-and-partial-completion">Warnings and partial completion</h2>
-<p>Compare expected outputs with outputs actually produced. Record warnings, errors, incomplete subsets, failed array tasks, missing scenarios or replicates, cancellations, manual recovery, and retry relationships. A zero exit code or successfully rendered document does not by itself show that every expected result was produced.</p>
-</section>
-<section id="overwrite-safety" class="level2">
-<h2 class="anchored" data-anchor-id="overwrite-safety">Overwrite safety</h2>
-<p>Do not silently replace an earlier important result. Give revised runs new run IDs, record which run is current, retain failed or superseded records when they affected later decisions, save important outputs under identifiable locations, and do not rely on an unsaved interactive workspace.</p>
-</section>
-<section id="local-and-hpc-execution" class="level2">
-<h2 class="anchored" data-anchor-id="local-and-hpc-execution">Local and HPC execution</h2>
-<p>The same scientific information should be recoverable whether work ran locally or on a cluster. For HPC, use the existing <a href="../../templates/hpc-run-record-template.yml">HPC run record</a> for submission script, job and array IDs, resources, loaded software, inputs, outputs, logs, exit status, retries, and the relationship to local development. This is record-keeping guidance, not an HPC tutorial.</p>
-</section>
-<section id="stop-and-resolve" class="level2">
-<h2 class="anchored" data-anchor-id="stop-and-resolve">Stop and resolve</h2>
-<p>Pause readiness when the input version is unknown, code or settings cannot be identified, important output was manually edited, expected outputs are missing without explanation, failed tasks were silently excluded, warnings were discarded, local and cluster software differ materially without documentation, or a result cannot be tied to a specific execution.</p>
+<section id="deaccession-and-supersession" class="level2">
+<h2 class="anchored" data-anchor-id="deaccession-and-supersession">Deaccession and supersession</h2>
+<p>Deaccession means an authorized decision to remove a preserved object or package from active repository custody or access. Before deaccession, record prior deposit evidence, original location and identifier, package/version, deaccession authority, governing policy/agreement/process, legal-hold and retention reviews, partner/community review, reason/date, affected users/partners/communities, notification, retained metadata or tombstone, final disposition/replacement, and responsible owner. Record a durable decision; it does not by itself authorize physical destruction, and no deletion procedure belongs here. Superseded and deaccessioned records remain historically identifiable, and replacement packages do not automatically inherit verification or access decisions.</p>
 
 
 </section>
@@ -1049,14 +1018,11 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../practices/analyze/exploratory-and-planned-analysis.html" class="pagination-link" aria-label="Exploratory and Planned Analysis">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Exploratory and Planned Analysis</span>
+      <a href="../../practices/preserve/formats-software-environments-and-reuse.html" class="pagination-link" aria-label="Formats, Software, Environments, and Reuse">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Formats, Software, Environments, and Reuse</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../practices/analyze/randomness-scenarios-and-replicates.html" class="pagination-link" aria-label="Randomness, Scenarios, and Replicates">
-        <span class="nav-page-text">Randomness, Scenarios, and Replicates</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -1064,4 +1030,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/analyze/computational-execution.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/analyze/computational-execution.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/preserve/access-governance-maintenance-and-deaccession.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/preserve/access-governance-maintenance-and-deaccession.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>
