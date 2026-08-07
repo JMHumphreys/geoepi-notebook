@@ -146,6 +146,29 @@
 - [ ] Limitations, restrictions, licenses, and availability statements are current.
 - [ ] Appropriate review is recorded.
 
+## Communication planning
+
+- [ ] Audience, purpose, product, channel, owner, exact results, validation records, and restrictions are recorded.
+
+## Claims and presentation
+
+- [ ] Consequential claims trace to results and validation records within validated scope.
+- [ ] Uncertainty, limitations, numerical consistency, figures, tables, maps, and accessibility are reviewed proportionately.
+
+## Reporting and availability
+
+- [ ] Applicable reporting guidance, contributions, funding, conflicts, data availability, code/software availability, licenses, citations, and access restrictions are current.
+
+## Ready for release review
+
+- [ ] The authoritative communication-product record and exact product version are identified.
+- [ ] The exact readiness status, required reviews, release authority, limitation fields, decision-maker, and ISO 8601 date are recorded.
+
+## Release decision and event
+
+- [ ] The authoritative release record, exact decision status, exact release state, approved audience/purpose/channel, release date/location, persistent identifier where applicable, corrections, and supersession are recorded.
+- [ ] Release does not imply that preservation is complete.
+
 ## Handoff and closeout events
 
 - [ ] If responsibility changes: access, locations, known issues, unfinished work, and reproduction steps are recorded and accepted by the incoming owner.

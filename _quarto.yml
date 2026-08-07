@@ -117,6 +117,15 @@ website:
             - practices/collaborate/contributions-credit-and-authorship.qmd
             - practices/collaborate/external-partners-access-and-sharing.qmd
             - practices/collaborate/continuity-onboarding-and-handoff.qmd
+        - section: "Communicate"
+          contents:
+            - practices/communicate/index.qmd
+            - practices/communicate/audience-purpose-and-products.qmd
+            - practices/communicate/claims-evidence-uncertainty-and-limitations.qmd
+            - practices/communicate/figures-tables-maps-and-accessibility.qmd
+            - practices/communicate/manuscripts-reports-and-reporting-guidelines.qmd
+            - practices/communicate/data-code-software-and-availability.qmd
+            - practices/communicate/review-approval-release-and-corrections.qmd
 format:
   html:
     theme:

@@ -1,0 +1,34 @@
+---
+title: "Figures, Tables, Maps, and Accessibility"
+description: "Check visual products for scientific fidelity, usable context, and proportionate accessibility."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - communication
+  - visualization
+  - accessibility
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+A polished figure is not proof of scientific quality. Link each consequential figure, table, or map to its result and validation records, check that numbers agree with text and supplements, and identify the exact product version.
+
+## Figures and tables
+
+State the population, denominator, units, time period, data source, uncertainty, exclusions, and relevant limitation. Captions should explain what is shown and what is not shown. Tables should preserve meaningful precision and avoid implying more certainty than the analysis supports. Check labels, legends, rounding, ordering, color meaning, missing values, and source notes.
+
+## Maps
+
+Record geography, boundaries and boundary date where relevant, spatial unit, denominator, time period, resolution, classification method, missing or suppressed areas, uncertainty, and the intended use. Do not let a smooth surface, color scale, or detailed basemap imply site-level support that was not validated. Do not expose restricted locations merely because a map is useful.
+
+## Accessibility
+
+Provide alt text or an equivalent text description for meaningful non-text content, and provide table or text alternatives when a visual carries information that cannot be recovered from the caption. Use readable labels, adequate contrast, patterns or annotations where color alone is insufficient, and a logical reading order. Consider [WCAG 2.2](https://www.w3.org/TR/WCAG22/) when a web product or applicable requirement calls for it; do not claim conformance without testing. Formal conformance is not required for every internal document.
+
+Review accessibility in proportion to audience, consequence, product, and channel. Record unresolved accessibility issues and who must address them before release.

@@ -36,7 +36,7 @@ Collaboration is not consensus, validation, approval, an authorship policy, a le
 8. Coordinate required scientific, technical, operational, or governance review.
 9. Identify unresolved issues and required return to Analyze or Validate.
 10. Confirm continuity, backup responsibility, and handoff needs.
-11. Decide whether coordinated work is ready to enter future Communicate.
+11. Decide whether coordinated work is ready to enter [Communicate](../communicate/index.qmd).
 
 ```{mermaid}
 flowchart TD
@@ -95,3 +95,5 @@ The safe default is **not ready for communication**. The authoritative decision 
 - [ ] One exact readiness status is used.
 
 Passing this gate means that contributors have coordinated the work well enough to begin preparing communication products. It does not authorize submission, publication, public release, operational use, or unrestricted sharing.
+
+When the status is **ready for communication**, proceed to Communicate. When it is **ready for communication with documented limitation**, carry every substantive limitation into the communication-product record. When it is **not ready for communication**, do not proceed. Collaboration readiness is not release approval.

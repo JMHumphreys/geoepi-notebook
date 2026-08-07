@@ -84,6 +84,10 @@ This section is authoritative for the collaboration-level readiness decision.
 - Readiness status: `not ready for communication`
 - Decision-maker: `blank while not ready for communication`
 - Decision date: `blank while not ready for communication; ISO 8601 when populated`
+- Intended communication-product IDs or planned products: `REQUIRED`
+- Communication-product-record location: `REQUIRED`
+- Communication-preparation owner: `REQUIRED`
+- Transfer date into Communicate: `blank until transfer; ISO 8601 when populated`
 
 Use only these readiness statuses:
 

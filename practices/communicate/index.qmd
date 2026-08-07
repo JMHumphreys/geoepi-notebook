@@ -1,0 +1,69 @@
+---
+title: "Communicate"
+description: "Prepare, review, release, correct, and supersede consequential communication products without broadening the evidence."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - communication
+  - reproducibility
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+Communicate begins when a project or defined result package is **ready for communication** or **ready for communication with documented limitation**. It prepares a defined product for a defined audience; it does not make new scientific evidence.
+
+Communication may change form and level of detail, but it must not silently broaden, strengthen, or alter the evidence. A product represents selected results, claims, audience, purpose, version, limitations, and access conditions. Even an internal product may influence operations, policy, funding, partners, or later publications.
+
+## Communicate workflow
+
+1. Identify the project or result package approved to enter Communicate.
+2. Define the audience, purpose, intended action, product, and channel.
+3. Identify exact result and validation records.
+4. Draft claims within validated scope and record consequential claim-to-evidence links.
+5. Include uncertainty and limitations where they affect interpretation or action.
+6. Prepare figures, tables, maps, captions, and accessible alternatives.
+7. Apply relevant reporting guidance proportionately.
+8. Prepare accurate data, code, software, contribution, funding, restriction, and availability statements.
+9. Review the exact product version and record responses.
+10. Decide whether it is ready for release review.
+11. Record the authorized release decision.
+12. Release, withhold, withdraw, or supersede the exact version; retain the history for future Preserve.
+
+```{mermaid}
+flowchart TD
+  ready[Ready for communication] --> product[Audience, purpose, and product]
+  product --> claims[Claims linked to validated evidence]
+  claims --> presentation[Figures, text, availability, accessibility]
+  presentation --> review[Exact product version under review]
+  review --> decision[Release decision]
+  decision --> outcome[Released, withheld, withdrawn, or superseded]
+```
+
+## Starting points
+
+| Need | Guidance |
+|---|---|
+| Choose an audience, purpose, or product | [Audience, purpose, and products](audience-purpose-and-products.qmd) |
+| Write claims and communicate uncertainty | [Claims, evidence, uncertainty, and limitations](claims-evidence-uncertainty-and-limitations.qmd) |
+| Prepare visual and accessible products | [Figures, tables, maps, and accessibility](figures-tables-maps-and-accessibility.qmd) |
+| Select reporting guidance | [Manuscripts, reports, and reporting guidelines](manuscripts-reports-and-reporting-guidelines.qmd) |
+| Prepare availability statements | [Data, code, software, and availability](data-code-software-and-availability.qmd) |
+| Review, release, correct, or supersede a product | [Review, approval, release, and corrections](review-approval-release-and-corrections.qmd) |
+
+## Product-preparation status
+
+Use exactly: **planned**, **in preparation**, **under review**, **revision required**, **ready for release review**, or **superseded**. The safe default is **planned**. These statuses describe preparation, not release approval.
+
+## Ready-for-release-review status
+
+Use exactly: **not ready for release review**, **ready for release review**, or **ready for release review with documented limitation**. The safe default is **not ready for release review**. The product record is authoritative. A ready status means the exact product is sufficiently complete for the applicable authority to consider; it does not approve or release the product. A limitation status requires a nonempty limitation, why it matters, affected scope, downstream caution, follow-up, and responsible follow-up.
+
+## Boundary and return paths
+
+Communicate does not replace Analyze, Validate, Collaborate, legal review, privacy authorization, institutional clearance, or preservation. If communication reveals changed data, methods, parameters, estimates, or outputs, return to Analyze. If it reveals changed scientific support, interpretation, performance evidence, or limitations, return to Validate. If it changes contributors, credit, partner obligations, or decision authority, return to Collaborate. Do not silently correct scientific content only in the product.

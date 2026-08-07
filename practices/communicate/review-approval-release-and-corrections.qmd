@@ -1,0 +1,35 @@
+---
+title: "Review, Approval, Release, and Corrections"
+description: "Distinguish product review, release authority, release events, corrections, withdrawals, and supersession."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - communication
+  - reproducibility
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+Review examines a defined product version for a defined purpose. Approval is a decision by the applicable authority. Release is the event that makes one exact product version available to an identified audience through an identified channel. Peer review, collaboration readiness, release approval, and release are distinct.
+
+## Ready for release review
+
+The communication-product record is authoritative. Use exactly **not ready for release review**, **ready for release review**, or **ready for release review with documented limitation**; default to **not ready for release review**. A ready status requires the exact product and package, audience, purpose, channel, result and validation IDs, collaboration record, claim traceability, uncertainty, limitations, availability, restrictions, reviews, and release authority. A limitation status also requires a substantive limitation, why it matters, affected scope, downstream caution, follow-up, and responsible follow-up. Decision-maker and ISO 8601 date remain blank while not ready.
+
+## Release decision and event
+
+Default the release decision to **not yet reviewed for release**. Use exactly **approved for release**, **approved with documented condition**, **not approved**, **deferred**, **withdrawn before release**, or **superseded before release**. Record authority, decision date, approved audience, purpose, channel, conditions, warnings, follow-up, and reconsideration date. An approved condition must identify the condition and responsible follow-up; it does not mean unrestricted release.
+
+Default the release state to **not released**. Use exactly **not released**, **released**, **withheld**, **withdrawn**, or **superseded**. Record exact version, date, location, persistent identifier where applicable, embargo, license, availability, notification, and distribution record. Release approval applies to one exact product version, audience, purpose, and channel.
+
+## Corrections, withdrawals, and supersession
+
+Keep the earlier product identifiable. Record whether a correction is formatting-only or affects interpretation, the affected claims, authority, date, reason, notification, and replacement product or release record. A scientific correction returns to Analyze or Validate; a contributor, partner, or authority change returns to Collaborate; a wording or formatting correction can remain in Communicate. Do not silently overwrite the scientific history. For significant scholarly updates, consult applicable publisher or registry practice such as [Crossref versioning and corrections guidance](https://www.crossref.org/documentation/principles-practices/best-practices/versioning/).
+
+Withdrawal records why access stopped, who decided, what audience was notified, and what remains identifiable. A superseded product points to its replacement product ID, version, reason, date, and responsible owner. Long-term preservation and retention decisions remain future work.

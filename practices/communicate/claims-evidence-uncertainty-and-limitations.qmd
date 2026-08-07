@@ -1,0 +1,33 @@
+---
+title: "Claims, Evidence, Uncertainty, and Limitations"
+description: "Keep consequential claims within validated scope and make supporting evidence, uncertainty, and limitations visible."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - communication
+  - reproducibility
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+For consequential claims, identify the claim, proposed wording, claim type, supporting result IDs, validation record, scope, uncertainty, limitation, audience, and review status. A claim table is useful for conclusions, decisions, titles, abstracts, figures, maps, and public messages; it is not required for every sentence.
+
+| Claim ID | Proposed wording | Claim type | Result IDs | Validation record | Scope | Uncertainty | Limitation | Review status |
+|---|---|---|---|---|---|---|---|---|
+| `CLAIM-001` | `Replace with scoped wording` | `description / comparison / estimate / prediction / other` | `RESULT-001` | `VALIDATION-001` | `population, geography, period, scale` | `describe or not_applicable` | `describe or none` | `planned` |
+
+Preserve claim type. An association is not automatically causal; a scenario is not automatically a forecast; a modeled quantity is not an observed fact; retrospective performance is not prospective performance; regional support is not site-level support; ranking is not calibrated probability; statistical significance is not practical importance; and support for one use does not imply support for broader uses.
+
+## Scope and uncertainty
+
+Retain the population or biological system, geography, time period, unit, spatial or temporal resolution, outcome definition, forecast horizon, data conditions, and scenario conditions that qualify the claim. Communicate uncertainty in a form appropriate to the audience: intervals, probability or scenario ranges, sensitivity results, qualitative cautions, uncertainty maps, or data-quality statements. Explain whether uncertainty changes direction, ranking, classification, threshold crossing, geographic extent, forecast warning, recommendation, or confidence in action. Do not include an interval without explaining what it represents.
+
+## Limitations and return paths
+
+Place limitations near the affected claim, not only in a final limitations section. State the consequence and downstream restriction. If a limitation changes data, methods, estimates, outputs, scientific support, interpretation, or validation, return to Analyze or Validate as appropriate. If it changes audience, partner conditions, contributors, or authority, return to Collaborate. Communication must not silently strengthen a result to make a product more persuasive.

@@ -1,0 +1,26 @@
+---
+title: "Data, Code, Software, and Availability"
+description: "Describe actual access, restrictions, versions, and citations for the materials behind a communication product."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - communication
+  - data-sharing
+  - reproducibility
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+Availability statements must describe actual access. State whether data, code, software, parameters, environments, and supplementary products are open, controlled, restricted, embargoed, unavailable, or available on request, and identify the responsible contact or access route where appropriate. Public availability is not permission to reuse; restricted data should not be made public merely for reproducibility.
+
+Record exact versions, repositories or locations, persistent identifiers where available, licenses without interpreting them, dependencies, and any missing inputs that limit reproduction. Cite data as identifiable products when appropriate using [DataCite data-citation guidance](https://support.datacite.org/docs/data-citation), and cite software versions using the [FORCE11 Software Citation Principles](https://force11.org/info/software-citation-principles-published-2016/). A DOI is not required for every output.
+
+Include partner, Indigenous, Tribal, community, confidentiality, privacy, security, and contractual conditions. If access is controlled, say how an eligible reader can request it; do not promise unrestricted access. If unavailable inputs prevent exact reproduction, state what can and cannot be reproduced.
+
+Availability statements are part of Communicate, not authorization for access or a substitute for legal, privacy, partner, or governance decisions. Changes to access authority return to Collaborate.
