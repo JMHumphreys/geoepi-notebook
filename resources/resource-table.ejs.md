@@ -21,12 +21,12 @@
   const url = typeof item.url === "string" && /^https?:\/\//i.test(item.url) ? item.url : null;
 %>
 <tr <%= metadataAttrs(item) %>>
-  <td class="listing-title"><% if (url) { %><a href="<%- url %>"><%- title %></a><% } else { %><span><%- title %></span><br><span class="text-muted">Source link unavailable</span><% } %></td>
-  <td class="listing-description"><%- description %></td>
-  <td class="listing-author_or_organization"><%- author %></td>
-  <td class="listing-resource_type"><%- type %></td>
-  <td class="listing-topics"><%- topics %></td>
-  <td class="listing-review_status"><%- reviewStatus %></td>
+  <td class="listing-title"><% if (url) { %><a href="<%= url %>"><%= title %></a><% } else { %><span><%= title %></span><br><span class="text-muted">Source link unavailable</span><% } %></td>
+  <td class="listing-description"><%= description %></td>
+  <td class="listing-author_or_organization"><%= author %></td>
+  <td class="listing-resource_type"><%= type %></td>
+  <td class="listing-topics"><%= topics %></td>
+  <td class="listing-review_status"><%= reviewStatus %></td>
 </tr>
 <% } %>
 </tbody>

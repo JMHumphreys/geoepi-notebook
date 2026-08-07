@@ -94,10 +94,18 @@ def validate_resources():
 
     page_text = page_path.read_text(encoding="utf-8")
     template_match = re.search(r"template:\s*([^\s]+)", page_text)
+    template_text = ""
     if template_match:
         template_path = page_path.parent / template_match.group(1)
         if template_path.exists():
-            page_text += template_path.read_text(encoding="utf-8")
+            template_text = template_path.read_text(encoding="utf-8")
+            page_text += template_text
+    catalog_variables = ("url", "title", "description", "author", "type", "topics", "reviewStatus")
+    for variable in catalog_variables:
+        if re.search(rf"<%-\s*{variable}\b", template_text):
+            errors.append(f"{page_path}: catalog variable {variable} uses raw EJS output")
+        if not re.search(rf"<%=\s*{variable}\b", template_text):
+            errors.append(f"{page_path}: catalog variable {variable} is not emitted with escaped EJS output")
     for field in ("author_or_organization", "topics", "url"):
         if field not in page_text:
             errors.append(f"{page_path}: resource listing does not reference catalog field {field}")
