@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Record decisions about anticipated data, access, storage, identifiers, time, space, computing, and release.">
+<meta name="description" content="Distinguish product review, release authority, release events, corrections, withdrawals, and supersession.">
 
-<title>Plan Data Management – GeoEpi Lab Book</title>
+<title>Review, Approval, Release, and Corrections – GeoEpi Lab Book</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../practices/acquire/index.html" rel="next">
-<link href="../../practices/plan/project-scope.html" rel="prev">
+<link href="../../practices/communicate/data-code-software-and-availability.html" rel="prev">
 <link href="../../assets/images/favicon.ico" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -176,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/plan/index.html">Plan</a></li><li class="breadcrumb-item"><a href="../../practices/plan/data-management-planning.html">Plan Data Management</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/communicate/index.html">Communicate</a></li><li class="breadcrumb-item"><a href="../../practices/communicate/review-approval-release-and-corrections.html">Review, Approval, Release, and Corrections</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -217,7 +216,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../practices/plan/data-management-planning.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../practices/plan/data-management-planning.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Plan Data Management</span></a>
   </div>
 </li>
@@ -493,7 +492,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../practices/communicate/review-approval-release-and-corrections.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/communicate/review-approval-release-and-corrections.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Review, Approval, Release, and Corrections</span></a>
   </div>
 </li>
@@ -509,30 +508,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#anticipated-data-inventory" id="toc-anticipated-data-inventory" class="nav-link active" data-scroll-target="#anticipated-data-inventory">Anticipated data inventory</a></li>
-  <li><a href="#access-and-governance" id="toc-access-and-governance" class="nav-link" data-scroll-target="#access-and-governance">Access and governance</a></li>
-  <li><a href="#storage-and-authoritative-copies" id="toc-storage-and-authoritative-copies" class="nav-link" data-scroll-target="#storage-and-authoritative-copies">Storage and authoritative copies</a></li>
-  <li><a href="#backup-and-recovery-planning" id="toc-backup-and-recovery-planning" class="nav-link" data-scroll-target="#backup-and-recovery-planning">Backup and recovery planning</a></li>
-  <li><a href="#identifiers-and-naming" id="toc-identifiers-and-naming" class="nav-link" data-scroll-target="#identifiers-and-naming">Identifiers and naming</a></li>
-  <li><a href="#temporal-conventions" id="toc-temporal-conventions" class="nav-link" data-scroll-target="#temporal-conventions">Temporal conventions</a></li>
-  <li><a href="#spatial-conventions" id="toc-spatial-conventions" class="nav-link" data-scroll-target="#spatial-conventions">Spatial conventions</a></li>
-  <li><a href="#computational-planning" id="toc-computational-planning" class="nav-link" data-scroll-target="#computational-planning">Computational planning</a></li>
-  <li><a href="#release-and-preservation-planning" id="toc-release-and-preservation-planning" class="nav-link" data-scroll-target="#release-and-preservation-planning">Release and preservation planning</a></li>
-  <li><a href="#planning-gate" id="toc-planning-gate" class="nav-link" data-scroll-target="#planning-gate">Planning gate</a></li>
+  <li><a href="#ready-for-release-review" id="toc-ready-for-release-review" class="nav-link active" data-scroll-target="#ready-for-release-review">Ready for release review</a></li>
+  <li><a href="#release-decision-and-event" id="toc-release-decision-and-event" class="nav-link" data-scroll-target="#release-decision-and-event">Release decision and event</a></li>
+  <li><a href="#corrections-withdrawals-and-supersession" id="toc-corrections-withdrawals-and-supersession" class="nav-link" data-scroll-target="#corrections-withdrawals-and-supersession">Corrections, withdrawals, and supersession</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/plan/data-management-planning.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/plan/data-management-planning.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/communicate/review-approval-release-and-corrections.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/communicate/review-approval-release-and-corrections.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/plan/index.html">Plan</a></li><li class="breadcrumb-item"><a href="../../practices/plan/data-management-planning.html">Plan Data Management</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/communicate/index.html">Communicate</a></li><li class="breadcrumb-item"><a href="../../practices/communicate/review-approval-release-and-corrections.html">Review, Approval, Release, and Corrections</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Plan Data Management</h1>
+<h1 class="title">Review, Approval, Release, and Corrections</h1>
 </div>
 
 <div>
   <div class="description">
-    Record decisions about anticipated data, access, storage, identifiers, time, space, computing, and release.
+    Distinguish product review, release authority, release events, corrections, withdrawals, and supersession.
   </div>
 </div>
 
@@ -549,69 +541,23 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Data-management planning is a set of decisions that must be recorded, not necessarily a separate formal document. Reconcile anticipated information with the actual <a href="../../templates/data-source-inventory-template.csv">data-source inventory</a> during intake.</p>
-<section id="anticipated-data-inventory" class="level2">
-<h2 class="anchored" data-anchor-id="anticipated-data-inventory">Anticipated data inventory</h2>
-<p>Before acquisition, record the source or provider, expected format, approximate volume, delivery frequency, temporal and spatial support, identifiers, update behavior, access conditions, likely sensitivity, and expected authoritative location.</p>
+<p>Review examines a defined product version for a defined purpose. Approval is a decision by the applicable authority. Release is the event that makes one exact product version available to an identified audience through an identified channel. Peer review, collaboration readiness, release approval, and release are distinct.</p>
+<section id="ready-for-release-review" class="level2">
+<h2 class="anchored" data-anchor-id="ready-for-release-review">Ready for release review</h2>
+<p>The communication-product record is authoritative. Use exactly <strong>not ready for release review</strong>, <strong>ready for release review</strong>, or <strong>ready for release review with documented limitation</strong>; default to <strong>not ready for release review</strong>. A ready status requires the exact product and package, audience, purpose, channel, result and validation IDs, collaboration record, claim traceability, uncertainty, limitations, availability, restrictions, reviews, and release authority. A limitation status also requires a substantive limitation, why it matters, affected scope, downstream caution, follow-up, and responsible follow-up. Decision-maker and ISO 8601 date remain blank while not ready.</p>
 </section>
-<section id="access-and-governance" class="level2">
-<h2 class="anchored" data-anchor-id="access-and-governance">Access and governance</h2>
-<p>Identify the data owner, access contact, authorized users, data-use agreement, redistribution and publication restrictions, expiration or destruction requirements, sensitive locations, PII or linked identifiers, and Indigenous or community governance considerations where applicable.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Stop and resolve
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Do not invent institutional classifications or assume that a storage platform is approved for every data class. Link unresolved questions about classification, storage, cloud services, backups, retention, PII, sensitive spatial data, and public repositories to <a href="../../standards/open-policy-decisions.html">Open Policy Decisions</a>.</p>
-</div>
-</div>
+<section id="release-decision-and-event" class="level2">
+<h2 class="anchored" data-anchor-id="release-decision-and-event">Release decision and event</h2>
+<p>Default the release decision to <strong>not yet reviewed for specified release</strong>. Use exactly <strong>not yet reviewed for specified release</strong>, <strong>approved for specified release</strong>, <strong>approved for specified release with documented condition</strong>, <strong>not approved for specified release</strong>, <strong>deferred for specified release</strong>, or <strong>superseded before release decision</strong>. The proposed package must be identified before any substantive decision; approval applies only to one product ID and version, package, audience, channel, purpose, and recorded restrictions and availability conditions. The exact approved package must match the proposed package unless the authority explicitly requires a revised package.</p>
+<p>An approved condition requires the condition, why it matters, affected audience, purpose, channel, claim, or use, required warning or limitation, follow-up, responsible follow-up, and expiration or reconsideration date where relevant. Empty or <code>none</code> condition fields are not allowed. Not approved requires rationale, blocking concern, authority, decision date, required return stage or terminal disposition, and corrective owner; it is not withdrawal or withholding and does not imply that the underlying result is invalid. Deferred requires reason, unresolved dependency, responsible person, and reconsideration condition or date; it is not approval or nonapproval and does not permit release. Superseded before decision requires replacement product ID/version, reason, date, and responsible owner; the replacement does not inherit readiness, review, or approval.</p>
+<p>Default the release state to <strong>not released</strong>. Use exactly <strong>not released</strong>, <strong>released</strong>, <strong>withheld</strong>, <strong>withdrawn</strong>, or <strong>superseded</strong>. Not released means no distribution or publication event occurred and may coexist with any release-decision status. Released requires an approved decision, exact version, release date, location or distribution record, audience, channel, purpose, applicable condition or warning, and persistent identifier where one exists. Withheld is an affirmative decision not to distribute a prepared product and requires authority, reason, date, affected audience or channel, reconsideration or terminal disposition, and notification where applicable; it is not a synonym for not released. Withholding may follow approval only when the authority deliberately stops distribution and records why. Withdrawn requires a previous release, original release record, authority, reason, date, affected claims or uses, notification, replacement or next action, and whether underlying results remain supported. Superseded requires replacement product ID/version, replacement release-record ID where applicable, reason, date, and responsible owner.</p>
+<p>Released cannot accompany a nonapproved decision. Withdrawn requires earlier release evidence. Superseded requires a replacement. Not released must not contain a release date or released location. An embargoed product is not released to the embargoed audience until the release event occurs. Approval alone does not change release state to released.</p>
 </section>
-<section id="storage-and-authoritative-copies" class="level2">
-<h2 class="anchored" data-anchor-id="storage-and-authoritative-copies">Storage and authoritative copies</h2>
-<p>Distinguish the delivery location, preserved source copy, active working storage, derived-data storage, repository code and documentation, temporary computation, output storage, and archive or release location. GitHub is not the default location for large, restricted, or non-redistributable source data.</p>
-</section>
-<section id="backup-and-recovery-planning" class="level2">
-<h2 class="anchored" data-anchor-id="backup-and-recovery-planning">Backup and recovery planning</h2>
-<p>Record the authoritative copy, backup responsibility, expected recovery path, consequences of loss, whether restoration has been tested, and whether the data can be reacquired. Do not invent a backup frequency; use the applicable institutional or agreement-based requirement.</p>
-</section>
-<section id="identifiers-and-naming" class="level2">
-<h2 class="anchored" data-anchor-id="identifiers-and-naming">Identifiers and naming</h2>
-<p>Plan stable identifiers for the project, source dataset, source snapshot or release, derived dataset, model scenario, run, and output. Prefer identifiers that remain stable when filenames change. Do not prescribe one universal naming convention.</p>
-</section>
-<section id="temporal-conventions" class="level2">
-<h2 class="anchored" data-anchor-id="temporal-conventions">Temporal conventions</h2>
-<p>Plan for event date, report date, extraction date, acquisition date, processing date, time zone, daylight-saving behavior, epidemiological week convention, and revision or late-reporting behavior.</p>
-</section>
-<section id="spatial-conventions" class="level2">
-<h2 class="anchored" data-anchor-id="spatial-conventions">Spatial conventions</h2>
-<p>Plan for CRS and datum, units, geographic extent, spatial support, resolution, raster alignment, boundary source/version, and sensitive-coordinate handling.</p>
-</section>
-<section id="computational-planning" class="level2">
-<h2 class="anchored" data-anchor-id="computational-planning">Computational planning</h2>
-<p>Anticipate the software stack, packages, GIS software, databases, command-line tools, containers, HPC, storage volume, memory, runtime, parallel execution, external services, and credentials. Dependency locking and containers are proportional practices, not universal requirements. Never place credentials in Git, README files, templates, or logs.</p>
-</section>
-<section id="release-and-preservation-planning" class="level2">
-<h2 class="anchored" data-anchor-id="release-and-preservation-planning">Release and preservation planning</h2>
-<p>At initiation, identify likely publication repository, code release, data release or access statement, persistent identifier, archive, retention owner, and closeout trigger. Not all data must be made public; access restrictions and agreements control.</p>
-</section>
-<section id="planning-gate" class="level2">
-<h2 class="anchored" data-anchor-id="planning-gate">Planning gate</h2>
-<ul class="task-list">
-<li><label><input type="checkbox">Purpose and scope are recorded.</label></li>
-<li><label><input type="checkbox">Responsible roles and decision authority are known.</label></li>
-<li><label><input type="checkbox">Anticipated sources and restrictions are identified.</label></li>
-<li><label><input type="checkbox">Authoritative locations and recovery responsibilities are planned.</label></li>
-<li><label><input type="checkbox">Computing and external dependencies are plausible.</label></li>
-<li><label><input type="checkbox">Expected outputs and acceptance criteria are stated.</label></li>
-<li><label><input type="checkbox">Unresolved policy questions are visible.</label></li>
-<li><label><input type="checkbox">A proportional README or charter exists.</label></li>
-</ul>
-<p>Passing this gate means that data-management conditions are planned well enough to begin authorized acquisition. It does not accept any received dataset.</p>
+<section id="corrections-withdrawals-and-supersession" class="level2">
+<h2 class="anchored" data-anchor-id="corrections-withdrawals-and-supersession">Corrections, withdrawals, and supersession</h2>
+<p>Keep the earlier product identifiable. Use exactly one correction category: <strong>typographical or formatting; no change to meaning</strong>, <strong>factual correction; no change to scientific conclusion</strong>, <strong>corrected figure or table</strong>, <strong>corrected availability, citation, or attribution statement</strong>, <strong>corrected data release</strong>, <strong>corrected code or software release</strong>, <strong>scientific correction affecting interpretation</strong>, <strong>withdrawal</strong>, <strong>publisher- or authority-defined retraction</strong>, or <strong>other</strong>. A typographical correction may remain in Communicate. A corrected figure or table remains in Communicate only when underlying scientific results do not change. A changed result returns to Analyze; changed scientific support or interpretation returns to Validate; contributor or attribution changes may require Collaborate. Use <code>retraction</code> only when the applicable publisher or authority formally uses it.</p>
+<p>For consequential corrections, retain the original product and release record, type, description, reason, affected claims, whether conclusions changed, authority, date, notification, corrected or replacement version, and return-to-lifecycle-stage decision. Do not silently overwrite the scientific history. For significant scholarly updates, consult applicable publisher or registry practice such as <a href="https://www.crossref.org/documentation/principles-practices/best-practices/versioning/">Crossref versioning and corrections guidance</a>.</p>
+<p>Withdrawal records why access stopped, who decided, what audience was notified, and what remains identifiable. A superseded product and superseded release point to their replacements, reason, date, and responsible owner; replacement records do not inherit claim acceptance, readiness, approval, accessibility review, availability statements, or release state automatically. Long-term preservation and retention decisions remain future work.</p>
 
 
 </section>
@@ -1023,14 +969,11 @@ Stop and resolve
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../practices/plan/project-scope.html" class="pagination-link" aria-label="Define Project Scope and Responsibilities">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Define Project Scope and Responsibilities</span>
+      <a href="../../practices/communicate/data-code-software-and-availability.html" class="pagination-link" aria-label="Data, Code, Software, and Availability">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Data, Code, Software, and Availability</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../practices/acquire/index.html" class="pagination-link" aria-label="Acquire Data">
-        <span class="nav-page-text">Acquire Data</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -1038,4 +981,4 @@ Stop and resolve
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/plan/data-management-planning.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/plan/data-management-planning.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/communicate/review-approval-release-and-corrections.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/communicate/review-approval-release-and-corrections.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>

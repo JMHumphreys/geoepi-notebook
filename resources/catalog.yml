@@ -401,3 +401,107 @@
   local_research_note: null
   review_status: metadata-needs-verification
   description: "Community standards and practices for repeatable ecological forecasting."
+- id: equator-reporting-guidelines
+  title: "EQUATOR Network Library for health research reporting"
+  url: "https://www.equator-network.org/library/"
+  author_or_organization: "EQUATOR Network"
+  resource_type: reporting-guideline-library
+  authority_type: research-community
+  topics: [reporting, health-research, transparency]
+  license: "Verify current terms"
+  access_date: 2026-08-06
+  relevant_sections: [reporting-guidelines, study-design]
+  local_research_note: "Starting point for selecting relevant guidance; not a universal requirement."
+  review_status: verified
+  description: "Searchable library of health-research reporting guidelines and related guidance."
+- id: cdc-clear-communication-index
+  title: "CDC Clear Communication Index"
+  url: "https://www.cdc.gov/ccindex/ccindex.html"
+  author_or_organization: "Centers for Disease Control and Prevention"
+  resource_type: communication-tool
+  authority_type: government
+  topics: [communication, plain-language, public-health]
+  license: "Verify current terms"
+  access_date: 2026-08-06
+  relevant_sections: [public-communication, audience-understanding]
+  local_research_note: "Optional public-facing communication aid; not a release policy."
+  review_status: verified
+  description: "Research-based tool for developing and assessing public communication materials."
+- id: wcag-22
+  title: "Web Content Accessibility Guidelines (WCAG) 2.2"
+  url: "https://www.w3.org/TR/WCAG22/"
+  author_or_organization: "World Wide Web Consortium"
+  resource_type: accessibility-standard
+  authority_type: standards-organization
+  topics: [accessibility, web, communication]
+  license: "W3C document terms; verify current terms"
+  access_date: 2026-08-06
+  relevant_sections: [text-alternatives, accessibility-testing]
+  local_research_note: "Consider proportionately; do not claim conformance without testing."
+  review_status: verified
+  description: "W3C Recommendation for making web content more accessible."
+- id: datacite-data-citation
+  title: "Data Citation"
+  url: "https://support.datacite.org/docs/data-citation"
+  author_or_organization: "DataCite"
+  resource_type: data-citation-guidance
+  authority_type: research-infrastructure
+  topics: [data-citation, reproducibility, credit]
+  license: "Verify current terms"
+  access_date: 2026-08-06
+  relevant_sections: [data-citation, persistent-identifiers]
+  local_research_note: "Use to identify data products; access restrictions still apply."
+  review_status: verified
+  description: "Guidance on citing data as identifiable research outputs."
+- id: force11-software-citation
+  title: "FORCE11 Software Citation Principles"
+  url: "https://force11.org/info/software-citation-principles-published-2016/"
+  author_or_organization: "FORCE11 Software Citation Working Group"
+  resource_type: citation-principles
+  authority_type: research-community
+  topics: [software-citation, reproducibility, credit]
+  license: "Verify current terms"
+  access_date: 2026-08-06
+  relevant_sections: [software-version, software-credit]
+  local_research_note: "Use to identify the software version used; not a universal citation policy."
+  review_status: verified
+  description: "Principles for making research software identifiable and citable."
+- id: crossref-versioning-corrections
+  title: "Version control, corrections, and retractions"
+  url: "https://www.crossref.org/documentation/principles-practices/best-practices/versioning/"
+  author_or_organization: "Crossref"
+  resource_type: publishing-guidance
+  authority_type: research-infrastructure
+  topics: [versioning, corrections, retractions]
+  license: "Verify current terms"
+  access_date: 2026-08-06
+  relevant_sections: [version-control, updates, corrections]
+  local_research_note: "Publishing-oriented reference for preserving linked update history."
+  review_status: verified
+  description: "Guidance for identifiable versions and significant publication updates."
+- id: tripod-ai
+  title: "TRIPOD+AI"
+  url: "https://www.tripod-statement.org/"
+  author_or_organization: "TRIPOD Statement Group"
+  resource_type: reporting-guideline
+  authority_type: research-community
+  topics: [prediction-models, reporting, artificial-intelligence]
+  license: "Verify current terms"
+  access_date: 2026-08-06
+  relevant_sections: [prediction-reporting, model-description]
+  local_research_note: "Consider when prediction-model reporting warrants it; not universal."
+  review_status: verified
+  description: "Reporting guidance for prediction-model studies, including AI extensions."
+- id: stress-simulation-reporting
+  title: "STRESS guidelines for empirical simulation studies"
+  url: "https://bura.brunel.ac.uk/handle/2438/17183"
+  author_or_organization: "STRESS guideline authors"
+  resource_type: reporting-guideline
+  authority_type: academic-research
+  topics: [simulation, reporting, reproducibility]
+  license: "Verify current terms"
+  access_date: 2026-08-06
+  relevant_sections: [objectives, model-logic, experimentation, code-access]
+  local_research_note: "Consider for stochastic or empirical simulation publications; not universal."
+  review_status: verified
+  description: "Structured reporting guidance for empirical simulation studies."

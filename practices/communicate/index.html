@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Record decisions about anticipated data, access, storage, identifiers, time, space, computing, and release.">
+<meta name="description" content="Prepare, review, release, correct, and supersede consequential communication products without broadening the evidence.">
 
-<title>Plan Data Management – GeoEpi Lab Book</title>
+<title>Communicate – GeoEpi Lab Book</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../practices/acquire/index.html" rel="next">
-<link href="../../practices/plan/project-scope.html" rel="prev">
+<link href="../../practices/communicate/audience-purpose-and-products.html" rel="next">
+<link href="../../practices/collaborate/continuity-onboarding-and-handoff.html" rel="prev">
 <link href="../../assets/images/favicon.ico" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -71,6 +71,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -176,7 +179,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/plan/index.html">Plan</a></li><li class="breadcrumb-item"><a href="../../practices/plan/data-management-planning.html">Plan Data Management</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/communicate/index.html">Communicate</a></li><li class="breadcrumb-item"><a href="../../practices/communicate/index.html">Communicate</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -217,7 +220,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../practices/plan/data-management-planning.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../practices/plan/data-management-planning.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Plan Data Management</span></a>
   </div>
 </li>
@@ -457,7 +460,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../practices/communicate/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/communicate/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Communicate</span></a>
   </div>
 </li>
@@ -509,30 +512,25 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#anticipated-data-inventory" id="toc-anticipated-data-inventory" class="nav-link active" data-scroll-target="#anticipated-data-inventory">Anticipated data inventory</a></li>
-  <li><a href="#access-and-governance" id="toc-access-and-governance" class="nav-link" data-scroll-target="#access-and-governance">Access and governance</a></li>
-  <li><a href="#storage-and-authoritative-copies" id="toc-storage-and-authoritative-copies" class="nav-link" data-scroll-target="#storage-and-authoritative-copies">Storage and authoritative copies</a></li>
-  <li><a href="#backup-and-recovery-planning" id="toc-backup-and-recovery-planning" class="nav-link" data-scroll-target="#backup-and-recovery-planning">Backup and recovery planning</a></li>
-  <li><a href="#identifiers-and-naming" id="toc-identifiers-and-naming" class="nav-link" data-scroll-target="#identifiers-and-naming">Identifiers and naming</a></li>
-  <li><a href="#temporal-conventions" id="toc-temporal-conventions" class="nav-link" data-scroll-target="#temporal-conventions">Temporal conventions</a></li>
-  <li><a href="#spatial-conventions" id="toc-spatial-conventions" class="nav-link" data-scroll-target="#spatial-conventions">Spatial conventions</a></li>
-  <li><a href="#computational-planning" id="toc-computational-planning" class="nav-link" data-scroll-target="#computational-planning">Computational planning</a></li>
-  <li><a href="#release-and-preservation-planning" id="toc-release-and-preservation-planning" class="nav-link" data-scroll-target="#release-and-preservation-planning">Release and preservation planning</a></li>
-  <li><a href="#planning-gate" id="toc-planning-gate" class="nav-link" data-scroll-target="#planning-gate">Planning gate</a></li>
+  <li><a href="#communicate-workflow" id="toc-communicate-workflow" class="nav-link active" data-scroll-target="#communicate-workflow">Communicate workflow</a></li>
+  <li><a href="#starting-points" id="toc-starting-points" class="nav-link" data-scroll-target="#starting-points">Starting points</a></li>
+  <li><a href="#product-preparation-status" id="toc-product-preparation-status" class="nav-link" data-scroll-target="#product-preparation-status">Product-preparation status</a></li>
+  <li><a href="#ready-for-release-review-status" id="toc-ready-for-release-review-status" class="nav-link" data-scroll-target="#ready-for-release-review-status">Ready-for-release-review status</a></li>
+  <li><a href="#boundary-and-return-paths" id="toc-boundary-and-return-paths" class="nav-link" data-scroll-target="#boundary-and-return-paths">Boundary and return paths</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/plan/data-management-planning.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/plan/data-management-planning.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/communicate/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/communicate/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/plan/index.html">Plan</a></li><li class="breadcrumb-item"><a href="../../practices/plan/data-management-planning.html">Plan Data Management</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/communicate/index.html">Communicate</a></li><li class="breadcrumb-item"><a href="../../practices/communicate/index.html">Communicate</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Plan Data Management</h1>
+<h1 class="title">Communicate</h1>
 </div>
 
 <div>
   <div class="description">
-    Record decisions about anticipated data, access, storage, identifiers, time, space, computing, and release.
+    Prepare, review, release, correct, and supersede consequential communication products without broadening the evidence.
   </div>
 </div>
 
@@ -549,69 +547,94 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Data-management planning is a set of decisions that must be recorded, not necessarily a separate formal document. Reconcile anticipated information with the actual <a href="../../templates/data-source-inventory-template.csv">data-source inventory</a> during intake.</p>
-<section id="anticipated-data-inventory" class="level2">
-<h2 class="anchored" data-anchor-id="anticipated-data-inventory">Anticipated data inventory</h2>
-<p>Before acquisition, record the source or provider, expected format, approximate volume, delivery frequency, temporal and spatial support, identifiers, update behavior, access conditions, likely sensitivity, and expected authoritative location.</p>
-</section>
-<section id="access-and-governance" class="level2">
-<h2 class="anchored" data-anchor-id="access-and-governance">Access and governance</h2>
-<p>Identify the data owner, access contact, authorized users, data-use agreement, redistribution and publication restrictions, expiration or destruction requirements, sensitive locations, PII or linked identifiers, and Indigenous or community governance considerations where applicable.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<p>Communicate begins when a project or defined result package is <strong>ready for communication</strong> or <strong>ready for communication with documented limitation</strong>. It prepares a defined product for a defined audience; it does not make new scientific evidence.</p>
+<p>Communication may change form and level of detail, but it must not silently broaden, strengthen, or alter the evidence. A product represents selected results, claims, audience, purpose, version, limitations, and access conditions. Even an internal product may influence operations, policy, funding, partners, or later publications.</p>
+<section id="communicate-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="communicate-workflow">Communicate workflow</h2>
+<ol type="1">
+<li>Identify the project or result package approved to enter Communicate.</li>
+<li>Define the audience, purpose, intended action, product, and channel.</li>
+<li>Identify exact result and validation records.</li>
+<li>Draft claims within validated scope and record consequential claim-to-evidence links.</li>
+<li>Include uncertainty and limitations where they affect interpretation or action.</li>
+<li>Prepare figures, tables, maps, captions, and accessible alternatives.</li>
+<li>Apply relevant reporting guidance proportionately.</li>
+<li>Prepare accurate data, code, software, contribution, funding, restriction, and availability statements.</li>
+<li>Review the exact product version and record responses.</li>
+<li>Decide whether it is ready for release review.</li>
+<li>Record the authorized release decision.</li>
+<li>Release, withhold, withdraw, or supersede the exact version; retain the history for future Preserve.</li>
+</ol>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+  ready[Ready for communication] --&gt; product[Audience, purpose, and product]
+  product --&gt; claims[Claims linked to validated evidence]
+  claims --&gt; presentation[Figures, text, availability, accessibility]
+  presentation --&gt; review[Exact product version under review]
+  review --&gt; decision[Release decision]
+  decision --&gt; outcome[Released, withheld, withdrawn, or superseded]
+</pre>
 </div>
-<div class="callout-title-container flex-fill">
-Stop and resolve
+<p></p></figure><p></p>
 </div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Do not invent institutional classifications or assume that a storage platform is approved for every data class. Link unresolved questions about classification, storage, cloud services, backups, retention, PII, sensitive spatial data, and public repositories to <a href="../../standards/open-policy-decisions.html">Open Policy Decisions</a>.</p>
 </div>
 </div>
 </section>
-<section id="storage-and-authoritative-copies" class="level2">
-<h2 class="anchored" data-anchor-id="storage-and-authoritative-copies">Storage and authoritative copies</h2>
-<p>Distinguish the delivery location, preserved source copy, active working storage, derived-data storage, repository code and documentation, temporary computation, output storage, and archive or release location. GitHub is not the default location for large, restricted, or non-redistributable source data.</p>
+<section id="starting-points" class="level2">
+<h2 class="anchored" data-anchor-id="starting-points">Starting points</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Need</th>
+<th>Guidance</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Choose an audience, purpose, or product</td>
+<td><a href="../../practices/communicate/audience-purpose-and-products.html">Audience, purpose, and products</a></td>
+</tr>
+<tr class="even">
+<td>Write claims and communicate uncertainty</td>
+<td><a href="../../practices/communicate/claims-evidence-uncertainty-and-limitations.html">Claims, evidence, uncertainty, and limitations</a></td>
+</tr>
+<tr class="odd">
+<td>Prepare visual and accessible products</td>
+<td><a href="../../practices/communicate/figures-tables-maps-and-accessibility.html">Figures, tables, maps, and accessibility</a></td>
+</tr>
+<tr class="even">
+<td>Select reporting guidance</td>
+<td><a href="../../practices/communicate/manuscripts-reports-and-reporting-guidelines.html">Manuscripts, reports, and reporting guidelines</a></td>
+</tr>
+<tr class="odd">
+<td>Prepare availability statements</td>
+<td><a href="../../practices/communicate/data-code-software-and-availability.html">Data, code, software, and availability</a></td>
+</tr>
+<tr class="even">
+<td>Review, release, correct, or supersede a product</td>
+<td><a href="../../practices/communicate/review-approval-release-and-corrections.html">Review, approval, release, and corrections</a></td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="backup-and-recovery-planning" class="level2">
-<h2 class="anchored" data-anchor-id="backup-and-recovery-planning">Backup and recovery planning</h2>
-<p>Record the authoritative copy, backup responsibility, expected recovery path, consequences of loss, whether restoration has been tested, and whether the data can be reacquired. Do not invent a backup frequency; use the applicable institutional or agreement-based requirement.</p>
+<section id="product-preparation-status" class="level2">
+<h2 class="anchored" data-anchor-id="product-preparation-status">Product-preparation status</h2>
+<p>Use exactly: <strong>planned</strong>, <strong>in preparation</strong>, <strong>under review</strong>, <strong>revision required</strong>, <strong>ready for release review</strong>, or <strong>superseded</strong>. The safe default is <strong>planned</strong>. These statuses describe preparation, not release approval.</p>
 </section>
-<section id="identifiers-and-naming" class="level2">
-<h2 class="anchored" data-anchor-id="identifiers-and-naming">Identifiers and naming</h2>
-<p>Plan stable identifiers for the project, source dataset, source snapshot or release, derived dataset, model scenario, run, and output. Prefer identifiers that remain stable when filenames change. Do not prescribe one universal naming convention.</p>
+<section id="ready-for-release-review-status" class="level2">
+<h2 class="anchored" data-anchor-id="ready-for-release-review-status">Ready-for-release-review status</h2>
+<p>Use exactly: <strong>not ready for release review</strong>, <strong>ready for release review</strong>, or <strong>ready for release review with documented limitation</strong>. The safe default is <strong>not ready for release review</strong>. The product record is authoritative. A ready status means the exact product is sufficiently complete for the applicable authority to consider; it does not approve or release the product. A limitation status requires a nonempty limitation, why it matters, affected scope, downstream caution, follow-up, and responsible follow-up.</p>
+<p>These are two separate status systems. Product-preparation status describes where work on the product stands. Release-review readiness records the authoritative decision that one exact product package is complete enough for release authority to consider. <code>planned</code>, <code>in preparation</code>, <code>under review</code>, and <code>revision required</code> require readiness to remain <strong>not ready for release review</strong>. Product-preparation status may become <strong>ready for release review</strong> only when readiness is either <strong>ready for release review</strong> or <strong>ready for release review with documented limitation</strong>. A <strong>superseded</strong> product must not retain a ready status and must identify its replacement communication-product ID and version.</p>
+<p>Changing a product after a ready decision requires a new product version and a renewed readiness decision. Minor formatting changes may retain the same version only when the project’s versioning convention permits it and scientific meaning is unchanged.</p>
+<p>Every superseded product records its replacement ID, replacement version, reason, date, and responsible owner. Acceptance, readiness, approval, accessibility review, availability statements, and release state do not transfer automatically; repeat affected checks for the replacement.</p>
 </section>
-<section id="temporal-conventions" class="level2">
-<h2 class="anchored" data-anchor-id="temporal-conventions">Temporal conventions</h2>
-<p>Plan for event date, report date, extraction date, acquisition date, processing date, time zone, daylight-saving behavior, epidemiological week convention, and revision or late-reporting behavior.</p>
-</section>
-<section id="spatial-conventions" class="level2">
-<h2 class="anchored" data-anchor-id="spatial-conventions">Spatial conventions</h2>
-<p>Plan for CRS and datum, units, geographic extent, spatial support, resolution, raster alignment, boundary source/version, and sensitive-coordinate handling.</p>
-</section>
-<section id="computational-planning" class="level2">
-<h2 class="anchored" data-anchor-id="computational-planning">Computational planning</h2>
-<p>Anticipate the software stack, packages, GIS software, databases, command-line tools, containers, HPC, storage volume, memory, runtime, parallel execution, external services, and credentials. Dependency locking and containers are proportional practices, not universal requirements. Never place credentials in Git, README files, templates, or logs.</p>
-</section>
-<section id="release-and-preservation-planning" class="level2">
-<h2 class="anchored" data-anchor-id="release-and-preservation-planning">Release and preservation planning</h2>
-<p>At initiation, identify likely publication repository, code release, data release or access statement, persistent identifier, archive, retention owner, and closeout trigger. Not all data must be made public; access restrictions and agreements control.</p>
-</section>
-<section id="planning-gate" class="level2">
-<h2 class="anchored" data-anchor-id="planning-gate">Planning gate</h2>
-<ul class="task-list">
-<li><label><input type="checkbox">Purpose and scope are recorded.</label></li>
-<li><label><input type="checkbox">Responsible roles and decision authority are known.</label></li>
-<li><label><input type="checkbox">Anticipated sources and restrictions are identified.</label></li>
-<li><label><input type="checkbox">Authoritative locations and recovery responsibilities are planned.</label></li>
-<li><label><input type="checkbox">Computing and external dependencies are plausible.</label></li>
-<li><label><input type="checkbox">Expected outputs and acceptance criteria are stated.</label></li>
-<li><label><input type="checkbox">Unresolved policy questions are visible.</label></li>
-<li><label><input type="checkbox">A proportional README or charter exists.</label></li>
-</ul>
-<p>Passing this gate means that data-management conditions are planned well enough to begin authorized acquisition. It does not accept any received dataset.</p>
+<section id="boundary-and-return-paths" class="level2">
+<h2 class="anchored" data-anchor-id="boundary-and-return-paths">Boundary and return paths</h2>
+<p>Communicate does not replace Analyze, Validate, Collaborate, legal review, privacy authorization, institutional clearance, or preservation. If communication reveals changed data, methods, parameters, estimates, or outputs, return to Analyze. If it reveals changed scientific support, interpretation, performance evidence, or limitations, return to Validate. If it changes contributors, credit, partner obligations, or decision authority, return to Collaborate. Do not silently correct scientific content only in the product.</p>
 
 
 </section>
@@ -1023,13 +1046,13 @@ Stop and resolve
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../practices/plan/project-scope.html" class="pagination-link" aria-label="Define Project Scope and Responsibilities">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Define Project Scope and Responsibilities</span>
+      <a href="../../practices/collaborate/continuity-onboarding-and-handoff.html" class="pagination-link" aria-label="Continuity, Onboarding, and Handoff">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Continuity, Onboarding, and Handoff</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../practices/acquire/index.html" class="pagination-link" aria-label="Acquire Data">
-        <span class="nav-page-text">Acquire Data</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../practices/communicate/audience-purpose-and-products.html" class="pagination-link" aria-label="Audience, Purpose, and Products">
+        <span class="nav-page-text">Audience, Purpose, and Products</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1038,4 +1061,4 @@ Stop and resolve
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/plan/data-management-planning.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/plan/data-management-planning.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/communicate/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/communicate/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>
