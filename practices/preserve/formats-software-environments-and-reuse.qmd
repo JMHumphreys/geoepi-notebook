@@ -23,6 +23,8 @@ Record format, version, media type, encoding, creating/reading software, compres
 
 When normalization or migration occurs, retain the original where permitted, identify the migrated copy, tool/version, date, reason, validation, information or behavior lost, and relationship between versions. A migrated file must not silently replace the original. Record the characteristics that must remain intact for meaning or function, such as coordinates and CRS, raster alignment, table values and types, image resolution, sequence identifiers, software behavior, workflow order, timestamps, time zones, and interactive functionality.
 
+Record a meaningful migration or recovery as a preservation event with a source, resulting object/package, reason, tool/process and version, responsible person, date, validation, information lost or changed, earlier-version availability, replacement identifier, and event status. A failed fixity check and recovery is an event even when the recovered package appears unchanged.
+
 ## Software and dependencies
 
 Preserve proportionately source, commit/release, license, README, dependencies, lockfiles, build instructions, tests, configuration, example inputs/expected outputs, containers, environment files, interpreter/compiler versions, external tools, HPC modules, database versions, and service requirements. A container does not guarantee indefinite execution. Do not copy proprietary software without authorization.

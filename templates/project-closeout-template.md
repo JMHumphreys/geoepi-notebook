@@ -37,5 +37,10 @@
 - **Software and dependency status:**
 - **Deaccession or supersession references:**
 - **Incoming repository or maintainer acceptance:**
+- **Deferred preservation decision or temporary safe location:**
+- **Rejected deposit and next action:**
+- **Incomplete verification or limitation:**
+- **Migration event reference:**
+- **Next owner after deaccession or supersession:**
 
 The preservation plan remains authoritative. This closeout record does not authorize destruction.

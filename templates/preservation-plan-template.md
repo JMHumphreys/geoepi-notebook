@@ -29,11 +29,23 @@ This record documents preservation selection, package preparation, deposit, veri
 - Legal hold: `none or describe; blank until assessed`
 - Agreement or partner condition: `none or describe`
 - Indigenous, Tribal, or community authority: `none or describe`
+- Intended repository or preservation-storage arrangement: `blank until selected`
 - Temporary location: `blank unless deferred or not selected`
-- Reconsideration trigger or date: `blank unless deferred`
+- Deferred-decision reason: `blank unless deferred`
+- Deferred unresolved dependency: `blank unless deferred`
+- Deferred responsible person: `blank unless deferred`
+- Nonselection current disposition or temporary-retention state: `blank unless not selected`
+- Nonselection reconsideration or disposition trigger: `blank unless applicable`
 - Replacement preservation-record ID: `blank unless superseded`
+- Replacement preservation scope: `blank unless superseded`
+- Replacement preservation-package ID: `blank unless superseded`
+- Selection supersession reason: `blank unless superseded`
+- Selection supersession date: `blank unless superseded`
+- Selection supersession owner: `blank unless superseded`
 
 Use exactly: `not yet assessed for preservation`, `selected for preservation`, `not selected for long-term preservation`, `preservation decision deferred`, or `superseded preservation decision`. Nonselection does not authorize deletion or destruction.
+
+For `selected for preservation`, complete materials assessed, selected scope, rationale, decision authority, ISO 8601 decision date, intended repository/storage arrangement, and access or restriction conditions. Selection does not imply assembly, deposit, or verification. For `not selected for long-term preservation`, complete materials assessed, exact unselected scope, rationale, retention/disposition authority, decision authority/date, current disposition or temporary-retention state, reconsideration/disposition trigger where applicable, legal hold, and agreement/partner/community/governance constraints. For `preservation decision deferred`, complete deferred reason, unresolved dependency, temporary safe location, responsible person, and reconsideration trigger/date; materials remain under responsible custody. For `superseded preservation decision`, complete replacement record, scope, package where applicable, reason, date, and owner; the earlier decision remains identifiable.
 
 ## Package
 
@@ -72,8 +84,18 @@ Use exactly: `not yet assessed for preservation`, `selected for preservation`, `
 - Restrictions: `none or describe`
 - Repository contact: `blank until assigned`
 - Repository account owner: `blank until assigned`
+- Depositing person or process: `blank until submitted`
+- Repository response date: `blank until received`
+- Accepted files or components: `blank until accepted`
+- Rejected files or components: `blank unless partially rejected`
+- Repository transformations or normalization: `none or describe`
+- Repository access state after deposit: `blank until verified`
+- Identifier-resolution check: `blank until verified`
+- Landing-page or record-display check: `blank unless applicable`
 - Fees or continuing obligations: `none or describe`
 - Exit or export plan: `blank until recorded`
+
+Deposit may be partially accepted. Repository-generated transformations remain visible, and verification compares accepted contents with the submitted package. An upload-complete message alone is not sufficient verification.
 
 ## Preservation outcome
 
@@ -92,15 +114,55 @@ Use exactly: `not yet assessed for preservation`, `selected for preservation`, `
 - Required follow-up: `blank unless limitation status`
 - Follow-up owner: `blank unless limitation status`
 - Follow-up date or trigger: `blank unless limitation status`
+- Rejected repository or recipient: `blank unless deposit rejected`
+- Rejected package ID/version: `blank unless deposit rejected`
+- Deposit submission date: `blank unless submitted`
+- Deposit rejection date: `blank unless deposit rejected`
+- Rejection notice or receipt: `blank unless deposit rejected`
 - Rejection reason: `blank unless deposit rejected`
-- Alternative repository or next action: `blank unless deposit rejected`
+- Rejected files or components: `blank unless deposit rejected`
+- Rejection responsible person: `blank unless deposit rejected`
+- Temporary safe location after rejection: `blank unless deposit rejected`
+- Next action: `blank unless deposit rejected`
+- Alternative repository or storage plan: `blank unless deposit rejected`
+- Deposit-rejection reconsideration trigger or date: `blank unless deposit rejected`
 - Deaccession authority: `blank unless deaccessioned`
+- Prior deposit receipt or preservation evidence: `blank unless deaccessioned`
+- Original repository or preservation location: `blank unless deaccessioned`
+- Original repository identifier or accession: `blank unless deaccessioned`
+- Deaccessioned package ID/version: `blank unless deaccessioned`
+- Governing deaccession policy, agreement, or process: `blank unless deaccessioned`
+- Legal-hold review: `blank unless deaccessioned`
+- Retention-requirement review: `blank unless deaccessioned`
+- Partner, Indigenous, Tribal, or community review: `blank unless applicable`
+- Affected users, partners, or communities: `blank unless deaccessioned`
+- Deaccession notification record: `blank unless applicable`
+- Retained metadata or tombstone location: `blank unless deaccessioned`
+- Final authorized disposition or replacement: `blank unless deaccessioned`
+- Deaccession responsible owner: `blank unless deaccessioned`
 - Deaccession date: `blank unless deaccessioned`
 - Deaccession reason: `blank unless deaccessioned`
-- Replacement package: `blank unless superseded or deaccessioned`
+- Superseded package ID/version: `blank unless superseded`
+- Replacement package ID/version: `blank unless superseded`
+- Original preservation-record ID: `blank unless superseded`
 - Replacement preservation record: `blank unless superseded or deaccessioned`
+- Outcome supersession reason: `blank unless superseded`
+- Outcome supersession date: `blank unless superseded`
+- Outcome supersession owner: `blank unless superseded`
+- Earlier package remains available: `blank unless superseded; yes / no / controlled / unknown`
+- Package relationship: `blank unless superseded`
 
-Use exactly: `not deposited`, `deposited`, `verified`, `verified with documented limitation`, `deposit rejected`, `deaccessioned`, or `superseded`. Verified outcomes require deposit and verification evidence. Do not use limitation status with empty limitation fields.
+Use exactly: `not deposited`, `deposited`, `verified`, `verified with documented limitation`, `deposit rejected`, `deaccessioned`, or `superseded`. For ordinary `verified`, use documented limitation `none`, why limitation matters `not applicable`, affected scope `not applicable`, downstream caution `none or ordinary preservation caution`, required follow-up `none`, follow-up owner `not applicable`, and follow-up date/trigger `not applicable`. For `verified with documented limitation`, every limitation field must be substantive; `none`, `not applicable`, and blank values are not allowed for limitation, consequence, affected scope, caution, follow-up, or owner. Deaccession records removal from active custody/access and does not authorize physical destruction. A superseded outcome retains earlier history and does not transfer verification, access, identifiers, or maintenance schedules.
+
+Consistency rules: `not yet assessed` uses `not deposited`; `selected` may use any outcome; `not selected` and `deferred` ordinarily use `not deposited`; a superseded selection decision uses `not deposited` or `superseded`. `deposited` requires receipt/transfer evidence; `verified` requires deposit and all verification evidence; limitation verification requires substantive limitation fields; deposit rejection requires attempted-submission evidence; deaccession requires prior deposit evidence; supersession requires replacement package and record. Do not use a verified outcome while selection is not yet assessed, not selected, or deferred.
+
+## Migration and preservation events
+
+| Event ID | Event type | Source object/package | Resulting object/package | Reason | Tool/process and version | Responsible person | Event date | Validation performed | Information lost or changed | Earlier version retained | Replacement identifier | Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| `EVENT-001` | `format migration` | `blank until event` | `blank until event` | `blank until event` | `blank until event` | `blank until event` | `blank until event` | `blank until event` | `blank until event` | `blank until event` | `blank until event` | `planned` |
+
+Use exactly these event types: `format migration`, `package migration`, `repository transfer`, `metadata correction`, `access-condition change`, `fixity failure and recovery`, and `other`. Use exactly these event statuses: `planned`, `completed`, `completed with documented limitation`, `failed`, and `superseded`. The safe default is `planned`. A completed event requires source, result, reason, tool/process, responsible person, date, validation, information lost/changed, and whether the earlier version remains available. A completed event with documented limitation requires substantive limitation and follow-up in the event or linked record.
 
 ## Formats and dependencies
 

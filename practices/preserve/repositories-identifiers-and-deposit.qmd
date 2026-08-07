@@ -29,7 +29,7 @@ Record a DOI, accession number, repository record ID, SWHID, archival identifier
 
 ## Deposit is not verification
 
-Record submission date, recipient, package ID/version, receipt, repository identifier, accepted/rejected files, transformations, access state, embargo, license, and deposit owner. Then verify completeness, inventory, checksums or other integrity evidence, metadata, restrictions, retrieval where permitted, identifier resolution, and landing-page accuracy. An upload is not a verified preservation outcome.
+Record submission date, recipient, package ID/version, receipt, repository identifier, accepted/rejected files, transformations, access state, embargo, license, depositing person/process, repository response date, and deposit owner. A partial acceptance records accepted and rejected components separately. A rejected deposit records repository/recipient, package/version, submission and rejection dates, notice/receipt, reason, affected components, responsible person, temporary safe location, next action, alternative plan, and reconsideration trigger. Rejection does not mean package loss or change the selection decision; the outcome remains **deposit rejected** until a later outcome is recorded. Then verify completeness, inventory, checksums or other integrity evidence, metadata, restrictions, retrieval where permitted, identifier resolution, and landing-page accuracy. An upload is not a verified preservation outcome.
 
 ## Exit planning
 

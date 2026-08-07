@@ -183,6 +183,9 @@
 ## Preservation selection
 
 - [ ] Preservation scope and trigger, selection status, rationale, authority, retention/disposition reference, legal/agreement/partner/community conditions, exclusions, unavailable materials, and deferred or superseded fields are recorded.
+- [ ] Selected status includes materials assessed, selected scope, ISO 8601 decision date, intended repository/storage, and access/restriction conditions.
+- [ ] Nonselection includes exact scope, authority, temporary disposition/location, legal hold, and explicitly does not authorize deletion, destruction, or disposal.
+- [ ] Deferred decisions include safe temporary location, responsible person, and reconsideration trigger; superseded decisions identify replacement scope and record.
 
 ## Preservation package
 
@@ -191,11 +194,14 @@
 ## Repository and deposit
 
 - [ ] Repository fit, deposit owner, proposed and accepted package, receipt, identifier, access state, rejected files, and export/exit plan are recorded.
+- [ ] Deposit rejection includes submission/rejection dates, notice, affected components, safe temporary location, owner, next action, and alternative plan.
 
 ## Verification and maintenance
 
 - [ ] Inventory, fixity, metadata, access, and proportionate retrieval/restoration checks are recorded.
 - [ ] Outcome status, substantive limitation fields, maintenance owner, next review, migration, deaccession, and supersession references are recorded.
+- [ ] Deaccession includes prior deposit, authority/reviews, retained metadata, disposition or replacement, notification, and owner; supersession identifies original and replacement records/packages.
+- [ ] Migration or preservation events identify source, result, reason, process, checks, information loss, and earlier-version availability where applicable.
 
 ## Preserve closeout
 
