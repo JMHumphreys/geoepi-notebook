@@ -82,7 +82,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-title','listing-description','listing-author','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
-      
+      page: 30,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-id","listing-title","listing-url","listing-author_or_organization","listing-resource_type","listing-authority_type","listing-topics","listing-license","listing-access_date","listing-relevant_sections","listing-local_research_note","listing-review_status","listing-description"],
     };
 
@@ -711,7 +712,23 @@ Categories
 
 </tr>
 
-<tr data-index="24" data-listing-title-sort="USDA National Agricultural Library data-management guidance">
+<tr data-index="24" data-listing-title-sort="Contributor Role Taxonomy (CRediT)">
+<td>
+<span class="listing-title">Contributor Role Taxonomy (CRediT)</span>
+</td>
+<td>
+<span class="listing-description">CRediT describes contributor roles to improve transparency, not authorship or author order.</span>
+</td>
+<td>
+<span class="listing-author">&nbsp;</span>
+</td>
+<td>
+<span class="listing-categories">&nbsp;</span>
+</td>
+
+</tr>
+
+<tr data-index="25" data-listing-title-sort="USDA National Agricultural Library data-management guidance">
 <td>
 <span class="listing-title">USDA National Agricultural Library data-management guidance</span>
 </td>
@@ -727,7 +744,7 @@ Categories
 
 </tr>
 
-<tr data-index="25" data-listing-title-sort="CDC Field Epidemiology Manual data-management guidance">
+<tr data-index="26" data-listing-title-sort="CDC Field Epidemiology Manual data-management guidance">
 <td>
 <span class="listing-title">CDC Field Epidemiology Manual data-management guidance</span>
 </td>
@@ -743,7 +760,7 @@ Categories
 
 </tr>
 
-<tr data-index="26" data-listing-title-sort="FGDC geospatial metadata guidance">
+<tr data-index="27" data-listing-title-sort="FGDC geospatial metadata guidance">
 <td>
 <span class="listing-title">FGDC geospatial metadata guidance</span>
 </td>
@@ -759,7 +776,7 @@ Categories
 
 </tr>
 
-<tr data-index="27" data-listing-title-sort="GBIF georeferencing guidance">
+<tr data-index="28" data-listing-title-sort="GBIF georeferencing guidance">
 <td>
 <span class="listing-title">GBIF georeferencing guidance</span>
 </td>
@@ -775,7 +792,7 @@ Categories
 
 </tr>
 
-<tr data-index="28" data-listing-title-sort="Ecological Metadata Language">
+<tr data-index="29" data-listing-title-sort="Ecological Metadata Language">
 <td>
 <span class="listing-title">Ecological Metadata Language</span>
 </td>
@@ -791,7 +808,7 @@ Categories
 
 </tr>
 
-<tr data-index="29" data-listing-title-sort="Ecological Forecasting Initiative standards">
+<tr data-index="30" data-listing-title-sort="Ecological Forecasting Initiative standards">
 <td>
 <span class="listing-title">Ecological Forecasting Initiative standards</span>
 </td>
@@ -810,6 +827,9 @@ Categories
 </tbody>
 </table>
 <div class="listing-no-matching d-none">No matching items</div>
+<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

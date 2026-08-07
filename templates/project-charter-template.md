@@ -17,3 +17,10 @@
 - **Authoritative repository/location:**
 - **Planned checkpoints:**
 - **Approval or review needed:**
+- **Contributing people and organizations:**
+- **Role and decision-responsibility record:**
+- **Collaboration-agreement location, when warranted:**
+- **Contribution-and-credit record:**
+- **Authoritative decision and review location:**
+- **External partner or agreement references:**
+- **Continuity or backup responsibility:**

@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="A central operational workflow for receiving, preserving, inspecting, clarifying, and accepting incoming data.">
+<meta name="description" content="Make review purpose, response, unresolved concerns, and decisions visible.">
 
-<title>Data Intake and Acceptance – GeoEpi Lab Book</title>
+<title>Review, Feedback, and Disagreement – GeoEpi Lab Book</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../practices/acquire/recurring-programmatic-data.html" rel="next">
-<link href="../../practices/acquire/index.html" rel="prev">
+<link href="../../practices/collaborate/contributions-credit-and-authorship.html" rel="next">
+<link href="../../practices/collaborate/working-agreements-and-shared-records.html" rel="prev">
 <link href="../../assets/images/favicon.ico" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -71,9 +71,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -179,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/acquire/index.html">Acquire</a></li><li class="breadcrumb-item"><a href="../../practices/acquire/data-intake.html">Data Intake and Acceptance</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/collaborate/index.html">Collaborate</a></li><li class="breadcrumb-item"><a href="../../practices/collaborate/review-feedback-and-disagreement.html">Review, Feedback, and Disagreement</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -243,7 +240,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../practices/acquire/data-intake.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../practices/acquire/data-intake.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Intake and Acceptance</span></a>
   </div>
 </li>
@@ -425,7 +422,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../practices/collaborate/review-feedback-and-disagreement.html" class="sidebar-item-text sidebar-link">
+  <a href="../../practices/collaborate/review-feedback-and-disagreement.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Review, Feedback, and Disagreement</span></a>
   </div>
 </li>
@@ -459,41 +456,25 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#definitions-for-intake" id="toc-definitions-for-intake" class="nav-link active" data-scroll-target="#definitions-for-intake">Definitions for intake</a></li>
-  <li><a href="#before-receipt" id="toc-before-receipt" class="nav-link" data-scroll-target="#before-receipt">Before receipt</a></li>
-  <li><a href="#receive-into-an-approved-location" id="toc-receive-into-an-approved-location" class="nav-link" data-scroll-target="#receive-into-an-approved-location">Receive into an approved location</a></li>
-  <li><a href="#assign-identifiers" id="toc-assign-identifiers" class="nav-link" data-scroll-target="#assign-identifiers">Assign identifiers</a></li>
-  <li><a href="#preserve-the-source-package" id="toc-preserve-the-source-package" class="nav-link" data-scroll-target="#preserve-the-source-package">Preserve the source package</a></li>
-  <li><a href="#record-provenance" id="toc-record-provenance" class="nav-link" data-scroll-target="#record-provenance">Record provenance</a></li>
-  <li><a href="#file-or-object-manifest" id="toc-file-or-object-manifest" class="nav-link" data-scroll-target="#file-or-object-manifest">File or object manifest</a></li>
-  <li><a href="#initial-technical-inspection" id="toc-initial-technical-inspection" class="nav-link" data-scroll-target="#initial-technical-inspection">Initial technical inspection</a></li>
-  <li><a href="#initial-content-inspection" id="toc-initial-content-inspection" class="nav-link" data-scroll-target="#initial-content-inspection">Initial content inspection</a></li>
-  <li><a href="#resolve-discrepancies" id="toc-resolve-discrepancies" class="nav-link" data-scroll-target="#resolve-discrepancies">Resolve discrepancies</a></li>
-  <li><a href="#status-transition-model" id="toc-status-transition-model" class="nav-link" data-scroll-target="#status-transition-model">Status-transition model</a></li>
-  <li><a href="#acceptance-statuses" id="toc-acceptance-statuses" class="nav-link" data-scroll-target="#acceptance-statuses">Acceptance statuses</a></li>
-  <li><a href="#domain-specific-intake-checks" id="toc-domain-specific-intake-checks" class="nav-link" data-scroll-target="#domain-specific-intake-checks">Domain-specific intake checks</a>
-  <ul class="collapse">
-  <li><a href="#spatial-data" id="toc-spatial-data" class="nav-link" data-scroll-target="#spatial-data">Spatial data</a></li>
-  <li><a href="#epidemiological-and-surveillance-data" id="toc-epidemiological-and-surveillance-data" class="nav-link" data-scroll-target="#epidemiological-and-surveillance-data">Epidemiological and surveillance data</a></li>
-  <li><a href="#ecological-and-field-data" id="toc-ecological-and-field-data" class="nav-link" data-scroll-target="#ecological-and-field-data">Ecological and field data</a></li>
-  <li><a href="#genomics-and-phylogenetics" id="toc-genomics-and-phylogenetics" class="nav-link" data-scroll-target="#genomics-and-phylogenetics">Genomics and phylogenetics</a></li>
-  <li><a href="#model-and-simulation-inputs" id="toc-model-and-simulation-inputs" class="nav-link" data-scroll-target="#model-and-simulation-inputs">Model and simulation inputs</a></li>
-  </ul></li>
-  <li><a href="#intake-completion-gate" id="toc-intake-completion-gate" class="nav-link" data-scroll-target="#intake-completion-gate">Intake completion gate</a></li>
+  <li><a href="#make-the-review-purpose-clear" id="toc-make-the-review-purpose-clear" class="nav-link active" data-scroll-target="#make-the-review-purpose-clear">Make the review purpose clear</a></li>
+  <li><a href="#record-feedback-and-response" id="toc-record-feedback-and-response" class="nav-link" data-scroll-target="#record-feedback-and-response">Record feedback and response</a></li>
+  <li><a href="#review-is-not-approval" id="toc-review-is-not-approval" class="nav-link" data-scroll-target="#review-is-not-approval">Review is not approval</a></li>
+  <li><a href="#disagreement" id="toc-disagreement" class="nav-link" data-scroll-target="#disagreement">Disagreement</a></li>
+  <li><a href="#checklist" id="toc-checklist" class="nav-link" data-scroll-target="#checklist">Checklist</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/acquire/data-intake.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/acquire/data-intake.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/collaborate/review-feedback-and-disagreement.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/collaborate/review-feedback-and-disagreement.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/acquire/index.html">Acquire</a></li><li class="breadcrumb-item"><a href="../../practices/acquire/data-intake.html">Data Intake and Acceptance</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../practices/collaborate/index.html">Collaborate</a></li><li class="breadcrumb-item"><a href="../../practices/collaborate/review-feedback-and-disagreement.html">Review, Feedback, and Disagreement</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Data Intake and Acceptance</h1>
+<h1 class="title">Review, Feedback, and Disagreement</h1>
 </div>
 
 <div>
   <div class="description">
-    A central operational workflow for receiving, preserving, inspecting, clarifying, and accepting incoming data.
+    Make review purpose, response, unresolved concerns, and decisions visible.
   </div>
 </div>
 
@@ -510,159 +491,36 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Proposed minimum requirement
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The <a href="../../start/minimum-standard.html">Minimum GeoEpi Project Standard</a> requires source protection, provenance, restrictions, metadata, and traceability. Preserve the received source package and record enough evidence to identify, inspect, restrict, and accept or reject it for staging. <strong>Intake acceptance does not establish analytical validity, model suitability, publication readiness, or authorization for every downstream use.</strong></p>
-</div>
-</div>
-<section id="definitions-for-intake" class="level2">
-<h2 class="anchored" data-anchor-id="definitions-for-intake">Definitions for intake</h2>
-<ul>
-<li><strong>Source:</strong> the provider’s conceptual dataset or data system.</li>
-<li><strong>Snapshot:</strong> a specific received, downloaded, extracted, or released representation of the source.</li>
-<li><strong>Intake event:</strong> the documented act of receiving or extracting a snapshot.</li>
-<li><strong>Preserved source package:</strong> the retained original delivered representation before local correction or normalization.</li>
-<li><strong>Staged data:</strong> a controlled working representation prepared from the preserved source package.</li>
-<li><strong>Derived data:</strong> data created through documented transformation.</li>
-<li><strong>Authoritative location:</strong> the location designated as current for a specified artifact; it is not necessarily the provider’s original system.</li>
-</ul>
+<section id="make-the-review-purpose-clear" class="level2">
+<h2 class="anchored" data-anchor-id="make-the-review-purpose-clear">Make the review purpose clear</h2>
+<p>Name whether review is scientific, methodological, technical, data, validation, operational, governance, partner consultation, or communication preparation. Identify the object and version under review. A reviewer may provide important feedback without having final decision or release authority.</p>
 </section>
-<section id="before-receipt" class="level2">
-<h2 class="anchored" data-anchor-id="before-receipt">Before receipt</h2>
-<p>Record or confirm the provider, data owner, access authorization, expected dataset, expected files or tables, format, delivery method, version or time period, geographic and temporal support, restrictions, identifiers, expected documentation, and contact for discrepancies.</p>
-<p>Do not accept credentials in README files, Git, templates, or logs.</p>
+<section id="record-feedback-and-response" class="level2">
+<h2 class="anchored" data-anchor-id="record-feedback-and-response">Record feedback and response</h2>
+<p>For consequential feedback, retain the concern, evidence or reason, responsible person, response, decision owner, date, and affected version. Link the response to the changed analysis, validation record, result, or communication draft when applicable. Not every formatting comment needs a formal record.</p>
+<p>Optional labels can make a record easier to scan: <strong>blocking concern</strong>, <strong>important correction</strong>, <strong>suggestion</strong>, <strong>question</strong>, or <strong>note</strong>. They are aids, not a mandatory workflow or bureaucracy. Record a response outcome using exactly one of: <strong>accepted and addressed</strong>, <strong>addressed differently</strong>, <strong>deferred</strong>, <strong>not accepted with rationale</strong>, <strong>transferred to another lifecycle stage</strong>, or <strong>unresolved</strong>. The durable project review record owns the response; resolving a comment is not approval.</p>
+<p>A blocking concern may be overridden only by documented authority with a rationale and any resulting limitation. Changes to data or analysis return to Analyze; scientific support or validation concerns return to Validate; wording-only changes may remain in Collaborate or a future Communicate stage.</p>
+<p>Independent review is proportionate, not universal. Consider it when choices are operationally consequential, discretionary, surprising or disputed, likely to be reused widely, span organizations, have high error costs, or were made by the decision owner. Independence may mean a different analyst, subject-matter expert, person, or organization; no universal count or separation rule applies.</p>
 </section>
-<section id="receive-into-an-approved-location" class="level2">
-<h2 class="anchored" data-anchor-id="receive-into-an-approved-location">Receive into an approved location</h2>
-<p>Place incoming data first in an approved source or intake location. The location should prevent accidental overwrite, preserve original names where useful, preserve the delivered package, limit access appropriately, and separate received material from transformed data. No universal folder name or storage platform is required.</p>
+<section id="review-is-not-approval" class="level2">
+<h2 class="anchored" data-anchor-id="review-is-not-approval">Review is not approval</h2>
+<p>Review means that someone examined work for a defined purpose. Approval means that a person with relevant authority made a separate decision. Do not imply approval merely because comments were resolved or a reviewer participated.</p>
 </section>
-<section id="assign-identifiers" class="level2">
-<h2 class="anchored" data-anchor-id="assign-identifiers">Assign identifiers</h2>
-<p>Every received dataset must have project identity or authoritative project context, a source ID, and a snapshot, release, extraction, or acquisition ID sufficient to distinguish the received version. A separate intake ID is <strong>Conditionally required</strong> when more than one delivery or extraction may occur, replacement or corrected deliveries are possible, multiple people or systems handle intake, a formal manifest or audit trail is needed, or the workflow is recurring, regulated, operational, or high consequence. For a simple one-time delivery, the snapshot or acquisition ID may also serve as the intake ID.</p>
+<section id="disagreement" class="level2">
+<h2 class="anchored" data-anchor-id="disagreement">Disagreement</h2>
+<p>Disagreement can remain visible without stopping all work. Record the positions, evidence, affected claim or decision, decision authority, interim limitation, and follow-up. If the disagreement concerns data, exclusions, model structure, or validation evidence, return to Analyze or Validate rather than silently resolving it in a communication product.</p>
 </section>
-<section id="preserve-the-source-package" class="level2">
-<h2 class="anchored" data-anchor-id="preserve-the-source-package">Preserve the source package</h2>
-<p>Retain the original delivered representation where lawful and practical: a downloaded archive, spreadsheet, database extract, API response, sequence files, field-data export, and associated documentation. Do not silently edit the preserved source copy. Corrections and normalization belong in staged or derived representations.</p>
-</section>
-<section id="record-provenance" class="level2">
-<h2 class="anchored" data-anchor-id="record-provenance">Record provenance</h2>
-<p>At minimum, record source, provider or collector, acquisition method, acquisition date/time where relevant, source identifier, version or release, original filename or table, local authoritative location, restriction or license, access contact, related agreement or documentation, transformation-record location, and a checksum when proportionate. Use the existing <a href="../../templates/data-source-inventory-template.csv">data-source inventory</a> rather than creating redundant records.</p>
-</section>
-<section id="file-or-object-manifest" class="level2">
-<h2 class="anchored" data-anchor-id="file-or-object-manifest">File or object manifest</h2>
-<p>Use a file-level manifest for a multi-file delivery, archive, repeated snapshot, sequence batch, raster stack, model-input bundle, transfer across systems, or regulated/high-consequence workflow. A checksum is <strong>Conditionally required</strong> when integrity across transfers, storage systems, releases, or repeated processing materially matters. It is not required for every trivial temporary file.</p>
-<p>Use the <a href="../../templates/data-file-manifest-template.csv">data-file manifest template</a>.</p>
-<p>In that manifest, <code>relative_path</code> is relative to the documented intake or preserved-source root. <code>source_modified_time</code> is the provider’s or source system’s time, not local receipt time, and should include a time zone or an explicit source convention. Checksum fields may be blank when integrity checking is not proportionate. <code>supersedes</code> should reference a stable file, snapshot, or manifest ID. Use the documented intake statuses in <code>validation_status</code>: <code>received</code>, <code>pending validation</code>, <code>pending clarification</code>, <code>accepted for staging</code>, <code>accepted with documented limitation</code>, <code>rejected</code>, or <code>superseded</code>; the row marked as an example must be deleted before use.</p>
-</section>
-<section id="initial-technical-inspection" class="level2">
-<h2 class="anchored" data-anchor-id="initial-technical-inspection">Initial technical inspection</h2>
-<p>Check what is appropriate:</p>
-<ul>
-<li>file count, size, readability, archive integrity, format, delimiter, and encoding;</li>
-<li>table or layer names, row and column counts, schema, and duplicate files;</li>
-<li>expected time range, spatial extent, CRS, raster dimensions, alignment, and geometry validity;</li>
-<li>sequence count and metadata linkage;</li>
-<li>missing documentation and unexpected executable or unsupported content.</li>
-</ul>
-<p>Do not perform substantive cleaning in the preserved source location.</p>
-</section>
-<section id="initial-content-inspection" class="level2">
-<h2 class="anchored" data-anchor-id="initial-content-inspection">Initial content inspection</h2>
-<p>Check only enough to decide whether the delivery is plausible and ready for further organization: identifiers, key variables, units, missing-value conventions, interpretable dates and geography, expected categories, consistent confidentiality markings, and absence of obvious truncation or corruption. Intake inspection is not final analytical QA/QC.</p>
-</section>
-<section id="resolve-discrepancies" class="level2">
-<h2 class="anchored" data-anchor-id="resolve-discrepancies">Resolve discrepancies</h2>
-<p>Record the discrepancy, date identified, source contacted, clarification received, replacement delivery, affected files, and acceptance decision. Never silently substitute or overwrite a corrected delivery. Link related deliveries through snapshot or intake identifiers.</p>
-</section>
-<section id="status-transition-model" class="level2">
-<h2 class="anchored" data-anchor-id="status-transition-model">Status-transition model</h2>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TD
-  received[received] --&gt; pending_validation[pending validation]
-  pending_validation --&gt; pending_clarification[pending clarification, when needed]
-  pending_validation --&gt; accepted_staging[accepted for staging]
-  pending_clarification --&gt; accepted_staging
-  pending_validation --&gt; rejected[rejected]
-  pending_clarification --&gt; rejected
-  accepted_staging --&gt; limited[accepted with documented limitation]
-  accepted_staging --&gt; superseded[superseded later]
-  limited --&gt; superseded
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-<p><code>superseded</code> does not delete or overwrite the earlier intake record. Rejection does not necessarily mean that the source is scientifically invalid; it means that this delivery must not enter staging. A pending delivery must not silently enter downstream analysis. An accepted-with-limitation decision must record the limitation, likely consequence, downstream restriction, responsible decision-maker, and required follow-up.</p>
-</section>
-<section id="acceptance-statuses" class="level2">
-<h2 class="anchored" data-anchor-id="acceptance-statuses">Acceptance statuses</h2>
-<p>Use only these statuses for this intake workflow: <strong>received</strong> means material has arrived but has not been inspected; <strong>pending validation</strong> means technical or content inspection is incomplete; <strong>pending clarification</strong> means a material question has been sent to the provider or owner; <strong>accepted for staging</strong> means the delivery may enter the Organize stage; <strong>accepted with documented limitation</strong> means it may enter staging with a visible limitation and responsible decision-maker; <strong>rejected</strong> means it must not enter staging; and <strong>superseded</strong> means a later identified delivery replaces it while the original record remains preserved. These labels guide the workflow and do not establish institutional classification terminology.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Stop and resolve
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Pause intake or analysis when authorization is missing or unclear; unexpected PII or protected information is present; restrictions conflict with the planned workflow; the source or version cannot be identified; required files are absent; corruption is suspected; identifiers cannot be reconciled; temporal fields are ambiguous; CRS or spatial support cannot be determined; the delivery differs materially from its description; replacement files overwrite prior evidence; or the intended storage location is not approved.</p>
-<p>These conditions require clarification, not improvised assumptions.</p>
-</div>
-</div>
-</section>
-<section id="domain-specific-intake-checks" class="level2">
-<h2 class="anchored" data-anchor-id="domain-specific-intake-checks">Domain-specific intake checks</h2>
-<section id="spatial-data" class="level3">
-<h3 class="anchored" data-anchor-id="spatial-data">Spatial data</h3>
-<p>Record CRS, datum, units, extent, resolution, grid origin/alignment, masks, boundary version, and NoData convention.</p>
-</section>
-<section id="epidemiological-and-surveillance-data" class="level3">
-<h3 class="anchored" data-anchor-id="epidemiological-and-surveillance-data">Epidemiological and surveillance data</h3>
-<p>Record case-definition version, event/report/extract dates, denominator, deduplication, jurisdiction, reporting delay, and confidentiality.</p>
-</section>
-<section id="ecological-and-field-data" class="level3">
-<h3 class="anchored" data-anchor-id="ecological-and-field-data">Ecological and field data</h3>
-<p>Record sampling effort, collector, instrument, calibration, taxonomic identifiers, detection limits, and field revisions.</p>
-</section>
-<section id="genomics-and-phylogenetics" class="level3">
-<h3 class="anchored" data-anchor-id="genomics-and-phylogenetics">Genomics and phylogenetics</h3>
-<p>Record sample-to-sequence linkage, accession, reference genome, database release, read-processing status, and metadata restrictions.</p>
-</section>
-<section id="model-and-simulation-inputs" class="level3">
-<h3 class="anchored" data-anchor-id="model-and-simulation-inputs">Model and simulation inputs</h3>
-<p>Record parameter version, units, scenario, initial conditions, boundary conditions, and calibration source.</p>
-</section>
-</section>
-<section id="intake-completion-gate" class="level2">
-<h2 class="anchored" data-anchor-id="intake-completion-gate">Intake completion gate</h2>
+<section id="checklist" class="level2">
+<h2 class="anchored" data-anchor-id="checklist">Checklist</h2>
 <ul class="task-list">
-<li><label><input type="checkbox">Authorization, owner, provider, restrictions, and access contact are recorded.</label></li>
-<li><label><input type="checkbox">Project context, source ID, and snapshot/release/extraction/acquisition ID are assigned.</label></li>
-<li><label><input type="checkbox">A separate intake ID is assigned when the delivery pattern or consequence makes it conditionally required; a simple one-time delivery may reuse its snapshot ID.</label></li>
-<li><label><input type="checkbox">The delivered source package is preserved at an authoritative location.</label></li>
-<li><label><input type="checkbox">Expected and received contents are compared.</label></li>
-<li><label><input type="checkbox">Technical and initial content inspections are recorded.</label></li>
-<li><label><input type="checkbox">Required metadata, identifiers, units, dates, geography, and domain fields are interpretable.</label></li>
-<li><label><input type="checkbox">Discrepancies and clarifications are linked to the affected delivery.</label></li>
-<li><label><input type="checkbox">Acceptance status and responsible decision-maker are recorded.</label></li>
-<li><label><input type="checkbox">The data are explicitly received, pending validation, pending clarification, accepted for staging, accepted with documented limitation, rejected, or superseded.</label></li>
+<li><label><input type="checkbox">Review purpose and object/version are clear.</label></li>
+<li><label><input type="checkbox">Required reviewer or reviewer role is identified.</label></li>
+<li><label><input type="checkbox">Consequential concerns and responses are durable.</label></li>
+<li><label><input type="checkbox">Review is distinguished from final decision and approval.</label></li>
+<li><label><input type="checkbox">Unresolved disagreement is visible.</label></li>
+<li><label><input type="checkbox">Required return to Analyze or Validate is recorded.</label></li>
+<li><label><input type="checkbox">Independent review is considered proportionately and its rationale is recorded where warranted.</label></li>
 </ul>
-<p>Passing this gate allows an accepted delivery to enter the <a href="../../practices/organize/index.html">Organize stage</a>. An accepted-for-staging delivery may proceed; an accepted-with-documented-limitation delivery may proceed only with that limitation carried forward; rejected or pending data must not proceed. Intake does not certify analytical validity, model suitability, publication readiness, or authorization for every downstream use.</p>
 
 
 </section>
@@ -1074,13 +932,13 @@ Stop and resolve
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../practices/acquire/index.html" class="pagination-link" aria-label="Acquire Data">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Acquire Data</span>
+      <a href="../../practices/collaborate/working-agreements-and-shared-records.html" class="pagination-link" aria-label="Working Agreements and Shared Records">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Working Agreements and Shared Records</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../practices/acquire/recurring-programmatic-data.html" class="pagination-link" aria-label="Recurring and Programmatic Data">
-        <span class="nav-page-text">Recurring and Programmatic Data</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../practices/collaborate/contributions-credit-and-authorship.html" class="pagination-link" aria-label="Contributions, Credit, and Authorship">
+        <span class="nav-page-text">Contributions, Credit, and Authorship</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1089,4 +947,4 @@ Stop and resolve
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/acquire/data-intake.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/acquire/data-intake.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/practices/collaborate/review-feedback-and-disagreement.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/practices/collaborate/review-feedback-and-disagreement.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>
