@@ -180,6 +180,27 @@
 - [ ] Corrections use an appropriate category and consequential changes return to the correct lifecycle stage.
 - [ ] Release does not imply that preservation is complete.
 
+## Preservation selection
+
+- [ ] Preservation scope and trigger, selection status, rationale, authority, retention/disposition reference, legal/agreement/partner/community conditions, exclusions, unavailable materials, and deferred or superseded fields are recorded.
+
+## Preservation package
+
+- [ ] Package ID/version, inventory, package guide, included and externally referenced materials, exclusions, checksums, formats, metadata, restrictions, dependencies, and absence of credentials/keys are recorded.
+
+## Repository and deposit
+
+- [ ] Repository fit, deposit owner, proposed and accepted package, receipt, identifier, access state, rejected files, and export/exit plan are recorded.
+
+## Verification and maintenance
+
+- [ ] Inventory, fixity, metadata, access, and proportionate retrieval/restoration checks are recorded.
+- [ ] Outcome status, substantive limitation fields, maintenance owner, next review, migration, deaccession, and supersession references are recorded.
+
+## Preserve closeout
+
+- [ ] Final authoritative version, unresolved work, unreleased products, preservation record, repository acceptance, future contact, closeout date, and owner are recorded.
+
 ## Handoff and closeout events
 
 - [ ] If responsibility changes: access, locations, known issues, unfinished work, and reproduction steps are recorded and accepted by the incoming owner.

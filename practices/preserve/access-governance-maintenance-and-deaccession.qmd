@@ -1,0 +1,34 @@
+---
+title: "Access, Governance, Maintenance, and Deaccession"
+description: "Maintain authorized access and responsibility while recording migration, supersession, repository change, and deaccession."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - preservation
+  - data-governance
+  - handoff
+owner: GeoEpi Lab
+last-reviewed: 2026-08-07
+review-cycle: annual
+sidebar: practices
+---
+
+Preservation does not mean openness. Preserved content may be public, internal, controlled, restricted, confidential, embargoed, or governed by an agreement or Indigenous, Tribal, or community authority. Record classification, authority, permitted users/uses, request route, restrictions, review or expiry, and responsible contact. Public availability does not grant unrestricted reuse.
+
+Do not silently broaden access as time passes. Review agreement expiration, partner or community direction, privacy/security classification, repository terms, embargo, license, authorization, and custodian changes. FAIR-oriented practice does not require unrestricted access.
+
+## Maintenance ownership
+
+Identify preservation owner, backup owner, repository account owner, access-review owner, technical contact, funding/fee owner, and next review date or trigger. Avoid a personal account as the only control point. Review repository availability, identifier resolution, access, retrieval, checksums, format risk, dependencies, fees, service ownership, legal/agreement changes, and pending migrations proportionately.
+
+## Migration and repository closure
+
+Record original and new package/artifact, reason, tool, responsible person, date, checks, information lost/changed, replacement identifier, and whether the earlier version remains available. Migration does not automatically supersede the earlier record. When a repository, project, service, or organization ends, identify successor ownership, export and verify transfer where authorized, update identifiers/contacts, preserve old-to-new relationships, notify affected users/partners, and retain closeout records.
+
+## Deaccession and supersession
+
+Deaccession means an authorized decision to remove a preserved object or package from active repository custody or access. Before deaccession, confirm authority, holds, retention, partner/community conditions, replacements, rationale, affected users, essential metadata, and destination. Record a durable decision; do not provide deletion commands or imply immediate physical deletion. Superseded and deaccessioned records remain historically identifiable, and replacement packages do not automatically inherit verification or access decisions.

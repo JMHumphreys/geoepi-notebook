@@ -505,3 +505,107 @@
   local_research_note: "Consider for stochastic or empirical simulation publications; not universal."
   review_status: verified
   description: "Structured reporting guidance for empirical simulation studies."
+- id: dpc-digital-preservation-handbook
+  title: "Digital Preservation Handbook"
+  url: "https://www.dpconline.org/handbook"
+  author_or_organization: "Digital Preservation Coalition"
+  resource_type: practical-guide
+  authority_type: preservation-organization
+  topics: [preservation, digital-stewardship, access]
+  license: "Copyright and reuse terms vary by handbook content; verify current terms"
+  access_date: 2026-08-07
+  relevant_sections: [digital-preservation, organisational-activities, media-and-formats]
+  local_research_note: "Practical reference; not an institutional preservation policy."
+  review_status: verified
+  description: "Practical guidance for managing digital resources and sustaining access over time."
+- id: ndsa-levels-digital-preservation
+  title: "Levels of Digital Preservation"
+  url: "https://www.ndsa.org/publications/levels-of-digital-preservation/"
+  author_or_organization: "National Digital Stewardship Alliance"
+  resource_type: assessment-framework
+  authority_type: preservation-community
+  topics: [preservation, integrity, storage, sustainability]
+  license: "Verify current terms"
+  access_date: 2026-08-07
+  relevant_sections: [levels, implementation-guidance, sustainability]
+  local_research_note: "Optional proportional assessment aid; current project materials identify Version 2.1."
+  review_status: verified
+  description: "A maturity-oriented framework for assessing digital preservation practices."
+- id: oais-reference-model
+  title: "Reference Model for an Open Archival Information System (OAIS)"
+  url: "https://ccsds.org/searchpubs/entry/3054/"
+  author_or_organization: "Consultative Committee for Space Data Systems"
+  resource_type: reference-model
+  authority_type: international-standard-body
+  topics: [preservation, archives, information-management]
+  license: "Standard access and reuse terms; verify current terms"
+  access_date: 2026-08-07
+  relevant_sections: [reference-model, preservation-functions]
+  local_research_note: "Contextual reference model; formal OAIS conformance is not required."
+  review_status: verified
+  description: "Reference model for an open archival information system and its preservation functions."
+- id: premis-preservation-metadata
+  title: "PREMIS Preservation Metadata"
+  url: "https://www.loc.gov/standards/premis/"
+  author_or_organization: "Library of Congress PREMIS Maintenance Activity"
+  resource_type: metadata-standard
+  authority_type: library-and-standards-community
+  topics: [preservation, metadata, rights, events]
+  license: "Verify current terms"
+  access_date: 2026-08-07
+  relevant_sections: [version-3, preservation-metadata, implementation]
+  local_research_note: "Optional metadata reference; the current public page identifies Version 3.0."
+  review_status: verified
+  description: "International metadata standard supporting long-term usability of digital objects."
+- id: bagit-rfc8493
+  title: "The BagIt File Packaging Format (RFC 8493)"
+  url: "https://www.rfc-editor.org/info/rfc8493/"
+  author_or_organization: "RFC Editor"
+  resource_type: technical-standard
+  authority_type: internet-standard-community
+  topics: [preservation, packaging, checksums, transfer]
+  license: "RFC Editor terms; verify current terms"
+  access_date: 2026-08-07
+  relevant_sections: [bag-structure, manifests, transfer]
+  local_research_note: "Optional package-transfer format; not required for every project."
+  review_status: verified
+  description: "Technical specification for packaging files and manifests for transfer."
+- id: ro-crate-1-2
+  title: "RO-Crate Metadata Specification 1.2"
+  url: "https://www.researchobject.org/ro-crate/specification/1.2/"
+  author_or_organization: "RO-Crate community"
+  resource_type: metadata-specification
+  authority_type: research-community
+  topics: [preservation, research-objects, provenance, metadata]
+  license: "Apache License 2.0 for specification; verify current terms"
+  access_date: 2026-08-07
+  relevant_sections: [crate-structure, data-entities, provenance, workflows]
+  local_research_note: "Recommendation for describing relationships; formal RO-Crate implementation is not required."
+  review_status: verified
+  description: "Recommendation for describing research objects, files, people, and relationships."
+- id: coretrustseal-requirements-2026-2028
+  title: "CoreTrustSeal Trustworthy Data Repositories Requirements 2026–2028"
+  url: "https://www.coretrustseal.org/why-certification/requirements/"
+  author_or_organization: "CoreTrustSeal"
+  resource_type: repository-assessment-framework
+  authority_type: repository-certification-body
+  topics: [preservation, repositories, trust, assessment]
+  license: "Verify current terms"
+  access_date: 2026-08-07
+  relevant_sections: [requirements-2026-2028, extended-guidance]
+  local_research_note: "Repository assessment evidence, not a universal project or repository requirement."
+  review_status: verified
+  description: "Requirements and supporting guidance for assessing trustworthy data repositories."
+- id: software-heritage-archiving-referencing
+  title: "Software Heritage archiving and referencing guidance"
+  url: "https://docs.softwareheritage.org/"
+  author_or_organization: "Software Heritage"
+  resource_type: software-preservation-guidance
+  authority_type: software-preservation-organization
+  topics: [software, preservation, persistent-identifiers, reproducibility]
+  license: "Verify current terms"
+  access_date: 2026-08-07
+  relevant_sections: [archiving, referencing, SWHID]
+  local_research_note: "Useful for public source code; not required and may not fit restricted or proprietary code."
+  review_status: verified
+  description: "Guidance for archiving and referencing source-code artifacts in Software Heritage."

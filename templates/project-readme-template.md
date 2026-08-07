@@ -57,3 +57,18 @@ Record current owner, intended access transfer, reproduction steps, unfinished w
 - **Superseding version where applicable:**
 
 Keep this orientation section concise; the communication-product and release records remain authoritative.
+
+## Preservation and maintenance
+
+- **Preservation-record location:**
+- **Preservation selection status:**
+- **Preservation package IDs:**
+- **Repository or preservation-storage location:**
+- **Persistent identifiers:**
+- **Access classification:**
+- **Preservation outcome:**
+- **Maintenance owner:**
+- **Next review date or trigger:**
+- **Superseding package where applicable:**
+
+Keep this section concise; the preservation plan remains authoritative.

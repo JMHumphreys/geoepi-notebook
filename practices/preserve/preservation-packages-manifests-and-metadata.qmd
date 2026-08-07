@@ -1,0 +1,38 @@
+---
+title: "Preservation Packages, Manifests, and Metadata"
+description: "Assemble an identifiable package with an inventory, relationships, restrictions, and usable metadata."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - preservation
+  - documentation
+  - reproducibility
+owner: GeoEpi Lab
+last-reviewed: 2026-08-07
+review-cycle: annual
+sidebar: practices
+---
+
+## Package identity and contents
+
+A package should have a package ID, project ID, title, version, creation date, responsible owner, authoritative location, selection record, manifest, relationships, restrictions, and access conditions. Include proportionately a README, manifest, checksums, data and metadata, code, configuration, environment records, analysis/validation, communication/release records, licenses, agreements, citations, limitations, exclusions, and deposit instructions. Never include credentials, tokens, passwords, private keys, or encryption keys.
+
+For each artifact, use exactly: **planned for inclusion**, **included**, **externally referenced**, **excluded with rationale**, **unavailable**, or **superseded**. The safe default is **planned for inclusion**. Included means contained; externally referenced means retained elsewhere under an identifiable durable reference; excluded means deliberately omitted with explanation; unavailable means expected but unobtainable with a limitation; superseded means replaced by an identified artifact/version. Do not rely on temporary personal locations as external preservation references.
+
+An included local file needs a relative package path. An external reference needs a durable identifier and location. An exclusion needs rationale. An unavailable item needs a limitation. A superseded item needs a replacement. A verified local file needs checksum evidence where proportionate. Restricted artifacts identify the restriction without exposing protected content.
+
+For the package manifest, use exactly these verification statuses: **not verified**, **verified**, **verified with limitation**, **failed**, and **not applicable**. The safe default is **not verified**. A verified local artifact requires checksum evidence where proportionate; a failed item records the response or replacement.
+
+## Packaging approaches
+
+The project may use an ordinary documented directory, repository-specific deposit package, BagIt, RO-Crate, or another accepted institutional/domain format. No packaging standard is universal. [BagIt RFC 8493](https://www.rfc-editor.org/info/rfc8493/) can support transfer and checksum manifests; [RO-Crate](https://www.researchobject.org/ro-crate/specification/1.2/) can describe relationships among research artifacts; PREMIS concepts can help describe preservation objects, events, rights, and agents. None is required here.
+
+ZIP, TAR, or another archive may be used for transfer, but the record should also identify contents, format, compression, checksum, extraction test, size, and relevant software. Do not rely on an opaque archive with no external manifest or guide.
+
+## Dynamic sources and metadata
+
+For APIs, databases, dashboards, websites, or changing services, record snapshot date, query and parameters, source version, schema, response/export format, current-through date, workflow, service documentation, and whether the same response can be recreated. Metadata should identify object, version, responsible agent, dates, format, size, checksums, rights, relationships, preservation actions, repository, identifiers, access conditions, and dependencies. It may live in the manifest, README, repository record, release record, or linked durable record; avoid unnecessary duplication.

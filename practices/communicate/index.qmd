@@ -33,7 +33,7 @@ Communication may change form and level of detail, but it must not silently broa
 9. Review the exact product version and record responses.
 10. Decide whether it is ready for release review.
 11. Record the authorized release decision.
-12. Release, withhold, withdraw, or supersede the exact version; retain the history for future Preserve.
+12. Release, withhold, withdraw, or supersede the exact version; transfer selected history to [Preserve](../preserve/index.qmd).
 
 ```{mermaid}
 flowchart TD
@@ -72,4 +72,4 @@ Every superseded product records its replacement ID, replacement version, reason
 
 ## Boundary and return paths
 
-Communicate does not replace Analyze, Validate, Collaborate, legal review, privacy authorization, institutional clearance, or preservation. If communication reveals changed data, methods, parameters, estimates, or outputs, return to Analyze. If it reveals changed scientific support, interpretation, performance evidence, or limitations, return to Validate. If it changes contributors, credit, partner obligations, or decision authority, return to Collaborate. Do not silently correct scientific content only in the product.
+Communicate does not replace Analyze, Validate, Collaborate, legal review, privacy authorization, institutional clearance, or preservation. Released products may proceed to [Preserve](../preserve/index.qmd), while withheld or unreleased products may also be selected for preservation. Correction and supersession records remain part of preserved history; release does not establish deposit or preservation verification. If communication reveals changed data, methods, parameters, estimates, or outputs, return to Analyze. If it reveals changed scientific support, interpretation, performance evidence, or limitations, return to Validate. If it changes contributors, credit, partner obligations, or decision authority, return to Collaborate. Do not silently correct scientific content only in the product.
