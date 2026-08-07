@@ -2,17 +2,21 @@ schema_version: 1
 
 project_id: nws-risk
 subproject_id: nws-bayes-risk
-title: Bayesian NWS Risk Model
-summary: Short description
 
-lead: github-user-or-name
+title: Bayesian NWS Risk Model
+summary: >
+  Joint spatiotemporal modeling of NWS occurrence and abundance.
+
+lead:
+  name: Jane Scientist
+  github: jscientist
+
 status: active
-stage: validation
+current_focus: Prospective validation
 
 repository:
   canonical: geoepi/nws-bayes-risk
-  upstream:
-  relationship: canonical
+  upstream: null
 
 compute:
   - Atlas
@@ -20,7 +24,3 @@ compute:
 next_milestone:
   description: Complete prospective validation
   target: 2026-09-01
-
-products: []
-
-metadata_updated: 2026-08-07

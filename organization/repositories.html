@@ -200,7 +200,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../organization/project-hub.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">The GeoEpi Project Hub</span></a>
+ <span class="menu-text">GeoEpi Hub</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -225,7 +225,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#a-canonical-repository-should-make-clear" id="toc-a-canonical-repository-should-make-clear" class="nav-link active" data-scroll-target="#a-canonical-repository-should-make-clear">A canonical repository should make clear</a></li>
+  <li><a href="#minimum-subproject-repository" id="toc-minimum-subproject-repository" class="nav-link active" data-scroll-target="#minimum-subproject-repository">Minimum subproject repository</a></li>
+  <li><a href="#a-canonical-repository-should-make-clear" id="toc-a-canonical-repository-should-make-clear" class="nav-link" data-scroll-target="#a-canonical-repository-should-make-clear">A canonical repository should make clear</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/organization/repositories.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/organization/repositories.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -258,6 +259,24 @@ ul.task-list li input[type="checkbox"] {
 
 <p>GeoEpi subproject repositories will normally be located in the <a href="https://github.com/geoepi">GeoEpi GitHub organization</a>, but the operating model also permits repositories in individual GitHub accounts, forks, external upstreams, and collaborator-owned organizations.</p>
 <p>Every subproject should identify one canonical working repository. The future Hub points to that repository. It does not need to catalog every fork, mirror, or temporary branch.</p>
+<section id="minimum-subproject-repository" class="level2">
+<h2 class="anchored" data-anchor-id="minimum-subproject-repository">Minimum subproject repository</h2>
+<p>A GeoEpi subproject repository should normally contain:</p>
+<ul>
+<li><code>README.md</code>;</li>
+<li><code>.gitignore</code>;</li>
+<li><code>.geoepi.yml</code>;</li>
+<li>scientific code or workflow appropriate to the workstream;</li>
+<li>enough environment or dependency information to reproduce consequential work;</li>
+<li>a clear workflow or execution entry point;</li>
+<li>documented principal data inputs;</li>
+<li>controlled-data IDs when controlled project data are used;</li>
+<li>documented public or external analytical sources;</li>
+<li>clear output locations;</li>
+<li>known limitations or current issues where consequential.</li>
+</ul>
+<p>This is a minimum adoption standard, not a universal folder tree. Do not require directories such as <code>R/</code>, <code>scripts/</code>, <code>src/</code>, <code>tests/</code>, <code>docs/</code>, <code>config/</code>, <code>data/</code>, or <code>outputs/</code> for every workstream. Repository organization should serve the analytical workflow.</p>
+</section>
 <section id="a-canonical-repository-should-make-clear" class="level2">
 <h2 class="anchored" data-anchor-id="a-canonical-repository-should-make-clear">A canonical repository should make clear</h2>
 <ul>

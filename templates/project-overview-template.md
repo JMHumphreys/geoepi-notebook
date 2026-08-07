@@ -7,7 +7,7 @@
 - **Short objective:**
 - **Project lead:**
 - **Collaborators and partners:**
-- **Status:** planned / active / paused / complete
+- **Status:** planned / active / paused / complete / archived
 
 ## Current work
 

@@ -8,7 +8,7 @@
 
 <meta name="description" content="What belongs in the future lab-level project portfolio.">
 
-<title>The GeoEpi Project Hub – GeoEpi Lab Book</title>
+<title>GeoEpi Hub – GeoEpi Lab Book</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -180,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../organization/project-hub.html">The GeoEpi Project Hub</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../organization/project-hub.html">GeoEpi Hub</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -201,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../organization/project-hub.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">The GeoEpi Project Hub</span></a>
+ <span class="menu-text">GeoEpi Hub</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -227,7 +227,9 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#what-a-project-entry-contains" id="toc-what-a-project-entry-contains" class="nav-link active" data-scroll-target="#what-a-project-entry-contains">What a project entry contains</a></li>
-  <li><a href="#what-does-not-belong-in-the-hub" id="toc-what-does-not-belong-in-the-hub" class="nav-link" data-scroll-target="#what-does-not-belong-in-the-hub">What does not belong in the Hub</a></li>
+  <li><a href="#minimal-project-entry-structure" id="toc-minimal-project-entry-structure" class="nav-link" data-scroll-target="#minimal-project-entry-structure">Minimal project-entry structure</a></li>
+  <li><a href="#access-boundary" id="toc-access-boundary" class="nav-link" data-scroll-target="#access-boundary">Access boundary</a></li>
+  <li><a href="#human-maintained-and-generated-content" id="toc-human-maintained-and-generated-content" class="nav-link" data-scroll-target="#human-maintained-and-generated-content">Human-maintained and generated content</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/JMHumphreys/geoepi-notebook/edit/main/organization/project-hub.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/JMHumphreys/geoepi-notebook/blob/main/organization/project-hub.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -236,7 +238,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">The GeoEpi Project Hub</h1>
+<h1 class="title">GeoEpi Hub</h1>
 </div>
 
 <div>
@@ -258,39 +260,51 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>GeoEpi will ultimately maintain one lab-level Hub, normally within the <a href="https://github.com/geoepi">geoepi GitHub organization</a>. The Hub represents the lab’s complete project portfolio. It is not an analysis repository and not an HPC run registry.</p>
+<p>GeoEpi will ultimately maintain one lab-level <strong>GeoEpi Hub</strong>, normally within the <a href="https://github.com/geoepi">geoepi GitHub organization</a>. The GeoEpi Hub is a shared project-management and portfolio repository. It is not an analysis repository and not an HPC run registry.</p>
+<p>Information stored directly in the GeoEpi Hub must be appropriate for everyone who has access to that repository. GitHub repository permissions generally do not provide project-folder-specific access control.</p>
 <section id="what-a-project-entry-contains" class="level2">
 <h2 class="anchored" data-anchor-id="what-a-project-entry-contains">What a project entry contains</h2>
-<p>A project entry should make the project understandable to collaborators who do not have SCINet or HPC access. It can link to or contain:</p>
+<p>An individual folder in the GeoEpi Hub is a <strong>project entry</strong>. It should make the project understandable to collaborators who do not have SCINet or HPC access. The project README or overview should normally carry:</p>
 <ul>
-<li>project scope and objective;</li>
-<li>people, responsibilities, and contact points;</li>
-<li>milestones and major decisions;</li>
-<li>deliverables and products;</li>
-<li>a project-level <a href="../data/data-management-plans.html">Data Management Plan</a>;</li>
-<li>a <a href="../data/controlled-data.html">controlled-data inventory</a>;</li>
-<li>a registry of canonical subproject repositories;</li>
-<li>links to reports, manuscripts, dashboards, and other products.</li>
+<li>project identity and objective;</li>
+<li>project leads and collaborators;</li>
+<li>status and current milestone;</li>
+<li>major deliverables;</li>
+<li>links to the project Data Management Plan and controlled-data inventory;</li>
+<li>canonical subproject repository links;</li>
+<li>product links;</li>
+<li>references to agreements or restricted resources where appropriate.</li>
 </ul>
-<p>A future Hub project might look conceptually like this:</p>
+<p>The Hub may contain project identity and objective, leads and collaborators, milestones, major non-sensitive decisions, deliverables, controlled-data metadata, Data Management Plans, canonical repository links, product links, and references to restricted resources.</p>
+</section>
+<section id="minimal-project-entry-structure" class="level2">
+<h2 class="anchored" data-anchor-id="minimal-project-entry-structure">Minimal project-entry structure</h2>
+<p>Keep the project entry deliberately small:</p>
 <pre class="text"><code>projects/
   nws-risk/
     README.md
-    scope/
-    people-and-responsibilities.md
-    milestones.md
     decisions.md
-    deliverables.md
     data/
       data-management-plan.md
       controlled-data-inventory.csv
     subprojects.yml
     products.yml</code></pre>
-<p>This is an architecture and template target, not a repository to create in this phase. Use the <a href="../templates/project-overview-template.md">project overview template</a> to shape a future project folder.</p>
+<p>Complex projects may add <code>scope.md</code>, <code>people.md</code>, <code>milestones.md</code>, or <code>deliverables.md</code>, but these are not required as separate files when the project README already communicates the information clearly. Use the <a href="../templates/project-overview-template.md">project overview template</a> to shape a future project entry.</p>
 </section>
-<section id="what-does-not-belong-in-the-hub" class="level2">
-<h2 class="anchored" data-anchor-id="what-does-not-belong-in-the-hub">What does not belong in the Hub</h2>
-<p>Run parameters, package versions, random seeds, SLURM job IDs, input manifests, logs, output manifests, and detailed analytical decisions stay in the subproject repository or computational storage. The Hub points to the canonical repository; it does not attempt to catalog every fork or duplicate every run.</p>
+<section id="access-boundary" class="level2">
+<h2 class="anchored" data-anchor-id="access-boundary">Access boundary</h2>
+<p>The GeoEpi Hub should not contain controlled data themselves, credentials or tokens, sensitive personnel information, confidential partner communications, restricted agreements when repository access is too broad, or sensitive operational information inappropriate for all Hub users.</p>
+<p>Where restricted material exists, record its existence and authoritative approved location when appropriate. <strong>The Hub records where restricted resources belong; it does not need to contain the restricted resources themselves.</strong> Do not invent institutional security classifications; follow the applicable agreement, security guidance, and institutional direction.</p>
+</section>
+<section id="human-maintained-and-generated-content" class="level2">
+<h2 class="anchored" data-anchor-id="human-maintained-and-generated-content">Human-maintained and generated content</h2>
+<p>The intended future division is:</p>
+<pre class="text"><code>projects/                         human-maintained project records
+project subprojects.yml files     human-maintained canonical pointers
+generated/                         automation-owned portfolio summaries</code></pre>
+<p>Future files beneath <code>generated/</code> should not normally be edited manually. Examples might include <code>generated/subproject-status.csv</code>, <code>generated/portfolio-summary.yml</code>, and <code>generated/stale-subprojects.csv</code>. These are examples only; they are not created in this phase.</p>
+<p>Future automation should follow the principle: <strong>Synchronize project state, not project content.</strong></p>
+<p>Run parameters, package versions, random seeds, SLURM job IDs, input manifests, logs, output manifests, and detailed analytical decisions stay in the subproject repository or computational storage. The GeoEpi Hub points to canonical repositories and project context; it does not duplicate every run.</p>
 
 
 </section>
