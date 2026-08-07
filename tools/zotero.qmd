@@ -1,0 +1,8 @@
+---
+title: "Zotero"
+description: "Use the shared literature library for discoverable GeoEpi references."
+---
+
+[Zotero](https://www.zotero.org/) is the preferred location for GeoEpi shared literature libraries. Shared collections make references easier for collaborators to find and maintain.
+
+Individuals may use other reference managers for personal workflows. When a paper or source matters to a shared project, add it to the appropriate shared library or record enough citation information in the project’s documentation for others to locate it.

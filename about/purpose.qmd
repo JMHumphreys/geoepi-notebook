@@ -1,29 +1,10 @@
 ---
 title: "Purpose of the Lab Book"
-description: "Why the GeoEpi Lab Book exists and what it will contain."
-status: draft
-practice-level: orientation
-audience:
-  - all-lab-members
-domains:
-  - all
-topics:
-  - purpose
-  - continuity
-  - reproducibility
-owner: GeoEpi Lab
-last-reviewed: 2026-08-05
-review-cycle: annual
+description: "Why the GeoEpi Lab Book exists and who it is for."
 ---
 
-## Why this matters
+The GeoEpi Lab Book is a practical guide for GeoEpi scientists and collaborators. It helps people organize collaborative, computationally intensive geographical epidemiology so that work remains understandable, scientifically defensible, reproducible where access permits, and possible to continue when people or projects change.
 
-Geographical epidemiology joins data, place, time, biology, and models. Small undocumented choices can change an analysis, while staff changes and long timelines can make a sound result difficult to recover.
+It is a living guide, not an administrative compliance manual or a substitute for scientific judgment, data-use agreements, security requirements, funder terms, or institutional policy. GeoEpi conventions are stated as conventions; stronger language is reserved for genuine scientific, security, contractual, or institutional requirements.
 
-## What this site is for
-
-The Lab Book collects concise, reviewable guidance for planning, acquiring, organizing, analyzing, validating, collaborating, communicating, and preserving research. It points to templates and external resources without replacing primary methods papers, data-use agreements, or formal institutional policies. The Lab Book remains distinct from the [GeoEpi organization website](https://geoepi.github.io/) and [GitHub organization](https://github.com/geoepi).
-
-## What this site is not
-
-This is not a complete textbook, a substitute for scientific judgment, or an approved policy register. Requirements will be labeled and approved explicitly; until then, content is draft guidance.
+The audience includes computational scientists as well as veterinarians, microbiologists, virologists, entomologists, field epidemiologists, wildlife managers, and other domain experts. The organization should remain understandable outside HPC and command-line environments.

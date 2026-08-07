@@ -1,0 +1,43 @@
+---
+title: "The GeoEpi Project Hub"
+description: "What belongs in the future lab-level project portfolio."
+---
+
+GeoEpi will ultimately maintain one lab-level Hub, normally within the [geoepi GitHub organization](https://github.com/geoepi). The Hub represents the lab’s complete project portfolio. It is not an analysis repository and not an HPC run registry.
+
+## What a project entry contains
+
+A project entry should make the project understandable to collaborators who do not have SCINet or HPC access. It can link to or contain:
+
+- project scope and objective;
+- people, responsibilities, and contact points;
+- milestones and major decisions;
+- deliverables and products;
+- a project-level [Data Management Plan](../data/data-management-plans.qmd);
+- a [controlled-data inventory](../data/controlled-data.qmd);
+- a registry of canonical subproject repositories;
+- links to reports, manuscripts, dashboards, and other products.
+
+A future Hub project might look conceptually like this:
+
+```text
+projects/
+  nws-risk/
+    README.md
+    scope/
+    people-and-responsibilities.md
+    milestones.md
+    decisions.md
+    deliverables.md
+    data/
+      data-management-plan.md
+      controlled-data-inventory.csv
+    subprojects.yml
+    products.yml
+```
+
+This is an architecture and template target, not a repository to create in this phase. Use the [project overview template](../templates/project-overview-template.md) to shape a future project folder.
+
+## What does not belong in the Hub
+
+Run parameters, package versions, random seeds, SLURM job IDs, input manifests, logs, output manifests, and detailed analytical decisions stay in the subproject repository or computational storage. The Hub points to the canonical repository; it does not attempt to catalog every fork or duplicate every run.

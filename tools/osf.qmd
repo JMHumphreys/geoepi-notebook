@@ -1,0 +1,8 @@
+---
+title: "OSF"
+description: "Use OSF when collaborators need an accessible research workspace or sharing location."
+---
+
+[OSF](https://osf.io/) can provide a collaborator-accessible location for research objects, project resources, or data sharing when it fits the project and access requirements. It complements GitHub and computational storage; it does not replace the canonical subproject repository or the project Hub.
+
+Choose the location that matches the data, agreement, preservation, and collaboration needs. Restricted or sensitive data should remain in an approved restricted system.

@@ -1,0 +1,16 @@
+---
+title: "Atlas and Ceres"
+description: "The GeoEpi computational and storage environments."
+---
+
+Atlas and Ceres are GeoEpi computational and storage environments used for:
+
+- controlled or large data where approved;
+- preprocessed and intermediate data;
+- HPC execution;
+- logs and temporary computational objects;
+- large outputs.
+
+They are not the authoritative location for project scope, collaborator roles, data-management plans, project decisions, or general project documentation. Those records need to be accessible to collaborators without SCINet or HPC access, usually through project documentation and repositories.
+
+Do not assume that a platform is approved for every data class. Follow the applicable data-use agreement, security guidance, and institutional direction. Keep credentials out of repositories, scripts, configuration committed to Git, and logs.

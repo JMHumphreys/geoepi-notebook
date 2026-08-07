@@ -1,0 +1,21 @@
+---
+title: "How GeoEpi Organizes Work"
+description: "The GeoEpi Hub, projects, subprojects, repositories, runs, and products."
+---
+
+GeoEpi organizes work as a network rather than a single directory. The lab-level Hub provides the project portfolio and shared context. Each coherent analytical workstream has a canonical subproject repository. Computation and large data live in the appropriate computational environment, and accepted outputs move into project synthesis and dissemination systems.
+
+## The vocabulary
+
+| Term | Meaning |
+|---|---|
+| **Hub** | The future lab-level portfolio in the [GeoEpi GitHub organization](https://github.com/geoepi). It holds project context and coordination. |
+| **Project** | A broad scientific or operational objective with people, data, analytical workstreams, and products. |
+| **Subproject** | One independently understandable and executable analytical, software, data-acquisition, modeling, genomic, dashboard, or related workstream. |
+| **Repository** | The canonical Git repository for a subproject’s scientific implementation. |
+| **Run** | One computational execution and its parameters, environment, inputs, logs, outputs, and validation details. |
+| **Product** | A manuscript, report, dashboard, released dataset, operational output, or other accepted scientific result. |
+
+Read the [Hub architecture](project-hub.qmd), [project and subproject guidance](projects-and-subprojects.qmd), and [repository guidance](repositories.qmd) for practical decisions.
+
+The Hub is planned for a future phase. This refactor documents the architecture and provides templates; it does not create the Hub or implement cross-repository automation.

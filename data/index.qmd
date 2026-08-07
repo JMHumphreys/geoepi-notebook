@@ -1,0 +1,18 @@
+---
+title: "Data Management"
+description: "Keep project stewardship, controlled-data inventory, and analytical provenance distinct."
+---
+
+GeoEpi uses three related records for three different questions:
+
+| Record | Question it answers |
+|---|---|
+| **Project DMP** | How will this project manage its data? |
+| **Controlled-data inventory** | What important controlled or project-generated data actually exist? |
+| **Subproject analytical provenance** | Exactly which data did this analysis use, and how were they processed? |
+
+The project DMP and controlled-data inventory belong with project context in the Hub. Analytical provenance belongs with the subproject that acquires or uses the data. Do not collapse these into one giant record, and do not require every subproject to maintain a separate formal DMP.
+
+The guiding idea is **as open as possible and as restricted as necessary**. Controlled, proprietary, partner-provided, sensitive, contractual, or otherwise restricted data may remain restricted.
+
+Continue to [Project DMPs](data-management-plans.qmd), [Controlled data](controlled-data.qmd), or [Analytical provenance](analytical-provenance.qmd).

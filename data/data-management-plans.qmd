@@ -1,0 +1,19 @@
+---
+title: "Project Data Management Plans"
+description: "A concise project-level plan based on USDA NAL guidance."
+---
+
+A Data Management Plan is a **project-level** plan for how data will be generated, managed, protected, shared, and preserved. It is not a run record and does not need to be duplicated for every subproject.
+
+For the conceptual structure, GeoEpi follows the six categories described by the [USDA National Agricultural Library](https://www.nal.usda.gov/services/data-management-planning), with [ICPSR data-management guidance](https://www.icpsr.umich.edu/sites/icpsr/manage-data) as a secondary reference:
+
+1. **Expected data types** — what the project will collect, create, receive, or reuse, including useful metadata.
+2. **Data formats and standards** — formats, schemas, data dictionaries, and community standards.
+3. **Data storage and preservation** — working locations, authoritative copies, backup/recovery, retention, and long-term preservation.
+4. **Data sharing, protection, and public access** — access levels, restrictions, agreements, licenses, embargoes, and release plans.
+5. **Roles and responsibilities** — who manages data, maintains access, handles transitions, and supplies needed resources.
+6. **Monitoring and review/reporting** — how implementation, sharing, and changes will be reviewed and reported.
+
+Keep the plan specific enough to guide the project, but proportional to its data and risks. Review it when the project’s data, agreements, storage, people, or products change. Include a review date and responsible person.
+
+Start with the [DMP template](../templates/data-management-plan-template.md). The NAL page describes USDA and ARS contexts; GeoEpi uses it here as the primary conceptual source and does not infer additional USDA or institutional requirements from it.

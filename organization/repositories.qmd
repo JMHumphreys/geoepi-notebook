@@ -1,0 +1,20 @@
+---
+title: "Canonical Repositories"
+description: "How a subproject repository relates to GitHub, forks, and upstream work."
+---
+
+GeoEpi subproject repositories will normally be located in the [GeoEpi GitHub organization](https://github.com/geoepi), but the operating model also permits repositories in individual GitHub accounts, forks, external upstreams, and collaborator-owned organizations.
+
+Every subproject should identify one canonical working repository. The future Hub points to that repository. It does not need to catalog every fork, mirror, or temporary branch.
+
+## A canonical repository should make clear
+
+- its parent project and subproject purpose;
+- the lead or contact and current status;
+- principal data inputs and controlled-data IDs;
+- public or external data sources;
+- the computational location;
+- workflow entry points and expected outputs;
+- reproducibility information and known limitations.
+
+GitHub is generally used for code, version control, documentation, collaboration, and subproject repositories. Do not put credentials, tokens, controlled data, or large computational outputs in a repository. See [Repository versus compute](../compute/repository-vs-compute.qmd) for the boundary with Atlas and Ceres.

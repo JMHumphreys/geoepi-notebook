@@ -1,0 +1,20 @@
+---
+title: "Subproject Analytical Provenance"
+description: "Record exactly what an analysis used and how it was processed."
+---
+
+Analytical provenance belongs in the subproject repository and its computational storage. It should let another contributor identify the data snapshot, acquisition or processing code, configuration, software environment, model or analysis settings, and output produced for a particular result.
+
+For a run, this may include:
+
+- source and derived data IDs or versions;
+- acquisition dates and public-source URLs;
+- transformations, filters, joins, and quality checks;
+- code, configuration, package or container versions;
+- model parameters, random seeds, replicate definitions, and scenario names;
+- execution location, SLURM job IDs, logs, and output manifests;
+- validation details, warnings, limitations, and review status.
+
+The project DMP does not replace this record, and the controlled-data inventory does not need to contain every public input or every run. Keep each record at the level that makes the work recoverable without copying restricted data into the repository.
+
+See [Repository versus compute](../compute/repository-vs-compute.qmd) for where run details and large files should live.

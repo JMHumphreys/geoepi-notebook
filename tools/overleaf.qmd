@@ -1,0 +1,8 @@
+---
+title: "Overleaf and LaTeX"
+description: "Use collaborative document tools where they fit the product."
+---
+
+GeoEpi generally prefers [Overleaf](https://www.overleaf.com/) and LaTeX for collaborative manuscripts and technical documents, particularly when a document contains equations, complex scientific formatting, or a publisher-specific LaTeX workflow.
+
+Keep the manuscript’s source, references, figures, review decisions, and release relationship understandable to the project team. Link the document to the relevant project and subproject repositories or Hub records, while following collaborator and publisher access requirements.

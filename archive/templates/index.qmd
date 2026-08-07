@@ -1,0 +1,53 @@
+---
+title: "Templates"
+description: "Reusable starting points for project documentation and research continuity."
+status: draft
+practice-level: orientation
+audience:
+  - all-lab-members
+domains:
+  - all
+topics:
+  - templates
+  - documentation
+owner: GeoEpi Lab
+last-reviewed: 2026-08-05
+review-cycle: annual
+sidebar: templates
+listing:
+  contents: .
+  type: table
+  fields: [title, description, status]
+---
+
+The template library reduces blank-page friction without forcing every project into one shape. Copy the plain-text files into another repository and adapt them to the project.
+
+| Template | Format | Use |
+|---|---|---|
+| <a href="project-readme-template.md" download>Project README</a> | Markdown | Root orientation, setup, outputs, restrictions, and handoff |
+| <a href="project-charter-template.md" download>Project charter</a> | Markdown | Separate charter when contributors, persistence, funding, publication, operations, sensitivity, cost, handoff, or policy use justify it |
+| <a href="data-source-inventory-template.csv" download>Data-source inventory</a> | CSV | Source, access, version, restriction, and provenance seed |
+| <a href="data-dictionary-template.csv" download>Data dictionary</a> | CSV | Variables, units, codes, missingness, and derivations |
+| <a href="project-exception-record.md" download>Exception record</a> | Markdown | Formal deviations and compensating controls |
+| <a href="project-readiness-checklist.md" download>Readiness checklist</a> | Markdown | Lifecycle gate review |
+| <a href="project-handoff-template.md" download>Handoff record</a> | Markdown | Transfer of access, context, and unfinished work |
+| <a href="project-closeout-template.md" download>Closeout record</a> | Markdown | Final version, archive, retention, and maintenance |
+| <a href="result-traceability-template.csv" download>Result traceability</a> | CSV | Inputs, code, parameters, environment, runs, outputs, review, and status |
+| <a href="hpc-run-record-template.yml" download>HPC run record</a> | YAML | Scheduler, resources, environment, inputs, outputs, logs, exit status, and retry state |
+| <a href="data-intake-record-template.md" download>Data-intake record</a> | Markdown | Delivery identity, inspection, discrepancies, restrictions, and acceptance decision |
+| <a href="data-file-manifest-template.csv" download>Data-file manifest</a> | CSV | File/object identity, checksums, validation status, and superseded deliveries |
+| <a href="data-transformation-ledger-template.csv" download>Data-transformation ledger</a> | CSV | Source-to-staged inputs, code, configuration, outputs, status, and QA |
+| <a href="staged-dataset-record-template.yml" download>Staged-dataset record</a> | YAML | Dataset identity, provenance, schema, spatial-temporal meaning, restrictions, and readiness |
+| <a href="analysis-specification-template.md" download>Analysis specification</a> | Markdown | Analysis purpose, target, data version, method, settings, classifications, changes, and readiness |
+| <a href="analysis-run-record-template.yml" download>Analysis run record</a> | YAML | One analysis execution, inputs, settings, environment, outputs, warnings, and status |
+| <a href="validation-plan-template.md" download>Validation plan</a> | Markdown | Intended use, candidate results, validation questions, evidence, and review plan |
+| <a href="validation-record-template.md" download>Validation record</a> | Markdown | Checks, evidence, limitations, scope, and validation conclusion |
+| <a href="collaboration-agreement-template.md" download>Collaboration agreement</a> | Markdown | Roles, decisions, shared records, access, review, credit, partners, continuity, and communication readiness |
+| <a href="contribution-and-credit-record-template.md" download>Contribution and credit record</a> | Markdown | Actual contributions, recognition discussion, optional CRediT vocabulary, and unresolved credit questions |
+| <a href="communication-product-record-template.md" download>Communication-product record</a> | Markdown | Audience, claims, evidence, review, availability, accessibility, and release-review readiness |
+| <a href="release-record-template.md" download>Release record</a> | Markdown | Release decision, exact release event, corrections, withdrawal, and supersession |
+| <a href="preservation-plan-template.md" download>Preservation plan and record</a> | Markdown | Selection, package, deposit, verification, access, and maintenance |
+| <a href="preservation-package-manifest-template.csv" download>Preservation package manifest</a> | CSV | Artifact inventory, inclusion, checksums, access, and verification |
+| [Guidance page authoring template](authoring-template.qmd) | Quarto | New Lab Book pages |
+
+Templates are examples until explicitly adopted; adapt them to the project and document meaningful deviations.
