@@ -1,0 +1,36 @@
+---
+title: "Continuity, Onboarding, and Handoff"
+description: "Transfer responsibility, access, context, and unfinished work without losing scientific continuity."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - collaboration
+  - handoff
+  - reproducibility
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+## Onboarding
+
+Give a new contributor the project purpose, current phase, authoritative locations, relevant data restrictions, current analysis and validation versions, active reviews, open decisions, expected next action, and contact for questions. Access should be granted through the approved system and limited to the person’s purpose.
+
+## Continuity
+
+For work that is long-running, costly, operational, externally funded, or high-consequence, identify backup responsibility, current status location, principal workflow entry point, access owner, scheduled jobs or services, and conditions requiring coverage. Do not make a personal workspace the only place where critical context exists.
+
+## Handoff
+
+A formal handoff should identify outgoing and incoming responsibility, current analysis and validation versions, result IDs, repositories and data locations, reproduction steps, known issues and limitations, unfinished work, active reviewers, unresolved scientific or credit disagreements, partner obligations, accounts or services requiring transfer, access removal, and acceptance by the incoming owner. A handoff is not complete until responsibility and access are accepted or limitations are recorded.
+
+Use the [project handoff template](../../templates/project-handoff-template.md) when a separate record is warranted. Never include credentials; transfer access through the approved system.
+
+## Return and closeout
+
+If a change to data, analysis, validation, or result is needed, record the required return to that lifecycle stage. Preserve the earlier records and identify replacement versions rather than silently overwriting them. Collaboration does not complete final preservation or records-retention decisions.

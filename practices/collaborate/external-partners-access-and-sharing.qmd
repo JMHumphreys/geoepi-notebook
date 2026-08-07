@@ -1,0 +1,33 @@
+---
+title: "External Partners, Access, and Sharing"
+description: "Coordinate partner conditions and access without treating participation as authorization."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - collaboration
+  - data-governance
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+## Partner conditions
+
+Identify organizations, partner contacts, responsibilities, consultation or review conditions, sharing restrictions, agreement references, and continuity contacts. Record references rather than copying protected terms or interpreting a contract. External agreements and community authority take precedence over this draft guidance.
+
+## Access follows authorization
+
+Participation does not automatically grant access to every dataset, repository, system, credential, or protected output. Record who authorizes access, what purpose and scope apply, how access is transferred or removed, and which outputs may be shared. Never place credentials in a project record or repository.
+
+## Consultation and decision authority
+
+Distinguish partner consultation, required review, decision authority, and release authority. A partner may need to review a result or approve a use under an applicable agreement; documentation alone does not grant that authority or permission.
+
+## Sharing and communication
+
+Record restrictions, license or agreement references, confidentiality conditions, de-identification or aggregation expectations where applicable, and the intended communication product. Ready for communication means ready to begin coordinated preparation; it does not authorize public release, operational use, or unrestricted sharing.
