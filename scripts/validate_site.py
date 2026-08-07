@@ -9,6 +9,24 @@ from urllib.parse import parse_qs, urlparse
 ROOT = Path(__file__).resolve().parents[1]
 REQUIRED = {"title", "description", "status", "practice-level", "audience", "domains", "topics", "owner", "last-reviewed", "review-cycle"}
 errors = []
+OWNER_SUPPLIED_RESOURCE_URLS = {
+    "primer-ecology-r": "https://hankstevens.github.io/Primer-of-Ecology/index.html",
+    "landscape-genetic-data-r": "https://bookdown.org/hhwagner1/LandGenCourse_book/",
+    "quantitative-biology": "https://www.quantitative-biology.ca/",
+    "comparative-methods": "https://bookdown.org/bomeara/comparative-methods/",
+    "spatial-data-science": "https://keen-swartz-3146c4.netlify.app/",
+    "statistical-rethinking": "https://xcelab.net/rm/statistical-rethinking/",
+    "applied-population-genetics": "https://dyerlab.github.io/applied_population_genetics/index.html",
+    "epidemiologist-r-handbook": "https://epirhandbook.com/en/index.html",
+    "network-analysis-r": "https://yunranchen.github.io/intro-net-r/index.html",
+    "molecular-epi-r": "https://gtpb.github.io/MEVR16/index.html",
+    "intro-gis-spatial": "https://mgimond.github.io/Spatial/coordinate-systems-in-r.html",
+    "ecosystem-forecasting": "https://frec-5174c.github.io/eco4cast-in-R-book/",
+    "computational-genomics-manual": "https://linsalrob.github.io/ComputationalGenomicsManual/",
+    "spatial-data-processing-r": "https://jguelat.github.io/spatial-r/",
+    "geocomputation-with-r": "https://r.geocompx.org/",
+    "network-analysis-integrating": "https://inarwhal.github.io/NetworkAnalysisR-book/",
+}
 
 
 def normalize_url(value):
@@ -55,6 +73,20 @@ def validate_resources():
     if not catalog:
         errors.append(f"{catalog_path}: no catalog entries found")
         return
+    catalog_by_id = {entry.get("id"): entry for entry in catalog}
+    for entry_id, expected_url in OWNER_SUPPLIED_RESOURCE_URLS.items():
+        entry = catalog_by_id.get(entry_id)
+        if entry is None:
+            errors.append(f"{catalog_path}: missing owner-supplied resource {entry_id}")
+            continue
+        found_url = entry.get("url")
+        if found_url != expected_url:
+            errors.append(
+                f"owner-supplied resource URL changed for {entry_id}\n"
+                f"expected: {expected_url}\nfound: {found_url}"
+            )
+        if entry.get("source_selection") != "owner-supplied":
+            errors.append(f"{catalog_path}: {entry_id} is missing source_selection: owner-supplied")
     ids = []
     catalog_urls = []
     seen_pairs = set()
