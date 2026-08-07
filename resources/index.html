@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="An annotated catalog of external resources for future GeoEpi guidance.">
+<meta name="description" content="An annotated catalog of external resources for GeoEpi research guidance.">
 
 <title>Resources – GeoEpi Lab Book</title>
 <style>
@@ -81,8 +81,8 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-description','listing-author','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
-      page: 30,
+      valueNames: ['listing-id','listing-title','listing-url','listing-author_or_organization','listing-resource_type','listing-authority_type','listing-topics','listing-license','listing-access_date','listing-relevant_sections','listing-local_research_note','listing-review_status','listing-description',{ data: ['index'] },{ data: ['categories'] }],
+      page: 25,
     pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-id","listing-title","listing-url","listing-author_or_organization","listing-resource_type","listing-authority_type","listing-topics","listing-license","listing-access_date","listing-relevant_sections","listing-local_research_note","listing-review_status","listing-description"],
     };
@@ -248,7 +248,7 @@ window.Quarto = {
 
 <div>
   <div class="description">
-    An annotated catalog of external resources for future GeoEpi guidance.
+    An annotated catalog of external resources for GeoEpi research guidance.
   </div>
 </div>
 
@@ -265,7 +265,8 @@ window.Quarto = {
 </header>
 
 
-<p>The <a href="catalog.yml">resource catalog</a> records external starting points without turning them into lab policy. Annotations are intentionally short and original. Check the source landing page, license, version, and access conditions before relying on a resource.</p>
+<p>The <a href="catalog.yml">resource catalog</a> records external starting points without turning them into lab policy. Select a resource title to open its external landing page. Annotations are intentionally short and original. Check the source landing page, current version, license, and access conditions before relying on a resource.</p>
+<p>Some entries are authoritative standards or official guidance; others are practical references or orientation material. Inclusion is not endorsement, and users should verify that a resource is current and appropriate for their work.</p>
 <p>Each entry has a stable ID, title, URL, author or organization, resource and authority types, topic tags, license, access date, relevant sections, a local research-note path, review status, and a short annotation. Unknown or unverified values are marked explicitly.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -284,802 +285,395 @@ Warning
 
 
 
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-title-sort" data-direction="asc">
-        Title
-      </option>
-      <option value="listing-description" data-direction="asc">
-        Description
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<table class="quarto-listing-table table">
+<div class="quarto-listing quarto-listing-container-custom" id="listing-listing">
+<table class="table caption-top" data-quarto-postprocess="true">
 <thead>
-<tr>
-
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
-
-<th>
-<a class="sort" data-sort="listing-description" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Description</a>
-</th>
-
-<th>
-Author
-</th>
-
-<th>
-Categories
-</th>
-
+<tr class="header">
+<th data-quarto-table-cell-role="th">Resource</th>
+<th data-quarto-table-cell-role="th">Description</th>
+<th data-quarto-table-cell-role="th">Author or organization</th>
+<th data-quarto-table-cell-role="th">Type</th>
+<th data-quarto-table-cell-role="th">Topics</th>
+<th data-quarto-table-cell-role="th">Review status</th>
 </tr>
 </thead>
 <tbody class="list">
-
-<tr data-index="0" data-listing-title-sort="A Primer of Ecology with R">
-<td>
-<span class="listing-title">A Primer of Ecology with R</span>
-</td>
-<td>
-<span class="listing-description">Quantitative ecology concepts and R-based models.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="odd" data-index="0">
+<td class="listing-title"><a href="https://link.springer.com/book/10.1007/978-0-387-89882-7">A Primer of Ecology with R</a></td>
+<td class="listing-description">Quantitative ecology concepts and R-based models.</td>
+<td class="listing-author_or_organization">M. Henry H. Stevens</td>
+<td class="listing-resource_type">book</td>
+<td class="listing-topics">ecology, R</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="1" data-listing-title-sort="Landscape Genetic Data Analysis with R">
-<td>
-<span class="listing-title">Landscape Genetic Data Analysis with R</span>
-</td>
-<td>
-<span class="listing-description">Seed entry for landscape-genetics workflows.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="even" data-index="1">
+<td class="listing-title"><a href="https://www.springer.com/search?query=Landscape+Genetic+Data+Analysis+with+R">Landscape Genetic Data Analysis with R</a></td>
+<td class="listing-description">Seed entry for landscape-genetics workflows.</td>
+<td class="listing-author_or_organization">Springer Nature</td>
+<td class="listing-resource_type">book</td>
+<td class="listing-topics">landscape-genetics, spatial, R</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="2" data-listing-title-sort="Quantitative Biology">
-<td>
-<span class="listing-title">Quantitative Biology</span>
-</td>
-<td>
-<span class="listing-description">Broad seed entry requiring exact title and edition verification.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="odd" data-index="2">
+<td class="listing-title"><a href="https://www.cambridge.org/core/search?q=Quantitative%20Biology">Quantitative Biology</a></td>
+<td class="listing-description">Broad seed entry requiring exact title and edition verification.</td>
+<td class="listing-author_or_organization">Cambridge University Press</td>
+<td class="listing-resource_type">book</td>
+<td class="listing-topics">quantitative-biology, modeling</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="3" data-listing-title-sort="Comparative Methods">
-<td>
-<span class="listing-title">Comparative Methods</span>
-</td>
-<td>
-<span class="listing-description">Seed entry for comparative analysis.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="even" data-index="3">
+<td class="listing-title"><a href="https://global.oup.com/academic/">Comparative Methods</a></td>
+<td class="listing-description">Seed entry for comparative analysis.</td>
+<td class="listing-author_or_organization">Oxford University Press</td>
+<td class="listing-resource_type">book</td>
+<td class="listing-topics">comparative-methods, ecology</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="4" data-listing-title-sort="Spatial Data Science">
-<td>
-<span class="listing-title">Spatial Data Science</span>
-</td>
-<td>
-<span class="listing-description">Starting point for spatial analysis concepts and tools.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="odd" data-index="4">
+<td class="listing-title"><a href="https://spatialanalysis.github.io/">Spatial Data Science</a></td>
+<td class="listing-description">Starting point for spatial analysis concepts and tools.</td>
+<td class="listing-author_or_organization">Center for Spatial Data Science</td>
+<td class="listing-resource_type">course-or-notes</td>
+<td class="listing-topics">spatial, GIS, data-science</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="5" data-listing-title-sort="Statistical Rethinking">
-<td>
-<span class="listing-title">Statistical Rethinking</span>
-</td>
-<td>
-<span class="listing-description">Model-centered introduction to Bayesian reasoning.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="even" data-index="5">
+<td class="listing-title"><a href="https://xcelab.net/rm/statistical-rethinking/">Statistical Rethinking</a></td>
+<td class="listing-description">Model-centered introduction to Bayesian reasoning.</td>
+<td class="listing-author_or_organization">Richard McElreath</td>
+<td class="listing-resource_type">book-and-course</td>
+<td class="listing-topics">Bayesian-modeling, statistics</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="6" data-listing-title-sort="Applied Population Genetics">
-<td>
-<span class="listing-title">Applied Population Genetics</span>
-</td>
-<td>
-<span class="listing-description">Seed entry requiring title and edition confirmation.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="odd" data-index="6">
+<td class="listing-title"><a href="https://www.cambridge.org/core/search?q=Applied%20Population%20Genetics">Applied Population Genetics</a></td>
+<td class="listing-description">Seed entry requiring title and edition confirmation.</td>
+<td class="listing-author_or_organization">Cambridge University Press</td>
+<td class="listing-resource_type">book</td>
+<td class="listing-topics">population-genetics</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="7" data-listing-title-sort="The Epidemiologist R Handbook">
-<td>
-<span class="listing-title">The Epidemiologist R Handbook</span>
-</td>
-<td>
-<span class="listing-description">Task-oriented R reference for applied epidemiology.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="even" data-index="7">
+<td class="listing-title"><a href="https://www.epirhandbook.com/en/index.html">The Epidemiologist R Handbook</a></td>
+<td class="listing-description">Task-oriented R reference for applied epidemiology.</td>
+<td class="listing-author_or_organization">Applied Epi</td>
+<td class="listing-resource_type">handbook</td>
+<td class="listing-topics">epidemiology, R, reproducibility</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="8" data-listing-title-sort="Network Analysis in R">
-<td>
-<span class="listing-title">Network Analysis in R</span>
-</td>
-<td>
-<span class="listing-description">Seed entry for network analysis workflows in R.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="odd" data-index="8">
+<td class="listing-title"><a href="https://www.routledge.com/">Network Analysis in R</a></td>
+<td class="listing-description">Seed entry for network analysis workflows in R.</td>
+<td class="listing-author_or_organization">Routledge</td>
+<td class="listing-resource_type">book</td>
+<td class="listing-topics">networks, R</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="9" data-listing-title-sort="Molecular Epi in R">
-<td>
-<span class="listing-title">Molecular Epi in R</span>
-</td>
-<td>
-<span class="listing-description">Seed entry retained for later identification.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="even" data-index="9">
+<td class="listing-title"><a href="https://www.google.com/search?q=%22Molecular+Epi+in+R%22">Molecular Epi in R</a></td>
+<td class="listing-description">Seed entry retained for later identification.</td>
+<td class="listing-author_or_organization">Landing page not verified</td>
+<td class="listing-resource_type">course-or-notes</td>
+<td class="listing-topics">molecular-epidemiology, R</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="10" data-listing-title-sort="Intro to GIS and Spatial Analysis">
-<td>
-<span class="listing-title">Intro to GIS and Spatial Analysis</span>
-</td>
-<td>
-<span class="listing-description">Course notes introducing GIS and spatial analysis.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="odd" data-index="10">
+<td class="listing-title"><a href="https://mgimond.github.io/Spatial/index.html">Intro to GIS and Spatial Analysis</a></td>
+<td class="listing-description">Course notes introducing GIS and spatial analysis.</td>
+<td class="listing-author_or_organization">Michael G. Immond</td>
+<td class="listing-resource_type">course-notes</td>
+<td class="listing-topics">GIS, spatial, R</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="11" data-listing-title-sort="A Practical Guide to Ecosystem Forecasting">
-<td>
-<span class="listing-title">A Practical Guide to Ecosystem Forecasting</span>
-</td>
-<td>
-<span class="listing-description">Community entry point for ecological forecasting practice.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="even" data-index="11">
+<td class="listing-title"><a href="https://ecoforecast.org/">A Practical Guide to Ecosystem Forecasting</a></td>
+<td class="listing-description">Community entry point for ecological forecasting practice.</td>
+<td class="listing-author_or_organization">Ecological Forecasting Initiative</td>
+<td class="listing-resource_type">guide</td>
+<td class="listing-topics">forecasting, ecology</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="12" data-listing-title-sort="Computational Genomics Manual">
-<td>
-<span class="listing-title">Computational Genomics Manual</span>
-</td>
-<td>
-<span class="listing-description">Seed entry requiring identification of the intended manual.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="odd" data-index="12">
+<td class="listing-title"><a href="https://www.ncbi.nlm.nih.gov/books/">Computational Genomics Manual</a></td>
+<td class="listing-description">Seed entry requiring identification of the intended manual.</td>
+<td class="listing-author_or_organization">NCBI Bookshelf</td>
+<td class="listing-resource_type">manual</td>
+<td class="listing-topics">genomics, workflows</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="13" data-listing-title-sort="Spatial Data Processing with R">
-<td>
-<span class="listing-title">Spatial Data Processing with R</span>
-</td>
-<td>
-<span class="listing-description">Index of R packages and resources for spatial data work.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="even" data-index="13">
+<td class="listing-title"><a href="https://cran.r-project.org/web/views/Spatial.html">Spatial Data Processing with R</a></td>
+<td class="listing-description">Index of R packages and resources for spatial data work.</td>
+<td class="listing-author_or_organization">CRAN Spatial Task View</td>
+<td class="listing-resource_type">task-view</td>
+<td class="listing-topics">spatial, R, data-processing</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="14" data-listing-title-sort="Geocomputation with R">
-<td>
-<span class="listing-title">Geocomputation with R</span>
-</td>
-<td>
-<span class="listing-description">Open book for geographic data analysis, visualization, and modeling.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="odd" data-index="14">
+<td class="listing-title"><a href="https://r.geocompx.org/">Geocomputation with R</a></td>
+<td class="listing-description">Open book for geographic data analysis, visualization, and modeling.</td>
+<td class="listing-author_or_organization">Robin Lovelace, Jakub Nowosad, Jannes Muenchow</td>
+<td class="listing-resource_type">open-textbook</td>
+<td class="listing-topics">spatial, R, reproducibility</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="15" data-listing-title-sort="Network Analysis: Integrating Social Network Theory, Method, and Application with R">
-<td>
-<span class="listing-title">Network Analysis: Integrating Social Network Theory, Method, and Application with R</span>
-</td>
-<td>
-<span class="listing-description">Seed for theory-to-application network analysis in R.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="even" data-index="15">
+<td class="listing-title"><a href="https://www.routledge.com/">Network Analysis: Integrating Social Network Theory, Method, and Application with R</a></td>
+<td class="listing-description">Seed for theory-to-application network analysis in R.</td>
+<td class="listing-author_or_organization">Routledge</td>
+<td class="listing-resource_type">book</td>
+<td class="listing-topics">networks, R</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="16" data-listing-title-sort="The Turing Way">
-<td>
-<span class="listing-title">The Turing Way</span>
-</td>
-<td>
-<span class="listing-description">Community handbook on reproducible, ethical, collaborative data science.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="odd" data-index="16">
+<td class="listing-title"><a href="https://book.the-turing-way.org/">The Turing Way</a></td>
+<td class="listing-description">Community handbook on reproducible, ethical, collaborative data science.</td>
+<td class="listing-author_or_organization">The Turing Way Community</td>
+<td class="listing-resource_type">open-handbook</td>
+<td class="listing-topics">reproducibility, collaboration, open-research</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="17" data-listing-title-sort="Good Enough Practices in Scientific Computing">
-<td>
-<span class="listing-title">Good Enough Practices in Scientific Computing</span>
-</td>
-<td>
-<span class="listing-description">Compact recommendations for dependable scientific computing.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="even" data-index="17">
+<td class="listing-title"><a href="https://arxiv.org/abs/1609.00037">Good Enough Practices in Scientific Computing</a></td>
+<td class="listing-description">Compact recommendations for dependable scientific computing.</td>
+<td class="listing-author_or_organization">Wilson et al.</td>
+<td class="listing-resource_type">paper</td>
+<td class="listing-topics">scientific-computing, reproducibility</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="18" data-listing-title-sort="TIER Protocol">
-<td>
-<span class="listing-title">TIER Protocol</span>
-</td>
-<td>
-<span class="listing-description">Protocol for transparent empirical research workflows.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="odd" data-index="18">
+<td class="listing-title"><a href="https://www.projecttier.org/tier-protocol/">TIER Protocol</a></td>
+<td class="listing-description">Protocol for transparent empirical research workflows.</td>
+<td class="listing-author_or_organization">Project TIER</td>
+<td class="listing-resource_type">protocol</td>
+<td class="listing-topics">replication, data, code</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="19" data-listing-title-sort="RDMkit">
-<td>
-<span class="listing-title">RDMkit</span>
-</td>
-<td>
-<span class="listing-description">Role- and task-oriented research data-management guidance.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="even" data-index="19">
+<td class="listing-title"><a href="https://rdmkit.elixir-europe.org/">RDMkit</a></td>
+<td class="listing-description">Role- and task-oriented research data-management guidance.</td>
+<td class="listing-author_or_organization">ELIXIR Europe</td>
+<td class="listing-resource_type">guide</td>
+<td class="listing-topics">research-data-management, FAIR</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="20" data-listing-title-sort="DataONE Best Practices">
-<td>
-<span class="listing-title">DataONE Best Practices</span>
-</td>
-<td>
-<span class="listing-description">Practical guidance for managing and preserving research data.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="odd" data-index="20">
+<td class="listing-title"><a href="https://dataone.org/best-practices/">DataONE Best Practices</a></td>
+<td class="listing-description">Practical guidance for managing and preserving research data.</td>
+<td class="listing-author_or_organization">DataONE</td>
+<td class="listing-resource_type">guide</td>
+<td class="listing-topics">data-management, metadata, preservation</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="21" data-listing-title-sort="FAIR Principles">
-<td>
-<span class="listing-title">FAIR Principles</span>
-</td>
-<td>
-<span class="listing-description">Vocabulary for making digital research assets more reusable.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="even" data-index="21">
+<td class="listing-title"><a href="https://www.go-fair.org/fair-principles/">FAIR Principles</a></td>
+<td class="listing-description">Vocabulary for making digital research assets more reusable.</td>
+<td class="listing-author_or_organization">GO FAIR</td>
+<td class="listing-resource_type">principles</td>
+<td class="listing-topics">FAIR, data-stewardship</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="22" data-listing-title-sort="FAIR Principles for Research Software">
-<td>
-<span class="listing-title">FAIR Principles for Research Software</span>
-</td>
-<td>
-<span class="listing-description">Software-focused FAIR-oriented quality and reuse practices.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="odd" data-index="22">
+<td class="listing-title"><a href="https://fair-software.eu/">FAIR Principles for Research Software</a></td>
+<td class="listing-description">Software-focused FAIR-oriented quality and reuse practices.</td>
+<td class="listing-author_or_organization">FAIR-Software.eu</td>
+<td class="listing-resource_type">principles</td>
+<td class="listing-topics">FAIR, research-software</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="23" data-listing-title-sort="CARE Principles for Indigenous Data Governance">
-<td>
-<span class="listing-title">CARE Principles for Indigenous Data Governance</span>
-</td>
-<td>
-<span class="listing-description">Governance lens for collective benefit, authority, responsibility, and ethics.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="even" data-index="23">
+<td class="listing-title"><a href="https://www.gida-global.org/careprinciples">CARE Principles for Indigenous Data Governance</a></td>
+<td class="listing-description">Governance lens for collective benefit, authority, responsibility, and ethics.</td>
+<td class="listing-author_or_organization">Global Indigenous Data Alliance</td>
+<td class="listing-resource_type">principles</td>
+<td class="listing-topics">CARE, ethics, Indigenous-data</td>
+<td class="listing-review_status">verified</td>
 </tr>
-
-<tr data-index="24" data-listing-title-sort="Contributor Role Taxonomy (CRediT)">
-<td>
-<span class="listing-title">Contributor Role Taxonomy (CRediT)</span>
-</td>
-<td>
-<span class="listing-description">CRediT describes contributor roles to improve transparency, not authorship or author order.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="odd" data-index="24">
+<td class="listing-title"><a href="https://credit.niso.org/contributor-roles/">Contributor Role Taxonomy (CRediT)</a></td>
+<td class="listing-description">CRediT describes contributor roles to improve transparency, not authorship or author order.</td>
+<td class="listing-author_or_organization">National Information Standards Organization</td>
+<td class="listing-resource_type">standard-and-resource-hub</td>
+<td class="listing-topics">contributorship, credit, authorship, collaboration</td>
+<td class="listing-review_status">verified</td>
 </tr>
-
-<tr data-index="25" data-listing-title-sort="USDA National Agricultural Library data-management guidance">
-<td>
-<span class="listing-title">USDA National Agricultural Library data-management guidance</span>
-</td>
-<td>
-<span class="listing-description">Government starting point for agricultural data-management planning.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="even" data-index="25">
+<td class="listing-title"><a href="https://www.nal.usda.gov/research-tools/data-management">USDA National Agricultural Library data-management guidance</a></td>
+<td class="listing-description">Government starting point for agricultural data-management planning.</td>
+<td class="listing-author_or_organization">USDA National Agricultural Library</td>
+<td class="listing-resource_type">guidance</td>
+<td class="listing-topics">data-management, agriculture</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="26" data-listing-title-sort="CDC Field Epidemiology Manual data-management guidance">
-<td>
-<span class="listing-title">CDC Field Epidemiology Manual data-management guidance</span>
-</td>
-<td>
-<span class="listing-description">Field-epidemiology guidance for organizing and protecting operational data.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="odd" data-index="26">
+<td class="listing-title"><a href="https://www.cdc.gov/field-epi-manual/php/chapters/data-management.html">CDC Field Epidemiology Manual data-management guidance</a></td>
+<td class="listing-description">Field-epidemiology guidance for organizing and protecting operational data.</td>
+<td class="listing-author_or_organization">Centers for Disease Control and Prevention</td>
+<td class="listing-resource_type">manual</td>
+<td class="listing-topics">epidemiology, data-management, field-epi</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="27" data-listing-title-sort="FGDC geospatial metadata guidance">
-<td>
-<span class="listing-title">FGDC geospatial metadata guidance</span>
-</td>
-<td>
-<span class="listing-description">Standards-oriented entry point for describing geospatial data.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="even" data-index="27">
+<td class="listing-title"><a href="https://www.fgdc.gov/metadata">FGDC geospatial metadata guidance</a></td>
+<td class="listing-description">Standards-oriented entry point for describing geospatial data.</td>
+<td class="listing-author_or_organization">Federal Geographic Data Committee</td>
+<td class="listing-resource_type">standard</td>
+<td class="listing-topics">geospatial, metadata</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="28" data-listing-title-sort="GBIF georeferencing guidance">
-<td>
-<span class="listing-title">GBIF georeferencing guidance</span>
-</td>
-<td>
-<span class="listing-description">Guidance for documented coordinates and georeferencing uncertainty.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="odd" data-index="28">
+<td class="listing-title"><a href="https://docs.gbif.org/georeferencing-best-practices/">GBIF georeferencing guidance</a></td>
+<td class="listing-description">Guidance for documented coordinates and georeferencing uncertainty.</td>
+<td class="listing-author_or_organization">GBIF</td>
+<td class="listing-resource_type">best-practices</td>
+<td class="listing-topics">georeferencing, biodiversity, spatial</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="29" data-listing-title-sort="Ecological Metadata Language">
-<td>
-<span class="listing-title">Ecological Metadata Language</span>
-</td>
-<td>
-<span class="listing-description">Structured metadata language for ecological datasets and observations.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="even" data-index="29">
+<td class="listing-title"><a href="https://knb.ecoinformatics.org/external/">Ecological Metadata Language</a></td>
+<td class="listing-description">Structured metadata language for ecological datasets and observations.</td>
+<td class="listing-author_or_organization">Ecological Metadata Language community</td>
+<td class="listing-resource_type">metadata-standard</td>
+<td class="listing-topics">ecology, metadata, interoperability</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="30" data-listing-title-sort="Ecological Forecasting Initiative standards">
-<td>
-<span class="listing-title">Ecological Forecasting Initiative standards</span>
-</td>
-<td>
-<span class="listing-description">Community standards and practices for repeatable ecological forecasting.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="odd" data-index="30">
+<td class="listing-title"><a href="https://ecoforecast.org/">Ecological Forecasting Initiative standards</a></td>
+<td class="listing-description">Community standards and practices for repeatable ecological forecasting.</td>
+<td class="listing-author_or_organization">Ecological Forecasting Initiative</td>
+<td class="listing-resource_type">community-standards</td>
+<td class="listing-topics">ecological-forecasting, standards, reproducibility</td>
+<td class="listing-review_status">metadata-needs-verification</td>
 </tr>
-
-<tr data-index="31" data-listing-title-sort="EQUATOR Network Library for health research reporting">
-<td>
-<span class="listing-title">EQUATOR Network Library for health research reporting</span>
-</td>
-<td>
-<span class="listing-description">Searchable library of health-research reporting guidelines and related guidance.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="even" data-index="31">
+<td class="listing-title"><a href="https://www.equator-network.org/library/">EQUATOR Network Library for health research reporting</a></td>
+<td class="listing-description">Searchable library of health-research reporting guidelines and related guidance.</td>
+<td class="listing-author_or_organization">EQUATOR Network</td>
+<td class="listing-resource_type">reporting-guideline-library</td>
+<td class="listing-topics">reporting, health-research, transparency</td>
+<td class="listing-review_status">verified</td>
 </tr>
-
-<tr data-index="32" data-listing-title-sort="CDC Clear Communication Index">
-<td>
-<span class="listing-title">CDC Clear Communication Index</span>
-</td>
-<td>
-<span class="listing-description">Research-based tool for developing and assessing public communication materials.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="odd" data-index="32">
+<td class="listing-title"><a href="https://www.cdc.gov/ccindex/ccindex.html">CDC Clear Communication Index</a></td>
+<td class="listing-description">Research-based tool for developing and assessing public communication materials.</td>
+<td class="listing-author_or_organization">Centers for Disease Control and Prevention</td>
+<td class="listing-resource_type">communication-tool</td>
+<td class="listing-topics">communication, plain-language, public-health</td>
+<td class="listing-review_status">verified</td>
 </tr>
-
-<tr data-index="33" data-listing-title-sort="Web Content Accessibility Guidelines (WCAG) 2.2">
-<td>
-<span class="listing-title">Web Content Accessibility Guidelines (WCAG) 2.2</span>
-</td>
-<td>
-<span class="listing-description">W3C Recommendation for making web content more accessible.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="even" data-index="33">
+<td class="listing-title"><a href="https://www.w3.org/TR/WCAG22/">Web Content Accessibility Guidelines (WCAG) 2.2</a></td>
+<td class="listing-description">W3C Recommendation for making web content more accessible.</td>
+<td class="listing-author_or_organization">World Wide Web Consortium</td>
+<td class="listing-resource_type">accessibility-standard</td>
+<td class="listing-topics">accessibility, web, communication</td>
+<td class="listing-review_status">verified</td>
 </tr>
-
-<tr data-index="34" data-listing-title-sort="Data Citation">
-<td>
-<span class="listing-title">Data Citation</span>
-</td>
-<td>
-<span class="listing-description">Guidance on citing data as identifiable research outputs.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="odd" data-index="34">
+<td class="listing-title"><a href="https://support.datacite.org/docs/data-citation">Data Citation</a></td>
+<td class="listing-description">Guidance on citing data as identifiable research outputs.</td>
+<td class="listing-author_or_organization">DataCite</td>
+<td class="listing-resource_type">data-citation-guidance</td>
+<td class="listing-topics">data-citation, reproducibility, credit</td>
+<td class="listing-review_status">verified</td>
 </tr>
-
-<tr data-index="35" data-listing-title-sort="FORCE11 Software Citation Principles">
-<td>
-<span class="listing-title">FORCE11 Software Citation Principles</span>
-</td>
-<td>
-<span class="listing-description">Principles for making research software identifiable and citable.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="even" data-index="35">
+<td class="listing-title"><a href="https://force11.org/info/software-citation-principles-published-2016/">FORCE11 Software Citation Principles</a></td>
+<td class="listing-description">Principles for making research software identifiable and citable.</td>
+<td class="listing-author_or_organization">FORCE11 Software Citation Working Group</td>
+<td class="listing-resource_type">citation-principles</td>
+<td class="listing-topics">software-citation, reproducibility, credit</td>
+<td class="listing-review_status">verified</td>
 </tr>
-
-<tr data-index="36" data-listing-title-sort="Version control, corrections, and retractions">
-<td>
-<span class="listing-title">Version control, corrections, and retractions</span>
-</td>
-<td>
-<span class="listing-description">Guidance for identifiable versions and significant publication updates.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="odd" data-index="36">
+<td class="listing-title"><a href="https://www.crossref.org/documentation/principles-practices/best-practices/versioning/">Version control, corrections, and retractions</a></td>
+<td class="listing-description">Guidance for identifiable versions and significant publication updates.</td>
+<td class="listing-author_or_organization">Crossref</td>
+<td class="listing-resource_type">publishing-guidance</td>
+<td class="listing-topics">versioning, corrections, retractions</td>
+<td class="listing-review_status">verified</td>
 </tr>
-
-<tr data-index="37" data-listing-title-sort="TRIPOD+AI">
-<td>
-<span class="listing-title">TRIPOD+AI</span>
-</td>
-<td>
-<span class="listing-description">Reporting guidance for prediction-model studies, including AI extensions.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="even" data-index="37">
+<td class="listing-title"><a href="https://www.tripod-statement.org/">TRIPOD+AI</a></td>
+<td class="listing-description">Reporting guidance for prediction-model studies, including AI extensions.</td>
+<td class="listing-author_or_organization">TRIPOD Statement Group</td>
+<td class="listing-resource_type">reporting-guideline</td>
+<td class="listing-topics">prediction-models, reporting, artificial-intelligence</td>
+<td class="listing-review_status">verified</td>
 </tr>
-
-<tr data-index="38" data-listing-title-sort="STRESS guidelines for empirical simulation studies">
-<td>
-<span class="listing-title">STRESS guidelines for empirical simulation studies</span>
-</td>
-<td>
-<span class="listing-description">Structured reporting guidance for empirical simulation studies.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="odd" data-index="38">
+<td class="listing-title"><a href="https://bura.brunel.ac.uk/handle/2438/17183">STRESS guidelines for empirical simulation studies</a></td>
+<td class="listing-description">Structured reporting guidance for empirical simulation studies.</td>
+<td class="listing-author_or_organization">STRESS guideline authors</td>
+<td class="listing-resource_type">reporting-guideline</td>
+<td class="listing-topics">simulation, reporting, reproducibility</td>
+<td class="listing-review_status">verified</td>
 </tr>
-
-<tr data-index="39" data-listing-title-sort="Digital Preservation Handbook">
-<td>
-<span class="listing-title">Digital Preservation Handbook</span>
-</td>
-<td>
-<span class="listing-description">Practical guidance for managing digital resources and sustaining access over time.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="even" data-index="39">
+<td class="listing-title"><a href="https://www.dpconline.org/handbook">Digital Preservation Handbook</a></td>
+<td class="listing-description">Practical guidance for managing digital resources and sustaining access over time.</td>
+<td class="listing-author_or_organization">Digital Preservation Coalition</td>
+<td class="listing-resource_type">practical-guide</td>
+<td class="listing-topics">preservation, digital-stewardship, access</td>
+<td class="listing-review_status">verified</td>
 </tr>
-
-<tr data-index="40" data-listing-title-sort="Levels of Digital Preservation">
-<td>
-<span class="listing-title">Levels of Digital Preservation</span>
-</td>
-<td>
-<span class="listing-description">A maturity-oriented framework for assessing digital preservation practices.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="odd" data-index="40">
+<td class="listing-title"><a href="https://www.ndsa.org/publications/levels-of-digital-preservation/">Levels of Digital Preservation</a></td>
+<td class="listing-description">A maturity-oriented framework for assessing digital preservation practices.</td>
+<td class="listing-author_or_organization">National Digital Stewardship Alliance</td>
+<td class="listing-resource_type">assessment-framework</td>
+<td class="listing-topics">preservation, integrity, storage, sustainability</td>
+<td class="listing-review_status">verified</td>
 </tr>
-
-<tr data-index="41" data-listing-title-sort="Reference Model for an Open Archival Information System (OAIS)">
-<td>
-<span class="listing-title">Reference Model for an Open Archival Information System (OAIS)</span>
-</td>
-<td>
-<span class="listing-description">Reference model for an open archival information system and its preservation functions.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="even" data-index="41">
+<td class="listing-title"><a href="https://ccsds.org/searchpubs/entry/3054/">Reference Model for an Open Archival Information System (OAIS)</a></td>
+<td class="listing-description">Reference model for an open archival information system and its preservation functions.</td>
+<td class="listing-author_or_organization">Consultative Committee for Space Data Systems</td>
+<td class="listing-resource_type">reference-model</td>
+<td class="listing-topics">preservation, archives, information-management</td>
+<td class="listing-review_status">verified</td>
 </tr>
-
-<tr data-index="42" data-listing-title-sort="PREMIS Preservation Metadata">
-<td>
-<span class="listing-title">PREMIS Preservation Metadata</span>
-</td>
-<td>
-<span class="listing-description">International metadata standard supporting long-term usability of digital objects.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="odd" data-index="42">
+<td class="listing-title"><a href="https://www.loc.gov/standards/premis/">PREMIS Preservation Metadata</a></td>
+<td class="listing-description">International metadata standard supporting long-term usability of digital objects.</td>
+<td class="listing-author_or_organization">Library of Congress PREMIS Maintenance Activity</td>
+<td class="listing-resource_type">metadata-standard</td>
+<td class="listing-topics">preservation, metadata, rights, events</td>
+<td class="listing-review_status">verified</td>
 </tr>
-
-<tr data-index="43" data-listing-title-sort="The BagIt File Packaging Format (RFC 8493)">
-<td>
-<span class="listing-title">The BagIt File Packaging Format (RFC 8493)</span>
-</td>
-<td>
-<span class="listing-description">Technical specification for packaging files and manifests for transfer.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="even" data-index="43">
+<td class="listing-title"><a href="https://www.rfc-editor.org/info/rfc8493/">The BagIt File Packaging Format (RFC 8493)</a></td>
+<td class="listing-description">Technical specification for packaging files and manifests for transfer.</td>
+<td class="listing-author_or_organization">RFC Editor</td>
+<td class="listing-resource_type">technical-standard</td>
+<td class="listing-topics">preservation, packaging, checksums, transfer</td>
+<td class="listing-review_status">verified</td>
 </tr>
-
-<tr data-index="44" data-listing-title-sort="RO-Crate Metadata Specification 1.2">
-<td>
-<span class="listing-title">RO-Crate Metadata Specification 1.2</span>
-</td>
-<td>
-<span class="listing-description">Recommendation for describing research objects, files, people, and relationships.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="odd" data-index="44">
+<td class="listing-title"><a href="https://www.researchobject.org/ro-crate/specification/1.2/">RO-Crate Metadata Specification 1.2</a></td>
+<td class="listing-description">Recommendation for describing research objects, files, people, and relationships.</td>
+<td class="listing-author_or_organization">RO-Crate community</td>
+<td class="listing-resource_type">metadata-specification</td>
+<td class="listing-topics">preservation, research-objects, provenance, metadata</td>
+<td class="listing-review_status">verified</td>
 </tr>
-
-<tr data-index="45" data-listing-title-sort="CoreTrustSeal Trustworthy Data Repositories Requirements 2026–2028">
-<td>
-<span class="listing-title">CoreTrustSeal Trustworthy Data Repositories Requirements 2026–2028</span>
-</td>
-<td>
-<span class="listing-description">Requirements and supporting guidance for assessing trustworthy data repositories.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="even" data-index="45">
+<td class="listing-title"><a href="https://www.coretrustseal.org/why-certification/requirements/">CoreTrustSeal Trustworthy Data Repositories Requirements 2026–2028</a></td>
+<td class="listing-description">Requirements and supporting guidance for assessing trustworthy data repositories.</td>
+<td class="listing-author_or_organization">CoreTrustSeal</td>
+<td class="listing-resource_type">repository-assessment-framework</td>
+<td class="listing-topics">preservation, repositories, trust, assessment</td>
+<td class="listing-review_status">verified</td>
 </tr>
-
-<tr data-index="46" data-listing-title-sort="Software Heritage archiving and referencing guidance">
-<td>
-<span class="listing-title">Software Heritage archiving and referencing guidance</span>
-</td>
-<td>
-<span class="listing-description">Guidance for archiving and referencing source-code artifacts in Software Heritage.</span>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-<td>
-<span class="listing-categories">&nbsp;</span>
-</td>
-
+<tr class="odd" data-index="46">
+<td class="listing-title"><a href="https://docs.softwareheritage.org/">Software Heritage archiving and referencing guidance</a></td>
+<td class="listing-description">Guidance for archiving and referencing source-code artifacts in Software Heritage.</td>
+<td class="listing-author_or_organization">Software Heritage</td>
+<td class="listing-resource_type">software-preservation-guidance</td>
+<td class="listing-topics">software, preservation, persistent-identifiers, reproducibility</td>
+<td class="listing-review_status">verified</td>
 </tr>
-
 </tbody>
 </table>
 <div class="listing-no-matching d-none">No matching items</div>
