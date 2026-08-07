@@ -8,12 +8,16 @@
 - Release-record ID: `REQUIRED-release-id`
 - Communication-product ID: `REQUIRED`
 - Communication-product version: `REQUIRED`
-- Prepared release package: `blank until approved`
+- Proposed release package location: `blank until submitted for release decision; REQUIRED before any substantive release decision`
+- Proposed release package version: `blank until submitted for release decision; REQUIRED before any substantive release decision`
+- Proposed package checksum: `optional; blank until calculated`
 - Release target: `REQUIRED`
 - Audience: `REQUIRED`
 - Channel: `REQUIRED`
 - Purpose: `REQUIRED`
 - Responsible owner: `REQUIRED-role-or-account`
+
+The proposed package is the exact package considered by the release authority. It must be identifiable before approval, conditional approval, nonapproval, deferral, or pre-decision supersession. A record that is `not yet reviewed for specified release` may retain blank proposed-package fields before submission. The approved package must match the proposed package unless the authority explicitly requires a revised package; if it changes after review, create a new package version and repeat affected review or decision. Approval never applies merely to a title, branch, directory, or changing URL.
 
 ## Review basis
 
@@ -40,13 +44,30 @@ Safe default: `not yet reviewed for specified release`.
 - Approved audience: `blank until approved`
 - Approved channel: `blank until approved`
 - Approved purpose: `blank until approved`
-- Conditions: `blank until approved; none or describe`
-- Limitation or warning: `blank until approved; none or describe`
-- Required follow-up: `blank until approved; none or describe`
-- Responsible follow-up: `blank until approved; none or describe`
-- Expiration or reconsideration date: `optional`
+- Documented condition: `blank unless condition status; none for ordinary approval`
+- Why the condition matters: `blank unless condition status; not applicable for ordinary approval`
+- Affected audience, purpose, channel, claim, or use: `blank unless condition status; not applicable for ordinary approval`
+- Required warning or limitation: `blank unless condition status; none or ordinary product warning for ordinary approval`
+- Condition follow-up: `blank unless condition status; none for ordinary approval`
+- Condition follow-up owner: `blank unless condition status; not applicable when no follow-up exists`
+- Condition expiration or reconsideration date: `blank unless applicable`
+- Nonapproval rationale: `blank unless not approved`
+- Blocking concern or unmet requirement: `blank unless not approved`
+- Required return stage: `blank unless not approved; Analyze / Validate / Collaborate / Communicate / external process / terminal disposition`
+- Required corrective action: `blank unless not approved`
+- Responsible corrective-action owner: `blank unless not approved`
+- Deferral reason: `blank unless deferred`
+- Unresolved dependency: `blank unless deferred`
+- Dependency owner: `blank unless deferred`
+- Reconsideration condition: `blank unless deferred`
+- Reconsideration date: `blank unless deferred or date not yet known`
+- Replacement communication-product ID: `blank unless superseded before release decision`
+- Replacement communication-product version: `blank unless superseded before release decision`
+- Pre-decision supersession reason: `blank unless superseded before release decision`
+- Pre-decision supersession date: `blank unless superseded before release decision`
+- Pre-decision supersession owner: `blank unless superseded before release decision`
 
-Use exactly: `not yet reviewed for specified release`, `approved for specified release`, `approved for specified release with documented condition`, `not approved for specified release`, `deferred for specified release`, or `superseded before release decision`. Approved with documented condition requires a condition, why it matters, affected audience/purpose/channel/claim/use, warning or limitation, follow-up, responsible follow-up, and expiration or reconsideration date where relevant; empty or `none` condition fields are not allowed. Not approved requires rationale, blocking concern or unmet requirement, authority, date, and return-to-lifecycle-stage decision. Deferred requires reason, unresolved dependency, responsible person, and reconsideration condition or date. Superseded before decision requires replacement product ID/version, reason, date, and responsible owner. A copied record must not imply review, approval, release, withholding, withdrawal, correction, or supersession.
+Use exactly: `not yet reviewed for specified release`, `approved for specified release`, `approved for specified release with documented condition`, `not approved for specified release`, `deferred for specified release`, or `superseded before release decision`. For conditional approval, condition, why it matters, affected scope, warning, follow-up, and owner must all be substantive; `none`, `not applicable`, and empty values are not allowed for those fields. Nonapproval requires rationale, blocking concern or unmet requirement, authority, decision date, required return stage or terminal disposition, and responsible owner. Nonapproval is not withdrawal or withholding, does not imply that the scientific result is invalid, and applies only to the specified release proposal. Deferral requires reason, unresolved dependency, dependency owner, and reconsideration condition or date; it is not approval, nonapproval, or permission to release, and leaves the state `not released` unless another documented event applies. Superseded before release decision requires all replacement fields above; the state normally remains `not released`, and the replacement does not inherit readiness, review, or approval. A copied record must not imply review, approval, release, withholding, withdrawal, correction, or supersession.
 
 ## Release event
 
@@ -64,15 +85,29 @@ Safe default: `not released`.
 - Notification or distribution record: `blank until released or withheld`
 - Withholding authority: `blank unless withheld`
 - Withholding reason: `blank unless withheld`
-- Withdrawal authority: `blank unless withdrawn`
+- Withholding date: `blank unless withheld`
+- Withheld audience or channel: `blank unless withheld`
+- Withholding disposition: `blank unless withheld; reconsider later / terminal / replaced / other`
+- Withholding reconsideration date or condition: `blank unless applicable`
+- Withholding notification: `blank unless applicable`
 - Previous release-record ID: `blank unless withdrawn or superseded`
+- Withdrawal authority: `blank unless withdrawn`
+- Withdrawal date: `blank unless withdrawn`
+- Withdrawal reason: `blank unless withdrawn`
+- Affected claims or uses: `blank unless withdrawn`
+- Audience notification: `blank unless withdrawn`
+- Replacement or next action: `blank unless withdrawn`
+- Underlying results remain supported: `blank unless withdrawn; yes / no / partly / under reevaluation`
+- Withdrawal required return stage: `blank unless withdrawn`
 - Replacement release-record ID: `blank unless superseded`
 - Replacement communication-product ID/version: `blank unless superseded`
 - Supersession date: `blank unless superseded`
+- Release supersession reason: `blank unless superseded`
+- Release supersession owner: `blank unless superseded`
 
 Use exactly: `not released`, `released`, `withheld`, `withdrawn`, or `superseded`.
 
-`not released` must not contain a release date or released location. `released` requires an approved release-decision status and exact release details. `withheld` requires withholding authority and reason and is not a synonym for not released. `withdrawn` requires a previous release record. `superseded` requires replacement product and release records. Approval alone does not change the release state.
+`not released` must not contain a release date or released location. `released` requires an approved release-decision status and exact release details. `withheld` means an affirmative decision not to distribute a prepared product and requires authority, reason, date, audience/channel, disposition, and notification where applicable; it is not a synonym for not released. Withholding may follow approval only when the authority deliberately stops distribution and records why. `withdrawn` requires a previous release record and all withdrawal fields; it must not be used for a never-distributed product. `superseded` requires previous and replacement records where applicable, replacement product/version, date, reason, and owner; it remains historically identifiable and does not transfer approval, accessibility review, availability statements, or release conditions. Approval alone does not change the release state. Status-specific fields are authoritative; do not duplicate their meaning in a general summary field.
 
 ## Corrections and supersession
 
@@ -84,10 +119,7 @@ Use exactly: `not released`, `released`, `withheld`, `withdrawn`, or `superseded
 - Whether conclusions changed: `blank until needed`
 - Correction authority: `blank until needed`
 - Correction date: `blank until needed`
-- Audience notification: `blank until needed`
 - Replacement product ID/version: `blank until needed`
 - Return-to-lifecycle-stage decision: `blank until needed`
-- Withdrawal reason: `blank until needed`
-- Superseding release-record ID: `blank until needed`
 
 Keep the original product and release record identifiable. Do not silently overwrite history.
