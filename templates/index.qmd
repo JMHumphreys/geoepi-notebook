@@ -42,6 +42,8 @@ The template library reduces blank-page friction without forcing every project i
 | <a href="analysis-run-record-template.yml" download>Analysis run record</a> | YAML | One analysis execution, inputs, settings, environment, outputs, warnings, and status |
 | <a href="validation-plan-template.md" download>Validation plan</a> | Markdown | Intended use, candidate results, validation questions, evidence, and review plan |
 | <a href="validation-record-template.md" download>Validation record</a> | Markdown | Checks, evidence, limitations, scope, and validation conclusion |
+| <a href="collaboration-agreement-template.md" download>Collaboration agreement</a> | Markdown | Roles, decisions, shared records, access, review, credit, partners, continuity, and communication readiness |
+| <a href="contribution-and-credit-record-template.md" download>Contribution and credit record</a> | Markdown | Actual contributions, recognition discussion, optional CRediT vocabulary, and unresolved credit questions |
 | [Guidance page authoring template](authoring-template.qmd) | Quarto | New Lab Book pages |
 
 Templates are examples until explicitly adopted; adapt them to the project and document meaningful deviations.

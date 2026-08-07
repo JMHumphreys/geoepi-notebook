@@ -47,3 +47,5 @@ When validation requires changes to data subsets, exclusions, model form, variab
 ## Supersession and later stages
 
 Supersession does not always imply a new analysis. A newer validation record may incorporate new external data, a later forecast period, an additional reviewer, or corrected validation evidence. Preserve the earlier record, mark it superseded, identify the replacement validation ID, and do not transfer the earlier conclusion automatically. Record a replacement analysis ID when the analysis also changed. A supported conclusion permits consideration in later Collaborate and Communicate stages; it does not provide publication, release, operational, policy, or data-sharing approval.
+
+[Collaborate](../collaborate/index.qmd) coordinates contributors, required review, responsibilities, credit, partner conditions, and the authoritative version entering communication preparation. It does not change the validation conclusion or replace validation evidence.

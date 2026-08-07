@@ -91,6 +91,47 @@
 - [ ] Replacement analysis is identified when applicable.
 - [ ] Return-to-Analyze requirements and reevaluation triggers are recorded where applicable.
 
+## Collaboration setup
+
+- [ ] Contributors and organizations are identified.
+- [ ] Roles and decision responsibility are clear.
+- [ ] Authoritative locations are identified.
+- [ ] A working agreement or equivalent is present where warranted.
+- [ ] Access and restrictions are recorded.
+
+## Shared review and decisions
+
+- [ ] Review purpose and object are clear.
+- [ ] Consequential feedback and responses are recorded.
+- [ ] Unresolved disagreement is visible.
+- [ ] Decisions and rationale are durable.
+- [ ] Changes are returned to Analyze or Validate where necessary.
+
+## Contributions and credit
+
+- [ ] Contributions are recorded proportionately.
+- [ ] Likely recognition is discussed.
+- [ ] Authorship requirements are not assumed.
+- [ ] Unresolved credit disputes are visible.
+- [ ] CRediT is not treated as an authorship rule.
+
+## External partners and continuity
+
+- [ ] Agreement references and sharing conditions are identified.
+- [ ] Partner review authority is distinguished from consultation.
+- [ ] Backup or continuity responsibility is recorded where warranted.
+- [ ] Formal handoff is completed when responsibility changes.
+
+## Ready for communication
+
+- [ ] The authoritative collaboration readiness record is identified.
+- [ ] One exact readiness status is used.
+- [ ] Current result and validation versions are identified.
+- [ ] A communication-preparation owner is identified.
+- [ ] Limitations and unresolved concerns are visible.
+- [ ] Decision-maker and ISO 8601 date are recorded for a ready status.
+- [ ] Readiness does not imply release approval.
+
 ## Result and release review
 
 - [ ] Results trace to inputs, code, parameters, environment, and output/run IDs.

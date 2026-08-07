@@ -1,6 +1,6 @@
 ---
 title: "Research Practices"
-description: "Task-oriented lifecycle guidance for planning, acquiring, organizing, analyzing, and validating GeoEpi data and projects."
+description: "Task-oriented lifecycle guidance for planning, acquiring, organizing, analyzing, validating, and coordinating GeoEpi data and projects."
 status: draft
 practice-level: recommended
 audience:
@@ -22,7 +22,7 @@ The Lab Book organizes work around a lifecycle:
 
 Stages overlap and may repeat. A revised project plan can trigger new acquisition work; an intake discrepancy can require a scope decision. Each page distinguishes the **Draft minimum**, **Conditionally required**, **Recommended**, **Stronger practice**, **Example**, and **Stop and resolve** levels.
 
-**Plan**, **Acquire**, **Organize**, **Analyze**, and **Validate** now have implemented draft guidance. Collaborate, Communicate, and Preserve remain future lifecycle stages, not complete guidance.
+**Plan**, **Acquire**, **Organize**, **Analyze**, **Validate**, and **Collaborate** now have implemented draft guidance. Communicate and Preserve remain future lifecycle stages, not complete guidance.
 
 ```{mermaid}
 flowchart LR
@@ -56,5 +56,11 @@ flowchart LR
 - [Validate a forecast](validate/prediction-and-forecast-validation.qmd) when predictions, risk maps, or forecasts are part of the claim.
 - [Assess sensitivity and uncertainty](validate/sensitivity-robustness-and-uncertainty.qmd) when reasonable choices or uncertainty could change interpretation or action.
 - [Record a validation conclusion](validate/validation-decisions-and-records.qmd) when evidence must be synthesized into a scoped decision.
+- [Clarify roles and decisions](collaborate/roles-responsibilities-and-decisions.qmd) when shared work needs clear responsibility and decision authority.
+- [Establish a working agreement](collaborate/working-agreements-and-shared-records.qmd) when contributors need shared locations, review, change, and access expectations.
+- [Review shared work](collaborate/review-feedback-and-disagreement.qmd) when feedback, responses, or disagreement could affect the project.
+- [Record contributions and credit](collaborate/contributions-credit-and-authorship.qmd) when contributors or expected outputs are changing.
+- [Coordinate external partners](collaborate/external-partners-access-and-sharing.qmd) when access, sharing, or partner review conditions apply.
+- [Onboard or hand off responsibility](collaborate/continuity-onboarding-and-handoff.qmd) when people, roles, or ownership change.
 
 The Lab Book separates draft policy, task guidance, templates, and examples. The [Minimum GeoEpi Project Standard](../start/minimum-standard.qmd) supplies the governing draft framework; these pages explain how to satisfy relevant information requirements without prescribing one folder tree, storage platform, workflow engine, or environment.
