@@ -1,0 +1,24 @@
+---
+title: "Manuscripts, Reports, and Reporting Guidelines"
+description: "Use relevant reporting guidance to improve transparency without treating a checklist as validation or approval."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - communication
+  - reporting
+  - publication
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+Choose reporting guidance based on study design, product, audience, field, journal, funder, or contract where applicable. The [EQUATOR Network library](https://www.equator-network.org/library/) is a starting point for health-research reporting guidelines. Examples may include STROBE or RECORD for observational or routinely collected data, TRIPOD+AI for prediction-model reporting, and STRESS for empirical simulation studies.
+
+Record the selected guideline, version or access date, reason it fits, completed checklist or location, and unresolved items. Do not force one guideline on every project, copy a checklist into the Lab Book, or imply institutional adoption. A reporting checklist improves completeness of reporting; it does not validate a study, resolve authorship, grant release approval, or replace applicable journal, funder, institutional, legal, or community requirements.
+
+Before release review, make sure manuscript, report, abstract, figures, tables, supplements, and availability statements use the same product, result, validation, contributor, and restriction versions. Peer review and release approval are separate decisions.

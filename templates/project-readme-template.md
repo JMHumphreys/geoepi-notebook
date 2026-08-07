@@ -45,3 +45,15 @@ Link to checks, decision records, limitations, and known failures.
 ## Transfer readiness (complete when a handoff is needed)
 
 Record current owner, intended access transfer, reproduction steps, unfinished work, and contact information. Do not imply that a handoff has occurred until the incoming owner accepts it.
+
+## Communication and releases
+
+- **Current communication-product records:**
+- **Current internal or external releases:**
+- **Authoritative release-record location:**
+- **Public or controlled locations:**
+- **Current limitations:**
+- **Correction contact:**
+- **Superseding version where applicable:**
+
+Keep this orientation section concise; the communication-product and release records remain authoritative.

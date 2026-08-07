@@ -14,3 +14,8 @@
 - **Known limitations and unresolved work:**
 - **Future maintenance owner:**
 - **External release/version:**
+- **Final communication-product IDs:**
+- **Final release-record IDs:**
+- **Corrections, withdrawals, or superseding versions:**
+- **Released locations and identifiers:**
+- **Unreleased products requiring disposition:**

@@ -43,6 +43,8 @@ Record proportionately:
 - external partner contacts and conditions;
 - current owner, backup owner where warranted, and handoff trigger.
 
+When communication work begins, identify the authoritative communication-product record and, when a release is consequential, the authoritative release record. Draft products belong to Communicate. Scientific changes return to Analyze or Validate; contributor or partner changes return to Collaborate; released versions and corrections remain visible in Communicate. Long-term preservation remains a future stage.
+
 Do not include credentials or protected information.
 
 ## Change and review records

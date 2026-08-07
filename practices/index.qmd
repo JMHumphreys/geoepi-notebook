@@ -1,6 +1,6 @@
 ---
 title: "Research Practices"
-description: "Task-oriented lifecycle guidance for planning, acquiring, organizing, analyzing, validating, and coordinating GeoEpi data and projects."
+description: "Task-oriented lifecycle guidance for planning, acquiring, organizing, analyzing, validating, coordinating, and communicating GeoEpi data and projects."
 status: draft
 practice-level: recommended
 audience:
@@ -22,7 +22,7 @@ The Lab Book organizes work around a lifecycle:
 
 Stages overlap and may repeat. A revised project plan can trigger new acquisition work; an intake discrepancy can require a scope decision. Each page distinguishes the **Draft minimum**, **Conditionally required**, **Recommended**, **Stronger practice**, **Example**, and **Stop and resolve** levels.
 
-**Plan**, **Acquire**, **Organize**, **Analyze**, **Validate**, and **Collaborate** now have implemented draft guidance. Communicate and Preserve remain future lifecycle stages, not complete guidance.
+**Plan**, **Acquire**, **Organize**, **Analyze**, **Validate**, **Collaborate**, and **Communicate** now have implemented draft guidance. Preserve remains a future lifecycle stage, not complete guidance.
 
 ```{mermaid}
 flowchart LR
@@ -62,5 +62,12 @@ flowchart LR
 - [Record contributions and credit](collaborate/contributions-credit-and-authorship.qmd) when contributors or expected outputs are changing.
 - [Coordinate external partners](collaborate/external-partners-access-and-sharing.qmd) when access, sharing, or partner review conditions apply.
 - [Onboard or hand off responsibility](collaborate/continuity-onboarding-and-handoff.qmd) when people, roles, or ownership change.
+- [Choose a communication audience and product](communicate/audience-purpose-and-products.qmd) before drafting a consequential product.
+- [Write claims linked to evidence](communicate/claims-evidence-uncertainty-and-limitations.qmd) when results need a defensible audience-facing interpretation.
+- [Prepare figures, maps, and accessible alternatives](communicate/figures-tables-maps-and-accessibility.qmd) for visual or public products.
+- [Select reporting guidance](communicate/manuscripts-reports-and-reporting-guidelines.qmd) for a manuscript, report, or model publication.
+- [Prepare availability statements](communicate/data-code-software-and-availability.qmd) for data, code, software, or restricted inputs.
+- [Review a release](communicate/review-approval-release-and-corrections.qmd) when an exact product version needs a release decision.
+- [Record a correction or supersession](communicate/review-approval-release-and-corrections.qmd#corrections-withdrawals-and-supersession) when a released product changes.
 
 The Lab Book separates draft policy, task guidance, templates, and examples. The [Minimum GeoEpi Project Standard](../start/minimum-standard.qmd) supplies the governing draft framework; these pages explain how to satisfy relevant information requirements without prescribing one folder tree, storage platform, workflow engine, or environment.

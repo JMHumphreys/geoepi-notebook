@@ -1,0 +1,37 @@
+---
+title: "Audience, Purpose, and Products"
+description: "Define who needs a product, why it exists, and what product and channel fit the evidence and consequence."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - communication
+  - reporting
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+Begin with intended use. Record the audience, what it needs to understand, intended action or decision, product type, channel, internal or external status, urgency, expected lifespan, consequence of misunderstanding, and restrictions on who may receive it.
+
+The same validated result may support different products, but each product needs its own audience, claims, scope, and review. Possible products include manuscripts, technical reports, internal memos, briefs, presentations, posters, maps, dashboards, forecast bulletins, surveillance summaries, data or software releases, model documentation, public summaries, and training material. No universal product is required.
+
+## Product identity
+
+For a consequential product, record a stable product ID, title, version, owner, authoritative location, status, audience, result IDs, validation-record IDs, collaboration record, and expected release route. An internal product is not automatically unreviewed or unrestricted; it may influence management, operations, policy, field activity, funding, partners, or later publications.
+
+## Time-sensitive products
+
+For forecasts, dashboards, bulletins, and operational summaries, record data current through, forecast origin, forecast horizon, issue time, next update, expiration or stale-after condition, superseding product, and responsible owner. A live URL does not make an old product current.
+
+## Plain language
+
+Use plain language when it helps the audience. Lead with the main message, define necessary technical terms, identify the action, and retain qualifications. Do not simplify by removing the population, period, geography, denominator, uncertainty, or limitation that gives a result meaning.
+
+## Stop and resolve
+
+Pause when audience or purpose is unclear; the product exceeds validated scope; release authority is unknown; access or partner conditions are unresolved; a product is called current without a valid date; the intended action is unsupported; or protected data or locations would be exposed.
