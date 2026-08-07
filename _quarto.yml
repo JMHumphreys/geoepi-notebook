@@ -126,6 +126,15 @@ website:
             - practices/communicate/manuscripts-reports-and-reporting-guidelines.qmd
             - practices/communicate/data-code-software-and-availability.qmd
             - practices/communicate/review-approval-release-and-corrections.qmd
+        - section: "Preserve"
+          contents:
+            - practices/preserve/index.qmd
+            - practices/preserve/selection-retention-and-disposition.qmd
+            - practices/preserve/preservation-packages-manifests-and-metadata.qmd
+            - practices/preserve/repositories-identifiers-and-deposit.qmd
+            - practices/preserve/fixity-storage-recovery-and-monitoring.qmd
+            - practices/preserve/formats-software-environments-and-reuse.qmd
+            - practices/preserve/access-governance-maintenance-and-deaccession.qmd
 format:
   html:
     theme:

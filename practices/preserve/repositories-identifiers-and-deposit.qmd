@@ -1,0 +1,36 @@
+---
+title: "Repositories, Identifiers, and Deposit"
+description: "Choose a suitable preservation destination and distinguish transfer, receipt, and verification."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - preservation
+  - data-management
+  - reproducibility
+owner: GeoEpi Lab
+last-reviewed: 2026-08-07
+review-cycle: annual
+sidebar: practices
+---
+
+## Repository selection
+
+Evaluate proportionately accepted content, preservation commitment, versioning, metadata, identifiers, access controls, embargoes, restricted-data support, size limits, costs, governance, longevity, export and migration options, correction/withdrawal support, community acceptance, contacts, and terms. Possible destinations include institutional, domain, general research, controlled-access, records, approved storage, and software-specific repositories. No universal repository is prescribed.
+
+Repository certification can be useful evidence. It is not universally required, does not guarantee indefinite access, does not replace fit assessment, and does not authorize restricted deposit. The [CoreTrustSeal Requirements 2026–2028](https://www.coretrustseal.org/why-certification/requirements/) are a repository-assessment resource, not a project conformance requirement.
+
+## Identifiers and relationships
+
+Record a DOI, accession number, repository record ID, SWHID, archival identifier, or institutional record number where one exists. Not every file needs a persistent identifier; the package or major research object should be identifiable at a useful level. Link project, data, software, results, communication, release, preservation package, and replacement package.
+
+## Deposit is not verification
+
+Record submission date, recipient, package ID/version, receipt, repository identifier, accepted/rejected files, transformations, access state, embargo, license, depositing person/process, repository response date, and deposit owner. A partial acceptance records accepted and rejected components separately. A rejected deposit records repository/recipient, package/version, submission and rejection dates, notice/receipt, reason, affected components, responsible person, temporary safe location, next action, alternative plan, and reconsideration trigger. Rejection does not mean package loss or change the selection decision; the outcome remains **deposit rejected** until a later outcome is recorded. Then verify completeness, inventory, checksums or other integrity evidence, metadata, restrictions, retrieval where permitted, identifier resolution, and landing-page accuracy. An upload is not a verified preservation outcome.
+
+## Exit planning
+
+For consequential deposits, record account and notice ownership, fees, export options, repository closure or terms-change response, location of a second package or manifest, and migration responsibility. The public release location is not automatically the preservation repository.

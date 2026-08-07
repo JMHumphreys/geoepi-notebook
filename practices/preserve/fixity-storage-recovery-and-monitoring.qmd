@@ -1,0 +1,37 @@
+---
+title: "Fixity, Storage, Recovery, and Monitoring"
+description: "Use checksums, independent copies, recovery tests, and proportionate review to maintain preserved materials."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - preservation
+  - reproducibility
+owner: GeoEpi Lab
+last-reviewed: 2026-08-07
+review-cycle: annual
+sidebar: practices
+---
+
+A checksum is a recorded digital fingerprint used to detect whether file contents changed. A matching checksum supports integrity verification but does not prove scientific correctness, completeness, absence of malicious content, future usability, adequate backup, or authorization.
+
+## Checksum records
+
+Record algorithm, checksum, file/package scope, tool or process, creation date, verifier, verification date, result, and mismatch response. Use a currently supported cryptographic checksum appropriate to the receiving repository or institutional process. Do not prescribe one algorithm where the repository defines it, and do not use file-modification dates as the sole evidence.
+
+## Storage and copies
+
+Distinguish synchronization, backup, and preservation storage. Synchronization copies current changes, including accidental deletion; backup supports recovery; preservation storage supports retained, identifiable, monitored versions over time. One service may provide several functions, but the project should record which functions are actually present.
+
+Use multiple independent copies proportionate to consequence, uniqueness, repository trust, size, cost, sensitivity, ability to recreate, and obligations. Do not make one workstation, drive, personal cloud account, or active Git repository the only copy of consequential preserved material. No universal copy count is required.
+
+## Verification and recovery
+
+Record deposit-time and periodic checks, failures, missing or corrupted objects, recovery source/action, replacement checksum, responsible person, and date. Test retrieval or restoration when the package is consequential, storage is locally managed, a proprietary format is required, recovery has never been tested, or ownership/platform changes. For encrypted content, record the method and authorized key custodian outside the package; maintain succession and recovery without recording keys or passwords.
+
+## Monitoring
+
+Review storage, integrity, metadata, content, security, recovery, repository availability, access, dependencies, and environmental/financial sustainability proportionately. The highest maturity level is not automatically required for every project.

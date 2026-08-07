@@ -46,6 +46,8 @@ The template library reduces blank-page friction without forcing every project i
 | <a href="contribution-and-credit-record-template.md" download>Contribution and credit record</a> | Markdown | Actual contributions, recognition discussion, optional CRediT vocabulary, and unresolved credit questions |
 | <a href="communication-product-record-template.md" download>Communication-product record</a> | Markdown | Audience, claims, evidence, review, availability, accessibility, and release-review readiness |
 | <a href="release-record-template.md" download>Release record</a> | Markdown | Release decision, exact release event, corrections, withdrawal, and supersession |
+| <a href="preservation-plan-template.md" download>Preservation plan and record</a> | Markdown | Selection, package, deposit, verification, access, and maintenance |
+| <a href="preservation-package-manifest-template.csv" download>Preservation package manifest</a> | CSV | Artifact inventory, inclusion, checksums, access, and verification |
 | [Guidance page authoring template](authoring-template.qmd) | Quarto | New Lab Book pages |
 
 Templates are examples until explicitly adopted; adapt them to the project and document meaningful deviations.

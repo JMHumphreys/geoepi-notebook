@@ -1,0 +1,39 @@
+---
+title: "Selection, Retention, and Disposition"
+description: "Select preservation materials deliberately and record retention authority without authorizing destruction."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - preservation
+  - data-management
+owner: GeoEpi Lab
+last-reviewed: 2026-08-07
+review-cycle: annual
+sidebar: practices
+---
+
+Preserving everything is neither necessary nor always responsible. Selection should consider scientific significance, support for reported claims, uniqueness, reuse, operational importance, reconstruction cost, applicable obligations, privacy, security, ecological sensitivity, community authority, size, duplication, repository support, environmental cost, and future format or dependency risk.
+
+## Materials commonly considered
+
+As applicable, assess source snapshots, accepted and analysis-ready data, dictionaries, provenance and transformations, code and versions, configuration, environments, seeds and scenarios, execution manifests, QA/QC, results, validation, collaboration and contribution records, communication and release products, corrections, README, handoff, and closeout records.
+
+Do not automatically preserve caches, regenerable temporary files, failed partial downloads, redundant copies, credentials, unapproved protected data, personal scratch files, or intermediate outputs without scientific, operational, or historical value. Record exclusions when they affect understanding or reproducibility.
+
+## Retention authority
+
+Record the source of the retention or disposition requirement: institutional schedule, funder, contract, data-use agreement, repository policy, journal or publisher, ethics or regulation, Indigenous/Tribal/community governance, or a project-specific decision where no higher authority applies. Do not invent a retention period. If the period is unknown, record unresolved, identify the responsible office or role, retain safely, and do not authorize disposal.
+
+For source or received data, retain the authoritative snapshot where permitted, provider identifiers, acquisition dates, checksums, restrictions, and links to corrected or derived versions. Preserve original evidence where possible rather than silently replacing it with normalized data.
+
+## Negative, inconclusive, and unreleased work
+
+Do not discard work solely because a result was negative, validation was inconclusive, a model failed, a manuscript was not submitted, or an operational product was withheld. Preserve when it documents consequential decisions, prevents costly repetition, supports accountability, or is required by authority or agreement.
+
+## Stop and resolve
+
+Stop disposition when a legal or records hold may apply, an investigation or audit is active, an agreement is unclear, community authority is unresolved, the only consequential copy would be lost, transfer is not accepted, or protected data would move to an unauthorized location. Nonselection records what was assessed, why it was not selected, who decided, which authority applied, where it remains temporarily, and expected later action. Nonselection is not destruction authorization.

@@ -1,0 +1,73 @@
+---
+title: "Preserve"
+description: "Select, package, deposit, verify, and maintain identifiable project records and artifacts over time."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - preservation
+  - reproducibility
+  - data-management
+owner: GeoEpi Lab
+last-reviewed: 2026-08-07
+review-cycle: annual
+sidebar: practices
+---
+
+Preservation is the continuing ability to identify, verify, understand, access as authorized, and responsibly manage a defined version of a project over time. It is more than copying a folder to another drive and does not require public access, a DOI for every artifact, or indefinite execution of old software.
+
+Preservation planning is cross-cutting. During Plan, Acquire, Organize, and Communicate, consider retention authority, formats, repositories, restrictions, dependencies, and future access. The formal Preserve stage is where the project selects what merits long-term retention, assembles an identifiable package, records what is included or excluded, verifies integrity and metadata, deposits or stores it appropriately, verifies receipt and authorized access, and assigns future responsibility.
+
+Preserve may begin after a release, closeout, indefinite pause, maintenance transition, organizational transfer, or contractual, funder, governance, or records-management trigger. Unreleased, negative, inconclusive, restricted, or internal operational materials may still warrant preservation.
+
+## Preserve workflow
+
+1. Identify the project, release, result, dataset, software, or record set.
+2. Identify the preservation trigger and applicable retention, agreement, governance, and legal authorities.
+3. Decide what is selected, excluded, externally referenced, unavailable, or deferred.
+4. Record the selection rationale and decision authority.
+5. Assemble an identifiable package and inventory.
+6. Record metadata, restrictions, licenses, dependencies, relationships, and checksums where proportionate.
+7. Select an appropriate repository or preservation-storage arrangement.
+8. Deposit or transfer the package and record receipt, identifier, and version.
+9. Verify completeness, integrity, metadata, and authorized access.
+10. Record limitations, maintenance ownership, review triggers, migration, supersession, or deaccession.
+
+```{mermaid}
+flowchart TD
+  materials[Released, closed, paused, or selected materials] --> select[Selection and retention authority]
+  select --> package[Package inventory and metadata]
+  package --> deposit[Repository or preservation storage]
+  deposit --> verify[Receipt, integrity, and access verification]
+  verify --> maintain[Maintenance, migration, or deaccession]
+```
+
+## Starting points
+
+| Need | Guidance |
+|---|---|
+| Decide what to retain | [Selection, retention, and disposition](selection-retention-and-disposition.qmd) |
+| Assemble a package and inventory | [Preservation packages, manifests, and metadata](preservation-packages-manifests-and-metadata.qmd) |
+| Select a repository and record deposit | [Repositories, identifiers, and deposit](repositories-identifiers-and-deposit.qmd) |
+| Verify integrity and recovery | [Fixity, storage, recovery, and monitoring](fixity-storage-recovery-and-monitoring.qmd) |
+| Preserve formats, software, and environments | [Formats, software, environments, and reuse](formats-software-environments-and-reuse.qmd) |
+| Manage access and future responsibility | [Access, governance, maintenance, and deaccession](access-governance-maintenance-and-deaccession.qmd) |
+
+## Preservation-selection status
+
+Use exactly: **not yet assessed for preservation**, **selected for preservation**, **not selected for long-term preservation**, **preservation decision deferred**, or **superseded preservation decision**. The safe default is **not yet assessed for preservation**.
+
+**Not yet assessed** records no selection decision and must use outcome **not deposited**. **Selected for preservation** requires materials assessed, selected scope, rationale, decision authority, ISO 8601 decision date, intended repository or preservation-storage arrangement, and access or restriction conditions; it does not mean a package was assembled, deposited, or verified. **Not selected for long-term preservation** requires materials assessed, exact unselected scope, rationale, retention/disposition authority, decision authority/date, current temporary location or disposition state, reconsideration/disposition trigger where applicable, legal-hold status, and agreement, partner, community, or governance constraints. **Not selected for long-term preservation does not authorize deletion, destruction, or disposal.** **Preservation decision deferred** requires reason, unresolved dependency, temporary safe location, responsible person, and reconsideration trigger/date; deferred materials remain under responsible custody. **Superseded preservation decision** requires replacement record, replacement scope, replacement package where applicable, reason, date, and owner; the earlier decision remains identifiable.
+
+## Preservation outcome
+
+Use exactly: **not deposited**, **deposited**, **verified**, **verified with documented limitation**, **deposit rejected**, **deaccessioned**, or **superseded**. The safe default is **not deposited**.
+
+**Not deposited** means no receipt exists. **Deposited** means transfer occurred but complete verification is not recorded. **Verified** requires package ID/version, location, receipt, inventory, integrity, metadata, access verification, verifier, and date. **Verified with documented limitation** requires those fields plus substantive limitation, consequence, affected scope, downstream caution, follow-up, owner, and review trigger/date. **Deposit rejected** requires recipient, rejected package ID/version, submission and rejection dates, notice/receipt, reason, affected files/components, responsible person, temporary safe location, next action, alternative plan, and reconsideration trigger; rejection does not mean loss, remains **deposit rejected**, and does not automatically change selection. **Deaccessioned** requires prior deposit evidence, original location/identifier/package, authority, governing process, legal-hold and retention reviews, partner/community review, reason/date, affected users, notification, retained metadata/tombstone, final disposition or replacement, and owner; it does not authorize destruction. **Superseded** requires original and replacement package/record IDs and versions, reason, date, owner, accessibility status, and package relationship; the replacement does not inherit verification or access decisions.
+
+Selected materials may be not deposited, deposited, verified, verified with documented limitation, deposit rejected, deaccessioned, or superseded. Not selected and deferred decisions ordinarily use not deposited. A superseded decision requires a replacement and ordinarily uses not deposited or superseded. Deposited requires receipt/transfer evidence; verified requires deposit and all verification evidence; verified with limitation requires substantive limitation fields; deposit rejected requires attempted-submission evidence; deaccessioned requires prior deposit; superseded requires a replacement package and record. Verified outcomes are not permitted while selection is not yet assessed, not selected, or deferred. Replacement records do not inherit verification, access decisions, identifiers, or maintenance review automatically.
+
+Preservation completion means that selected materials have an identifiable, verified, and maintainable long-term record. It does not guarantee permanent access, unrestricted reuse, or indefinite computational execution. Applicable institutional, legal, contractual, funder, privacy, security, records-management, community, Indigenous, Tribal, and repository requirements take precedence. Completing this stage does not make the Lab Book approved policy.

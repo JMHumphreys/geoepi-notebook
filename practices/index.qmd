@@ -22,7 +22,7 @@ The Lab Book organizes work around a lifecycle:
 
 Stages overlap and may repeat. A revised project plan can trigger new acquisition work; an intake discrepancy can require a scope decision. Each page distinguishes the **Draft minimum**, **Conditionally required**, **Recommended**, **Stronger practice**, **Example**, and **Stop and resolve** levels.
 
-**Plan**, **Acquire**, **Organize**, **Analyze**, **Validate**, **Collaborate**, and **Communicate** now have implemented draft guidance. Preserve remains a future lifecycle stage, not complete guidance.
+**Plan**, **Acquire**, **Organize**, **Analyze**, **Validate**, **Collaborate**, **Communicate**, and **Preserve** now have implemented draft guidance. Completing the lifecycle guidance does not mean that the Lab Book is institutionally approved policy.
 
 ```{mermaid}
 flowchart LR
@@ -69,5 +69,11 @@ flowchart LR
 - [Prepare availability statements](communicate/data-code-software-and-availability.qmd) for data, code, software, or restricted inputs.
 - [Review a release](communicate/review-approval-release-and-corrections.qmd) when an exact product version needs a release decision.
 - [Record a correction or supersession](communicate/review-approval-release-and-corrections.qmd#corrections-withdrawals-and-supersession) when a released product changes.
+- [Decide what to preserve](preserve/selection-retention-and-disposition.qmd) when a project closes, pauses, or has a retention trigger.
+- [Assemble a preservation package](preserve/preservation-packages-manifests-and-metadata.qmd) when records or artifacts need a durable, identifiable scope.
+- [Select a repository](preserve/repositories-identifiers-and-deposit.qmd) before transferring a package.
+- [Verify integrity and recovery](preserve/fixity-storage-recovery-and-monitoring.qmd) after deposit and proportionately over time.
+- [Preserve software and environments](preserve/formats-software-environments-and-reuse.qmd) when future execution or interpretation matters.
+- [Review access restrictions](preserve/access-governance-maintenance-and-deaccession.qmd) when governance, maintenance, migration, or deaccession changes.
 
 The Lab Book separates draft policy, task guidance, templates, and examples. The [Minimum GeoEpi Project Standard](../start/minimum-standard.qmd) supplies the governing draft framework; these pages explain how to satisfy relevant information requirements without prescribing one folder tree, storage platform, workflow engine, or environment.
