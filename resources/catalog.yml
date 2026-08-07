@@ -1,71 +1,77 @@
 - id: primer-ecology-r
   title: "A Primer of Ecology with R"
-  url: "https://link.springer.com/book/10.1007/978-0-387-89882-7"
-  author_or_organization: "M. Henry H. Stevens"
-  resource_type: book
-  authority_type: academic-publisher
+  url: "https://hankstevens.github.io/Primer-of-Ecology/index.html"
+  source_selection: owner-supplied
+  author_or_organization: "Hank Stevens"
+  resource_type: open-textbook
+  authority_type: academic-author
   topics: [ecology, R]
   license: "Copyrighted; reuse terms not verified"
   access_date: 2026-08-05
   relevant_sections: [ecological-models]
   local_research_note: null
   review_status: metadata-needs-verification
-  description: "Quantitative ecology concepts and R-based models."
+  description: "Open ecology text using R, based on the author's ecology book and maintained as a teaching resource."
 - id: landscape-genetic-data-r
   title: "Landscape Genetic Data Analysis with R"
-  url: "https://www.springer.com/search?query=Landscape+Genetic+Data+Analysis+with+R"
-  author_or_organization: "Springer Nature"
-  resource_type: book
-  authority_type: academic-publisher
+  url: "https://bookdown.org/hhwagner1/LandGenCourse_book/"
+  source_selection: owner-supplied
+  author_or_organization: "Helene Wagner"
+  resource_type: course-materials
+  authority_type: academic-community
   topics: [landscape-genetics, spatial, R]
-  license: "Copyrighted; exact edition uncertain"
+  license: "CC BY-NC 4.0"
   access_date: 2026-08-05
   relevant_sections: [landscape-genetics]
   local_research_note: null
   review_status: metadata-needs-verification
-  description: "Seed entry for landscape-genetics workflows."
+  description: "Teaching materials for landscape genetic analysis with R."
 - id: quantitative-biology
-  title: "Quantitative Biology"
-  url: "https://www.cambridge.org/core/search?q=Quantitative%20Biology"
-  author_or_organization: "Cambridge University Press"
-  resource_type: book
-  authority_type: academic-publisher
+  title: "Building Skills in Quantitative Biology"
+  url: "https://www.quantitative-biology.ca/"
+  source_selection: owner-supplied
+  author_or_organization: "Kim Cuddington, Andrew M. Edwards, and Brian Ingalls"
+  resource_type: open-textbook
+  authority_type: academic-community
   topics: [quantitative-biology, modeling]
-  license: "Copyrighted; exact work uncertain"
+  license: "Ontario Commons License and CC BY-NC-SA 4.0"
   access_date: 2026-08-05
   relevant_sections: [quantitative-methods]
   local_research_note: null
   review_status: metadata-needs-verification
-  description: "Broad seed entry requiring exact title and edition verification."
+  description: "Open modules that introduce computational, statistical, and mathematical skills for biologists."
 - id: comparative-methods
   title: "Comparative Methods"
-  url: "https://global.oup.com/academic/"
-  author_or_organization: "Oxford University Press"
-  resource_type: book
-  authority_type: academic-publisher
+  url: "https://bookdown.org/bomeara/comparative-methods/"
+  source_selection: owner-supplied
+  author_or_organization: "Brian O'Meara"
+  resource_type: open-textbook
+  authority_type: academic-author
   topics: [comparative-methods, ecology]
   license: "Copyrighted; exact work uncertain"
   access_date: 2026-08-05
   relevant_sections: [comparative-analysis]
   local_research_note: null
   review_status: metadata-needs-verification
-  description: "Seed entry for comparative analysis."
+  description: "Book and course materials for comparative methods, phylogenetics, and analysis in R."
 - id: spatial-data-science
   title: "Spatial Data Science"
-  url: "https://spatialanalysis.github.io/"
-  author_or_organization: "Center for Spatial Data Science"
-  resource_type: course-or-notes
-  authority_type: university
+  url: "https://keen-swartz-3146c4.netlify.app/"
+  source_selection: owner-supplied
+  author_or_organization: "Edzer Pebesma and Roger Bivand"
+  resource_type: open-textbook
+  authority_type: academic-authors
   topics: [spatial, GIS, data-science]
   license: "Not verified"
   access_date: 2026-08-05
   relevant_sections: [spatial-analysis]
   local_research_note: null
   review_status: metadata-needs-verification
-  description: "Starting point for spatial analysis concepts and tools."
+  description: "Spatial data science with applications in R."
 - id: statistical-rethinking
   title: "Statistical Rethinking"
   url: "https://xcelab.net/rm/statistical-rethinking/"
+  source_selection: owner-supplied
   author_or_organization: "Richard McElreath"
   resource_type: book-and-course
   authority_type: academic-author
@@ -78,20 +84,22 @@
   description: "Model-centered introduction to Bayesian reasoning."
 - id: applied-population-genetics
   title: "Applied Population Genetics"
-  url: "https://www.cambridge.org/core/search?q=Applied%20Population%20Genetics"
-  author_or_organization: "Cambridge University Press"
-  resource_type: book
-  authority_type: academic-publisher
+  url: "https://dyerlab.github.io/applied_population_genetics/index.html"
+  source_selection: owner-supplied
+  author_or_organization: "Rodney J. Dyer"
+  resource_type: open-textbook
+  authority_type: academic-author
   topics: [population-genetics]
-  license: "Copyrighted; exact work uncertain"
+  license: "CC BY-SA 4.0"
   access_date: 2026-08-05
   relevant_sections: [population-genetics]
   local_research_note: null
   review_status: metadata-needs-verification
-  description: "Seed entry requiring title and edition confirmation."
+  description: "Practical text for applying population-genetic analyses to biological data."
 - id: epidemiologist-r-handbook
   title: "The Epidemiologist R Handbook"
-  url: "https://www.epirhandbook.com/en/index.html"
+  url: "https://epirhandbook.com/en/index.html"
+  source_selection: owner-supplied
   author_or_organization: "Applied Epi"
   resource_type: handbook
   authority_type: professional-organization
@@ -104,33 +112,36 @@
   description: "Task-oriented R reference for applied epidemiology."
 - id: network-analysis-r
   title: "Network Analysis in R"
-  url: "https://www.routledge.com/"
-  author_or_organization: "Routledge"
-  resource_type: book
-  authority_type: academic-publisher
+  url: "https://yunranchen.github.io/intro-net-r/index.html"
+  source_selection: owner-supplied
+  author_or_organization: "Yunran Chen"
+  resource_type: course-notes
+  authority_type: academic-author
   topics: [networks, R]
   license: "Copyrighted; exact work uncertain"
   access_date: 2026-08-05
   relevant_sections: [network-analysis]
   local_research_note: null
   review_status: metadata-needs-verification
-  description: "Seed entry for network analysis workflows in R."
+  description: "Introduction to network analysis using R."
 - id: molecular-epi-r
   title: "Molecular Epi in R"
-  url: "https://www.google.com/search?q=%22Molecular+Epi+in+R%22"
-  author_or_organization: "Landing page not verified"
+  url: "https://gtpb.github.io/MEVR16/index.html"
+  source_selection: owner-supplied
+  author_or_organization: "Molecular epidemiology course materials"
   resource_type: course-or-notes
-  authority_type: uncertain
+  authority_type: academic-course
   topics: [molecular-epidemiology, R]
   license: "Not verified"
   access_date: 2026-08-05
   relevant_sections: [molecular-epidemiology]
   local_research_note: null
   review_status: metadata-needs-verification
-  description: "Seed entry retained for later identification."
+  description: "Course materials for molecular epidemiology using R."
 - id: intro-gis-spatial
-  title: "Intro to GIS and Spatial Analysis"
-  url: "https://mgimond.github.io/Spatial/index.html"
+  title: "R | Intro to GIS and Spatial Analysis"
+  url: "https://mgimond.github.io/Spatial/coordinate-systems-in-r.html"
+  source_selection: owner-supplied
   author_or_organization: "Michael G. Immond"
   resource_type: course-notes
   authority_type: academic-instructor
@@ -143,46 +154,50 @@
   description: "Course notes introducing GIS and spatial analysis."
 - id: ecosystem-forecasting
   title: "A Practical Guide to Ecosystem Forecasting"
-  url: "https://ecoforecast.org/"
-  author_or_organization: "Ecological Forecasting Initiative"
+  url: "https://frec-5174c.github.io/eco4cast-in-R-book/"
+  source_selection: owner-supplied
+  author_or_organization: "FREC-5174C course materials"
   resource_type: guide
-  authority_type: research-community
+  authority_type: academic-course
   topics: [forecasting, ecology]
   license: "Not verified"
   access_date: 2026-08-05
   relevant_sections: [forecasting, workflow]
   local_research_note: null
   review_status: metadata-needs-verification
-  description: "Community entry point for ecological forecasting practice."
+  description: "Practical guide to ecosystem forecasting using R."
 - id: computational-genomics-manual
   title: "Computational Genomics Manual"
-  url: "https://www.ncbi.nlm.nih.gov/books/"
-  author_or_organization: "NCBI Bookshelf"
-  resource_type: manual
-  authority_type: government-library
+  url: "https://linsalrob.github.io/ComputationalGenomicsManual/"
+  source_selection: owner-supplied
+  author_or_organization: "Robert Edwards and colleagues"
+  resource_type: course-manual
+  authority_type: academic-instructor
   topics: [genomics, workflows]
   license: "Varies by work; not verified"
   access_date: 2026-08-05
   relevant_sections: [genomic-workflows]
   local_research_note: null
   review_status: metadata-needs-verification
-  description: "Seed entry requiring identification of the intended manual."
+  description: "Course manual for computational genomics and bioinformatics."
 - id: spatial-data-processing-r
   title: "Spatial Data Processing with R"
-  url: "https://cran.r-project.org/web/views/Spatial.html"
-  author_or_organization: "CRAN Spatial Task View"
-  resource_type: task-view
-  authority_type: community-maintained
+  url: "https://jguelat.github.io/spatial-r/"
+  source_selection: owner-supplied
+  author_or_organization: "Jérôme Guelat"
+  resource_type: course-notes
+  authority_type: academic-instructor
   topics: [spatial, R, data-processing]
   license: "Varies by linked resource"
   access_date: 2026-08-05
   relevant_sections: [spatial-data-processing]
   local_research_note: null
   review_status: metadata-needs-verification
-  description: "Index of R packages and resources for spatial data work."
+  description: "Course notes for spatial data processing with R."
 - id: geocomputation-with-r
   title: "Geocomputation with R"
   url: "https://r.geocompx.org/"
+  source_selection: owner-supplied
   author_or_organization: "Robin Lovelace, Jakub Nowosad, Jannes Muenchow"
   resource_type: open-textbook
   authority_type: academic-community
@@ -195,17 +210,18 @@
   description: "Open book for geographic data analysis, visualization, and modeling."
 - id: network-analysis-integrating
   title: "Network Analysis: Integrating Social Network Theory, Method, and Application with R"
-  url: "https://www.routledge.com/"
-  author_or_organization: "Routledge"
-  resource_type: book
-  authority_type: academic-publisher
+  url: "https://inarwhal.github.io/NetworkAnalysisR-book/"
+  source_selection: owner-supplied
+  author_or_organization: "Craig M. Rawlings, Jeffrey A. Smith, James Moody, and Daniel A. McFarland"
+  resource_type: open-textbook
+  authority_type: academic-community
   topics: [networks, R]
   license: "Copyrighted; exact landing page not verified"
   access_date: 2026-08-05
   relevant_sections: [network-theory, network-methods]
   local_research_note: null
   review_status: metadata-needs-verification
-  description: "Seed for theory-to-application network analysis in R."
+  description: "Tutorials and book materials for theory-to-application network analysis in R."
 - id: turing-way
   title: "The Turing Way"
   url: "https://book.the-turing-way.org/"

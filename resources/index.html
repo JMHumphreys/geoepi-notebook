@@ -81,10 +81,10 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-id','listing-title','listing-url','listing-author_or_organization','listing-resource_type','listing-authority_type','listing-topics','listing-license','listing-access_date','listing-relevant_sections','listing-local_research_note','listing-review_status','listing-description',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-id','listing-title','listing-url','listing-source_selection','listing-author_or_organization','listing-resource_type','listing-authority_type','listing-topics','listing-license','listing-access_date','listing-relevant_sections','listing-local_research_note','listing-review_status','listing-description',{ data: ['index'] },{ data: ['categories'] }],
       page: 25,
     pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-id","listing-title","listing-url","listing-author_or_organization","listing-resource_type","listing-authority_type","listing-topics","listing-license","listing-access_date","listing-relevant_sections","listing-local_research_note","listing-review_status","listing-description"],
+      searchColumns: ["listing-id","listing-title","listing-url","listing-source_selection","listing-author_or_organization","listing-resource_type","listing-authority_type","listing-topics","listing-license","listing-access_date","listing-relevant_sections","listing-local_research_note","listing-review_status","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -266,7 +266,7 @@ window.Quarto = {
 
 
 <p>The <a href="catalog.yml">resource catalog</a> records external starting points without turning them into lab policy. Select a resource title to open its external landing page. Annotations are intentionally short and original. Check the source landing page, current version, license, and access conditions before relying on a resource.</p>
-<p>Some entries are authoritative standards or official guidance; others are practical references or orientation material. Inclusion is not endorsement, and users should verify that a resource is current and appropriate for their work.</p>
+<p>Some entries are authoritative standards or official guidance; others are practical references or orientation material. A practical or owner-selected resource may be included because it is clear, useful, and relevant to GeoEpi work; an academic publisher or institutional page is not automatically preferable. Inclusion is not endorsement, and users should verify that a resource is current and appropriate for their work.</p>
 <p>Each entry has a stable ID, title, URL, author or organization, resource and authority types, topic tags, license, access date, relevant sections, a local research-note path, review status, and a short annotation. Unknown or unverified values are marked explicitly.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -299,42 +299,42 @@ Warning
 </thead>
 <tbody class="list">
 <tr class="odd" data-index="0">
-<td class="listing-title"><a href="https://link.springer.com/book/10.1007/978-0-387-89882-7">A Primer of Ecology with R</a></td>
-<td class="listing-description">Quantitative ecology concepts and R-based models.</td>
-<td class="listing-author_or_organization">M. Henry H. Stevens</td>
-<td class="listing-resource_type">book</td>
+<td class="listing-title"><a href="https://hankstevens.github.io/Primer-of-Ecology/index.html">A Primer of Ecology with R</a></td>
+<td class="listing-description">Open ecology text using R, based on the author's ecology book and maintained as a teaching resource.</td>
+<td class="listing-author_or_organization">Hank Stevens</td>
+<td class="listing-resource_type">open-textbook</td>
 <td class="listing-topics">ecology, R</td>
 <td class="listing-review_status">metadata-needs-verification</td>
 </tr>
 <tr class="even" data-index="1">
-<td class="listing-title"><a href="https://www.springer.com/search?query=Landscape+Genetic+Data+Analysis+with+R">Landscape Genetic Data Analysis with R</a></td>
-<td class="listing-description">Seed entry for landscape-genetics workflows.</td>
-<td class="listing-author_or_organization">Springer Nature</td>
-<td class="listing-resource_type">book</td>
+<td class="listing-title"><a href="https://bookdown.org/hhwagner1/LandGenCourse_book/">Landscape Genetic Data Analysis with R</a></td>
+<td class="listing-description">Teaching materials for landscape genetic analysis with R.</td>
+<td class="listing-author_or_organization">Helene Wagner</td>
+<td class="listing-resource_type">course-materials</td>
 <td class="listing-topics">landscape-genetics, spatial, R</td>
 <td class="listing-review_status">metadata-needs-verification</td>
 </tr>
 <tr class="odd" data-index="2">
-<td class="listing-title"><a href="https://www.cambridge.org/core/search?q=Quantitative%20Biology">Quantitative Biology</a></td>
-<td class="listing-description">Broad seed entry requiring exact title and edition verification.</td>
-<td class="listing-author_or_organization">Cambridge University Press</td>
-<td class="listing-resource_type">book</td>
+<td class="listing-title"><a href="https://www.quantitative-biology.ca/">Building Skills in Quantitative Biology</a></td>
+<td class="listing-description">Open modules that introduce computational, statistical, and mathematical skills for biologists.</td>
+<td class="listing-author_or_organization">Kim Cuddington, Andrew M. Edwards, and Brian Ingalls</td>
+<td class="listing-resource_type">open-textbook</td>
 <td class="listing-topics">quantitative-biology, modeling</td>
 <td class="listing-review_status">metadata-needs-verification</td>
 </tr>
 <tr class="even" data-index="3">
-<td class="listing-title"><a href="https://global.oup.com/academic/">Comparative Methods</a></td>
-<td class="listing-description">Seed entry for comparative analysis.</td>
-<td class="listing-author_or_organization">Oxford University Press</td>
-<td class="listing-resource_type">book</td>
+<td class="listing-title"><a href="https://bookdown.org/bomeara/comparative-methods/">Comparative Methods</a></td>
+<td class="listing-description">Book and course materials for comparative methods, phylogenetics, and analysis in R.</td>
+<td class="listing-author_or_organization">Brian O'Meara</td>
+<td class="listing-resource_type">open-textbook</td>
 <td class="listing-topics">comparative-methods, ecology</td>
 <td class="listing-review_status">metadata-needs-verification</td>
 </tr>
 <tr class="odd" data-index="4">
-<td class="listing-title"><a href="https://spatialanalysis.github.io/">Spatial Data Science</a></td>
-<td class="listing-description">Starting point for spatial analysis concepts and tools.</td>
-<td class="listing-author_or_organization">Center for Spatial Data Science</td>
-<td class="listing-resource_type">course-or-notes</td>
+<td class="listing-title"><a href="https://keen-swartz-3146c4.netlify.app/">Spatial Data Science</a></td>
+<td class="listing-description">Spatial data science with applications in R.</td>
+<td class="listing-author_or_organization">Edzer Pebesma and Roger Bivand</td>
+<td class="listing-resource_type">open-textbook</td>
 <td class="listing-topics">spatial, GIS, data-science</td>
 <td class="listing-review_status">metadata-needs-verification</td>
 </tr>
@@ -347,15 +347,15 @@ Warning
 <td class="listing-review_status">metadata-needs-verification</td>
 </tr>
 <tr class="odd" data-index="6">
-<td class="listing-title"><a href="https://www.cambridge.org/core/search?q=Applied%20Population%20Genetics">Applied Population Genetics</a></td>
-<td class="listing-description">Seed entry requiring title and edition confirmation.</td>
-<td class="listing-author_or_organization">Cambridge University Press</td>
-<td class="listing-resource_type">book</td>
+<td class="listing-title"><a href="https://dyerlab.github.io/applied_population_genetics/index.html">Applied Population Genetics</a></td>
+<td class="listing-description">Practical text for applying population-genetic analyses to biological data.</td>
+<td class="listing-author_or_organization">Rodney J. Dyer</td>
+<td class="listing-resource_type">open-textbook</td>
 <td class="listing-topics">population-genetics</td>
 <td class="listing-review_status">metadata-needs-verification</td>
 </tr>
 <tr class="even" data-index="7">
-<td class="listing-title"><a href="https://www.epirhandbook.com/en/index.html">The Epidemiologist R Handbook</a></td>
+<td class="listing-title"><a href="https://epirhandbook.com/en/index.html">The Epidemiologist R Handbook</a></td>
 <td class="listing-description">Task-oriented R reference for applied epidemiology.</td>
 <td class="listing-author_or_organization">Applied Epi</td>
 <td class="listing-resource_type">handbook</td>
@@ -363,23 +363,23 @@ Warning
 <td class="listing-review_status">metadata-needs-verification</td>
 </tr>
 <tr class="odd" data-index="8">
-<td class="listing-title"><a href="https://www.routledge.com/">Network Analysis in R</a></td>
-<td class="listing-description">Seed entry for network analysis workflows in R.</td>
-<td class="listing-author_or_organization">Routledge</td>
-<td class="listing-resource_type">book</td>
+<td class="listing-title"><a href="https://yunranchen.github.io/intro-net-r/index.html">Network Analysis in R</a></td>
+<td class="listing-description">Introduction to network analysis using R.</td>
+<td class="listing-author_or_organization">Yunran Chen</td>
+<td class="listing-resource_type">course-notes</td>
 <td class="listing-topics">networks, R</td>
 <td class="listing-review_status">metadata-needs-verification</td>
 </tr>
 <tr class="even" data-index="9">
-<td class="listing-title"><a href="https://www.google.com/search?q=%22Molecular+Epi+in+R%22">Molecular Epi in R</a></td>
-<td class="listing-description">Seed entry retained for later identification.</td>
-<td class="listing-author_or_organization">Landing page not verified</td>
+<td class="listing-title"><a href="https://gtpb.github.io/MEVR16/index.html">Molecular Epi in R</a></td>
+<td class="listing-description">Course materials for molecular epidemiology using R.</td>
+<td class="listing-author_or_organization">Molecular epidemiology course materials</td>
 <td class="listing-resource_type">course-or-notes</td>
 <td class="listing-topics">molecular-epidemiology, R</td>
 <td class="listing-review_status">metadata-needs-verification</td>
 </tr>
 <tr class="odd" data-index="10">
-<td class="listing-title"><a href="https://mgimond.github.io/Spatial/index.html">Intro to GIS and Spatial Analysis</a></td>
+<td class="listing-title"><a href="https://mgimond.github.io/Spatial/coordinate-systems-in-r.html">R | Intro to GIS and Spatial Analysis</a></td>
 <td class="listing-description">Course notes introducing GIS and spatial analysis.</td>
 <td class="listing-author_or_organization">Michael G. Immond</td>
 <td class="listing-resource_type">course-notes</td>
@@ -387,26 +387,26 @@ Warning
 <td class="listing-review_status">metadata-needs-verification</td>
 </tr>
 <tr class="even" data-index="11">
-<td class="listing-title"><a href="https://ecoforecast.org/">A Practical Guide to Ecosystem Forecasting</a></td>
-<td class="listing-description">Community entry point for ecological forecasting practice.</td>
-<td class="listing-author_or_organization">Ecological Forecasting Initiative</td>
+<td class="listing-title"><a href="https://frec-5174c.github.io/eco4cast-in-R-book/">A Practical Guide to Ecosystem Forecasting</a></td>
+<td class="listing-description">Practical guide to ecosystem forecasting using R.</td>
+<td class="listing-author_or_organization">FREC-5174C course materials</td>
 <td class="listing-resource_type">guide</td>
 <td class="listing-topics">forecasting, ecology</td>
 <td class="listing-review_status">metadata-needs-verification</td>
 </tr>
 <tr class="odd" data-index="12">
-<td class="listing-title"><a href="https://www.ncbi.nlm.nih.gov/books/">Computational Genomics Manual</a></td>
-<td class="listing-description">Seed entry requiring identification of the intended manual.</td>
-<td class="listing-author_or_organization">NCBI Bookshelf</td>
-<td class="listing-resource_type">manual</td>
+<td class="listing-title"><a href="https://linsalrob.github.io/ComputationalGenomicsManual/">Computational Genomics Manual</a></td>
+<td class="listing-description">Course manual for computational genomics and bioinformatics.</td>
+<td class="listing-author_or_organization">Robert Edwards and colleagues</td>
+<td class="listing-resource_type">course-manual</td>
 <td class="listing-topics">genomics, workflows</td>
 <td class="listing-review_status">metadata-needs-verification</td>
 </tr>
 <tr class="even" data-index="13">
-<td class="listing-title"><a href="https://cran.r-project.org/web/views/Spatial.html">Spatial Data Processing with R</a></td>
-<td class="listing-description">Index of R packages and resources for spatial data work.</td>
-<td class="listing-author_or_organization">CRAN Spatial Task View</td>
-<td class="listing-resource_type">task-view</td>
+<td class="listing-title"><a href="https://jguelat.github.io/spatial-r/">Spatial Data Processing with R</a></td>
+<td class="listing-description">Course notes for spatial data processing with R.</td>
+<td class="listing-author_or_organization">Jérôme Guelat</td>
+<td class="listing-resource_type">course-notes</td>
 <td class="listing-topics">spatial, R, data-processing</td>
 <td class="listing-review_status">metadata-needs-verification</td>
 </tr>
@@ -419,10 +419,10 @@ Warning
 <td class="listing-review_status">metadata-needs-verification</td>
 </tr>
 <tr class="even" data-index="15">
-<td class="listing-title"><a href="https://www.routledge.com/">Network Analysis: Integrating Social Network Theory, Method, and Application with R</a></td>
-<td class="listing-description">Seed for theory-to-application network analysis in R.</td>
-<td class="listing-author_or_organization">Routledge</td>
-<td class="listing-resource_type">book</td>
+<td class="listing-title"><a href="https://inarwhal.github.io/NetworkAnalysisR-book/">Network Analysis: Integrating Social Network Theory, Method, and Application with R</a></td>
+<td class="listing-description">Tutorials and book materials for theory-to-application network analysis in R.</td>
+<td class="listing-author_or_organization">Craig M. Rawlings, Jeffrey A. Smith, James Moody, and Daniel A. McFarland</td>
+<td class="listing-resource_type">open-textbook</td>
 <td class="listing-topics">networks, R</td>
 <td class="listing-review_status">metadata-needs-verification</td>
 </tr>
