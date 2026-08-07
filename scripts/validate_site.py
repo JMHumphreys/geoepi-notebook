@@ -1,6 +1,7 @@
 """Validate the active GeoEpi Lab Book structure and internal links."""
 
 from html.parser import HTMLParser
+import argparse
 from pathlib import Path
 import re
 import sys
@@ -18,6 +19,16 @@ REQUIRED_TEMPLATES = {
     "geoepi-metadata-template.yml",
 }
 errors = []
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="Validate the active GeoEpi Lab Book site.")
+    parser.add_argument(
+        "--rendered",
+        action="store_true",
+        help="Also validate rendered HTML links and search-index exclusion rules.",
+    )
+    return parser.parse_args()
 
 
 def active_qmd_pages():
@@ -116,10 +127,15 @@ for path in ROOT.rglob("*"):
     if re.search(r"(?i)(password|passwd|secret|token)\s*[:=]\s*[^<\n]+", text) and path.name not in {"validate_site.py"}:
         errors.append(f"{path}: possible credential or secret material")
 
-check_rendered_links()
+args = parse_args()
+if args.rendered:
+    check_rendered_links()
 
 if errors:
     print("\n".join(errors))
     sys.exit(1)
 
-print(f"Validated {len(pages)} active Quarto pages, six active templates, and rendered internal links.")
+if args.rendered:
+    print(f"Validated {len(pages)} active Quarto pages, six active templates, and rendered internal links.")
+else:
+    print(f"Validated {len(pages)} active Quarto pages, six active templates, and source links.")
