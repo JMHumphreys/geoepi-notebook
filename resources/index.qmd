@@ -1,6 +1,6 @@
 ---
 title: "Resources"
-description: "An annotated catalog of external resources for future GeoEpi guidance."
+description: "An annotated catalog of external resources for GeoEpi research guidance."
 status: draft
 practice-level: orientation
 audience: all lab members
@@ -11,11 +11,12 @@ last-reviewed: 2026-08-05
 review-cycle: annual
 listing:
   contents: catalog.yml
-  type: table
-  fields: [title, description, author, categories]
+  template: resource-table.ejs.md
 ---
 
-The [resource catalog](catalog.yml) records external starting points without turning them into lab policy. Annotations are intentionally short and original. Check the source landing page, license, version, and access conditions before relying on a resource.
+The [resource catalog](catalog.yml) records external starting points without turning them into lab policy. Select a resource title to open its external landing page. Annotations are intentionally short and original. Check the source landing page, current version, license, and access conditions before relying on a resource.
+
+Some entries are authoritative standards or official guidance; others are practical references or orientation material. Inclusion is not endorsement, and users should verify that a resource is current and appropriate for their work.
 
 Each entry has a stable ID, title, URL, author or organization, resource and authority types, topic tags, license, access date, relevant sections, a local research-note path, review status, and a short annotation. Unknown or unverified values are marked explicitly.
 
