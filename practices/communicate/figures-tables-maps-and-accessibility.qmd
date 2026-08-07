@@ -29,6 +29,6 @@ Record geography, boundaries and boundary date where relevant, spatial unit, den
 
 ## Accessibility
 
-Provide alt text or an equivalent text description for meaningful non-text content, and provide table or text alternatives when a visual carries information that cannot be recovered from the caption. Use readable labels, adequate contrast, patterns or annotations where color alone is insufficient, and a logical reading order. Consider [WCAG 2.2](https://www.w3.org/TR/WCAG22/) when a web product or applicable requirement calls for it; do not claim conformance without testing. Formal conformance is not required for every internal document.
+Useful alt text or an equivalent description should state what the display represents, the main pattern or conclusion, consequential exceptions, and uncertainty or limitation needed to interpret it. It does not need to enumerate every plotted value. Captions and alt text may serve different purposes; provide a data table or text alternative when exact values matter. Use readable labels, adequate contrast, patterns or annotations where color alone is insufficient, and a logical reading order. Consider [WCAG 2.2](https://www.w3.org/TR/WCAG22/) when a web product or applicable requirement calls for it; do not claim formal conformance without applicable testing. Formal conformance is not required for every internal document.
 
 Review accessibility in proportion to audience, consequence, product, and channel. Record unresolved accessibility issues and who must address them before release.

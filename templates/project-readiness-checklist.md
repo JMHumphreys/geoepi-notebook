@@ -153,6 +153,8 @@
 ## Claims and presentation
 
 - [ ] Consequential claims trace to results and validation records within validated scope.
+- [ ] Accepted consequential claims use the defined claim states and identify evidence, scope, uncertainty, limitation, reviewer, and date.
+- [ ] Superseded claims identify replacement claim IDs or product versions.
 - [ ] Uncertainty, limitations, numerical consistency, figures, tables, maps, and accessibility are reviewed proportionately.
 
 ## Reporting and availability
@@ -162,11 +164,17 @@
 ## Ready for release review
 
 - [ ] The authoritative communication-product record and exact product version are identified.
+- [ ] Product-preparation status and authoritative readiness status are consistent.
+- [ ] The exact release-review package and version are identified when ready; a changed package triggers renewed review.
 - [ ] The exact readiness status, required reviews, release authority, limitation fields, decision-maker, and ISO 8601 date are recorded.
+- [ ] Limitation fields are substantive when the limitation status is used.
 
 ## Release decision and event
 
 - [ ] The authoritative release record, exact decision status, exact release state, approved audience/purpose/channel, release date/location, persistent identifier where applicable, corrections, and supersession are recorded.
+- [ ] Decision and release state form a valid combination.
+- [ ] Withheld products record authority and reason; withdrawn products identify the earlier release; superseded products identify replacements.
+- [ ] Corrections use an appropriate category and consequential changes return to the correct lifecycle stage.
 - [ ] Release does not imply that preservation is complete.
 
 ## Handoff and closeout events

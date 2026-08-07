@@ -20,7 +20,11 @@ For consequential claims, identify the claim, proposed wording, claim type, supp
 
 | Claim ID | Proposed wording | Claim type | Result IDs | Validation record | Scope | Uncertainty | Limitation | Review status |
 |---|---|---|---|---|---|---|---|---|
-| `CLAIM-001` | `Replace with scoped wording` | `description / comparison / estimate / prediction / other` | `RESULT-001` | `VALIDATION-001` | `population, geography, period, scale` | `describe or not_applicable` | `describe or none` | `planned` |
+| `CLAIM-001` | `Replace with scoped wording` | `description / comparison / estimate / prediction / other` | `RESULT-001` | `VALIDATION-001` | `population, geography, period, scale` | `describe or not_applicable` | `describe or none` | `proposed` |
+
+Use exactly these claim-review states: **proposed**, **under review**, **accepted for current product**, **revision required**, **removed**, and **superseded**. The safe default is **proposed**. Proposed claims are drafted but not accepted; under-review claims are being checked for wording, evidence, scope, uncertainty, or limitation; revision-required claims cannot be used as written; removed claims were intentionally removed and retain a reason when consequential; superseded claims identify a replacement claim ID or product version.
+
+**Accepted for current product** means the claim was reviewed for the named product version and retains its supporting result IDs, validation-record ID, intended scope, uncertainty, limitation, responsible reviewer, and review date. It is not release approval.
 
 Preserve claim type. An association is not automatically causal; a scenario is not automatically a forecast; a modeled quantity is not an observed fact; retrospective performance is not prospective performance; regional support is not site-level support; ranking is not calibrated probability; statistical significance is not practical importance; and support for one use does not imply support for broader uses.
 

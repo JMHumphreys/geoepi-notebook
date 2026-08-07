@@ -64,6 +64,12 @@ Use exactly: **planned**, **in preparation**, **under review**, **revision requi
 
 Use exactly: **not ready for release review**, **ready for release review**, or **ready for release review with documented limitation**. The safe default is **not ready for release review**. The product record is authoritative. A ready status means the exact product is sufficiently complete for the applicable authority to consider; it does not approve or release the product. A limitation status requires a nonempty limitation, why it matters, affected scope, downstream caution, follow-up, and responsible follow-up.
 
+These are two separate status systems. Product-preparation status describes where work on the product stands. Release-review readiness records the authoritative decision that one exact product package is complete enough for release authority to consider. `planned`, `in preparation`, `under review`, and `revision required` require readiness to remain **not ready for release review**. Product-preparation status may become **ready for release review** only when readiness is either **ready for release review** or **ready for release review with documented limitation**. A **superseded** product must not retain a ready status and must identify its replacement communication-product ID and version.
+
+Changing a product after a ready decision requires a new product version and a renewed readiness decision. Minor formatting changes may retain the same version only when the project's versioning convention permits it and scientific meaning is unchanged.
+
+Every superseded product records its replacement ID, replacement version, reason, date, and responsible owner. Acceptance, readiness, approval, accessibility review, availability statements, and release state do not transfer automatically; repeat affected checks for the replacement.
+
 ## Boundary and return paths
 
 Communicate does not replace Analyze, Validate, Collaborate, legal review, privacy authorization, institutional clearance, or preservation. If communication reveals changed data, methods, parameters, estimates, or outputs, return to Analyze. If it reveals changed scientific support, interpretation, performance evidence, or limitations, return to Validate. If it changes contributors, credit, partner obligations, or decision authority, return to Collaborate. Do not silently correct scientific content only in the product.
