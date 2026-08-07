@@ -24,6 +24,12 @@ Name whether review is scientific, methodological, technical, data, validation, 
 
 For consequential feedback, retain the concern, evidence or reason, responsible person, response, decision owner, date, and affected version. Link the response to the changed analysis, validation record, result, or communication draft when applicable. Not every formatting comment needs a formal record.
 
+Optional labels can make a record easier to scan: **blocking concern**, **important correction**, **suggestion**, **question**, or **note**. They are aids, not a mandatory workflow or bureaucracy. Record a response outcome using exactly one of: **accepted and addressed**, **addressed differently**, **deferred**, **not accepted with rationale**, **transferred to another lifecycle stage**, or **unresolved**. The durable project review record owns the response; resolving a comment is not approval.
+
+A blocking concern may be overridden only by documented authority with a rationale and any resulting limitation. Changes to data or analysis return to Analyze; scientific support or validation concerns return to Validate; wording-only changes may remain in Collaborate or a future Communicate stage.
+
+Independent review is proportionate, not universal. Consider it when choices are operationally consequential, discretionary, surprising or disputed, likely to be reused widely, span organizations, have high error costs, or were made by the decision owner. Independence may mean a different analyst, subject-matter expert, person, or organization; no universal count or separation rule applies.
+
 ## Review is not approval
 
 Review means that someone examined work for a defined purpose. Approval means that a person with relevant authority made a separate decision. Do not imply approval merely because comments were resolved or a reviewer participated.
@@ -40,3 +46,4 @@ Disagreement can remain visible without stopping all work. Record the positions,
 - [ ] Review is distinguished from final decision and approval.
 - [ ] Unresolved disagreement is visible.
 - [ ] Required return to Analyze or Validate is recorded.
+- [ ] Independent review is considered proportionately and its rationale is recorded where warranted.

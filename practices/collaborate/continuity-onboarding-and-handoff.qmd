@@ -25,9 +25,17 @@ Give a new contributor the project purpose, current phase, authoritative locatio
 
 For work that is long-running, costly, operational, externally funded, or high-consequence, identify backup responsibility, current status location, principal workflow entry point, access owner, scheduled jobs or services, and conditions requiring coverage. Do not make a personal workspace the only place where critical context exists.
 
-## Handoff
+## Temporary coverage
 
-A formal handoff should identify outgoing and incoming responsibility, current analysis and validation versions, result IDs, repositories and data locations, reproduction steps, known issues and limitations, unfinished work, active reviewers, unresolved scientific or credit disagreements, partner obligations, accounts or services requiring transfer, access removal, and acceptance by the incoming owner. A handoff is not complete until responsibility and access are accepted or limitations are recorded.
+Temporary coverage records the coverage period, temporary responsible person, permitted decisions, workflows and deadlines, access scope, escalation route, and return or review date. It is not a permanent transfer of ownership.
+
+## Formal handoff
+
+A formal handoff should identify outgoing and incoming responsibility, current analysis and validation versions, result IDs, repositories and data locations, reproduction steps, known issues and limitations, unfinished work, active reviewers, unresolved scientific or credit disagreements, partner obligations, accounts or services requiring transfer, access removal, and acceptance by the incoming owner. Clarify the current collaboration agreement and contribution record versions. A handoff is not complete until responsibility and access are accepted or limitations are recorded.
+
+## Contributor departure and offboarding
+
+Preserve contribution history, update roles and responsibility records, transfer or remove access through the approved system, and transfer ownership of repositories, storage, workflows, service accounts, and scheduled jobs where applicable. Record unfinished work, partner obligations, credit implications, preserved records, and the authority for each change. Do not delete history merely because a contributor leaves.
 
 Use the [project handoff template](../../templates/project-handoff-template.md) when a separate record is warranted. Never include credentials; transfer access through the approved system.
 

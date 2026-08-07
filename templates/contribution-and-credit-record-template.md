@@ -14,19 +14,13 @@ Record actual contributions and revisit expected credit as work changes. This re
 
 ## Contributor table
 
-| Contributor | Organization or affiliation | Project role | Contribution description | Related data, code, analysis, validation, result, or output IDs | Contribution period | Expected recognition | Discussion status | Contributor confirmation | Last reviewed |
-|---|---|---|---|---|---|---|---|---|---|
-| `REQUIRED` | `REQUIRED` | `REQUIRED` | `REQUIRED` | `REQUIRED-or-not_applicable` | `REQUIRED` | `blank until discussed` | `not yet discussed` | `blank until confirmed` | `optional` |
+| Contributor | Organization or affiliation | Project role | Contribution description | Related data, code, analysis, validation, result, or output IDs | Contribution period | Expected recognition | Optional CRediT role(s) | Discussion status | Contributor confirmation | Confirmation date | Last reviewed |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| `REQUIRED` | `REQUIRED` | `REQUIRED` | `REQUIRED` | `REQUIRED-or-not_applicable` | `REQUIRED` | `blank until discussed` | `optional` | `not yet discussed` | `blank until confirmed` | `blank until confirmed` | `optional` |
 
 Allowed discussion statuses are **not yet discussed**, **discussion in progress**, **agreed**, **disputed**, **not applicable**, and **superseded**. A copied example row must not imply agreement or confirmation.
 
-## Optional contribution vocabulary
-
-- Plain-language contribution: `REQUIRED`
-- Optional CRediT role: `optional`
-- Work-product references: `optional`
-
-CRediT is optional contribution vocabulary and does not determine authorship.
+CRediT is optional contribution vocabulary and does not determine authorship or author order. Use the plain-language contribution description and work-product references above even when no CRediT role is used.
 
 ## Authorship or ordered credit
 
@@ -48,3 +42,5 @@ Do not supply a default author order.
 | `blank until needed` | `blank until needed` | `blank until needed` | `blank until needed` | `blank until needed` | `blank until needed` | `blank until needed` |
 
 Record final confirmation only when it actually occurs. This record does not establish a universal authorship or author-order rule.
+
+For `agreed`, record expected recognition, contributor confirmation and date, and maintainer review date; if confirmation is unavailable, record the attempt, reason, authority, or exception. For `disputed`, record the disputed contribution or recognition, affected contributors, positions or evidence, applicable guidance, authority, current state, and communication effect. For `superseded`, link the replacement contribution record or row and record supersession date, reason, and maintainer.

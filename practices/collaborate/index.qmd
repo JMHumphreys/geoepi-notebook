@@ -68,6 +68,12 @@ Use exactly:
 
 The safe default is **not ready for communication**. The authoritative decision belongs in a collaboration agreement or equivalent project-level collaboration record, not in an individual contributor record, review comment, validation record, or result row.
 
+**Not ready for communication** is the default while the decision-maker or decision date is blank. It records no readiness decision; unresolved work may remain visible.
+
+**Ready for communication** requires the current project/result package and versions, validation-record IDs, a communication-preparation owner, required reviews complete, no unresolved concern or an accepted documented exception, recorded restrictions, and a decision-maker plus ISO 8601 decision date.
+
+**Ready for communication with documented limitation** requires all of the ready fields plus a nonempty limitation, why it matters, affected product, claim, result, audience, use, geography, or period, downstream caution or restriction, follow-up, responsible follow-up, decision-maker, and ISO 8601 decision date. Do not use this status with blank limitation fields.
+
 ## Ready-for-communication gate
 
 - [ ] Project and result versions are identified.

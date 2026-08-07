@@ -31,3 +31,11 @@ Distinguish partner consultation, required review, decision authority, and relea
 ## Sharing and communication
 
 Record restrictions, license or agreement references, confidentiality conditions, de-identification or aggregation expectations where applicable, and the intended communication product. Ready for communication means ready to begin coordinated preparation; it does not authorize public release, operational use, or unrestricted sharing.
+
+## Indigenous, Tribal, and community-governed data or knowledge
+
+When data or knowledge is Indigenous, Tribal, or community-governed, the relevant community authority is substantive. Use the community's own terminology and record who has authority over access, interpretation, reuse, location, attribution, and communication. Partners are not passive stakeholders: record collective benefit, responsibility, and the conditions under which knowledge may be represented or shared. Local authority and applicable agreements take precedence over this guidance; the [CARE Principles for Indigenous Data Governance](https://www.gida-global.org/careprinciples) are a relevant governance lens, not a substitute for consent, agreement, or community decision-making. The resource is also recorded in the local resource catalog. Public availability does not override those conditions.
+
+## Stop and resolve
+
+Pause the affected work and record a responsible person and resolution when access authority is unclear; agreements are missing or incomplete; data or output reuse is unknown; consultation is being represented as approval; communication exceeds the agreed purpose; public repository exposure is possible; partner identity, responsibility, or continuity is unclear; community authority has not been established; or ownership of a repository, storage location, service, or scheduled workflow is unresolved.

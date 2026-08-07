@@ -74,10 +74,13 @@ This section is authoritative for the collaboration-level readiness decision.
 - Relevant validation-record IDs: `REQUIRED`
 - Communication-preparation owner: `REQUIRED`
 - Required reviews complete: `REQUIRED-or-limitations`
-- Unresolved concerns: `none or describe`
-- Documented limitation: `none or describe`
-- Downstream caution: `none or describe`
-- Required follow-up: `none or describe`
+- Unresolved concerns: `none or accepted documented exception; no unresolved concern for ready status`
+- Documented limitation: `blank while not ready; REQUIRED when ready with documented limitation`
+- Why the limitation matters: `blank while not ready; REQUIRED when ready with documented limitation`
+- Affected product, claim, result, audience, use, geography, or period: `blank while not ready; REQUIRED when ready with documented limitation`
+- Downstream caution or restriction: `blank while not ready; REQUIRED when ready with documented limitation`
+- Required follow-up: `blank while not ready; REQUIRED when ready with documented limitation`
+- Responsible follow-up: `blank while not ready; REQUIRED when ready with documented limitation`
 - Readiness status: `not ready for communication`
 - Decision-maker: `blank while not ready for communication`
 - Decision date: `blank while not ready for communication; ISO 8601 when populated`
