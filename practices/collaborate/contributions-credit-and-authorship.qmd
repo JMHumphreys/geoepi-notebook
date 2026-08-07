@@ -1,0 +1,37 @@
+---
+title: "Contributions, Credit, and Authorship"
+description: "Record actual contributions and discuss recognition without imposing universal authorship rules."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - collaboration
+  - authorship
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+Record actual contributions and revisit expected credit as work changes. This record does not itself determine authorship.
+
+## Contribution records
+
+Record contributor, organization or affiliation, project role, contribution description, related data/code/analysis/validation/result/output IDs, contribution period, expected recognition, optional CRediT role(s), discussion status, contributor confirmation and date, and review date. Keep unresolved credit questions visible.
+
+The [contribution and credit template](../../templates/contribution-and-credit-record-template.md) is a reusable starting point. A formal record is not required for every temporary collaborator or small exploratory project.
+
+## Credit and authorship
+
+Distinguish authorship, named contributor, acknowledgment, data/software/dataset citation, and partner or organization recognition. Substantial data, software, field, validation, visualization, and technical work should remain visible even when the recognition form differs. Requirements vary by discipline, journal, institution, funder, community, contract, and product. Before communication is finalized, confirm names, affiliations, contributions, recognition form, authorship, order, and disputes as applicable. Do not infer authorship or author order from a role title, a single contribution, or the use of the optional CRediT vocabulary.
+
+The [NISO CRediT contributor-role resource](https://credit.niso.org/contributor-roles/) can describe contribution types, but it does not determine authorship or author order and is voluntary. Applicable institutional, contractual, journal, funder, community, and legal requirements take precedence. The resource is also recorded in the local resource catalog.
+
+Use these discussion statuses exactly: **not yet discussed**, **discussion in progress**, **agreed**, **disputed**, **not applicable**, and **superseded**. “Agreed” requires the expected recognition, contributor confirmation and date, and maintainer review date; if confirmation is unavailable, record the attempt, reason, authority, or exception rather than silently marking agreement. “Disputed” records the contribution or recognition at issue, affected contributors, positions or evidence, guidance, authority, current state, and communication effect. “Not applicable” is only for a genuine non-applicability. “Superseded” links a replacement contribution record or row and records the supersession date, reason, and maintainer.
+
+## Changes and disputes
+
+Record the date, change or dispute, affected contributors, rationale or positions, decision authority, resolution or unresolved state, and effect on communication readiness. Do not make a copied record appear agreed, confirmed, or approved.

@@ -103,3 +103,5 @@ The safe default is **not yet evaluated**. Do not use generic statuses such as v
 - [ ] Any required return to Analyze is recorded.
 
 Passing this gate records a scoped conclusion about available evidence. It does not authorize publication, external communication, or operational release.
+
+A scoped validation conclusion may proceed to [Collaborate](../collaborate/index.qmd). Inconclusive or not-supported results may still require collaboration to coordinate revision, limitation, discontinuation, or reporting. Validation support does not establish contribution credit or communication readiness.

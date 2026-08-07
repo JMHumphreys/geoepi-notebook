@@ -299,17 +299,30 @@
   description: "Software-focused FAIR-oriented quality and reuse practices."
 - id: care-principles
   title: "CARE Principles for Indigenous Data Governance"
-  url: "https://www.gida-global.org/care"
+  url: "https://www.gida-global.org/careprinciples"
   author_or_organization: "Global Indigenous Data Alliance"
   resource_type: principles
   authority_type: Indigenous-governance-organization
   topics: [CARE, ethics, Indigenous-data]
-  license: "Not verified"
-  access_date: 2026-08-05
+  license: "Verify current terms"
+  access_date: 2026-08-06
   relevant_sections: [collective-benefit, authority, responsibility, ethics]
   local_research_note: null
-  review_status: metadata-needs-verification
+  review_status: verified
   description: "Governance lens for collective benefit, authority, responsibility, and ethics."
+- id: credit-contributor-role-taxonomy
+  title: "Contributor Role Taxonomy (CRediT)"
+  url: "https://credit.niso.org/contributor-roles/"
+  author_or_organization: "National Information Standards Organization"
+  resource_type: standard-and-resource-hub
+  authority_type: standards-organization
+  topics: [contributorship, credit, authorship, collaboration]
+  license: "Verify current terms"
+  access_date: 2026-08-06
+  relevant_sections: [contributor-roles, role-definitions, authorship-limitation]
+  local_research_note: "Optional vocabulary for describing contributions; it does not determine authorship or author order."
+  review_status: verified
+  description: "CRediT describes contributor roles to improve transparency, not authorship or author order."
 - id: usda-nal-data-management
   title: "USDA National Agricultural Library data-management guidance"
   url: "https://www.nal.usda.gov/research-tools/data-management"

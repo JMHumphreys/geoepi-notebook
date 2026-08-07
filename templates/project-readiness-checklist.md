@@ -91,6 +91,54 @@
 - [ ] Replacement analysis is identified when applicable.
 - [ ] Return-to-Analyze requirements and reevaluation triggers are recorded where applicable.
 
+## Collaboration setup
+
+- [ ] Contributors and organizations are identified.
+- [ ] Roles and decision responsibility are clear.
+- [ ] Authoritative locations are identified.
+- [ ] A working agreement or equivalent is present where warranted.
+- [ ] Access and restrictions are recorded.
+
+## Shared review and decisions
+
+- [ ] Review purpose and object/version are clear.
+- [ ] Feedback outcome is recorded; optional labels are used only where useful.
+- [ ] Blocking concerns and unresolved concerns are visible.
+- [ ] Unresolved disagreement is visible.
+- [ ] Decision owner and rationale are durable.
+- [ ] Changes are returned to Analyze or Validate where necessary.
+- [ ] Independent review is considered proportionately where warranted.
+
+## Contributions and credit
+
+- [ ] Contributions are recorded proportionately.
+- [ ] Actual contributions and likely recognition are discussed.
+- [ ] Optional CRediT roles are tied to each contributor when used.
+- [ ] Discussion status and confirmation/date are recorded for agreed entries.
+- [ ] Authorship requirements are not assumed.
+- [ ] Unresolved credit disputes and superseded replacement records are linked.
+- [ ] CRediT is not treated as an authorship rule.
+
+## External partners and continuity
+
+- [ ] Agreement references and sharing conditions are identified.
+- [ ] Access authority, Indigenous/Tribal/community authority, and consultation versus approval are clear.
+- [ ] Stop-and-resolve conditions have an owner and resolution record where triggered.
+- [ ] Backup or continuity responsibility is recorded where warranted.
+- [ ] Temporary coverage is distinguished from formal handoff and offboarding.
+- [ ] Access removal is recorded when responsibility ends.
+
+## Ready for communication
+
+- [ ] The authoritative collaboration readiness record is identified.
+- [ ] One exact readiness status is used.
+- [ ] Current result and validation versions are identified.
+- [ ] A communication-preparation owner is identified.
+- [ ] Limitations and unresolved concerns are visible.
+- [ ] A documented-limitation status includes the limitation, consequence, affected scope, downstream caution, follow-up, and responsible follow-up.
+- [ ] Decision-maker and ISO 8601 date are recorded for a ready status.
+- [ ] Readiness does not imply release approval.
+
 ## Result and release review
 
 - [ ] Results trace to inputs, code, parameters, environment, and output/run IDs.

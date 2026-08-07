@@ -108,6 +108,15 @@ website:
             - practices/validate/prediction-and-forecast-validation.qmd
             - practices/validate/sensitivity-robustness-and-uncertainty.qmd
             - practices/validate/validation-decisions-and-records.qmd
+        - section: "Collaborate"
+          contents:
+            - practices/collaborate/index.qmd
+            - practices/collaborate/roles-responsibilities-and-decisions.qmd
+            - practices/collaborate/working-agreements-and-shared-records.qmd
+            - practices/collaborate/review-feedback-and-disagreement.qmd
+            - practices/collaborate/contributions-credit-and-authorship.qmd
+            - practices/collaborate/external-partners-access-and-sharing.qmd
+            - practices/collaborate/continuity-onboarding-and-handoff.qmd
 format:
   html:
     theme:

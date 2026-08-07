@@ -1,0 +1,41 @@
+---
+title: "External Partners, Access, and Sharing"
+description: "Coordinate partner conditions and access without treating participation as authorization."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - collaboration
+  - data-governance
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+## Partner conditions
+
+Identify organizations, partner contacts, responsibilities, consultation or review conditions, sharing restrictions, agreement references, and continuity contacts. Record references rather than copying protected terms or interpreting a contract. External agreements and community authority take precedence over this draft guidance.
+
+## Access follows authorization
+
+Participation does not automatically grant access to every dataset, repository, system, credential, or protected output. Record who authorizes access, what purpose and scope apply, how access is transferred or removed, and which outputs may be shared. Never place credentials in a project record or repository.
+
+## Consultation and decision authority
+
+Distinguish partner consultation, required review, decision authority, and release authority. A partner may need to review a result or approve a use under an applicable agreement; documentation alone does not grant that authority or permission.
+
+## Sharing and communication
+
+Record restrictions, license or agreement references, confidentiality conditions, de-identification or aggregation expectations where applicable, and the intended communication product. Ready for communication means ready to begin coordinated preparation; it does not authorize public release, operational use, or unrestricted sharing.
+
+## Indigenous, Tribal, and community-governed data or knowledge
+
+When data or knowledge is Indigenous, Tribal, or community-governed, the relevant community authority is substantive. Use the community's own terminology and record who has authority over access, interpretation, reuse, location, attribution, and communication. Partners are not passive stakeholders: record collective benefit, responsibility, and the conditions under which knowledge may be represented or shared. Local authority and applicable agreements take precedence over this guidance; the [CARE Principles for Indigenous Data Governance](https://www.gida-global.org/careprinciples) are a relevant governance lens, not a substitute for consent, agreement, or community decision-making. The resource is also recorded in the local resource catalog. Public availability does not override those conditions.
+
+## Stop and resolve
+
+Pause the affected work and record a responsible person and resolution when access authority is unclear; agreements are missing or incomplete; data or output reuse is unknown; consultation is being represented as approval; communication exceeds the agreed purpose; public repository exposure is possible; partner identity, responsibility, or continuity is unclear; community authority has not been established; or ownership of a repository, storage location, service, or scheduled workflow is unresolved.
