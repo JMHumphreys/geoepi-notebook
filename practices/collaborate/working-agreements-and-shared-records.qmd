@@ -1,0 +1,50 @@
+---
+title: "Working Agreements and Shared Records"
+description: "Reduce ambiguity about shared locations, changes, review, access, and continuity."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - collaboration
+  - reproducibility
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+A working agreement records how contributors will coordinate shared work. It should reduce ambiguity, not prescribe unnecessary meetings or tools.
+
+## Record authoritative locations
+
+Identify locations as applicable for project scope and status, source and staged data, analysis-ready data, code, configuration and parameters, analysis records, validation records, contributor records, decisions, current outputs, review comments, manuscript or report drafts, and operational products. Copies may exist, but the current authoritative version must be identifiable.
+
+## Durable versus temporary communication
+
+Meetings, email, chat, and calls are useful for discussion. Consequential decisions should be summarized in a durable project location. A changed exclusion rule, data-sharing limitation, or blocking reviewer concern should remain linked to its response and final decision. Do not preserve every message or transcript by default.
+
+## Working-agreement topics
+
+Record proportionately:
+
+- expected outputs and current phase;
+- contributor roles and decision process;
+- review and disagreement process;
+- expected response timing where consequential;
+- durable decision location;
+- change-proposal process;
+- version and file conventions;
+- access owner, data restrictions, and external-sharing restrictions;
+- required review types and record locations;
+- contribution-record location and credit discussion timing;
+- external partner contacts and conditions;
+- current owner, backup owner where warranted, and handoff trigger.
+
+Do not include credentials or protected information.
+
+## Change and review records
+
+Record which version the team is reviewing, the requested change, responsible person, reviewer, decision owner, response, date, and affected analysis, validation, result, or communication version when consequential. A short durable summary is preferable to a long transcript that does not identify the decision.

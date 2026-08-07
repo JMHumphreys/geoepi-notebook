@@ -1,0 +1,91 @@
+---
+title: "Collaborate"
+description: "Coordinate shared work, responsibility, review, credit, access, and continuity before communication."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - collaboration
+  - project-management
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+Collaboration is more than adding names to a project or inviting people to meetings. Defensible collaboration makes clear what is being produced, who contributes, who reviews consequential work, who decides, where current records are located, how disagreements are handled, how credit is discussed, and what happens when a contributor joins, leaves, or changes role.
+
+## Collaboration is cross-cutting
+
+People collaborate during planning, data acquisition, analysis, and validation. This stage collects the practices needed to coordinate shared work; it does not imply that collaboration begins only after validation. The post-Validate checkpoint focuses on coordinating validated results and contributor responsibilities before communication products are prepared.
+
+Collaboration is not consensus, validation, approval, an authorship policy, a legal agreement, or release authorization. Access follows authorization and purpose, not project membership alone.
+
+## Collaborate workflow
+
+1. Identify the project, contributors, organizations, and current phase.
+2. State the shared purpose and expected outputs.
+3. Assign roles and decision responsibility.
+4. Identify authoritative locations for data, code, decisions, outputs, and review records.
+5. Agree how changes, reviews, and disagreements will be recorded.
+6. Confirm access and sharing restrictions.
+7. Record contributions and revisit credit expectations.
+8. Coordinate required scientific, technical, operational, or governance review.
+9. Identify unresolved issues and required return to Analyze or Validate.
+10. Confirm continuity, backup responsibility, and handoff needs.
+11. Decide whether coordinated work is ready to enter future Communicate.
+
+```{mermaid}
+flowchart TD
+  results[Validated candidate results] --> roles[Roles and decision responsibility]
+  roles --> records[Shared records and review]
+  records --> credit[Contributions, access, and partner conditions]
+  credit --> continuity[Continuity and unresolved issues]
+  continuity --> ready[Ready to prepare communication]
+```
+
+## Starting points
+
+| Need | Guidance |
+|---|---|
+| Clarify roles and decisions | [Roles, responsibilities, and decisions](roles-responsibilities-and-decisions.qmd) |
+| Establish shared working expectations | [Working agreements and shared records](working-agreements-and-shared-records.qmd) |
+| Review shared work or disagreement | [Review, feedback, and disagreement](review-feedback-and-disagreement.qmd) |
+| Record contributions and credit | [Contributions, credit, and authorship](contributions-credit-and-authorship.qmd) |
+| Coordinate external partners and access | [External partners, access, and sharing](external-partners-access-and-sharing.qmd) |
+| Onboard or transfer responsibility | [Continuity, onboarding, and handoff](continuity-onboarding-and-handoff.qmd) |
+
+## Ready-for-communication statuses
+
+Use exactly:
+
+- **not ready for communication**
+- **ready for communication**
+- **ready for communication with documented limitation**
+
+The safe default is **not ready for communication**. The authoritative decision belongs in a collaboration agreement or equivalent project-level collaboration record, not in an individual contributor record, review comment, validation record, or result row.
+
+## Ready-for-communication gate
+
+- [ ] Project and result versions are identified.
+- [ ] Relevant validation records and scoped conclusions are identified.
+- [ ] Intended communication products are named at a general level.
+- [ ] Active contributors and organizations are identified.
+- [ ] Responsibilities and consequential decision authority are clear.
+- [ ] Required reviews are complete or their limitations are visible.
+- [ ] Review findings and responses are recorded.
+- [ ] Unresolved disagreements are visible.
+- [ ] Changes requiring return to Analyze or Validate are completed or explicitly deferred with a limitation.
+- [ ] Authoritative locations are identified.
+- [ ] Access, sharing, confidentiality, license, and partner restrictions are recorded.
+- [ ] Contribution and credit expectations have been discussed proportionately.
+- [ ] External partner conditions are recorded where applicable.
+- [ ] A communication-preparation owner is identified.
+- [ ] Continuity or backup responsibility is identified where risk warrants it.
+- [ ] The readiness decision and ISO 8601 date are recorded.
+- [ ] One exact readiness status is used.
+
+Passing this gate means that contributors have coordinated the work well enough to begin preparing communication products. It does not authorize submission, publication, public release, operational use, or unrestricted sharing.

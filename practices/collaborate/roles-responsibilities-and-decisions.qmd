@@ -1,0 +1,57 @@
+---
+title: "Roles, Responsibilities, and Decisions"
+description: "Make consequential work attributable without requiring every project to use a management framework."
+status: draft
+practice-level: recommended
+audience:
+  - all-lab-members
+domains:
+  - general
+topics:
+  - collaboration
+  - project-management
+owner: GeoEpi Lab
+last-reviewed: 2026-08-06
+review-cycle: annual
+sidebar: practices
+---
+
+## Use roles, not titles
+
+Possible roles include project lead, data provider, data steward, analytical lead, modeling lead, subject-matter contributor, technical or code reviewer, statistical or methodological reviewer, validation reviewer, operational owner, partner liaison, communication-preparation owner, release authority, repository maintainer, and future maintainer.
+
+One person may hold several roles. Several people may share a role when the division is clear. Do not require every project to use every role.
+
+## Distinguish responsibility and authority
+
+For consequential work, record:
+
+- who performs or prepares it;
+- who reviews it;
+- who decides whether it is accepted for the project;
+- who must be consulted;
+- who must be informed.
+
+An optional plain table is enough:
+
+| Work or decision | Person or role doing the work | Required reviewer | Decision owner | Consulted | Informed |
+|---|---|---|---|---|---|
+| `REQUIRED` | `REQUIRED` | `optional` | `REQUIRED` | `optional` | `optional` |
+
+## Consequential decisions
+
+Examples include changing project scope, replacing a data source, changing an outcome or case definition, changing model structure, selecting a primary result, accepting a validation limitation, sharing restricted data or outputs, changing contributor credit, selecting a version to communicate, changing an operational owner, and approving a handoff.
+
+Routine coding and formatting decisions do not require formal decision ownership.
+
+## Decision records
+
+Use the lightest durable record that preserves the decision, options considered where consequential, rationale, evidence used, responsible person or role, required reviewer, date, affected project/data/analysis/validation/result version, and follow-up. A README history, project note, GitHub issue or pull request, meeting decision summary, existing decision log, or exception record may be sufficient. Do not create a new decision log when an existing durable record is adequate.
+
+## Consensus and disagreement
+
+Consensus may be useful, but it is not universally required. Scientific evidence is not replaced by a vote. Keep disagreement visible when it affects interpretation, risk, access, credit, or communication. The person with authority should record the final decision and rationale; a minority or unresolved scientific concern may remain a limitation.
+
+## Backup responsibility
+
+For long-running, operational, externally funded, high-cost, or high-consequence work, identify a backup contact, current-status location, principal workflow entry point, access owner, and plan for an extended absence. Do not require backup roles for every small exploratory analysis.
