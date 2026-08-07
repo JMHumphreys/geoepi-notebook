@@ -1,18 +1,10 @@
 ---
 title: "Contributing"
-description: "How to propose, review, and improve GeoEpi Lab Book content."
-status: draft
-practice-level: orientation
-audience: contributors
-domains: [all]
-topics: [contribution, review]
-owner: GeoEpi Lab
-last-reviewed: 2026-08-05
-review-cycle: annual
+description: "How to propose changes to the GeoEpi Lab Book."
 ---
 
-See [CONTRIBUTING.md](../CONTRIBUTING.md) for the repository workflow. Propose changes on a branch, preserve metadata, write in your own words, cite the evidence or source basis, and request review when a change could affect a lab requirement.
+Propose changes through a branch and pull request. Keep changes focused, explain the GeoEpi use case, and update linked templates or resources when a page changes their meaning.
 
-::: {.callout-warning}
-Until governance is finalized, a pull request can improve draft text but cannot by itself turn it into an approved lab requirement.
-:::
+For substantive guidance, include the source or experience behind the recommendation and distinguish a useful group convention from an actual institutional, contractual, security, or scientific requirement. Reviewers should check clarity, accessibility, scientific accuracy, links, and whether the proposed guidance fits the practical GeoEpi operating model.
+
+Render the full site locally with `quarto render` before opening a pull request. The validation script checks active-page metadata, internal links, templates, and generated output. Do not commit `_site/`, credentials, tokens, or local IDE state.

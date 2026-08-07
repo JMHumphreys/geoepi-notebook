@@ -1,25 +1,23 @@
 ---
 title: "Resources"
-description: "An annotated catalog of external resources for GeoEpi research guidance."
-status: draft
-practice-level: orientation
-audience: all lab members
-domains: [all]
-topics: [resources, citation, reproducibility]
-owner: GeoEpi Lab
-last-reviewed: 2026-08-05
-review-cycle: annual
-listing:
-  contents: catalog.yml
-  template: resource-table.ejs.md
+description: "External guidance and tools that support GeoEpi work."
 ---
 
-The [resource catalog](catalog.yml) records external starting points without turning them into lab policy. Select a resource title to open its external landing page. Annotations are intentionally short and original. Check the source landing page, current version, license, and access conditions before relying on a resource.
+These links are useful starting points, not a policy catalog. Check the source page, current version, license, access conditions, and fit for your project before relying on a resource.
 
-Some entries are authoritative standards or official guidance; others are practical references or orientation material. A practical or owner-selected resource may be included because it is clear, useful, and relevant to GeoEpi work; an academic publisher or institutional page is not automatically preferable. Inclusion is not endorsement, and users should verify that a resource is current and appropriate for their work.
+## Data management
 
-Each entry has a stable ID, title, URL, author or organization, resource and authority types, topic tags, license, access date, relevant sections, a local research-note path, review status, and a short annotation. Unknown or unverified values are marked explicitly.
+- [USDA National Agricultural Library: Data Management Planning](https://www.nal.usda.gov/services/data-management-planning) — primary conceptual source for the six-part project DMP structure used in this Lab Book.
+- [ICPSR: Share & Manage Data](https://www.icpsr.umich.edu/sites/icpsr/manage-data) — secondary practical guidance on managing, documenting, sharing, and preserving research data.
+- [Ag Data Commons](https://agdatacommons.nal.usda.gov/) — a USDA data discovery and repository resource where appropriate.
 
-::: {.callout-warning}
-Catalog inclusion is not endorsement. Resources may be useful, outdated, inaccessible, or governed by licenses that limit reuse.
-:::
+## GeoEpi tools and working systems
+
+- [SCINet](https://scinet.usda.gov/) — USDA scientific computing and storage context, including Atlas and Ceres.
+- [GitHub](https://github.com/geoepi) — GeoEpi organization and subproject repositories.
+- [Quarto](https://quarto.org/) — reproducible reports, websites, notebooks, and technical documentation.
+- [Overleaf](https://www.overleaf.com/) — collaborative LaTeX documents and manuscripts.
+- [Zotero](https://www.zotero.org/) — shared literature management.
+- [OSF](https://osf.io/) — collaborator-accessible research objects and project resources where appropriate.
+
+The [GeoEpi tools page](../tools/index.qmd) explains the role of each system and the boundaries between them.

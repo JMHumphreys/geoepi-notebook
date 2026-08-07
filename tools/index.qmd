@@ -1,0 +1,18 @@
+---
+title: "Tools & Collaboration"
+description: "The common GeoEpi tool ecosystem and its practical roles."
+---
+
+GeoEpi uses several complementary systems. The right tool depends on the work and the collaborators; no single programming language or interface is mandatory.
+
+| Tool | Common GeoEpi role |
+|---|---|
+| GitHub and the GeoEpi organization | Code, version control, documentation, collaboration, subproject repositories, and the future Lab Hub |
+| SCINet, Atlas, and Ceres | Large or controlled data, computation, and HPC |
+| OSF | Collaborator-accessible research objects, data sharing, or project resources where appropriate |
+| Overleaf and LaTeX | Collaborative manuscripts and technical documents, especially equations and complex scientific formatting |
+| Zotero | Shared GeoEpi literature libraries; individuals may use other managers for personal workflows |
+| Quarto and GitHub Pages | Reproducible reports, technical documentation, websites, and notebooks |
+| R | A commonly used language in GeoEpi workflows and examples, alongside other appropriate tools |
+
+Read the pages for [GitHub](github.qmd), [Overleaf](overleaf.qmd), [Zotero](zotero.qmd), and [OSF](osf.qmd).

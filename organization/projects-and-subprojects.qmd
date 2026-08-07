@@ -1,0 +1,22 @@
+---
+title: "Projects and Subprojects"
+description: "Choose the right level for project context and analytical work."
+---
+
+A **project** is a broad scientific or operational objective. It may include several scientists, controlled or partner-provided data, multiple analytical workstreams, and several products.
+
+A **subproject** is an independently understandable and executable workstream. Examples include NWS climate acquisition, a Bayesian risk model, a spread simulation, genomics, or a dashboard.
+
+The useful rule is approximately:
+
+> One analytically coherent workstream = one repository.
+
+This is not the same as “one scientist = one repository.” A scientist may contribute to several subprojects, and a subproject may involve several scientists. Each subproject has one designated canonical working repository, even when forks, upstream repositories, or collaborator-owned repositories also exist.
+
+## Where information belongs
+
+- **Project level:** objective, scope, roles, decisions, milestones, controlled-data stewardship, and products.
+- **Subproject level:** scientific implementation, workflow entry points, public data acquisition, code, analytical provenance, and reproducibility notes.
+- **Run level:** exact configuration and execution records for a particular analysis or computational run.
+
+Use the [subproject README template](../templates/subproject-readme-template.md) and [draft `.geoepi.yml` template](../templates/geoepi-metadata-template.yml) when setting up a repository. The metadata file is a small future convention, not a replacement for the README or run records.

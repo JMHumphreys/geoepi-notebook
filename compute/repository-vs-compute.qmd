@@ -1,0 +1,15 @@
+---
+title: "Repository versus Compute"
+description: "A practical boundary between durable project records and working computation."
+---
+
+| Keep in the subproject repository | Keep in Atlas, Ceres, or other approved compute/storage |
+|---|---|
+| README, workflow entry points, code, configuration templates, documentation, schemas, and lightweight manifests | Controlled or large data, intermediate files, caches, temporary objects, logs, and large outputs |
+| Public-source acquisition details and citations | The acquired data and computational working copies |
+| Environment definition or lockfile where practical | Installed environments and execution-specific files |
+| Run metadata needed to identify and reproduce a result | Full run output, scheduler artifacts, and high-volume logs |
+
+The boundary is about access, size, and purpose—not a rigid folder layout. A repository can contain small examples and test fixtures. It should not contain credentials, tokens, controlled data, or large computational outputs.
+
+Run-level details remain with the subproject and/or computational storage: environment versions, package versions, model parameters, random seeds, replicates, SLURM job IDs, input manifests, configuration, logs, output manifests, and validation details. The Hub should not duplicate them.

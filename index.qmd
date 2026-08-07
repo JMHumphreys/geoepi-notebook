@@ -1,41 +1,44 @@
 ---
 title: "GeoEpi Lab Book"
-description: "Operational guidance for defensible, reproducible, and transferable geographical epidemiology."
-status: draft
-practice-level: orientation
-audience:
-  - all-lab-members
-domains:
-  - all
-topics:
-  - reproducibility
-  - documentation
-  - data-stewardship
-owner: GeoEpi Lab
-last-reviewed: 2026-08-05
-review-cycle: annual
+description: "Practical guidance for organizing collaborative geographical epidemiology."
 ---
 
-::: {.callout-warning}
-## Draft guidance
+The GeoEpi Lab Book helps scientists and collaborators organize work that combines geography, epidemiology, ecology, biology, data, and computation. It is a practical living guide for improving scientific quality, reproducibility, continuity, and efficiency.
 
-The Lab Book is a living resource. Draft pages and proposed policy require review; they do not establish approved laboratory policy.
-:::
+## The basic model
 
-Welcome to the **GeoEpi Lab Book**, a shared place for practices that help geographical epidemiology remain understandable, defensible, reproducible, and transferable across people, projects, and time.
+A GeoEpi project is a network of linked analytical subprojects, data assets, computational work, and scientific products—not a single repository or directory.
 
-## Find your next step
+```{mermaid}
+flowchart TD
+    H[GeoEpi Hub] --> P1[Project A]
+    H --> P2[Project B]
+    P1 --> R1[Subproject repository]
+    P1 --> R2[Subproject repository]
+    P2 --> R3[Subproject repository]
+    R1 --> C[Atlas / Ceres]
+    R2 --> C
+    R3 --> C
+    R1 --> S[Synthesis and products]
+    R2 --> S
+    R3 --> S
+    S --> M[Manuscript]
+    S --> D[Dashboard or report]
+    S --> O[Released data or product]
+```
 
-- [Start a project](start/new-project.qmd) for a minimum setup and scope.
-- [Assess project readiness](templates/project-readiness-checklist.md) at lifecycle checkpoints.
-- [Document incoming data](templates/data-source-inventory-template.csv) with a source inventory.
-- [Find a template](templates/index.qmd) for reusable project records.
-- [Prepare a handoff](templates/project-handoff-template.md) before responsibility changes.
-- [Review the minimum standard](start/minimum-standard.qmd) for the proposed baseline.
-- [Research Practices](practices/index.qmd) for the lifecycle from planning through preservation.
-- [Domain Guidance](domains/index.qmd) for spatial, epidemiological, ecological, genomic, and modeling topics.
-- [Lab Standards](standards/index.qmd) for future lab-level decisions.
-- [Templates](templates/index.qmd) for reusable project and documentation structures.
-- [Resources](resources/index.qmd) for an annotated external catalog.
+- The **GeoEpi Hub** holds project context and coordination.
+- A **subproject repository** holds the scientific implementation and analytical provenance for one coherent workstream.
+- **Atlas and Ceres** hold approved large or controlled data and computational work.
+- **Products** include manuscripts, reports, dashboards, released data, and other accepted outputs.
 
-The intended outcome is that a lab member can join a project, understand what was done and why, reproduce an important result where access permits, identify uncertainty, and continue the work without relying on undocumented memory.
+Run-level details—parameters, environments, random seeds, job IDs, logs, manifests, and outputs—stay with the subproject and its computational storage. They do not belong in the Hub.
+
+## Start with the question you have
+
+- [Start Here](start/index.qmd) gives the shortest path for a new or inherited project.
+- [How GeoEpi organizes work](organization/index.qmd) explains Hub, project, subproject, repository, and run.
+- [Data management](data/index.qmd) separates the project DMP, controlled-data inventory, and analytical provenance.
+- [Computing and repositories](compute/index.qmd) explains what belongs on GitHub versus Atlas or Ceres.
+- [Tools and collaboration](tools/index.qmd) describes the group’s common working tools.
+- [Templates](templates/index.qmd) provides a small set of reusable starting points.

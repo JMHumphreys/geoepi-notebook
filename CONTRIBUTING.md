@@ -1,11 +1,14 @@
 # Contributing to the GeoEpi Lab Book
 
-Contributions use a branch and pull request; do not commit directly to the default branch. Use focused names such as `docs/topic-name` or `feature/template-name`.
+Use a branch and pull request; do not commit directly to `main`. Keep changes focused and explain how they help GeoEpi scientists or collaborators organize real work.
 
-Substantive pages must use the metadata convention. Write original text, cite the evidence or source basis with URL, author or organization, access date, and relevant section where possible. State whether the change creates or alters a lab requirement, and update affected templates or catalog entries.
+For substantive guidance, link to the source or experience behind the recommendation. State group conventions directly, avoid presenting them as institutional policy unless they are one, and reserve strong requirement language for genuine scientific, security, contractual, or institutional requirements.
 
-Reviewers should check scientific accuracy, proportionality, accessibility, provenance, licensing, and whether uncertainty is visible. A pull request cannot turn draft text into approved policy by itself.
+Before opening a pull request:
 
-Install Quarto and run `quarto preview` for local work or `quarto render` for a complete build. The validation workflow checks metadata and YAML. `_site/` output is ignored and should not be committed.
+1. Run `quarto render` for the complete site.
+2. Run `python scripts/validate_site.py`.
+3. Check internal links, downloadable templates, navigation, and the rendered page.
+4. Confirm that no credentials, tokens, controlled data, generated output, or local IDE state is included.
 
-R and `renv` are deferred: this first pass has no executable R content and does not require an R package environment.
+The archived lifecycle material is preserved for future work. Do not reintroduce it as a competing top-level navigation unless the information architecture is deliberately revisited.

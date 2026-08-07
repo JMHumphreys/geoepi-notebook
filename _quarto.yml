@@ -2,28 +2,44 @@ project:
   type: website
   output-dir: _site
   render:
-    - "*.qmd"
-    - "about/"
-    - "start/"
-    - "practices/"
-    - "domains/"
-    - "standards/"
-    - "resources/index.qmd"
+    - "index.qmd"
+    - "start/index.qmd"
+    - "organization/index.qmd"
+    - "organization/project-hub.qmd"
+    - "organization/projects-and-subprojects.qmd"
+    - "organization/repositories.qmd"
+    - "data/index.qmd"
+    - "data/data-management-plans.qmd"
+    - "data/controlled-data.qmd"
+    - "data/analytical-provenance.qmd"
+    - "compute/index.qmd"
+    - "compute/atlas-ceres.qmd"
+    - "compute/repository-vs-compute.qmd"
+    - "tools/index.qmd"
+    - "tools/github.qmd"
+    - "tools/overleaf.qmd"
+    - "tools/zotero.qmd"
+    - "tools/osf.qmd"
     - "templates/index.qmd"
-    - "templates/authoring-template.qmd"
+    - "resources/index.qmd"
+    - "about/purpose.qmd"
+    - "about/how-to-use.qmd"
+    - "about/contributing.qmd"
   resources:
-    - "templates/*.md"
-    - "templates/*.csv"
-    - "templates/*.yml"
+    - "templates/project-overview-template.md"
+    - "templates/data-management-plan-template.md"
+    - "templates/controlled-data-inventory-template.csv"
+    - "templates/subproject-registry-template.yml"
+    - "templates/subproject-readme-template.md"
+    - "templates/geoepi-metadata-template.yml"
 website:
   title: "GeoEpi Lab Book"
-  description: "Research practices for defensible, reproducible, and transferable geographical epidemiology."
+  description: "Practical guidance for organizing collaborative geographical epidemiology."
   favicon: assets/images/favicon.ico
   site-url: "https://jmhumphreys.github.io/geoepi-notebook/"
   repo-url: "https://github.com/JMHumphreys/geoepi-notebook"
   repo-actions: [edit, issue, source]
   reader-mode: true
-  # Breadcrumbs are enabled by default for nested sidebar pages in Quarto.
   page-navigation: true
   search: true
   navbar:
@@ -35,12 +51,14 @@ website:
     left:
       - text: "Start Here"
         href: start/index.qmd
-      - text: "Research Practices"
-        href: practices/index.qmd
-      - text: "Domain Guidance"
-        href: domains/index.qmd
-      - text: "Lab Standards"
-        href: standards/index.qmd
+      - text: "How GeoEpi Organizes Work"
+        href: organization/index.qmd
+      - text: "Data Management"
+        href: data/index.qmd
+      - text: "Computing & Repositories"
+        href: compute/index.qmd
+      - text: "Tools & Collaboration"
+        href: tools/index.qmd
       - text: "Templates"
         href: templates/index.qmd
       - text: "Resources"
@@ -66,75 +84,50 @@ website:
   sidebar:
     - id: start
       title: "Start Here"
-      contents: [start/index.qmd, start/minimum-standard.qmd, start/new-project.qmd, start/rescue-project.qmd, start/handoff.qmd]
+      contents:
+        - start/index.qmd
+    - id: organization
+      title: "How GeoEpi Organizes Work"
+      contents:
+        - organization/index.qmd
+        - organization/project-hub.qmd
+        - organization/projects-and-subprojects.qmd
+        - organization/repositories.qmd
+    - id: data
+      title: "Data Management"
+      contents:
+        - data/index.qmd
+        - data/data-management-plans.qmd
+        - data/controlled-data.qmd
+        - data/analytical-provenance.qmd
+    - id: compute
+      title: "Computing & Repositories"
+      contents:
+        - compute/index.qmd
+        - compute/atlas-ceres.qmd
+        - compute/repository-vs-compute.qmd
+    - id: tools
+      title: "Tools & Collaboration"
+      contents:
+        - tools/index.qmd
+        - tools/github.qmd
+        - tools/overleaf.qmd
+        - tools/zotero.qmd
+        - tools/osf.qmd
     - id: templates
       title: "Templates"
-      contents: [templates/index.qmd, templates/authoring-template.qmd]
-    - id: practices
-      title: "Research Practices"
       contents:
-        - practices/index.qmd
-        - section: "Plan"
-          contents:
-            - practices/plan/index.qmd
-            - practices/plan/project-scope.qmd
-            - practices/plan/data-management-planning.qmd
-        - section: "Acquire"
-          contents:
-            - practices/acquire/index.qmd
-            - practices/acquire/data-intake.qmd
-            - practices/acquire/recurring-programmatic-data.qmd
-        - section: "Organize"
-          contents:
-            - practices/organize/index.qmd
-            - practices/organize/project-and-data-structure.qmd
-            - practices/organize/source-to-staged-data.qmd
-            - practices/organize/identifiers-and-schema.qmd
-            - practices/organize/spatial-temporal-conventions.qmd
-        - section: "Analyze"
-          contents:
-            - practices/analyze/index.qmd
-            - practices/analyze/analysis-design.qmd
-            - practices/analyze/exploratory-and-planned-analysis.qmd
-            - practices/analyze/computational-execution.qmd
-            - practices/analyze/randomness-scenarios-and-replicates.qmd
-            - practices/analyze/results-and-traceability.qmd
-        - section: "Validate"
-          contents:
-            - practices/validate/index.qmd
-            - practices/validate/validation-plan.qmd
-            - practices/validate/verify-analysis-and-outputs.qmd
-            - practices/validate/assumptions-diagnostics-and-fit.qmd
-            - practices/validate/prediction-and-forecast-validation.qmd
-            - practices/validate/sensitivity-robustness-and-uncertainty.qmd
-            - practices/validate/validation-decisions-and-records.qmd
-        - section: "Collaborate"
-          contents:
-            - practices/collaborate/index.qmd
-            - practices/collaborate/roles-responsibilities-and-decisions.qmd
-            - practices/collaborate/working-agreements-and-shared-records.qmd
-            - practices/collaborate/review-feedback-and-disagreement.qmd
-            - practices/collaborate/contributions-credit-and-authorship.qmd
-            - practices/collaborate/external-partners-access-and-sharing.qmd
-            - practices/collaborate/continuity-onboarding-and-handoff.qmd
-        - section: "Communicate"
-          contents:
-            - practices/communicate/index.qmd
-            - practices/communicate/audience-purpose-and-products.qmd
-            - practices/communicate/claims-evidence-uncertainty-and-limitations.qmd
-            - practices/communicate/figures-tables-maps-and-accessibility.qmd
-            - practices/communicate/manuscripts-reports-and-reporting-guidelines.qmd
-            - practices/communicate/data-code-software-and-availability.qmd
-            - practices/communicate/review-approval-release-and-corrections.qmd
-        - section: "Preserve"
-          contents:
-            - practices/preserve/index.qmd
-            - practices/preserve/selection-retention-and-disposition.qmd
-            - practices/preserve/preservation-packages-manifests-and-metadata.qmd
-            - practices/preserve/repositories-identifiers-and-deposit.qmd
-            - practices/preserve/fixity-storage-recovery-and-monitoring.qmd
-            - practices/preserve/formats-software-environments-and-reuse.qmd
-            - practices/preserve/access-governance-maintenance-and-deaccession.qmd
+        - templates/index.qmd
+    - id: resources
+      title: "Resources"
+      contents:
+        - resources/index.qmd
+    - id: about
+      title: "About"
+      contents:
+        - about/purpose.qmd
+        - about/how-to-use.qmd
+        - about/contributing.qmd
 format:
   html:
     theme:

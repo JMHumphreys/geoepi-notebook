@@ -1,0 +1,12 @@
+---
+title: "Computing & Repositories"
+description: "Use GitHub for implementation and Atlas or Ceres for data and computation."
+---
+
+GeoEpi commonly separates the durable scientific record from the computational workspace:
+
+- [GitHub](../tools/github.qmd) holds code, version control, documentation, collaboration, and subproject repositories.
+- [Atlas and Ceres](atlas-ceres.qmd) hold approved large or controlled data, intermediate data, HPC execution, logs, temporary objects, and large outputs.
+- The [repository versus compute boundary](repository-vs-compute.qmd) explains what to record in each place.
+
+The exact storage and access arrangement depends on the project, data agreements, and institutional systems. Record the authoritative location clearly and keep project context accessible to collaborators who may not have SCINet or HPC access.
